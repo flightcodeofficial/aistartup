@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5가지 고객 증거 태그와 분석 체계</title>
+  <style>
+    :root {
+      --bg-light: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-dark: #0F172A;
+      --text-sub: #475569;
+      --primary: #4F46E5;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--bg-light); color: var(--text-dark); height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    main { width: 100vw; height: 100vh; max-width: 1920px; max-height: 1080px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    h1 { font-size: 2.5rem; font-weight: 800; color: var(--text-dark); }
+    .tag-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin: 2rem 0; flex: 1; }
+    .tag-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .tag-num { font-size: 0.875rem; font-weight: 700; color: var(--primary); }
+    .tag-title { font-size: 1.125rem; font-weight: 700; }
+    .tag-desc { font-size: 0.875rem; color: var(--text-sub); line-height: 1.5; }
+    footer { display: flex; justify-content: space-between; color: var(--text-sub); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (max-width: 640px) {
+      body { overflow-y: auto; height: auto; }
+      main { height: auto; padding: 1rem; }
+      .tag-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main id="lesson-slide" data-week="2" data-day="1" data-lesson="2" data-page="09" aria-label="5가지 고객 증거 태그와 분석 체계">
+    <header>
+      <p style="color: var(--primary); font-weight: 600; font-size: 0.875rem;">ANALYSIS FRAMEWORK</p>
+      <h1>5가지 고객 증거 태그와 분석 체계</h1>
+    </header>
+
+    <section class="tag-grid">
+      <div class="tag-card">
+        <span class="tag-num">TAG 01</span>
+        <div class="tag-title">반복 문제</div>
+        <div class="tag-desc">고객이 일상에서 지속적으로 경험하는 고충 및 시간 손실 패턴</div>
+      </div>
+      <div class="tag-card">
+        <span class="tag-num">TAG 02</span>
+        <div class="tag-title">촉발 사건</div>
+        <div class="tag-desc">적극적으로 해결책을 찾게 만든 결정적 계기 및 환경적 변화</div>
+      </div>
+      <div class="tag-card">
+        <span class="tag-num">TAG 03</span>
+        <div class="tag-title">현재 대안</div>
+        <div class="tag-desc">당장 대체재로 사용 중인 엑셀, 임시 수작업, 경쟁 서비스</div>
+      </div>
+      <div class="tag-card">
+        <span class="tag-num">TAG 04</span>
+        <div class="tag-title">기대 결과</div>
+        <div class="tag-desc">문제가 해결되었을 때 얻고자 하는 구체적 가치 및 목표 상태</div>
+      </div>
+      <div class="tag-card">
+        <span class="tag-num">TAG 05</span>
+        <div class="tag-title">반대 이유</div>
+        <div class="tag-desc">구매 결정을 주저하게 만드는 장벽, 비용, 불확실성 및 불안 요소</div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Lesson 2 · 고객 증거 분석</span>
+      <span>Page 09 / 14</span>
+      <span>AI 추출 실습 →</span>
+    </footer>
+  </main>
+</body>
+</html>

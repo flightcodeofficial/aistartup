@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 06 - STP: 나누고, 선택하고, 자리 잡기</title>
+<style>
+
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary: #7C3AED;
+  --evidence: #10B981;
+  --inference: #F59E0B;
+  --verify: #F43F5E;
+  --bg-dark: #0F172A;
+  --bg-card-dark: #1E293B;
+  --text-light: #F8FAFC;
+  --text-muted-dark: #94A3B8;
+  --bg-light: #F8FAFC;
+  --bg-card-light: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted-light: #64748B;
+  --border-light: #E2E8F0;
+  --border-dark: #334155;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+main#lesson-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main#lesson-slide {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  justify-content: space-between;
+}
+
+.main-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+/* STP Rail Process Layout */
+.stp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.stp-card {
+  background: var(--bg-card-light);
+  border-radius: 0.75rem;
+  padding: 1.1rem;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stp-card.s-card { border-top: 5px solid var(--primary); }
+.stp-card.t-card { border-top: 5px solid var(--secondary); }
+.stp-card.p-card { border-top: 5px solid var(--inference); }
+
+.stp-badge {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+
+.s-card .stp-badge { color: var(--primary); }
+.t-card .stp-badge { color: var(--secondary); }
+.p-card .stp-badge { color: var(--inference); }
+
+.stp-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted-light);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.stp-q-list {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+  color: var(--text-dark);
+}
+
+.stp-q-list div {
+  margin-bottom: 0.25rem;
+}
+
+.stp-output {
+  background: #F8FAFC;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid var(--border-light);
+}
+
+/* Bottom Flow Line */
+.core-flow-bar {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.core-flow-bar span {
+  color: #A5B4FC;
+}
+
+.source-label {
+  font-size: 0.72rem;
+  color: var(--text-muted-light);
+  text-align: right;
+  margin-top: 0.3rem;
+}
+
+/* Responsive safety net: 원본은 1280x720 고정 높이라 좁은 화면에서
+   overflow:hidden에 잘렸다. 여백/폰트를 줄이고 그리드를 1열로 접되,
+   그래도 못 들어가면 잘리지 않고 스크롤되게 한다. 문구는 바꾸지 않는다. */
+@media (max-width: 640px) {
+  html, body { overflow-y: auto; }
+  main#lesson-slide {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    padding: 1.5rem 1.25rem;
+  }
+  .main-title { font-size: 1.4rem; }
+  .stp-container { grid-template-columns: 1fr; gap: 0.75rem; }
+}
+</style>
+</head>
+<body>
+<main id="lesson-slide" data-week="2" data-day="1" data-lesson="1" data-page="06" aria-label="고객을 나누고, 선택하고, 선택 이유를 설명합니다">
+  <div>
+    <h1 class="main-title">고객을 나누고, 선택하고, 선택 이유를 설명합니다</h1>
+
+    <div class="stp-container">
+      <!-- S Card -->
+      <div class="stp-card s-card">
+        <div>
+          <div class="stp-badge">S — 세분화</div>
+          <div class="stp-desc">비슷한 문제·상황·행동을 보이는 고객군을 구분한다.</div>
+          <div class="stp-q-list">
+            <div>• 어떤 문제가 반복되는가?</div>
+            <div>• 어떤 사건이 구매를 촉발하는가?</div>
+            <div>• 현재 어떤 대안을 쓰는가?</div>
+            <div>• 어떤 이유로 구매를 미루는가?</div>
+          </div>
+        </div>
+        <div class="stp-output">산출물: 세그먼트 후보 3개, 각 근거와 반증</div>
+      </div>
+
+      <!-- T Card -->
+      <div class="stp-card t-card">
+        <div>
+          <div class="stp-badge">T — 타깃 선택</div>
+          <div class="stp-desc">지금 가장 먼저 검증할 고객을 선택한다.</div>
+          <div class="stp-q-list">
+            <div>• 문제의 빈도와 심각도가 높은가?</div>
+            <div>• 이미 시간이나 비용을 쓰고 있는가?</div>
+            <div>• 새로운 해결책 시도 의향이 있는가?</div>
+            <div>• 우리가 실제 접근 가능한가?</div>
+          </div>
+        </div>
+        <div class="stp-output">산출물: ECP/ICP 1개, 안티 ICP, 역할구분</div>
+      </div>
+
+      <!-- P Card -->
+      <div class="stp-card p-card">
+        <div>
+          <div class="stp-badge">P — 포지셔닝</div>
+          <div class="stp-desc">선택한 고객에게 우리 제품의 의미와 차이를 설명한다.</div>
+          <div class="stp-q-list">
+            <div>• 고객이 해야 할 일은 무엇인가?</div>
+            <div>• 어떤 고충과 불안을 줄이는가?</div>
+            <div>• 어떤 결과를 얻는가?</div>
+            <div>• 현재 대안과 무엇이 다른가?</div>
+          </div>
+        </div>
+        <div class="stp-output">산출물: 고객여정, 가치제안, 메시지</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="core-flow-bar">
+      핵심 흐름: <span>고객 원문 ➔ 증거 태그 ➔ 세그먼트 ➔ ECP/ICP ➔ 페르소나·여정 ➔ 가치제안</span>
+    </div>
+    <div class="source-label">개념: STP</div>
+  </div>
+</main>
+</body>
+</html>

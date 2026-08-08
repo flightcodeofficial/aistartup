@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECP와 ICP: 초기 타깃과 확장 타깃</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card: #1E293B;
+      --text: #F8FAFC;
+      --sub: #94A3B8;
+      --indigo: #4F46E5;
+      --emerald: #10B981;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    main { width: 100vw; height: 100vh; max-width: 1920px; max-height: 1080px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    h1 { font-size: 2.25rem; font-weight: 800; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0; flex: 1; }
+    .target-card { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    .target-card.ecp { border-top: 4px solid var(--emerald); }
+    .target-card.icp { border-top: 4px solid var(--indigo); }
+    .tag { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; }
+    footer { display: flex; justify-content: space-between; color: var(--sub); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (max-width: 640px) {
+      body { overflow-y: auto; height: auto; }
+      main { height: auto; padding: 1rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main id="lesson-slide" data-week="2" data-day="1" data-lesson="2" data-page="12" aria-label="ECP와 ICP: 초기 타깃과 확장 타깃">
+    <header>
+      <h1>ECP와 ICP: 초기 타깃과 확장 타깃</h1>
+      <p style="color: var(--sub);">지금 당장 생존 및 빠른 검증을 위한 타깃과 지속적 성장을 위한 타깃의 구분</p>
+    </header>
+
+    <section class="grid">
+      <div class="target-card ecp">
+        <div>
+          <div class="tag" style="color: var(--emerald);">ECP (Early Customer Profile)</div>
+          <h2>초기 검증 고객 프로필</h2>
+          <ul style="margin-top: 1rem; padding-left: 1.2rem; line-height: 1.8; color: var(--sub);">
+            <li>가장 강력하고 즉각적인 고충 보유</li>
+            <li>기존 솔루션 부재로 수작업 대체 중</li>
+            <li>완벽하지 않은 초기 MVP도 수용</li>
+            <li><strong>목적:</strong> 빠른 가치 검증 및 초기 사례 확보</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="target-card icp">
+        <div>
+          <div class="tag" style="color: var(--indigo);">ICP (Ideal Customer Profile)</div>
+          <h2>이상적인 고객 프로필</h2>
+          <ul style="margin-top: 1rem; padding-left: 1.2rem; line-height: 1.8; color: var(--sub);">
+            <li>높은 LTV 및 지속적인 지불 능력보유</li>
+            <li>제품 가치에 대한 명확한 이해 보유</li>
+            <li>안정적인 유지율과 높은 추천 성향</li>
+            <li><strong>목적:</strong> 스케일업 및 매출 극대화</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Lesson 2 · 고객 증거 분석</span>
+      <span>Page 12 / 14</span>
+      <span>페르소나 & 여정 →</span>
+    </footer>
+  </main>
+</body>
+</html>

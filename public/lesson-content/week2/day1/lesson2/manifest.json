@@ -1,0 +1,41 @@
+{
+  "lesson": 2,
+  "title": "고객 증거 분석 및 ICP·ECP 정의",
+  "pages": [
+    {
+      "page": "08",
+      "file": "page08.html",
+      "title": "고객 증거 분석: 텍스트에서 신호 찾기"
+    },
+    {
+      "page": "09",
+      "file": "page09.html",
+      "title": "5가지 고객 증거 태그와 분석 체계"
+    },
+    {
+      "page": "10",
+      "file": "page10.html",
+      "title": "AI 기반 고객 증거 추출 실습"
+    },
+    {
+      "page": "11",
+      "file": "page11.html",
+      "title": "증거 기반 세그먼트 도출 및 후보군 정의"
+    },
+    {
+      "page": "12",
+      "file": "page12.html",
+      "title": "ECP와 ICP: 초기 타깃과 확장 타깃"
+    },
+    {
+      "page": "13",
+      "file": "page13.html",
+      "title": "페르소나 구조화와 고객 여정 지도"
+    },
+    {
+      "page": "14",
+      "file": "page14.html",
+      "title": "Lesson 2 종합 점검 및 다음 단계 준비"
+    }
+  ]
+}

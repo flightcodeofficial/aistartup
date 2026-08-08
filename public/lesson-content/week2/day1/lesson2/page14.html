@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2 종합 점검 및 다음 단계 준비</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card: #1E293B;
+      --text: #F8FAFC;
+      --sub: #94A3B8;
+      --primary: #4F46E5;
+      --emerald: #10B981;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    main { width: 100vw; height: 100vh; max-width: 1920px; max-height: 1080px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    h1 { font-size: 2.25rem; font-weight: 800; }
+    .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; flex: 1; }
+    .box { background: var(--card); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+    .check-item { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 0.95rem; }
+    footer { display: flex; justify-content: space-between; color: var(--sub); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (max-width: 640px) {
+      body { overflow-y: auto; height: auto; }
+      main { height: auto; padding: 1rem; }
+      .summary-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main id="lesson-slide" data-week="2" data-day="1" data-lesson="2" data-page="14" aria-label="Lesson 2 종합 점검 및 다음 단계 준비">
+    <header>
+      <h1>Lesson 2 종합 점검 및 다음 단계 준비</h1>
+      <p style="color: var(--sub);">Lesson 2에서 수립한 ECP/ICP 정의와 산출물 검토 및 Lesson 3 연계</p>
+    </header>
+
+    <section class="summary-grid">
+      <div class="box">
+        <h3 style="color: #818CF8; margin-bottom: 1rem;">Lesson 2 달성 체크리스트</h3>
+        <div class="check-item"><span style="color: var(--emerald);">✓</span> 5가지 고객 증거 태그 분류 완료</div>
+        <div class="check-item"><span style="color: var(--emerald);">✓</span> AI 프롬프트를 통한 근거 기반 원문 추출</div>
+        <div class="check-item"><span style="color: var(--emerald);">✓</span> 우선 검증 세그먼트 도출 및 ECP 정의</div>
+        <div class="check-item"><span style="color: var(--emerald);">✓</span> 타깃 페르소나 및 4단계 고객 여정 매핑</div>
+      </div>
+
+      <div class="box" style="border-left: 4px solid var(--primary);">
+        <h3 style="color: #A5B4FC; margin-bottom: 1rem;">다음 Lesson 3 연결 안내</h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--sub);">
+          오늘 정의한 <strong>ECP의 문제와 여정</strong>을 바탕으로, Lesson 3에서는 그들의 마음을 사로잡는 차별화된 <strong>가치 제안(Value Proposition) 및 마케팅 핵심 메시지</strong>를 도출합니다.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <span>Lesson 2 · 고객 증거 분석 완료</span>
+      <span>Page 14 / 14</span>
+      <span>Lesson 3 완료하기</span>
+    </footer>
+  </main>
+</body>
+</html>

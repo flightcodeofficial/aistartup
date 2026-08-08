@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 07 - Lesson 1 확인 및 다음 Lesson 준비</title>
+<style>
+
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary: #7C3AED;
+  --evidence: #10B981;
+  --inference: #F59E0B;
+  --verify: #F43F5E;
+  --bg-dark: #0F172A;
+  --bg-card-dark: #1E293B;
+  --text-light: #F8FAFC;
+  --text-muted-dark: #94A3B8;
+  --bg-light: #F8FAFC;
+  --bg-card-light: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted-light: #64748B;
+  --border-light: #E2E8F0;
+  --border-dark: #334155;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+main#lesson-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main#lesson-slide {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  justify-content: space-between;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+/* Principles Top Row */
+.principles-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.principle-card {
+  background: var(--bg-card-light);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.82rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.principle-card span {
+  font-size: 0.72rem;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.15rem;
+  font-weight: 800;
+}
+
+/* Middle Quiz Grid */
+.quiz-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.quiz-box {
+  background: #F1F5F9;
+  border-radius: 0.6rem;
+  padding: 0.75rem;
+  font-size: 0.82rem;
+}
+
+.quiz-box-title {
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+
+.quiz-q-text {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--text-dark);
+}
+
+.quiz-opt-list button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.quiz-ans-exp {
+  display: none;
+  background: #D1FAE5;
+  color: #065F46;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* Bottom Prep Checklists Grid */
+.prep-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.85rem;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: 0.85rem;
+  border-radius: 0.6rem;
+}
+
+.prep-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #A5B4FC;
+  margin-bottom: 0.4rem;
+}
+
+.prep-list {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #E2E8F0;
+}
+
+.prep-list label {
+  display: block;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.prep-list input[type="checkbox"] {
+  margin-right: 0.3rem;
+}
+
+/* Responsive safety net: 원본은 1280x720 고정 높이라 좁은 화면에서
+   overflow:hidden에 잘렸다. 여백/폰트를 줄이고 그리드를 1열로 접되,
+   그래도 못 들어가면 잘리지 않고 스크롤되게 한다. 문구는 바꾸지 않는다. */
+@media (max-width: 640px) {
+  html, body { overflow-y: auto; }
+  main#lesson-slide {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    padding: 1.5rem 1.25rem;
+  }
+  .main-title { font-size: 1.3rem; }
+  .principles-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .quiz-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+  .prep-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+}
+</style>
+</head>
+<body>
+<main id="lesson-slide" data-week="2" data-day="1" data-lesson="1" data-page="07" aria-label="고객을 상상하지 말고, 근거로 좁혀갑니다">
+  <div>
+    <h1 class="main-title">고객을 상상하지 말고, 근거로 좁혀갑니다</h1>
+
+    <!-- 오늘의 3가지 원칙 -->
+    <div class="principles-row">
+      <div class="principle-card">
+        <span>원칙 1</span>
+        AI는 고객을 만드는 도구가 아니라 분석하는 도구다.
+      </div>
+      <div class="principle-card">
+        <span>원칙 2</span>
+        AI 결과는 근거 있음·추론·검증 필요로 구분한다.
+      </div>
+      <div class="principle-card">
+        <span>원칙 3</span>
+        외부 행동 전에는 사람이 최종 승인한다.
+      </div>
+    </div>
+
+    <!-- 확인 퀴즈 2문항 -->
+    <div class="quiz-grid">
+      <!-- 문항 1 -->
+      <div class="quiz-box">
+        <div class="quiz-box-title">확인 퀴즈 1</div>
+        <div class="quiz-q-text">고객 자료가 없는 상태에서 가장 적절한 행동은?</div>
+        <div class="quiz-opt-list">
+          <button onclick="solveQ1('A')">A. AI에게 완성형 페르소나 10개 요청</button>
+          <button onclick="solveQ1('B')">B. 나이/성별 먼저 정하고 광고문구 작성</button>
+          <button onclick="solveQ1('C')">C. 경쟁 리뷰/공개질문 수집 및 가설 표시</button>
+          <button onclick="solveQ1('D')">D. 콘텐츠 게시 후 반응 없으면 변경</button>
+        </div>
+        <div id="q1-exp" class="quiz-ans-exp">
+          <strong>정답: C</strong> — 대체 자료 사용 시 실제 고객 데이터가 아니라는 점을 명확히 표시해야 합니다.
+        </div>
+      </div>
+
+      <!-- 문항 2 -->
+      <div class="quiz-box">
+        <div class="quiz-box-title">확인 퀴즈 2</div>
+        <div class="quiz-q-text">다음 중 '검증 필요'로 표시해야 하는 것은?</div>
+        <div class="quiz-opt-list">
+          <button onclick="solveQ2('A')">A. 후기에서 "매달 4시간 걸린다" 인용</button>
+          <button onclick="solveQ2('B')">B. 오류 반복 후기에서 품질불안 추론</button>
+          <button onclick="solveQ2('C')">C. 자료 없이 "월 10만 원 지불할 것" 제안</button>
+          <button onclick="solveQ2('D')">D. 승인된 가격표 이용료</button>
+        </div>
+        <div id="q2-exp" class="quiz-ans-exp">
+          <strong>정답: C</strong> — 지불의사 및 가격 수용성은 실제 인터뷰·실험·계약으로 검증해야 합니다.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 준비물 및 개인정보 체크 -->
+  <div class="prep-grid">
+    <div>
+      <div class="prep-title">다음 Lesson 준비물</div>
+      <div class="prep-list">
+        • 인터뷰 5건 이상 / 리뷰 / 상담메모<br>
+        • (없을 시) 경쟁 상품 리뷰 20건<br>
+        • 표시: 실제 / 대체 / 모의 / 가설
+      </div>
+    </div>
+    <div>
+      <div class="prep-title">개인정보 체크</div>
+      <div class="prep-list">
+        <label><input type="checkbox"> 실명, 전화번호, 이메일 삭제</label>
+        <label><input type="checkbox"> 주문/계약번호, 내부정보 삭제</label>
+        <label><input type="checkbox"> 익명화 데이터 세트 준비 완료</label>
+      </div>
+    </div>
+    <div>
+      <div class="prep-title">다음 Lesson 산출물 예고</div>
+      <div class="prep-list">
+        • 고객 증거 표 & 반복 문제<br>
+        • 구매 촉발 사건 & 현재 대안<br>
+        • 세그먼트 후보 3개 도출
+      </div>
+    </div>
+  </div>
+
+<script>
+function solveQ1(ans) {
+  document.getElementById('q1-exp').style.display = 'block';
+}
+function solveQ2(ans) {
+  document.getElementById('q2-exp').style.display = 'block';
+}
+</script>
+</main>
+</body>
+</html>

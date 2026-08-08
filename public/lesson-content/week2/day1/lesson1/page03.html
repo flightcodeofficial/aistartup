@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 03 - 상상 속 고객과 증거 기반 고객</title>
+<style>
+
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary: #7C3AED;
+  --evidence: #10B981;
+  --inference: #F59E0B;
+  --verify: #F43F5E;
+  --bg-dark: #0F172A;
+  --bg-card-dark: #1E293B;
+  --text-light: #F8FAFC;
+  --text-muted-dark: #94A3B8;
+  --bg-light: #F8FAFC;
+  --bg-card-light: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted-light: #64748B;
+  --border-light: #E2E8F0;
+  --border-dark: #334155;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+main#lesson-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main#lesson-slide {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  justify-content: space-between;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+/* 50:50 Comparison Cards */
+.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.persona-card {
+  background: var(--bg-card-light);
+  border: 1px solid var(--border-light);
+  border-radius: 0.85rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.persona-card.imaginary {
+  border-top: 4px solid #94A3B8;
+  background: #F8FAFC;
+}
+
+.persona-card.evidence-based {
+  border-top: 4px solid var(--evidence);
+  background: #FFFFFF;
+}
+
+.card-header-tag {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.imaginary .card-header-tag { color: #64748B; }
+.evidence-based .card-header-tag { color: var(--evidence); }
+
+.persona-quote {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  line-height: 1.35;
+}
+
+.badge-group {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.badge-item {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.badge-evidence { background: #D1FAE5; color: #065F46; }
+.badge-inference { background: #FEF3C7; color: #92400E; }
+.badge-verify { background: #FFE4E6; color: #9F1239; }
+
+.item-list {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--text-dark);
+}
+
+.item-list div {
+  margin-bottom: 0.4rem;
+}
+
+.item-list strong {
+  color: var(--text-dark);
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--verify);
+  margin-top: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Bottom Conclusion & Criteria */
+.bottom-conclusion {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.conclusion-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.conclusion-text span {
+  color: #A5B4FC;
+}
+
+.chips-container {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.chip-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #E2E8F0;
+}
+
+/* Responsive safety net: 원본은 1280x720 고정 높이라 좁은 화면에서
+   overflow:hidden에 잘렸다. 여백/폰트를 줄이고 그리드를 1열로 접되,
+   그래도 못 들어가면 잘리지 않고 스크롤되게 한다. 문구는 바꾸지 않는다. */
+@media (max-width: 640px) {
+  html, body { overflow-y: auto; }
+  main#lesson-slide {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    padding: 1.5rem 1.25rem;
+  }
+  .main-title { font-size: 1.5rem; }
+  .comparison-container { grid-template-columns: 1fr; gap: 1rem; }
+  .chips-container { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+<main id="lesson-slide" data-week="2" data-day="1" data-lesson="1" data-page="03" aria-label="어느 쪽이 실제로 팔 수 있는 고객처럼 보이나요?">
+  <div>
+    <h1 class="main-title">어느 쪽이 실제로 팔 수 있는 고객처럼 보이나요?</h1>
+
+    <div class="comparison-container">
+      <!-- 상상 속 고객 -->
+      <div class="persona-card imaginary">
+        <div class="card-header-tag">상상 속 고객</div>
+        <div class="persona-quote">"30대 직장인, SNS를 자주 사용함"</div>
+        <div class="item-list">
+          <div>• 성실하고 새로운 기술에 관심이 많음</div>
+          <div>• 편리함을 중요하게 생각함</div>
+          <div>• 온라인 구매에 익숙함</div>
+        </div>
+        <div class="section-subtitle">문제점</div>
+        <div class="item-list" style="color: var(--text-muted-light);">
+          <div>• 제품 메시지를 만들 근거가 부족하다.</div>
+          <div>• 언제 구매할지 알 수 없다.</div>
+          <div>• 현재 무엇을 쓰는지 알 수 없다.</div>
+          <div>• 돈을 지불할 만큼 문제가 강한지 알 수 없다.</div>
+        </div>
+      </div>
+
+      <!-- 증거 기반 고객 -->
+      <div class="persona-card evidence-based">
+        <div class="card-header-tag">증거 기반 고객</div>
+        <div class="persona-quote">"월말마다 수작업 보고서 작성에 4시간 이상을 쓰고, 팀장 보고 전 오류를 걱정하는 5~20인 기업 운영담당자"</div>
+        <div class="badge-group">
+          <span class="badge-item badge-evidence">근거 있음</span>
+          <span class="badge-item badge-inference">합리적 추론</span>
+          <span class="badge-item badge-verify">검증 필요</span>
+        </div>
+        <div class="item-list">
+          <div><strong>촉발 사건:</strong> 월말 보고, 인력 변경, 오류 발생 <span class="badge-item badge-evidence">근거 있음</span></div>
+          <div><strong>현재 대안:</strong> 엑셀, 복사·붙여넣기, 수작업 검수 <span class="badge-item badge-evidence">근거 있음</span></div>
+          <div><strong>기대 결과:</strong> 작성 시간 단축, 오류 감소, 보고 형식 통일 <span class="badge-item badge-inference">추론</span></div>
+          <div><strong>구매 장벽:</strong> 기존 방식 변경 부담, 데이터 보안 우려 <span class="badge-item badge-verify">검증 필요</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-conclusion">
+    <div class="conclusion-text">
+      좋은 고객 정의에는 나이보다 <span>문제·상황·현재 대안·촉발 사건·반대 이유</span>가 들어갑니다.
+    </div>
+    <div class="chips-container">
+      <div class="chip-item">1. 반복 문제</div>
+      <div class="chip-item">2. 촉발 사건</div>
+      <div class="chip-item">3. 현재 대안</div>
+      <div class="chip-item">4. 기대 결과</div>
+      <div class="chip-item">5. 반대 이유</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

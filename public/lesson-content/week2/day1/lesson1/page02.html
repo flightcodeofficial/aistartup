@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 02 - AI 활용 자체보다 고객 이해가 차이를 만든다</title>
+<style>
+
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary: #7C3AED;
+  --evidence: #10B981;
+  --inference: #F59E0B;
+  --verify: #F43F5E;
+  --bg-dark: #0F172A;
+  --bg-card-dark: #1E293B;
+  --text-light: #F8FAFC;
+  --text-muted-dark: #94A3B8;
+  --bg-light: #F8FAFC;
+  --bg-card-light: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted-light: #64748B;
+  --border-light: #E2E8F0;
+  --border-dark: #334155;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+main#lesson-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main#lesson-slide {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  justify-content: space-between;
+}
+
+.page-header {
+  margin-bottom: 1rem;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.key-statement {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(79, 70, 229, 0.08);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+/* 50:50 Process Comparison */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.comp-card {
+  background: var(--bg-card-light);
+  border: 1px solid var(--border-light);
+  border-radius: 0.85rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.comp-card.output {
+  border-top: 4px solid var(--verify);
+}
+
+.comp-card.evidence {
+  border-top: 4px solid var(--evidence);
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comp-card.output .card-title { color: var(--verify); }
+.comp-card.evidence .card-title { color: var(--evidence); }
+
+.process-flow {
+  background: var(--bg-light);
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--border-light);
+  letter-spacing: -0.01em;
+}
+
+.bullet-list {
+  list-style: none;
+  font-size: 0.95rem;
+  color: var(--text-muted-light);
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0.3rem;
+  font-weight: bold;
+}
+
+.comp-card.output .bullet-list li::before { color: var(--verify); }
+.comp-card.evidence .bullet-list li::before { color: var(--evidence); }
+
+/* Bottom Questions */
+.bottom-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.q-card {
+  background: #F1F5F9;
+  border-left: 3px solid var(--primary);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.q-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.q-desc {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.source-label {
+  font-size: 0.75rem;
+  color: var(--text-muted-light);
+  margin-top: 0.4rem;
+  text-align: right;
+}
+
+/* Responsive safety net: 원본은 1280x720 고정 높이라 좁은 화면에서
+   overflow:hidden에 잘렸다. 여백/폰트를 줄이고 그리드를 1열로 접되,
+   그래도 못 들어가면 잘리지 않고 스크롤되게 한다. 문구는 바꾸지 않는다. */
+@media (max-width: 640px) {
+  html, body { overflow-y: auto; }
+  main#lesson-slide {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    padding: 1.5rem 1.25rem;
+  }
+  .main-title { font-size: 1.5rem; }
+  .key-statement { font-size: 0.95rem; }
+  .comparison-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .bottom-cards { grid-template-columns: 1fr; gap: 0.5rem; }
+}
+</style>
+</head>
+<body>
+<main id="lesson-slide" data-week="2" data-day="1" data-lesson="1" data-page="02" aria-label="AI는 속도를 높입니다. 방향은 고객 증거가 정합니다.">
+  <div>
+    <div class="page-header">
+      <h1 class="main-title">AI는 속도를 높입니다. 방향은 고객 증거가 정합니다.</h1>
+      <div class="key-statement">"AI는 방향을 정하지 않습니다. 주어진 방향을 빠르게 확대합니다."</div>
+    </div>
+
+    <div class="comparison-grid">
+      <!-- 출력 중심 접근 -->
+      <div class="comp-card output">
+        <div>
+          <div class="card-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            출력 중심 접근
+          </div>
+          <div class="process-flow">타깃 가정 ➔ 프롬프트 ➔ 콘텐츠 대량 생성 ➔ 반응 없음 ➔ 더 많이 생성</div>
+          <ul class="bullet-list">
+            <li>누구에게 말하는지 불명확하다.</li>
+            <li>어떤 상황에서 필요한지 모른다.</li>
+            <li>고객이 이미 쓰는 대안을 모른다.</li>
+            <li>반응이 없어도 원인을 설명하기 어렵다.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 증거 중심 접근 -->
+      <div class="comp-card evidence">
+        <div>
+          <div class="card-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            증거 중심 접근
+          </div>
+          <div class="process-flow">고객 발화·행동 ➔ 문제 패턴 ➔ 우선 세그먼트 ➔ 메시지 ➔ 검증</div>
+          <ul class="bullet-list">
+            <li>실제 고객 자료에서 반복 문제를 찾는다.</li>
+            <li>구매를 촉발하는 상황을 확인한다.</li>
+            <li>현재 대안과 반대 이유를 함께 본다.</li>
+            <li>결과를 기록하고 가설을 수정한다.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="bottom-cards">
+      <div class="q-card">
+        <div class="q-title">누구에게?</div>
+        <div class="q-desc">비슷한 문제·상황·행동을 가진 고객은 누구인가?</div>
+      </div>
+      <div class="q-card">
+        <div class="q-title">무엇을?</div>
+        <div class="q-desc">고객이 반복해서 해결하려는 문제는 무엇인가?</div>
+      </div>
+      <div class="q-card">
+        <div class="q-title">왜 지금?</div>
+        <div class="q-desc">행동을 촉발하는 사건은 무엇인가?</div>
+      </div>
+    </div>
+    <div class="source-label">내부 근거: 2주차 딥리서치(2026-08-05) · 2주차 도구 확정표(2026-08-05)</div>
+  </div>
+</main>
+</body>
+</html>

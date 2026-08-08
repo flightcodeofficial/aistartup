@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>페르소나 구조화와 고객 여정 지도</title>
+  <style>
+    :root {
+      --bg: #F8FAFC;
+      --card: #FFFFFF;
+      --text: #0F172A;
+      --sub: #64748B;
+      --primary: #4F46E5;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    main { width: 100vw; height: 100vh; max-width: 1920px; max-height: 1080px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    h1 { font-size: 2.25rem; font-weight: 800; }
+    .journey { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.5rem 0; flex: 1; }
+    .step { background: var(--card); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .step-title { font-weight: 700; color: var(--primary); font-size: 0.9rem; border-bottom: 2px solid var(--primary); padding-bottom: 0.25rem; }
+    footer { display: flex; justify-content: space-between; color: var(--sub); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (max-width: 640px) {
+      body { overflow-y: auto; height: auto; }
+      main { height: auto; padding: 1rem; }
+      .journey { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main id="lesson-slide" data-week="2" data-day="1" data-lesson="2" data-page="13" aria-label="페르소나 구조화와 고객 여정 지도">
+    <header>
+      <h1>페르소나 구조화와 고객 여정 지도</h1>
+      <p style="color: var(--sub);">선정된 ECP가 문제를 인지하고 해결책을 찾아 구매에 이르는 4단계 여정</p>
+    </header>
+
+    <section class="journey">
+      <div class="step">
+        <div class="step-title">1. 인지 (Awareness)</div>
+        <p style="font-size: 0.85rem; color: var(--sub);">월말 수작업 오류로 팀장 질책 발생. 반복 업무 개선 필요성 절감</p>
+      </div>
+      <div class="step">
+        <div class="step-title">2. 탐색 (Consideration)</div>
+        <p style="font-size: 0.85rem; color: var(--sub);">’엑셀 보고서 자동화’, ‘노코드 AI 도구’ 검색 및 사례 비교</p>
+      </div>
+      <div class="step">
+        <div class="step-title">3. 검증 (Evaluation)</div>
+        <p style="font-size: 0.85rem; color: var(--sub);">무료 템플릿 사용, 데이터 보안 여부 및 커스텀 용이성 확인</p>
+      </div>
+      <div class="step">
+        <div class="step-title">4. 구매/도입 (Decision)</div>
+        <p style="font-size: 0.85rem; color: var(--sub);">팀 내부 공유 후 월 구독 결제 진행 및 양식 적용</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>Lesson 2 · 고객 증거 분석</span>
+      <span>Page 13 / 14</span>
+      <span>종합 점검 →</span>
+    </footer>
+  </main>
+</body>
+</html>

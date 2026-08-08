@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객 증거 분석: 텍스트에서 신호 찾기</title>
+  <style>
+    :root {
+      --bg-dark: #0F172A;
+      --bg-card: #1E293B;
+      --primary: #4F46E5;
+      --secondary: #7C3AED;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --evidence: #10B981;
+      --inference: #F59E0B;
+      --verify: #F43F5E;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--bg-dark); color: var(--text-main); height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    main { width: 100vw; height: 100vh; max-width: 1920px; max-height: 1080px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    .badge { display: inline-flex; align-items: center; padding: 0.35rem 0.75rem; background: rgba(79, 70, 229, 0.2); border: 1px solid var(--primary); color: #818CF8; font-size: 0.875rem; font-weight: 600; border-radius: 9999px; width: fit-content; }
+    .header { margin-top: 1rem; }
+    h1 { font-size: 2.75rem; font-weight: 800; line-height: 1.2; margin-top: 0.5rem; }
+    .subtitle { font-size: 1.25rem; color: var(--text-muted); margin-top: 0.5rem; }
+    .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; flex: 1; }
+    .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    .highlight { font-size: 1.125rem; font-weight: 600; color: #A5B4FC; border-left: 4px solid var(--primary); padding-left: 1rem; margin-top: 1rem; }
+    footer { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (max-width: 640px) {
+      body { overflow-y: auto; height: auto; }
+      main { height: auto; max-height: none; padding: 1rem; }
+      .content-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <main id="lesson-slide" data-week="2" data-day="1" data-lesson="2" data-page="08" aria-label="고객 증거 분석: 텍스트에서 신호 찾기">
+    <header class="header">
+      <div class="badge">WEEK 2 · DAY 1 · LESSON 2</div>
+      <h1>고객 증거 분석: 텍스트에서 신호 찾기</h1>
+      <p class="subtitle">수집된 원문 비구조화 데이터에서 실질적 고객 맥락과 통찰을 추출하는 첫 단계입니다.</p>
+    </header>
+
+    <section class="content-grid">
+      <article class="card">
+        <h3>원문 데이터 (Unstructured Data)</h3>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">고객 리뷰, 인터뷰 녹취록, 문의 내역 등 방대한 정성적 파편</p>
+        <div class="highlight">
+          "원문 데이터는 노이즈가 많지만, 반복 패턴을 파악하면 가장 솔직한 고객 고충(Pain Point)을 포착할 수 있습니다."
+        </div>
+      </article>
+      <article class="card">
+        <h3>핵심 추출 신호 (Key Signals)</h3>
+        <ul style="list-style: none; margin-top: 0.5rem; line-height: 1.8; color: var(--text-main);">
+          <li>🔍 <strong>반복되는 불편:</strong> 수작업으로 소비되는 시간 및 특정 오류 상황</li>
+          <li>⚡ <strong>구매 촉발 사건:</strong> 기존 솔루션 한계 체감 및 조직 변화</li>
+          <li>🛡️ <strong>구매 반대 이유:</strong> 보안 우려, 도입 비용, 학습 곡선 부담</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer>
+      <span>Lesson 2 · 고객 증거 분석</span>
+      <span>Page 08 / 14</span>
+      <span>5가지 태그 체계 →</span>
+    </footer>
+  </main>
+</body>
+</html>

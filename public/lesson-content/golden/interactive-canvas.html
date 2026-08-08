@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>가치제안 캔버스 인터랙션</title>
+<style>
+  :root{--indigo:#4F46E5;--emerald:#10B981;--slate:#0F172A;--muted:#94A3B8;--border:#334155}
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+  body{width:100%;height:100%;background:radial-gradient(circle at 20% 10%,#1E1B4B,#0F172A 60%);color:#F8FAFC;overflow:hidden}
+  main{width:100vw;height:100vh;padding:2.5rem 3rem;display:flex;flex-direction:column;gap:1.25rem}
+  h1{font-size:2rem;font-weight:800;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:1rem}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;flex:1}
+  .panel{background:rgba(30,41,59,.72);border:1px solid var(--border);border-radius:1rem;padding:1.25rem;display:flex;flex-direction:column;gap:.6rem}
+  .panel h2{font-size:1rem;font-weight:700}
+  .customer h2{color:#A5B4FC}.product h2{color:#6EE7B7}
+  .chip{display:flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+    border-radius:.6rem;padding:.55rem .7rem;font-size:.85rem;cursor:pointer;transition:.18s;user-select:none}
+  .chip:hover{background:rgba(79,70,229,.22);border-color:var(--indigo)}
+  .chip.on{background:rgba(16,185,129,.2);border-color:var(--emerald)}
+  .chip .dot{width:.5rem;height:.5rem;border-radius:99px;background:var(--muted);flex:0 0 auto}
+  .chip.on .dot{background:var(--emerald)}
+  .bar{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.05);
+    border:1px solid var(--border);border-radius:.75rem;padding:.7rem 1rem;font-size:.9rem}
+  .count{font-weight:800;color:#A5B4FC}
+  .hint{font-size:.75rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <h1>가치제안 캔버스 — 짝 맞추기</h1>
+    <p class="sub">고객의 고충을 클릭하면, 그것을 해결하는 우리 기능이 함께 켜집니다.</p>
+  </div>
+
+  <div class="grid">
+    <section class="panel customer">
+      <h2>고객의 고충 (Pains)</h2>
+      <div class="chip" data-pair="1"><span class="dot"></span>월말 보고서에 4시간 이상 쓴다</div>
+      <div class="chip" data-pair="2"><span class="dot"></span>수식 오류로 재작업이 반복된다</div>
+      <div class="chip" data-pair="3"><span class="dot"></span>보고 형식이 담당자마다 다르다</div>
+    </section>
+
+    <section class="panel product">
+      <h2>우리 해결책 (Pain Relievers)</h2>
+      <div class="chip" data-pair="1"><span class="dot"></span>데이터 자동 취합 → 10분 내 초안</div>
+      <div class="chip" data-pair="2"><span class="dot"></span>규칙 검증으로 오류 사전 차단</div>
+      <div class="chip" data-pair="3"><span class="dot"></span>표준 템플릿 자동 적용</div>
+    </section>
+  </div>
+
+  <div class="bar">
+    <span>연결한 짝 <span class="count" id="count">0</span> / 3</span>
+    <span class="hint" id="hint">고충을 하나 클릭해보세요</span>
+  </div>
+</main>
+
+<script>
+  var chips = document.querySelectorAll('.chip');
+  var done = {};
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var pair = chip.getAttribute('data-pair');
+      var isOn = chip.classList.contains('on');
+      document.querySelectorAll('.chip[data-pair="' + pair + '"]').forEach(function (el) {
+        el.classList.toggle('on', !isOn);
+      });
+      if (isOn) { delete done[pair]; } else { done[pair] = true; }
+      var n = Object.keys(done).length;
+      document.getElementById('count').textContent = n;
+      document.getElementById('hint').textContent =
+        n === 3 ? '완성! 이 짝이 곧 가치제안의 뼈대입니다.' : '고충과 해결책이 1:1로 맞아야 합니다';
+    });
+  });
+</script>
+</body>
+</html>

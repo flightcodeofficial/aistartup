@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 05 - 근거 있음, 추론, 검증 필요</title>
+<style>
+
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary: #7C3AED;
+  --evidence: #10B981;
+  --inference: #F59E0B;
+  --verify: #F43F5E;
+  --bg-dark: #0F172A;
+  --bg-card-dark: #1E293B;
+  --text-light: #F8FAFC;
+  --text-muted-dark: #94A3B8;
+  --bg-light: #F8FAFC;
+  --bg-card-light: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted-light: #64748B;
+  --border-light: #E2E8F0;
+  --border-dark: #334155;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+main#lesson-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main#lesson-slide {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  justify-content: space-between;
+}
+
+.main-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+/* Three State Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.state-card {
+  background: var(--bg-card-light);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.state-card.evidence { border-top: 4px solid var(--evidence); }
+.state-card.inference { border-top: 4px solid var(--inference); }
+.state-card.verify { border-top: 4px solid var(--verify); }
+
+.card-label {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.evidence .card-label { color: var(--evidence); }
+.inference .card-label { color: var(--inference); }
+.verify .card-label { color: var(--verify); }
+
+.card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted-light);
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.example-box {
+  background: #F8FAFC;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--text-dark);
+  border: 1px solid var(--border-light);
+}
+
+.example-box strong { font-weight: 700; }
+
+/* Quiz Section */
+.quiz-container {
+  background: var(--bg-card-dark);
+  color: var(--text-light);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+}
+
+.quiz-header {
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  color: #A5B4FC;
+}
+
+.quiz-question {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.quiz-options {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.quiz-opt-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quiz-opt-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.quiz-opt-btn:focus {
+  outline: 2px solid var(--primary);
+}
+
+.quiz-explanation {
+  display: none;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid var(--evidence);
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: #E2E8F0;
+  margin-top: 0.5rem;
+}
+
+/* Privacy Warning Badge */
+.privacy-badge {
+  font-size: 0.75rem;
+  color: var(--verify);
+  font-weight: 700;
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Responsive safety net: 원본은 1280x720 고정 높이라 좁은 화면에서
+   overflow:hidden에 잘렸다. 여백/폰트를 줄이고 그리드를 1열로 접되,
+   그래도 못 들어가면 잘리지 않고 스크롤되게 한다. 문구는 바꾸지 않는다. */
+@media (max-width: 640px) {
+  html, body { overflow-y: auto; }
+  main#lesson-slide {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    padding: 1.5rem 1.25rem;
+  }
+  .main-title { font-size: 1.4rem; }
+  .cards-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+  .quiz-options { flex-direction: column; gap: 0.5rem; }
+  .quiz-opt-btn { width: 100%; text-align: left; }
+}
+</style>
+</head>
+<body>
+<main id="lesson-slide" data-week="2" data-day="1" data-lesson="1" data-page="05" aria-label="그럴듯함과 사실은 다릅니다">
+  <div>
+    <h1 class="main-title">그럴듯함과 사실은 다릅니다</h1>
+
+    <div class="cards-grid">
+      <!-- 1. 근거 있음 -->
+      <div class="state-card evidence">
+        <div class="card-label">① 근거 있음</div>
+        <div class="card-desc">고객 원문이나 승인된 자료에서 직접 확인되는 내용</div>
+        <div class="example-box">
+          <strong>예시:</strong> "월말 보고서 만드는데 4시간 걸려요" (후기 03 직접 인용)
+        </div>
+      </div>
+
+      <!-- 2. 합리적 추론 -->
+      <div class="state-card inference">
+        <div class="card-label">② 합리적 추론</div>
+        <div class="card-desc">여러 원문을 종합하면 가능성이 있지만 직접 확인되지는 않은 내용</div>
+        <div class="example-box">
+          <strong>예시:</strong> 오류 반복 원문 ➔ 팀장 보고 전 품질 불안이 클 수 있음
+        </div>
+      </div>
+
+      <!-- 3. 검증 필요 -->
+      <div class="state-card verify">
+        <div class="card-label">③ 검증 필요</div>
+        <div class="card-desc">AI가 제안했지만 원문이나 승인 자료에서 확인되지 않는 내용</div>
+        <div class="example-box">
+          <strong>예시:</strong> "월 10만 원 지불할 것이다", "30대 여성일 가능성 높다"
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <!-- 짧은 확인 문제 -->
+    <div class="quiz-container">
+      <div class="quiz-header">확인 퀴즈</div>
+      <div class="quiz-question">다음 문장을 분류하세요: "이 고객은 복잡한 설정을 싫어할 것이다."</div>
+      <div class="quiz-options">
+        <button class="quiz-opt-btn" onclick="checkQuiz(this, 'A')">A. 근거 있음</button>
+        <button class="quiz-opt-btn" onclick="checkQuiz(this, 'B')">B. 합리적 추론</button>
+        <button class="quiz-opt-btn" onclick="checkQuiz(this, 'C')">C. 검증 필요</button>
+      </div>
+      <div id="quiz-explain" class="quiz-explanation">
+        <strong>권장 답: C (검증 필요)</strong><br>
+        고객 원문에 해당 표현이 없다면 <strong>'검증 필요'</strong>입니다. (단, 설정 실패·이탈 행동이 반복 관찰되었다면 '합리적 추론' 가능)
+      </div>
+    </div>
+
+    <div class="privacy-badge">
+      🔒 개인정보 원칙: 실습 자료 작성 시 이름, 이메일, 전화번호, 주문번호 등 개인정보는 반드시 제거/가명 처리합니다.
+    </div>
+  </div>
+
+<script>
+function checkQuiz(btn, choice) {
+  var exp = document.getElementById('quiz-explain');
+  exp.style.display = 'block';
+  var btns = document.querySelectorAll('.quiz-opt-btn');
+  btns.forEach(b => b.style.opacity = '0.5');
+  btn.style.opacity = '1';
+  btn.style.borderColor = 'var(--evidence)';
+}
+</script>
+</main>
+</body>
+</html>

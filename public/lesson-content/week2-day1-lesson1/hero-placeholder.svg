@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" width="1680" height="720" role="img" aria-label="2주차 흐름: 고객 증거에서 FAQ·응대까지">
+  <defs>
+    <linearGradient id="w2bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="60%" stop-color="#1F2A4D"/>
+    </linearGradient>
+    <linearGradient id="w2accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1680" height="720" fill="url(#w2bg)"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="90" y="132" fill="#A5B4FC" font-size="28" font-weight="700" letter-spacing="4">WEEK 2 · DAY 1 · LESSON 1</text>
+    <text x="90" y="216" fill="#FFFFFF" font-size="64" font-weight="800">이번 주에 완성할 흐름</text>
+    <text x="90" y="266" fill="#94A3B8" font-size="24">오늘은 맨 앞 칸, 고객 분석을 다룹니다.</text>
+
+    <g transform="translate(90,330)">
+      <rect width="250" height="130" rx="20" fill="url(#w2accent)"/>
+      <text x="26" y="56" fill="#FFFFFF" font-size="25" font-weight="700">1. 고객 증거</text>
+      <text x="26" y="94" fill="#E0E7FF" font-size="19">오늘 다루는 단계</text>
+    </g>
+    <text x="360" y="405" fill="#4F46E5" font-size="36">→</text>
+    <g transform="translate(412,330)">
+      <rect width="220" height="130" rx="20" fill="rgba(255,255,255,0.06)" stroke="#334155" stroke-width="2"/>
+      <text x="24" y="56" fill="#C7D2FE" font-size="23" font-weight="700">2. 세그먼트</text>
+      <text x="24" y="94" fill="#94A3B8" font-size="18">문제 기준 분류</text>
+    </g>
+    <text x="652" y="405" fill="#4F46E5" font-size="36">→</text>
+    <g transform="translate(704,330)">
+      <rect width="220" height="130" rx="20" fill="rgba(255,255,255,0.06)" stroke="#334155" stroke-width="2"/>
+      <text x="24" y="56" fill="#C7D2FE" font-size="23" font-weight="700">3. 가치제안</text>
+      <text x="24" y="94" fill="#94A3B8" font-size="18">한 문장으로</text>
+    </g>
+    <text x="944" y="405" fill="#4F46E5" font-size="36">→</text>
+    <g transform="translate(996,330)">
+      <rect width="200" height="130" rx="20" fill="rgba(255,255,255,0.06)" stroke="#334155" stroke-width="2"/>
+      <text x="24" y="56" fill="#C7D2FE" font-size="23" font-weight="700">4. 콘텐츠</text>
+    </g>
+    <text x="1216" y="405" fill="#4F46E5" font-size="36">→</text>
+    <g transform="translate(1268,330)">
+      <rect width="200" height="130" rx="20" fill="rgba(255,255,255,0.06)" stroke="#334155" stroke-width="2"/>
+      <text x="24" y="56" fill="#C7D2FE" font-size="23" font-weight="700">5. 랜딩</text>
+    </g>
+    <text x="1488" y="405" fill="#4F46E5" font-size="36">→</text>
+    <g transform="translate(1520,330)">
+      <rect width="80" height="130" rx="20" fill="rgba(255,255,255,0.06)" stroke="#334155" stroke-width="2"/>
+      <text x="20" y="60" fill="#C7D2FE" font-size="21" font-weight="700">6·7</text>
+      <text x="14" y="94" fill="#94A3B8" font-size="15">문의·FAQ</text>
+    </g>
+
+    <g transform="translate(90,560)">
+      <rect width="1500" height="90" rx="18" fill="rgba(255,255,255,0.04)" stroke="#475569" stroke-width="2" stroke-dasharray="10 8"/>
+      <text x="28" y="38" fill="#FBBF24" font-size="20" font-weight="700">히어로 이미지 준비 중 (임시 화면)</text>
+      <text x="28" y="70" fill="#94A3B8" font-size="18">촬영/제작 가이드: 창업자 또는 작은 팀이 고객 인터뷰 메모·후기·대시보드·포스트잇을 분석하는 실제 업무 장면. AI 로봇·뇌·마법봉 이미지 금지.</text>
+    </g>
+  </g>
+</svg>

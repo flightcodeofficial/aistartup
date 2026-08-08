@@ -1,0 +1,45 @@
+{
+  "course": "생성형 AI 기반 창업 실무 및 자동화 과정",
+  "week": 2,
+  "day": 1,
+  "lesson": 1,
+  "title": "왜 고객 분석이 먼저인가",
+  "pageCount": 7,
+  "pages": [
+    {
+      "page": 1,
+      "file": "page01.html",
+      "title": "고객을 모르면 자동화는 위험하다"
+    },
+    {
+      "page": 2,
+      "file": "page02.html",
+      "title": "AI는 속도를 높입니다. 방향은 고객 증거가 정합니다."
+    },
+    {
+      "page": 3,
+      "file": "page03.html",
+      "title": "어느 쪽이 실제로 팔 수 있는 고객처럼 보이나요?"
+    },
+    {
+      "page": 4,
+      "file": "page04.html",
+      "title": "AI에게 상상하라고 하지 말고, 분석하라고 하세요"
+    },
+    {
+      "page": 5,
+      "file": "page05.html",
+      "title": "그럴듯함과 사실은 다릅니다"
+    },
+    {
+      "page": 6,
+      "file": "page06.html",
+      "title": "고객을 나누고, 선택하고, 선택 이유를 설명합니다"
+    },
+    {
+      "page": 7,
+      "file": "page07.html",
+      "title": "고객을 상상하지 말고, 근거로 좁혀갑니다"
+    }
+  ]
+}

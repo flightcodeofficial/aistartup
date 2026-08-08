@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>증거 기반 세그먼트 도출 및 후보군 정의</title>
+  <style>
+    :root {
+      --bg: #F8FAFC;
+      --card: #FFFFFF;
+      --text: #0F172A;
+      --sub: #64748B;
+      --primary: #4F46E5;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    main { width: 100vw; height: 100vh; max-width: 1920px; max-height: 1080px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    h1 { font-size: 2.25rem; font-weight: 800; }
+    .seg-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; flex: 1; }
+    .seg-card { background: var(--card); border: 2px solid var(--border); border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    .seg-card.active { border-color: var(--primary); box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15); }
+    .title { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
+    footer { display: flex; justify-content: space-between; color: var(--sub); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (max-width: 640px) {
+      body { overflow-y: auto; height: auto; }
+      main { height: auto; padding: 1rem; }
+      .seg-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main id="lesson-slide" data-week="2" data-day="1" data-lesson="2" data-page="11" aria-label="증거 기반 세그먼트 도출 및 후보군 정의">
+    <header>
+      <h1>증거 기반 세그먼트 도출 및 후보군 정의</h1>
+      <p style="color: var(--sub);">증거 태그 패턴에 따라 공통 상황을 공유하는 3가지 세그먼트 도출</p>
+    </header>
+
+    <section class="seg-cards">
+      <div class="seg-card active">
+        <div>
+          <div class="title">세그먼트 A (우선검증)</div>
+          <h3 style="margin: 0.5rem 0;">소규모 기업 운영담당자</h3>
+          <p style="font-size: 0.9rem; color: var(--sub);">반복적 월말 보고서 작업 및 수식 오류로 인한 심리적 압박을 크게 겪는 집단</p>
+        </div>
+        <div style="font-size: 0.8rem; background: #EEF2FF; color: var(--primary); padding: 0.5rem; border-radius: 0.5rem; font-weight: 600;">절박도: 높음 | 접근성: 용이</div>
+      </div>
+
+      <div class="seg-card">
+        <div>
+          <div class="title">세그먼트 B</div>
+          <h3 style="margin: 0.5rem 0;">초기 스타트업 대표</h3>
+          <p style="font-size: 0.9rem; color: var(--sub);">지표 수집 자동화를 원하나 전담 데이터 인력이 없는 환경</p>
+        </div>
+        <div style="font-size: 0.8rem; background: #F1F5F9; color: var(--sub); padding: 0.5rem; border-radius: 0.5rem;">절박도: 보통 | 접근성: 보통</div>
+      </div>
+
+      <div class="seg-card">
+        <div>
+          <div class="title">세그먼트 C</div>
+          <h3 style="margin: 0.5rem 0;">프리랜서 프로젝트 매니저</h3>
+          <p style="font-size: 0.9rem; color: var(--sub);">다수 클라이언트 보고 양식을 개별 관리하는 부담 보유</p>
+        </div>
+        <div style="font-size: 0.8rem; background: #F1F5F9; color: var(--sub); padding: 0.5rem; border-radius: 0.5rem;">절박도: 보통 | 접근성: 낮음</div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Lesson 2 · 고객 증거 분석</span>
+      <span>Page 11 / 14</span>
+      <span>ECP vs ICP →</span>
+    </footer>
+  </main>
+</body>
+</html>

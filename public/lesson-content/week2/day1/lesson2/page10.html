@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 기반 고객 증거 추출 실습</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card: #1E293B;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --accent: #4F46E5;
+      --border: #334155;
+      --emerald: #10B981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    main { width: 100vw; height: 100vh; max-width: 1920px; max-height: 1080px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; flex: 1; margin: 1rem 0; }
+    .box { background: var(--card); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; display: flex; flex-direction: column; }
+    .box-head { font-weight: 700; color: #818CF8; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    code { background: #090D16; padding: 0.75rem; border-radius: 0.5rem; color: #A5B4FC; font-size: 0.875rem; white-space: pre-wrap; font-family: monospace; flex: 1; }
+    .tag-badge { background: rgba(16, 185, 129, 0.2); color: var(--emerald); border: 1px solid var(--emerald); padding: 0.2rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; }
+    footer { display: flex; justify-content: space-between; color: var(--muted); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (max-width: 640px) {
+      body { overflow-y: auto; height: auto; }
+      main { height: auto; padding: 1rem; }
+      .layout { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main id="lesson-slide" data-week="2" data-day="1" data-lesson="2" data-page="10" aria-label="AI 기반 고객 증거 추출 실습">
+    <header>
+      <h1>AI 기반 고객 증거 추출 실습</h1>
+      <p style="color: var(--muted);">수집된 인터뷰 및 리뷰 텍스트를 구조화 프롬프트로 처리하는 방법</p>
+    </header>
+
+    <section class="layout">
+      <div class="box">
+        <div class="box-head">입력 프롬프트 템플릿</div>
+        <code>"아래 제공된 고객 리뷰 15건만을 근거로 다음 5가지 태그 항목을 추출하고 원문 인용 번호를 명시해줘.
+
+1. 반복 문제
+2. 촉발 사건
+3. 현재 대안
+4. 기대 결과
+5. 반대 이유
+
+자료에 없는 내용은 '검증 필요'로 명시할 것."</code>
+      </div>
+
+      <div class="box">
+        <div class="box-head">AI 실행 추출 결과 예시</div>
+        <div style="font-size: 0.9rem; line-height: 1.6; display: flex; flex-direction: column; gap: 0.5rem;">
+          <div><span class="tag-badge">반복 문제</span> 월말 보고서 작성 시 데이터 분산으로 4시간 이상 소요 <small style="color:var(--muted);">(후기 #03)</small></div>
+          <div><span class="tag-badge">촉발 사건</span> 팀장 보고 직전 수식 오류 발생 및 질책 <small style="color:var(--muted);">(후기 #07)</small></div>
+          <div><span class="tag-badge">현재 대안</span> 수동 엑셀 복사/붙여넣기 및 이중 검수</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Lesson 2 · 고객 증거 분석</span>
+      <span>Page 10 / 14</span>
+      <span>세그먼트 도출 →</span>
+    </footer>
+  </main>
+</body>
+</html>

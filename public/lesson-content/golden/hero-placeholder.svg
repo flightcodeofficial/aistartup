@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" width="1680" height="720" role="img" aria-label="증거에서 가치제안까지 흐름">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1680" height="720" fill="url(#bg)"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="90" y="150" fill="#A5B4FC" font-size="30" font-weight="700" letter-spacing="4">WEEK 2 · DAY 1</text>
+    <text x="90" y="240" fill="#FFFFFF" font-size="72" font-weight="800">고객 정의 흐름</text>
+    <g transform="translate(90,360)">
+      <rect width="330" height="150" rx="20" fill="rgba(255,255,255,0.06)" stroke="#4F46E5" stroke-width="2"/>
+      <text x="30" y="60" fill="#C7D2FE" font-size="26" font-weight="700">1. 고객 증거</text>
+      <text x="30" y="100" fill="#94A3B8" font-size="20">인터뷰 · 리뷰 · 문의</text>
+    </g>
+    <text x="450" y="450" fill="#4F46E5" font-size="44">→</text>
+    <g transform="translate(520,360)">
+      <rect width="330" height="150" rx="20" fill="rgba(255,255,255,0.06)" stroke="#4F46E5" stroke-width="2"/>
+      <text x="30" y="60" fill="#C7D2FE" font-size="26" font-weight="700">2. 세그먼트</text>
+      <text x="30" y="100" fill="#94A3B8" font-size="20">문제 기준 분류</text>
+    </g>
+    <text x="880" y="450" fill="#4F46E5" font-size="44">→</text>
+    <g transform="translate(950,360)">
+      <rect width="330" height="150" rx="20" fill="rgba(255,255,255,0.06)" stroke="#4F46E5" stroke-width="2"/>
+      <text x="30" y="60" fill="#C7D2FE" font-size="26" font-weight="700">3. ICP · ECP</text>
+      <text x="30" y="100" fill="#94A3B8" font-size="20">지금 시도할 고객</text>
+    </g>
+    <text x="1310" y="450" fill="#4F46E5" font-size="44">→</text>
+    <g transform="translate(1380,360)">
+      <rect width="210" height="150" rx="20" fill="url(#accent)"/>
+      <text x="28" y="60" fill="#FFFFFF" font-size="26" font-weight="700">4. 가치제안</text>
+      <text x="28" y="100" fill="#E0E7FF" font-size="20">한 문장</text>
+    </g>
+  </g>
+</svg>

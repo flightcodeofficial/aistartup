@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 04 - AI는 상상 기계가 아니라 분석 도구</title>
+<style>
+
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary: #7C3AED;
+  --evidence: #10B981;
+  --inference: #F59E0B;
+  --verify: #F43F5E;
+  --bg-dark: #0F172A;
+  --bg-card-dark: #1E293B;
+  --text-light: #F8FAFC;
+  --text-muted-dark: #94A3B8;
+  --bg-light: #F8FAFC;
+  --bg-card-light: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted-light: #64748B;
+  --border-light: #E2E8F0;
+  --border-dark: #334155;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+main#lesson-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main#lesson-slide {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  justify-content: space-between;
+}
+
+.main-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+/* Top Prompts Grid */
+.prompts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.prompt-card {
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.prompt-card.wrong {
+  background: #FFF1F2;
+  border: 1px solid #FECDD3;
+}
+
+.prompt-card.correct {
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+}
+
+.prompt-header {
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.wrong .prompt-header { color: var(--verify); }
+.correct .prompt-header { color: var(--evidence); }
+
+.prompt-text {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.4rem;
+  line-height: 1.35;
+}
+
+/* Middle Role Matrix */
+.matrix-section {
+  background: var(--bg-card-light);
+  border: 1px solid var(--border-light);
+  border-radius: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.matrix-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.matrix-col ul {
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.matrix-col li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+}
+
+.matrix-col.ai li::before { content: "🤖"; position: absolute; left: 0; font-size: 0.75rem; }
+.matrix-col.human li::before { content: "👤"; position: absolute; left: 0; font-size: 0.75rem; }
+
+/* Bottom Ladder */
+.ladder-section {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: 0.85rem 1.25rem;
+  border-radius: 0.75rem;
+}
+
+.ladder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.ladder-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.baseline-tag {
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.ladder-steps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.4rem;
+}
+
+.ladder-step {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #CBD5E1;
+}
+
+.ladder-step.active-baseline {
+  background: rgba(79, 70, 229, 0.3);
+  border-color: var(--primary);
+  color: #FFFFFF;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);
+}
+
+.source-text {
+  font-size: 0.72rem;
+  color: var(--text-muted-light);
+  text-align: right;
+  margin-top: 0.2rem;
+}
+
+/* Responsive safety net: 원본은 1280x720 고정 높이라 좁은 화면에서
+   overflow:hidden에 잘렸다. 여백/폰트를 줄이고 그리드를 1열로 접되,
+   그래도 못 들어가면 잘리지 않고 스크롤되게 한다. 문구는 바꾸지 않는다. */
+@media (max-width: 640px) {
+  html, body { overflow-y: auto; }
+  main#lesson-slide {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    padding: 1.5rem 1.25rem;
+  }
+  .main-title { font-size: 1.4rem; }
+  .prompts-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+  .matrix-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+  .ladder-steps { grid-template-columns: repeat(2, 1fr); }
+  .ladder-header { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+}
+</style>
+</head>
+<body>
+<main id="lesson-slide" data-week="2" data-day="1" data-lesson="1" data-page="04" aria-label="AI에게 상상하라고 하지 말고, 분석하라고 하세요">
+  <div>
+    <h1 class="main-title">AI에게 상상하라고 하지 말고, 분석하라고 하세요</h1>
+
+    <div class="prompts-grid">
+      <!-- 잘못된 요청 -->
+      <div class="prompt-card wrong">
+        <div class="prompt-header">❌ 잘못된 요청</div>
+        <div class="prompt-text">"우리 서비스에 가장 적합한 고객 페르소나를 만들어줘."</div>
+        <div style="font-size: 0.8rem; color: #9F1239;">
+          자료에 없는 나이·성격 생성 / 고객 발언 창작 / 검증 안 된 통계 제안 위험
+        </div>
+      </div>
+
+      <!-- 올바른 요청 -->
+      <div class="prompt-card correct">
+        <div class="prompt-header">✅ 올바른 요청</div>
+        <div class="prompt-text">"아래 고객 후기 15건만을 근거로 반복되는 문제, 구매 촉발 사건, 현재 대안, 기대 결과, 구매 반대 이유를 표로 정리해줘..."</div>
+        <div style="font-size: 0.8rem; color: #065F46;">
+          근거 원문 번호 표시 및 자료에 없는 내용은 '검증 필요'로 명확히 분류
+        </div>
+      </div>
+    </div>
+
+    <!-- 역할 분담 표 -->
+    <div class="matrix-section">
+      <div class="matrix-title">역할 분담 표</div>
+      <div class="matrix-grid">
+        <div class="matrix-col ai">
+          <div style="font-weight:700; font-size:0.85rem; color:var(--primary); margin-bottom:0.3rem;">AI가 맡기 좋은 일</div>
+          <ul>
+            <li>원문 분류와 태깅 / 반복 패턴 추출</li>
+            <li>세그먼트 후보 생성 / 질문 초안 작성</li>
+            <li>문장 대안 비교 / 결과 표준화</li>
+          </ul>
+        </div>
+        <div class="matrix-col human">
+          <div style="font-weight:700; font-size:0.85rem; color:var(--secondary); margin-bottom:0.3rem;">사람이 맡아야 하는 일</div>
+          <ul>
+            <li>어떤 고객을 우선할지 결정 / 표본 충분성 판단</li>
+            <li>실제 고객 인터뷰 수행 / 가격·약속·규정 최종 승인</li>
+            <li>외부 게시·발송 결정 / 편향·과장·오해 검수</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <!-- 자동화 위험 사다리 -->
+    <div class="ladder-section">
+      <div class="ladder-header">
+        <div class="ladder-title">자동화 위험 사다리 (낮은 위험 ➔ 높은 위험)</div>
+        <div class="baseline-tag">수업 기본선: 4단계 (사람 승인 후 실행)</div>
+      </div>
+      <div class="ladder-steps">
+        <div class="ladder-step">1. 자료 요약</div>
+        <div class="ladder-step">2. 문의 분류</div>
+        <div class="ladder-step">3. 답변·콘텐츠 초안</div>
+        <div class="ladder-step active-baseline">4. 사람 승인 후 게시·발송</div>
+        <div class="ladder-step">5. 조건부 자동 발송</div>
+        <div class="ladder-step">6. 완전 자동 답변·약속</div>
+      </div>
+    </div>
+    <div class="source-text">내부 근거: 2주차 딥리서치(2026-08-05)</div>
+  </div>
+</main>
+</body>
+</html>
