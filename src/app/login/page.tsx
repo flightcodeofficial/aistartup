@@ -33,6 +33,8 @@ function LoginForm({ onModeChange }: { onModeChange: (m: Mode) => void }) {
   }, [mode, onModeChange]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  // 가입할 때만 쓰는 확인용. 비밀번호는 화면에 안 보이니 오타를 두 번째 입력으로 잡는다.
+  const [passwordConfirm, setPasswordConfirm] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   // 이미 가입된 이메일이면 "로그인하기" 버튼을 같이 띄워 막다른 길을 만들지 않는다.
@@ -59,6 +61,14 @@ function LoginForm({ onModeChange }: { onModeChange: (m: Mode) => void }) {
         if (error) throw error;
         router.replace(next);
         router.refresh();
+        return;
+      }
+
+      // 서버에 보내기 전에 여기서 먼저 막는다. 오타 때문에 계정이 만들어지면
+      // 본인도 못 들어오고, 되돌리려면 관리자가 손대야 한다.
+      if (password !== passwordConfirm) {
+        setError("비밀번호가 서로 다릅니다. 아래 칸에 같은 비밀번호를 다시 입력해주세요.");
+        setBusy(false);
         return;
       }
 
@@ -90,6 +100,15 @@ function LoginForm({ onModeChange }: { onModeChange: (m: Mode) => void }) {
       setBusy(false);
     }
   };
+
+  // 확인 칸이 비어 있거나 아직 짧을 때는 조용히 있는다.
+  const mismatch =
+    mode === "sign-up" &&
+    passwordConfirm.length > 0 &&
+    passwordConfirm.length >= password.length &&
+    password !== passwordConfirm;
+  const matched =
+    mode === "sign-up" && passwordConfirm.length > 0 && password === passwordConfirm;
 
   if (!isSupabaseConfigured) {
     return (
@@ -137,6 +156,31 @@ function LoginForm({ onModeChange }: { onModeChange: (m: Mode) => void }) {
       </div>
 
       {mode === "sign-up" && (
+        <div>
+          <Label htmlFor="passwordConfirm">비밀번호 확인</Label>
+          <Input
+            id="passwordConfirm"
+            type="password"
+            required
+            autoComplete="new-password"
+            value={passwordConfirm}
+            onChange={(e) => setPasswordConfirm(e.target.value)}
+            aria-invalid={mismatch}
+            className="mt-1.5 h-12"
+          />
+          {/* 제출까지 기다리지 않고 입력하는 동안 바로 알려준다.
+              단, 아직 다 치지도 않았는데 빨간 글씨가 뜨면 거슬리므로
+              길이가 비슷해진 뒤에만 경고한다. */}
+          {mismatch && (
+            <p className="mt-1 text-xs text-danger">비밀번호가 서로 다릅니다.</p>
+          )}
+          {matched && (
+            <p className="mt-1 text-xs text-success">비밀번호가 일치합니다.</p>
+          )}
+        </div>
+      )}
+
+      {mode === "sign-up" && (
         <label className="flex min-h-11 cursor-pointer items-start gap-2.5 rounded-lg border border-border p-3 text-xs leading-relaxed">
           <input
             type="checkbox"
@@ -165,6 +209,7 @@ function LoginForm({ onModeChange }: { onModeChange: (m: Mode) => void }) {
               className="mt-2 min-h-11 w-full sm:min-h-9"
               onClick={() => {
                 setMode("sign-in");
+                setPasswordConfirm("");
                 setError(null);
                 setShowSignInShortcut(false);
               }}
@@ -187,6 +232,7 @@ function LoginForm({ onModeChange }: { onModeChange: (m: Mode) => void }) {
         type="button"
         onClick={() => {
           setMode((m) => (m === "sign-in" ? "sign-up" : "sign-in"));
+          setPasswordConfirm("");
           setError(null);
           setShowSignInShortcut(false);
           setNotice(null);
