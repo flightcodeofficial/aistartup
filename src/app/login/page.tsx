@@ -1,11 +1,12 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense, useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { GraduationCap, Loader2 } from "lucide-react";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
+import { translateAuthError } from "@/features/auth/authErrors";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,16 +21,22 @@ import { Label } from "@/components/ui/label";
 
 type Mode = "sign-in" | "sign-up";
 
-function LoginForm() {
+function LoginForm({ onModeChange }: { onModeChange: (m: Mode) => void }) {
   const router = useRouter();
   const params = useSearchParams();
   const next = params.get("next") || "/dashboard";
 
   const [mode, setMode] = useState<Mode>("sign-in");
+
+  useEffect(() => {
+    onModeChange(mode);
+  }, [mode, onModeChange]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // 이미 가입된 이메일이면 "로그인하기" 버튼을 같이 띄워 막다른 길을 만들지 않는다.
+  const [showSignInShortcut, setShowSignInShortcut] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   // 가입에만 필요한 필수 동의. 광고 수신과는 별개이며, 광고 동의는 가입 조건이 아니다.
   const [termsAgreed, setTermsAgreed] = useState(false);
@@ -43,6 +50,7 @@ function LoginForm() {
     }
     setBusy(true);
     setError(null);
+    setShowSignInShortcut(false);
     setNotice(null);
 
     try {
@@ -75,7 +83,9 @@ function LoginForm() {
         setNotice("확인 메일을 보냈습니다. 메일의 링크를 눌러 가입을 완료해주세요.");
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "로그인에 실패했습니다.");
+      const info = translateAuthError(err);
+      setError(info.message);
+      setShowSignInShortcut(Boolean(info.suggestSignIn));
     } finally {
       setBusy(false);
     }
@@ -145,7 +155,24 @@ function LoginForm() {
       )}
 
       {error && (
-        <p className="rounded-lg bg-danger/10 p-2.5 text-xs text-danger">{error}</p>
+        <div className="rounded-lg bg-danger/10 p-2.5">
+          <p className="text-xs text-danger">{error}</p>
+          {showSignInShortcut && (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              className="mt-2 min-h-11 w-full sm:min-h-9"
+              onClick={() => {
+                setMode("sign-in");
+                setError(null);
+                setShowSignInShortcut(false);
+              }}
+            >
+              이 이메일로 로그인하기
+            </Button>
+          )}
+        </div>
       )}
       {notice && (
         <p className="rounded-lg bg-success/10 p-2.5 text-xs text-success">{notice}</p>
@@ -161,6 +188,7 @@ function LoginForm() {
         onClick={() => {
           setMode((m) => (m === "sign-in" ? "sign-up" : "sign-in"));
           setError(null);
+          setShowSignInShortcut(false);
           setNotice(null);
         }}
         className="min-h-11 w-full text-center text-xs text-muted-foreground underline underline-offset-2"
@@ -172,6 +200,11 @@ function LoginForm() {
 }
 
 export default function LoginPage() {
+  // 지금 로그인 중인지 가입 중인지 제목으로 분명히 보여준다.
+  // 두 화면이 똑같이 생기면 "가입을 눌렀는데 왜 로그인이지?" 하고 헷갈린다.
+  const [mode, setMode] = useState<Mode>("sign-in");
+  const onModeChange = useCallback((m: Mode) => setMode(m), []);
+
   return (
     <div className="mx-auto flex min-h-svh max-w-md flex-col justify-center px-4 py-12">
       <div className="mb-6 text-center">
@@ -179,14 +212,18 @@ export default function LoginPage() {
           <GraduationCap className="size-3.5" />
           AI 창업 스쿨
         </span>
-        <h1 className="mt-3 text-2xl font-bold text-foreground">수업 계정으로 로그인</h1>
+        <h1 className="mt-3 text-2xl font-bold text-foreground">
+          {mode === "sign-in" ? "수업 계정으로 로그인" : "계정 만들기"}
+        </h1>
         <p className="mt-1.5 text-sm text-muted-foreground">
-          로그인하면 어느 PC에서든 같은 수업과 내 결과물을 이어서 볼 수 있습니다.
+          {mode === "sign-in"
+            ? "로그인하면 어느 PC에서든 같은 수업과 내 결과물을 이어서 볼 수 있습니다."
+            : "이메일과 비밀번호만 정하면 됩니다. 이름·연락처는 다음 화면에서 받습니다."}
         </p>
       </div>
 
       <Suspense fallback={<div className="h-64 animate-pulse rounded-2xl bg-muted" />}>
-        <LoginForm />
+        <LoginForm onModeChange={onModeChange} />
       </Suspense>
     </div>
   );
