@@ -111,25 +111,4 @@ export function formatPhoneWhileTyping(input: string): string {
   return `${digits.slice(0, 3)}-${digits.slice(3, 7)}-${digits.slice(7)}`;
 }
 
-// ── 지역 ────────────────────────────────────────────────────────────────────
-
-export const REGIONS = [
-  "서울",
-  "부산",
-  "대구",
-  "인천",
-  "광주",
-  "대전",
-  "울산",
-  "세종",
-  "경기",
-  "강원",
-  "충북",
-  "충남",
-  "전북",
-  "전남",
-  "경북",
-  "경남",
-  "제주",
-  "기타",
-] as const;
+// 지역 목록은 features/profile/regions.ts 로 옮겼다(광역+기초 2단 선택).

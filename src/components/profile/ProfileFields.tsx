@@ -1,6 +1,12 @@
 "use client";
 
-import { formatPhoneWhileTyping, REGIONS, type ProfileFormValues } from "@/features/profile/types";
+import { formatPhoneWhileTyping, type ProfileFormValues } from "@/features/profile/types";
+import {
+  composeRegion,
+  districtsOf,
+  parseRegion,
+  REGION_NAMES,
+} from "@/features/profile/regions";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
@@ -81,28 +87,78 @@ export function ProfileFields({
         )}
       </div>
 
-      <div>
-        <Label htmlFor="region">지역 (선택)</Label>
-        <select
-          id="region"
-          value={values.region}
-          onChange={(e) => onChange({ region: e.target.value })}
-          className="mt-1.5 h-12 w-full rounded-lg border border-border bg-background px-3 text-sm"
-        >
-          <option value="">선택 안 함</option>
-          {REGIONS.map((r) => (
-            <option key={r} value={r}>
-              {r}
-            </option>
-          ))}
-        </select>
-      </div>
+      <RegionField value={values.region} onChange={(region) => onChange({ region })} />
 
       <MarketingConsentField
         value={values.marketingConsent}
         error={errors.marketingConsent}
         onChange={(marketingConsent) => onChange({ marketingConsent })}
       />
+    </div>
+  );
+}
+
+/**
+ * 지역 — 광역(시·도) 고르면 그 아래 기초(시·군·구)가 채워진다.
+ *
+ * 밖으로는 "광주 서구" 같은 문자열 하나로만 오간다. 저장 형식을 단순하게 둬야
+ * 나중에 해외 사용자가 들어와도 DB 스키마를 안 바꾼다.
+ */
+function RegionField({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (composed: string) => void;
+}) {
+  const { region, district } = parseRegion(value);
+  const districts = districtsOf(region);
+
+  return (
+    <div>
+      <Label htmlFor="region">지역 (선택)</Label>
+      <div className="mt-1.5 grid grid-cols-2 gap-2">
+        <select
+          id="region"
+          value={region}
+          onChange={(e) => {
+            // 시·도를 바꾸면 이전 구는 의미가 없으므로 같이 비운다.
+            onChange(composeRegion(e.target.value, ""));
+          }}
+          className="h-12 w-full rounded-lg border border-border bg-background px-3 text-sm"
+          aria-label="시·도"
+        >
+          <option value="">시·도 선택</option>
+          {REGION_NAMES.map((r) => (
+            <option key={r} value={r}>
+              {r}
+            </option>
+          ))}
+        </select>
+
+        <select
+          id="district"
+          value={district}
+          disabled={districts.length === 0}
+          onChange={(e) => onChange(composeRegion(region, e.target.value))}
+          className="h-12 w-full rounded-lg border border-border bg-background px-3 text-sm disabled:opacity-50"
+          aria-label="시·군·구"
+        >
+          {/* 세종·해외처럼 하위가 없는 곳은 고를 게 없다는 걸 그대로 보여준다 */}
+          <option value="">
+            {region === ""
+              ? "시·도 먼저"
+              : districts.length === 0
+                ? "하위 없음"
+                : "시·군·구 선택"}
+          </option>
+          {districts.map((d) => (
+            <option key={d} value={d}>
+              {d}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 }
