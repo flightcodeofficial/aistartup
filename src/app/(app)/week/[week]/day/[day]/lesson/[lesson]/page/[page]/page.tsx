@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { getDay } from "@/features/curriculum/data";
+import { getLessonCards } from "@/features/curriculum/canonicalLessons";
+import type { LessonMeta } from "@/features/curriculum/types";
 import { getLessonManifest, lessonContentFileExists } from "@/lib/lessonContent";
 import { StudentLessonRoute } from "@/components/lesson-player/StudentLessonRoute";
 import { LessonGate } from "@/components/curriculum/LessonGate";
@@ -27,8 +29,18 @@ export default async function LessonContentPage({
   const pageNumber = Number(pageParam);
 
   const dayMeta = getDay(week, day);
-  const lessonMeta = dayMeta?.lessons.find((l) => l.lessonNumber === lessonNumber);
-  if (!dayMeta || !lessonMeta || !Number.isFinite(pageNumber)) notFound();
+  const card = getLessonCards(week, day).find((c) => c.lessonNumber === lessonNumber);
+  if (!dayMeta || !card || !Number.isFinite(pageNumber)) notFound();
+
+  // LessonGate·legacy manifest 둘 다 LessonMeta 모양을 기대한다 — canonical 카드를
+  // 그 모양으로 감싼다. steps는 gate 판정에 쓰이지 않으므로 비워 둔다.
+  const lessonMeta: LessonMeta = {
+    lessonNumber: card.lessonNumber,
+    title: card.title,
+    goal: card.description,
+    steps: [],
+    release: card.release,
+  };
 
   const manifest = getLessonManifest(week, day, lessonNumber);
   const pages = manifest?.pages ?? [];
@@ -41,11 +53,11 @@ export default async function LessonContentPage({
   const pageExists =
     Boolean(currentEntry) && lessonContentFileExists(week, day, lessonNumber, currentEntry!.file);
 
-  const otherLessons: LessonPageViewerLessonOption[] = dayMeta.lessons.map((l) => {
-    const m = getLessonManifest(week, day, l.lessonNumber);
+  const otherLessons: LessonPageViewerLessonOption[] = getLessonCards(week, day).map((c) => {
+    const m = getLessonManifest(week, day, c.lessonNumber);
     return {
-      lessonNumber: l.lessonNumber,
-      title: l.title,
+      lessonNumber: c.lessonNumber,
+      title: c.title,
       hasContent: m !== null,
       firstPageNumber: m?.pages[0]?.pageNumber ?? 1,
     };

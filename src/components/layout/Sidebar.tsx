@@ -25,12 +25,8 @@ import {
   Wand2,
 } from "lucide-react";
 import { curriculum, flattenSteps } from "@/features/curriculum/data";
-import {
-  dayRelease,
-  lessonRelease,
-  SCHEDULED_NOTICE,
-  viewRelease,
-} from "@/features/curriculum/release";
+import { getLessonCards } from "@/features/curriculum/canonicalLessons";
+import { dayRelease, SCHEDULED_NOTICE, viewRelease } from "@/features/curriculum/release";
 import { useProgressStore, calcProgressPercent } from "@/features/progress/store";
 import { communityRepository } from "@/features/community";
 import { subscribeCommunityChange } from "@/features/community/realtimeChannel";
@@ -223,60 +219,56 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
 
                     {isOpen && (
                       <div className="mt-1 ml-3 space-y-2 border-l border-sidebar-border pl-3">
-                        {day.lessons.map((lesson) => {
-                          const lessonView = viewRelease(
-                            lessonRelease(day, lesson),
-                            showStaffMenu
-                          );
+                        {getLessonCards(week.week, day.day).map((card) => {
+                          const lessonView = viewRelease(card.release, showStaffMenu);
                           if (!lessonView.visible) return null;
 
-                          // 잠긴 Lesson은 제목만 남기고 STEP 목록을 펼치지 않는다.
+                          // 잠긴 Lesson은 제목만 남기고 들어갈 수 없게 한다.
                           if (!lessonView.canEnter) {
                             return (
-                              <div key={lesson.lessonNumber}>
+                              <div key={card.lessonNumber}>
                                 <p className="flex items-center gap-1.5 px-2 py-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
                                   <Lock className="size-3" />
-                                  Lesson {lesson.lessonNumber} · {SCHEDULED_NOTICE.badge}
+                                  Lesson {card.lessonNumber} · {SCHEDULED_NOTICE.badge}
                                 </p>
                               </div>
                             );
                           }
 
+                          // 열린 Lesson은 STEP1/STEP2를 따로 늘어놓지 않고 카드 하나로
+                          // 보여준다 — canonical 수업 단위는 Lesson이지 STEP이 아니다.
+                          // 입장은 항상 canonical Lesson URL로 보낸다. Block Lesson이
+                          // published인지, 아니면 legacy로 fallback할지는 그 라우트의
+                          // resolver(StudentLessonRoute)가 정한다 — 여기서 STEP URL로
+                          // 직접 보내지 않는다.
+                          const href = routes.lessonPage(week.week, day.day, card.lessonNumber, 1);
+                          const lessonPrefix = `/week/${week.week}/day/${day.day}/lesson/${card.lessonNumber}/`;
+                          const isActive = pathname.startsWith(lessonPrefix);
+                          const isDone =
+                            card.legacySteps.length > 0 &&
+                            card.legacySteps.every((s) => steps[s.id]?.completed);
+
                           return (
-                          <div key={lesson.lessonNumber}>
-                            <p className="px-2 py-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
-                              Lesson {lesson.lessonNumber} · {lesson.title}
-                            </p>
-                            <div className="space-y-0.5">
-                              {lesson.steps.map((step) => {
-                                const href = routes.step(week.week, day.day, step.stepNumber);
-                                const isActive = pathname === href;
-                                const isDone = Boolean(steps[step.id]?.completed);
-                                return (
-                                  <Link
-                                    key={step.id}
-                                    href={href}
-                                    onClick={onNavigate}
-                                    className={cn(
-                                      "flex items-center gap-2 rounded-md px-2 py-1.5 text-sm transition-colors",
-                                      isActive
-                                        ? "bg-primary/10 font-semibold text-primary"
-                                        : "text-sidebar-foreground/80 hover:bg-sidebar-accent"
-                                    )}
-                                  >
-                                    {isDone ? (
-                                      <CheckCircle2 className="size-4 shrink-0 text-success" />
-                                    ) : (
-                                      <Circle className="size-4 shrink-0 text-muted-foreground/50" />
-                                    )}
-                                    <span className="truncate">
-                                      STEP{step.stepNumber} · {step.title}
-                                    </span>
-                                  </Link>
-                                );
-                              })}
-                            </div>
-                          </div>
+                            <Link
+                              key={card.lessonNumber}
+                              href={href}
+                              onClick={onNavigate}
+                              className={cn(
+                                "flex items-center gap-2 rounded-md px-2 py-1.5 text-sm transition-colors",
+                                isActive
+                                  ? "bg-primary/10 font-semibold text-primary"
+                                  : "text-sidebar-foreground/80 hover:bg-sidebar-accent"
+                              )}
+                            >
+                              {isDone ? (
+                                <CheckCircle2 className="size-4 shrink-0 text-success" />
+                              ) : (
+                                <Circle className="size-4 shrink-0 text-muted-foreground/50" />
+                              )}
+                              <span className="truncate">
+                                Lesson {card.lessonNumber} · {card.title}
+                              </span>
+                            </Link>
                           );
                         })}
                       </div>

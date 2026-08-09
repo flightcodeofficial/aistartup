@@ -36,6 +36,16 @@ if (parsed.issues.length > 0 && process.env.NODE_ENV !== "production") {
 
 const CONTENT: LessonContent = parsed.lesson;
 
+/** 학생 Day 화면·사이드바가 쓰는 Lesson 카드용 메타데이터. CONTENT에서만 뽑아 쓴다 — 제목을 따로 다시 적지 않는다. */
+export const DAY1_LESSON3_META = {
+  id: CONTENT.id,
+  week: CONTENT.week,
+  day: CONTENT.day,
+  lessonNumber: CONTENT.lesson,
+  title: CONTENT.title,
+  description: CONTENT.description,
+};
+
 /**
  * 저장소에 넣을 Lesson을 만든다. status는 항상 draft — 이 함수는 절대 게시하지 않는다.
  */

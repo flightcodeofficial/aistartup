@@ -1,74 +1,78 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Layers } from "lucide-react";
-import type { DayMeta, LessonMeta } from "@/features/curriculum/types";
-import { lessonRelease, viewRelease } from "@/features/curriculum/release";
+import { ChevronRight, Layers } from "lucide-react";
+import { getLessonCards } from "@/features/curriculum/canonicalLessons";
+import { viewRelease, SCHEDULED_NOTICE } from "@/features/curriculum/release";
 import { useIsStaff } from "@/features/curriculum/useRelease";
 import { ScheduledBadge } from "@/components/curriculum/ScheduledNotice";
 import { useProgressStore } from "@/features/progress/store";
-import { StepCard } from "@/components/step/StepCard";
 import { staggerContainer } from "@/lib/animations";
-import { SCHEDULED_NOTICE } from "@/features/curriculum/release";
+import { routes } from "@/lib/routes";
 
 const listVariants = staggerContainer(0.08);
 
-export function StepList({ lessons, day }: { lessons: LessonMeta[]; day?: DayMeta }) {
+// Day 화면의 정식 Lesson 목록. canonical Block Lesson(getLessonCards) 기준으로
+// Lesson 카드 하나씩만 보여준다 — STEP1/STEP2를 별도 교시 구조처럼 늘어놓지 않는다.
+// 입장은 항상 canonical Lesson URL(/lesson/[l]/page/1)로 보낸다. Block Lesson이
+// published인지, legacy로 fallback할지는 그 라우트의 resolver가 정한다.
+
+export function StepList({ week, day }: { week: number; day: number }) {
   const stepsProgress = useProgressStore((s) => s.steps);
   const staff = useIsStaff();
-
-  // 잠긴 Lesson의 STEP은 "다음 학습"으로 제안하지 않는다.
-  const openSteps = lessons
-    .filter((l) => viewRelease(lessonRelease(day, l), staff).canEnter)
-    .flatMap((l) => l.steps);
-  const nextStepId =
-    openSteps.find((s) => !stepsProgress[s.id]?.completed)?.id ?? openSteps[0]?.id;
+  const cards = getLessonCards(week, day);
 
   return (
-    <div className="space-y-8">
-      {lessons.map((lesson) => {
-        const release = viewRelease(lessonRelease(day, lesson), staff);
+    <motion.div
+      initial="hidden"
+      animate="show"
+      variants={listVariants}
+      className="space-y-3"
+    >
+      {cards.map((card) => {
+        const release = viewRelease(card.release, staff);
         if (!release.visible) return null;
 
+        const href = routes.lessonPage(week, day, card.lessonNumber, 1);
+        const isDone =
+          card.legacySteps.length > 0 && card.legacySteps.every((s) => stepsProgress[s.id]?.completed);
+
         return (
-          <div key={lesson.lessonNumber}>
-            <div className="mb-3 flex items-center gap-2">
-              <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-xs font-bold text-primary">
-                <Layers className="size-3.5" />
-              </span>
-              <div className="min-w-0">
-                <p className="flex flex-wrap items-center gap-2 text-sm font-bold text-foreground">
-                  Lesson {lesson.lessonNumber} · {lesson.title}
-                  {release.locked && <ScheduledBadge />}
-                </p>
-                <p className="text-xs text-muted-foreground">{lesson.goal}</p>
-              </div>
+          <div
+            key={card.lessonNumber}
+            className="flex items-center gap-3 rounded-2xl border border-border bg-card px-4 py-4"
+          >
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <Layers className="size-4" />
+            </span>
+            <div className="min-w-0 flex-1">
+              <p className="flex flex-wrap items-center gap-2 text-sm font-bold text-foreground">
+                Lesson {card.lessonNumber} · {card.title}
+                {release.locked && <ScheduledBadge />}
+                {release.canEnter && isDone && (
+                  <span className="text-xs font-medium text-success">완료</span>
+                )}
+              </p>
+              <p className="mt-0.5 line-clamp-2 text-xs text-muted-foreground">{card.description}</p>
             </div>
 
             {release.canEnter ? (
-              <motion.div
-                initial="hidden"
-                animate="show"
-                variants={listVariants}
-                className="space-y-4"
+              <Link
+                href={href}
+                className="flex shrink-0 items-center gap-1 rounded-lg bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                {lesson.steps.map((step) => (
-                  <StepCard key={step.id} step={step} isNext={step.id === nextStepId} />
-                ))}
-              </motion.div>
+                {isDone ? "다시 보기" : "학습 시작"}
+                <ChevronRight className="size-3.5" />
+              </Link>
             ) : (
-              // 잠긴 Lesson은 STEP 목록을 펼치지 않는다. 제목만 남겨
-              // "이런 수업이 온다"는 것만 보이게 한다.
-              <div className="rounded-2xl border border-dashed border-border bg-muted/40 px-4 py-5 text-center">
-                <p className="text-sm font-medium text-foreground">
-                  {SCHEDULED_NOTICE.heading}
-                </p>
-                <p className="mt-1 text-xs text-muted-foreground">{SCHEDULED_NOTICE.hint}</p>
-              </div>
+              <span className="shrink-0 text-xs font-medium text-muted-foreground">
+                {SCHEDULED_NOTICE.badge}
+              </span>
             )}
           </div>
         );
       })}
-    </div>
+    </motion.div>
   );
 }

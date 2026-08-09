@@ -11,7 +11,9 @@ export default async function DayPage({
   params: Promise<{ week: string; day: string }>;
 }) {
   const { week, day } = await params;
-  const dayMeta = getDay(Number(week), Number(day));
+  const weekNumber = Number(week);
+  const dayNumber = Number(day);
+  const dayMeta = getDay(weekNumber, dayNumber);
 
   if (!dayMeta) notFound();
 
@@ -25,7 +27,7 @@ export default async function DayPage({
         {dayMeta.status === "coming-soon" ? (
           <ComingSoon title={dayMeta.title} goal={dayMeta.goal} />
         ) : (
-          <StepList lessons={dayMeta.lessons} day={dayMeta} />
+          <StepList week={weekNumber} day={dayNumber} />
         )}
       </DayGate>
     </div>
