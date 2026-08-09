@@ -264,12 +264,10 @@ export default function LessonEditPage({ params }: { params: Promise<{ lessonId:
                   title="끌어서 순서를 바꿀 수 있습니다"
                 >
                   <GripVertical className="mt-0.5 size-3 shrink-0 cursor-grab text-muted-foreground" />
+                  {/* 블록 개수는 저작자에게도 실익이 없고 개발 정보처럼 읽혀서 뺐다. */}
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-xs font-medium text-foreground">
                       {i + 1}. {page.title}
-                    </span>
-                    <span className="block text-[10px] text-muted-foreground">
-                      블록 {page.blocks.length}개
                     </span>
                   </span>
                 </button>

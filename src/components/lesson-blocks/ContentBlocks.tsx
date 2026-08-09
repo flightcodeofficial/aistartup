@@ -17,16 +17,44 @@ import type {
 import { BlockFallback } from "./BlockFrame";
 import { cn } from "@/lib/utils";
 
-const PROSE = "prose prose-sm dark:prose-invert max-w-none text-foreground/90";
-const PROSE_LEAD =
-  "prose prose-base dark:prose-invert max-w-none text-foreground/90 prose-p:leading-relaxed";
-const PROSE_HERO =
-  "prose prose-lg dark:prose-invert max-w-none text-foreground prose-headings:tracking-tight prose-headings:font-extrabold";
+const PROSE_BY_EMPHASIS = {
+  normal: "prose prose-sm max-w-none",
+  lead: "prose prose-base max-w-none prose-p:leading-relaxed",
+  hero: "prose prose-lg max-w-none prose-headings:tracking-tight prose-headings:font-extrabold",
+} as const;
+
+/**
+ * 블록이 앉은 배경에 맞춰 글자색을 정한다.
+ *
+ * theme.background가 "dark"면 BlockFrame이 어두운 판 위에 흰 글씨를 깔지만,
+ * .prose는 자기 색 변수(--tw-prose-*)를 스스로 세팅하기 때문에 그 위에서
+ * 다시 어두운 글씨로 덮어버린다. 실제로 P01 히어로가 배경과 완전히 같은 색이 돼
+ * 글자가 안 보였다(측정값 rgb(18,19,42) 대 rgb(18,19,42)).
+ *
+ * prose-invert는 반드시 .prose와 같은 요소에 있어야 한다 — 부모에 걸면
+ * 자식 .prose가 변수를 다시 세팅해 무효가 된다.
+ */
+const SURFACE_CLASS = {
+  light: "dark:prose-invert",
+  dark: "prose-invert text-background",
+} as const;
+
+const LIGHT_TEXT_CLASS = {
+  normal: "text-foreground/90",
+  lead: "text-foreground/90",
+  hero: "text-foreground",
+} as const;
 
 export function RichTextBlockRenderer({ block }: { block: RichTextBlock }) {
   const emphasis = block.data.emphasis ?? "normal";
+  const onDark = block.theme?.background === "dark";
   return (
-    <div className={emphasis === "hero" ? PROSE_HERO : emphasis === "lead" ? PROSE_LEAD : PROSE}>
+    <div
+      className={cn(
+        PROSE_BY_EMPHASIS[emphasis],
+        onDark ? SURFACE_CLASS.dark : cn(SURFACE_CLASS.light, LIGHT_TEXT_CLASS[emphasis])
+      )}
+    >
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{block.data.markdown}</ReactMarkdown>
     </div>
   );
@@ -129,9 +157,16 @@ export function ImageBlockRenderer({ block }: { block: ImageBlock }) {
 
 export function TextImageBlockRenderer({ block }: { block: TextImageBlock }) {
   const imageFirst = block.data.imagePosition === "left";
+  const onDark = block.theme?.background === "dark";
   return (
     <div className="grid items-center gap-6 sm:grid-cols-2 sm:gap-10">
-      <div className={cn(PROSE, imageFirst && "sm:order-2")}>
+      <div
+        className={cn(
+          PROSE_BY_EMPHASIS.normal,
+          onDark ? SURFACE_CLASS.dark : cn(SURFACE_CLASS.light, LIGHT_TEXT_CLASS.normal),
+          imageFirst && "sm:order-2"
+        )}
+      >
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{block.data.markdown}</ReactMarkdown>
       </div>
       <div className={cn(imageFirst && "sm:order-1")}>
