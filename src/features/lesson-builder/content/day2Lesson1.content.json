@@ -1,0 +1,758 @@
+﻿{
+  "id": "w2-d2-l1-source-message",
+  "courseId": "default-course",
+  "week": 2,
+  "day": 2,
+  "lesson": 1,
+  "title": "원천문서에서 핵심 메시지 만들기",
+  "description": "Day1 고객 결과물을 원천문서로 정리하고, AI가 새로운 사실을 만들지 않도록 핵심 메시지 원장을 만든다.",
+  "durationMinutes": 60,
+  "status": "draft",
+  "version": 1,
+  "createdAt": 0,
+  "updatedAt": 0,
+  "pages": [
+    {
+      "id": "p01",
+      "title": "Day2 — AI에게 글부터 시키지 않습니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b01",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# AI에게 글부터 시키지 마세요\n# 먼저 ‘말할 재료’를 고정해야 합니다\n\n**Day1 고객 이해를 콘텐츠 원천문서와 핵심 메시지로 바꿉니다.**",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "l1-b02",
+          "type": "infographic",
+          "title": "Lesson1 결과",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Day1 결과물 다시 불러오기"
+              },
+              {
+                "label": "콘텐츠 원천문서 만들기"
+              },
+              {
+                "label": "금지 주장 정하기"
+              },
+              {
+                "label": "핵심 메시지 한 줄 만들기"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b03",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "Day1 결과물이 오늘 콘텐츠의 입력값이 된다는 연결을 먼저 보여주세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "Day1 결과물이 오늘의 재료가 됩니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b04",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "value-proposition",
+            "emptyMessage": "Day1 가치제안이 없으면 저장된 고객 자료·세그먼트·페르소나 중 사용할 것을 준비하세요."
+          }
+        },
+        {
+          "id": "l1-b05",
+          "type": "infographic",
+          "title": "Day1 → Day2",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "고객 자료",
+                "description": "실제 문제와 표현"
+              },
+              {
+                "label": "세그먼트·페르소나",
+                "description": "누구에게 말할지"
+              },
+              {
+                "label": "고객 여정·가치제안",
+                "description": "언제 어떤 가치를 말할지"
+              },
+              {
+                "label": "콘텐츠",
+                "description": "근거를 지키며 표현"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b06",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**부족한 부분은 AI가 상상해 채우지 않습니다.** 모르면 ‘검증 필요’로 남깁니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l1-b07",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "Workspace의 Day1 산출물을 직접 확인하게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "원천문서는 AI에게 주는 ‘사실의 울타리’입니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l1-b08",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 원천문서란?\n\nAI가 콘텐츠를 만들 때 **새로운 사실을 추가하지 않고 재사용할 수 있는 재료 묶음**입니다.\n\n고객의 실제 표현, 창업자의 경험, 제품 정보, 확인된 한계와 제약을 함께 둡니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l1-b09",
+          "type": "infographic",
+          "title": "좋은 원천 / 위험한 원천",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "좋은 원천",
+                "description": "고객 인터뷰·문의\n창업자의 실제 경험\n제품 테스트 기록\n고객 질문 모음"
+              },
+              {
+                "label": "그대로 쓰면 위험",
+                "description": "출처 불명 AI 답변\n경쟁사 블로그 복사\n확인 안 된 후기\n근거 없는 성과 수치"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b10",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI 검색 결과나 경쟁사 문장을 ‘우리의 사실’로 바꾸지 않습니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l1-b11",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "원천문서는 멋진 소개글이 아니라 말해도 되는 사실의 경계입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "원천문서 → 핵심 메시지",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b12",
+          "type": "image",
+          "title": "원천문서에서 핵심 메시지까지",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2/day2/source_to_message_pipeline.svg",
+            "alt": "원천문서, 내용 감사, 메시지 각도, 핵심 메시지 흐름",
+            "caption": "",
+            "display": "large",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "l1-b13",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**멋지게 써줘**라고 하기 전에 사실·경험·고객의 직접 표현·확인 필요를 분리합니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l1-b14",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "내용 감사 단계를 건너뛰면 환각과 과장이 끼어들기 쉽다고 설명하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "직접 분류해보기 — 이 문장은 써도 될까요?",
+      "layout": "fullscreen",
+      "blocks": [
+        {
+          "id": "l1-b15",
+          "type": "html-file",
+          "title": "원천문서 감사 연습",
+          "visibility": "visible",
+          "data": {
+            "src": "/lesson-content/week2/day2/source_audit_interactive.html",
+            "trustedScript": true,
+            "designWidth": 1280,
+            "designHeight": 720,
+            "mobileRenderMode": "responsive"
+          }
+        },
+        {
+          "id": "l1-b16",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "정답 맞히기보다 ‘모르면 확인 필요’ 습관을 만드는 페이지입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "콘텐츠 원천문서의 5칸",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l1-b17",
+          "type": "infographic",
+          "title": "콘텐츠 원천문서 5칸",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "고객의 실제 말",
+                "description": "인터뷰·리뷰·문의"
+              },
+              {
+                "label": "확인된 문제·상황",
+                "description": "언제 무엇 때문에 힘든가"
+              },
+              {
+                "label": "창업자의 경험",
+                "description": "직접 겪고 설명 가능한 경험"
+              },
+              {
+                "label": "제품·서비스 정보",
+                "description": "실제로 제공 가능한 범위"
+              },
+              {
+                "label": "한계·금지 주장",
+                "description": "아직 검증 안 된 내용"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b18",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 쉬운 예시\n\n- 고객의 말: **“매일 SNS에 뭘 올릴지 모르겠어요.”**\n- 문제: 콘텐츠 주제 정하기가 어렵다\n- 제공 가능: 주제 정리와 초안 작성 보조\n- 아직 금지: **“매출이 오른다”**, 확인되지 않은 시간 절감 수치",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l1-b19",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "기능보다 고객의 실제 말과 금지 주장을 적게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "핵심 메시지는 ‘각도’를 고른 뒤 만듭니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b20",
+          "type": "image",
+          "title": "메시지 각도 지도",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2/day2/message_angle_map.svg",
+            "alt": "문제, 상황, 결과, 현재 대안 각도",
+            "caption": "",
+            "display": "large",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "l1-b21",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 기본 틀\n\n**[누구]가 [어떤 상황/문제]에서 [어떤 변화]를 만들도록 [무엇]을 돕습니다.**\n\n필요할 때만 근거와 CTA를 붙입니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l1-b22",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "한 문장에 기능·혜택·회사소개·창업스토리를 모두 넣지 않습니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l1-b23",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "같은 사업을 문제/상황/대안 각도로 세 문장 바꿔보세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "실습 — 내 콘텐츠 원천문서",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l1-b24",
+          "type": "input-form",
+          "title": "원천문서 초안",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "오늘 콘텐츠로 말할 목표 고객",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 매일 SNS 글감을 고민하는 1인 카페 사장님"
+              },
+              {
+                "id": "f2",
+                "label": "고객이 실제로 한 말 또는 확인된 문제",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "창업자가 직접 설명할 수 있는 경험",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "실제로 제공할 수 있는 가치",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "아직 검증되지 않아 쓰면 안 되는 주장",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "사용할 메시지 각도",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "문제 각도",
+                  "상황 각도",
+                  "결과 각도",
+                  "현재 대안 각도"
+                ]
+              }
+            ],
+            "inputArtifactTypes": [
+              "customer-evidence",
+              "segment",
+              "ecp",
+              "icp",
+              "persona",
+              "journey",
+              "value-proposition"
+            ]
+          },
+          "description": "Day1 결과물을 불러와 필요한 항목만 채우세요."
+        },
+        {
+          "id": "l1-b25",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "자료가 부족하면 빈칸을 AI가 채우게 하지 말고 **검증 필요**로 적습니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l1-b26",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "공통 익명화 샘플을 쓰는 수강생도 허용하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "ChatGPT로 원천문서 감사 + 메시지 후보 만들기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l1-b27",
+          "type": "prompt",
+          "title": "원천문서 감사 프롬프트",
+          "description": "{{ }}를 P08 결과로 직접 바꿔 넣으세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "아래 [원천문서 초안]을 콘텐츠 제작 전에 감사하세요.\n\n[원천문서 초안]\n{{P08에서 작성한 내용을 붙여넣기}}\n\n다음으로 분류:\n1. 확인된 사실\n2. 창업자의 경험\n3. 고객의 직접 표현\n4. 의견 또는 해석\n5. 출처 확인이 필요한 주장\n6. 공개하면 안 되는 개인정보\n7. 저작권 확인이 필요한 문장·이미지\n8. 과장되거나 오해를 부를 표현\n9. 재사용 가능한 핵심 메시지\n10. 절대 추가하면 안 되는 주장\n\n새로운 사실을 추가하지 말고 핵심 메시지 후보 3개를 만드세요.\n각 후보에 대상 고객, 문제/상황, 제공 가치, 근거, CTA 1개, 사람이 확인할 항목을 표시하세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          }
+        },
+        {
+          "id": "l1-b28",
+          "type": "external-link",
+          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요.",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "원천문서 감사 실행",
+            "practiceDescription": "원천문서를 분류하고 메시지 후보 3개를 만듭니다.",
+            "estimatedMinutes": 14
+          }
+        },
+        {
+          "id": "l1-b29",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**개인정보·회사 기밀·미공개 고객정보는 익명화합니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l1-b30",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "AI가 원문에 없던 ‘좋은 말’을 추가했는지 먼저 찾게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "‘잘 썼는지’보다 ‘원문을 지켰는지’",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l1-b31",
+          "type": "quiz",
+          "title": "이해도 확인",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "원천에는 ‘매일 글감이 어렵다’만 있는데 AI가 ‘평균 2시간 절약’이라고 썼습니다. 가장 적절한 조치는?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "그대로 사용한다"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "숫자를 조금 낮춘다"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "근거 없는 수치를 삭제하고 확인 필요로 둔다"
+                  }
+                ],
+                "correctChoiceId": "c3",
+                "explanation": "원문에 없는 수치·성과는 생성하지 않습니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b32",
+          "type": "infographic",
+          "title": "메시지 검수 4문항",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "원문에 없는 사실이 추가되지 않았는가?"
+              },
+              {
+                "label": "고객과 창업자의 말을 섞지 않았는가?"
+              },
+              {
+                "label": "한계를 숨기지 않았는가?"
+              },
+              {
+                "label": "CTA가 실제 가능한 행동인가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b33",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "문장 품질보다 근거 충실도를 먼저 보게 합니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "최종 실습 — 콘텐츠 메시지 원장",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l1-b34",
+          "type": "input-form",
+          "title": "Day2 콘텐츠 메시지 원장",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "목표 고객",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "핵심 문제 또는 상황",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "핵심 메시지 한 문장",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "사용 가능한 근거",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "금지 주장·확인 필요",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "브랜드 말투 기준 3가지",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 짧게, 구체적으로, 과장 없이"
+              },
+              {
+                "id": "f7",
+                "label": "기본 CTA",
+                "kind": "short-text",
+                "required": false,
+                "placeholder": "예: 샘플 보기"
+              }
+            ],
+            "inputArtifactTypes": [
+              "customer-evidence",
+              "segment",
+              "persona",
+              "journey",
+              "value-proposition"
+            ]
+          }
+        },
+        {
+          "id": "l1-b35",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "이 원장은 다음 Lesson의 **SNS·블로그·뉴스레터 생성 기준 문서**가 됩니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l1-b36",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "AI 후보를 그대로 복사하지 말고 수강생이 한 문장을 선택·수정하게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "저장 — 근거 있는 재료에서 시작합니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l1-b37",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "marketing",
+            "emptyMessage": "아직 저장된 Day2 메시지 원장이 없습니다."
+          }
+        },
+        {
+          "id": "l1-b38",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "marketing",
+            "artifactTitle": "Day2 Lesson1 — 콘텐츠 메시지 원장",
+            "sourceBlockId": "l1-b34",
+            "buttonLabel": "내 프로젝트에 저장"
+          }
+        },
+        {
+          "id": "l1-b39",
+          "type": "reflection",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              "AI에게 글부터 시키는 방식과 원천문서를 먼저 고정하는 방식의 차이는 무엇인가요?"
+            ],
+            "placeholder": "한두 문장이면 충분합니다."
+          }
+        },
+        {
+          "id": "l1-b40",
+          "type": "internal-app",
+          "visibility": "visible",
+          "data": {
+            "route": "/workspace",
+            "practiceName": "내 프로젝트 결과물 보기",
+            "completionNote": "저장한 메시지 원장을 확인하고 다음 Lesson에서 SNS 콘텐츠로 확장합니다.",
+            "requireCompletionCheck": false
+          }
+        },
+        {
+          "id": "l1-b41",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "저장 완료를 확인하고 다음 Lesson에서 이 artifact를 불러온다고 안내하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    }
+  ]
+}

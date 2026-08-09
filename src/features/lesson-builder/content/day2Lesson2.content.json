@@ -1,0 +1,723 @@
+﻿{
+  "id": "w2-d2-l2-sns-repurpose",
+  "courseId": "default-course",
+  "week": 2,
+  "day": 2,
+  "lesson": 2,
+  "title": "SNS 콘텐츠로 채널별 바꿔 쓰기",
+  "description": "하나의 핵심 메시지를 SNS 채널 소비 맥락에 맞게 바꾸되 사실·근거·브랜드 기준을 유지한다.",
+  "durationMinutes": 60,
+  "status": "draft",
+  "version": 1,
+  "createdAt": 0,
+  "updatedAt": 0,
+  "pages": [
+    {
+      "id": "p01",
+      "title": "같은 내용을 SNS마다 복붙하지 않습니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l2-b01",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 같은 내용을 복붙하지 않습니다\n# 같은 ‘사실’을 다른 ‘맥락’으로 바꿉니다\n\n**하나의 핵심 메시지를 SNS 채널별 소비 방식에 맞게 바꿔 씁니다.**",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "l2-b02",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "marketing",
+            "emptyMessage": "Lesson1 콘텐츠 메시지 원장이 없습니다."
+          }
+        },
+        {
+          "id": "l2-b03",
+          "type": "infographic",
+          "title": "Lesson2 결과",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "채널별 독자 맥락 구분"
+              },
+              {
+                "label": "훅·본문·CTA 구조 설계"
+              },
+              {
+                "label": "ChatGPT로 3개 초안 생성"
+              },
+              {
+                "label": "근거·말투·과장 검수"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l2-b04",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "알고리즘 비법보다 독자 맥락을 배우는 수업입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "SNS마다 읽는 상황이 다릅니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l2-b05",
+          "type": "image",
+          "title": "SNS 채널별 소비 맥락",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2/day2/sns_channel_context.svg",
+            "alt": "Instagram, LinkedIn, Threads 구조 비교",
+            "caption": "",
+            "display": "large",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "l2-b06",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "채널이 바뀌어도 **대상 고객·핵심 문제·확인된 가치·근거는 바뀌지 않습니다.** 바뀌는 것은 길이, 도입, 말투, CTA입니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l2-b07",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "주 사용 채널이 달라도 구조 원칙만 익히면 됩니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "SNS 기본 구조 — 훅 → 공감 → 핵심 → 근거 → CTA",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l2-b08",
+          "type": "infographic",
+          "title": "SNS 기본 5단계",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "훅",
+                "description": "멈춰 읽게 할 첫 문장"
+              },
+              {
+                "label": "공감 상황",
+                "description": "고객이 실제 겪는 순간"
+              },
+              {
+                "label": "핵심 1~3개",
+                "description": "전달할 정보만"
+              },
+              {
+                "label": "근거·한계",
+                "description": "확인된 범위만"
+              },
+              {
+                "label": "CTA 1개",
+                "description": "다음 행동 하나"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l2-b09",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 예시\n\n**훅:** 매일 카페 SNS 글감을 정하느라 멈춰 있나요?\n\n**공감:** 사진은 있는데 무슨 말을 써야 할지 막히는 날이 반복됩니다.\n\n**CTA:** 오늘 자주 받은 질문 3개를 메모해보세요.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l2-b10",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "좋은 훅은 **허위 긴급성·공포·성과 보장**이 아닙니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l2-b11",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "자극적 훅과 구체적 고객 상황의 차이를 비교하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "인터랙티브 — 채널을 바꾸면 구조가 달라집니다",
+      "layout": "fullscreen",
+      "blocks": [
+        {
+          "id": "l2-b12",
+          "type": "html-file",
+          "title": "채널 맥락 변환기",
+          "visibility": "visible",
+          "data": {
+            "src": "/lesson-content/week2/day2/channel_context_transformer.html",
+            "trustedScript": true,
+            "designWidth": 1280,
+            "designHeight": 720,
+            "mobileRenderMode": "responsive"
+          }
+        },
+        {
+          "id": "l2-b13",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "‘변하지 않는 것’과 ‘바뀌는 것’을 학생이 말하게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "훅은 자극이 아니라 고객이 멈추는 이유입니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l2-b14",
+          "type": "infographic",
+          "title": "훅 4가지 출발점",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "상황형",
+                "description": "오늘 올릴 글이 아직 정해지지 않았다면…"
+              },
+              {
+                "label": "질문형",
+                "description": "고객 질문을 콘텐츠로 쓰고 있나요?"
+              },
+              {
+                "label": "관찰형",
+                "description": "콘텐츠가 막힐 때는 재료가 없는 경우가 많습니다."
+              },
+              {
+                "label": "대안형",
+                "description": "새 글감보다 고객 질문을 원천으로 바꿔보세요."
+              }
+            ]
+          }
+        },
+        {
+          "id": "l2-b15",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "‘놀라운’, ‘충격’, ‘무조건’, ‘단 1분 만에’는 근거가 없으면 제거합니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l2-b16",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "같은 고객 문제로 훅 네 개를 만들되 사실은 바꾸지 마세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "브랜드 말투는 형용사보다 규칙으로",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l2-b17",
+          "type": "infographic",
+          "title": "브랜드 보이스 규칙",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "문장을 짧게 쓴다"
+              },
+              {
+                "label": "전문용어는 바로 풀어쓴다"
+              },
+              {
+                "label": "성과를 보장하지 않는다"
+              },
+              {
+                "label": "고객을 몰아붙이지 않는다"
+              },
+              {
+                "label": "CTA는 한 번만"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l2-b18",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "❌ **전문적이고 혁신적이며 친근하게 써줘**\n\n✅ **짧은 문장, 쉬운 용어, 과장 없이, 마지막 CTA는 하나만 써줘**",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l2-b19",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "감성 형용사를 편집 규칙으로 바꾸는 것이 핵심입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "실습 — SNS 콘텐츠 브리프",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l2-b20",
+          "type": "input-form",
+          "title": "SNS 콘텐츠 브리프",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "이번 게시물의 목표 고객",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "핵심 메시지",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "사용할 근거",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "채널",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "Instagram",
+                  "LinkedIn",
+                  "Threads 또는 짧은 글 SNS"
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "콘텐츠 목표",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "인지",
+                  "저장·공유",
+                  "대화·댓글",
+                  "프로필/링크 이동"
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "브랜드 말투 규칙",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f7",
+                "label": "CTA 1개",
+                "kind": "short-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "marketing",
+              "persona",
+              "value-proposition"
+            ]
+          },
+          "description": "Lesson1 메시지 원장을 불러와 SNS용으로 좁혀보세요."
+        },
+        {
+          "id": "l2-b21",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "채널을 하나 먼저 고르게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "ChatGPT로 채널별 3개 버전 만들기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l2-b22",
+          "type": "prompt",
+          "title": "SNS 채널 변환 프롬프트",
+          "description": "{{ }}를 Lesson1과 P07 결과로 바꿔 넣으세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[콘텐츠 원장]과 [SNS 브리프]만 사용해 SNS 게시물 초안을 만드세요.\n\n[콘텐츠 원장]\n{{Lesson1 핵심 메시지·근거·금지 주장}}\n\n[SNS 브리프]\n{{P07 작성 내용}}\n\n규칙:\n- 원문에 없는 수치, 고객 사례, 성과, 인용을 추가하지 마세요.\n- 채널의 소비 맥락에 맞게 구조를 바꾸세요.\n- 허위 긴급성, 과장, 경쟁사 비방을 사용하지 마세요.\n- CTA는 게시물당 하나만 사용하세요.\n- 브랜드 말투 규칙을 지키세요.\n- 사용한 원천 근거를 [내부 검수용]으로 표시하세요.\n\n출력:\n1. 안전한 기본안\n2. 더 짧은 안\n3. 질문형 훅 안\n4. 사람이 확인할 사실 목록",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          }
+        },
+        {
+          "id": "l2-b23",
+          "type": "external-link",
+          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요.",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "SNS 초안 생성",
+            "practiceDescription": "같은 근거로 구조가 다른 SNS 초안 3개를 만듭니다.",
+            "estimatedMinutes": 12
+          }
+        },
+        {
+          "id": "l2-b24",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "세 안이 서로 다른 사실을 만들었는지 비교하게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "어느 문장이 더 안전한가?",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l2-b25",
+          "type": "quiz",
+          "title": "SNS 검수 퀴즈",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "다음 중 원천문서를 가장 잘 지키는 문장은?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "이 방법을 쓰면 매출이 반드시 오릅니다."
+                  },
+                  {
+                    "id": "c2",
+                    "text": "매일 글감을 고민한다면 고객이 자주 묻는 질문부터 콘텐츠 재료로 모아보세요."
+                  },
+                  {
+                    "id": "c3",
+                    "text": "대한민국 카페 사장님의 90%가 이 문제를 겪습니다."
+                  }
+                ],
+                "correctChoiceId": "c2",
+                "explanation": "확인되지 않은 성과나 통계를 만들지 않고 고객 문제와 실행 방법만 제안합니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "l2-b26",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 먼저 지울 것\n\n- 원문에 없는 숫자\n- ‘무조건’, ‘완벽하게’, ‘누구나’ 같은 보장\n- 근거 없는 고객 사례\n- 실제 마감이 아닌 긴급성\n- CTA 여러 개",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l2-b27",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "학생들이 ‘좋은 문장’보다 ‘지울 문장’을 먼저 찾게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "발행 전 사람 검수",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l2-b28",
+          "type": "infographic",
+          "title": "SNS 게시 전 5개 확인",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "사실: 원천에 없는 정보가 없는가?"
+              },
+              {
+                "label": "브랜드: 말투 규칙이 지켜졌는가?"
+              },
+              {
+                "label": "저작권: 경쟁사 문구를 베끼지 않았는가?"
+              },
+              {
+                "label": "개인정보: 고객 식별 정보가 없는가?"
+              },
+              {
+                "label": "행동: CTA가 하나이고 실제 가능한가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l2-b29",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI가 생성 → 사람이 승인 → 발행** 순서를 유지합니다. 자동 게시 연결은 오늘 실습 범위가 아닙니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l2-b30",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "검수 전 외부 행동을 막는 운영 원칙을 강조하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "최종 실습 — SNS 콘텐츠 세트",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l2-b31",
+          "type": "input-form",
+          "title": "SNS 콘텐츠 세트",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "채널과 게시물 목적",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "게시물 1 — 안전한 기본안",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "게시물 2 — 짧은 안",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "게시물 3 — 질문형 훅 안",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "공통 CTA",
+                "kind": "short-text",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "사용한 원천 근거",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f7",
+                "label": "사람이 최종 확인할 항목",
+                "kind": "long-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "marketing"
+            ]
+          }
+        },
+        {
+          "id": "l2-b32",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "세 안 중 실제로 쓸 하나를 고르고 **선택 이유**도 기록하세요.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l2-b33",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "모두 발행하는 것이 아니라 선택·검수하는 과정이 목표입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "저장 — 원천 → 채널 맥락 → 검수",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l2-b34",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "content",
+            "emptyMessage": "아직 저장된 SNS 콘텐츠가 없습니다."
+          }
+        },
+        {
+          "id": "l2-b35",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "content",
+            "artifactTitle": "Day2 Lesson2 — SNS 콘텐츠 세트",
+            "sourceBlockId": "l2-b31",
+            "buttonLabel": "내 프로젝트에 저장"
+          }
+        },
+        {
+          "id": "l2-b36",
+          "type": "reflection",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              "채널을 바꾸면서도 절대 바꾸지 말아야 할 정보는 무엇이었나요?"
+            ],
+            "placeholder": "한두 문장이면 충분합니다."
+          }
+        },
+        {
+          "id": "l2-b37",
+          "type": "internal-app",
+          "visibility": "visible",
+          "data": {
+            "route": "/workspace",
+            "practiceName": "내 프로젝트 결과물 보기",
+            "completionNote": "저장한 SNS 콘텐츠를 확인하고 다음 Lesson에서 블로그·뉴스레터로 확장합니다.",
+            "requireCompletionCheck": false
+          }
+        },
+        {
+          "id": "l2-b38",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "다음 Lesson은 글을 더 길게 쓰는 것이 아니라 읽는 맥락을 바꾸는 수업입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    }
+  ]
+}

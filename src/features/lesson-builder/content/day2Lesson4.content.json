@@ -1,0 +1,712 @@
+﻿{
+  "id": "w2-d2-l4-content-supply-chain",
+  "courseId": "default-course",
+  "week": 2,
+  "day": 2,
+  "lesson": 4,
+  "title": "콘텐츠 공급망·검수·재사용 설계",
+  "description": "하나의 승인된 원천문서에서 여러 채널 콘텐츠를 만들고 사람 승인·한 변수 실험·재사용 구조까지 설계한다.",
+  "durationMinutes": 60,
+  "status": "draft",
+  "version": 1,
+  "createdAt": 0,
+  "updatedAt": 0,
+  "pages": [
+    {
+      "id": "p01",
+      "title": "콘텐츠를 매번 새로 만들지 않습니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l4-b01",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 콘텐츠를 매번 새로 만들지 말고\n# 원천문서 하나를 ‘공급망’으로 만드세요\n\n**생성 → 검수 → 발행 → 기록 → 재사용이 연결되면 AI는 일회성 글쓰기 도구가 아니라 업무 흐름이 됩니다.**",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "l4-b02",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "content",
+            "emptyMessage": "앞 Lesson에서 저장한 콘텐츠 결과물이 없습니다."
+          }
+        },
+        {
+          "id": "l4-b03",
+          "type": "infographic",
+          "title": "Lesson4 결과",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "원천에서 채널별 콘텐츠 설계"
+              },
+              {
+                "label": "CTA와 근거 번호 연결"
+              },
+              {
+                "label": "사람 승인 체크포인트"
+              },
+              {
+                "label": "한 변수 실험·재사용 계획"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l4-b04",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "오늘의 자동화는 자동 게시가 아니라 반복 가능한 제작 구조입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "원천문서 기반 콘텐츠 공급망",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l4-b05",
+          "type": "image",
+          "title": "콘텐츠 공급망",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2/day2/content_supply_chain.svg",
+            "alt": "원천문서, 채널 변환, 사람 검수, 발행·재사용 흐름",
+            "caption": "",
+            "display": "large",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "l4-b06",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "원천문서가 바뀌면 파생 콘텐츠를 다시 검토합니다. 원천이 같다면 시장 사실을 매번 새로 만들 필요가 없습니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l4-b07",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "프롬프트 반복보다 승인된 원천이 중심이라는 구조가 핵심입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "한 원천문서가 여러 채널로 갑니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l4-b08",
+          "type": "infographic",
+          "title": "한 원천 → 여러 결과",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "SNS",
+                "description": "짧은 훅·공감·CTA"
+              },
+              {
+                "label": "블로그",
+                "description": "검색 질문에 깊게 답변"
+              },
+              {
+                "label": "뉴스레터",
+                "description": "관계 맥락과 적용법"
+              },
+              {
+                "label": "숏폼 대본",
+                "description": "훅·문제·전환·결론"
+              },
+              {
+                "label": "랜딩 FAQ",
+                "description": "행동 직전 의문 해소"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l4-b09",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**같은 문장을 복사하는 것이 아니라 같은 사실을 재사용합니다.**",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l4-b10",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "Day3 이메일·DM, Day4 랜딩으로도 같은 원천이 이어질 수 있음을 예고하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "인터랙티브 — 채널이 바뀌어도 검수는 남습니다",
+      "layout": "fullscreen",
+      "blocks": [
+        {
+          "id": "l4-b11",
+          "type": "html-file",
+          "title": "콘텐츠 공급망 인터랙티브",
+          "visibility": "visible",
+          "data": {
+            "src": "/lesson-content/week2/day2/content_supply_chain_interactive.html",
+            "trustedScript": true,
+            "designWidth": 1280,
+            "designHeight": 720,
+            "mobileRenderMode": "responsive"
+          }
+        },
+        {
+          "id": "l4-b12",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "채널 버튼을 바꿔도 사람 검수 단계가 유지되는 것을 보여주세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "CTA는 콘텐츠마다 하나만",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l4-b13",
+          "type": "infographic",
+          "title": "CTA 선택 기준",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "인지 단계",
+                "description": "저장하기\n체크리스트 보기\n전체 글 확인"
+              },
+              {
+                "label": "관심 단계",
+                "description": "샘플 보기\n답장으로 경험 공유"
+              },
+              {
+                "label": "행동 단계",
+                "description": "베타 신청\n상담 일정 선택\n문의하기"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l4-b14",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "한 콘텐츠에 CTA를 여러 개 붙이면 **무엇을 측정해야 하는지도 흐려집니다.**",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l4-b15",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "좋아요+저장+공유+링크+DM을 한 번에 요구하는 예를 보여주세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "A/B는 한 번에 한 변수만",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l4-b16",
+          "type": "image",
+          "title": "한 변수 A/B 테스트",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2/day2/one_variable_ab_test.svg",
+            "alt": "첫 문장만 바꾸고 나머지 조건을 유지하는 예시",
+            "caption": "",
+            "display": "large",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "l4-b17",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "초기 작은 표본의 결과를 **정답**으로 확정하지 말고 다음 인터뷰와 다음 실험의 방향으로 해석합니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l4-b18",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "제목과 CTA를 동시에 바꾸면 원인을 알기 어렵다고 설명하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "콘텐츠 캘린더는 많이 만들기보다 재사용 계획",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l4-b19",
+          "type": "infographic",
+          "title": "간단한 재사용 계획",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "원천 1개",
+                "description": "이번 주 핵심 재료"
+              },
+              {
+                "label": "채널 2~3개",
+                "description": "고객이 실제 있는 곳"
+              },
+              {
+                "label": "CTA 지정",
+                "description": "다음 행동 하나"
+              },
+              {
+                "label": "검수자 지정",
+                "description": "누가 승인할지"
+              },
+              {
+                "label": "반응 기록",
+                "description": "댓글·답장·문의에서 새 원천"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l4-b20",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "AI로 30일치를 한 번에 채우는 것이 목표가 아닙니다. **근거 있는 콘텐츠를 반복 가능하게 만드는 것**이 목표입니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l4-b21",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "양 중심 자동 생성과 고객 반응을 다시 원천에 넣는 학습 루프를 비교하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "외부 행동 전에는 사람이 승인합니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l4-b22",
+          "type": "infographic",
+          "title": "발행 승인 게이트",
+          "visibility": "visible",
+          "theme": {
+            "background": "muted",
+            "bordered": false
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "사실 — 원천에 없는 정보 0"
+              },
+              {
+                "label": "브랜드 — 말투·용어 일관성"
+              },
+              {
+                "label": "저작권 — 경쟁사·특정 창작자 모사 제거"
+              },
+              {
+                "label": "개인정보 — 식별 가능 고객 정보 제거"
+              },
+              {
+                "label": "CTA — 실제 제공 가능한 행동"
+              },
+              {
+                "label": "승인자 — 최종 발행 결정"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l4-b23",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "오늘 실습은 **자동 게시를 연결하지 않습니다.** 외부 발행·발송은 사람이 최종 확인한 뒤 수행합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l4-b24",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "자동화 수업에서도 사람 승인이 사라지지 않는다고 분명히 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "ChatGPT로 원천 1개를 콘텐츠 묶음으로",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l4-b25",
+          "type": "prompt",
+          "title": "채널별 콘텐츠 재가공 프롬프트",
+          "description": "{{ }}를 기존 저장 결과물로 바꿔 넣으세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "아래 [원천문서]를 새로운 사실을 추가하지 않고 채널별 콘텐츠로 변환하세요.\n\n[원천문서]\n{{Lesson1 메시지 원장}}\n[목표 고객]\n{{Day1 세그먼트/페르소나}}\n[브랜드 말투]\n{{Lesson1 편집 규칙}}\n[금지 표현·확인 필요]\n{{Lesson1 금지 주장}}\n\n공통 규칙:\n- 원문에 없는 수치, 고객 사례, 성과, 인용을 만들지 마세요.\n- 제품의 한계와 적용되지 않는 고객도 숨기지 마세요.\n- 각 콘텐츠에 CTA는 하나만 사용하세요.\n- 과장, 허위 긴급성, 경쟁사 비방을 제거하세요.\n- 사용한 원천 근거 번호를 내부 검수용으로 표시하세요.\n- 외부 발행 전 사람이 확인할 항목을 표시하세요.\n\n출력:\n1. SNS 게시물\n2. 블로그 개요\n3. 뉴스레터 초안\n4. 30초 숏폼 대본\n5. 랜딩 FAQ 3개\n6. 채널별 CTA\n7. 사람이 확인해야 할 사실 목록",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          }
+        },
+        {
+          "id": "l4-b26",
+          "type": "external-link",
+          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요.",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "콘텐츠 묶음 생성",
+            "practiceDescription": "승인된 원천 하나에서 여러 채널 초안을 만듭니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "l4-b27",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "결과 개수보다 같은 원천을 유지하는지 비교하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "실습 — 채널별 콘텐츠 공급망 표",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l4-b28",
+          "type": "input-form",
+          "title": "콘텐츠 공급망 설계",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "이번 공급망의 원천문서 요약",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "SNS — 목표·핵심 메시지·CTA·근거 번호",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "블로그 — 목표·핵심 메시지·CTA·근거 번호",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "뉴스레터 — 목표·핵심 메시지·CTA·근거 번호",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "숏폼 또는 FAQ — 목표·핵심 메시지·CTA·근거 번호",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "공통 금지 주장·확인 필요",
+                "kind": "long-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "marketing",
+              "content",
+              "persona",
+              "value-proposition"
+            ]
+          }
+        },
+        {
+          "id": "l4-b29",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "채널별 목표 고객·목표·핵심 메시지·CTA·원천 근거를 빠뜨리지 않게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "실습 — 승인과 한 변수 실험 계획",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "l4-b30",
+          "type": "input-form",
+          "title": "검수·실험 계획",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "사실 검수자 또는 최종 승인자",
+                "kind": "short-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "발행 전 확인할 사실",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "저작권·개인정보 확인 항목",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "이번에 실험할 변수 1개",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "첫 문장/제목",
+                  "CTA 문구",
+                  "콘텐츠 길이",
+                  "채널"
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "A안",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "B안",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f7",
+                "label": "무엇을 기록할 것인가",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f8",
+                "label": "결과를 다음 원천문서에 어떻게 반영할 것인가",
+                "kind": "long-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "content"
+            ]
+          }
+        },
+        {
+          "id": "l4-b31",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "표본이 작으면 **B안이 정답**이라고 결론내리지 말고 다음 질문으로 남깁니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "l4-b32",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "실험 변수는 반드시 하나만 고르게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "Day2 완료 — 생성보다 중요한 것은 근거와 재사용 구조",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l4-b33",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "content",
+            "emptyMessage": "아직 저장된 Day2 최종 콘텐츠 공급망이 없습니다."
+          }
+        },
+        {
+          "id": "l4-b34",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "content",
+            "artifactTitle": "Day2 Lesson4 — 콘텐츠 공급망·검수 계획",
+            "sourceBlockId": "l4-b30",
+            "buttonLabel": "내 프로젝트에 저장"
+          }
+        },
+        {
+          "id": "l4-b35",
+          "type": "reflection",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              "Day2 전에는 AI 콘텐츠 제작을 어떻게 생각했고, 지금은 어떤 순서로 만들게 되었나요?",
+              "사람이 반드시 승인해야 하는 지점은 어디인가요?"
+            ],
+            "placeholder": "한두 문장이면 충분합니다."
+          }
+        },
+        {
+          "id": "l4-b36",
+          "type": "internal-app",
+          "visibility": "visible",
+          "data": {
+            "route": "/workspace",
+            "practiceName": "내 프로젝트 결과물 보기",
+            "completionNote": "Day2 결과물을 확인하세요. 다음 Day에서는 이 원천과 고객 여정을 이메일·DM·홍보문구로 이어갑니다.",
+            "requireCompletionCheck": false
+          }
+        },
+        {
+          "id": "l4-b37",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 오늘 만든 흐름\n\n**Day1 고객 이해 → 원천문서 → 핵심 메시지 → SNS → 블로그·뉴스레터 → 사람 검수 → 기록·재사용**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l4-b38",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "실제 게시보다 재현 가능한 제작 흐름을 저장했는지 확인하면 완료입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    }
+  ]
+}
