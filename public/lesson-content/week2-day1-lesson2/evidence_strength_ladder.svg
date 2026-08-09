@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08111f"/><stop offset="1" stop-color="#101b31"/></linearGradient>
+    <linearGradient id="ladder" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#334155"/><stop offset=".45" stop-color="#2563eb"/><stop offset="1" stop-color="#22c55e"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <text x="70" y="82" fill="#f8fafc" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="38" font-weight="700">모든 자료의 힘이 같지는 않습니다</text>
+  <text x="70" y="126" fill="#a8b3c7" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20">Evidence Strength Ladder · 고객 행동에 가까울수록 증거가 강해집니다.</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="175" width="720" height="450" rx="26" fill="#0f1b2d" stroke="#26364e"/>
+    <rect x="112" y="505" width="610" height="76" rx="18" fill="#1f2937"/>
+    <rect x="142" y="415" width="550" height="76" rx="18" fill="#1e3a5f"/>
+    <rect x="172" y="325" width="490" height="76" rx="18" fill="#1d4ed8"/>
+    <rect x="202" y="235" width="430" height="76" rx="18" fill="#15803d"/>
+  </g>
+  <text x="137" y="544" fill="#e2e8f0" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700">1. 창업자 추정 · AI 아이디어</text>
+  <text x="137" y="570" fill="#94a3b8" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="16">출처 없는 “아마 이럴 것”은 가설로 둡니다.</text>
+  <text x="167" y="454" fill="#e2e8f0" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700">2. 공개 대체자료</text>
+  <text x="167" y="480" fill="#b8c4d6" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="16">경쟁 상품 리뷰 · 공개 커뮤니티 · FAQ</text>
+  <text x="197" y="364" fill="#ffffff" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700">3. 반복되는 리뷰 · 문의 · 인터뷰</text>
+  <text x="197" y="390" fill="#dbeafe" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="16">여러 출처에서 같은 문제·상황이 반복되는가?</text>
+  <text x="227" y="274" fill="#ffffff" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700">4. 실제 행동 · 시간 · 비용 · 구매</text>
+  <text x="227" y="300" fill="#dcfce7" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="16">말뿐 아니라 실제 선택과 자원 투입이 확인되는가?</text>
+  <path d="M755 553 C820 520 810 290 750 250" fill="none" stroke="url(#ladder)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M748 249 l20 18 l-5 -28 z" fill="#22c55e"/>
+  <g transform="translate(835 177)">
+    <rect width="375" height="448" rx="26" fill="#f8fafc"/>
+    <text x="30" y="52" fill="#0f172a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="25" font-weight="700">증거를 볼 때 4가지 질문</text>
+    <g transform="translate(30 88)"><circle cx="22" cy="22" r="22" fill="#dbeafe"/><text x="22" y="29" text-anchor="middle" fill="#1d4ed8" font-size="20" font-family="Arial" font-weight="700">1</text><text x="58" y="18" fill="#0f172a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="19" font-weight="700">누가 말했는가?</text><text x="58" y="43" fill="#64748b" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="15">출처가 확인되는가</text></g>
+    <g transform="translate(30 170)"><circle cx="22" cy="22" r="22" fill="#dbeafe"/><text x="22" y="29" text-anchor="middle" fill="#1d4ed8" font-size="20" font-family="Arial" font-weight="700">2</text><text x="58" y="18" fill="#0f172a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="19" font-weight="700">어떤 상황이었는가?</text><text x="58" y="43" fill="#64748b" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="15">맥락과 촉발 사건이 있는가</text></g>
+    <g transform="translate(30 252)"><circle cx="22" cy="22" r="22" fill="#dbeafe"/><text x="22" y="29" text-anchor="middle" fill="#1d4ed8" font-size="20" font-family="Arial" font-weight="700">3</text><text x="58" y="18" fill="#0f172a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="19" font-weight="700">반복되는가?</text><text x="58" y="43" fill="#64748b" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="15">한 사례를 전체처럼 보지 않는가</text></g>
+    <g transform="translate(30 334)"><circle cx="22" cy="22" r="22" fill="#dcfce7"/><text x="22" y="29" text-anchor="middle" fill="#15803d" font-size="20" font-family="Arial" font-weight="700">4</text><text x="58" y="18" fill="#0f172a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="19" font-weight="700">행동과 연결되는가?</text><text x="58" y="43" fill="#64748b" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="15">시간 · 비용 · 선택이 확인되는가</text></g>
+  </g>
+  <rect x="70" y="650" width="1140" height="42" rx="14" fill="#172554"/>
+  <text x="640" y="678" text-anchor="middle" fill="#dbeafe" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="18" font-weight="700">증거가 많다는 것보다, 실제 고객 행동과 얼마나 가까운지가 더 중요합니다.</text>
+</svg>

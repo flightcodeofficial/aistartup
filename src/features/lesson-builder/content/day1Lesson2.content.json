@@ -1,0 +1,1329 @@
+{
+  "id": "w2-d1-l2-customer-evidence",
+  "courseId": "default-course",
+  "week": 2,
+  "day": 1,
+  "lesson": 2,
+  "title": "고객 증거 수집·태깅과 반복 패턴 찾기",
+  "description": "고객 원문을 구조화하고 ChatGPT로 반복 문제·촉발 사건·현재 대안·반증을 추출한다.",
+  "durationMinutes": 60,
+  "status": "draft",
+  "version": 1,
+  "createdAt": 0,
+  "updatedAt": 0,
+  "pages": [
+    {
+      "id": "p01",
+      "title": "가설에서 증거로 넘어가기",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b01-hero",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 이제 고객 가설을 증거에 대조합니다\n\n지난 시간에 만든 고객 문장은 **정답이 아니라 현재 가설**입니다.",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b01-prev",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "customer-analysis-foundation",
+            "emptyMessage": "저장된 고객 가설이 없어도 진행할 수 있습니다. 현재 생각하는 고객 가설을 한 문장으로 메모하고 시작하세요."
+          }
+        },
+        {
+          "id": "b01-flow",
+          "type": "infographic",
+          "visibility": "visible",
+          "theme": {
+            "background": "primary-soft",
+            "bordered": true
+          },
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "가설",
+                "description": "Lesson1에서 문제·상황 중심 고객 문장을 만들었습니다."
+              },
+              {
+                "label": "증거",
+                "description": "실제 원문과 공개 대체자료를 같은 기준으로 태깅합니다."
+              },
+              {
+                "label": "패턴",
+                "description": "반복되는 문제와 반증을 정리해 Lesson3의 세그먼트 입력으로 저장합니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "b01-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "> **오늘의 질문:** 내가 생각한 고객 가설이 실제 자료에서도 반복되는가?",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "b01-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“지난 시간에 만든 고객 문장은 아직 가설입니다. 오늘은 그 가설을 증거 앞에 놓겠습니다. 맞으면 강화하고, 틀리면 고치면 됩니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "고객 증거란 무엇인가",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 고객 증거는 이미 존재하는 자료입니다\n\n고객의 **문제·행동·상황·선택**을 확인할 수 있는 자료에서 시작합니다.",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b02-evidence",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "직접 증거",
+                "description": "실제 고객 인터뷰\n실제 문의·상담 메모\n제품 사용 피드백\n구매·신청 과정의 질문"
+              },
+              {
+                "label": "간접·대체자료",
+                "description": "경쟁 상품 리뷰\n공개 커뮤니티 질문\n검색 표현·경쟁사 FAQ\n업계에서 반복 관찰되는 문제"
+              },
+              {
+                "label": "가설 자료",
+                "description": "창업자의 현재 추정\n교육용 모의 인터뷰\nAI가 제안한 고객 아이디어"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b02-rule",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "> 직접 증거 · 대체자료 · 가설을 **같은 칸에 섞지 않습니다.**\n\n자료마다 `인터뷰-01`, `문의-03`, `리뷰-07`, `가설-02`처럼 출처와 번호를 남깁니다.",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b02-ai",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**중요:** “AI가 알려준 고객 특징”은 고객 증거가 아닙니다. AI는 증거를 정리하는 도구이지, 없는 고객 사실을 만드는 자료원이 아닙니다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "b02-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“인터뷰 한 줄, 문의 한 줄, 리뷰 한 줄도 증거가 될 수 있습니다. 중요한 것은 자료의 출처와 상태를 분리해서 기록하는 것입니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "좋은 증거와 약한 증거",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 모든 자료의 힘이 같지는 않습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b03-image",
+          "type": "image",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2-day1-lesson2/evidence_strength_ladder.svg",
+            "alt": "창업자 추정에서 실제 행동·구매까지 증거 강도를 단계별로 보여주는 Evidence Strength Ladder",
+            "caption": "고객 행동과 가까울수록, 여러 출처에서 반복될수록 증거가 강해집니다.",
+            "display": "hero",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "b03-quiz",
+          "type": "quiz",
+          "visibility": "visible",
+          "title": "빠른 확인",
+          "data": {
+            "questions": [
+              {
+                "id": "q03a-1",
+                "question": "“고객들은 자동화를 원할 것이다.” 현재 자료가 이 문장뿐이라면 가장 적절한 분류는?",
+                "choices": [
+                  {
+                    "id": "q03a-1-c1",
+                    "text": "강한 직접 증거"
+                  },
+                  {
+                    "id": "q03a-1-c2",
+                    "text": "약한 증거 또는 가설"
+                  },
+                  {
+                    "id": "q03a-1-c3",
+                    "text": "구매 행동 증거"
+                  }
+                ],
+                "correctChoiceId": "q03a-1-c2",
+                "explanation": "실제 고객 발언·행동·지출 자료가 없으므로 현재는 가설입니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "b03-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“증거가 많다고 좋은 게 아닙니다. 고객의 실제 행동과 가까울수록, 여러 출처에서 반복될수록 강해집니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "고객이 아직 없다면",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b04-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 아직 고객이 없어도 시작할 수 있습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b04-options",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "경쟁 상품 공개 리뷰"
+              },
+              {
+                "label": "공개 커뮤니티 질문·Q&A"
+              },
+              {
+                "label": "앱스토어·쇼핑몰 후기"
+              },
+              {
+                "label": "경쟁사 FAQ·문의 문구"
+              },
+              {
+                "label": "지인·동료와 진행한 교육용 모의 인터뷰"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b04-label",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**반드시 출처 유형을 표시하세요.**\n\n`공개 경쟁리뷰` · `공개 커뮤니티` · `교육용 모의 인터뷰` · `창업자 가설`\n\n대체자료를 실제 고객 데이터처럼 표현하지 않습니다.",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b04-privacy",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "실습 전 익명화",
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          },
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "실명·전화번호·이메일 제거"
+              },
+              {
+                "label": "주문·계약번호 제거"
+              },
+              {
+                "label": "회사 내부정보 제거"
+              },
+              {
+                "label": "고객을 특정할 수 있는 불필요한 세부정보 제거"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b04-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“고객 자료가 없다는 이유로 AI에게 고객을 만들어 달라고 하지 않습니다. 대체자료를 쓰되, 대체자료라는 사실을 정직하게 표시합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "고객 증거 태그 체계",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 고객 원문을 같은 기준으로 태깅합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b05-fields1",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "① 자료와 상황",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "자료 번호·출처",
+                "description": "인터뷰-01, 리뷰-03 등\n인터뷰·문의·리뷰·커뮤니티·경쟁사"
+              },
+              {
+                "label": "원문 핵심",
+                "description": "의미를 바꾸지 않은 핵심 문장"
+              },
+              {
+                "label": "고객 상황",
+                "description": "언제 · 어디서 · 무엇을 하던 중인지"
+              },
+              {
+                "label": "문제·빈도·심각도",
+                "description": "해결하려는 어려움\n반복 횟수 · 시간 · 비용 영향"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b05-fields2",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "② 선택과 해석",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "촉발 사건",
+                "description": "해결책을 찾게 된 계기"
+              },
+              {
+                "label": "현재 대안",
+                "description": "지금 사용하는 방식"
+              },
+              {
+                "label": "기대 결과·반대 이유",
+                "description": "무엇이 달라지길 원하는가\n무엇 때문에 주저하는가"
+              },
+              {
+                "label": "해석 상태",
+                "description": "근거 있음 · 추론 · 검증 필요"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b05-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**예시 원문**\n\n> “월말마다 여러 파일을 모아서 보고서를 만들어요. 복사해서 붙이다 보니 숫자가 틀릴까 봐 마지막에 다시 확인합니다.”\n\n- 상황: 월말 보고 직전\n- 문제: 여러 파일을 수작업으로 취합\n- 현재 대안: 복사·붙여넣기\n- 오류 걱정: **근거 있음**\n- “품질 불안이 크다”: **합리적 추론**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b05-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "> 원문을 바로 ‘고객 유형’으로 바꾸지 말고, 먼저 **행동과 상황을 분해합니다.**",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "b05-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“이 표가 Day1의 핵심 데이터베이스입니다. 다음 Lesson의 세그먼트와 ICP, 페르소나, 가치제안까지 이 증거를 다시 사용합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "인터랙티브 태깅 연습",
+      "layout": "fullscreen",
+      "blocks": [
+        {
+          "id": "b06-html",
+          "type": "html-file",
+          "visibility": "visible",
+          "data": {
+            "src": "/lesson-content/week2-day1-lesson2/evidence_tagging_interactive.html",
+            "trustedScript": true,
+            "designWidth": 1280,
+            "designHeight": 720,
+            "mobileRenderMode": "scale"
+          }
+        },
+        {
+          "id": "b06-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“좋은 분석가는 빈칸을 무서워하지 않습니다. 한 문장에 정보가 없으면 검증 필요로 남깁니다. AI에게 그 칸을 상상해서 채우게 하면 데이터가 오염됩니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "원문 번호와 출처 추적",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 좋은 분석은 원문까지 되돌아갈 수 있습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b07-image",
+          "type": "image",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2-day1-lesson2/source_trace_chain.svg",
+            "alt": "AI 인사이트에서 근거 번호, 실제 원문, 반증으로 이어지는 출처 추적 흐름",
+            "caption": "AI 인사이트 → 근거 번호 → 실제 원문 → 반증 확인",
+            "display": "hero",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "b07-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "> AI의 답을 믿는 대신, **AI가 가리킨 원문을 확인합니다.**",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "b07-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“AI가 반복된다고 말하면 바로 믿지 마세요. 어느 원문에서 나왔는지 돌아갈 수 있어야 하고, 반대되는 자료도 같이 남겨야 합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "내 고객 자료 준비하기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# ChatGPT에 넣기 전에 자료부터 정리합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b08-prev",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "customer-analysis-foundation",
+            "emptyMessage": "Lesson1 결과가 없어도 진행할 수 있습니다. 현재 고객 가설을 직접 입력하세요."
+          }
+        },
+        {
+          "id": "b08-form",
+          "type": "input-form",
+          "visibility": "visible",
+          "title": "고객 증거 분석 준비",
+          "data": {
+            "fields": [
+              {
+                "id": "f08-idea",
+                "label": "사업 아이디어 한 문장",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 소규모 사업자의 반복 보고 업무를 줄이는 AI 자동화 서비스"
+              },
+              {
+                "id": "f08-hypothesis",
+                "label": "Lesson1에서 만든 현재 고객 가설",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "문제·상황 중심으로 적어주세요."
+              },
+              {
+                "id": "f08-stage",
+                "label": "현재 판매·검증 단계",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "아이디어",
+                  "인터뷰 진행 중",
+                  "MVP",
+                  "초기 사용자",
+                  "초기 매출"
+                ]
+              },
+              {
+                "id": "f08-source",
+                "label": "자료 출처 유형",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "실제 고객 인터뷰",
+                  "실제 문의·상담",
+                  "고객 리뷰",
+                  "경쟁 상품 리뷰",
+                  "공개 커뮤니티",
+                  "교육용 모의 인터뷰",
+                  "혼합 자료"
+                ]
+              },
+              {
+                "id": "f08-raw",
+                "label": "익명화한 고객 원문",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "[자료-01] ...\n[자료-02] ...\n[자료-03] ..."
+              },
+              {
+                "id": "f08-alt",
+                "label": "고객이 지금 쓰는 대안",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f08-check",
+                "label": "익명화와 출처 구분을 확인했습니다",
+                "kind": "checkbox",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "customer-analysis-foundation"
+            ]
+          }
+        },
+        {
+          "id": "b08-checklist",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "업로드 전 확인",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "실명·전화·이메일을 제거했다"
+              },
+              {
+                "label": "자료마다 번호를 붙였다"
+              },
+              {
+                "label": "실제 고객 / 공개 대체자료 / 교육용 자료를 구분했다"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b08-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“원문을 예쁘게 고쳐 쓰지 마세요. 의미를 바꾸지 않는 범위에서 익명화하고 자료 번호만 붙이면 됩니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "ChatGPT 고객 증거 분석",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# AI에게 고객을 만들라고 하지 말고, 원문을 분석하게 합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b09-prompt",
+          "type": "prompt",
+          "visibility": "visible",
+          "title": "고객 증거 태깅 프롬프트",
+          "description": "복사한 뒤 대괄호 영역을 Page08에서 정리한 내용으로 직접 바꿔 넣으세요.",
+          "data": {
+            "prompt": "당신은 초기 창업자의 근거 중심 고객 연구 분석가다.\n\n아래 고객 자료만을 근거로 분석하라.\n자료에 없는 고객 특성, 통계, 고객 발언, 지불의사, 인구통계는 만들지 마라.\n\n[사업 아이디어]\n여기에 입력\n\n[현재 고객 가설]\n여기에 입력\n\n[현재 판매·검증 단계]\n여기에 입력\n\n[고객 원문]\n자료 번호를 유지해서 붙여넣기\n\n분석 규칙:\n1. 각 주장에 근거가 된 자료 번호를 붙인다.\n2. 자료에 직접 등장한 내용과 추론을 분리한다.\n3. 근거가 서로 모순되면 양쪽 자료를 모두 표시한다.\n4. 고객 원문에서 고객 상황, 반복 문제, 빈도·심각도, 촉발 사건, 현재 대안, 기대 결과, 반대 이유를 추출한다.\n5. 자료에 없는 항목은 빈칸 또는 '검증 필요'로 표시한다.\n6. 근거 없는 연령, 성별, 소득, 성격 특성을 생성하지 않는다.\n7. 아직 세그먼트를 최종 확정하지 않는다.\n\n출력 A. 고객 증거 태그 표\n자료번호 | 출처유형 | 원문 핵심 | 고객 상황 | 문제 | 빈도·심각도 | 촉발 사건 | 현재 대안 | 기대 결과 | 반대 이유 | 해석 상태\n\n출력 B. 반복 패턴 후보\n반복 패턴 | 관련 자료 번호 | 반대되는 자료 | 현재 증거 수준\n\n출력 C. 다음 검증 질문\n현재 자료만으로 확인할 수 없는 중요한 질문 5개",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          }
+        },
+        {
+          "id": "b09-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "description": "익명화한 자료만 사용하고, 외부 전송 전에 개인정보가 남아 있지 않은지 확인하세요.",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 고객 증거 분석",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "고객 증거 분석",
+            "practiceDescription": "원문 번호를 유지한 채 반복 문제·촉발 사건·현재 대안·반증을 구조화합니다.",
+            "estimatedMinutes": 12
+          }
+        },
+        {
+          "id": "b09-rule",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "성공 기준",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "각 주장에 실제 원문 번호가 붙어 있다"
+              },
+              {
+                "label": "사실과 추론이 분리되어 있다"
+              },
+              {
+                "label": "반대되는 자료가 함께 표시된다"
+              },
+              {
+                "label": "원문에 없는 내용은 검증 필요로 남는다"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b09-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“이번 실습의 성공 기준은 AI 답이 길고 멋있는지가 아닙니다. 각 주장에 원문 번호가 붙어 있고 실제 원문으로 돌아가 확인할 수 있는지가 성공 기준입니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "AI 결과 검수",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# AI 결과에서 먼저 오류를 찾습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b10-check",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "5개 검수 질문",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "실제 원문 번호가 붙어 있는가?"
+              },
+              {
+                "label": "원문 의미를 과장하거나 바꾸지 않았는가?"
+              },
+              {
+                "label": "사실과 추론이 분리되어 있는가?"
+              },
+              {
+                "label": "반대되는 자료가 누락되지 않았는가?"
+              },
+              {
+                "label": "자료에 없는 정보가 생성되지 않았는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b10-form",
+          "type": "input-form",
+          "visibility": "visible",
+          "title": "AI 결과 검수 기록",
+          "data": {
+            "fields": [
+              {
+                "id": "f10-accurate",
+                "label": "근거가 정확했던 항목",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f10-misread",
+                "label": "AI가 과장하거나 잘못 해석한 항목",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f10-counter",
+                "label": "서로 모순되는 고객 자료",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f10-verify",
+                "label": "검증이 더 필요한 항목",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f10-keep",
+                "label": "수정 후 남길 핵심 증거",
+                "kind": "long-text",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "b10-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**검수 예시**\n\nAI: “모든 고객은 시간 절약을 가장 중요하게 생각한다.”\n\n검수: `모든 고객`은 과장일 수 있습니다. 반대 자료가 있다면 함께 적고, **일부 자료에서 시간 부족이 반복되지만 다른 자료에서는 다른 문제가 확인됨**처럼 수정합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b10-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“AI가 틀린 부분을 찾는 것이 이번 페이지의 실습입니다. 좋은 AI 활용은 틀린 답을 빨리 찾아 원문으로 고치는 능력입니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "반복 패턴 정리",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b11-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 고객 원문 여러 개에서 반복되는 패턴을 찾습니다\n\n아직 **세그먼트라고 부르지 않습니다.**",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b11-examples",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "예시 패턴\n\n- 월말·마감 직전 문제가 급해짐\n- 수작업 복사·붙여넣기를 현재 대안으로 사용\n- 외주 비용보다 수정 커뮤니케이션이 더 큰 불만\n- 새로운 툴 학습 부담이 변경 장벽",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b11-form",
+          "type": "input-form",
+          "visibility": "visible",
+          "title": "Lesson2 최종 고객 증거·반복 패턴",
+          "data": {
+            "fields": [
+              {
+                "id": "f11-evidence",
+                "label": "검수 후 남긴 핵심 증거",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-counter",
+                "label": "반증 또는 서로 다른 고객 자료",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-verify",
+                "label": "검증이 더 필요한 항목",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-p1",
+                "label": "반복 패턴 1",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-p1-src",
+                "label": "반복 패턴 1 근거 자료 번호",
+                "kind": "short-text",
+                "required": false
+              },
+              {
+                "id": "f11-p1-level",
+                "label": "반복 패턴 1 증거 수준",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "직접 증거 강함",
+                  "직접 증거 일부",
+                  "간접 증거",
+                  "현재는 가설",
+                  "추가 검증 필요"
+                ]
+              },
+              {
+                "id": "f11-p2",
+                "label": "반복 패턴 2",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-p2-src",
+                "label": "반복 패턴 2 근거 자료 번호",
+                "kind": "short-text",
+                "required": false
+              },
+              {
+                "id": "f11-p2-level",
+                "label": "반복 패턴 2 증거 수준",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "직접 증거 강함",
+                  "직접 증거 일부",
+                  "간접 증거",
+                  "현재는 가설",
+                  "추가 검증 필요"
+                ]
+              },
+              {
+                "id": "f11-p3",
+                "label": "반복 패턴 3",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-p3-src",
+                "label": "반복 패턴 3 근거 자료 번호",
+                "kind": "short-text",
+                "required": false
+              },
+              {
+                "id": "f11-p3-level",
+                "label": "반복 패턴 3 증거 수준",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "직접 증거 강함",
+                  "직접 증거 일부",
+                  "간접 증거",
+                  "현재는 가설",
+                  "추가 검증 필요"
+                ]
+              },
+              {
+                "id": "f11-p4",
+                "label": "반복 패턴 4",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-p4-src",
+                "label": "반복 패턴 4 근거 자료 번호",
+                "kind": "short-text",
+                "required": false
+              },
+              {
+                "id": "f11-p4-level",
+                "label": "반복 패턴 4 증거 수준",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "직접 증거 강함",
+                  "직접 증거 일부",
+                  "간접 증거",
+                  "현재는 가설",
+                  "추가 검증 필요"
+                ]
+              },
+              {
+                "id": "f11-p5",
+                "label": "반복 패턴 5",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-p5-src",
+                "label": "반복 패턴 5 근거 자료 번호",
+                "kind": "short-text",
+                "required": false
+              },
+              {
+                "id": "f11-p5-level",
+                "label": "반복 패턴 5 증거 수준",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "직접 증거 강함",
+                  "직접 증거 일부",
+                  "간접 증거",
+                  "현재는 가설",
+                  "추가 검증 필요"
+                ]
+              },
+              {
+                "id": "f11-questions",
+                "label": "다음 검증 질문",
+                "kind": "long-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "customer-analysis-foundation"
+            ]
+          }
+        },
+        {
+          "id": "b11-check",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "패턴을 저장하기 전",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "최소 2개 이상 자료에서 반복되는가?"
+              },
+              {
+                "label": "한 사람의 강한 의견을 전체처럼 해석하지 않았는가?"
+              },
+              {
+                "label": "반증을 같이 적었는가?"
+              },
+              {
+                "label": "자료 번호로 원문까지 되돌아갈 수 있는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b11-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“여기서 세그먼트 이름을 붙이지 마세요. 먼저 반복되는 행동과 문제만 적습니다. Lesson3에서 이 패턴들을 묶고 비교합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "고객 증거와 반복 패턴 저장",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b12-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "# 이제 고객 가설에 근거가 생겼습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b12-preview",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "customer-evidence",
+            "emptyMessage": "아직 저장된 고객 증거 결과가 없습니다."
+          }
+        },
+        {
+          "id": "b12-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "customer-evidence",
+            "artifactTitle": "Day1 Lesson2 — 고객 증거 및 반복 패턴",
+            "sourceBlockId": "b11-form",
+            "buttonLabel": "내 프로젝트에 저장"
+          }
+        },
+        {
+          "id": "b12-reflect",
+          "type": "reflection",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              "처음 생각한 고객 가설과 실제 자료 사이에서 가장 크게 달랐던 점은 무엇인가요?"
+            ],
+            "placeholder": "한두 문장으로 적어보세요."
+          }
+        },
+        {
+          "id": "b12-done",
+          "type": "infographic",
+          "visibility": "visible",
+          "title": "Lesson2 완료 체크",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "실제 고객 자료와 가설을 구분했다"
+              },
+              {
+                "label": "원문에 자료 번호를 붙였다"
+              },
+              {
+                "label": "AI 결과를 원문과 대조했다"
+              },
+              {
+                "label": "반증을 함께 기록했다"
+              },
+              {
+                "label": "반복 패턴을 3개 이상 정리했다"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b12-next",
+          "type": "rich-text",
+          "visibility": "visible",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "## 다음 Lesson\n\n**Lesson3 — 반복 패턴을 세그먼트로 바꾸기**\n\n오늘 저장한 `customer-evidence`를 불러와 세그먼트 후보와 우선순위를 만듭니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b12-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "data": {
+            "markdown": "**강사 멘트**\n\n“오늘의 결과는 세그먼트가 아닙니다. 세그먼트를 만들 수 있는 증거 재료입니다. 다음 시간에는 이 재료를 문제·상황·행동 패턴으로 묶습니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    }
+  ]
+}
