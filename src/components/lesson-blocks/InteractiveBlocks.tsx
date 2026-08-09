@@ -49,15 +49,19 @@ export function QuizBlockRenderer({ block }: { block: QuizBlock }) {
                       // 모바일에서 손가락으로 고르는 버튼이라 최소 44px를 준다
                       "flex min-h-11 items-center rounded-lg border px-3 py-2 text-left text-sm transition-colors",
                       !answered && "border-border hover:border-primary/40 hover:bg-primary/5",
-                      answered && isThisCorrect && "border-success/40 bg-success/10 text-success",
+                      answered &&
+                        isThisCorrect &&
+                        "border-success/40 bg-success/10 text-success-strong",
                       answered &&
                         isThisSelected &&
                         !isThisCorrect &&
                         "border-danger/40 bg-danger/10 text-danger",
+                      // 고르지 않은 보기도 답을 확인한 뒤 다시 읽는다.
+                      // /70까지 흐리면 흰 배경에서 2.7:1이라 잘 안 읽힌다.
                       answered &&
                         !isThisSelected &&
                         !isThisCorrect &&
-                        "border-border text-muted-foreground/70"
+                        "border-border text-muted-foreground"
                     )}
                   >
                     {choice.text}
@@ -69,7 +73,7 @@ export function QuizBlockRenderer({ block }: { block: QuizBlock }) {
               <div
                 className={cn(
                   "mt-3 flex items-start gap-2 rounded-lg p-3 text-sm",
-                  isCorrect ? "bg-success/10 text-success" : "bg-danger/10 text-danger"
+                  isCorrect ? "bg-success/10 text-success-strong" : "bg-danger/10 text-danger"
                 )}
               >
                 {isCorrect ? (

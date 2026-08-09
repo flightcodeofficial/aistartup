@@ -257,7 +257,7 @@ export function SaveArtifactBlockRenderer({ block }: { block: SaveArtifactBlock 
           </span>
         )}
         {savedAt && (
-          <span className="flex items-center gap-1 text-xs text-success">
+          <span className="flex items-center gap-1 text-xs text-success-strong">
             <CheckCircle2 className="size-3.5" />
             저장됨
           </span>
