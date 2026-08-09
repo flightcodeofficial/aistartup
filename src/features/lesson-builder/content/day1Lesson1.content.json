@@ -451,7 +451,7 @@
     {
       "id": "p08",
       "title": "근거 있음, 추론, 검증 필요",
-      "layout": "wide",
+      "layout": "fullscreen",
       "blocks": [
         {
           "id": "b08-html",
@@ -467,28 +467,6 @@
             "designWidth": 1280,
             "designHeight": 720,
             "mobileRenderMode": "responsive"
-          }
-        },
-        {
-          "id": "b08-rules",
-          "type": "infographic",
-          "title": "판정 규칙",
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "숫자에는 출처·기준일·정의가 필요하다"
-              },
-              {
-                "label": "고객 발언에는 원문 근거가 필요하다"
-              },
-              {
-                "label": "없는 정보는 채우지 않는다"
-              },
-              {
-                "label": "불확실한 내용은 다음 인터뷰 질문으로 바꾼다"
-              }
-            ]
           }
         },
         {
@@ -521,64 +499,64 @@
           "data": {
             "questions": [
               {
-                "id": "q09-1",
-                "question": "고객 후기 원문에 “매달 보고서 작성에 약 4시간이 걸린다”고 적혀 있다.",
+                "id": "q09b-1",
+                "question": "다음 중 Evidence-first 방식의 요청은?",
                 "choices": [
                   {
-                    "id": "q09-1-c1",
-                    "text": "근거 있음"
+                    "id": "q09b-1-c1",
+                    "text": "우리 고객 페르소나 5개 만들어줘"
                   },
                   {
-                    "id": "q09-1-c2",
-                    "text": "합리적 추론"
+                    "id": "q09b-1-c2",
+                    "text": "아래 고객 후기 10건에서 반복 문제와 촉발 사건을 원문 번호와 함께 추출해줘"
                   },
                   {
-                    "id": "q09-1-c3",
-                    "text": "검증 필요"
+                    "id": "q09b-1-c3",
+                    "text": "20대 여성이 좋아할 광고문구를 만들어줘"
                   }
                 ],
-                "correctChoiceId": "q09-1-c1",
-                "explanation": "고객 원문에서 직접 확인되는 내용이므로 근거 있음입니다."
+                "correctChoiceId": "q09b-1-c2",
+                "explanation": "고객을 상상시키지 않고 실제 자료를 분석하게 하는 요청이 Evidence-first 방식이다."
               },
               {
-                "id": "q09-2",
-                "question": "여러 고객이 오류를 다시 확인한다고 말했다. 따라서 보고 전 품질 불안이 클 수 있다.",
+                "id": "q09b-2",
+                "question": "AI가 고객 자료에 없는 “30대 여성일 가능성이 높다”는 특성을 제안했다. 가장 적절한 행동은?",
                 "choices": [
                   {
-                    "id": "q09-2-c1",
-                    "text": "근거 있음"
+                    "id": "q09b-2-c1",
+                    "text": "페르소나에 바로 반영한다"
                   },
                   {
-                    "id": "q09-2-c2",
-                    "text": "합리적 추론"
+                    "id": "q09b-2-c2",
+                    "text": "검증 필요로 표시하고 실제 자료에서 확인한다"
                   },
                   {
-                    "id": "q09-2-c3",
-                    "text": "검증 필요"
+                    "id": "q09b-2-c3",
+                    "text": "경쟁사 페르소나를 찾아 비슷하게 수정한다"
                   }
                 ],
-                "correctChoiceId": "q09-2-c2",
-                "explanation": "여러 근거에서 합리적으로 유추했지만 고객이 직접 말한 문장은 아니므로 추론입니다."
+                "correctChoiceId": "q09b-2-c2",
+                "explanation": "자료에 없는 인구통계 특성은 사실로 사용하지 않고 검증 대상으로 남긴다."
               },
               {
-                "id": "q09-3",
-                "question": "AI가 “이 고객은 월 10만 원까지 지불할 것이다”라고 제안했다. 자료에는 가격 관련 발언이 없다.",
+                "id": "q09b-3",
+                "question": "다음 중 이번 수업의 AI 활용 원칙에 가장 맞는 흐름은?",
                 "choices": [
                   {
-                    "id": "q09-3-c1",
-                    "text": "근거 있음"
+                    "id": "q09b-3-c1",
+                    "text": "AI 작성 → 즉시 자동 발송"
                   },
                   {
-                    "id": "q09-3-c2",
-                    "text": "합리적 추론"
+                    "id": "q09b-3-c2",
+                    "text": "AI 작성 → 사람 검토 → 게시·발송"
                   },
                   {
-                    "id": "q09-3-c3",
-                    "text": "검증 필요"
+                    "id": "q09b-3-c3",
+                    "text": "AI 작성 → 다른 AI에게 승인 요청 → 자동 발송"
                   }
                 ],
-                "correctChoiceId": "q09-3-c3",
-                "explanation": "지불의사는 자료에 없으므로 검증 필요로 두고 인터뷰나 가격 테스트로 확인해야 합니다."
+                "correctChoiceId": "q09b-3-c2",
+                "explanation": "외부 행동 전에는 사람이 마지막 승인 지점에 있어야 한다."
               }
             ]
           }
