@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { curriculum, getAllStepIdsForDay } from "@/features/curriculum/data";
-import { dayRelease, viewRelease } from "@/features/curriculum/release";
+import { dayRelease, viewRelease, SCHEDULED_NOTICE } from "@/features/curriculum/release";
 import { useIsStaff } from "@/features/curriculum/useRelease";
 import { ScheduledBadge } from "@/components/curriculum/ScheduledNotice";
 import { useProgressStore, calcProgressPercent } from "@/features/progress/store";
@@ -46,7 +46,11 @@ export function WeekOverviewGrid() {
                       <p className="text-sm font-bold text-foreground">Day{day.day}</p>
                       {release.locked && <ScheduledBadge />}
                     </div>
-                    <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">{day.title}</p>
+                    {/* 아직 주제를 배정하지 않은 Day는 title이 비어 있다 — 가짜 제목 대신
+                        "수업 일정에 따라 순차 공개됩니다" 안내로 대체한다. */}
+                    <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">
+                      {day.title.trim() || (release.locked ? SCHEDULED_NOTICE.hint : "")}
+                    </p>
                     {!release.locked && (
                       <div className="mt-auto pt-3">
                         <Progress value={percent} className="h-1.5" />

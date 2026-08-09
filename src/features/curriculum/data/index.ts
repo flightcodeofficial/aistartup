@@ -12,6 +12,17 @@ function scheduledDay(day: number, title: string, goal: string): DayMeta {
   return { week: 2, day, title, goal, lessons: [], status: "coming-soon", release: "scheduled" };
 }
 
+/**
+ * 아직 주제를 배정하지 않은 Day — 커리큘럼 shell만 있는 상태.
+ *
+ * title을 지어내지 않는다. "" 로 두면 카드·상세 화면이 "AI 마케팅 콘텐츠 생성" 같은
+ * 가짜 제목 대신 "DAY N"과 "오픈 예정" 안내만 보여준다(WeekOverviewGrid, ScheduledNotice
+ * 양쪽 다 title이 비어 있으면 이 규칙을 따른다).
+ */
+function placeholderDay(day: number): DayMeta {
+  return { week: 2, day, title: "", goal: "", lessons: [], status: "coming-soon", release: "scheduled" };
+}
+
 export const week2: WeekMeta = {
   week: 2,
   title: "AI 기반 고객 확보 & 자동화 마케팅",
@@ -32,6 +43,9 @@ export const week2: WeekMeta = {
     scheduledDay(3, "DAY 3 — AI 랜딩페이지 제작", "AI 도구를 활용해 랜딩페이지 초안을 빠르게 제작합니다."),
     scheduledDay(4, "DAY 4 — FAQ & 고객 응대 자동화", "AI로 FAQ와 고객 응대 자동화 흐름을 구성합니다."),
     scheduledDay(5, "DAY 5 — 마케팅 자동화 통합 실습", "이번 주 결과물을 통합하고 자동화 파이프라인을 점검합니다."),
+    // Day6~15는 아직 주제를 배정하지 않았다 — 커리큘럼 shell만 미리 만들어 둔다.
+    // 관리자가 나중에 title/goal/release를 채우면 그대로 열린다.
+    ...Array.from({ length: 10 }, (_, i) => placeholderDay(i + 6)),
   ],
 };
 

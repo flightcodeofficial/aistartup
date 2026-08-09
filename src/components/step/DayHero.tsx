@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CalendarDays, FolderOpenDot, ListChecks } from "lucide-react";
 import type { DayMeta } from "@/features/curriculum/types";
 import { flattenSteps } from "@/features/curriculum/data";
+import { displayDayTitle } from "@/features/curriculum/release";
 import { useProgressStore, calcProgressPercent } from "@/features/progress/store";
 import { ProgressRing } from "@/components/common/ProgressRing";
 import { routes } from "@/lib/routes";
@@ -23,7 +24,7 @@ export function DayHero({ day }: { day: DayMeta }) {
             <CalendarDays className="size-3.5" />
             {day.week}주차 · Day{day.day}
           </span>
-          <h1 className="mt-3 text-2xl font-bold sm:text-3xl">{day.title}</h1>
+          <h1 className="mt-3 text-2xl font-bold sm:text-3xl">{displayDayTitle(day)}</h1>
           <p className="mt-2 text-sm text-white/70 sm:text-base">{day.goal}</p>
           <div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-white/60">
             <span className="flex items-center gap-2">

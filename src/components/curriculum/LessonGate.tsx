@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import type { DayMeta, LessonMeta } from "@/features/curriculum/types";
+import { displayDayTitle, displayLessonTitle } from "@/features/curriculum/release";
 import { useLessonRelease } from "@/features/curriculum/useRelease";
 import { routes } from "@/lib/routes";
 import { ScheduledNotice, StaffUnlockNotice } from "./ScheduledNotice";
@@ -28,8 +29,10 @@ export function LessonGate({
         <ScheduledNotice
           title={
             lesson
-              ? `Lesson ${lesson.lessonNumber} · ${lesson.title}`
-              : (day?.title ?? "예정된 수업")
+              ? `Lesson ${lesson.lessonNumber} · ${displayLessonTitle(lesson)}`
+              : day
+                ? displayDayTitle(day)
+                : "예정된 수업"
           }
           goal={lesson?.goal ?? day?.goal}
           backHref={day ? routes.day(day.week, day.day) : "/dashboard"}

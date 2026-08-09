@@ -74,3 +74,16 @@ export function lessonRelease(
   if (parent !== "open") return parent;
   return lesson?.release ?? "open";
 }
+
+/**
+ * 화면에 보여줄 Day 제목. 아직 주제를 배정하지 않은 Day는 title이 빈 문자열이다 —
+ * 그 자리를 "AI 마케팅 콘텐츠 생성" 같은 지어낸 제목으로 채우지 않고 "DAY N"만 쓴다.
+ */
+export function displayDayTitle(day: Pick<DayMeta, "day" | "title">): string {
+  return day.title.trim() || `DAY ${day.day}`;
+}
+
+/** 화면에 보여줄 Lesson 제목. 규칙은 displayDayTitle과 같다. */
+export function displayLessonTitle(lesson: Pick<LessonMeta, "lessonNumber" | "title">): string {
+  return lesson.title.trim() || `Lesson ${lesson.lessonNumber}`;
+}

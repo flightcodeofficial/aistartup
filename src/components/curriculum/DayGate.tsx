@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import type { DayMeta } from "@/features/curriculum/types";
+import { displayDayTitle } from "@/features/curriculum/release";
 import { useDayRelease } from "@/features/curriculum/useRelease";
 import { ScheduledNotice, StaffUnlockNotice } from "./ScheduledNotice";
 
@@ -16,7 +17,7 @@ export function DayGate({ day, children }: { day: DayMeta; children: ReactNode }
   const release = useDayRelease(day);
 
   if (!release.canEnter) {
-    return <ScheduledNotice title={day.title} goal={day.goal} backHref="/dashboard" />;
+    return <ScheduledNotice title={displayDayTitle(day)} goal={day.goal} backHref="/dashboard" />;
   }
 
   return (
