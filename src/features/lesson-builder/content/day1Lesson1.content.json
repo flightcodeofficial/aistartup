@@ -20,7 +20,6 @@
         {
           "id": "b01-hero",
           "type": "rich-text",
-          "description": "필요 이미지: 창업자 또는 작은 팀이 고객 인터뷰 메모·후기·대시보드를 함께 분석하는 현대적인 실무 장면. AI 로봇 클리셰는 사용하지 않는다.",
           "layout": {
             "width": "wide",
             "align": "left",
@@ -33,6 +32,22 @@
           "data": {
             "emphasis": "hero",
             "markdown": "# 고객을 모르면\n# AI는 틀린 방향을 더 빨리 확장합니다\n\n**빠르게 만드는 것보다, 누구를 위해 만드는지가 먼저입니다.**"
+          }
+        },
+        {
+          "id": "b01-image",
+          "type": "image",
+          "layout": {
+            "width": "full",
+            "align": "center",
+            "spacing": "medium"
+          },
+          "data": {
+            "url": "/lesson-content/week2-day1-lesson1/hero_customer_analysis_team.jpg",
+            "alt": "창업 팀 세 명이 고객 인터뷰 메모와 후기 출력물, 대시보드 화면을 함께 놓고 분석하는 장면",
+            "display": "hero",
+            "objectFit": "contain",
+            "aspectRatio": "16/9"
           }
         },
         {
