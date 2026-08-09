@@ -1,7 +1,7 @@
 "use client";
 
 import { assetRepository } from "@/features/assets";
-import { lessonRepository } from "./index";
+import type { LessonContent } from "./types";
 import {
   buildDay1Lesson1,
   DAY1_LESSON1_ASSET_FILES,
@@ -9,11 +9,19 @@ import {
   type Day1Lesson1Assets,
 } from "./day1Lesson1";
 
-// 실제 수업 Lesson을 Studio에 설치한다.
+// 코드에 들어 있는 "원고본" Lesson 목록.
 //
-// 인포그래픽 SVG는 public에 놓인 원본을 읽어 Asset Repository에 올리고,
-// 블록에는 asset:// 참조만 남긴다. 나중에 저장소가 Supabase Storage로 바뀌어도
-// 콘텐츠 파일은 그대로 두고 저장소만 교체하면 된다.
+// 원고는 content/*.content.json에 있고, 여기서는 저장소에 넣기 직전 준비(자산 업로드 등)만 한다.
+// Lesson2·3·4가 생기면 이 배열에 한 줄씩 추가하면 나머지 UI는 그대로 동작한다.
+
+export interface LessonSeed {
+  /** 저장소에 들어갈 Lesson id. 원고본과 저장본을 잇는 유일한 키다. */
+  id: string;
+  /** 버튼·다이얼로그에 쓰는 이름. */
+  label: string;
+  /** 최신 원고본을 만든다. 자산 업로드처럼 시간이 걸리는 준비도 여기서 한다. */
+  prepare(): Promise<LessonContent>;
+}
 
 async function uploadFromPublic(path: string): Promise<string> {
   const res = await fetch(path);
@@ -26,15 +34,11 @@ async function uploadFromPublic(path: string): Promise<string> {
 }
 
 /**
- * 이미 설치돼 있으면 아무것도 하지 않는다(강사가 편집한 내용을 덮어쓰지 않기 위해).
+ * 인포그래픽 SVG를 Asset Repository에 올리고 asset:// 참조로 바꾼 원고본을 만든다.
  * 업로드가 실패하면 public 경로를 그대로 쓴다 — 그림이 안 나오는 것보다 낫다.
  */
-export async function installDay1Lesson1(): Promise<{ id: string; assetsUploaded: boolean }> {
-  const existing = await lessonRepository.getLesson(DAY1_LESSON1_ID);
-  if (existing) return { id: DAY1_LESSON1_ID, assetsUploaded: false };
-
+async function prepareDay1Lesson1(): Promise<LessonContent> {
   let assets: Day1Lesson1Assets = { ...DAY1_LESSON1_ASSET_FILES };
-  let assetsUploaded = false;
   try {
     const [aiMarketingShift, imaginedVsEvidence, stpMap] = await Promise.all([
       uploadFromPublic(DAY1_LESSON1_ASSET_FILES.aiMarketingShift),
@@ -42,11 +46,20 @@ export async function installDay1Lesson1(): Promise<{ id: string; assetsUploaded
       uploadFromPublic(DAY1_LESSON1_ASSET_FILES.stpMap),
     ]);
     assets = { aiMarketingShift, imaginedVsEvidence, stpMap };
-    assetsUploaded = true;
   } catch {
     // public 경로 폴백 유지
   }
+  return buildDay1Lesson1(assets);
+}
 
-  await lessonRepository.saveLesson(buildDay1Lesson1(assets));
-  return { id: DAY1_LESSON1_ID, assetsUploaded };
+export const LESSON_SEEDS: LessonSeed[] = [
+  {
+    id: DAY1_LESSON1_ID,
+    label: "2주차 Day1 Lesson1 (1교시)",
+    prepare: prepareDay1Lesson1,
+  },
+];
+
+export function getLessonSeed(seedId: string): LessonSeed | undefined {
+  return LESSON_SEEDS.find((s) => s.id === seedId);
 }

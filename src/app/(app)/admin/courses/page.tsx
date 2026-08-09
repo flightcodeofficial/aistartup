@@ -3,12 +3,10 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BookOpen, FileStack, Loader2, Plus, Trash2, Wand2 } from "lucide-react";
+import { FileStack, Loader2, Plus, Trash2 } from "lucide-react";
 import { isRemoteLessonStore, lessonRepository } from "@/features/lesson-builder";
-import { buildSampleLesson, SAMPLE_LESSON_ID } from "@/features/lesson-builder/sampleLesson";
-import { buildGoldenLesson, GOLDEN_LESSON_ID } from "@/features/lesson-builder/goldenLesson";
-import { installDay1Lesson1 } from "@/features/lesson-builder/installDay1Lesson1";
 import type { LessonContent } from "@/features/lesson-builder/types";
+import { LessonSeedPanel } from "@/components/admin/LessonSeedPanel";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -21,7 +19,6 @@ export default function AdminCoursesPage() {
   const router = useRouter();
   const [lessons, setLessons] = useState<LessonContent[] | null>(null);
   const [creating, setCreating] = useState(false);
-  const [installing, setInstalling] = useState(false);
   const [form, setForm] = useState({ week: 2, day: 1, lesson: 1, title: "새 Lesson" });
 
   const refresh = useCallback(async () => {
@@ -49,29 +46,6 @@ export default function AdminCoursesPage() {
     }
   };
 
-  const handleInstallSample = async () => {
-    const existing = await lessonRepository.getLesson(SAMPLE_LESSON_ID);
-    if (!existing) await lessonRepository.saveLesson(buildSampleLesson());
-    router.push(`/admin/lessons/${SAMPLE_LESSON_ID}/edit`);
-  };
-
-  // 실제 수업본. 이미 있으면 덮어쓰지 않고 편집 화면으로만 이동한다.
-  const handleInstallDay1Lesson1 = async () => {
-    setInstalling(true);
-    try {
-      const { id } = await installDay1Lesson1();
-      router.push(`/admin/lessons/${id}/edit`);
-    } finally {
-      setInstalling(false);
-    }
-  };
-
-  const handleInstallGolden = async () => {
-    const existing = await lessonRepository.getLesson(GOLDEN_LESSON_ID);
-    if (!existing) await lessonRepository.saveLesson(buildGoldenLesson());
-    router.push(`/admin/lessons/${GOLDEN_LESSON_ID}/edit`);
-  };
-
   const handleDelete = async (id: string) => {
     if (!window.confirm("이 Lesson을 삭제할까요?")) return;
     await lessonRepository.deleteLesson(id);
@@ -92,31 +66,7 @@ export default function AdminCoursesPage() {
             ? "저장하면 서버에 반영되어 다른 PC에서도 같은 Lesson을 편집할 수 있습니다."
             : "지금은 이 브라우저(IndexedDB)에만 저장됩니다."}
         </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Button
-            onClick={handleInstallDay1Lesson1}
-            disabled={installing}
-            className="gap-2 bg-white text-primary hover:bg-white/90"
-          >
-            {installing ? <Loader2 className="size-4 animate-spin" /> : <BookOpen className="size-4" />}
-            2주차 Day1 Lesson1 열기 (실제 수업)
-          </Button>
-          <Button
-            variant="outline"
-            onClick={handleInstallGolden}
-            className="gap-2 border-white/30 bg-white/10 text-white hover:bg-white/20"
-          >
-            <Wand2 className="size-4" />
-            GOLDEN LESSON (파일럿)
-          </Button>
-          <Button
-            variant="outline"
-            onClick={handleInstallSample}
-            className="gap-2 border-white/30 bg-white/10 text-white hover:bg-white/20"
-          >
-            블록 샘플 열기
-          </Button>
-        </div>
+        <LessonSeedPanel />
       </div>
 
       <LessonUploadCard onDone={refresh} />

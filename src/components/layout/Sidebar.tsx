@@ -28,6 +28,9 @@ import { curriculum, flattenSteps } from "@/features/curriculum/data";
 import { useProgressStore, calcProgressPercent } from "@/features/progress/store";
 import { communityRepository } from "@/features/community";
 import { subscribeCommunityChange } from "@/features/community/realtimeChannel";
+import { useAuth } from "@/features/auth/AuthProvider";
+import { isStaff } from "@/features/auth/types";
+import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { routes } from "@/lib/routes";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
@@ -57,6 +60,10 @@ const UTILITY_LINKS: CommunityLink[] = [
 
 const BUILDER_LINKS: CommunityLink[] = [
   { href: routes.workspace(), label: "내 저장공간", icon: FolderKanban },
+];
+
+/** 강사·관리자에게만 보이는 메뉴. /admin은 StaffOnly와 RLS로도 막혀 있지만, 학생 눈에 띄지 않게 한다. */
+const STAFF_LINKS: CommunityLink[] = [
   { href: routes.adminCourses(), label: "Lesson Studio", icon: FileStack },
 ];
 
@@ -65,6 +72,12 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   const searchParams = useSearchParams();
   const currentUrl = searchParams.toString() ? `${pathname}?${searchParams.toString()}` : pathname;
   const steps = useProgressStore((s) => s.steps);
+
+  // 로컬 모드(Supabase 키 없음)에는 역할 개념이 없어 StaffOnly와 같은 기준으로 통과시킨다.
+  const { state: authState } = useAuth();
+  const showStaffMenu =
+    !isSupabaseConfigured ||
+    (authState.status === "signed-in" && isStaff(authState.user.role));
 
   const currentDay = useMemo(() => {
     const match = pathname.match(/\/week\/(\d+)\/day\/(\d+)/);
@@ -264,6 +277,15 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
           </p>
           <div className="space-y-1">{BUILDER_LINKS.map(renderLink)}</div>
         </div>
+
+        {showStaffMenu && (
+          <div>
+            <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+              강사 전용
+            </p>
+            <div className="space-y-1">{STAFF_LINKS.map(renderLink)}</div>
+          </div>
+        )}
       </nav>
 
       <div className="border-t border-sidebar-border px-4 py-4">
