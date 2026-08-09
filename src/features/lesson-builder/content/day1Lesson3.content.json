@@ -1,0 +1,869 @@
+{
+  "id": "w2-d1-l3-segmentation",
+  "courseId": "default-course",
+  "week": 2,
+  "day": 1,
+  "lesson": 3,
+  "title": "반복 패턴을 세그먼트와 ECP·ICP로 바꾸기",
+  "description": "고객 증거를 행동·상황·문제 기준으로 묶어 세그먼트 후보와 우선순위, ECP/ICP, Anti-ICP를 정리한다.",
+  "durationMinutes": 60,
+  "status": "draft",
+  "version": 1,
+  "createdAt": 0,
+  "updatedAt": 0,
+  "pages": [
+    {
+      "id": "p01",
+      "title": "고객 증거에서 세그먼트로",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b01-hero",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 이제 반복 패턴을 ‘고객군’으로 묶습니다\n\nLesson2에서 저장한 증거를 불러와 **비슷한 문제·상황·행동을 가진 고객군**으로 정리합니다.",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b01-prev",
+          "type": "result-preview",
+          "data": {
+            "artifactType": "customer-evidence",
+            "emptyMessage": "Lesson2 고객 증거가 없어도 현재 반복 패턴과 근거 번호를 메모하고 진행할 수 있습니다."
+          }
+        },
+        {
+          "id": "b01-flow",
+          "type": "infographic",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "증거",
+                "description": "반복 문제·촉발·대안·반증"
+              },
+              {
+                "label": "세그먼트 후보",
+                "description": "행동·상황·문제 기준 3개"
+              },
+              {
+                "label": "우선순위",
+                "description": "근거·문제 강도·대안·접근성 비교"
+              },
+              {
+                "label": "ECP/ICP·Anti-ICP",
+                "description": "적합·부적합 조건 정리"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b01-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“오늘은 사람을 나이와 성별로 먼저 나누지 않습니다. Lesson2 증거에서 반복되는 문제와 상황을 묶어 후보를 만듭니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "세그먼트의 기준",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 세그먼트는 ‘누구인가’보다 ‘어떤 문제·상황인가’에서 시작합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b02-compare",
+          "type": "infographic",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "약한 세분화",
+                "description": "30대 직장인\n여성 소상공인\nSNS를 자주 쓰는 사람\n→ 문제와 구매 상황이 불명확"
+              },
+              {
+                "label": "근거 기반 세분화",
+                "description": "마감 직전 문제가 급해지는 고객\n수정 반복이 큰 고객\n학습 부담 때문에 변경을 미루는 고객\n→ 행동·상황·문제로 구분"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b02-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "> 증거가 없는 연령·성별·소득·성격은 세그먼트 조건으로 만들지 않습니다.",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b02-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“인구통계가 항상 쓸모없다는 뜻이 아닙니다. 지금 단계에서는 고객 증거에 없는 속성을 먼저 상상하지 않는 것이 원칙입니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "세그먼트 후보 만들기",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 반복 패턴을 세그먼트 후보 3개로 묶습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b03-image",
+          "type": "image",
+          "data": {
+            "url": "/lesson-content/week2-day1-lesson3/segment_map.svg",
+            "alt": "고객 증거를 문제와 상황 기준 세그먼트 후보 3개로 묶는 지도",
+            "caption": "세그먼트 후보에는 근거 번호와 반증을 함께 남깁니다.",
+            "display": "hero",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "b03-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“같은 원문이 두 후보에 걸칠 수도 있습니다. 어떤 근거로 묶었는지 설명할 수 있는지가 중요합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "좋은 세그먼트 후보의 조건",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b04-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 세그먼트 후보마다 근거와 반증을 같이 봅니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b04-check",
+          "type": "infographic",
+          "title": "후보를 검토하는 5가지 질문",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "반복 문제와 촉발 사건이 분명한가?"
+              },
+              {
+                "label": "현재 대안에 시간·돈·노력이 들어가는가?"
+              },
+              {
+                "label": "여러 자료 번호로 되돌아갈 수 있는가?"
+              },
+              {
+                "label": "반대되는 자료를 함께 기록했는가?"
+              },
+              {
+                "label": "실제로 인터뷰·판매 접촉이 가능한가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b04-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“세그먼트 후보는 마케팅 카피가 아닙니다. 읽기 좋은 이름보다 근거로 되돌아갈 수 있는 구조가 중요합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "우선순위 기준",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 모든 세그먼트를 동시에 잡지 않습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b05-criteria",
+          "type": "infographic",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "증거 강도",
+                "description": "직접 증거가 반복되는가\n반증은 무엇인가"
+              },
+              {
+                "label": "문제 강도",
+                "description": "얼마나 자주·크게 발생하는가"
+              },
+              {
+                "label": "현재 대안",
+                "description": "이미 돈·시간·노력을 쓰는가"
+              },
+              {
+                "label": "접근 가능성",
+                "description": "실제로 인터뷰·판매 접촉이 가능한가"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b05-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "> 우선순위는 ‘가장 큰 시장’보다 **지금 증거를 더 빨리 쌓을 수 있는 고객**일 수 있습니다.",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b05-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“초기 단계에서는 실제로 접촉하고 검증할 수 있는 고객이 중요할 수 있습니다. 점수 하나로 자동 결정하지 마세요.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "세그먼트 우선순위 연습",
+      "layout": "fullscreen",
+      "blocks": [
+        {
+          "id": "b06-html",
+          "type": "html-file",
+          "data": {
+            "src": "/lesson-content/week2-day1-lesson3/segment_priority_interactive.html",
+            "trustedScript": true,
+            "designWidth": 1280,
+            "designHeight": 720,
+            "mobileRenderMode": "scale"
+          }
+        },
+        {
+          "id": "b06-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“이 인터랙션은 점수 계산법을 외우는 것이 목적이 아닙니다. 근거 강도와 접근 가능성을 같이 비교하는 연습입니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "ECP·ICP·Anti-ICP",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 우선 세그먼트를 세 가지 카드로 구체화합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b07-cards",
+          "type": "infographic",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "ECP",
+                "description": "초기 고객 프로필\n문제가 급한 상황\n현재 대안\n시도 이유\n접근 가능성"
+              },
+              {
+                "label": "ICP",
+                "description": "이상적 고객 프로필\n고객 유형\n문제 강도\n의사결정\n적합 조건"
+              },
+              {
+                "label": "Anti-ICP",
+                "description": "맞지 않는 고객 조건\n비용·기능·운영 부적합\n문제 강도 낮음\n반증 확인"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b07-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "> 잘 맞는 조건만 쓰지 말고 **맞지 않는 조건**도 분리합니다. 증거가 없으면 ‘검증 필요’로 남깁니다.",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b07-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“ECP와 ICP는 고객을 예쁘게 묘사하는 문서가 아닙니다. 먼저 검증할 이유와 우리와 잘 맞는 조건을 구체화하는 도구입니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "ECP 또는 ICP 워크시트",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 우선 세그먼트를 ECP 또는 ICP 카드로 적어봅니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b08-prev",
+          "type": "result-preview",
+          "data": {
+            "artifactType": "customer-evidence",
+            "emptyMessage": "저장된 고객 증거가 없으면 현재 세그먼트 후보의 근거를 직접 입력하세요."
+          }
+        },
+        {
+          "id": "b08-form",
+          "type": "input-form",
+          "title": "ECP / ICP 핵심 조건",
+          "data": {
+            "fields": [
+              {
+                "id": "f08-type",
+                "label": "이번에 만들 프로필",
+                "kind": "select",
+                "required": true,
+                "options": [
+                  "ECP 중심",
+                  "ICP 중심",
+                  "둘 다 초안"
+                ]
+              },
+              {
+                "id": "f08-customer",
+                "label": "고객 유형",
+                "kind": "long-text",
+                "required": true,
+                "placeholder": "개인인가, 회사인가, 조직 내 어떤 역할인가"
+              },
+              {
+                "id": "f08-situation",
+                "label": "핵심 상황",
+                "kind": "long-text",
+                "required": true,
+                "placeholder": "어떤 상황에서 문제가 급해지는가"
+              },
+              {
+                "id": "f08-intensity",
+                "label": "문제 강도",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f08-alt",
+                "label": "기존 대안",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f08-try",
+                "label": "시도 의향의 근거",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f08-access",
+                "label": "접근 가능성",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f08-fit",
+                "label": "적합 조건",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f08-decision",
+                "label": "의사결정 구조",
+                "kind": "long-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "customer-evidence"
+            ]
+          }
+        },
+        {
+          "id": "b08-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“증거가 없는 항목은 채워 넣지 말고 검증 필요로 남겨도 됩니다. 조직 구매에서는 승인자와 사용자가 다를 수 있습니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "Anti-ICP 만들기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# ‘누구나 고객’이 되지 않도록 맞지 않는 조건도 정합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b09-check",
+          "type": "infographic",
+          "title": "Anti-ICP 후보 질문",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "우리 가격·비용 구조와 맞지 않는 조건은?"
+              },
+              {
+                "label": "필요 기능이 현재 범위를 벗어나는 조건은?"
+              },
+              {
+                "label": "운영 방식상 지원하기 어려운 조건은?"
+              },
+              {
+                "label": "문제 강도가 너무 낮아 변경 이유가 약한 조건은?"
+              },
+              {
+                "label": "실제 반증에서 반복된 부적합 조건은?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b09-form",
+          "type": "input-form",
+          "title": "맞지 않는 고객 조건",
+          "data": {
+            "fields": [
+              {
+                "id": "f09-a1",
+                "label": "Anti-ICP 조건 1",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f09-a1r",
+                "label": "조건 1의 이유와 근거",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f09-a2",
+                "label": "Anti-ICP 조건 2",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f09-a2r",
+                "label": "조건 2의 이유와 근거",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f09-a3",
+                "label": "Anti-ICP 조건 3",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f09-a3r",
+                "label": "조건 3의 이유와 근거",
+                "kind": "long-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "customer-evidence"
+            ]
+          }
+        },
+        {
+          "id": "b09-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“Anti-ICP는 고객을 배제하기 위한 낙인이 아니라, 지금 우리 방식과 맞지 않는 조건을 명확히 해 검증 자원을 낭비하지 않기 위한 장치입니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "ChatGPT 세분화 실습",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# ChatGPT에게 ‘고객을 만들라’가 아니라 ‘증거를 묶으라’고 요청합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b10-prompt",
+          "type": "prompt",
+          "title": "근거 기반 세분화 프롬프트",
+          "description": "Lesson2에서 저장한 고객 증거와 반복 패턴을 붙여넣고 실행하세요.",
+          "data": {
+            "prompt": "당신은 근거 중심 고객 연구 분석가다.\n\n아래 고객 증거와 반복 패턴만을 사용해 행동·상황·문제 기반 세그먼트 후보를 만든다.\n\n[사업 아이디어]\n직접 입력\n\n[고객 증거와 반복 패턴]\nLesson2 결과를 붙여넣기\n\n[현재 단계]\n직접 입력\n\n[접근 가능한 채널]\n직접 입력\n\n규칙:\n1. 세그먼트를 상상하지 않는다.\n2. 각 주장에 근거 자료 번호를 붙인다.\n3. 근거가 서로 모순되면 양쪽을 모두 표시한다.\n4. 증거 없는 연령, 성별, 소득, 성격은 만들지 않는다.\n5. 세그먼트 후보 3개를 만든다.\n6. 각 후보마다 반복 문제, 촉발 사건, 현재 대안, 기대 결과, 근거, 반증, 검증 질문을 작성한다.\n7. 우선순위 후보 1개를 제안하되 이유를 증거 강도, 문제 강도, 현재 대안, 접근 가능성으로 설명한다.\n8. 최소 1개의 Anti-ICP 조건을 제안하되 근거가 약하면 '검증 필요'로 표시한다.\n\n출력:\nA. 세그먼트 후보 3개 표\nB. 우선순위 후보 1개와 이유\nC. ECP 또는 ICP 초안\nD. Anti-ICP 조건\nE. 다음 검증 질문",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          }
+        },
+        {
+          "id": "b10-link",
+          "type": "external-link",
+          "description": "익명화한 고객 자료만 사용하고, AI 결과의 근거 번호를 다시 원문과 대조하세요.",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 세그먼트 후보 만들기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "세그먼트 후보 분석",
+            "practiceDescription": "증거 기반 세그먼트 3개와 우선순위 후보를 만듭니다.",
+            "estimatedMinutes": 10
+          }
+        },
+        {
+          "id": "b10-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“AI가 만들어낸 세그먼트 이름보다 각 후보에 어떤 자료 번호가 붙어 있는지를 먼저 보세요.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "Lesson3 최종 정리",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "b11-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 세그먼트 후보와 우선순위를 최종 정리합니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b11-form",
+          "type": "input-form",
+          "title": "Lesson3 최종 세그먼트 맵",
+          "data": {
+            "fields": [
+              {
+                "id": "f11-s1",
+                "label": "세그먼트 후보 1",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-s1e",
+                "label": "세그먼트 후보 1 근거·반증",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-s2",
+                "label": "세그먼트 후보 2",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-s2e",
+                "label": "세그먼트 후보 2 근거·반증",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-s3",
+                "label": "세그먼트 후보 3",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-s3e",
+                "label": "세그먼트 후보 3 근거·반증",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-priority",
+                "label": "우선순위 세그먼트 1개",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-reason",
+                "label": "우선순위 이유",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-profile",
+                "label": "ECP 또는 ICP 초안",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-anti",
+                "label": "Anti-ICP 조건",
+                "kind": "long-text",
+                "required": true
+              },
+              {
+                "id": "f11-buyer",
+                "label": "구매자 / 사용자 / 영향자 구분",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f11-questions",
+                "label": "다음 검증 질문",
+                "kind": "long-text",
+                "required": false
+              }
+            ],
+            "inputArtifactTypes": [
+              "customer-evidence"
+            ]
+          }
+        },
+        {
+          "id": "b11-check",
+          "type": "infographic",
+          "title": "저장 전 확인",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "세그먼트 후보가 문제·상황·행동 기준인가?"
+              },
+              {
+                "label": "각 후보에 근거와 반증이 있는가?"
+              },
+              {
+                "label": "우선순위 이유가 설명 가능한가?"
+              },
+              {
+                "label": "Anti-ICP 조건이 최소 1개 있는가?"
+              },
+              {
+                "label": "증거 없는 속성을 사실처럼 쓰지 않았는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b11-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“이 페이지가 다음 Lesson의 핵심 입력입니다. 완벽한 고객 정의보다 근거와 검증 질문이 남아 있는 구조가 중요합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "세그먼트 맵 저장",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "b12-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 이제 ‘누구를 먼저 볼 것인지’가 정리됐습니다",
+            "emphasis": "hero"
+          }
+        },
+        {
+          "id": "b12-preview",
+          "type": "result-preview",
+          "data": {
+            "artifactType": "segment",
+            "emptyMessage": "아직 저장된 세그먼트 결과가 없습니다."
+          }
+        },
+        {
+          "id": "b12-save",
+          "type": "save-artifact",
+          "data": {
+            "artifactType": "segment",
+            "artifactTitle": "Day1 Lesson3 — 세그먼트·ECP/ICP·Anti-ICP",
+            "sourceBlockId": "b11-form",
+            "buttonLabel": "내 프로젝트에 저장"
+          }
+        },
+        {
+          "id": "b12-reflection",
+          "type": "reflection",
+          "data": {
+            "questions": [
+              "처음 생각했던 타깃과 지금 우선순위 세그먼트가 달라졌다면, 어떤 증거 때문에 바뀌었나요?"
+            ],
+            "placeholder": "한두 문장으로 적어보세요."
+          }
+        },
+        {
+          "id": "b12-next",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 다음 Lesson\n\n**Lesson4 — 우선 세그먼트를 페르소나·고객여정·가치제안으로 연결하기**\n\n오늘 저장한 `segment` 결과를 불러와 한 명의 핵심 행위자와 고객 여정을 구체화합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": true
+          }
+        },
+        {
+          "id": "b12-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**강사 멘트**\n\n“오늘은 누구를 먼저 볼지 정했습니다. 다음 시간에는 그 우선 세그먼트 안에서 한 명의 핵심 행위자를 골라 여정과 가치제안으로 연결합니다.”",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          }
+        }
+      ]
+    }
+  ]
+}

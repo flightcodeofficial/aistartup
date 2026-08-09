@@ -14,6 +14,12 @@ import {
   DAY1_LESSON2_ID,
   type Day1Lesson2Assets,
 } from "./day1Lesson2";
+import {
+  buildDay1Lesson3,
+  DAY1_LESSON3_ASSET_FILES,
+  DAY1_LESSON3_ID,
+  type Day1Lesson3Assets,
+} from "./day1Lesson3";
 
 // 코드에 들어 있는 "원고본" Lesson 목록.
 //
@@ -76,6 +82,23 @@ async function prepareDay1Lesson2(): Promise<LessonContent> {
   return buildDay1Lesson2(assets);
 }
 
+/**
+ * P03의 image 블록 SVG를 Asset Repository에 올리고 asset:// 참조로 바꾼 원고본을 만든다.
+ * 업로드가 실패하면 public 경로를 그대로 쓴다.
+ */
+async function prepareDay1Lesson3(): Promise<LessonContent> {
+  let assets: Day1Lesson3Assets = { ...DAY1_LESSON3_ASSET_FILES };
+  try {
+    const [segmentMap] = await Promise.all([
+      uploadFromPublic(DAY1_LESSON3_ASSET_FILES.segmentMap),
+    ]);
+    assets = { segmentMap };
+  } catch {
+    // public 경로 폴백 유지
+  }
+  return buildDay1Lesson3(assets);
+}
+
 export const LESSON_SEEDS: LessonSeed[] = [
   {
     id: DAY1_LESSON1_ID,
@@ -86,6 +109,11 @@ export const LESSON_SEEDS: LessonSeed[] = [
     id: DAY1_LESSON2_ID,
     label: "2주차 Day1 Lesson2 (2교시)",
     prepare: prepareDay1Lesson2,
+  },
+  {
+    id: DAY1_LESSON3_ID,
+    label: "2주차 Day1 Lesson3 (3교시)",
+    prepare: prepareDay1Lesson3,
   },
 ];
 
