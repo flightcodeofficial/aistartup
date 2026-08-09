@@ -1,8 +1,15 @@
 import type { DayMeta, LessonMeta, PracticeKind, Step, WeekMeta } from "../types";
 import { week2day1 } from "./week2/day1";
 
-function comingSoonDay(day: number, title: string, goal: string): DayMeta {
-  return { week: 2, day, title, goal, lessons: [], status: "coming-soon" };
+/**
+ * 아직 진도가 오지 않은 Day.
+ *
+ * 커리큘럼에는 보이되 들어갈 수는 없다(release: "scheduled").
+ * status(콘텐츠 제작 상태)와 release(공개 여부)는 별개다 —
+ * 콘텐츠가 다 준비돼도 진도 전이면 열지 않는다.
+ */
+function scheduledDay(day: number, title: string, goal: string): DayMeta {
+  return { week: 2, day, title, goal, lessons: [], status: "coming-soon", release: "scheduled" };
 }
 
 export const week2: WeekMeta = {
@@ -11,11 +18,20 @@ export const week2: WeekMeta = {
   description:
     "생성형 AI를 활용해 타깃 고객을 정의하고, 마케팅 콘텐츠와 랜딩페이지, FAQ·고객 응대 자동화까지 완성하는 주간입니다.",
   days: [
-    { ...week2day1, status: "ready" },
-    comingSoonDay(2, "DAY 2 — AI 마케팅 콘텐츠 생성", "AI로 마케팅용 카피, 이미지, 숏폼 기획안을 생성합니다."),
-    comingSoonDay(3, "DAY 3 — AI 랜딩페이지 제작", "AI 도구를 활용해 랜딩페이지 초안을 빠르게 제작합니다."),
-    comingSoonDay(4, "DAY 4 — FAQ & 고객 응대 자동화", "AI로 FAQ와 고객 응대 자동화 흐름을 구성합니다."),
-    comingSoonDay(5, "DAY 5 — 마케팅 자동화 통합 실습", "이번 주 결과물을 통합하고 자동화 파이프라인을 점검합니다."),
+    // Day1만 열려 있다. Lesson1(1교시)만 진행했으므로 2~4교시는 따로 잠근다.
+    {
+      ...week2day1,
+      status: "ready",
+      release: "open",
+      lessons: week2day1.lessons.map((lesson) => ({
+        ...lesson,
+        release: lesson.lessonNumber === 1 ? ("open" as const) : ("scheduled" as const),
+      })),
+    },
+    scheduledDay(2, "DAY 2 — AI 마케팅 콘텐츠 생성", "AI로 마케팅용 카피, 이미지, 숏폼 기획안을 생성합니다."),
+    scheduledDay(3, "DAY 3 — AI 랜딩페이지 제작", "AI 도구를 활용해 랜딩페이지 초안을 빠르게 제작합니다."),
+    scheduledDay(4, "DAY 4 — FAQ & 고객 응대 자동화", "AI로 FAQ와 고객 응대 자동화 흐름을 구성합니다."),
+    scheduledDay(5, "DAY 5 — 마케팅 자동화 통합 실습", "이번 주 결과물을 통합하고 자동화 파이프라인을 점검합니다."),
   ],
 };
 

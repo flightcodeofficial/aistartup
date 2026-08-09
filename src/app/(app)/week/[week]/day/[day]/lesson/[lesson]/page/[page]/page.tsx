@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getDay } from "@/features/curriculum/data";
 import { getLessonManifest, lessonContentFileExists } from "@/lib/lessonContent";
 import { StudentLessonRoute } from "@/components/lesson-player/StudentLessonRoute";
+import { LessonGate } from "@/components/curriculum/LessonGate";
 import type { LessonPageViewerLessonOption } from "@/components/lesson-content/LessonPageViewer";
 
 // 학생용 Lesson 화면(canonical URL).
@@ -51,6 +52,7 @@ export default async function LessonContentPage({
   });
 
   return (
+    <LessonGate day={dayMeta} lesson={lessonMeta}>
     <StudentLessonRoute
       week={week}
       day={day}
@@ -69,5 +71,6 @@ export default async function LessonContentPage({
         otherLessons,
       }}
     />
+    </LessonGate>
   );
 }

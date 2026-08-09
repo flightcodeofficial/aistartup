@@ -25,6 +25,12 @@ import {
   Wand2,
 } from "lucide-react";
 import { curriculum, flattenSteps } from "@/features/curriculum/data";
+import {
+  dayRelease,
+  lessonRelease,
+  SCHEDULED_NOTICE,
+  viewRelease,
+} from "@/features/curriculum/release";
 import { useProgressStore, calcProgressPercent } from "@/features/progress/store";
 import { communityRepository } from "@/features/community";
 import { subscribeCommunityChange } from "@/features/community/realtimeChannel";
@@ -167,48 +173,76 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
             </p>
             <div className="space-y-1">
               {week.days.map((day) => {
-                const isComingSoon = day.status === "coming-soon";
+                const dayView = viewRelease(dayRelease(day), showStaffMenu);
+                if (!dayView.visible) return null;
+                const isComingSoon = !dayView.canEnter;
                 const isOpen = openDay === day.day && !isComingSoon;
                 const dayStepIds = flattenSteps(day).map((s) => s.id);
                 const dayPercent = calcProgressPercent(steps, dayStepIds);
+
+                // 잠긴 Day는 접었다 폈다 하는 대신 Day 화면으로 보낸다.
+                // 거기서 "오픈 예정"인 이유를 안내한다.
+                if (isComingSoon) {
+                  return (
+                    <Link
+                      key={day.day}
+                      href={routes.day(week.week, day.day)}
+                      onClick={onNavigate}
+                      className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-sidebar-accent"
+                    >
+                      <span className="flex items-center gap-2">
+                        <Lock className="size-3.5" />
+                        Day{day.day}
+                      </span>
+                      <span className="text-[10px] font-semibold">
+                        {SCHEDULED_NOTICE.badge}
+                      </span>
+                    </Link>
+                  );
+                }
 
                 return (
                   <div key={day.day}>
                     <button
                       type="button"
-                      disabled={isComingSoon}
                       onClick={() => setOpenDay(isOpen ? -1 : day.day)}
                       className={cn(
                         "flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium transition-colors",
-                        isComingSoon
-                          ? "cursor-not-allowed text-muted-foreground/60"
-                          : "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
+                        "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
                         isOpen && "bg-sidebar-accent text-sidebar-accent-foreground"
                       )}
                     >
                       <span className="flex items-center gap-2">
-                        {isComingSoon ? (
-                          <Lock className="size-3.5" />
-                        ) : (
-                          <span className="text-xs font-semibold text-primary">
-                            {dayPercent}%
-                          </span>
-                        )}
+                        <span className="text-xs font-semibold text-primary">{dayPercent}%</span>
                         Day{day.day}
                       </span>
-                      {!isComingSoon && (
-                        <ChevronDown
-                          className={cn(
-                            "size-4 transition-transform",
-                            isOpen && "rotate-180"
-                          )}
-                        />
-                      )}
+                      <ChevronDown
+                        className={cn("size-4 transition-transform", isOpen && "rotate-180")}
+                      />
                     </button>
 
                     {isOpen && (
                       <div className="mt-1 ml-3 space-y-2 border-l border-sidebar-border pl-3">
-                        {day.lessons.map((lesson) => (
+                        {day.lessons.map((lesson) => {
+                          const lessonView = viewRelease(
+                            lessonRelease(day, lesson),
+                            showStaffMenu
+                          );
+                          if (!lessonView.visible) return null;
+
+                          // 잠긴 Lesson은 제목만 남기고 STEP 목록을 펼치지 않는다.
+                          if (!lessonView.canEnter) {
+                            return (
+                              <div key={lesson.lessonNumber}>
+                                <p className="flex items-center gap-1.5 px-2 py-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
+                                  <Lock className="size-3" />
+                                  Lesson {lesson.lessonNumber} · {SCHEDULED_NOTICE.badge}
+                                </p>
+                              </div>
+                            );
+                          }
+
+                          return (
                           <div key={lesson.lessonNumber}>
                             <p className="px-2 py-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
                               Lesson {lesson.lessonNumber} · {lesson.title}
@@ -243,7 +277,8 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
                               })}
                             </div>
                           </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     )}
                   </div>

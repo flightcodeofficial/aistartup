@@ -9,6 +9,7 @@ import { SetLastPosition } from "@/components/step/SetLastPosition";
 import { NoteEditor } from "@/components/step/NoteEditor";
 import { PracticeSectionShell } from "@/components/practice/PracticeSectionShell";
 import { PracticeDispatcher } from "@/components/practice/PracticeDispatcher";
+import { LessonGate } from "@/components/curriculum/LessonGate";
 import { Badge } from "@/components/ui/badge";
 
 export default async function StepPage({
@@ -40,7 +41,9 @@ export default async function StepPage({
   const summaryBlocks = step.blocks.filter((b) => b.kind === "takeaway");
 
   return (
-    <div className="mx-auto max-w-3xl space-y-5 px-4 py-6 sm:px-8 sm:py-10">
+    // 주소를 직접 쳐서 들어오는 경우도 있으므로 화면에서도 막는다.
+    <LessonGate day={dayMeta} lesson={lesson}>
+      <div className="mx-auto max-w-3xl space-y-5 px-4 py-6 sm:px-8 sm:py-10">
       <SetLastPosition week={week} day={day} stepNumber={stepNumber} />
 
       <div>
@@ -72,6 +75,7 @@ export default async function StepPage({
       <NoteEditor stepId={step.id} />
 
       <StepCompleteBar stepId={step.id} stepTitle={step.title} prevHref={prevHref} nextHref={nextHref} />
-    </div>
+      </div>
+    </LessonGate>
   );
 }

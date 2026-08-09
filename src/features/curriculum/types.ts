@@ -4,6 +4,8 @@
 // features/projects(Project Workspace)에 저장된다 — Project는 Lesson의 결과물 저장소일 뿐,
 // Lesson을 대신하지 않는다.
 
+import type { ReleaseStatus } from "./release";
+
 export type BlockKind =
   | "theory" // ① Theory
   | "visual" // ② Example(그림)
@@ -103,6 +105,8 @@ export interface LessonMeta {
   title: string;
   goal: string;
   steps: Step[];
+  /** 학생에게 열려 있는지. 생략하면 Day를 따른다. features/curriculum/release.ts 참고. */
+  release?: ReleaseStatus;
 }
 
 export interface DayMeta {
@@ -111,7 +115,10 @@ export interface DayMeta {
   title: string;
   goal: string;
   lessons: LessonMeta[];
+  /** 콘텐츠 제작 상태(내부용). 학생 화면 문구에는 쓰지 않는다 — release를 쓴다. */
   status?: "ready" | "coming-soon";
+  /** 학생에게 열려 있는지. 생략하면 잠긴 것으로 본다. */
+  release?: ReleaseStatus;
 }
 
 export interface WeekMeta {
