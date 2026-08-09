@@ -389,6 +389,38 @@ check(
 const { data: dSubs } = await cStudentD.from("lesson_submissions").select("id");
 check("G. 학생D가 학생B 진행상태 조회 불가", !(dSubs ?? []).some((s) => s.id === SUB_ID));
 
+// 본인은 이어서 UPDATE할 수 있어야 한다(진행 중 계속 저장).
+const { error: subUpdErr } = await cStudentB
+  .from("lesson_submissions")
+  .update({ data: { ...payload, formValues: { "block-form": { f1: "학생B 수정된 답변" } } } })
+  .eq("id", SUB_ID);
+const { data: subAfterOwnUpdate } = await cStudentB
+  .from("lesson_submissions")
+  .select("data")
+  .eq("id", SUB_ID)
+  .maybeSingle();
+check(
+  "F. 본인 진행상태 UPDATE 가능",
+  !subUpdErr && subAfterOwnUpdate?.data?.formValues?.["block-form"]?.f1 === "학생B 수정된 답변",
+  subUpdErr?.message ?? ""
+);
+
+// 다른 학생은 이 행을 UPDATE할 수 없어야 한다.
+const { error: subHackUpdErr } = await cStudentD
+  .from("lesson_submissions")
+  .update({ status: "submitted" })
+  .eq("id", SUB_ID);
+const { data: subAfterHackAttempt } = await cStudentB
+  .from("lesson_submissions")
+  .select("status")
+  .eq("id", SUB_ID)
+  .maybeSingle();
+check(
+  "G. 학생D가 학생B 진행상태 UPDATE 불가",
+  subAfterHackAttempt?.status === "in-progress",
+  subHackUpdErr?.message ?? `실제 status=${subAfterHackAttempt?.status}`
+);
+
 // ── D. Storage ─────────────────────────────────────────────────────────────
 const png = Uint8Array.from(
   atob("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="),

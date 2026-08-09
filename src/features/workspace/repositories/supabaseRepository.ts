@@ -110,6 +110,12 @@ function rowToSubmission(row: SubmissionRow): LessonSubmission {
 }
 
 const CHANNEL = "workspace-realtime";
+// 같은 페이지에 result-preview·save-artifact처럼 subscribe()를 각자 부르는 블록이
+// 여러 개 있을 수 있다. Supabase 클라이언트는 같은 topic으로 channel()을 부르면
+// 이미 구독된 채널을 그대로 돌려주는데, 거기에 다시 .on()을 걸면
+// "cannot add postgres_changes callbacks ... after subscribe()"로 죽는다.
+// 그래서 호출마다 topic을 유니크하게 만들어 항상 새 채널을 받는다.
+let subscriberSeq = 0;
 
 class SupabaseWorkspaceRepository implements WorkspaceRepository {
   readonly name = "Supabase Workspace Repository";
@@ -391,7 +397,7 @@ class SupabaseWorkspaceRepository implements WorkspaceRepository {
     const client = getSupabaseBrowserClient();
     if (!client) return () => {};
     const channel = client
-      .channel(CHANNEL)
+      .channel(`${CHANNEL}-${subscriberSeq++}`)
       .on("postgres_changes", { event: "*", schema: "public", table: "projects" }, () => callback())
       .on("postgres_changes", { event: "*", schema: "public", table: "project_artifacts" }, () =>
         callback()
