@@ -218,32 +218,21 @@
           }
         },
         {
-          "id": "b03-compare",
+          "id": "b03-image",
           "type": "infographic",
-          "title": "Output-first vs Evidence-first",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "Output-first",
-                "description": "타깃을 상상한다\n→ 프롬프트를 만든다\n→ 콘텐츠를 대량 생성한다\n→ 반응이 없다\n→ 더 많이 만든다"
-              },
-              {
-                "label": "Evidence-first",
-                "description": "고객 발화·행동을 본다\n→ 반복 문제를 찾는다\n→ 우선 세그먼트를 정한다\n→ 메시지를 만든다\n→ 반응으로 다시 검증한다"
-              }
-            ]
-          }
-        },
-        {
-          "id": "b03-key",
-          "type": "rich-text",
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
+          "layout": {
+            "width": "full",
+            "align": "center",
+            "spacing": "medium"
           },
           "data": {
-            "markdown": "> **AI는 방향을 정하지 않습니다. 주어진 방향을 빠르게 확대합니다.**"
+            "variant": "image",
+            "items": [],
+            "imageUrl": "/lesson-content/week2-day1-lesson1/infographic_output_vs_evidence_first.png",
+            "alt": "Output-first 접근과 Evidence-first 접근을 4단계씩 비교하고, AI는 방향을 정하지 않고 주어진 방향을 빠르게 확대한다는 핵심 메시지를 담은 인포그래픽",
+            "fit": "contain",
+            "display": "hero",
+            "aspectRatio": "16/9"
           }
         },
         {
