@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>근거 있음 · 추론 · 검증 필요</title>
+<style>
+  :root{
+    --bg:#08111f; --panel:#101b30; --panel2:#0d1728; --line:#253752;
+    --text:#f8fafc; --muted:#9fb0c7;
+    --green:#10b981; --amber:#f59e0b; --rose:#f43f5e; --indigo:#6366f1;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;width:100%;height:100%;font-family:Arial,"Noto Sans KR","Malgun Gothic",sans-serif;background:var(--bg);color:var(--text)}
+  body{overflow:hidden}
+  button{font:inherit}
+  .stage{
+    width:1280px;height:720px;margin:0 auto;padding:34px 42px 30px;
+    background:
+      radial-gradient(circle at 90% 5%,rgba(99,102,241,.18),transparent 27%),
+      radial-gradient(circle at 5% 90%,rgba(16,185,129,.10),transparent 25%),
+      linear-gradient(145deg,#08111f,#0d1930);
+  }
+  .top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+  h1{font-size:38px;line-height:1.18;margin:0;font-weight:900;letter-spacing:-1px}
+  .sub{margin-top:8px;color:var(--muted);font-size:17px}
+  .badge{
+    border:1px solid #314665;background:#0c1627;border-radius:999px;padding:9px 14px;
+    color:#cbd5e1;font-size:14px;white-space:nowrap
+  }
+  .legend{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+  .legend-card{border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:rgba(15,23,42,.74)}
+  .legend-card b{display:block;font-size:18px;margin-bottom:5px}
+  .legend-card span{font-size:14px;color:#b7c5d8;line-height:1.4}
+  .legend-card.e{border-color:rgba(16,185,129,.55)}
+  .legend-card.i{border-color:rgba(245,158,11,.55)}
+  .legend-card.v{border-color:rgba(244,63,94,.55)}
+  .legend-card.e b{color:#34d399}.legend-card.i b{color:#fbbf24}.legend-card.v b{color:#fb7185}
+  .workspace{
+    display:grid;grid-template-columns:1.18fr .82fr;gap:18px;margin-top:18px;height:445px
+  }
+  .question-panel,.feedback-panel{
+    border:1px solid var(--line);border-radius:22px;background:rgba(12,22,39,.91);
+    padding:22px 24px;
+  }
+  .progress-row{display:flex;justify-content:space-between;align-items:center;color:#9fb0c7;font-size:14px}
+  .progress{height:7px;background:#17243a;border-radius:999px;overflow:hidden;margin-top:10px}
+  .bar{height:100%;background:linear-gradient(90deg,#6366f1,#8b5cf6);width:20%;transition:width .25s}
+  .label{margin-top:22px;color:#a5b4fc;font-size:14px;font-weight:800;letter-spacing:.4px}
+  .statement{
+    min-height:112px;margin-top:9px;padding:20px 22px;border-radius:18px;background:#111f36;border:1px solid #2b4162;
+    display:flex;align-items:center;font-size:24px;line-height:1.5;font-weight:800
+  }
+  .choices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  .choice{
+    min-height:72px;border-radius:16px;border:1px solid #344b6c;background:#101b2f;color:white;cursor:pointer;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;transition:.18s;
+  }
+  .choice:hover{transform:translateY(-2px);border-color:#64748b}
+  .choice strong{font-size:18px}.choice small{color:#91a5bf;font-size:12px}
+  .choice[data-value="evidence"]:hover{border-color:var(--green)}
+  .choice[data-value="inference"]:hover{border-color:var(--amber)}
+  .choice[data-value="verify"]:hover{border-color:var(--rose)}
+  .choice.correct{outline:2px solid var(--green);background:rgba(16,185,129,.12)}
+  .choice.wrong{outline:2px solid var(--rose);background:rgba(244,63,94,.10)}
+  .footer-actions{display:flex;justify-content:space-between;align-items:center;margin-top:17px}
+  .hint{font-size:13px;color:#71839b}
+  .next,.reset{
+    border:0;border-radius:13px;padding:11px 17px;font-weight:800;cursor:pointer
+  }
+  .next{background:#6366f1;color:white;display:none}
+  .reset{background:#17243a;color:#cbd5e1}
+  .feedback-panel{display:flex;flex-direction:column}
+  .feedback-title{font-size:16px;color:#9fb0c7;font-weight:800}
+  .feedback-state{
+    margin-top:14px;border-radius:18px;padding:18px;min-height:98px;border:1px dashed #36506f;
+    display:flex;flex-direction:column;justify-content:center
+  }
+  .feedback-state .state{font-size:25px;font-weight:900}
+  .feedback-state .reason{font-size:15px;line-height:1.55;color:#cbd5e1;margin-top:7px}
+  .empty .state{color:#7c8ea7}
+  .scorebox{
+    margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px
+  }
+  .score{border:1px solid #2a3d59;border-radius:15px;padding:14px;background:#0b1627}
+  .score span{display:block;color:#8ea1ba;font-size:13px}.score b{font-size:25px;margin-top:4px;display:block}
+  .rulebox{margin-top:14px;padding:15px;border-radius:16px;background:#0b1627;border:1px solid #243751}
+  .rulebox b{color:#a5b4fc}.rulebox ul{margin:8px 0 0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.55}
+  .edu{margin-top:auto;color:#667990;font-size:12px}
+  @media (max-width:640px){
+    body{overflow:auto}.stage{width:100%;height:auto;min-height:100vh;padding:20px 16px}
+    h1{font-size:29px}.top{display:block}.badge{display:inline-block;margin-top:12px}
+    .legend{grid-template-columns:1fr}.workspace{grid-template-columns:1fr;height:auto}
+    .choices{grid-template-columns:1fr}.statement{font-size:20px}
+  }
+</style>
+</head>
+<body>
+<main class="stage" aria-label="근거와 추론, 검증 필요 분류 연습">
+  <header class="top">
+    <div>
+      <h1>그럴듯함과 사실은 다릅니다</h1>
+      <div class="sub">문장을 읽고 <b>근거 있음 · 합리적 추론 · 검증 필요</b> 중 하나로 분류해보세요.</div>
+    </div>
+    <div class="badge">교육용 분류 연습 · 실제 고객 데이터 아님</div>
+  </header>
+
+  <section class="legend" aria-label="분류 기준">
+    <div class="legend-card e"><b>근거 있음</b><span>고객 원문이나 승인된 자료에서 직접 확인되는 내용</span></div>
+    <div class="legend-card i"><b>합리적 추론</b><span>근거에서 한 단계 유추할 수 있지만 직접 확인되지는 않은 내용</span></div>
+    <div class="legend-card v"><b>검증 필요</b><span>자료에 없거나, 별도의 인터뷰·실험·가격 검증이 필요한 내용</span></div>
+  </section>
+
+  <section class="workspace">
+    <div class="question-panel">
+      <div class="progress-row"><span id="counter">1 / 5</span><span>문장을 분류하세요</span></div>
+      <div class="progress"><div class="bar" id="bar"></div></div>
+      <div class="label">연습 문장</div>
+      <div class="statement" id="statement"></div>
+
+      <div class="choices" id="choices">
+        <button class="choice" data-value="evidence"><strong>근거 있음</strong><small>자료에서 직접 확인</small></button>
+        <button class="choice" data-value="inference"><strong>합리적 추론</strong><small>근거에서 한 단계 유추</small></button>
+        <button class="choice" data-value="verify"><strong>검증 필요</strong><small>아직 확인되지 않음</small></button>
+      </div>
+
+      <div class="footer-actions">
+        <span class="hint">정답보다 “왜 그렇게 분류하는지”가 중요합니다.</span>
+        <button class="next" id="next">다음 문장 →</button>
+      </div>
+    </div>
+
+    <aside class="feedback-panel">
+      <div class="feedback-title">판정 피드백</div>
+      <div class="feedback-state empty" id="feedback">
+        <div class="state">선택을 기다리는 중</div>
+        <div class="reason">세 가지 상태 중 하나를 선택하면 이유를 보여줍니다.</div>
+      </div>
+
+      <div class="scorebox">
+        <div class="score"><span>맞힌 문장</span><b id="score">0</b></div>
+        <div class="score"><span>남은 문장</span><b id="remain">5</b></div>
+      </div>
+
+      <div class="rulebox">
+        <b>판정할 때 기억할 것</b>
+        <ul>
+          <li>숫자에는 출처·기준일·정의가 필요합니다.</li>
+          <li>없는 정보는 그럴듯하게 채우지 않습니다.</li>
+          <li>불확실한 내용은 다음 검증 질문으로 바꿉니다.</li>
+        </ul>
+      </div>
+      <div class="edu">※ 모든 문장은 수업을 위한 교육용 예시입니다.</div>
+    </aside>
+  </section>
+</main>
+
+<script>
+const items = [
+  {
+    text:'고객 후기 원문에 “매달 보고서 작성에 약 4시간이 걸린다”고 적혀 있다.',
+    answer:'evidence',
+    title:'근거 있음',
+    reason:'고객 원문에서 직접 확인되는 내용입니다. 원문 번호와 함께 기록할 수 있습니다.'
+  },
+  {
+    text:'여러 고객이 보고 전에 오류를 다시 확인한다고 말했다. 따라서 보고 전 품질 불안이 클 수 있다.',
+    answer:'inference',
+    title:'합리적 추론',
+    reason:'반복된 행동이라는 근거에서 한 단계 유추한 해석입니다. 고객이 직접 “불안하다”고 말한 것은 아니므로 사실과 분리합니다.'
+  },
+  {
+    text:'AI가 “이 고객은 월 10만 원까지 지불할 것이다”라고 제안했다. 자료에는 가격 관련 발언이 없다.',
+    answer:'verify',
+    title:'검증 필요',
+    reason:'지불의사는 자료에서 확인되지 않았습니다. 인터뷰, 가격 제안, 구매 행동 같은 별도 검증이 필요합니다.'
+  },
+  {
+    text:'고객 문의에 “현재는 엑셀과 복사·붙여넣기로 정리한다”는 설명이 직접 들어 있다.',
+    answer:'evidence',
+    title:'근거 있음',
+    reason:'현재 대안이 고객 발화에 직접 나타난 경우입니다. 표현을 과장하지 않고 그대로 근거로 사용할 수 있습니다.'
+  },
+  {
+    text:'여러 자료에서 월말 직전에 문제가 반복된다. 월말 보고가 탐색을 촉발하는 사건일 가능성이 있다.',
+    answer:'inference',
+    title:'합리적 추론',
+    reason:'여러 자료의 시간적 패턴에서 합리적으로 유추한 가설입니다. 다음 인터뷰에서 “왜 그 시점에 해결책을 찾았는가?”를 확인하면 좋습니다.'
+  }
+];
+
+let idx=0, score=0, answered=false;
+const statement=document.getElementById('statement');
+const counter=document.getElementById('counter');
+const bar=document.getElementById('bar');
+const feedback=document.getElementById('feedback');
+const scoreEl=document.getElementById('score');
+const remain=document.getElementById('remain');
+const next=document.getElementById('next');
+const buttons=[...document.querySelectorAll('.choice')];
+
+function render(){
+  answered=false;
+  statement.textContent=items[idx].text;
+  counter.textContent=`${idx+1} / ${items.length}`;
+  bar.style.width=`${((idx+1)/items.length)*100}%`;
+  remain.textContent=items.length-idx;
+  feedback.className='feedback-state empty';
+  feedback.innerHTML='<div class="state">선택을 기다리는 중</div><div class="reason">세 가지 상태 중 하나를 선택하면 이유를 보여줍니다.</div>';
+  buttons.forEach(b=>{b.classList.remove('correct','wrong');b.disabled=false;});
+  next.style.display='none';
+}
+buttons.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(answered) return;
+    answered=true;
+    const item=items[idx];
+    const ok=btn.dataset.value===item.answer;
+    if(ok) score++;
+    scoreEl.textContent=score;
+    buttons.forEach(b=>{
+      b.disabled=true;
+      if(b.dataset.value===item.answer) b.classList.add('correct');
+    });
+    if(!ok) btn.classList.add('wrong');
+    const colors={evidence:'#34d399',inference:'#fbbf24',verify:'#fb7185'};
+    feedback.className='feedback-state';
+    feedback.innerHTML=`<div class="state" style="color:${colors[item.answer]}">${ok?'✓ ':''}${item.title}</div><div class="reason">${item.reason}</div>`;
+    next.style.display='inline-block';
+    next.textContent=idx===items.length-1?'처음부터 다시':'다음 문장 →';
+  });
+});
+next.addEventListener('click',()=>{
+  if(idx===items.length-1){idx=0;score=0;scoreEl.textContent='0';}
+  else idx++;
+  render();
+});
+render();
+</script>
+</body>
+</html>

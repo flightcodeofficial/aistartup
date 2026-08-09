@@ -454,44 +454,19 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b08-title",
-          "type": "rich-text",
-          "data": {
-            "emphasis": "lead",
-            "markdown": "# 그럴듯함과 사실은 다릅니다"
-          }
-        },
-        {
-          "id": "b08-states",
-          "type": "infographic",
-          "title": "AI 결과를 3가지 상태로 나눕니다",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "근거 있음",
-                "description": "고객 원문이나 승인된 자료에서 직접 확인되는 내용"
-              },
-              {
-                "label": "합리적 추론",
-                "description": "여러 근거를 종합하면 가능성이 있지만 직접 확인되지는 않은 내용"
-              },
-              {
-                "label": "검증 필요",
-                "description": "AI가 제안했지만 자료에서 확인되지 않는 내용"
-              }
-            ]
-          }
-        },
-        {
-          "id": "b08-examples",
-          "type": "rich-text",
-          "theme": {
-            "background": "card",
-            "bordered": true
+          "id": "b08-html",
+          "type": "html-file",
+          "layout": {
+            "width": "full",
+            "align": "center",
+            "spacing": "medium"
           },
           "data": {
-            "markdown": "### 예시\n\n- **근거 있음:** 후기 03 — “월말 보고서 작성에 4시간이 걸립니다.”\n- **추론:** 오류 재검수가 여러 번 반복된다 → 보고 전 품질 불안이 클 수 있음\n- **검증 필요:** “이 고객은 월 10만 원까지 지불할 것이다.”"
+            "src": "/lesson-content/week2-day1-lesson1/interactive_evidence_classification.html",
+            "trustedScript": true,
+            "designWidth": 1280,
+            "designHeight": 720,
+            "mobileRenderMode": "responsive"
           }
         },
         {
