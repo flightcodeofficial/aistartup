@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" rx="28" fill="#f8fafc"/>
+<text x="64" y="76" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="36" font-weight="700">페르소나는 ‘상상한 인물’이 아니라 증거를 붙인 가설입니다</text>
+<text x="64" y="116" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="18">그럴듯한 프로필보다 문제 · 상황 · 행동 · 근거 번호가 중요합니다.</text>
+<rect x="70" y="165" width="530" height="430" rx="28" fill="#fff1f2" stroke="#fecdd3"/>
+<text x="105" y="215" fill="#be123c" font-family="Arial,'Noto Sans KR',sans-serif" font-size="23" font-weight="700">상상 중심 페르소나</text>
+<text x="105" y="260" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="25" font-weight="700">“30대 직장인 · SNS를 자주 사용”</text>
+<text x="105" y="312" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 어떤 문제가 급한지 알 수 없음</text>
+<text x="105" y="346" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 무엇을 쓰고 있는지 알 수 없음</text>
+<text x="105" y="380" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 구매를 막는 이유가 없음</text>
+<text x="105" y="414" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 출처 번호가 없음</text>
+<rect x="105" y="485" width="420" height="72" rx="16" fill="#ffe4e6"/>
+<text x="125" y="515" fill="#9f1239" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16" font-weight="700">위험</text>
+<text x="125" y="542" fill="#9f1239" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">AI가 빈칸을 그럴듯한 속성으로 채울 수 있습니다.</text>
+
+<rect x="650" y="165" width="560" height="430" rx="28" fill="#ecfdf5" stroke="#a7f3d0"/>
+<text x="685" y="215" fill="#047857" font-family="Arial,'Noto Sans KR',sans-serif" font-size="23" font-weight="700">증거 중심 페르소나</text>
+<text x="685" y="260" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="23" font-weight="700">“월말마다 수작업 보고서를 만들고,</text>
+<text x="685" y="292" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="23" font-weight="700">보고 전 오류를 걱정하는 운영 담당자”</text>
+<text x="685" y="342" fill="#475569" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 문제: 수작업 취합과 오류 확인</text>
+<text x="685" y="376" fill="#475569" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 상황: 월말·보고 직전</text>
+<text x="685" y="410" fill="#475569" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 현재 대안: 복사·붙여넣기·수동 검수</text>
+<text x="685" y="444" fill="#475569" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17">• 근거: 인터뷰-02 · 문의-03 · 리뷰-07</text>
+<rect x="685" y="485" width="450" height="72" rx="16" fill="#d1fae5"/>
+<text x="705" y="515" fill="#065f46" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16" font-weight="700">원칙</text>
+<text x="705" y="542" fill="#065f46" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">증거 없는 연령·성격·취향은 ‘검증 필요’로 남깁니다.</text>
+<rect x="70" y="632" width="1140" height="42" rx="14" fill="#172554"/>
+<text x="640" y="659" text-anchor="middle" fill="#dbeafe" font-family="Arial,'Noto Sans KR',sans-serif" font-size="18" font-weight="700">페르소나는 마케팅 장식이 아니라 고객 증거를 한 명의 핵심 행위자로 묶어 보는 가설 도구입니다.</text>
+</svg>

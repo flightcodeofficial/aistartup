@@ -1,0 +1,14 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>고객 여정 근거 표시</title>
+<style>*{box-sizing:border-box}body{margin:0;width:1280px;height:720px;overflow:hidden;background:linear-gradient(135deg,#07111f,#14213d);font-family:Arial,"Noto Sans KR",sans-serif;color:#f8fafc}.w{padding:40px 48px}.h{font-size:34px;font-weight:700}.sub{color:#9fb0c7;margin:8px 0 24px}.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.stage{background:#0f1b2d;border:1px solid #2a3a52;border-radius:20px;padding:18px;min-height:390px}.stage h2{font-size:18px;margin:0 0 10px;color:#bfdbfe}.stage p{font-size:14px;color:#cbd5e1;line-height:1.45;min-height:84px}.buttons{display:grid;gap:7px}.buttons button{border:1px solid #405471;background:#132239;color:#e5edf8;border-radius:9px;padding:8px;font-size:12px;cursor:pointer}.buttons button.sel{background:#1d4ed8;border-color:#60a5fa}.hint{margin-top:13px;font-size:12px;color:#94a3b8}.footer{margin-top:18px;background:#0b1525;border:1px solid #2a3a52;border-radius:16px;padding:14px 18px;color:#cbd5e1}.footer b{color:#93c5fd}</style></head>
+<body><div class="w"><div class="h">고객 여정의 각 단계에는 ‘근거 수준’이 필요합니다</div><div class="sub">한 지도에는 한 명의 핵심 행위자만 사용하고, 근거 없는 단계는 가설로 표시합니다.</div><div class="timeline" id="tl"></div><div class="footer" id="f"><b>연습:</b> 각 단계가 현재 자료에서 확인된 것인지, 추론인지, 검증이 필요한지 선택하세요.</div></div>
+<script>
+const data=[
+["문제 인식","마감 직전 수작업 오류가 반복되어 문제가 커짐","근거 있음"],
+["정보 탐색","자동화 방법이나 템플릿을 검색할 가능성이 있음","추론"],
+["대안 비교","기존 방식·외주·새 도구를 비교함","추론"],
+["시도·도입","무료 체험을 선호할 것이다","검증 필요"],
+["사용·재평가","실제 사용 후 오류와 시간을 다시 비교함","검증 필요"]
+]; const states=["근거 있음","추론","검증 필요"]; let chosen=0;
+const tl=document.getElementById("tl"), f=document.getElementById("f");
+data.forEach((x,i)=>{let s=document.createElement("div");s.className="stage";s.innerHTML=`<h2>${i+1}. ${x[0]}</h2><p>${x[1]}</p>`;let b=document.createElement("div");b.className="buttons";states.forEach(st=>{let bt=document.createElement("button");bt.textContent=st;bt.onclick=()=>{[...b.children].forEach(q=>q.classList.remove("sel"));bt.classList.add("sel");if(!s.dataset.done){s.dataset.done=1;chosen++}if(chosen===5){f.innerHTML="<b>핵심:</b> 여정은 빈칸을 상상해서 채우는 문서가 아닙니다. 근거가 약한 단계는 다음 인터뷰 질문으로 바꾸세요."}};b.appendChild(bt)});s.appendChild(b);let h=document.createElement("div");h.className="hint";h.textContent="권장 판정: "+x[2];s.appendChild(h);tl.appendChild(s)});
+</script></body></html>

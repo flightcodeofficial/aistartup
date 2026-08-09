@@ -20,6 +20,12 @@ import {
   DAY1_LESSON3_ID,
   type Day1Lesson3Assets,
 } from "./day1Lesson3";
+import {
+  buildDay1Lesson4,
+  DAY1_LESSON4_ASSET_FILES,
+  DAY1_LESSON4_ID,
+  type Day1Lesson4Assets,
+} from "./day1Lesson4";
 
 // 코드에 들어 있는 "원고본" Lesson 목록.
 //
@@ -99,6 +105,24 @@ async function prepareDay1Lesson3(): Promise<LessonContent> {
   return buildDay1Lesson3(assets);
 }
 
+/**
+ * P02/P08의 image 블록 SVG를 Asset Repository에 올리고 asset:// 참조로 바꾼 원고본을 만든다.
+ * 업로드가 실패하면 public 경로를 그대로 쓴다.
+ */
+async function prepareDay1Lesson4(): Promise<LessonContent> {
+  let assets: Day1Lesson4Assets = { ...DAY1_LESSON4_ASSET_FILES };
+  try {
+    const [evidencePersona, valuePropositionBridge] = await Promise.all([
+      uploadFromPublic(DAY1_LESSON4_ASSET_FILES.evidencePersona),
+      uploadFromPublic(DAY1_LESSON4_ASSET_FILES.valuePropositionBridge),
+    ]);
+    assets = { evidencePersona, valuePropositionBridge };
+  } catch {
+    // public 경로 폴백 유지
+  }
+  return buildDay1Lesson4(assets);
+}
+
 export const LESSON_SEEDS: LessonSeed[] = [
   {
     id: DAY1_LESSON1_ID,
@@ -114,6 +138,11 @@ export const LESSON_SEEDS: LessonSeed[] = [
     id: DAY1_LESSON3_ID,
     label: "2주차 Day1 Lesson3 (3교시)",
     prepare: prepareDay1Lesson3,
+  },
+  {
+    id: DAY1_LESSON4_ID,
+    label: "2주차 Day1 Lesson4 (4교시)",
+    prepare: prepareDay1Lesson4,
   },
 ];
 

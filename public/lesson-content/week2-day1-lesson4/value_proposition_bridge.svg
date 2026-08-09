@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" rx="28" fill="#08111f"/>
+<text x="64" y="76" fill="#f8fafc" font-family="Arial,'Noto Sans KR',sans-serif" font-size="36" font-weight="700">가치제안은 고객 증거와 우리 제안을 연결하는 다리입니다</text>
+<text x="64" y="116" fill="#9fb0c7" font-family="Arial,'Noto Sans KR',sans-serif" font-size="18">“좋은 서비스”가 아니라 고객이 하려는 일 · 문제 · 기대 결과 · 현재 대안에서 시작합니다.</text>
+<rect x="70" y="170" width="475" height="420" rx="28" fill="#ffffff"/>
+<text x="105" y="218" fill="#1d4ed8" font-family="Arial,'Noto Sans KR',sans-serif" font-size="22" font-weight="700">고객 측</text>
+<text x="105" y="262" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">해야 할 일</text>
+<text x="105" y="294" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">무엇을 끝내거나 달성하려는가</text>
+<text x="105" y="340" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">기능적 · 감정적 문제</text>
+<text x="105" y="372" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">시간·비용·오류 + 걱정·불안</text>
+<text x="105" y="418" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">기대 결과</text>
+<text x="105" y="450" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">무엇이 달라지길 원하는가</text>
+<text x="105" y="496" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">현재 대안 · 구매 위험</text>
+<text x="105" y="528" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">지금 무엇을 쓰며 무엇이 걱정되는가</text>
+
+<path d="M565 380 H715" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+<path d="M708 361 l32 19 l-32 19z" fill="#60a5fa"/>
+<text x="640" y="345" text-anchor="middle" fill="#93c5fd" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" font-weight="700">증거로 연결</text>
+
+<rect x="735" y="170" width="475" height="420" rx="28" fill="#ffffff"/>
+<text x="770" y="218" fill="#059669" font-family="Arial,'Noto Sans KR',sans-serif" font-size="22" font-weight="700">우리 사업 측</text>
+<text x="770" y="262" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">제공하는 제품·서비스</text>
+<text x="770" y="294" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">실제로 제공 가능한 범위</text>
+<text x="770" y="340" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">문제를 줄이는 방식</text>
+<text x="770" y="372" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">시간·오류·불안을 어떻게 낮추는가</text>
+<text x="770" y="418" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">현재 대안과의 차이</text>
+<text x="770" y="450" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">왜 지금 방식보다 나은가</text>
+<text x="770" y="496" fill="#0f172a" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" font-weight="700">위험을 낮추는 장치 · 필요한 증거</text>
+<text x="770" y="528" fill="#64748b" font-family="Arial,'Noto Sans KR',sans-serif" font-size="16">베타·체험·검증 자료·실제 근거</text>
+<rect x="70" y="632" width="1140" height="42" rx="14" fill="#172554"/>
+<text x="640" y="659" text-anchor="middle" fill="#dbeafe" font-family="Arial,'Noto Sans KR',sans-serif" font-size="18" font-weight="700">없는 기능·효과·후기·수치를 약속하지 않습니다.</text>
+</svg>
