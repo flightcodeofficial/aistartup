@@ -24,6 +24,11 @@
           "data": {
             "markdown": "# 블로그와 뉴스레터는\n# 같은 긴 글이 아닙니다\n\n**블로그는 검색·비교 맥락, 뉴스레터는 이미 관계가 있는 구독자 맥락에서 설계합니다.**",
             "emphasis": "hero"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -70,7 +75,12 @@
             "markdown": "블로그를 뉴스레터에 복붙하는 방식과 맥락 설계의 차이를 보여주세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -101,6 +111,11 @@
           "data": {
             "markdown": "같은 원천을 사용해도 **독자가 왜 이 글을 읽는지**가 다르므로 시작 문장과 설명 순서가 달라집니다.",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -111,7 +126,12 @@
             "markdown": "검색 유입자와 기존 구독자의 질문이 어떻게 다른지 묻게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -166,6 +186,11 @@
           "data": {
             "markdown": "### 제목보다 먼저 정할 것\n\n- 이 글을 찾는 사람은 **무슨 질문을 해결하려는가?**\n- 읽고 나서 **무엇을 할 수 있어야 하는가?**\n- 내가 **확인해서 말할 수 있는 범위**는 어디까지인가?",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -179,6 +204,11 @@
           "theme": {
             "background": "primary-soft",
             "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -189,7 +219,12 @@
             "markdown": "SEO 기술보다 검색자의 질문과 답변 범위를 먼저 설계합니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -236,6 +271,11 @@
           "data": {
             "markdown": "### 도입 예시\n\n“이번 주 카페 사장님들과 이야기하면서 같은 질문을 여러 번 들었습니다. ‘사진은 있는데 오늘은 무슨 글을 올리죠?’ 그래서 이번 메일은 **새 아이디어보다 이미 받은 고객 질문을 콘텐츠 재료로 바꾸는 방법**만 정리했습니다.”",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -249,6 +289,11 @@
           "theme": {
             "background": "dark",
             "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -259,7 +304,12 @@
             "markdown": "친밀한 말투와 사실 여부는 별개라는 점을 강조하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -279,6 +329,11 @@
             "designWidth": 1280,
             "designHeight": 720,
             "mobileRenderMode": "responsive"
+          },
+          "layout": {
+            "width": "full",
+            "align": "center",
+            "spacing": "medium"
           }
         },
         {
@@ -289,7 +344,12 @@
             "markdown": "두 버튼을 번갈아 누르며 독자 관계가 구조를 어떻게 바꾸는지 확인하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -336,6 +396,11 @@
           "data": {
             "markdown": "AI가 글을 길게 만들수록 **원문에 없는 연결 문장·수치·사례**가 끼어들 수 있습니다. 길이보다 추적 가능성이 먼저입니다.",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -346,7 +411,12 @@
             "markdown": "원천 번호를 내부 검수용으로 남기게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -426,6 +496,11 @@
           "data": {
             "markdown": "블로그와 뉴스레터 CTA가 달라도 됩니다. 다만 **각 콘텐츠 안에서는 하나만** 사용합니다.",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -436,7 +511,12 @@
             "markdown": "각각의 ‘읽는 이유’를 한 문장으로 적게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -481,7 +561,12 @@
             "markdown": "두 초안이 표현만 다른 복사본인지 실제 맥락이 달라졌는지 비교하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -555,7 +640,12 @@
             "markdown": "글이 길어질수록 환각 지점도 늘어날 수 있음을 표시하게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -606,6 +696,11 @@
           "data": {
             "markdown": "❌ **혁신적인 AI 기반 솔루션으로 새로운 가능성을 엽니다.**\n\n✅ **고객이 자주 묻는 질문을 모아 다음 SNS 글의 주제와 초안을 정리하는 데 활용합니다.**",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -616,7 +711,12 @@
             "markdown": "AI 티를 감으로 말하지 말고 추상어·중복·과장처럼 수정 가능한 기준으로 설명하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -695,7 +795,12 @@
             "markdown": "완벽한 장문보다 원천 추적이 가능한 편집본을 완료 기준으로 잡으세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -754,7 +859,12 @@
             "markdown": "다음 Lesson은 개별 문구 생성보다 재사용·검수·실험 구조를 만듭니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     }

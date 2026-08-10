@@ -24,6 +24,11 @@
           "data": {
             "markdown": "# 콘텐츠를 매번 새로 만들지 말고\n# 원천문서 하나를 ‘공급망’으로 만드세요\n\n**생성 → 검수 → 발행 → 기록 → 재사용이 연결되면 AI는 일회성 글쓰기 도구가 아니라 업무 흐름이 됩니다.**",
             "emphasis": "hero"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -70,7 +75,12 @@
             "markdown": "오늘의 자동화는 자동 게시가 아니라 반복 가능한 제작 구조입니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -101,6 +111,11 @@
           "data": {
             "markdown": "원천문서가 바뀌면 파생 콘텐츠를 다시 검토합니다. 원천이 같다면 시장 사실을 매번 새로 만들 필요가 없습니다.\n\n**예시:** 원천문서 v1에 있던 가격 정보가 v2에서 바뀌었다면, v1으로 만든 SNS·블로그·뉴스레터에 그 가격이 남아있는지 전부 다시 확인해야 합니다. 원천이 바뀌지 않았다면 이미 만든 콘텐츠는 그대로 재사용합니다.",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -111,7 +126,12 @@
             "markdown": "프롬프트 반복보다 승인된 원천이 중심이라는 구조가 핵심입니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -162,6 +182,11 @@
           "data": {
             "markdown": "**같은 문장을 복사하는 것이 아니라 같은 사실을 재사용합니다.**",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -172,7 +197,12 @@
             "markdown": "Day3 이메일·DM, Day4 랜딩으로도 같은 원천이 이어질 수 있음을 예고하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -192,6 +222,11 @@
             "designWidth": 1280,
             "designHeight": 720,
             "mobileRenderMode": "responsive"
+          },
+          "layout": {
+            "width": "full",
+            "align": "center",
+            "spacing": "medium"
           }
         },
         {
@@ -202,7 +237,12 @@
             "markdown": "채널 버튼을 바꿔도 사람 검수 단계가 유지되는 것을 보여주세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -245,6 +285,11 @@
           "data": {
             "markdown": "한 콘텐츠에 CTA를 여러 개 붙이면 **무엇을 측정해야 하는지도 흐려집니다.**",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -255,7 +300,12 @@
             "markdown": "좋아요+저장+공유+링크+DM을 한 번에 요구하는 예를 보여주세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -286,6 +336,11 @@
           "data": {
             "markdown": "초기 작은 표본의 결과를 **정답**으로 확정하지 말고 다음 인터뷰와 다음 실험의 방향으로 해석합니다.",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -296,7 +351,12 @@
             "markdown": "제목과 CTA를 동시에 바꾸면 원인을 알기 어렵다고 설명하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -351,6 +411,11 @@
           "theme": {
             "background": "dark",
             "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -361,7 +426,12 @@
             "markdown": "양 중심 자동 생성과 고객 반응을 다시 원천에 넣는 학습 루프를 비교하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -414,6 +484,11 @@
           "theme": {
             "background": "primary-soft",
             "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -424,7 +499,12 @@
             "markdown": "자동화 수업에서도 사람 승인이 사라지지 않는다고 분명히 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -469,7 +549,12 @@
             "markdown": "결과 개수보다 같은 원천을 유지하는지 비교하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -557,7 +642,12 @@
             "markdown": "채널별 목표 고객·목표·핵심 메시지·CTA·원천 근거를 빠뜨리지 않게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -640,6 +730,11 @@
           "data": {
             "markdown": "표본이 작으면 **B안이 정답**이라고 결론내리지 말고 다음 질문으로 남깁니다.",
             "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -650,7 +745,12 @@
             "markdown": "실험 변수는 반드시 하나만 고르게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -713,6 +813,11 @@
           "theme": {
             "background": "dark",
             "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -726,6 +831,11 @@
           "theme": {
             "background": "primary-soft",
             "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -736,7 +846,12 @@
             "markdown": "실제 게시보다 재현 가능한 제작 흐름을 저장했는지 확인하면 완료입니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     }
