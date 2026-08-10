@@ -18,7 +18,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b01-hero",
+          "id": "l4-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -27,7 +27,7 @@
           }
         },
         {
-          "id": "b01-prev",
+          "id": "l4-b01-prev",
           "type": "result-preview",
           "data": {
             "artifactType": "segment",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "b01-flow",
+          "id": "l4-b01-flow",
           "type": "infographic",
           "data": {
             "variant": "steps",
@@ -60,7 +60,7 @@
           }
         },
         {
-          "id": "b01-script",
+          "id": "l4-b01-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -80,7 +80,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b02-title",
+          "id": "l4-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -89,7 +89,7 @@
           }
         },
         {
-          "id": "b02-image",
+          "id": "l4-b02-image",
           "type": "image",
           "data": {
             "url": "/lesson-content/week2-day1-lesson4/evidence_persona.svg",
@@ -102,7 +102,7 @@
           }
         },
         {
-          "id": "b02-script",
+          "id": "l4-b02-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -122,7 +122,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b03-title",
+          "id": "l4-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -131,7 +131,7 @@
           }
         },
         {
-          "id": "b03-roles",
+          "id": "l4-b03-roles",
           "type": "infographic",
           "data": {
             "variant": "comparison",
@@ -152,7 +152,7 @@
           }
         },
         {
-          "id": "b03-rule",
+          "id": "l4-b03-rule",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -165,7 +165,7 @@
           }
         },
         {
-          "id": "b03-script",
+          "id": "l4-b03-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -185,7 +185,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b04-title",
+          "id": "l4-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -194,7 +194,7 @@
           }
         },
         {
-          "id": "b04-prev",
+          "id": "l4-b04-prev",
           "type": "result-preview",
           "data": {
             "artifactType": "segment",
@@ -202,7 +202,7 @@
           }
         },
         {
-          "id": "b04-form",
+          "id": "l4-b04-form",
           "type": "input-form",
           "title": "증거 기반 페르소나",
           "data": {
@@ -274,7 +274,7 @@
           }
         },
         {
-          "id": "b04-check",
+          "id": "l4-b04-check",
           "type": "infographic",
           "title": "작성 원칙",
           "data": {
@@ -296,7 +296,7 @@
           }
         },
         {
-          "id": "b04-script",
+          "id": "l4-b04-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -316,7 +316,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b05-title",
+          "id": "l4-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -325,7 +325,7 @@
           }
         },
         {
-          "id": "b05-steps",
+          "id": "l4-b05-steps",
           "type": "infographic",
           "data": {
             "variant": "steps",
@@ -354,7 +354,7 @@
           }
         },
         {
-          "id": "b05-key",
+          "id": "l4-b05-key",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -367,7 +367,7 @@
           }
         },
         {
-          "id": "b05-script",
+          "id": "l4-b05-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -387,7 +387,7 @@
       "layout": "fullscreen",
       "blocks": [
         {
-          "id": "b06-html",
+          "id": "l4-b06-html",
           "type": "html-file",
           "data": {
             "src": "/lesson-content/week2-day1-lesson4/journey_evidence_interactive.html",
@@ -403,7 +403,7 @@
           }
         },
         {
-          "id": "b06-script",
+          "id": "l4-b06-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -423,7 +423,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b07-title",
+          "id": "l4-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -432,7 +432,7 @@
           }
         },
         {
-          "id": "b07-persona",
+          "id": "l4-b07-persona",
           "type": "result-preview",
           "data": {
             "artifactType": "persona",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "b07-form",
+          "id": "l4-b07-form",
           "type": "input-form",
           "title": "5단계 고객 여정",
           "data": {
@@ -602,7 +602,7 @@
           }
         },
         {
-          "id": "b07-script",
+          "id": "l4-b07-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -622,7 +622,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b08-title",
+          "id": "l4-b08-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -631,7 +631,7 @@
           }
         },
         {
-          "id": "b08-image",
+          "id": "l4-b08-image",
           "type": "image",
           "data": {
             "url": "/lesson-content/week2-day1-lesson4/value_proposition_bridge.svg",
@@ -644,7 +644,7 @@
           }
         },
         {
-          "id": "b08-script",
+          "id": "l4-b08-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -664,7 +664,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b09-title",
+          "id": "l4-b09-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -673,7 +673,7 @@
           }
         },
         {
-          "id": "b09-prompt",
+          "id": "l4-b09-prompt",
           "type": "prompt",
           "title": "증거 기반 가치제안 프롬프트",
           "description": "Page04 페르소나와 Page07 고객 여정, 실제 제공 가능한 제품·서비스 범위를 넣어 실행하세요.",
@@ -684,7 +684,7 @@
           }
         },
         {
-          "id": "b09-link",
+          "id": "l4-b09-link",
           "type": "external-link",
           "description": "익명화된 고객 자료만 사용하고, 결과의 주장마다 필요한 근거가 있는지 확인하세요.",
           "data": {
@@ -699,7 +699,7 @@
           }
         },
         {
-          "id": "b09-script",
+          "id": "l4-b09-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -719,7 +719,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b10-title",
+          "id": "l4-b10-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -728,7 +728,7 @@
           }
         },
         {
-          "id": "b10-form",
+          "id": "l4-b10-form",
           "type": "input-form",
           "title": "Day1 가치제안 최종안",
           "data": {
@@ -818,7 +818,7 @@
           }
         },
         {
-          "id": "b10-check",
+          "id": "l4-b10-check",
           "type": "infographic",
           "title": "저장 전 확인",
           "data": {
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "b10-script",
+          "id": "l4-b10-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -863,7 +863,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b11-title",
+          "id": "l4-b11-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -872,37 +872,37 @@
           }
         },
         {
-          "id": "b11-save-persona",
+          "id": "l4-b11-save-persona",
           "type": "save-artifact",
           "data": {
             "artifactType": "persona",
             "artifactTitle": "Day1 Lesson4 — 증거 기반 페르소나",
-            "sourceBlockId": "b04-form",
+            "sourceBlockId": "l4-b04-form",
             "buttonLabel": "페르소나 저장"
           }
         },
         {
-          "id": "b11-save-journey",
+          "id": "l4-b11-save-journey",
           "type": "save-artifact",
           "data": {
             "artifactType": "journey",
             "artifactTitle": "Day1 Lesson4 — 고객 여정",
-            "sourceBlockId": "b07-form",
+            "sourceBlockId": "l4-b07-form",
             "buttonLabel": "고객 여정 저장"
           }
         },
         {
-          "id": "b11-save-vp",
+          "id": "l4-b11-save-vp",
           "type": "save-artifact",
           "data": {
             "artifactType": "value-proposition",
             "artifactTitle": "Day1 Lesson4 — 가치제안",
-            "sourceBlockId": "b10-form",
+            "sourceBlockId": "l4-b10-form",
             "buttonLabel": "가치제안 저장"
           }
         },
         {
-          "id": "b11-preview",
+          "id": "l4-b11-preview",
           "type": "result-preview",
           "data": {
             "artifactType": "value-proposition",
@@ -910,7 +910,7 @@
           }
         },
         {
-          "id": "b11-script",
+          "id": "l4-b11-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -930,7 +930,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b12-title",
+          "id": "l4-b12-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -939,7 +939,7 @@
           }
         },
         {
-          "id": "b12-summary",
+          "id": "l4-b12-summary",
           "type": "infographic",
           "title": "오늘 만든 4단계 결과",
           "data": {
@@ -965,7 +965,7 @@
           }
         },
         {
-          "id": "b12-reflection",
+          "id": "l4-b12-reflection",
           "type": "reflection",
           "data": {
             "questions": [
@@ -976,7 +976,7 @@
           }
         },
         {
-          "id": "b12-next",
+          "id": "l4-b12-next",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -989,7 +989,7 @@
           }
         },
         {
-          "id": "b12-script",
+          "id": "l4-b12-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {

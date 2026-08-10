@@ -22,6 +22,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useProgressStore, lessonPageKey } from "@/features/progress/store";
+import { registerFormFieldLabels } from "@/features/lesson-builder/blockResponseStore";
 import { slidePageVariants } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { useLessonProgressSync } from "@/features/lesson-builder/useLessonProgressSync";
@@ -55,6 +56,22 @@ export function LessonPlayer({
 
   const total = lesson.pages.length;
   const current = lesson.pages[pageIndex];
+
+  // save-artifact가 필드 라벨을 찾는 시점에 원본 input-form이 아직 마운트되지
+  // 않았을 수 있다(다른 페이지에 있거나, 다시 방문한 세션). 그러면 라벨 대신
+  // 내부 fieldId(f11-p1 등)가 그대로 저장돼 버려서, Lesson 전체를 미리 등록해 둔다.
+  useEffect(() => {
+    for (const page of lesson.pages) {
+      for (const block of page.blocks) {
+        if (block.type === "input-form") {
+          registerFormFieldLabels(
+            block.id,
+            Object.fromEntries(block.data.fields.map((f) => [f.id, f.label]))
+          );
+        }
+      }
+    }
+  }, [lesson]);
 
   useEffect(() => {
     if (total > 0) {

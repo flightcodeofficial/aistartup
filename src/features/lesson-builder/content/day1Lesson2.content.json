@@ -18,7 +18,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b01-hero",
+          "id": "l2-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -32,7 +32,7 @@
           }
         },
         {
-          "id": "b01-prev",
+          "id": "l2-b01-prev",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
@@ -41,7 +41,7 @@
           }
         },
         {
-          "id": "b01-flow",
+          "id": "l2-b01-flow",
           "type": "infographic",
           "visibility": "visible",
           "theme": {
@@ -67,7 +67,7 @@
           }
         },
         {
-          "id": "b01-key",
+          "id": "l2-b01-key",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -81,7 +81,7 @@
           }
         },
         {
-          "id": "b01-script",
+          "id": "l2-b01-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -106,7 +106,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b02-title",
+          "id": "l2-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -120,7 +120,7 @@
           }
         },
         {
-          "id": "b02-evidence",
+          "id": "l2-b02-evidence",
           "type": "infographic",
           "visibility": "visible",
           "data": {
@@ -142,7 +142,7 @@
           }
         },
         {
-          "id": "b02-rule",
+          "id": "l2-b02-rule",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -160,7 +160,7 @@
           }
         },
         {
-          "id": "b02-ai",
+          "id": "l2-b02-ai",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -174,7 +174,7 @@
           }
         },
         {
-          "id": "b02-script",
+          "id": "l2-b02-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -199,7 +199,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b03-title",
+          "id": "l2-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -213,7 +213,7 @@
           }
         },
         {
-          "id": "b03-image",
+          "id": "l2-b03-image",
           "type": "image",
           "visibility": "visible",
           "data": {
@@ -227,7 +227,7 @@
           }
         },
         {
-          "id": "b03-quiz",
+          "id": "l2-b03-quiz",
           "type": "quiz",
           "visibility": "visible",
           "title": "빠른 확인",
@@ -257,7 +257,7 @@
           }
         },
         {
-          "id": "b03-script",
+          "id": "l2-b03-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -282,7 +282,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b04-title",
+          "id": "l2-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -296,7 +296,7 @@
           }
         },
         {
-          "id": "b04-options",
+          "id": "l2-b04-options",
           "type": "infographic",
           "visibility": "visible",
           "data": {
@@ -321,7 +321,7 @@
           }
         },
         {
-          "id": "b04-label",
+          "id": "l2-b04-label",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -339,7 +339,7 @@
           }
         },
         {
-          "id": "b04-privacy",
+          "id": "l2-b04-privacy",
           "type": "infographic",
           "visibility": "visible",
           "title": "실습 전 익명화",
@@ -366,7 +366,7 @@
           }
         },
         {
-          "id": "b04-script",
+          "id": "l2-b04-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -391,7 +391,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b05-title",
+          "id": "l2-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -405,7 +405,7 @@
           }
         },
         {
-          "id": "b05-fields1",
+          "id": "l2-b05-fields1",
           "type": "infographic",
           "visibility": "visible",
           "title": "① 자료와 상황",
@@ -432,7 +432,7 @@
           }
         },
         {
-          "id": "b05-fields2",
+          "id": "l2-b05-fields2",
           "type": "infographic",
           "visibility": "visible",
           "title": "② 선택과 해석",
@@ -459,7 +459,7 @@
           }
         },
         {
-          "id": "b05-example",
+          "id": "l2-b05-example",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -477,7 +477,7 @@
           }
         },
         {
-          "id": "b05-key",
+          "id": "l2-b05-key",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -491,7 +491,7 @@
           }
         },
         {
-          "id": "b05-script",
+          "id": "l2-b05-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -516,7 +516,7 @@
       "layout": "fullscreen",
       "blocks": [
         {
-          "id": "b06-html",
+          "id": "l2-b06-html",
           "type": "html-file",
           "visibility": "visible",
           "data": {
@@ -533,7 +533,7 @@
           }
         },
         {
-          "id": "b06-script",
+          "id": "l2-b06-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -558,7 +558,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b07-title",
+          "id": "l2-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -572,7 +572,7 @@
           }
         },
         {
-          "id": "b07-image",
+          "id": "l2-b07-image",
           "type": "image",
           "visibility": "visible",
           "data": {
@@ -586,7 +586,7 @@
           }
         },
         {
-          "id": "b07-key",
+          "id": "l2-b07-key",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -600,7 +600,7 @@
           }
         },
         {
-          "id": "b07-script",
+          "id": "l2-b07-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -625,7 +625,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b08-title",
+          "id": "l2-b08-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -639,7 +639,7 @@
           }
         },
         {
-          "id": "b08-prev",
+          "id": "l2-b08-prev",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
@@ -648,7 +648,7 @@
           }
         },
         {
-          "id": "b08-form",
+          "id": "l2-b08-form",
           "type": "input-form",
           "visibility": "visible",
           "title": "고객 자료 분석 준비",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "b08-checklist",
+          "id": "l2-b08-checklist",
           "type": "infographic",
           "visibility": "visible",
           "title": "업로드 전 확인",
@@ -742,7 +742,7 @@
           }
         },
         {
-          "id": "b08-script",
+          "id": "l2-b08-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -767,7 +767,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b09-title",
+          "id": "l2-b09-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -781,7 +781,7 @@
           }
         },
         {
-          "id": "b09-prompt",
+          "id": "l2-b09-prompt",
           "type": "prompt",
           "visibility": "visible",
           "title": "고객 자료 태깅 프롬프트",
@@ -793,7 +793,7 @@
           }
         },
         {
-          "id": "b09-link",
+          "id": "l2-b09-link",
           "type": "external-link",
           "visibility": "visible",
           "description": "익명화한 자료만 사용하고, 외부 전송 전에 개인정보가 남아 있지 않은지 확인하세요.",
@@ -809,7 +809,7 @@
           }
         },
         {
-          "id": "b09-rule",
+          "id": "l2-b09-rule",
           "type": "infographic",
           "visibility": "visible",
           "title": "성공 기준",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "b09-script",
+          "id": "l2-b09-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -857,7 +857,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b10-title",
+          "id": "l2-b10-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -871,7 +871,7 @@
           }
         },
         {
-          "id": "b10-check",
+          "id": "l2-b10-check",
           "type": "infographic",
           "visibility": "visible",
           "title": "5개 검수 질문",
@@ -897,7 +897,7 @@
           }
         },
         {
-          "id": "b10-form",
+          "id": "l2-b10-form",
           "type": "input-form",
           "visibility": "visible",
           "title": "AI 결과 검수 기록",
@@ -937,7 +937,7 @@
           }
         },
         {
-          "id": "b10-example",
+          "id": "l2-b10-example",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -955,7 +955,7 @@
           }
         },
         {
-          "id": "b10-script",
+          "id": "l2-b10-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -980,7 +980,7 @@
       "layout": "practice",
       "blocks": [
         {
-          "id": "b11-title",
+          "id": "l2-b11-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -994,7 +994,7 @@
           }
         },
         {
-          "id": "b11-examples",
+          "id": "l2-b11-examples",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -1012,7 +1012,7 @@
           }
         },
         {
-          "id": "b11-form",
+          "id": "l2-b11-form",
           "type": "input-form",
           "visibility": "visible",
           "title": "Lesson2 최종 고객 자료·반복 패턴",
@@ -1174,7 +1174,7 @@
           }
         },
         {
-          "id": "b11-check",
+          "id": "l2-b11-check",
           "type": "infographic",
           "visibility": "visible",
           "title": "패턴을 저장하기 전",
@@ -1197,7 +1197,7 @@
           }
         },
         {
-          "id": "b11-script",
+          "id": "l2-b11-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
@@ -1222,7 +1222,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "b12-title",
+          "id": "l2-b12-title",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -1236,7 +1236,7 @@
           }
         },
         {
-          "id": "b12-preview",
+          "id": "l2-b12-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
@@ -1245,18 +1245,18 @@
           }
         },
         {
-          "id": "b12-save",
+          "id": "l2-b12-save",
           "type": "save-artifact",
           "visibility": "visible",
           "data": {
             "artifactType": "customer-evidence",
             "artifactTitle": "Day1 Lesson2 — 고객 자료 및 반복 패턴",
-            "sourceBlockId": "b11-form",
+            "sourceBlockId": "l2-b11-form",
             "buttonLabel": "내 프로젝트에 저장"
           }
         },
         {
-          "id": "b12-reflect",
+          "id": "l2-b12-reflect",
           "type": "reflection",
           "visibility": "visible",
           "data": {
@@ -1267,7 +1267,7 @@
           }
         },
         {
-          "id": "b12-done",
+          "id": "l2-b12-done",
           "type": "infographic",
           "visibility": "visible",
           "title": "Lesson2 완료 체크",
@@ -1293,7 +1293,7 @@
           }
         },
         {
-          "id": "b12-next",
+          "id": "l2-b12-next",
           "type": "rich-text",
           "visibility": "visible",
           "layout": {
@@ -1311,7 +1311,7 @@
           }
         },
         {
-          "id": "b12-script",
+          "id": "l2-b12-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "layout": {
