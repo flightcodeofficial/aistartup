@@ -172,7 +172,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "일부러 단순한 프롬프트를 먼저 써봅니다. 평범한 질문이 어떤 평범한 고객 정의를 만드는지 직접 확인합니다.",
+            "markdown": "## Prompt Engineering — AI에게 일을 어떻게 설명할까?\n\n프롬프트 엔지니어링은 AI에게 어려운 주문문장을 외워서 입력하는 기술이 아닙니다. AI가 무엇을 해야 하는지, 어떤 기준으로 판단해야 하는지, 어떤 형태로 결과를 내야 하는지를 명확하게 전달하는 방법입니다.\n\n일부러 단순한 프롬프트를 먼저 써봅니다. 평범한 질문이 어떤 평범한 고객 정의를 만드는지 직접 확인합니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -235,7 +235,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**AI에게 분석 기준을 주면 결과가 달라집니다.**",
+            "markdown": "**AI에게 분석 기준을 주면 결과가 달라집니다.**\n\n### 질문뿐 아니라 AI가 참고할 정보도 바꿔봅니다\n\n같은 AI에게 같은 일을 시켜도 AI가 참고하는 정보가 달라지면 결과가 달라집니다. 이처럼 AI가 작업할 때 필요한 정보와 자료를 선별해서 제공하는 것을 **Context Engineering**이라고 이해할 수 있습니다.\n\n| | 예시 |\n|---|---|\n| Prompt만 | \"우리 서비스 고객 5개를 알려줘\" |\n| Prompt + Context | 사업 설명 + 해결하려는 문제 + \"나이·성별보다 상황·반복 문제·현재 행동 기준으로\" + \"확인 안 된 건 가설로 표시\" |\n\n**질문을 잘 쓰는 것만큼, AI에게 어떤 정보를 함께 주는지도 중요합니다.**",
             "emphasis": "normal"
           },
           "layout": {
@@ -298,7 +298,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# P03과 P04 결과를 나란히 놓고 비교해보세요",
+            "markdown": "# P03과 P04 결과를 나란히 놓고 비교해보세요\n\n| 단계 | 무엇이 달라졌나 |\n|---|---|\n| 단순 질문 (P03) | Prompt 정보 부족 |\n| 기준을 준 질문 (P04) | Prompt 개선 |\n| 사업정보·문제·조건까지 제공 (P04) | Context 개선 |",
             "emphasis": "normal"
           },
           "layout": {
@@ -352,6 +352,26 @@
                 ],
                 "correctChoiceId": "c2",
                 "explanation": "더 자세한 AI 답변이 더 정확한 사실이라는 뜻은 아닙니다. 아직 확인해야 할 가설입니다."
+              },
+              {
+                "id": "q2",
+                "question": "두 번째 결과(P04)가 더 구체적으로 나온 이유는 무엇일까요?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "AI 모델이 갑자기 더 똑똑해져서"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "더 많은 기준과 필요한 정보를 제공해서"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "답변이 길어져서"
+                  }
+                ],
+                "correctChoiceId": "c2",
+                "explanation": "모델 자체가 바뀐 것이 아니라 지시와 참고정보가 달라졌기 때문입니다."
               }
             ]
           }
@@ -520,7 +540,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**AI가 예쁘고 자세한 Persona를 만들었다고 실제 고객을 더 잘 안다는 뜻은 아닙니다.**",
+            "markdown": "**AI가 예쁘고 자세한 Persona를 만들었다고 실제 고객을 더 잘 안다는 뜻은 아닙니다.**\n\nAI가 Context에서 받지 못한 정보를 구체적으로 만들어냈다고 해서 그 내용이 사실이 되는 것은 아닙니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -612,6 +632,99 @@
           }
         },
         {
+          "id": "b09-harness",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Harness Engineering — AI가 일하는 환경까지 설계한다\n\n프롬프트 하나를 잘 만드는 것에서 더 나아가, AI가 필요한 자료와 도구를 사용하고, 정해진 순서와 규칙에 따라 일하고, 결과를 확인하고 저장할 수 있도록 작업환경 전체를 설계하는 접근입니다.\n\n**Harness = 자동화는 아닙니다.** 자동화는 Harness의 한 결과일 수 있지만, 핵심은 \"AI가 안정적으로 반복 작업할 수 있는 환경\"입니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "b09-harness-elements",
+          "type": "infographic",
+          "title": "Harness의 6가지 요소",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "지시 (Instructions)",
+                "description": "무엇을 해야 하나?"
+              },
+              {
+                "label": "자료 (Context)",
+                "description": "무엇을 참고하나?"
+              },
+              {
+                "label": "도구 (Tools)",
+                "description": "무엇을 사용할 수 있나?"
+              },
+              {
+                "label": "작업 순서 (Workflow)",
+                "description": "어떤 순서로 진행하나?"
+              },
+              {
+                "label": "안전 규칙 (Guardrails)",
+                "description": "어디까지 허용되나?"
+              },
+              {
+                "label": "검수·저장 (Feedback/Memory)",
+                "description": "결과를 어떻게 확인하고 다음에 쓰나?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b09-harness-pwa",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 지금 이 웹앱도 작은 예입니다\n\n사업 아이디어 → ChatGPT → 고객 후보 → HubSpot/Delve → 사람 검토 → PWA 저장 → 다음 Lesson에서 재사용\n\n| Harness 요소 | 오늘 Lesson에서는 |\n|---|---|\n| 지시 | P03/P04/P10 프롬프트 |\n| 자료 | P02 사업정보 + 이전 Lesson 결과 |\n| 도구 | ChatGPT / HubSpot / Delve |\n| 작업 순서 | P01→P12 Lesson 흐름 |\n| 안전 규칙 | 없는 고객정보 만들지 않기, 확인 안 된 건 가설로 표시 |\n| 검수·저장 | 사람이 후보 선택 + P12 Artifact 저장 |\n\n**여러분이 지금 사용하는 이 학습 웹앱도, AI가 매번 처음부터 시작하지 않도록 자료·도구·순서·저장을 연결한 작은 AI 작업환경이라고 볼 수 있습니다.**\n\n(이 PWA가 엄밀한 의미의 완성된 Agent Harness는 아니지만, 원리를 쉽게 이해할 수 있는 작은 예입니다. Harness가 잘 만들어지면 AI Agent가 더 안정적으로 일할 수 있습니다.)",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "b09-harness-quiz",
+          "type": "quiz",
+          "title": "Harness 미니 퀴즈",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "다음 중 Harness에 가장 가까운 것은?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "긴 프롬프트 하나를 작성한다"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "사업자료 + AI + 사용할 도구 + 작업순서 + 검수규칙 + 저장을 연결한다"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "가장 비싼 AI 모델을 선택한다"
+                  }
+                ],
+                "correctChoiceId": "c2",
+                "explanation": "Harness의 핵심은 모델 하나나 프롬프트 하나가 아니라 AI가 안정적으로 작업할 수 있는 환경과 절차를 설계하는 것입니다."
+              }
+            ]
+          }
+        },
+        {
           "id": "b09-script",
           "type": "rich-text",
           "visibility": "instructor-only",
@@ -638,7 +751,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "ChatGPT 고객 후보, HubSpot Persona 경험, 어떤 정보가 가설인지까지 모두 경험했습니다. 이제 정리합니다.",
+            "markdown": "ChatGPT 고객 후보, HubSpot Persona 경험, 어떤 정보가 가설인지까지 모두 경험했습니다. 이제 정리합니다.\n\n**지금까지 우리가 한 일**\n- Prompt: 고객 분석 방법을 지시\n- Context: 사업정보와 고객 후보 제공\n- Tools: ChatGPT + Persona AI\n- Human Review: AI가 만든 가설 검토\n\n이제: 최종 고객 후보 정리",
             "emphasis": "normal"
           },
           "layout": {
@@ -834,7 +947,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 다음 Lesson\n\n지금까지는 AI로 고객 후보를 만들었습니다. 다음 시간에는 실제 리뷰·문의·인터뷰 자료를 AI에게 읽혀서, 우리가 생각한 고객과 실제 고객자료가 같은 이야기를 하는지 확인해봅니다.",
+            "markdown": "## 오늘 배운 AI 활용의 3단계\n\n- **Prompt Engineering** → 좋은 지시\n- **Context Engineering** → 좋은 정보\n- **Harness Engineering** → 좋은 작업환경\n\n## 다음 Lesson\n\n지금까지는 AI로 고객 후보를 만들었습니다. 다음 시간에는 실제 리뷰·문의·인터뷰 자료를 AI에게 읽혀서, 우리가 생각한 고객과 실제 고객자료가 같은 이야기를 하는지 확인해봅니다.\n\n다음 교시에서는 실제 고객자료를 AI에게 제공하면서 Context의 질을 한 단계 높여봅니다.",
             "emphasis": "normal"
           },
           "theme": {
