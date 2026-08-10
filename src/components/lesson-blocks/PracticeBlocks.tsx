@@ -190,8 +190,13 @@ export function SaveArtifactBlockRenderer({ block }: { block: SaveArtifactBlock 
       // 저장된 결과물은 학생이 나중에 그대로 읽는다 —
       // 내부 fieldId가 아니라 폼에 보이던 항목 이름으로 남긴다.
       const labels = getFormFieldLabels(block.data.sourceBlockId);
+      // 예전 버전 스키마의 fieldId가 autosave에 남아있을 수 있다 — 지금 폼에
+      // 실제로 존재하는 필드(labels에 등록된 것)만 저장해서 옛 값이 섞이지 않게 한다.
+      const hasCurrentSchema = Object.keys(labels).length > 0;
       const named = Object.fromEntries(
-        Object.entries(formValues ?? {}).map(([key, value]) => [labels[key] ?? key, value])
+        Object.entries(formValues ?? {})
+          .filter(([key]) => !hasCurrentSchema || key in labels)
+          .map(([key, value]) => [labels[key] ?? key, value])
       );
       const content = block.data.sourceBlockId
         ? Object.entries(named)

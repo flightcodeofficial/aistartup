@@ -579,7 +579,7 @@
     },
     {
       "id": "p09",
-      "title": "전문 고객분석 도구는 어디까지 할까요?",
+      "title": "전문 고객분석 AI도 살펴봅시다",
       "layout": "standard",
       "blocks": [
         {
@@ -587,7 +587,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "실제 고객자료나 리서치 데이터를 이용해 Persona와 세그먼트를 만드는 전문 도구도 있습니다. (강사 시연 — 학생은 가입·사용하지 않아도 됩니다)",
+            "markdown": "앞에서는 간단한 Persona AI를 사용했습니다.\n\n실제 고객 데이터나 리서치 자료가 쌓이면 Persona와 Segment를 더 전문적으로 분석하는 고객분석 도구도 사용할 수 있습니다.\n\n지금은 선택해서 둘러봐도 좋고, 강사 시연을 함께 봐도 됩니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -597,17 +597,17 @@
           }
         },
         {
-          "id": "b09-link-instr",
+          "id": "b09-link",
           "type": "external-link",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
             "url": "https://www.delve.ai/ai-persona-generator",
-            "buttonLabel": "강사 시연 — Delve AI 열기",
+            "buttonLabel": "Delve AI 살펴보기",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": false,
-            "practiceName": "Delve AI 시연",
-            "practiceDescription": "실제 고객자료 기반 Persona 생성 도구를 강사가 시연합니다.",
+            "practiceName": "Delve AI 둘러보기",
+            "practiceDescription": "실제 고객자료 기반 Persona 생성 도구를 선택해서 둘러봅니다.",
             "estimatedMinutes": 5
           }
         },
@@ -616,7 +616,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "이 링크는 강사 전용입니다. 학생 화면에는 노출되지 않습니다 — 필수 실습으로 만들지 마세요.",
+            "markdown": "이 링크는 선택 체험입니다. 필수 completion으로 강제하지 마세요 — 시간이 남으면 함께 시연해도 됩니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
