@@ -395,6 +395,11 @@
             "designWidth": 1280,
             "designHeight": 720,
             "mobileRenderMode": "scale"
+          },
+          "layout": {
+            "width": "full",
+            "align": "center",
+            "spacing": "medium"
           }
         },
         {
