@@ -29,14 +29,14 @@ export const week2: WeekMeta = {
   description:
     "생성형 AI를 활용해 타깃 고객을 정의하고, 마케팅 콘텐츠와 랜딩페이지, FAQ·고객 응대 자동화까지 완성하는 주간입니다.",
   days: [
-    // Day1만 열려 있다. Lesson1(1교시)만 진행했으므로 2~4교시는 따로 잠근다.
+    // Day1은 4시간(1~4교시) 전체가 열려 있다.
     {
       ...week2day1,
       status: "ready",
       release: "open",
       lessons: week2day1.lessons.map((lesson) => ({
         ...lesson,
-        release: lesson.lessonNumber === 1 ? ("open" as const) : ("scheduled" as const),
+        release: "open" as const,
       })),
     },
     scheduledDay(2, "DAY 2 — AI 마케팅 콘텐츠 생성", "AI로 마케팅용 카피, 이미지, 숏폼 기획안을 생성합니다."),

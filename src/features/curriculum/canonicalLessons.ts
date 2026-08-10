@@ -109,13 +109,13 @@ export function hasCanonicalLessons(week: number, day: number): boolean {
 }
 
 /**
- * week2 Day1의 몇 교시(Lesson)까지 열렸는지 — data/index.ts의 week2 배열이 lesson1~3에
- * 적용하는 것과 동일한 규칙(1교시만 open, 나머지 scheduled)이다. day1.ts에는 아직 없는
- * Lesson4처럼 legacy LessonMeta가 없는 canonical Lesson의 release 기본값에만 쓴다 —
- * legacy LessonMeta가 있는 Lesson(1~3)은 거기 이미 적용된 release 값을 그대로 쓴다.
+ * week2 Day1은 4시간(1~4교시) 전체가 열려 있다 — data/index.ts의 week2 배열이 legacy
+ * Lesson(1~3)에 적용하는 것과 동일한 규칙이다. day1.ts에는 아직 없는 Lesson4처럼 legacy
+ * LessonMeta가 없는 canonical Lesson의 release 기본값에만 쓴다 — legacy LessonMeta가
+ * 있는 Lesson(1~3)은 거기 이미 적용된 release 값을 그대로 쓴다.
  */
-function week2Day1DefaultRelease(lessonNumber: number): ReleaseStatus {
-  return lessonNumber === 1 ? "open" : "scheduled";
+function week2Day1DefaultRelease(_lessonNumber: number): ReleaseStatus {
+  return "open";
 }
 
 export interface LessonCard {
