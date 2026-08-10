@@ -27,7 +27,7 @@ export const week2: WeekMeta = {
   week: 2,
   title: "AI 기반 고객 확보 & 자동화 마케팅",
   description:
-    "생성형 AI를 활용해 타깃 고객을 정의하고, 마케팅 콘텐츠와 랜딩페이지, FAQ·고객 응대 자동화까지 완성하는 주간입니다.",
+    "생성형 AI를 활용해 타깃 고객을 정의하고, SNS·블로그·뉴스레터 콘텐츠, 이메일·DM·홍보문구, 랜딩페이지, FAQ·고객 응대 시나리오까지 완성하는 주간입니다.",
   days: [
     // Day1은 4시간(1~4교시) 전체가 열려 있다.
     {
@@ -39,10 +39,10 @@ export const week2: WeekMeta = {
         release: "open" as const,
       })),
     },
-    scheduledDay(2, "DAY 2 — AI 마케팅 콘텐츠 생성", "AI로 마케팅용 카피, 이미지, 숏폼 기획안을 생성합니다."),
-    scheduledDay(3, "DAY 3 — AI 랜딩페이지 제작", "AI 도구를 활용해 랜딩페이지 초안을 빠르게 제작합니다."),
-    scheduledDay(4, "DAY 4 — FAQ & 고객 응대 자동화", "AI로 FAQ와 고객 응대 자동화 흐름을 구성합니다."),
-    scheduledDay(5, "DAY 5 — 마케팅 자동화 통합 실습", "이번 주 결과물을 통합하고 자동화 파이프라인을 점검합니다."),
+    scheduledDay(2, "DAY 2 — GPT 기반 SNS·블로그·뉴스레터 자동 생성", "GPT로 SNS·블로그·뉴스레터 콘텐츠를 자동 생성합니다."),
+    scheduledDay(3, "DAY 3 — AI 기반 이메일·DM·홍보문구 작성", "AI로 이메일·DM·홍보문구 작성을 실습합니다."),
+    scheduledDay(4, "DAY 4 — AI 기반 랜딩페이지·소개페이지 제작", "AI로 랜딩페이지·소개페이지 제작을 실습합니다."),
+    scheduledDay(5, "DAY 5 — Notion AI 활용 고객 FAQ 및 응대 시나리오", "Notion AI로 고객 FAQ 및 응대 시나리오를 작성합니다."),
   ],
 };
 
