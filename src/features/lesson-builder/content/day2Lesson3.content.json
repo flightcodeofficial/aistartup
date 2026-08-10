@@ -169,6 +169,19 @@
           }
         },
         {
+          "id": "l3-b09b",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**SEO의 출발점은 키워드 반복이 아니라 고객이 실제로 검색하는 질문에 정확히 답하는 것입니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          }
+        },
+        {
           "id": "l3-b10",
           "type": "rich-text",
           "visibility": "instructor-only",
@@ -639,7 +652,7 @@
               },
               {
                 "id": "f4",
-                "label": "뉴스레터 제목/도입",
+                "label": "뉴스레터 제목/프리헤더 또는 첫 문장",
                 "kind": "long-text",
                 "required": false
               },

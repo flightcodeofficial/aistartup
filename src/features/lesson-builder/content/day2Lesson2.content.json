@@ -364,7 +364,7 @@
               },
               {
                 "id": "f4",
-                "label": "채널",
+                "label": "채널 A",
                 "kind": "select",
                 "required": false,
                 "options": [
@@ -372,6 +372,31 @@
                   "LinkedIn",
                   "Threads 또는 짧은 글 SNS"
                 ]
+              },
+              {
+                "id": "f4b",
+                "label": "채널 A를 고른 이유",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 이 고객은 시각적인 사례를 빠르게 확인하는 상황이 많기 때문. 근거가 없으면 '가설 / 검증 필요'라고 적어도 됩니다."
+              },
+              {
+                "id": "f4c",
+                "label": "채널 B",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "Instagram",
+                  "LinkedIn",
+                  "Threads 또는 짧은 글 SNS"
+                ]
+              },
+              {
+                "id": "f4d",
+                "label": "채널 B를 고른 이유",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "가설이라면 '가설 / 검증 필요'라고 적어도 됩니다."
               },
               {
                 "id": "f5",
@@ -404,7 +429,7 @@
               "value-proposition"
             ]
           },
-          "description": "Lesson1 메시지 원장을 불러와 SNS용으로 좁혀보세요."
+          "description": "Lesson1 메시지 원장을 불러와, 오늘은 서로 다른 채널 2개(A·B)로 바꿔 씁니다."
         },
         {
           "id": "l2-b21",
@@ -430,7 +455,7 @@
           "description": "{{ }}를 Lesson1과 P07 결과로 바꿔 넣으세요.",
           "visibility": "visible",
           "data": {
-            "prompt": "[콘텐츠 원장]과 [SNS 브리프]만 사용해 SNS 게시물 초안을 만드세요.\n\n[콘텐츠 원장]\n{{Lesson1 핵심 메시지·근거·금지 주장}}\n\n[SNS 브리프]\n{{P07 작성 내용}}\n\n규칙:\n- 원문에 없는 수치, 고객 사례, 성과, 인용을 추가하지 마세요.\n- 채널의 소비 맥락에 맞게 구조를 바꾸세요.\n- 허위 긴급성, 과장, 경쟁사 비방을 사용하지 마세요.\n- CTA는 게시물당 하나만 사용하세요.\n- 브랜드 말투 규칙을 지키세요.\n- 사용한 원천 근거를 [내부 검수용]으로 표시하세요.\n\n출력:\n1. 안전한 기본안\n2. 더 짧은 안\n3. 질문형 훅 안\n4. 사람이 확인할 사실 목록",
+            "prompt": "[콘텐츠 원장]과 [SNS 브리프]만 사용해 같은 사실을 두 채널로 바꿔 쓰세요.\n\n[콘텐츠 원장]\n{{Lesson1 핵심 메시지·근거·금지 주장}}\n\n[SNS 브리프]\n{{P07 작성 내용 — 채널 A/B와 선택 이유 포함}}\n\n규칙:\n- 원문에 없는 수치, 고객 사례, 성과, 인용을 추가하지 마세요.\n- 대상 고객·핵심 문제·근거는 두 채널에서 동일하게 유지하세요.\n- 채널 A/B 각각의 소비 맥락(길이, 도입, 말투, CTA)에 맞게 구조만 바꾸세요.\n- 허위 긴급성, 과장, 경쟁사 비방을 사용하지 마세요.\n- CTA는 게시물당 하나만 사용하세요.\n- 브랜드 말투 규칙을 지키세요.\n- 사용한 원천 근거를 [내부 검수용]으로 표시하세요.\n\n출력:\n1. 채널 A 버전\n2. 채널 B 버전\n3. 둘 중 하나에 쓸 대체 Hook 1개(같은 사실, 다른 시작 문장)\n4. 사람이 확인할 사실 목록",
             "targetTool": "ChatGPT",
             "copyable": true
           }
@@ -447,7 +472,7 @@
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
             "practiceName": "SNS 초안 생성",
-            "practiceDescription": "같은 근거로 구조가 다른 SNS 초안 3개를 만듭니다.",
+            "practiceDescription": "같은 근거로 채널 A·B 버전과 대체 Hook을 만듭니다.",
             "estimatedMinutes": 12
           }
         },
@@ -527,7 +552,7 @@
         {
           "id": "l2-b28",
           "type": "infographic",
-          "title": "SNS 게시 전 5개 확인",
+          "title": "빠른 발행 체크 3가지",
           "visibility": "visible",
           "theme": {
             "background": "muted",
@@ -537,19 +562,13 @@
             "variant": "checklist",
             "items": [
               {
-                "label": "사실: 원천에 없는 정보가 없는가?"
+                "label": "원천에 없는 사실을 추가하지 않았는가?"
               },
               {
-                "label": "브랜드: 말투 규칙이 지켜졌는가?"
+                "label": "고객·브랜드 말투에 맞는가?"
               },
               {
-                "label": "저작권: 경쟁사 문구를 베끼지 않았는가?"
-              },
-              {
-                "label": "개인정보: 고객 식별 정보가 없는가?"
-              },
-              {
-                "label": "행동: CTA가 하나이고 실제 가능한가?"
+                "label": "CTA가 하나인가?"
               }
             ]
           }
@@ -559,7 +578,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**AI가 생성 → 사람이 승인 → 발행** 순서를 유지합니다. 자동 게시 연결은 오늘 실습 범위가 아닙니다.",
+            "markdown": "**AI가 생성 → 사람이 승인 → 발행** 순서를 유지합니다. 자동 게시 연결은 오늘 실습 범위가 아닙니다.\n\n저작권·개인정보·최종 승인자까지 포함한 전체 검수는 **Lesson4에서 한 번에** 정리합니다.",
             "emphasis": "normal"
           },
           "theme": {
@@ -593,25 +612,31 @@
             "fields": [
               {
                 "id": "f1",
-                "label": "채널과 게시물 목적",
+                "label": "채널 A와 게시물 목적",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f2",
-                "label": "게시물 1 — 안전한 기본안",
+                "label": "채널 A 버전",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f3",
-                "label": "게시물 2 — 짧은 안",
+                "label": "채널 B와 게시물 목적",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3b",
+                "label": "채널 B 버전",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f4",
-                "label": "게시물 3 — 질문형 훅 안",
+                "label": "대체 Hook 1개 (같은 사실, 다른 시작 문장)",
                 "kind": "long-text",
                 "required": false
               },
@@ -644,7 +669,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "세 안 중 실제로 쓸 하나를 고르고 **선택 이유**도 기록하세요.",
+            "markdown": "채널 A·B 중 실제로 먼저 쓸 하나를 고르고 **선택 이유**도 기록하세요. 근거가 약하면 '가설 / 검증 필요'로 남겨도 됩니다.",
             "emphasis": "normal"
           }
         },

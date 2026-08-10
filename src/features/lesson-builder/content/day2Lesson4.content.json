@@ -99,7 +99,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "원천문서가 바뀌면 파생 콘텐츠를 다시 검토합니다. 원천이 같다면 시장 사실을 매번 새로 만들 필요가 없습니다.",
+            "markdown": "원천문서가 바뀌면 파생 콘텐츠를 다시 검토합니다. 원천이 같다면 시장 사실을 매번 새로 만들 필요가 없습니다.\n\n**예시:** 원천문서 v1에 있던 가격 정보가 v2에서 바뀌었다면, v1으로 만든 SNS·블로그·뉴스레터에 그 가격이 남아있는지 전부 다시 확인해야 합니다. 원천이 바뀌지 않았다면 이미 만든 콘텐츠는 그대로 재사용합니다.",
             "emphasis": "normal"
           }
         },
@@ -492,6 +492,25 @@
                 "required": false
               },
               {
+                "id": "f1b",
+                "label": "원천문서 버전 또는 업데이트 기준",
+                "kind": "short-text",
+                "required": false,
+                "placeholder": "예: v1, 2026-08-10 기준"
+              },
+              {
+                "id": "f1c",
+                "label": "현재 상태",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "초안",
+                  "검수 필요",
+                  "발행 가능",
+                  "발행/기록 완료"
+                ]
+              },
+              {
                 "id": "f2",
                 "label": "SNS — 목표·핵심 메시지·CTA·근거 번호",
                 "kind": "long-text",
@@ -598,13 +617,13 @@
               },
               {
                 "id": "f7",
-                "label": "무엇을 기록할 것인가",
+                "label": "고객 반응 기록 방법 (댓글·답장·문의 등)",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f8",
-                "label": "결과를 다음 원천문서에 어떻게 반영할 것인가",
+                "label": "결과·반응을 다음 원천문서 수정사항에 어떻게 반영할 것인가",
                 "kind": "long-text",
                 "required": false
               }
@@ -693,6 +712,19 @@
           },
           "theme": {
             "background": "dark",
+            "bordered": false
+          }
+        },
+        {
+          "id": "l4-b37b",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**다음 Day 예고:** 오늘 만든 핵심 메시지·CTA·콘텐츠는 내일 이메일·DM·홍보문구의 입력값이 됩니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
             "bordered": false
           }
         },
