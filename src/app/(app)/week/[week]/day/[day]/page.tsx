@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getDay } from "@/features/curriculum/data";
+import { hasCanonicalLessons } from "@/features/curriculum/canonicalLessons";
 import { DayHero } from "@/components/step/DayHero";
 import { StepList } from "@/components/step/StepList";
 import { ComingSoon } from "@/components/common/ComingSoon";
@@ -24,7 +25,7 @@ export default async function DayPage({
           들어갈 수 있는 것처럼 읽힌다. */}
       <DayGate day={dayMeta}>
         <DayHero day={dayMeta} />
-        {dayMeta.status === "coming-soon" ? (
+        {dayMeta.status === "coming-soon" && !hasCanonicalLessons(weekNumber, dayNumber) ? (
           <ComingSoon title={dayMeta.title} goal={dayMeta.goal} />
         ) : (
           <StepList week={weekNumber} day={dayNumber} />

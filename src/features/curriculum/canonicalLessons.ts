@@ -6,6 +6,58 @@ import { DAY2_LESSON1_META } from "@/features/lesson-builder/day2Lesson1";
 import { DAY2_LESSON2_META } from "@/features/lesson-builder/day2Lesson2";
 import { DAY2_LESSON3_META } from "@/features/lesson-builder/day2Lesson3";
 import { DAY2_LESSON4_META } from "@/features/lesson-builder/day2Lesson4";
+import { DAY3_LESSON1_META } from "@/features/lesson-builder/day3Lesson1";
+import { DAY3_LESSON2_META } from "@/features/lesson-builder/day3Lesson2";
+import { DAY3_LESSON3_META } from "@/features/lesson-builder/day3Lesson3";
+import { DAY3_LESSON4_META } from "@/features/lesson-builder/day3Lesson4";
+import { DAY4_LESSON1_META } from "@/features/lesson-builder/day4Lesson1";
+import { DAY4_LESSON2_META } from "@/features/lesson-builder/day4Lesson2";
+import { DAY4_LESSON3_META } from "@/features/lesson-builder/day4Lesson3";
+import { DAY4_LESSON4_META } from "@/features/lesson-builder/day4Lesson4";
+import { DAY5_LESSON1_META } from "@/features/lesson-builder/day5Lesson1";
+import { DAY5_LESSON2_META } from "@/features/lesson-builder/day5Lesson2";
+import { DAY5_LESSON3_META } from "@/features/lesson-builder/day5Lesson3";
+import { DAY5_LESSON4_META } from "@/features/lesson-builder/day5Lesson4";
+import { DAY6_LESSON1_META } from "@/features/lesson-builder/day6Lesson1";
+import { DAY6_LESSON2_META } from "@/features/lesson-builder/day6Lesson2";
+import { DAY6_LESSON3_META } from "@/features/lesson-builder/day6Lesson3";
+import { DAY6_LESSON4_META } from "@/features/lesson-builder/day6Lesson4";
+import { DAY7_LESSON1_META } from "@/features/lesson-builder/day7Lesson1";
+import { DAY7_LESSON2_META } from "@/features/lesson-builder/day7Lesson2";
+import { DAY7_LESSON3_META } from "@/features/lesson-builder/day7Lesson3";
+import { DAY7_LESSON4_META } from "@/features/lesson-builder/day7Lesson4";
+import { DAY8_LESSON1_META } from "@/features/lesson-builder/day8Lesson1";
+import { DAY8_LESSON2_META } from "@/features/lesson-builder/day8Lesson2";
+import { DAY8_LESSON3_META } from "@/features/lesson-builder/day8Lesson3";
+import { DAY8_LESSON4_META } from "@/features/lesson-builder/day8Lesson4";
+import { DAY9_LESSON1_META } from "@/features/lesson-builder/day9Lesson1";
+import { DAY9_LESSON2_META } from "@/features/lesson-builder/day9Lesson2";
+import { DAY9_LESSON3_META } from "@/features/lesson-builder/day9Lesson3";
+import { DAY9_LESSON4_META } from "@/features/lesson-builder/day9Lesson4";
+import { DAY10_LESSON1_META } from "@/features/lesson-builder/day10Lesson1";
+import { DAY10_LESSON2_META } from "@/features/lesson-builder/day10Lesson2";
+import { DAY10_LESSON3_META } from "@/features/lesson-builder/day10Lesson3";
+import { DAY10_LESSON4_META } from "@/features/lesson-builder/day10Lesson4";
+import { DAY11_LESSON1_META } from "@/features/lesson-builder/day11Lesson1";
+import { DAY11_LESSON2_META } from "@/features/lesson-builder/day11Lesson2";
+import { DAY11_LESSON3_META } from "@/features/lesson-builder/day11Lesson3";
+import { DAY11_LESSON4_META } from "@/features/lesson-builder/day11Lesson4";
+import { DAY12_LESSON1_META } from "@/features/lesson-builder/day12Lesson1";
+import { DAY12_LESSON2_META } from "@/features/lesson-builder/day12Lesson2";
+import { DAY12_LESSON3_META } from "@/features/lesson-builder/day12Lesson3";
+import { DAY12_LESSON4_META } from "@/features/lesson-builder/day12Lesson4";
+import { DAY13_LESSON1_META } from "@/features/lesson-builder/day13Lesson1";
+import { DAY13_LESSON2_META } from "@/features/lesson-builder/day13Lesson2";
+import { DAY13_LESSON3_META } from "@/features/lesson-builder/day13Lesson3";
+import { DAY13_LESSON4_META } from "@/features/lesson-builder/day13Lesson4";
+import { DAY14_LESSON1_META } from "@/features/lesson-builder/day14Lesson1";
+import { DAY14_LESSON2_META } from "@/features/lesson-builder/day14Lesson2";
+import { DAY14_LESSON3_META } from "@/features/lesson-builder/day14Lesson3";
+import { DAY14_LESSON4_META } from "@/features/lesson-builder/day14Lesson4";
+import { DAY15_LESSON1_META } from "@/features/lesson-builder/day15Lesson1";
+import { DAY15_LESSON2_META } from "@/features/lesson-builder/day15Lesson2";
+import { DAY15_LESSON3_META } from "@/features/lesson-builder/day15Lesson3";
+import { DAY15_LESSON4_META } from "@/features/lesson-builder/day15Lesson4";
 import { getDay, getLesson } from "./data";
 import { lessonRelease, type ReleaseStatus } from "./release";
 import type { Step } from "./types";
@@ -26,21 +78,34 @@ export interface CanonicalLessonMeta {
   description?: string;
 }
 
-const CANONICAL_LESSONS: CanonicalLessonMeta[] = [
-  DAY1_LESSON1_META,
-  DAY1_LESSON2_META,
-  DAY1_LESSON3_META,
-  DAY1_LESSON4_META,
-  DAY2_LESSON1_META,
-  DAY2_LESSON2_META,
-  DAY2_LESSON3_META,
-  DAY2_LESSON4_META,
+export const CANONICAL_LESSONS: CanonicalLessonMeta[] = [
+  DAY1_LESSON1_META, DAY1_LESSON2_META, DAY1_LESSON3_META, DAY1_LESSON4_META,
+  DAY2_LESSON1_META, DAY2_LESSON2_META, DAY2_LESSON3_META, DAY2_LESSON4_META,
+  DAY3_LESSON1_META, DAY3_LESSON2_META, DAY3_LESSON3_META, DAY3_LESSON4_META,
+  DAY4_LESSON1_META, DAY4_LESSON2_META, DAY4_LESSON3_META, DAY4_LESSON4_META,
+  DAY5_LESSON1_META, DAY5_LESSON2_META, DAY5_LESSON3_META, DAY5_LESSON4_META,
+  DAY6_LESSON1_META, DAY6_LESSON2_META, DAY6_LESSON3_META, DAY6_LESSON4_META,
+  DAY7_LESSON1_META, DAY7_LESSON2_META, DAY7_LESSON3_META, DAY7_LESSON4_META,
+  DAY8_LESSON1_META, DAY8_LESSON2_META, DAY8_LESSON3_META, DAY8_LESSON4_META,
+  DAY9_LESSON1_META, DAY9_LESSON2_META, DAY9_LESSON3_META, DAY9_LESSON4_META,
+  DAY10_LESSON1_META, DAY10_LESSON2_META, DAY10_LESSON3_META, DAY10_LESSON4_META,
+  DAY11_LESSON1_META, DAY11_LESSON2_META, DAY11_LESSON3_META, DAY11_LESSON4_META,
+  DAY12_LESSON1_META, DAY12_LESSON2_META, DAY12_LESSON3_META, DAY12_LESSON4_META,
+  DAY13_LESSON1_META, DAY13_LESSON2_META, DAY13_LESSON3_META, DAY13_LESSON4_META,
+  DAY14_LESSON1_META, DAY14_LESSON2_META, DAY14_LESSON3_META, DAY14_LESSON4_META,
+  DAY15_LESSON1_META, DAY15_LESSON2_META, DAY15_LESSON3_META, DAY15_LESSON4_META,
 ];
 
 function getCanonicalLessonMetas(week: number, day: number): CanonicalLessonMeta[] {
   return CANONICAL_LESSONS.filter((l) => l.week === week && l.day === day).sort(
     (a, b) => a.lessonNumber - b.lessonNumber
   );
+}
+
+/** Day에 canonical Lesson이 하나라도 등록됐는지. status="coming-soon"이어도
+ *  canonical Lesson이 있으면 "콘텐츠 준비 중" 대신 실제 Lesson 카드를 보여줘야 한다. */
+export function hasCanonicalLessons(week: number, day: number): boolean {
+  return getCanonicalLessonMetas(week, day).length > 0;
 }
 
 /**
