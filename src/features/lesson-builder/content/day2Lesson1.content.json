@@ -5,7 +5,7 @@
   "day": 2,
   "lesson": 1,
   "title": "원천문서에서 핵심 메시지 만들기",
-  "description": "Day1 고객 결과물을 원천문서로 정리하고, AI가 새로운 사실을 만들지 않도록 핵심 메시지 원장을 만든다.",
+  "description": "Day1 고객 결과물을 원천문서(Source Pack) 6칸으로 정리하고, 검증 필요 항목은 보류함으로 분리한 뒤, AI가 새로운 사실을 만들지 않도록 핵심 메시지 원장을 만든다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -18,12 +18,12 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "l1-b01",
+          "id": "l1-b1",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# AI에게 글부터 시키지 마세요\n# 먼저 ‘말할 재료’를 고정해야 합니다\n\n**Day1 고객 이해를 콘텐츠 원천문서와 핵심 메시지로 바꿉니다.**",
-            "emphasis": "hero"
+            "markdown": "# AI에게 글부터 시키지 마세요\n# 먼저 '말할 재료'를 고정해야 합니다\n\n**Day1 고객 이해를 콘텐츠 원천문서(Source Pack)와 핵심 메시지로 바꿉니다.**",
+            "emphasis": "normal"
           },
           "layout": {
             "width": "wide",
@@ -32,34 +32,29 @@
           }
         },
         {
-          "id": "l1-b02",
+          "id": "l1-b2",
           "type": "infographic",
           "title": "Lesson1 결과",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
-            "variant": "checklist",
             "items": [
               {
                 "label": "Day1 결과물 다시 불러오기"
               },
               {
-                "label": "콘텐츠 원천문서 만들기"
+                "label": "콘텐츠 원천문서 6칸 만들기"
               },
               {
-                "label": "금지 주장 정하기"
+                "label": "검증 필요 항목은 보류함으로 분리"
               },
               {
-                "label": "핵심 메시지 한 줄 만들기"
+                "label": "핵심 메시지 · 각도 · CTA로 정리"
               }
             ]
           }
         },
         {
-          "id": "l1-b03",
+          "id": "l1-b3",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -81,7 +76,7 @@
       "layout": "wide",
       "blocks": [
         {
-          "id": "l1-b04",
+          "id": "l1-b4",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
@@ -90,23 +85,18 @@
           }
         },
         {
-          "id": "l1-b05",
+          "id": "l1-b5",
           "type": "infographic",
           "title": "Day1 → Day2",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
-            "variant": "steps",
             "items": [
               {
                 "label": "고객 자료",
                 "description": "실제 문제와 표현"
               },
               {
-                "label": "세그먼트·페르소나",
+                "label": "세그먼트·ECP·ICP",
                 "description": "누구에게 말할지"
               },
               {
@@ -121,16 +111,12 @@
           }
         },
         {
-          "id": "l1-b06",
+          "id": "l1-b6",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**부족한 부분은 AI가 상상해 채우지 않습니다.** 모르면 ‘검증 필요’로 남깁니다.",
+            "markdown": "**목표 고객을 고를 때 우선순위가 있습니다.** ECP가 있으면 ECP를 먼저 씁니다. ECP가 아직 없으면 우선 검증 Segment를 씁니다. B2B라면 ICP(조직 조건) + Persona(담당자)를 함께 조합해서 씁니다.\n\n**부족한 부분은 AI가 상상해 채우지 않습니다.** 모르면 '검증 필요'로 남깁니다.",
             "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
           },
           "layout": {
             "width": "wide",
@@ -139,11 +125,11 @@
           }
         },
         {
-          "id": "l1-b07",
+          "id": "l1-b7",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "Workspace의 Day1 산출물을 직접 확인하게 하세요.",
+            "markdown": "Workspace의 Day1 산출물을 직접 확인하게 하세요. ECP 유무를 먼저 확인시키세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -157,11 +143,11 @@
     },
     {
       "id": "p03",
-      "title": "원천문서는 AI에게 주는 ‘사실의 울타리’입니다",
+      "title": "원천문서는 AI에게 주는 '사실의 울타리'입니다",
       "layout": "standard",
       "blocks": [
         {
-          "id": "l1-b08",
+          "id": "l1-b8",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -175,16 +161,11 @@
           }
         },
         {
-          "id": "l1-b09",
+          "id": "l1-b9",
           "type": "infographic",
           "title": "좋은 원천 / 위험한 원천",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
-            "variant": "comparison",
             "items": [
               {
                 "label": "좋은 원천",
@@ -202,12 +183,8 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**AI 검색 결과나 경쟁사 문장을 ‘우리의 사실’로 바꾸지 않습니다.**",
+            "markdown": "**AI 검색 결과나 경쟁사 문장을 '우리의 사실'로 바꾸지 않습니다.**",
             "emphasis": "normal"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
           },
           "layout": {
             "width": "wide",
@@ -217,6 +194,20 @@
         },
         {
           "id": "l1-b11",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**원문 보존 ≠ 외부 공개입니다.** 고객이 실제로 한 말은 원천문서 안에 원문 그대로 남겨둡니다. 하지만 그 말을 SNS·블로그에 그대로 노출해도 되는지는 별개 확인이 필요합니다 (실명·상호명 등 식별 정보가 없는지 먼저 확인하세요).",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b11b",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -234,9 +225,51 @@
     },
     {
       "id": "p04",
-      "title": "원천문서 → 핵심 메시지",
-      "layout": "wide",
+      "title": "이전자료 불러오기와 매핑",
+      "layout": "standard",
       "blocks": [
+        {
+          "id": "l1-b12a",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**⚠️ 이 표를 먼저 보여주세요.** 안 보여주면 학생은 '어제 것 다 만들었는데 또 처음부터 쓰나?'라고 받아들이고 실제로 새로 지어내기 시작합니다.\n\n| 원천문서 칸 | Day1 어디서 가져오나 | 새로 쓰나? |\n|---|---|---|\n| ① 목표 고객 | ECP(있으면 우선) 또는 우선 검증 Segment. B2B는 ICP+Persona 조합 | 옮기기 |\n| ② 고객의 실제 말 | 고객 자료 원문(Customer Evidence) | 옮기기 |\n| ③ 확인된 문제와 상황 | Persona·Journey 중 **근거번호가 있는 항목만** (+ 현재 대안) | 옮기기 |\n| ④ 창업자의 실제 경험 | — | ✏️ 새로 씀 (유일) |\n| ⑤ 실제 제품·서비스 정보 | Value Proposition — 지금 실제로 되는 것만 | 옮기기 |\n| ⑥ 한계·검증 필요 주장 | Anti-ICP는 여기 안 옴(①에 반영). 근거 없는 주장만 | 옮기기 |\n\n> **핵심 안내 문구**\n> \"오늘 새로 쓰는 칸은 **④번 하나**입니다. 나머지는 어제 것을 옮기고, **골라내는 작업**입니다.\"",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b12b",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**B2B라면** ICP(조직이 갖춰야 할 조건)와 Persona(그 조직 안의 실제 담당자)를 **함께** 씁니다. 예: \"ICP = 직원 10명 이상 온라인 판매 사업자\" + \"Persona = 마케팅을 겸임하는 운영 담당자\".",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b12c",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Anti-ICP는 '금지 주장'이 아니라 '목표 고객 범위'에 반영합니다.** Anti-ICP는 \"지금 우리 제품과 안 맞는 고객·조건\"이고, 금지 주장은 \"근거 없이 밖에 말하면 안 되는 문장\"입니다. 완전히 다른 개념이니 섞지 마세요. Anti-ICP는 ①번 칸에 \"~에게는 해당하지 않음\" 형태로 짧게 덧붙이면 됩니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
         {
           "id": "l1-b12",
           "type": "image",
@@ -244,26 +277,12 @@
           "visibility": "visible",
           "data": {
             "url": "/lesson-content/week2/day2/source_to_message_pipeline.svg",
-            "alt": "원천문서, 내용 감사, 메시지 각도, 핵심 메시지 흐름",
+            "alt": "Day1 산출물이 원천문서 6칸으로 옮겨지고, 원천문서에서 핵심 메시지가 나오는 흐름",
             "caption": "",
             "display": "large",
             "objectFit": "contain",
             "aspectRatio": "16/9",
             "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "l1-b13",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**멋지게 써줘**라고 하기 전에 사실·경험·고객의 직접 표현·확인 필요를 분리합니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         },
         {
@@ -285,13 +304,81 @@
     },
     {
       "id": "p05",
+      "title": "자료유형 × 근거상태",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l1-b17intro",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "복잡한 분류체계를 외울 필요는 없습니다. **서로 다른 두 가지 질문**을 따로 던집니다.\n\n**Q1. 이 내용이 어디서 왔는가? (자료유형)**\n\n| 코드 | 자료유형 | 뜻 |\n|---|---|---|\n| **C** | 고객 직접 표현 | 고객이 실제로 한 말 |\n| **F** | 창업자 관찰/경험 | 창업자가 직접 보고 겪은 것 |\n| **P** | 제품·서비스 사실 | 지금 실제로 제공 가능한 것 |\n| **R** | 기타 근거자료 | 위 셋에 안 들어가는 근거자료(공개 리뷰 등) |\n\n**Q2. 이 내용을 얼마나 믿을 수 있는가? (근거상태 — Day1의 근거/추론/검증 필요를 그대로 계승)**\n\n| 근거상태 | 뜻 | 지금 쓸 수 있나 |\n|---|---|---|\n| 🟢 근거 있음 | 실제 자료·번호로 뒷받침됨 | 바로 사용 |\n| 🔵 추론 | 근거에서 합리적으로 유추했지만 직접 확인은 안 됨 | 표시하고 사용 |\n| 🔴 검증 필요 | 출처 없음, 확인 안 됨 | 지금은 사용하지 않음 |\n\n이 둘은 **곱해서** 씁니다. 예: \"고객 직접 표현 + 근거 있음\" = 인터뷰에서 실제로 들은 말. \"창업자 관찰 + 추론\" = 몇 번 상담하며 느낀 패턴이지만 숫자로 확인은 안 한 것.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b17b",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**근거번호는 자료유형 코드를 그대로 씁니다.** 고객 근거는 `C01, C02…`, 창업자 관찰은 `F01…`, 제품 사실은 `P01…`, 한계·검증 필요 사유는 `R01…`처럼 붙입니다. **①번 목표 고객은 정의라서 근거번호가 필요 없고, ⑥번 한계·검증 필요 주장은 '근거'가 아니라 '왜 못 쓰는지 사유'만 R코드로 남깁니다.** 나머지 ②~⑤는 근거번호가 있어야 합니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b17c",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**작성한 내용은 두 곳 중 하나로 갑니다.**\n\n- **콘텐츠 원천문서(Source Pack)** — 지금 콘텐츠 생성에 실제로 쓸 수 있는 근거자료(근거 있음 + 추론)\n- **보류함(Verify Later)** — 아직 검증 안 된 것(🔴 검증 필요). **삭제하지 않습니다.** 나중에 근거가 생기면 그때 원천문서로 옮깁니다.\n\n**ChatGPT에게 콘텐츠를 만들어달라고 할 때는 원천문서만 넣고, 보류함은 절대 넣지 않습니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b19",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "두 축을 헷갈려하면 실제 문장 3개로 같이 분류해보게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
       "title": "직접 분류해보기 — 이 문장은 써도 될까요?",
       "layout": "fullscreen",
       "blocks": [
         {
           "id": "l1-b15",
           "type": "html-file",
-          "title": "원천문서 검수 연습",
+          "title": "원천문서 판정 연습",
           "visibility": "visible",
           "data": {
             "src": "/lesson-content/week2/day2/source_audit_interactive.html",
@@ -311,78 +398,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "정답 맞히기보다 ‘모르면 확인 필요’ 습관을 만드는 페이지입니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p06",
-      "title": "콘텐츠 원천문서의 5칸",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "l1-b17",
-          "type": "infographic",
-          "title": "콘텐츠 원천문서 5칸",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "고객의 실제 말",
-                "description": "인터뷰·리뷰·문의"
-              },
-              {
-                "label": "확인된 문제·상황",
-                "description": "언제 무엇 때문에 힘든가"
-              },
-              {
-                "label": "창업자의 경험",
-                "description": "직접 겪고 설명 가능한 경험"
-              },
-              {
-                "label": "제품·서비스 정보",
-                "description": "실제로 제공 가능한 범위"
-              },
-              {
-                "label": "한계·금지 주장",
-                "description": "아직 검증 안 된 내용"
-              }
-            ]
-          }
-        },
-        {
-          "id": "l1-b18",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "### 쉬운 예시\n\n- 고객의 말: **“매일 SNS에 뭘 올릴지 모르겠어요.”**\n- 문제: 콘텐츠 주제 정하기가 어렵다\n- 제공 가능: 주제 정리와 초안 작성 보조\n- 아직 금지: **“매출이 오른다”**, 확인되지 않은 시간 절감 수치",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b19",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "기능보다 고객의 실제 말과 금지 주장을 적게 하세요.",
+            "markdown": "정답 맞히기보다 '모르면 검증 필요' 습관을 만드는 페이지입니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -396,127 +412,57 @@
     },
     {
       "id": "p07",
-      "title": "핵심 메시지는 ‘각도’를 고른 뒤 만듭니다",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "l1-b20",
-          "type": "image",
-          "title": "메시지 각도 지도",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/week2/day2/message_angle_map.svg",
-            "alt": "문제, 상황, 결과, 현재 대안 각도",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "l1-b21",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 기본 틀\n\n**[누구]가 [어떤 상황/문제]에서 [어떤 변화]를 만들도록 [무엇]을 돕습니다.**\n\n필요할 때만 근거와 CTA를 붙입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b22",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "한 문장에 기능·혜택·회사소개·창업스토리를 모두 넣지 않습니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b23",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "같은 사업을 문제/상황/대안 각도로 세 문장 바꿔보세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p08",
-      "title": "실습 — 내 콘텐츠 원천문서",
+      "title": "실습 — 콘텐츠 원천문서(Source Pack)",
       "layout": "practice",
       "blocks": [
         {
           "id": "l1-b24",
           "type": "input-form",
-          "title": "원천문서 초안",
+          "title": "콘텐츠 원천문서 6칸",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "오늘 콘텐츠로 말할 목표 고객",
+                "label": "① 목표 고객",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "예: 매일 SNS 글감을 고민하는 1인 카페 사장님"
+                "placeholder": "ECP가 있으면 ECP 우선, 없으면 우선 검증 Segment. B2B는 ICP+Persona 조합. Anti-ICP 제외 조건도 짧게 덧붙이세요."
               },
               {
                 "id": "f2",
-                "label": "고객이 실제로 한 말 또는 확인된 문제",
+                "label": "② 고객의 실제 말 (C — 근거번호 필수)",
                 "kind": "long-text",
-                "required": false
+                "required": false,
+                "placeholder": "따옴표 그대로, 최소 2~3개. 예: C01 \"...\" 이 칸은 내부 분석용이며 외부 공개는 별도 확인이 필요합니다."
               },
               {
                 "id": "f3",
-                "label": "창업자가 직접 설명할 수 있는 경험",
+                "label": "③ 확인된 문제와 상황 (+ 현재 대안)",
                 "kind": "long-text",
-                "required": false
+                "required": false,
+                "placeholder": "Customer Evidence·Journey의 실제 근거번호가 있는 것만 '근거 있음'. Persona에 있다고 자동으로 사실은 아닙니다 — 추론이면 [추론]이라고 적으세요."
               },
               {
                 "id": "f4",
-                "label": "실제로 제공할 수 있는 가치",
+                "label": "④ 창업자의 실제 경험 (F)",
                 "kind": "long-text",
-                "required": false
+                "required": false,
+                "placeholder": "실제로 관찰한 범위 그대로: 예) 한 사례에서 / 여러 상담에서 / 일부 고객에게서. '반복적으로 봤다'를 억지로 쓰지 않아도 됩니다."
               },
               {
                 "id": "f5",
-                "label": "아직 검증되지 않아 쓰면 안 되는 주장",
+                "label": "⑤ 실제 제품·서비스 정보 (P)",
                 "kind": "long-text",
-                "required": false
+                "required": false,
+                "placeholder": "지금 실제로 제공 가능한 기능·조건만. Value Proposition 문장을 그대로 승격하지 마세요. 향후 기능·기대효과는 보류함(P08)으로."
               },
               {
                 "id": "f6",
-                "label": "사용할 메시지 각도",
-                "kind": "select",
+                "label": "⑥ 한계·검증 필요 주장 (R — 사유만)",
+                "kind": "long-text",
                 "required": false,
-                "options": [
-                  "문제 각도",
-                  "상황 각도",
-                  "결과 각도",
-                  "현재 대안 각도"
-                ]
+                "placeholder": "근거 없이 콘텐츠에서 말하면 안 되는 주장. Anti-ICP(안 맞는 고객)와는 다른 개념입니다."
               }
             ],
             "inputArtifactTypes": [
@@ -524,19 +470,20 @@
               "segment",
               "ecp",
               "icp",
+              "anti-icp",
               "persona",
               "journey",
               "value-proposition"
             ]
           },
-          "description": "Day1 결과물을 불러와 필요한 항목만 채우세요."
+          "description": "어제 만든 자료를 옮기고 골라내는 작업입니다. 새로 쓰는 칸은 ④번 하나뿐입니다."
         },
         {
           "id": "l1-b25",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "자료가 부족하면 빈칸을 AI가 채우게 하지 말고 **검증 필요**로 적습니다.",
+            "markdown": "자료가 부족하면 빈칸을 AI가 채우게 하지 말고 **검증 필요**로 남기고 다음 페이지(보류함)에 적습니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -563,49 +510,17 @@
       ]
     },
     {
-      "id": "p09",
-      "title": "ChatGPT로 원천문서 검수 + 메시지 후보 만들기",
+      "id": "p08",
+      "title": "실습 — Verify Later 보류함",
       "layout": "practice",
       "blocks": [
         {
-          "id": "l1-b27",
-          "type": "prompt",
-          "title": "원천문서 검수 프롬프트",
-          "description": "{{ }}를 P08 결과로 직접 바꿔 넣으세요.",
-          "visibility": "visible",
-          "data": {
-            "prompt": "아래 [원천문서 초안]을 콘텐츠 제작 전에 검수하세요.\n\n[원천문서 초안]\n{{P08에서 작성한 내용을 붙여넣기}}\n\n먼저 각 문장을 아래 4가지 핵심 상태 중 하나로 분류하세요:\n1. 사용 가능 (확인된 사실)\n2. 창업자 경험\n3. 고객 직접 표현\n4. 확인 필요 (출처 없는 주장·의견)\n\n그다음 아래 위험 신호가 있으면 별도로 표시하세요:\n- 개인정보 (공개하면 안 되는 고객·회사 정보)\n- 저작권 (경쟁사·타인 문장·이미지 그대로 사용)\n- 과장 (근거 없이 부풀리거나 오해를 부르는 표현)\n\n새로운 사실을 추가하지 말고 핵심 메시지 후보 3개를 만드세요.\n각 후보에 대상 고객, 문제/상황, 제공 가치, 근거, CTA 1개, 사람이 확인할 항목을 표시하세요.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          }
-        },
-        {
-          "id": "l1-b28",
-          "type": "external-link",
-          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요.",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "원천문서 검수 실행",
-            "practiceDescription": "원천문서를 4가지 핵심 상태로 분류하고 메시지 후보 3개를 만듭니다.",
-            "estimatedMinutes": 14
-          }
-        },
-        {
-          "id": "l1-b29",
+          "id": "l1-b41new",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**개인정보·회사 기밀·미공개 고객정보는 익명화합니다.**",
+            "markdown": "**검증 필요를 삭제하지 않습니다.** 원천문서(Source Pack)를 순수하게 유지하면서도, 지금 못 쓰는 내용을 잊어버리지 않도록 별도로 보관합니다. 나중에 근거가 생기면 원천문서 ②~⑤번 칸으로 옮깁니다.",
             "emphasis": "normal"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
           },
           "layout": {
             "width": "wide",
@@ -614,11 +529,101 @@
           }
         },
         {
-          "id": "l1-b30",
+          "id": "l1-b24b",
+          "type": "input-form",
+          "title": "보류함",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "보류한 문장·주장",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "검증 필요로 남긴 내용을 그대로 적어두세요. 삭제하지 않습니다."
+              },
+              {
+                "id": "f2",
+                "label": "왜 보류했는지",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 출처 없음 / 아직 측정 안 함 / 추측성 표현"
+              }
+            ]
+          },
+          "description": "여기 적은 내용은 오늘 ChatGPT 프롬프트에 넣지 않습니다."
+        },
+        {
+          "id": "l1-b26b",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "AI가 원문에 없던 ‘좋은 말’을 추가했는지 먼저 찾게 하세요.",
+            "markdown": "보류함이 텅 비어 있어도 괜찮습니다. 억지로 채우게 하지 마세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "가치제안 → 핵심 메시지, 그리고 각도",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b20",
+          "type": "image",
+          "title": "원천문서에서 메시지까지",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2/day2/message_angle_map.svg",
+            "alt": "원천문서 근거에서 메시지 각도를 고르고 핵심 메시지로 압축하는 흐름",
+            "caption": "",
+            "display": "large",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
+          }
+        },
+        {
+          "id": "l1-b21",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Value Proposition과 핵심 메시지는 다릅니다\n\n**Value Proposition(가치제안)** — 사업 **내부** 전략 문장. 우리가 왜 이 사업을 하는지 판단 기준.\n\n**핵심 메시지(Core Message)** — 그 전략을 고객 **언어**로 번역해서 실제로 전달하는 외부 문장.\n\n**Before / After**\n\n| | 문장 |\n|---|---|\n| Value Proposition (내부) | 우리는 AI 기반 자동화로 소상공인의 마케팅 리소스 문제를 해결한다 |\n| 핵심 메시지 (외부, 고객에게) | 매일 뭘 올릴지 고민하는 카페 사장님, AI가 오늘 쓸 게시물 아이디어를 먼저 제안합니다 |\n\n같은 전략이지만 **누구에게 하는 말인지**가 다릅니다. 내부 문장을 그대로 복사해서 쓰지 않습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b22",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 메시지 각도(Message Angle)\n\n'문제'만 고르는 게 아닙니다. 원천문서 안의 근거 중 **무엇을 앞에 세울지** 고르는 것입니다.\n\n| 각도 | 강조하는 것 |\n|---|---|\n| Pain | 지금 겪는 문제 |\n| Desired Gain | 원하는 결과 |\n| Trigger | 문제가 특히 커지는 순간 |\n| Current Alternative | 지금 쓰는 대안과의 차이 |\n| Objection | 망설이는 이유를 없애기 |\n| Journey Stage | 지금 고객이 서 있는 단계에 맞추기 |\n\n**중요:** AI에게 마음대로 장점을 만들어달라고 하지 않습니다. **원천문서 ②~⑤번 칸에 있는 근거 중에서 고릅니다.** 각도는 만드는 것이 아니라 **고르는 것**입니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b23",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "같은 원천문서로 각도만 바꿔서 문장 두세 개를 함께 만들어보게 하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -632,72 +637,57 @@
     },
     {
       "id": "p10",
-      "title": "‘잘 썼는지’보다 ‘원문을 지켰는지’",
-      "layout": "standard",
+      "title": "ChatGPT로 메시지 후보 3개 만들기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "l1-b31",
-          "type": "quiz",
-          "title": "이해도 확인",
+          "id": "l1-b27",
+          "type": "prompt",
+          "title": "핵심 메시지 후보 프롬프트",
           "visibility": "visible",
           "data": {
-            "questions": [
-              {
-                "id": "q1",
-                "question": "원천에는 ‘매일 글감이 어렵다’만 있는데 AI가 ‘평균 2시간 절약’이라고 썼습니다. 가장 적절한 조치는?",
-                "choices": [
-                  {
-                    "id": "c1",
-                    "text": "그대로 사용한다"
-                  },
-                  {
-                    "id": "c2",
-                    "text": "숫자를 조금 낮춘다"
-                  },
-                  {
-                    "id": "c3",
-                    "text": "근거 없는 수치를 삭제하고 확인 필요로 둔다"
-                  }
-                ],
-                "correctChoiceId": "c3",
-                "explanation": "원문에 없는 수치·성과는 생성하지 않습니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "l1-b32",
-          "type": "infographic",
-          "title": "메시지 검수 4문항",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
+            "prompt": "아래 [콘텐츠 원천문서]만 사용해서 핵심 메시지 후보 3개를 만드세요.\n이 자료에 없는 사실을 추가하지 마세요. 보류함(Verify Later) 내용은 여기 포함되어 있지 않습니다.\n\n[콘텐츠 원천문서]\n{{P07에서 작성한 원천문서 6칸을 붙여넣기}}\n\n각 후보는 다음을 포함하세요:\n- 핵심 메시지 한 문장\n- 어떤 메시지 각도를 썼는지 (Pain / Desired Gain / Trigger / Current Alternative / Objection / Journey Stage 중 하나)\n- 어떤 근거번호를 사용했는지 (예: C01, F01, P01)\n\n**각 후보는 서로 다른 메시지 각도를 사용해주세요.**\n\n자료에서 확인되지 않는 수치, 고객 사례, 후기, 성과는 만들지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
           },
+          "description": "{{ }}를 P07 원천문서 내용으로 직접 바꿔 넣으세요. 보류함(P08) 내용은 붙여넣지 않습니다."
+        },
+        {
+          "id": "l1-b28",
+          "type": "external-link",
+          "visibility": "visible",
           "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "원문에 없는 사실이 추가되지 않았는가?"
-              },
-              {
-                "label": "고객과 창업자의 말을 섞지 않았는가?"
-              },
-              {
-                "label": "한계를 숨기지 않았는가?"
-              },
-              {
-                "label": "CTA가 실제 가능한 행동인가?"
-              }
-            ]
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "메시지 후보 3개 만들기",
+            "practiceDescription": "원천문서만으로 서로 다른 각도의 메시지 후보 3개를 만듭니다.",
+            "estimatedMinutes": 14
+          },
+          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요."
+        },
+        {
+          "id": "l1-b29",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**개인정보·회사 기밀·미공개 고객정보는 익명화합니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l1-b33",
+          "id": "l1-b30",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "문장 품질보다 근거 충실도를 먼저 보게 합니다.",
+            "markdown": "AI가 원문에 없던 '좋은 말'을 추가했는지, 세 후보가 진짜 다른 각도인지 먼저 찾게 하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -711,70 +701,153 @@
     },
     {
       "id": "p11",
-      "title": "최종 실습 — 콘텐츠 메시지 원장",
+      "title": "사람 검수 · Brand Voice · CTA",
       "layout": "practice",
       "blocks": [
         {
+          "id": "l1-b31",
+          "type": "quiz",
+          "title": "이해도 확인",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "원천문서에는 '매일 글감이 어렵다'만 있는데 AI가 '평균 2시간 절약'이라고 썼습니다. 가장 적절한 조치는?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "그대로 사용한다"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "숫자를 조금 낮춘다"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "근거 없는 수치를 삭제하고 검증 필요(보류함)로 옮긴다"
+                  }
+                ],
+                "correctChoiceId": "c3",
+                "explanation": "원문에 없는 수치·성과는 생성하지 않고, 검증 필요는 삭제 대신 보류함으로 보냅니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b32",
+          "type": "infographic",
+          "title": "사람 검수 3문항",
+          "visibility": "visible",
+          "data": {
+            "items": [
+              {
+                "label": "원천문서에 실제로 있는 내용인가?",
+                "description": "근거번호를 따라가서 눈으로 확인"
+              },
+              {
+                "label": "AI가 의미를 과장하지 않았는가?",
+                "description": "'줄인다'가 '없앤다'로 바뀌지 않았는지"
+              },
+              {
+                "label": "고객이 읽었을 때 자기 문제라고 알아볼 수 있는가?",
+                "description": "Day1 페르소나를 떠올리며 읽기"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b32b",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Brand Voice Rule\n\n`전문적으로` `세련되게` `혁신적으로` 같은 **형용사로 정하지 않습니다.** 사람마다 다르게 해석되고, AI도 마찬가지입니다. **행동 규칙**으로 만드세요: 한 문장은 짧게 / 어려운 전문용어는 풀어서 / 과장 표현 사용하지 않기 / 고객을 가르치려는 말투 금지 / 실제 사례와 질문 중심 / CTA는 하나.\n\n**6개 중 3개만 골라서 확정합니다.** 많으면 지켜지지 않습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b32c",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## CTA 정하기\n\n**Call To Action** — \"지금 이걸 해주세요\"라고 요청하는 한 줄. Day1 Customer Journey에서 단계별로 이미 적어둔 '적합 CTA' 중 **지금 고객이 서 있는 단계**에 맞는 것을 고릅니다.\n\n| 고객이 지금 있는 단계 | CTA 예시 |\n|---|---|\n| 문제 인식 | 비슷한 사례 보기 |\n| 정보 탐색 | 무료 가이드 받기 |\n| 대안 비교 | 다른 방법과 비교해보기 |\n| 결정 직전 | 무료로 시작하기 |\n\n**이 표는 정답표가 아니라 예시입니다.** 실제 CTA는 원천문서 ⑤번(제품·서비스 사실)에 있는, **지금 실제로 제공 가능한 행동**이어야 합니다. 존재하지 않는 무료가이드·무료체험·상담을 AI가 만들어내면 안 됩니다.\n\n**콘텐츠 하나에 CTA는 하나만.** 선택지가 많으면 아무것도 하지 않습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
           "id": "l1-b34",
           "type": "input-form",
-          "title": "Day2 콘텐츠 메시지 원장",
+          "title": "콘텐츠 메시지 원장",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "목표 고객",
+                "label": "핵심 메시지 (ChatGPT 후보 중 선택·수정)",
                 "kind": "long-text",
-                "required": false
+                "required": false,
+                "placeholder": "후보를 그대로 복사하지 말고 한 문장을 골라 다듬으세요."
               },
               {
                 "id": "f2",
-                "label": "핵심 문제 또는 상황",
-                "kind": "long-text",
-                "required": false
+                "label": "사용한 메시지 각도",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "Pain",
+                  "Desired Gain",
+                  "Trigger",
+                  "Current Alternative",
+                  "Objection",
+                  "Journey Stage"
+                ]
               },
               {
                 "id": "f3",
-                "label": "핵심 메시지 한 문장",
+                "label": "사용한 근거번호",
                 "kind": "long-text",
-                "required": false
+                "required": false,
+                "placeholder": "예: C01, F01, P01"
               },
               {
                 "id": "f4",
-                "label": "사용 가능한 근거",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f5",
-                "label": "금지 주장·확인 필요",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f6",
-                "label": "브랜드 말투 기준 3가지",
+                "label": "Brand Voice Rule (3개)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "예: 짧게, 구체적으로, 과장 없이"
               },
               {
-                "id": "f7",
-                "label": "기본 CTA",
+                "id": "f5",
+                "label": "CTA 문구",
                 "kind": "short-text",
                 "required": false,
                 "placeholder": "예: 샘플 보기"
+              },
+              {
+                "id": "f6",
+                "label": "고객이 지금 서 있는 단계",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "문제 인식",
+                  "정보 탐색",
+                  "대안 비교",
+                  "결정 직전"
+                ]
               }
-            ],
-            "inputArtifactTypes": [
-              "customer-evidence",
-              "segment",
-              "persona",
-              "journey",
-              "value-proposition"
             ]
           },
-          "description": "원천문서를 검수해 만든 메시지 후보 중 하나를 골라 최종 문장으로 다듬고, 근거·톤·CTA까지 함께 정리합니다. 이렇게 정리한 표가 '콘텐츠 메시지 원장'이며, 다음 Lesson부터는 이 원장을 기준 자료로 불러와 씁니다."
+          "description": "원천문서(P07)를 다시 옮겨 쓰지 않습니다. 여기서는 ChatGPT 후보 중 고른 문장과 각도·톤·CTA만 정리합니다."
         },
         {
           "id": "l1-b35",
@@ -783,10 +856,6 @@
           "data": {
             "markdown": "이 원장은 다음 Lesson의 **SNS·블로그·뉴스레터 생성 기준 문서**가 됩니다.",
             "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
           },
           "layout": {
             "width": "wide",
@@ -856,6 +925,20 @@
             "practiceName": "내 프로젝트 결과물 보기",
             "completionNote": "저장한 메시지 원장을 확인하고 다음 Lesson에서 SNS 콘텐츠로 확장합니다.",
             "requireCompletionCheck": false
+          }
+        },
+        {
+          "id": "l1-b42",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "지금까지는 아직 SNS 글을 하나도 만들지 않았습니다. 대신 더 중요한 것을 만들었습니다 — **누구에게 무엇을 말할 것인지, 그리고 어떤 사실만 사용할 것인지**입니다. 2교시에서는 이 핵심 메시지를 가지고 채널이 달라졌을 때 표현을 어떻게 바꿔야 하는지 다룹니다. **채널이 바뀌어도 사실과 핵심 메시지는 바뀌지 않습니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
