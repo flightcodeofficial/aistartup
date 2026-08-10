@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#14233a"/></linearGradient></defs>
+<rect width="1280" height="720" rx="32" fill="url(#g)"/>
+<text x="72" y="82" font-family="Arial,sans-serif" font-size="24" fill="#70d6ff" font-weight="700">MESSAGE ANGLE</text>
+<text x="72" y="123" font-family="Arial,sans-serif" font-size="18" fill="#b7c7d8">문제·상황·결과·현재 대안 중 하나의 각도를 먼저 고릅니다</text>
+<circle cx="640" cy="350" r="110" fill="#17354c" stroke="#62c6ff" stroke-width="3"/>
+<text x="640" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#fff" font-weight="700">핵심 메시지</text><text x="640" y="380" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#c9dae8">고객 + 문제 + 가치</text>
+<g font-family="Arial,sans-serif" font-size="19" fill="#fff"><rect x="110" y="185" width="280" height="105" rx="20" fill="#152d44" stroke="#4e90bd"/><text x="250" y="232" text-anchor="middle" font-weight="700">문제 각도</text><text x="250" y="263" text-anchor="middle" font-size="16">무엇이 불편한가?</text>
+<rect x="890" y="185" width="280" height="105" rx="20" fill="#173b3e" stroke="#54d3bf"/><text x="1030" y="232" text-anchor="middle" font-weight="700">결과 각도</text><text x="1030" y="263" text-anchor="middle" font-size="16">어떤 변화가 가능한가?</text>
+<rect x="110" y="455" width="280" height="105" rx="20" fill="#3b301c" stroke="#eec158"/><text x="250" y="502" text-anchor="middle" font-weight="700">상황 각도</text><text x="250" y="533" text-anchor="middle" font-size="16">언제 문제가 심해지는가?</text>
+<rect x="890" y="455" width="280" height="105" rx="20" fill="#322642" stroke="#b68cff"/><text x="1030" y="502" text-anchor="middle" font-weight="700">대안 각도</text><text x="1030" y="533" text-anchor="middle" font-size="16">지금 무엇으로 버티는가?</text></g></svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#14233a"/></linearGradient></defs>
+<rect width="1280" height="720" rx="32" fill="url(#g)"/>
+<text x="72" y="82" font-family="Arial,sans-serif" font-size="24" fill="#70d6ff" font-weight="700">A/B TEST</text>
+<text x="72" y="123" font-family="Arial,sans-serif" font-size="18" fill="#b7c7d8">한 번에 한 변수만 바꾸고 나머지는 유지합니다</text>
+<g font-family="Arial,sans-serif"><rect x="110" y="190" width="430" height="330" rx="28" fill="#152f48" stroke="#57b7ef"/><text x="150" y="245" font-size="27" fill="#fff" font-weight="700">A안</text><text x="150" y="305" font-size="18" fill="#fff">“SNS 글감이 매일 막히나요?”</text><text x="150" y="360" font-size="17" fill="#b9cede">본문 · 이미지 · CTA 동일</text><text x="150" y="438" font-size="18" fill="#74d2ff">변수 = 첫 문장만</text>
+<rect x="740" y="190" width="430" height="330" rx="28" fill="#173b3f" stroke="#58d5c2"/><text x="780" y="245" font-size="27" fill="#fff" font-weight="700">B안</text><text x="780" y="305" font-size="18" fill="#fff">“오늘 올릴 SNS 글, 재료부터 정리하세요”</text><text x="780" y="360" font-size="17" fill="#c6e2de">본문 · 이미지 · CTA 동일</text><text x="780" y="438" font-size="18" fill="#7ce2d4">변수 = 첫 문장만</text><text x="640" y="610" text-anchor="middle" font-size="19" fill="#d2e0eb">작은 표본의 결과는 정답이 아니라 다음 인터뷰와 실험의 방향으로 해석합니다.</text></g></svg>
