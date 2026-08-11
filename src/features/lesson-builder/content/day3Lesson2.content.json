@@ -4,8 +4,8 @@
   "week": 2,
   "day": 3,
   "lesson": 2,
-  "title": "개인화 이메일·DM 초안 만들기",
-  "description": "확인 가능한 맥락만 사용해 개인화 초안을 만듭니다.",
+  "title": "Evidence 수집 — 가설을 실제 근거로 확인하기",
+  "description": "1차시에서 정리한 가설을 실제 Source와 시장 신호로 확인하고, 지지근거와 반대근거를 함께 검토해 Business Context를 업데이트합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -13,514 +13,708 @@
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d3l2-p01",
-      "title": "개인화는 이름 넣기가 아니라 ‘맥락 맞추기’입니다",
-      "layout": "standard",
+      "id": "p01",
+      "title": "1차시에서 무엇을 확인해야 한다고 했을까?",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d3l2-p01-b1",
+          "id": "d3l2-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 개인화는 이름 넣기가 아니라 ‘맥락 맞추기’입니다\n\n**확인 가능한 맥락만 사용해 개인화 초안을 만듭니다.**",
+            "markdown": "# 1차시에서 무엇을 확인해야 한다고 했을까?",
             "emphasis": "hero"
+          },
+          "theme": { "background": "dark", "bordered": false },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b01-preview",
+          "type": "result-preview",
+          "title": "1차시 — Business Context v0.1",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "emptyMessage": "1차시를 먼저 완료해야 Business Context가 표시됩니다."
           }
         },
         {
-          "id": "d3l2-p01-b2",
+          "id": "d3l2-b01-notice",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "이전 Lesson의 결과물을 재사용해 오늘 결과물을 만듭니다.",
+            "markdown": "**이번 시간에는 처음부터 다시 입력하지 않습니다.**\n\n1차시에서 만든 가설을 실제 근거로 확인합니다.\n\n`Business Context v0.1` → **Evidence 조사**",
             "emphasis": "normal"
-          }
+          },
+          "theme": { "background": "primary-soft", "bordered": false },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l2-p01-i1",
+          "id": "d3l2-b01-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 외부 발송·공개는 사람이 최종 검수한 뒤 진행합니다.",
+            "markdown": "위 화면이 비어 있다면 1차시를 아직 완료하지 않은 학생입니다 — 먼저 1차시 P09에서 저장하고 오게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d3l2-p02",
-      "title": "개인화 3단계",
+      "id": "p02",
+      "title": "Evidence Strength",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d3l2-p02-b1",
+          "id": "d3l2-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 개인화 3단계\n\n- 확인된 맥락 / 연락 이유 / 다음 행동",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p02-svg",
-          "type": "image",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/week2/day3/d3l2_framework.svg",
-            "alt": "개인화 이메일·DM 초안 만들기 인포그래픽",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "d3l2-p02-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 구조를 먼저 이해시킨 뒤 실습으로 이동합니다.",
+            "markdown": "# 모든 근거의 힘이 같지는 않습니다",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d3l2-p03",
-      "title": "하면 안 되는 개인화",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d3l2-p03-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 하면 안 되는 개인화\n\n- 민감정보 추정 / 사생활 추측 / 가짜 친밀감",
-            "emphasis": "normal"
-          }
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l2-p03-b2",
-          "type": "rich-text",
+          "id": "d3l2-b02-ladder",
+          "type": "infographic",
+          "title": "약한 신호 → 강한 신호",
           "visibility": "visible",
           "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p03-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d3l2-p04",
-      "title": "첫 문장 만들기",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d3l2-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 첫 문장 만들기\n\n- 왜 나에게 보냈는지 바로 이해",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p04-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p04-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d3l2-p05",
-      "title": "본문은 짧게",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d3l2-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 본문은 짧게\n\n- 문제 맥락 → 제안 → 근거 → CTA",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p05-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d3l2-p06",
-      "title": "인터랙티브: 좋은 개인화/나쁜 개인화",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d3l2-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브: 좋은 개인화/나쁜 개인화\n\n카드를 눌러 판단 기준을 비교합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/week2/day3/d3l2_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        },
-        {
-          "id": "d3l2-p06-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 정답 암기보다 이유를 말하게 합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d3l2-p07",
-      "title": "실습: 수신자 맥락 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d3l2-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실습: 수신자 맥락 입력\n\n내 사업 기준으로 작성합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d3l2-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "개인화 이메일·DM 초안 만들기 실습 입력",
-          "data": {
-            "fields": [
-              {
-                "id": "d3l2-p07-form-f1",
-                "label": "현재 고객/대상",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d3l2-p07-form-f2",
-                "label": "사용할 근거 자료",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d3l2-p07-form-f3",
-                "label": "핵심 메시지 또는 답변",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d3l2-p07-form-f4",
-                "label": "다음 행동(CTA/후속 단계)",
-                "kind": "long-text",
-                "required": true
-              }
+            "variant": "steps",
+            "items": [
+              { "label": "창업자의 추정" },
+              { "label": "AI 추론" },
+              { "label": "온라인 게시글" },
+              { "label": "리뷰 · 반복 질문" },
+              { "label": "실제 고객 인터뷰" },
+              { "label": "실제 행동" },
+              { "label": "구매 · 결제 · 계약" }
             ]
           }
         },
         {
-          "id": "d3l2-p07-i1",
+          "id": "d3l2-b02-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI 답변 자체는 Evidence가 아닙니다.**\n\n이 순서는 절대적인 학술 표준이 아니라, 창업 검증을 위한 교육용 판단 프레임입니다.",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b02-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 실제 고객 민감정보는 넣지 않습니다.",
+            "markdown": "AI가 그럴듯하게 답했다고 해서 위 순서에서 상위 단계로 인정하지 않는다는 것을 강조하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d3l2-p08",
-      "title": "ChatGPT 개인화 프롬프트",
-      "layout": "wide",
+      "id": "p03",
+      "title": "검증할 가설 선택",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d3l2-p08-b1",
+          "id": "d3l2-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## ChatGPT 개인화 프롬프트\n\n확인되지 않은 사실은 만들지 않기",
+            "markdown": "# 이번에 무엇을 확인할 것인가?\n\n위 Business Context의 Validation Backlog를 확인한 뒤, 필요한 가설 1~3개를 옮겨 적으세요.",
             "emphasis": "normal"
-          }
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l2-p08-prompt",
-          "type": "prompt",
+          "id": "d3l2-b03-form",
+          "type": "input-form",
+          "title": "검증할 가설",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 마케팅 코치입니다.\n아래 입력만 사용해 초안을 작성하세요.\n1) 제공되지 않은 사실은 만들지 마세요.\n2) 불확실하면 \"확인 필요\"로 표시하세요.\n3) 다음 행동은 하나만 제안하세요.\n4) 과장·민감정보 추정·가짜 후기·근거 없는 수치를 사용하지 마세요.\n\n[대상]\n[근거 자료]\n[핵심 메시지]\n[다음 행동]",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          }
+            "fields": [
+              {
+                "id": "f1",
+                "label": "검증할 가설",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 예비창업자는 여러 AI 작업 결과가 서로 연결되지 않는 것을 불편하게 느낀다."
+              },
+              {
+                "id": "f2",
+                "label": "이 가설이 중요한 이유",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: Business Memory 기능의 핵심 가치와 직접 연결된다."
+              },
+              {
+                "id": "f3",
+                "label": "어떤 결과가 나오면 생각을 바꿀 것인가",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 실제 사용자들이 반복입력이나 Context 단절을 큰 문제로 느끼지 않는다면 우선순위를 낮춘다."
+              }
+            ]
+          },
+          "description": "1차시 Validation Backlog에서 이번에 확인할 가설을 골라 옮겨 적으세요."
         },
         {
-          "id": "d3l2-p08-link",
+          "id": "d3l2-b03-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "가설은 한 번에 하나씩 검증하는 것이 원칙이지만, 실습 시간상 1~3개까지는 허용하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "GPT Evidence Plan",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d3l2-b04-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 무작정 검색하지 말고 조사 계획부터 만듭니다\n\nP03에서 적은 내용을 [ ] 자리에 그대로 옮겨 붙이세요.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b04-prompt",
+          "type": "prompt",
+          "title": "Evidence Plan 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "아래 사업 가설을 실제로 검증하려고 해.\n\n[검증할 가설]\n[ ]\n\n[이 가설이 중요한 이유]\n[ ]\n\n내 가설이 맞다고 가정하지 말고\n실제로 확인하기 위한 Evidence 수집 계획을 만들어줘.\n\n다음 내용을 정리해줘.\n\n1. 무엇을 확인해야 하는가\n2. 어떤 종류의 자료를 찾아야 하는가\n3. 사용할 검색어 후보\n4. 누구에게 직접 물어볼 수 있는가\n5. 어떤 실제 행동을 관찰하면 좋은가\n6. 이 가설이 틀렸다는 신호는 무엇인가\n\n중요:\n아직 확인하지 않은 내용을 사실처럼 만들지 마.\nAI의 추론과 실제 확인해야 할 Evidence를 구분해줘.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분만 P03에서 적은 내용으로 바꾸세요. 복사 → [ ] 수정 → ChatGPT 실행."
+        },
+        {
+          "id": "d3l2-b04-chatgpt",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d3l2-p09",
-      "title": "3개 버전 비교",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d3l2-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 3개 버전 비교\n\n- 친근형 / 간결형 / 전문형",
-            "emphasis": "normal"
+            "practiceName": "Evidence Plan 생성",
+            "practiceDescription": "가설을 검증하기 위한 조사 계획을 만듭니다.",
+            "estimatedMinutes": 10
           }
         },
         {
-          "id": "d3l2-p09-b2",
-          "type": "rich-text",
+          "id": "d3l2-b04-claude",
+          "type": "external-link",
           "visibility": "visible",
           "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
+            "url": "https://claude.ai/",
+            "buttonLabel": "Claude에서 실행 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "다른 AI로 비교 실행",
+            "practiceDescription": "같은 프롬프트를 Claude에서도 실행해 결과를 비교해볼 수 있습니다.",
+            "estimatedMinutes": 10
           }
         },
         {
-          "id": "d3l2-p09-i1",
+          "id": "d3l2-b04-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
+            "markdown": "이 앱에는 자동 변수 치환 기능이 없습니다. 학생이 [ ] 안에 직접 붙여넣도록 안내하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d3l2-p10",
-      "title": "답장받기 쉬운 CTA",
-      "layout": "standard",
+      "id": "p05",
+      "title": "Perplexity로 실제 Source 찾기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d3l2-p10-q",
-          "type": "quiz",
+          "id": "d3l2-b05-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              {
-                "id": "d3l2-p10-q-q1",
-                "question": "이 Lesson에서 가장 먼저 확인할 것은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d3l2-p10-q-c1",
-                    "text": "AI 문장이 멋진가"
-                  },
-                  {
-                    "id": "d3l2-p10-q-c2",
-                    "text": "고객 자료·사실·목표와 연결되는가"
-                  },
-                  {
-                    "id": "d3l2-p10-q-c3",
-                    "text": "길이가 충분히 긴가"
-                  },
-                  {
-                    "id": "d3l2-p10-q-c4",
-                    "text": "자동화할 수 있는가"
-                  }
-                ],
-                "correctChoiceId": "d3l2-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
+            "markdown": "# 이번에는 답이 아니라 Source를 찾습니다",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b05-compare",
+          "type": "infographic",
+          "title": "질문이 달라집니다",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              { "label": "일반 GPT 질문", "description": "\"이 문제가 있을까?\"" },
+              { "label": "Evidence Search", "description": "\"실제 근거와 원문 Source를 찾아줘.\"" }
             ]
           }
         },
         {
-          "id": "d3l2-p10-b2",
-          "type": "rich-text",
+          "id": "d3l2-b05-prompt",
+          "type": "prompt",
+          "title": "Evidence Search 프롬프트",
           "visibility": "visible",
           "data": {
-            "markdown": "표현보다 고객 자료·사실·목표와의 연결을 먼저 확인합니다.",
-            "emphasis": "normal"
+            "prompt": "다음 사업 가설과 관련된 실제 자료를 조사해줘.\n\n[가설]\n[ ]\n\n이 가설을 지지하는 자료만 찾지 말고\n반대하거나 약화시키는 자료도 함께 찾아줘.\n\n각 자료마다:\n\n1. 원문 Source\n2. 핵심 내용\n3. 내 가설과 어떤 관계가 있는지\n4. 직접근거인지 간접근거인지\n5. 지지 / 반박 / 중립\n\n으로 정리해줘.\n\n실제 자료가 충분하지 않으면\n억지로 결론을 만들지 말고\n\"근거 부족\"이라고 표시해줘.",
+            "targetTool": "Perplexity",
+            "copyable": true
+          },
+          "description": "[ ] 부분에 P03에서 적은 가설을 붙여넣으세요."
+        },
+        {
+          "id": "d3l2-b05-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://www.perplexity.ai/",
+            "buttonLabel": "Perplexity에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "실제 Source 조사",
+            "practiceDescription": "가설을 지지·반박하는 실제 자료와 원문 Source를 찾습니다.",
+            "estimatedMinutes": 10
           }
         },
         {
-          "id": "d3l2-p10-i1",
+          "id": "d3l2-b05-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 자동화 가능성보다 정확성과 연결성이 우선입니다.",
+            "markdown": "Perplexity 결과에서 citation을 실제로 클릭해 원문을 확인하는 흐름을 직접 보여주세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d3l2-p11",
-      "title": "최종 이메일·DM 초안",
-      "layout": "wide",
+      "id": "p06",
+      "title": "Source Collector",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d3l2-p11-b1",
+          "id": "d3l2-b06-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 최종 이메일·DM 초안\n\n최종본과 선택 이유를 정리합니다.",
+            "markdown": "# 찾은 Source를 Business Memory에 쌓습니다\n\nSource는 실습상 3개면 충분합니다. 10개, 20개를 입력할 필요는 없습니다.",
             "emphasis": "normal"
-          }
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l2-final-form",
+          "id": "d3l2-b06-form",
           "type": "input-form",
+          "title": "Source Collector",
           "visibility": "visible",
-          "title": "개인화 이메일·DM 초안 만들기 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d3l2-final-form-f1",
-                "label": "최종 결과물",
+                "id": "f1",
+                "label": "Source 1",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "출처명:\nURL:\n확인일:\n핵심내용:\nEvidence 유형: 시장자료 / 경쟁사 / 리뷰 / 커뮤니티 / 인터뷰 / 실제 행동 / 가격 / 기타\n관계: 지지 / 반박 / 중립"
               },
               {
-                "id": "d3l2-final-form-f2",
-                "label": "사용한 근거",
+                "id": "f2",
+                "label": "Source 2",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "출처명:\nURL:\n확인일:\n핵심내용:\nEvidence 유형: 시장자료 / 경쟁사 / 리뷰 / 커뮤니티 / 인터뷰 / 실제 행동 / 가격 / 기타\n관계: 지지 / 반박 / 중립"
               },
               {
-                "id": "d3l2-final-form-f3",
-                "label": "검수한 항목",
+                "id": "f3",
+                "label": "Source 3",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "출처명:\nURL:\n확인일:\n핵심내용:\nEvidence 유형: 시장자료 / 경쟁사 / 리뷰 / 커뮤니티 / 인터뷰 / 실제 행동 / 가격 / 기타\n관계: 지지 / 반박 / 중립"
               },
               {
-                "id": "d3l2-final-form-f4",
-                "label": "다음 실험/후속 행동",
+                "id": "f4",
+                "label": "핵심 Evidence",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "위 Source들을 종합했을 때 가장 중요한 Evidence를 한 문단으로 요약하세요."
+              },
+              {
+                "id": "f5",
+                "label": "가설을 지지하는 내용",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "가설에 반대되는 내용",
+                "kind": "long-text",
+                "required": false
               }
             ]
-          }
+          },
+          "description": "P05 Perplexity 결과 중 실제로 확인한 Source만 옮겨 적으세요."
         },
         {
-          "id": "d3l2-p11-i1",
+          "id": "d3l2-b06-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 다음 수업에서 재사용할 수 있게 근거와 선택 이유를 함께 남깁니다.",
+            "markdown": "Source 3개 중 최소 1개는 지지, 1개는 반박·중립 쪽으로 찾아보게 유도하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d3l2-p12",
-      "title": "저장",
-      "layout": "standard",
+      "id": "p07",
+      "title": "Google Trends로 시장 신호 하나 더 보기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d3l2-p12-preview",
-          "type": "result-preview",
+          "id": "d3l2-b07-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "artifactType": "email",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "markdown": "# 검색 관심도도 하나의 신호가 될 수 있습니다\n\n**검색 관심도는 구매의사가 아닙니다.**",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b07-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://trends.google.com/",
+            "buttonLabel": "Google Trends에서 확인",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "검색 관심도 확인",
+            "practiceDescription": "예: AI 창업, 사업계획서 AI, AI 마케팅 등 관련 키워드의 검색 관심도 추이를 확인합니다.",
+            "estimatedMinutes": 5
           }
         },
         {
-          "id": "d3l2-p12-save",
+          "id": "d3l2-b07-form",
+          "type": "input-form",
+          "title": "Observation vs Inference",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "관찰한 시장 신호 (Observation)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "실제 Trends 화면에서 본 것만 적으세요. 예: 최근 6개월간 '사업계획서 AI' 검색량이 완만히 상승"
+              },
+              {
+                "id": "f2",
+                "label": "이 신호에서 추론할 수 있는 것과 없는 것 (Inference)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 관심 증가는 추론 가능. 실제 구매의사가 있는지는 이 데이터만으로 알 수 없음."
+              }
+            ]
+          },
+          "description": "Google Trends 결과는 보조 Evidence로만 사용합니다."
+        },
+        {
+          "id": "d3l2-b07-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "Observation과 Inference를 학생이 섞어서 적지 않는지 확인하세요 — Trends 화면에 없는 내용을 Observation에 적는 경우가 흔합니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "Counter Evidence",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d3l2-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 이번에는 내 아이디어가 틀렸다는 증거를 찾습니다",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b08-prompt",
+          "type": "prompt",
+          "title": "Counter Evidence 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "내 사업 가설은 다음과 같아.\n\n[가설]\n[ ]\n\n현재까지 찾은 Evidence는 아래와 같아.\n\n[Evidence 요약]\n[ ]\n\n이번에는 내 가설을 지지하려고 하지 말고\n이 가설이 틀렸거나 과장됐을 가능성을 검토해줘.\n\n다음 순서로 정리해줘.\n\n1. 반대되는 해석\n2. 부족한 근거\n3. 다른 가능한 설명\n4. 추가로 확인해야 할 Source\n5. 현재 가설을\n   - 유지\n   - 수정\n   - 보류\n   - 폐기\n   중 어디에 둘 수 있을지 제안\n\n주의:\n최종 사업 결정은 하지 마.\n판단 근거만 제공해줘.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분에 P03의 가설과 P06의 핵심 Evidence를 붙여넣으세요."
+        },
+        {
+          "id": "d3l2-b08-chatgpt",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Counter Evidence 검토",
+            "practiceDescription": "가설이 틀렸거나 과장됐을 가능성을 검토합니다.",
+            "estimatedMinutes": 10
+          }
+        },
+        {
+          "id": "d3l2-b08-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**좋은 조사는 내 생각을 증명하는 것이 아니라 틀릴 가능성까지 확인하는 것입니다.**",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "primary-soft", "bordered": false },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b08-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 프롬프트는 최종 사업 결정을 내리지 않는다는 것을 강조하세요 — 결정은 다음 페이지에서 사람이 합니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "Human Evidence Review",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d3l2-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# AI가 아니라 사람이 최종 상태를 결정합니다\n\nAI의 추천 상태를 그대로 저장하지 않습니다. 검토한 최종 상태만 저장합니다.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b09-form",
+          "type": "input-form",
+          "title": "Evidence Review",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "SUPPORTED / CONFIRMED",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "실제 Source·시장 신호로 지지된 내용만 적으세요."
+              },
+              {
+                "id": "f2",
+                "label": "STILL HYPOTHESIS",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "여전히 확신이 없어 가설로 남겨두는 내용."
+              },
+              {
+                "id": "f3",
+                "label": "CONTRADICTED / REVISE",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Counter Evidence로 반박됐거나 수정이 필요한 내용."
+              },
+              {
+                "id": "f4",
+                "label": "NEXT VALIDATION",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "다음에 추가로 확인해야 할 질문."
+              }
+            ]
+          },
+          "description": "P04~P08에서 나온 결과를 사람이 직접 검토해 네 칸으로 분류하세요."
+        },
+        {
+          "id": "d3l2-b09-decision",
+          "type": "infographic",
+          "title": "Human Decision",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              { "label": "KEEP", "description": "가설 유지 — 근거가 충분히 지지함" },
+              { "label": "REVISE", "description": "가설 수정 — 방향은 맞지만 조정 필요" },
+              { "label": "HOLD", "description": "판단 보류 — 근거 부족, 추가 확인 필요" },
+              { "label": "REJECT", "description": "가설 폐기 — 근거가 명확히 반박함" }
+            ]
+          }
+        },
+        {
+          "id": "d3l2-b09-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "다음 페이지 Evidence Pack의 'Human Decision' 칸에 KEEP/REVISE/HOLD/REJECT 중 하나를 직접 적게 하세요 — 버튼이 아니라 텍스트로 기록합니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "두 개의 결과물 저장",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d3l2-b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
+            "emphasis": "hero"
+          },
+          "theme": { "background": "dark", "bordered": false },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b10-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## A. Evidence Pack 저장\n\nP03~P09에서 정리한 내용을 아래 일곱 칸으로 모읍니다. 새로 만들지 말고 옮겨 적으세요.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b10-evidence-form",
+          "type": "input-form",
+          "title": "Evidence Pack v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              { "id": "f1", "label": "Validation Hypothesis", "kind": "long-text", "required": false, "placeholder": "P03에서 적은 검증할 가설" },
+              { "id": "f2", "label": "Evidence Plan", "kind": "long-text", "required": false, "placeholder": "P04 ChatGPT 결과 요약" },
+              { "id": "f3", "label": "Sources & Supporting Evidence", "kind": "long-text", "required": false, "placeholder": "P06 Source Collector 내용" },
+              { "id": "f4", "label": "Counter Evidence", "kind": "long-text", "required": false, "placeholder": "P08 반박·부족 근거·다른 설명" },
+              { "id": "f5", "label": "Evidence Status", "kind": "long-text", "required": false, "placeholder": "P09 SUPPORTED / STILL HYPOTHESIS / CONTRADICTED 분류 요약" },
+              { "id": "f6", "label": "Human Decision", "kind": "long-text", "required": false, "placeholder": "KEEP / REVISE / HOLD / REJECT 중 하나와 이유" },
+              { "id": "f7", "label": "Next Validation", "kind": "long-text", "required": false, "placeholder": "P09 NEXT VALIDATION" }
+            ]
+          },
+          "description": "P03~P09에서 정리한 내용을 옮겨 적으세요."
+        },
+        {
+          "id": "d3l2-b10-evidence-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day3 Lesson2 — 개인화 이메일·DM 초안 만들기",
           "data": {
-            "artifactType": "email",
-            "artifactTitle": "Day3 Lesson2 — 개인화 이메일·DM 초안 만들기",
-            "sourceBlockId": "d3l2-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "2차시 — Evidence Pack v0.1",
+            "sourceBlockId": "d3l2-b10-evidence-form",
+            "buttonLabel": "Evidence Pack 저장"
           }
         },
         {
-          "id": "d3l2-p12-reflection",
-          "type": "reflection",
+          "id": "d3l2-b10-b-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 판단 기준 한 가지는 무엇이었나요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## B. Business Context 업데이트\n\n1차시 Business Context 내용을 복사하여, 이번 Evidence 결과를 반영한 최신 상태로 업데이트하세요.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b10-context-form",
+          "type": "input-form",
+          "title": "Business Context v0.2",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              { "id": "f1", "label": "Confirmed Facts", "kind": "long-text", "required": false, "placeholder": "1차시 Confirmed Facts + 이번 시간 SUPPORTED 내용" },
+              { "id": "f2", "label": "Current Hypotheses", "kind": "long-text", "required": false, "placeholder": "1차시 Hypotheses 중 STILL HYPOTHESIS로 남은 것" },
+              { "id": "f3", "label": "Evidence", "kind": "long-text", "required": false, "placeholder": "이번 시간에 확인한 핵심 Evidence" },
+              { "id": "f4", "label": "Rejected / Revised Hypotheses", "kind": "long-text", "required": false, "placeholder": "CONTRADICTED로 판정되어 폐기·수정한 가설" },
+              { "id": "f5", "label": "Validation Backlog", "kind": "long-text", "required": false, "placeholder": "NEXT VALIDATION 항목" },
+              { "id": "f6", "label": "Next Decision", "kind": "long-text", "required": false, "placeholder": "다음 차시에서 결정하거나 조사할 항목" }
+            ]
+          },
+          "description": "1차시 Business Context를 복사해 이번 결과로 업데이트하세요. v0.1을 덮어쓰지 않고 새 버전으로 저장합니다."
+        },
+        {
+          "id": "d3l2-b10-context-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "2차시 — Business Context v0.2",
+            "sourceBlockId": "d3l2-b10-context-form",
+            "buttonLabel": "Business Context v0.2 저장"
           }
+        },
+        {
+          "id": "d3l2-b10-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "저장 후 workspace에서 Evidence Pack v0.1과 Business Context v0.2 두 artifact가 모두 보이는지, 1차시 v0.1이 그대로 남아있는지 확인시키세요. 3차시는 Business Context v0.2를 불러오는 것으로 시작합니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     }
