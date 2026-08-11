@@ -164,10 +164,10 @@
           "data": {
             "fields": [
               { "id": "f1", "label": "반복 Problem Pattern", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "Behavior Pattern", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Context / Trigger Pattern", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "Alternative Pattern", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "Expected Outcome Pattern", "kind": "long-text", "required": false }
+              { "id": "f2", "label": "행동 패턴 (Behavior Pattern)", "kind": "long-text", "required": false },
+              { "id": "f3", "label": "상황/촉발요인 패턴 (Context / Trigger Pattern)", "kind": "long-text", "required": false },
+              { "id": "f4", "label": "대안 패턴 (Alternative Pattern)", "kind": "long-text", "required": false },
+              { "id": "f5", "label": "기대 결과 패턴 (Expected Outcome Pattern)", "kind": "long-text", "required": false }
             ]
           },
           "description": "ChatGPT 결과에서 Evidence/Inference로 표시된 패턴만 옮겨 적으세요."
@@ -285,10 +285,10 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Segment A", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
-              { "id": "f2", "label": "Segment B", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
-              { "id": "f3", "label": "Segment C", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
-              { "id": "f4", "label": "Segment D", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
+              { "id": "f1", "label": "세그먼트 A (Segment A)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
+              { "id": "f2", "label": "세그먼트 B (Segment B)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
+              { "id": "f3", "label": "세그먼트 C (Segment C)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
+              { "id": "f4", "label": "세그먼트 D (Segment D)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
               { "id": "f5", "label": "추가 Segment / Notes", "kind": "long-text", "required": false, "placeholder": "Segment E, F가 있다면 여기에 이어서 적거나, Evidence가 가장 강한/약한 Segment 메모를 남기세요." }
             ]
           },
@@ -366,7 +366,7 @@
     },
     {
       "id": "p07",
-      "title": "NotebookLM Tool Peek",
+      "title": "NotebookLM 살펴보기",
       "layout": "practice",
       "blocks": [
         {
@@ -475,7 +475,7 @@
         {
           "id": "d3l3-b08-form",
           "type": "input-form",
-          "title": "Supporting + Counter Evidence",
+          "title": "지지 근거 + 반대 근거 (Supporting + Counter Evidence)",
           "visibility": "visible",
           "data": {
             "fields": [
@@ -491,7 +491,7 @@
     },
     {
       "id": "p09",
-      "title": "Human Segment Review",
+      "title": "사람의 최종 Segment 검토 (Human Segment Review)",
       "layout": "practice",
       "blocks": [
         {
@@ -511,15 +511,15 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Evidence Patterns", "kind": "long-text", "required": false, "placeholder": "P03~P04에서 정리한 Pattern 요약" },
-              { "id": "f2", "label": "Final Segment A", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
-              { "id": "f3", "label": "Final Segment B", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
-              { "id": "f4", "label": "Final Segment C", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
-              { "id": "f5", "label": "Final Segment D / Additional Segment", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
-              { "id": "f6", "label": "Supporting Evidence", "kind": "long-text", "required": false, "placeholder": "P08 Supporting Evidence 요약" },
-              { "id": "f7", "label": "Counter Evidence", "kind": "long-text", "required": false, "placeholder": "P08 Counter Evidence 요약" },
-              { "id": "f8", "label": "Segment Evidence Status", "kind": "long-text", "required": false, "placeholder": "Segment별 Supported / Partially Supported / Hypothesis / Needs More Evidence" },
-              { "id": "f9", "label": "Human Review Notes", "kind": "long-text", "required": false, "placeholder": "Segment별 Human Decision(KEEP/MERGE/REVISE/HOLD)과 그 이유를 적으세요." }
+              { "id": "f1", "label": "근거 패턴 (Evidence Patterns)", "kind": "long-text", "required": false, "placeholder": "P03~P04에서 정리한 Pattern 요약" },
+              { "id": "f2", "label": "최종 세그먼트 A (Final Segment A)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
+              { "id": "f3", "label": "최종 세그먼트 B (Final Segment B)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
+              { "id": "f4", "label": "최종 세그먼트 C (Final Segment C)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
+              { "id": "f5", "label": "최종 세그먼트 D / 추가 세그먼트 (Final Segment D / Additional Segment)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
+              { "id": "f6", "label": "지지 근거 (Supporting Evidence)", "kind": "long-text", "required": false, "placeholder": "P08 Supporting Evidence 요약" },
+              { "id": "f7", "label": "반대 근거 (Counter Evidence)", "kind": "long-text", "required": false, "placeholder": "P08 Counter Evidence 요약" },
+              { "id": "f8", "label": "세그먼트 근거 상태 (Segment Evidence Status)", "kind": "long-text", "required": false, "placeholder": "Segment별 Supported / Partially Supported / Hypothesis / Needs More Evidence" },
+              { "id": "f9", "label": "사람 검토 메모 (Human Review Notes)", "kind": "long-text", "required": false, "placeholder": "Segment별 Human Decision(KEEP/MERGE/REVISE/HOLD)과 그 이유를 적으세요." }
             ]
           },
           "description": "P03~P08에서 정리한 내용과 P06의 중복 제거 결과를 반영해 최종 Segment 구조로 정리하세요."
@@ -527,7 +527,7 @@
         {
           "id": "d3l3-b09-decision",
           "type": "infographic",
-          "title": "Human Decision",
+          "title": "사람의 최종 결정 (Human Decision)",
           "visibility": "visible",
           "data": {
             "variant": "comparison",
@@ -605,13 +605,13 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Confirmed Facts", "kind": "long-text", "required": false, "placeholder": "2차시 Confirmed Facts + 이번 시간 확인된 내용" },
-              { "id": "f2", "label": "Current Hypotheses", "kind": "long-text", "required": false, "placeholder": "여전히 가설로 남아있는 항목" },
-              { "id": "f3", "label": "Customer Segments", "kind": "long-text", "required": false, "placeholder": "Final Segment A~D 요약" },
-              { "id": "f4", "label": "Segment Evidence", "kind": "long-text", "required": false, "placeholder": "Segment별 핵심 Supporting Evidence" },
-              { "id": "f5", "label": "Segment Risks / Counter Evidence", "kind": "long-text", "required": false, "placeholder": "Segment별 핵심 Counter Evidence" },
-              { "id": "f6", "label": "Validation Backlog", "kind": "long-text", "required": false, "placeholder": "Evidence가 부족해 HOLD된 항목" },
-              { "id": "f7", "label": "Next Decision", "kind": "long-text", "required": false, "placeholder": "예: 4차시에서 Segment의 존재 여부가 아니라 Problem Strength / Reachability / Willingness to Pay / Fit 등을 기준으로 첫 Target 후보를 판단한다." }
+              { "id": "f1", "label": "확인된 사실 (Confirmed Facts)", "kind": "long-text", "required": false, "placeholder": "2차시 Confirmed Facts + 이번 시간 확인된 내용" },
+              { "id": "f2", "label": "현재 가설 (Current Hypotheses)", "kind": "long-text", "required": false, "placeholder": "여전히 가설로 남아있는 항목" },
+              { "id": "f3", "label": "고객 세그먼트 (Customer Segments)", "kind": "long-text", "required": false, "placeholder": "Final Segment A~D 요약" },
+              { "id": "f4", "label": "세그먼트 근거 (Segment Evidence)", "kind": "long-text", "required": false, "placeholder": "Segment별 핵심 Supporting Evidence" },
+              { "id": "f5", "label": "세그먼트 리스크/반대 근거 (Segment Risks / Counter Evidence)", "kind": "long-text", "required": false, "placeholder": "Segment별 핵심 Counter Evidence" },
+              { "id": "f6", "label": "검증 대기 목록 (Validation Backlog)", "kind": "long-text", "required": false, "placeholder": "Evidence가 부족해 HOLD된 항목" },
+              { "id": "f7", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "예: 4차시에서 Segment의 존재 여부가 아니라 Problem Strength / Reachability / Willingness to Pay / Fit 등을 기준으로 첫 Target 후보를 판단한다." }
             ]
           },
           "description": "B. Business Context 업데이트 — 2차시 Business Context v0.2를 복사해 이번 Segment 결과를 반영한 최신 상태로 업데이트하세요."

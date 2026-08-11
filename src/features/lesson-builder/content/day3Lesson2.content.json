@@ -64,7 +64,7 @@
     },
     {
       "id": "p02",
-      "title": "Evidence Strength",
+      "title": "근거의 힘 (Evidence Strength)",
       "layout": "wide",
       "blocks": [
         {
@@ -181,7 +181,7 @@
     },
     {
       "id": "p04",
-      "title": "GPT Evidence Plan",
+      "title": "조사 계획 세우기 (GPT Evidence Plan)",
       "layout": "practice",
       "blocks": [
         {
@@ -319,7 +319,7 @@
     },
     {
       "id": "p06",
-      "title": "Source Collector",
+      "title": "출처 수집 (Source Collector)",
       "layout": "practice",
       "blocks": [
         {
@@ -335,27 +335,27 @@
         {
           "id": "d3l2-b06-form",
           "type": "input-form",
-          "title": "Source Collector",
+          "title": "출처 수집 (Source Collector)",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "Source 1",
+                "label": "출처 1 (Source 1)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "출처명:\nURL:\n확인일:\n핵심내용:\nEvidence 유형: 시장자료 / 경쟁사 / 리뷰 / 커뮤니티 / 인터뷰 / 실제 행동 / 가격 / 기타\n관계: 지지 / 반박 / 중립"
               },
               {
                 "id": "f2",
-                "label": "Source 2",
+                "label": "출처 2 (Source 2)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "출처명:\nURL:\n확인일:\n핵심내용:\nEvidence 유형: 시장자료 / 경쟁사 / 리뷰 / 커뮤니티 / 인터뷰 / 실제 행동 / 가격 / 기타\n관계: 지지 / 반박 / 중립"
               },
               {
                 "id": "f3",
-                "label": "Source 3",
+                "label": "출처 3 (Source 3)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "출처명:\nURL:\n확인일:\n핵심내용:\nEvidence 유형: 시장자료 / 경쟁사 / 리뷰 / 커뮤니티 / 인터뷰 / 실제 행동 / 가격 / 기타\n관계: 지지 / 반박 / 중립"
@@ -429,7 +429,7 @@
         {
           "id": "d3l2-b07-form",
           "type": "input-form",
-          "title": "Observation vs Inference",
+          "title": "관찰 vs 추론 (Observation vs Inference)",
           "visibility": "visible",
           "data": {
             "fields": [
@@ -466,7 +466,7 @@
     },
     {
       "id": "p08",
-      "title": "Counter Evidence",
+      "title": "반대 근거 (Counter Evidence)",
       "layout": "practice",
       "blocks": [
         {
@@ -532,7 +532,7 @@
     },
     {
       "id": "p09",
-      "title": "Human Evidence Review",
+      "title": "사람의 근거 검토 (Human Evidence Review)",
       "layout": "practice",
       "blocks": [
         {
@@ -548,34 +548,34 @@
         {
           "id": "d3l2-b09-form",
           "type": "input-form",
-          "title": "Evidence Review",
+          "title": "근거 검토 (Evidence Review)",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "SUPPORTED / CONFIRMED",
+                "label": "지지됨 / 확인됨 (SUPPORTED / CONFIRMED)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "실제 Source·시장 신호로 지지된 내용만 적으세요."
               },
               {
                 "id": "f2",
-                "label": "STILL HYPOTHESIS",
+                "label": "여전히 가설 (STILL HYPOTHESIS)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "여전히 확신이 없어 가설로 남겨두는 내용."
               },
               {
                 "id": "f3",
-                "label": "CONTRADICTED / REVISE",
+                "label": "반박됨 / 수정 필요 (CONTRADICTED / REVISE)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "Counter Evidence로 반박됐거나 수정이 필요한 내용."
               },
               {
                 "id": "f4",
-                "label": "NEXT VALIDATION",
+                "label": "다음 검증 항목 (NEXT VALIDATION)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "다음에 추가로 확인해야 할 질문."
@@ -587,7 +587,7 @@
         {
           "id": "d3l2-b09-decision",
           "type": "infographic",
-          "title": "Human Decision",
+          "title": "사람의 최종 결정 (Human Decision)",
           "visibility": "visible",
           "data": {
             "variant": "comparison",
@@ -645,13 +645,13 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Validation Hypothesis", "kind": "long-text", "required": false, "placeholder": "P03에서 적은 검증할 가설" },
-              { "id": "f2", "label": "Evidence Plan", "kind": "long-text", "required": false, "placeholder": "P04 ChatGPT 결과 요약" },
-              { "id": "f3", "label": "Sources & Supporting Evidence", "kind": "long-text", "required": false, "placeholder": "P06 Source Collector 내용" },
-              { "id": "f4", "label": "Counter Evidence", "kind": "long-text", "required": false, "placeholder": "P08 반박·부족 근거·다른 설명" },
-              { "id": "f5", "label": "Evidence Status", "kind": "long-text", "required": false, "placeholder": "P09 SUPPORTED / STILL HYPOTHESIS / CONTRADICTED 분류 요약" },
-              { "id": "f6", "label": "Human Decision", "kind": "long-text", "required": false, "placeholder": "KEEP / REVISE / HOLD / REJECT 중 하나와 이유" },
-              { "id": "f7", "label": "Next Validation", "kind": "long-text", "required": false, "placeholder": "P09 NEXT VALIDATION" }
+              { "id": "f1", "label": "검증 가설 (Validation Hypothesis)", "kind": "long-text", "required": false, "placeholder": "P03에서 적은 검증할 가설" },
+              { "id": "f2", "label": "근거 조사 계획 (Evidence Plan)", "kind": "long-text", "required": false, "placeholder": "P04 ChatGPT 결과 요약" },
+              { "id": "f3", "label": "출처 및 지지 근거 (Sources & Supporting Evidence)", "kind": "long-text", "required": false, "placeholder": "P06 Source Collector 내용" },
+              { "id": "f4", "label": "반대 근거 (Counter Evidence)", "kind": "long-text", "required": false, "placeholder": "P08 반박·부족 근거·다른 설명" },
+              { "id": "f5", "label": "근거 상태 (Evidence Status)", "kind": "long-text", "required": false, "placeholder": "P09 SUPPORTED / STILL HYPOTHESIS / CONTRADICTED 분류 요약" },
+              { "id": "f6", "label": "사람의 최종 결정 (Human Decision)", "kind": "long-text", "required": false, "placeholder": "KEEP / REVISE / HOLD / REJECT 중 하나와 이유" },
+              { "id": "f7", "label": "다음 검증 항목 (Next Validation)", "kind": "long-text", "required": false, "placeholder": "P09 NEXT VALIDATION" }
             ]
           },
           "description": "P03~P09에서 정리한 내용을 옮겨 적으세요."
@@ -684,12 +684,12 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Confirmed Facts", "kind": "long-text", "required": false, "placeholder": "1차시 Confirmed Facts + 이번 시간 SUPPORTED 내용" },
-              { "id": "f2", "label": "Current Hypotheses", "kind": "long-text", "required": false, "placeholder": "1차시 Hypotheses 중 STILL HYPOTHESIS로 남은 것" },
-              { "id": "f3", "label": "Evidence", "kind": "long-text", "required": false, "placeholder": "이번 시간에 확인한 핵심 Evidence" },
-              { "id": "f4", "label": "Rejected / Revised Hypotheses", "kind": "long-text", "required": false, "placeholder": "CONTRADICTED로 판정되어 폐기·수정한 가설" },
-              { "id": "f5", "label": "Validation Backlog", "kind": "long-text", "required": false, "placeholder": "NEXT VALIDATION 항목" },
-              { "id": "f6", "label": "Next Decision", "kind": "long-text", "required": false, "placeholder": "다음 차시에서 결정하거나 조사할 항목" }
+              { "id": "f1", "label": "확인된 사실 (Confirmed Facts)", "kind": "long-text", "required": false, "placeholder": "1차시 Confirmed Facts + 이번 시간 SUPPORTED 내용" },
+              { "id": "f2", "label": "현재 가설 (Current Hypotheses)", "kind": "long-text", "required": false, "placeholder": "1차시 Hypotheses 중 STILL HYPOTHESIS로 남은 것" },
+              { "id": "f3", "label": "근거 (Evidence)", "kind": "long-text", "required": false, "placeholder": "이번 시간에 확인한 핵심 Evidence" },
+              { "id": "f4", "label": "폐기·수정된 가설 (Rejected / Revised Hypotheses)", "kind": "long-text", "required": false, "placeholder": "CONTRADICTED로 판정되어 폐기·수정한 가설" },
+              { "id": "f5", "label": "검증 대기 목록 (Validation Backlog)", "kind": "long-text", "required": false, "placeholder": "NEXT VALIDATION 항목" },
+              { "id": "f6", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "다음 차시에서 결정하거나 조사할 항목" }
             ]
           },
           "description": "1차시 Business Context를 복사해 이번 결과로 업데이트하세요. v0.1을 덮어쓰지 않고 새 버전으로 저장합니다."

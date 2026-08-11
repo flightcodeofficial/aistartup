@@ -537,7 +537,7 @@
         {
           "id": "d3l1-b07-form",
           "type": "input-form",
-          "title": "Validation Backlog",
+          "title": "검증 대기 목록 (Validation Backlog)",
           "visibility": "visible",
           "data": {
             "fields": [
@@ -647,28 +647,28 @@
             "fields": [
               {
                 "id": "f1",
-                "label": "Confirmed Facts",
+                "label": "확인된 사실 (Confirmed Facts)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "사람이 승인한 FACT 항목"
               },
               {
                 "id": "f2",
-                "label": "Hypotheses",
+                "label": "가설 (Hypotheses)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "사람이 승인한 INFERENCE/HYPOTHESIS 항목"
               },
               {
                 "id": "f3",
-                "label": "Validation Backlog",
+                "label": "검증 대기 목록 (Validation Backlog)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "검증이 필요한 항목 + 확인 질문"
               },
               {
                 "id": "f4",
-                "label": "Next Decision",
+                "label": "다음 결정 사항 (Next Decision)",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "다음에 조사하거나 결정할 항목"

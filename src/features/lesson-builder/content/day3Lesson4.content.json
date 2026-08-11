@@ -88,7 +88,7 @@
               { "label": "Problem Strength", "description": "문제가 얼마나 큰가?" },
               { "label": "Urgency / Trigger", "description": "지금 해결해야 할 이유가 있는가?" },
               { "label": "Current Cost", "description": "현재 시간·돈·노력을 얼마나 쓰는가?" },
-              { "label": "Reachability", "description": "실제로 이 고객을 찾고 접근할 수 있는가?" },
+              { "label": "접근 가능성 (Reachability)", "description": "실제로 이 고객을 찾고 접근할 수 있는가?" },
               { "label": "Willingness to Pay Signal", "description": "돈을 낼 가능성을 보여주는 실제 신호가 있는가?" },
               { "label": "Current Product Fit", "description": "현재 MVP로 해결 가능한가?" }
             ]
@@ -167,11 +167,11 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Segment Evaluation Summary", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "Strongest Candidate", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Weakest Candidate", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "Missing Evidence", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "Review Notes", "kind": "long-text", "required": false }
+              { "id": "f1", "label": "세그먼트 평가 요약 (Segment Evaluation Summary)", "kind": "long-text", "required": false },
+              { "id": "f2", "label": "가장 강한 후보 (Strongest Candidate)", "kind": "long-text", "required": false },
+              { "id": "f3", "label": "가장 약한 후보 (Weakest Candidate)", "kind": "long-text", "required": false },
+              { "id": "f4", "label": "부족한 근거 (Missing Evidence)", "kind": "long-text", "required": false },
+              { "id": "f5", "label": "검토 메모 (Review Notes)", "kind": "long-text", "required": false }
             ]
           },
           "description": "ChatGPT 결과를 요약해 옮겨 적으세요. 아직 Target을 선택하지 않습니다."
@@ -223,7 +223,7 @@
         {
           "id": "d3l4-b04-form",
           "type": "input-form",
-          "title": "Score Critic Human Review",
+          "title": "AI 점수 비판 검토 (Score Critic Human Review)",
           "visibility": "visible",
           "data": {
             "fields": [
@@ -295,7 +295,7 @@
         {
           "id": "d3l4-b05-form",
           "type": "input-form",
-          "title": "Reachability Reality Check",
+          "title": "실제 접근 가능성 점검 (Reachability Reality Check)",
           "visibility": "visible",
           "data": {
             "fields": [
@@ -354,17 +354,17 @@
         {
           "id": "d3l4-b06-form",
           "type": "input-form",
-          "title": "Early Customer Profile",
+          "title": "초기 고객 프로필 (Early Customer Profile)",
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "ECP Candidate", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "Strong Problem", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Trigger", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "Current Alternative", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "Reachability", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "Product Fit", "kind": "long-text", "required": false },
-              { "id": "f7", "label": "Missing Evidence", "kind": "long-text", "required": false }
+              { "id": "f1", "label": "ECP 후보 (ECP Candidate)", "kind": "long-text", "required": false },
+              { "id": "f2", "label": "강한 문제 (Strong Problem)", "kind": "long-text", "required": false },
+              { "id": "f3", "label": "촉발 요인 (Trigger)", "kind": "long-text", "required": false },
+              { "id": "f4", "label": "현재 대안 (Current Alternative)", "kind": "long-text", "required": false },
+              { "id": "f5", "label": "접근 가능성 (Reachability)", "kind": "long-text", "required": false },
+              { "id": "f6", "label": "제품 적합도 (Product Fit)", "kind": "long-text", "required": false },
+              { "id": "f7", "label": "부족한 근거 (Missing Evidence)", "kind": "long-text", "required": false }
             ]
           },
           "description": "ChatGPT 결과 중 EVIDENCE/INFERENCE로 표시된 내용만 옮겨 적으세요."
@@ -416,14 +416,14 @@
         {
           "id": "d3l4-b07-form",
           "type": "input-form",
-          "title": "Secondary Target + Anti-ICP",
+          "title": "차순위 타겟 + 비선호 고객 (Secondary Target + Anti-ICP)",
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Secondary Target Candidate", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "Anti-ICP", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Why Not Now", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "Revisit Condition", "kind": "long-text", "required": false }
+              { "id": "f1", "label": "차순위 타겟 후보 (Secondary Target Candidate)", "kind": "long-text", "required": false },
+              { "id": "f2", "label": "비선호 고객 (Anti-ICP)", "kind": "long-text", "required": false },
+              { "id": "f3", "label": "지금은 안 되는 이유 (Why Not Now)", "kind": "long-text", "required": false },
+              { "id": "f4", "label": "재검토 조건 (Revisit Condition)", "kind": "long-text", "required": false }
             ]
           },
           "description": "고객의 규모·업종 자체가 아니라 현재 제품단계와의 Fit을 기준으로 적으세요."
@@ -489,7 +489,7 @@
     },
     {
       "id": "p09",
-      "title": "Human Target Decision",
+      "title": "사람의 최종 Target 결정 (Human Target Decision)",
       "layout": "practice",
       "blocks": [
         {
@@ -509,16 +509,16 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Segment Evaluation", "kind": "long-text", "required": false, "placeholder": "P03~P04 Target Matrix + Score Critic 요약" },
-              { "id": "f2", "label": "Primary Target", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Secondary Target", "kind": "long-text", "required": false, "placeholder": "P07 Secondary Target Candidate" },
-              { "id": "f4", "label": "Why Primary", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "Supporting Evidence", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "Counter Evidence / Risk", "kind": "long-text", "required": false },
-              { "id": "f7", "label": "Early Customer Profile", "kind": "long-text", "required": false, "placeholder": "P06 ECP 요약" },
-              { "id": "f8", "label": "Anti-ICP", "kind": "long-text", "required": false, "placeholder": "P07 Anti-ICP" },
-              { "id": "f9", "label": "Validation Needed", "kind": "long-text", "required": false },
-              { "id": "f10", "label": "Human Decision Notes", "kind": "long-text", "required": false, "placeholder": "P08 Stress Test 결과(KEEP/REVISE/HOLD/RECONSIDER)를 최종 검토한 뒤 결론을 적으세요." }
+              { "id": "f1", "label": "세그먼트 평가 (Segment Evaluation)", "kind": "long-text", "required": false, "placeholder": "P03~P04 Target Matrix + Score Critic 요약" },
+              { "id": "f2", "label": "1순위 타겟 (Primary Target)", "kind": "long-text", "required": false },
+              { "id": "f3", "label": "차순위 타겟 (Secondary Target)", "kind": "long-text", "required": false, "placeholder": "P07 Secondary Target Candidate" },
+              { "id": "f4", "label": "1순위로 선택한 이유 (Why Primary)", "kind": "long-text", "required": false },
+              { "id": "f5", "label": "지지 근거 (Supporting Evidence)", "kind": "long-text", "required": false },
+              { "id": "f6", "label": "반대 근거 / 리스크 (Counter Evidence / Risk)", "kind": "long-text", "required": false },
+              { "id": "f7", "label": "초기 고객 프로필 (Early Customer Profile)", "kind": "long-text", "required": false, "placeholder": "P06 ECP 요약" },
+              { "id": "f8", "label": "비선호 고객 (Anti-ICP)", "kind": "long-text", "required": false, "placeholder": "P07 Anti-ICP" },
+              { "id": "f9", "label": "추가 검증 필요 항목 (Validation Needed)", "kind": "long-text", "required": false },
+              { "id": "f10", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "P08 Stress Test 결과(KEEP/REVISE/HOLD/RECONSIDER)를 최종 검토한 뒤 결론을 적으세요." }
             ]
           },
           "description": "P03~P08에서 정리한 내용을 모아 최종 Target Selection으로 정리하세요."
@@ -589,17 +589,17 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Confirmed Facts", "kind": "long-text", "required": false, "placeholder": "3차시 Confirmed Facts + 이번 시간 확인된 내용" },
-              { "id": "f2", "label": "Current Hypotheses", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Customer Segments", "kind": "long-text", "required": false, "placeholder": "3차시 Customer Segments 요약" },
-              { "id": "f4", "label": "Primary Target", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "Secondary Target", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "Early Customer Profile", "kind": "long-text", "required": false },
-              { "id": "f7", "label": "Anti-ICP", "kind": "long-text", "required": false },
-              { "id": "f8", "label": "Target Evidence", "kind": "long-text", "required": false, "placeholder": "Primary Target의 핵심 Supporting Evidence" },
-              { "id": "f9", "label": "Target Risks", "kind": "long-text", "required": false, "placeholder": "Primary Target의 핵심 Counter Evidence" },
-              { "id": "f10", "label": "Validation Backlog", "kind": "long-text", "required": false },
-              { "id": "f11", "label": "Next Decision", "kind": "long-text", "required": false, "placeholder": "선택한 Target에게 어떤 Value Proposition을 제시할 것인가?" }
+              { "id": "f1", "label": "확인된 사실 (Confirmed Facts)", "kind": "long-text", "required": false, "placeholder": "3차시 Confirmed Facts + 이번 시간 확인된 내용" },
+              { "id": "f2", "label": "현재 가설 (Current Hypotheses)", "kind": "long-text", "required": false },
+              { "id": "f3", "label": "고객 세그먼트 (Customer Segments)", "kind": "long-text", "required": false, "placeholder": "3차시 Customer Segments 요약" },
+              { "id": "f4", "label": "1순위 타겟 (Primary Target)", "kind": "long-text", "required": false },
+              { "id": "f5", "label": "차순위 타겟 (Secondary Target)", "kind": "long-text", "required": false },
+              { "id": "f6", "label": "초기 고객 프로필 (Early Customer Profile)", "kind": "long-text", "required": false },
+              { "id": "f7", "label": "비선호 고객 (Anti-ICP)", "kind": "long-text", "required": false },
+              { "id": "f8", "label": "타겟 근거 (Target Evidence)", "kind": "long-text", "required": false, "placeholder": "Primary Target의 핵심 Supporting Evidence" },
+              { "id": "f9", "label": "타겟 리스크 (Target Risks)", "kind": "long-text", "required": false, "placeholder": "Primary Target의 핵심 Counter Evidence" },
+              { "id": "f10", "label": "검증 대기 목록 (Validation Backlog)", "kind": "long-text", "required": false },
+              { "id": "f11", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "선택한 Target에게 어떤 Value Proposition을 제시할 것인가?" }
             ]
           },
           "description": "B. Business Context 업데이트 — 3차시 Business Context v0.3을 복사해 이번 Target 결과를 반영한 최신 상태로 업데이트하세요."
