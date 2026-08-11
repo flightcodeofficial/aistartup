@@ -4,8 +4,8 @@
   "week": 2,
   "day": 2,
   "lesson": 2,
-  "title": "SNS 콘텐츠로 채널별 바꿔 쓰기",
-  "description": "하나의 핵심 메시지를 SNS 채널 소비 맥락에 맞게 바꾸되 사실·근거·브랜드 기준을 유지한다.",
+  "title": "AI로 실제 고객자료 검증하기",
+  "description": "AI가 만든 고객 가설을 실제 리뷰·문의·인터뷰와 비교하고, ChatGPT와 NotebookLM으로 반복되는 고객 문제와 근거를 확인합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -14,16 +14,20 @@
   "pages": [
     {
       "id": "p01",
-      "title": "같은 내용을 SNS마다 복붙하지 않습니다",
+      "title": "AI가 생각한 고객, 실제 고객도 그렇게 말할까요?",
       "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b01",
+          "id": "d2l2-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 같은 내용을 복붙하지 않습니다\n# 같은 ‘사실’을 다른 ‘맥락’으로 바꿉니다\n\n**하나의 핵심 메시지를 SNS 채널별 소비 방식에 맞게 바꿔 씁니다.**",
+            "markdown": "# AI에게 고객을 상상하게 하지 말고,\n# 실제 고객의 말을 분석하게 하세요.\n\n1교시에서 Prompt·Context·Harness의 원리를 배웠습니다. 이번 교시는 그 원리를 **실제 고객자료 검증**에 그대로 사용합니다.",
             "emphasis": "hero"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
           },
           "layout": {
             "width": "wide",
@@ -32,47 +36,44 @@
           }
         },
         {
-          "id": "l2-b02",
-          "type": "result-preview",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "marketing",
-            "emptyMessage": "Lesson1 콘텐츠 메시지 원장이 없습니다."
-          }
-        },
-        {
-          "id": "l2-b03",
+          "id": "d2l2-b01-compare",
           "type": "infographic",
-          "title": "Lesson2 결과",
+          "title": "고객 가설 vs 고객 자료",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
-            "variant": "checklist",
+            "variant": "comparison",
             "items": [
               {
-                "label": "채널별 독자 맥락 구분"
+                "label": "고객 가설 — 검증 전",
+                "description": "우리가 예상한 고객 / AI가 제안한 고객 후보 / Persona AI가 만든 모습 / \"이럴 것이다\""
               },
               {
-                "label": "훅·본문·CTA 구조 설계"
-              },
-              {
-                "label": "ChatGPT로 3개 초안 생성"
-              },
-              {
-                "label": "근거·말투·과장 검수"
+                "label": "고객 자료 — 분석 가능",
+                "description": "실제 리뷰 / 실제 문의 / 실제 인터뷰 / 실제 상담 내용 / \"실제로 이런 말을 했다\""
               }
             ]
           }
         },
         {
-          "id": "l2-b04",
+          "id": "d2l2-b01-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI가 만들어낸 Persona는 아직 고객 증거가 아닙니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b01-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "알고리즘 비법보다 독자 맥락을 배우는 수업입니다.",
+            "markdown": "1교시에서 배운 Prompt/Context/Harness를 다시 강의하지 마세요. 이번 교시는 '생성'에서 '검증'으로 넘어간다는 것을 강조하고 바로 실습으로 들어가세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -86,30 +87,15 @@
     },
     {
       "id": "p02",
-      "title": "SNS마다 읽는 상황이 다릅니다",
+      "title": "VoC — 고객의 진짜 목소리",
       "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b05",
-          "type": "image",
-          "title": "SNS 채널별 소비 맥락",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/week2/day2/sns_channel_context.svg",
-            "alt": "Instagram, LinkedIn, Threads 구조 비교",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "l2-b06",
+          "id": "d2l2-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "채널이 바뀌어도 **대상 고객·핵심 문제·확인된 가치·근거는 바뀌지 않습니다.** 바뀌는 것은 길이, 도입, 말투, CTA입니다.",
+            "markdown": "## VoC (Voice of Customer)\n\n고객이 실제로 말하고, 질문하고, 불편해한 내용을 모아 보는 것입니다.\n\n| | 표현 |\n|---|---|\n| 기업 표현 | \"SNS 콘텐츠 제작 생산성 문제\" |\n| 고객 표현 | \"오늘도 뭘 올려야 할지 모르겠어요.\" |\n\n**고객의 말을 너무 빨리 기업의 언어로 번역하지 않습니다.**\n\n**왜 원문 표현을 보존하는가?**\n- 문제를 더 정확히 이해할 수 있음\n- 고객의 감정과 맥락을 볼 수 있음\n- 나중에 SNS·광고·랜딩페이지 카피의 재료가 됨",
             "emphasis": "normal"
           },
           "layout": {
@@ -119,11 +105,11 @@
           }
         },
         {
-          "id": "l2-b07",
+          "id": "d2l2-b02-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "주 사용 채널이 달라도 구조 원칙만 익히면 됩니다.",
+            "markdown": "기업 언어로 요약된 문장과 고객 원문을 나란히 보여주며 차이를 체감시키세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -137,50 +123,50 @@
     },
     {
       "id": "p03",
-      "title": "SNS 기본 구조 — 훅 → 공감 → 핵심 → 근거 → CTA",
-      "layout": "standard",
+      "title": "어디에서 고객의 말을 찾을 수 있을까요?",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b08",
+          "id": "d2l2-b03-sources",
           "type": "infographic",
-          "title": "SNS 기본 5단계",
+          "title": "자료 유형과 숨은 편향",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
-            "variant": "steps",
+            "variant": "checklist",
             "items": [
               {
-                "label": "훅",
-                "description": "멈춰 읽게 할 첫 문장"
+                "label": "리뷰",
+                "description": "만족하거나 불만이 큰 사람이 글을 남길 가능성이 있음"
               },
               {
-                "label": "공감 상황",
-                "description": "고객이 실제 겪는 순간"
+                "label": "인터뷰",
+                "description": "질문자가 원하는 방향으로 답을 유도할 위험이 있음"
               },
               {
-                "label": "핵심 1~3개",
-                "description": "전달할 정보만"
+                "label": "문의/상담",
+                "description": "이미 관심이 있는 사람의 자료가 많음"
               },
               {
-                "label": "근거·한계",
-                "description": "확인된 범위만"
+                "label": "고객지원",
+                "description": "문제가 생긴 사람 위주로 쏠릴 수 있음"
               },
               {
-                "label": "CTA 1개",
-                "description": "다음 행동 하나"
+                "label": "설문 자유응답",
+                "description": "질문의 표현에 따라 답이 달라질 수 있음"
+              },
+              {
+                "label": "공개 커뮤니티 글",
+                "description": "글을 적극적으로 작성하는 사람이 더 잘 보임"
               }
             ]
           }
         },
         {
-          "id": "l2-b09",
+          "id": "d2l2-b03-key",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### 예시\n\n**훅:** 매일 카페 SNS 글감을 정하느라 멈춰 있나요?\n\n**공감:** 사진은 있는데 무슨 말을 써야 할지 막히는 날이 반복됩니다.\n\n**CTA:** 오늘 자주 받은 질문 3개를 메모해보세요.",
+            "markdown": "**자료가 있다고 바로 분석하지 말고, 누가·어떤 상황에서 남긴 자료인지 봅니다.**\n\n**개인정보 안내:** 분석 전 이름·전화·이메일·상호 등 불필요한 식별정보는 제거합니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -190,29 +176,11 @@
           }
         },
         {
-          "id": "l2-b10",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "좋은 훅은 **허위 긴급성·공포·성과 보장**이 아닙니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l2-b11",
+          "id": "d2l2-b03-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "자극적 훅과 구체적 고객 상황의 차이를 비교하세요.",
+            "markdown": "편향을 안다고 자료를 못 쓰는 건 아니라는 것도 알려주세요 — 편향을 '아는 채로' 쓰는 게 핵심입니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -226,33 +194,70 @@
     },
     {
       "id": "p04",
-      "title": "인터랙티브 — 채널을 바꾸면 구조가 달라집니다",
-      "layout": "fullscreen",
+      "title": "고객의 마음을 읽는 4+2 렌즈",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b12",
-          "type": "html-file",
-          "title": "채널 맥락 변환기",
+          "id": "d2l2-b04-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "src": "/lesson-content/week2/day2/channel_context_transformer.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
+            "markdown": "실제 고객 원문을 이 네 가지 기준으로 읽습니다. **오늘 실습에서는 이 4개만 사용합니다.**",
+            "emphasis": "normal"
           },
           "layout": {
-            "width": "full",
-            "align": "center",
+            "width": "wide",
+            "align": "left",
             "spacing": "medium"
           }
         },
         {
-          "id": "l2-b13",
+          "id": "d2l2-b04-lens",
+          "type": "infographic",
+          "title": "필수 4 Lens",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "1. 상황",
+                "description": "언제 문제가 생기는가?"
+              },
+              {
+                "label": "2. 문제",
+                "description": "무엇이 어렵나?"
+              },
+              {
+                "label": "3. 현재 방법",
+                "description": "지금은 어떻게 해결하나?"
+              },
+              {
+                "label": "4. 원하는 변화",
+                "description": "어떻게 되기를 원하는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2l2-b04-deep",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**심화 2개(참고용, 오늘 실습 필드에는 넣지 않습니다):** 5. 촉발 사건 — 언제 갑자기 해결책을 찾기 시작했나? / 6. 반대 이유 — 왜 아직 새로운 방법을 쓰지 않는가?\n\n**예시**\n\n원문: \"매장 마감하고 나면 SNS까지 쓸 힘이 없어서 다른 카페 글을 보고 조금 바꿔서 올려요.\"\n\n- 상황: 매장 마감 이후\n- 문제: SNS 글 작성 부담\n- 현재 방법: 다른 매장 글 참고\n- 원하는 변화: 더 빠르고 쉽게 게시물 준비",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b04-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "‘변하지 않는 것’과 ‘바뀌는 것’을 학생이 말하게 하세요.",
+            "markdown": "5, 6번을 입력폼 필드로 만들지 마세요 — 참고 설명으로만 남깁니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -266,46 +271,15 @@
     },
     {
       "id": "p05",
-      "title": "훅은 자극이 아니라 고객이 멈추는 이유입니다",
-      "layout": "standard",
+      "title": "한 사람의 말에서 고객 패턴까지",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b14",
-          "type": "infographic",
-          "title": "훅 4가지 출발점",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "상황형",
-                "description": "오늘 올릴 글이 아직 정해지지 않았다면…"
-              },
-              {
-                "label": "질문형",
-                "description": "고객 질문을 콘텐츠로 쓰고 있나요?"
-              },
-              {
-                "label": "관찰형",
-                "description": "콘텐츠가 막힐 때는 재료가 없는 경우가 많습니다."
-              },
-              {
-                "label": "대안형",
-                "description": "새 글감보다 고객 질문을 원천으로 바꿔보세요."
-              }
-            ]
-          }
-        },
-        {
-          "id": "l2-b15",
+          "id": "d2l2-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "‘놀라운’, ‘충격’, ‘무조건’, ‘단 1분 만에’는 근거가 없으면 제거합니다.",
+            "markdown": "## Signal → Pattern → Insight\n\n**Signal(신호)** — 한 고객에게서 발견한 의미 있는 말. 예: #01 \"글 쓰기가 어려워요.\"\n\n↓\n\n**Pattern(반복)** — 여러 고객자료에서 비슷한 신호가 반복. 예: #03, #07, #11 문구 작성 부담 반복\n\n↓\n\n**Insight(해석)** — 그 패턴이 사업에 무엇을 의미하는지 해석. 예: \"일부 소규모 사업자에게는 이미지 제작보다 문구 작성 시작이 더 큰 장벽일 가능성이 있다.\"\n\n**Insight ≠ 원문입니다.** Insight는 해석입니다. \"~이다\"보다 **\"~일 가능성이 있다\"** 형태를 사용하고, 한 사람의 불만을 전체 고객 문제로 확대하지 않습니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -315,11 +289,41 @@
           }
         },
         {
-          "id": "l2-b16",
+          "id": "d2l2-b05-quiz",
+          "type": "quiz",
+          "title": "확인 퀴즈",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "다음 중 Pattern에 해당하는 것은?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "한 고객이 한 번 남긴 특이한 의견"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "여러 고객자료에서 비슷한 문제가 반복됨"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "AI가 해석해서 내린 결론"
+                  }
+                ],
+                "correctChoiceId": "c2",
+                "explanation": "Pattern은 여러 자료에서 반복되는 신호입니다. 한 번의 의견은 Signal, 해석은 Insight입니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2l2-b05-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "같은 고객 문제로 훅 네 개를 만들되 사실은 바꾸지 마세요.",
+            "markdown": "학생이 Insight를 원문처럼 단정적으로 쓰면 바로 잡아주세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -333,45 +337,15 @@
     },
     {
       "id": "p06",
-      "title": "브랜드 말투는 형용사보다 규칙으로",
-      "layout": "standard",
+      "title": "많이 나왔다고 가장 중요한 문제는 아닙니다",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b17",
-          "type": "infographic",
-          "title": "브랜드 보이스 규칙",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "문장을 짧게 쓴다"
-              },
-              {
-                "label": "전문용어는 바로 풀어쓴다"
-              },
-              {
-                "label": "성과를 보장하지 않는다"
-              },
-              {
-                "label": "고객을 몰아붙이지 않는다"
-              },
-              {
-                "label": "CTA는 한 번만"
-              }
-            ]
-          }
-        },
-        {
-          "id": "l2-b18",
+          "id": "d2l2-b06-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "❌ **전문적이고 혁신적이며 친근하게 써줘**\n\n✅ **짧은 문장, 쉬운 용어, 과장 없이, 마지막 CTA는 하나만 써줘**",
+            "markdown": "**빈도** — 몇 명에게, 몇 번 나타났는가? / **강도** — 얼마나 큰 불편·손실인가?\n\n빈도와 강도를 같이 봅니다.\n\n**예시**\n\n문제 A (10회 등장): \"게시물 소재가 부족하다.\"\n\n문제 B (3회 등장): \"영업시간 이후 매일 2시간씩 추가 작업한다.\"",
             "emphasis": "normal"
           },
           "layout": {
@@ -381,11 +355,34 @@
           }
         },
         {
-          "id": "l2-b19",
+          "id": "d2l2-b06-intensity",
+          "type": "infographic",
+          "title": "강도를 읽는 4가지 신호",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "구체적인 숫자가 등장"
+              },
+              {
+                "label": "감정 표현이 강함"
+              },
+              {
+                "label": "이미 돈이나 시간을 쓰고 있음"
+              },
+              {
+                "label": "포기·이탈한 경험이 있음"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2l2-b06-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "감성 형용사를 편집 규칙으로 바꾸는 것이 핵심입니다.",
+            "markdown": "수학 공식이나 정량 점수표로 과장하지 마세요 — 판단을 돕는 관점일 뿐입니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -399,109 +396,74 @@
     },
     {
       "id": "p07",
-      "title": "실습 — SNS 콘텐츠 브리프",
+      "title": "실습 1 — ChatGPT로 패턴 찾기",
       "layout": "practice",
       "blocks": [
         {
-          "id": "l2-b20",
-          "type": "input-form",
-          "title": "SNS 콘텐츠 브리프",
+          "id": "d2l2-b07-quotes",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "이번 게시물의 목표 고객",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f2",
-                "label": "핵심 메시지",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f3",
-                "label": "사용할 근거",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f4",
-                "label": "채널 A",
-                "kind": "select",
-                "required": false,
-                "options": [
-                  "Instagram",
-                  "LinkedIn",
-                  "Threads 또는 짧은 글 SNS"
-                ]
-              },
-              {
-                "id": "f4b",
-                "label": "채널 A를 고른 이유",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "예: 이 고객은 시각적인 사례를 빠르게 확인하는 상황이 많기 때문. 근거가 없으면 '가설 / 검증 필요'라고 적어도 됩니다."
-              },
-              {
-                "id": "f4c",
-                "label": "채널 B",
-                "kind": "select",
-                "required": false,
-                "options": [
-                  "Instagram",
-                  "LinkedIn",
-                  "Threads 또는 짧은 글 SNS"
-                ]
-              },
-              {
-                "id": "f4d",
-                "label": "채널 B를 고른 이유",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "가설이라면 '가설 / 검증 필요'라고 적어도 됩니다."
-              },
-              {
-                "id": "f5",
-                "label": "콘텐츠 목표",
-                "kind": "select",
-                "required": false,
-                "options": [
-                  "인지",
-                  "저장·공유",
-                  "대화·댓글",
-                  "프로필/링크 이동"
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "브랜드 말투 규칙",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f7",
-                "label": "CTA 1개",
-                "kind": "short-text",
-                "required": false
-              }
-            ],
-            "inputArtifactTypes": [
-              "marketing",
-              "persona",
-              "value-proposition"
-            ]
+            "markdown": "**아래 자료는 실습을 위한 교육용 가상 고객 원문입니다.** (실제 인터뷰가 아닙니다)\n\n#01 \"사진은 많이 찍는데 매번 글 쓰는 게 어려워요.\"\n\n#02 \"매장 일하다 보면 SNS까지 신경 쓸 시간이 없어요.\"\n\n#03 \"대행사를 맡기기에는 비용이 너무 부담돼요.\"\n\n#04 \"다른 카페 글을 보고 비슷하게 써요.\"\n\n#05 \"게시물을 올려야 하는 건 아는데 매번 소재가 없어요.\"\n\n#06 \"행사 있을 때마다 급하게 홍보글을 만들어요.\"\n\n#07 \"AI로 써봤는데 우리 가게 말투 같지 않아요.\"\n\n#08 \"자동으로 글이 나오니까 일단 초안 만들기는 편해요.\"\n\n#09 \"매일 올리고 싶은데 3일 하다가 결국 포기해요.\"\n\n#10 \"사진 고르는 것보다 글 시작하는 게 더 오래 걸려요.\"\n\n실제 자료가 있다면 본인의 익명화 자료로 교체해도 됩니다. 자료가 많다면 원문번호와 출처를 스프레드시트로 먼저 정리해도 좋습니다 ([Google Sheets](https://sheets.google.com/), 선택 도구).",
+            "emphasis": "normal"
           },
-          "description": "Lesson1 메시지 원장을 불러와, 오늘은 서로 다른 채널 2개(A·B)로 바꿔 씁니다."
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         },
         {
-          "id": "l2-b21",
+          "id": "d2l2-b07-prompt",
+          "type": "prompt",
+          "title": "패턴 분석 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "당신은 고객 원문에서 반복되는 문제를 정리하는 분석 도우미입니다.\n\n[고객 원문]\n#01 [고객이 실제로 한 말]\n#02 [고객이 실제로 한 말]\n#03 [고객이 실제로 한 말]\n#04 [고객이 실제로 한 말]\n#05 [고객이 실제로 한 말]\n\n[분석 기준]\n각 원문을 다음 네 가지 기준으로 살펴보세요.\n1. 상황 — 언제 문제가 생기는가\n2. 문제 — 무엇이 어렵거나 불편한가\n3. 현재 방법 — 지금 어떻게 해결하고 있는가\n4. 원하는 변화 — 어떻게 되기를 원하는가\n\n[해줄 일]\n1. 의미 있는 신호(Signal)를 찾아주세요.\n2. 여러 고객에게 반복되는 내용은 Pattern으로 묶어주세요.\n3. 각 Pattern마다 반드시 근거 원문 번호를 표시해주세요.\n4. 한 번만 나온 내용은 반복 Pattern처럼 표현하지 마세요.\n5. 서로 반대되는 고객 의견도 삭제하지 말고 표시해주세요.\n\n[중요 규칙]\n- 제공한 고객 원문만 사용해주세요.\n- 자료에 없는 고객 특성을 새로 만들지 마세요.\n- 없는 숫자나 통계를 추정하지 마세요.\n- 어떤 Pattern이 가장 중요하다고 임의로 결정하지 마세요.\n- 판단할 근거가 부족하면 \"확인 필요\"라고 표시해주세요.\n\n[결과 형식]\n패턴 | 상황 | 문제 | 현재 방법 | 원하는 변화 | 근거 번호 | 반대되는 원문 | 확인 필요\n형식의 표로 정리해주세요.\n\n마지막에는 \"추가 검증이 필요한 질문\" 3개만 작성해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분만 자기 자료로 바꾸세요. 자기 자료가 있다면 [고객 원문] 부분만 교체하세요."
+        },
+        {
+          "id": "d2l2-b07-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "패턴 분석 실행",
+            "practiceDescription": "10개 고객 원문에서 반복 패턴과 근거번호를 찾습니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "d2l2-b07-metacognition",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**방금 무엇을 했나요?**\n\n| | |\n|---|---|\n| Prompt | 무엇을 찾을지 지시 |\n| Context | 실제 고객 원문 제공 |\n| Guardrail | 없는 내용을 만들지 못하게 제한 |\n\n**1교시의 개념을 실제 고객자료 분석에 사용했습니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b07-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "채널을 하나 먼저 고르게 하세요.",
+            "markdown": "세 이론을 다시 길게 설명하지 마세요 — 한 줄 연결이면 충분합니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -515,43 +477,48 @@
     },
     {
       "id": "p08",
-      "title": "ChatGPT로 채널별 3개 버전 만들기",
-      "layout": "practice",
+      "title": "AI는 성실하게 정리하게 하고, 상상은 막습니다",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b22",
-          "type": "prompt",
-          "title": "SNS 채널 변환 프롬프트",
-          "description": "{{ }}를 Lesson1과 P07 결과로 바꿔 넣으세요.",
+          "id": "d2l2-b08-dos-donts",
+          "type": "infographic",
+          "title": "AI에게 시킬 일 / 시키지 말 일",
           "visibility": "visible",
           "data": {
-            "prompt": "[콘텐츠 원장]과 [SNS 브리프]만 사용해 같은 사실을 두 채널로 바꿔 쓰세요.\n\n[콘텐츠 원장]\n{{Lesson1 핵심 메시지·근거·금지 주장}}\n\n[SNS 브리프]\n{{P07 작성 내용 — 채널 A/B와 선택 이유 포함}}\n\n규칙:\n- 원문에 없는 수치, 고객 사례, 성과, 인용을 추가하지 마세요.\n- 대상 고객·핵심 문제·근거는 두 채널에서 동일하게 유지하세요.\n- 채널 A/B 각각의 소비 맥락(길이, 도입, 말투, CTA)에 맞게 구조만 바꾸세요.\n- 허위 긴급성, 과장, 경쟁사 비방을 사용하지 마세요.\n- CTA는 게시물당 하나만 사용하세요.\n- 브랜드 말투 규칙을 지키세요.\n- 사용한 원천 근거를 [내부 검수용]으로 표시하세요.\n\n출력:\n1. 채널 A 버전\n2. 채널 B 버전\n3. 둘 중 하나에 쓸 대체 Hook 1개(같은 사실, 다른 시작 문장)\n4. 사람이 확인할 사실 목록",
-            "targetTool": "ChatGPT",
-            "copyable": true
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "시킬 일",
+                "description": "같은 기준으로 원문 분류 / 반복되는 표현 찾기 / 근거번호 붙이기 / 서로 반대되는 자료 찾기 / 표로 정리"
+              },
+              {
+                "label": "시키지 말 일",
+                "description": "자료에 없는 새로운 고객 만들기 / 없는 통계 추정 / 한 번 나온 의견을 공통문제로 확대 / 어떤 고객이 가장 중요한지 최종 결정"
+              }
+            ]
           }
         },
         {
-          "id": "l2-b23",
-          "type": "external-link",
-          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요.",
+          "id": "d2l2-b08-key",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "SNS 초안 생성",
-            "practiceDescription": "같은 근거로 채널 A·B 버전과 대체 Hook을 만듭니다.",
-            "estimatedMinutes": 12
+            "markdown": "**한 번 등장한 항목을 여러 고객의 공통점처럼 뭉뚱그리지 마세요. 반드시 원문 번호를 표시하세요.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l2-b24",
+          "id": "d2l2-b08-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "세 안이 서로 다른 사실을 만들었는지 비교하게 하세요.",
+            "markdown": "P07 결과에서 실제로 이 원칙이 지켜졌는지 학생과 같이 점검하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -565,45 +532,15 @@
     },
     {
       "id": "p09",
-      "title": "어느 문장이 더 안전한가?",
-      "layout": "standard",
+      "title": "AI의 결론에서 원문으로 돌아가세요",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b25",
-          "type": "quiz",
-          "title": "SNS 검수 퀴즈",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "q1",
-                "question": "다음 중 원천문서를 가장 잘 지키는 문장은?",
-                "choices": [
-                  {
-                    "id": "c1",
-                    "text": "이 방법을 쓰면 매출이 반드시 오릅니다."
-                  },
-                  {
-                    "id": "c2",
-                    "text": "매일 글감을 고민한다면 고객이 자주 묻는 질문부터 콘텐츠 재료로 모아보세요."
-                  },
-                  {
-                    "id": "c3",
-                    "text": "대한민국 카페 사장님의 90%가 이 문제를 겪습니다."
-                  }
-                ],
-                "correctChoiceId": "c2",
-                "explanation": "확인되지 않은 성과나 통계를 만들지 않고 고객 문제와 실행 방법만 제안합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "l2-b26",
+          "id": "d2l2-b09-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### 먼저 지울 것\n\n- 원문에 없는 숫자\n- ‘무조건’, ‘완벽하게’, ‘누구나’ 같은 보장\n- 근거 없는 고객 사례\n- 실제 마감이 아닌 긴급성\n- CTA 여러 개",
+            "markdown": "## Source Grounding (근거 추적)\n\nAI 요약: \"작성 시간이 문제입니다.\"\n\n↓\n\n사람의 질문: \"어떤 자료에서 판단했나요?\"\n\n↓\n\n근거번호: #02 #06 #13\n\n↓\n\n원문 확인\n\n**근거번호를 찾을 수 없는 중요한 AI 결론은 바로 믿지 않습니다.**",
             "emphasis": "normal"
           },
           "layout": {
@@ -613,11 +550,41 @@
           }
         },
         {
-          "id": "l2-b27",
+          "id": "d2l2-b09-quiz",
+          "type": "quiz",
+          "title": "미니 퀴즈",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "AI가 \"가격이 가장 큰 문제입니다\"라고 했는데 근거번호가 없습니다. 무엇을 해야 하나요?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "AI가 말했으니 그대로 사용한다"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "다른 AI에게 투표하게 한다"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "근거가 된 원문을 요구하고 직접 확인한다"
+                  }
+                ],
+                "correctChoiceId": "c3",
+                "explanation": "근거번호가 없는 결론은 원문을 요구해서 직접 확인해야 합니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2l2-b09-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "학생들이 ‘좋은 문장’보다 ‘지울 문장’을 먼저 찾게 하세요.",
+            "markdown": "P07 결과에서 근거번호가 빠진 문장이 있는지 같이 찾아보게 하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -631,44 +598,16 @@
     },
     {
       "id": "p10",
-      "title": "발행 전 사람 검수",
-      "layout": "standard",
+      "title": "실습 2 — NotebookLM으로 근거 확인",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "l2-b28",
-          "type": "infographic",
-          "title": "빠른 발행 체크 3가지",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "원천에 없는 사실을 추가하지 않았는가?"
-              },
-              {
-                "label": "고객·브랜드 말투에 맞는가?"
-              },
-              {
-                "label": "CTA가 하나인가?"
-              }
-            ]
-          }
-        },
-        {
-          "id": "l2-b29",
+          "id": "d2l2-b10-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**AI가 생성 → 사람이 승인 → 발행** 순서를 유지합니다. 자동 게시 연결은 오늘 실습 범위가 아닙니다.\n\n저작권·개인정보·최종 승인자까지 포함한 전체 검수는 **Lesson4에서 한 번에** 정리합니다.",
+            "markdown": "**학생 Workflow**\n\n1. P07에서 사용한 동일 고객자료 준비\n2. NotebookLM에 자료 추가\n3. 아래 질문 복사\n4. 답변 확인\n5. 출처/인용 표시 확인\n6. 최소 1개의 원문을 실제로 열어 확인",
             "emphasis": "normal"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
           },
           "layout": {
             "width": "wide",
@@ -677,11 +616,52 @@
           }
         },
         {
-          "id": "l2-b30",
+          "id": "d2l2-b10-prompt",
+          "type": "prompt",
+          "title": "NotebookLM 질문",
+          "visibility": "visible",
+          "data": {
+            "prompt": "이 자료에서 반복적으로 나타나는 고객 문제 3~5개를 찾아주세요.\n\n각 문제마다:\n1. 어떤 상황에서 발생하는지\n2. 고객이 실제로 어떤 표현을 사용했는지\n3. 지금 어떤 방법으로 해결하고 있는지\n4. 원하는 변화가 무엇인지\n5. 반대되거나 예외적인 고객 의견이 있는지\n\n를 정리해주세요.\n\n각 판단은 반드시 업로드한 자료에서 확인할 수 있는 근거와 연결해주세요.\n\n자료에 없는 고객정보나 통계를 추측해서 추가하지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "P07과 같은 고객 원문을 NotebookLM에 자료로 추가한 뒤 이 질문을 복사해서 물어보세요."
+        },
+        {
+          "id": "d2l2-b10-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://notebooklm.google.com/",
+            "buttonLabel": "NotebookLM 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "NotebookLM 실행",
+            "practiceDescription": "같은 고객자료를 올리고 근거 있는 답변과 출처를 확인합니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "d2l2-b10-compare",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## ChatGPT vs NotebookLM\n\n어느 AI가 더 좋은가의 경쟁이 아닙니다.\n\n| | 주요 역할 | 장점 |\n|---|---|---|\n| ChatGPT | 패턴 초안 / 구조화 / 분류 | 분석 기준과 출력 형태를 세밀하게 지정하기 편함 |\n| NotebookLM | 업로드 자료 기반 근거 확인 | AI 답에서 원문으로 돌아가 근거를 확인하기 쉬움 |\n\n**두 AI의 결과가 다르면 AI끼리 투표하지 않습니다. 원문을 확인합니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b10-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "검수 전 외부 행동을 막는 운영 원칙을 강조하세요.",
+            "markdown": "NotebookLM UI 버튼 위치는 버전에 따라 달라질 수 있으니 정확한 위치보다 흐름을 안내하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -695,76 +675,15 @@
     },
     {
       "id": "p11",
-      "title": "최종 실습 — SNS 콘텐츠 세트",
-      "layout": "practice",
+      "title": "좋은 자료만 남기고, 불편한 자료는 버리지 않습니다",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l2-b31",
-          "type": "input-form",
-          "title": "SNS 콘텐츠 세트",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "채널 A와 게시물 목적",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f2",
-                "label": "채널 A 버전",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f3",
-                "label": "채널 B와 게시물 목적",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f3b",
-                "label": "채널 B 버전",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f4",
-                "label": "대체 Hook 1개 (같은 사실, 다른 시작 문장)",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f5",
-                "label": "공통 CTA",
-                "kind": "short-text",
-                "required": false
-              },
-              {
-                "id": "f6",
-                "label": "사용한 원천 근거",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f7",
-                "label": "사람이 최종 확인할 항목",
-                "kind": "long-text",
-                "required": false
-              }
-            ],
-            "inputArtifactTypes": [
-              "marketing"
-            ]
-          }
-        },
-        {
-          "id": "l2-b32",
+          "id": "d2l2-b11-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "채널 A·B 중 실제로 먼저 쓸 하나를 고르고 **선택 이유**도 기록하세요. 근거가 약하면 '가설 / 검증 필요'로 남겨도 됩니다.",
+            "markdown": "**자료를 많이 넣는 것이 목적이 아닙니다. 필요 없는 것은 빼고, 판단에 필요한 것을 남깁니다.**\n\n이것도 **Context Engineering**의 실제 작업입니다 — 1교시에서 배운 원리를 여기서도 씁니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -774,11 +693,56 @@
           }
         },
         {
-          "id": "l2-b33",
+          "id": "d2l2-b11-filters",
+          "type": "infographic",
+          "title": "Context 품질 5가지 필터",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "1. 관련성",
+                "description": "이번 고객문제와 관계있는가?"
+              },
+              {
+                "label": "2. 최신성",
+                "description": "현재도 유효한가?"
+              },
+              {
+                "label": "3. 중복",
+                "description": "같은 리뷰를 여러 번 넣지 않았는가?"
+              },
+              {
+                "label": "4. 출처",
+                "description": "어디에서 나온 자료인가?"
+              },
+              {
+                "label": "5. 개인정보",
+                "description": "필요 없는 식별정보를 제거했는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2l2-b11-contradiction",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 모순을 삭제하지 않습니다\n\n고객 A: \"자동생성이 너무 편해요.\" **vs** 고객 B: \"자동으로 만든 글은 우리 가게 같지 않아서 싫어요.\"\n\n**둘 중 하나가 틀린 걸까요? 아닐 수 있습니다.** 서로 다른 고객 Segment / 상황이 다름 / 사용 목적이 다름 / 우리가 아직 발견하지 못한 조건이 있음 — 가능성이 여럿입니다.\n\n**깔끔한 결론을 만들려고 반대되는 자료를 버리지 않습니다.**\n\n*(심화 참고) Triangulation — 리뷰·문의·인터뷰 등 서로 다른 출처에서도 비슷한 신호가 반복되면 더 주목할 가치가 있습니다.*",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b11-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "모두 발행하는 것이 아니라 선택·검수하는 과정이 목표입니다.",
+            "markdown": "모순되는 두 의견 중 하나를 학생이 임의로 지우려 하면 바로 잡아주세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -792,57 +756,111 @@
     },
     {
       "id": "p12",
-      "title": "저장 — 원천 → 채널 맥락 → 검수",
-      "layout": "standard",
+      "title": "최종 고객 패턴 저장",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "l2-b34",
-          "type": "result-preview",
+          "id": "d2l2-b12-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "artifactType": "content",
-            "emptyMessage": "아직 저장된 SNS 콘텐츠가 없습니다."
+            "markdown": "# 오늘 찾은 반복 패턴을 정리하고 저장합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l2-b35",
+          "id": "d2l2-b12-form",
+          "type": "input-form",
+          "title": "실제 고객자료 검증 결과",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "반복 패턴 1",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "상황·문제·현재 방법·원하는 변화·근거번호를 한 번에 정리하세요. 예: (근거 #02 #06)"
+              },
+              {
+                "id": "f2",
+                "label": "반복 패턴 2",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "상황·문제·현재 방법·원하는 변화·근거번호를 한 번에 정리하세요."
+              },
+              {
+                "id": "f3",
+                "label": "반복 패턴 3",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "상황·문제·현재 방법·원하는 변화·근거번호를 한 번에 정리하세요."
+              },
+              {
+                "id": "f4",
+                "label": "반대되거나 예외적인 자료",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "다음에 더 확인할 것",
+                "kind": "long-text",
+                "required": false
+              }
+            ]
+          },
+          "description": "P07(ChatGPT)·P10(NotebookLM) 결과를 비교하며 최종 패턴을 정리하세요."
+        },
+        {
+          "id": "d2l2-b12-preview",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "customer-evidence",
+            "emptyMessage": "아직 저장된 고객자료 검증 결과가 없습니다."
+          }
+        },
+        {
+          "id": "d2l2-b12-save",
           "type": "save-artifact",
           "visibility": "visible",
           "data": {
-            "artifactType": "content",
-            "artifactTitle": "Day2 Lesson2 — SNS 콘텐츠 세트",
-            "sourceBlockId": "l2-b31",
+            "artifactType": "customer-evidence",
+            "artifactTitle": "Day2 Lesson2 — 실제 고객자료 검증",
+            "sourceBlockId": "d2l2-b12-form",
             "buttonLabel": "내 프로젝트에 저장"
           }
         },
         {
-          "id": "l2-b36",
-          "type": "reflection",
+          "id": "d2l2-b12-harness",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "채널을 바꾸면서도 절대 바꾸지 말아야 할 정보는 무엇이었나요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## Harness가 더 견고해졌습니다\n\n| | 1교시 | 2교시 |\n|---|---|---|\n| 흐름 | 사업정보 → AI 생성 → 사람 검수 → 저장 | 고객 원문 → 자료 정리 → ChatGPT 분석 → NotebookLM 근거 확인 → 사람 판단 → 저장 |\n\n이번에는 Harness에 **실제 고객 원문**과 **근거 확인 단계**가 추가됐습니다.\n\n## 최종 메시지\n\n**AI는 패턴을 빠르게 찾고, 실제 고객자료는 근거를 제공하며, 사람은 무엇을 믿고 사용할지 판단합니다.**\n\n**AI끼리 답이 다르면 더 매끄러운 답을 선택하지 말고 원문으로 돌아갑니다.**\n\n다음 교시에서는 오늘 남긴 반복 패턴과 근거를 이용합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l2-b37",
-          "type": "internal-app",
-          "visibility": "visible",
-          "data": {
-            "route": "/workspace",
-            "practiceName": "내 프로젝트 결과물 보기",
-            "completionNote": "저장한 SNS 콘텐츠를 확인하고 다음 Lesson에서 블로그·뉴스레터로 확장합니다.",
-            "requireCompletionCheck": false
-          }
-        },
-        {
-          "id": "l2-b38",
+          "id": "d2l2-b12-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "다음 Lesson은 글을 더 길게 쓰는 것이 아니라 읽는 맥락을 바꾸는 수업입니다.",
+            "markdown": "Harness 6요소를 다시 강의하지 마세요 — 'Workflow가 더 견고해졌다'는 느낌만 주면 됩니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
