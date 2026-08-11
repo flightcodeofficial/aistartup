@@ -44,9 +44,21 @@ export const week2: WeekMeta = {
       status: "ready",
       release: "open",
     },
-    scheduledDay(3, "DAY 3 — AI 기반 이메일·DM·홍보문구 작성", "AI로 이메일·DM·홍보문구 작성을 실습합니다."),
-    scheduledDay(4, "DAY 4 — AI 기반 랜딩페이지·소개페이지 제작", "AI로 랜딩페이지·소개페이지 제작을 실습합니다."),
-    scheduledDay(5, "DAY 5 — Notion AI 활용 고객 FAQ 및 응대 시나리오", "Notion AI로 고객 FAQ 및 응대 시나리오를 작성합니다."),
+    {
+      ...scheduledDay(3, "DAY 3 — AI 기반 이메일·DM·홍보문구 작성", "AI로 이메일·DM·홍보문구 작성을 실습합니다."),
+      status: "ready",
+      release: "open",
+    },
+    {
+      ...scheduledDay(4, "DAY 4 — AI 기반 랜딩페이지·소개페이지 제작", "AI로 랜딩페이지·소개페이지 제작을 실습합니다."),
+      status: "ready",
+      release: "open",
+    },
+    {
+      ...scheduledDay(5, "DAY 5 — Notion AI 활용 고객 FAQ 및 응대 시나리오", "Notion AI로 고객 FAQ 및 응대 시나리오를 작성합니다."),
+      status: "ready",
+      release: "open",
+    },
   ],
 };
 
