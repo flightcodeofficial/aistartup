@@ -4,8 +4,8 @@
   "week": 2,
   "day": 2,
   "lesson": 3,
-  "title": "블로그·뉴스레터 장문 콘텐츠 만들기",
-  "description": "하나의 원천문서를 검색 맥락의 블로그와 관계 맥락의 뉴스레터로 각각 재구성하고 검수한다.",
+  "title": "GPT로 블로그 콘텐츠 자동 생성하기",
+  "description": "1교시 핵심 메시지와 2교시 SNS 결과를 바탕으로 블로그 Outline을 만들고, GPT로 초안을 생성한 뒤 편집해 검색 맥락에 맞는 블로그 콘텐츠를 완성합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -14,16 +14,20 @@
   "pages": [
     {
       "id": "p01",
-      "title": "긴 글은 읽는 맥락을 설계하는 일입니다",
+      "title": "SNS에서 Blog로",
       "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b01",
+          "id": "d2l3-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 블로그와 뉴스레터는\n# 같은 긴 글이 아닙니다\n\n**블로그는 검색·비교 맥락, 뉴스레터는 이미 관계가 있는 구독자 맥락에서 설계합니다.**",
+            "markdown": "# 길게 늘리는 것이 Blog가 아닙니다",
             "emphasis": "hero"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
           },
           "layout": {
             "width": "wide",
@@ -32,47 +36,43 @@
           }
         },
         {
-          "id": "l3-b02",
+          "id": "d2l3-b01-preview-msg",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "marketing",
+            "emptyMessage": "1교시 콘텐츠 메시지 원장이 없어도 진행할 수 있습니다."
+          }
+        },
+        {
+          "id": "d2l3-b01-preview-sns",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
             "artifactType": "content",
-            "emptyMessage": "Lesson2에서 저장한 content 결과물이 없습니다."
+            "emptyMessage": "2교시 SNS 콘텐츠가 없어도 진행할 수 있습니다."
           }
         },
         {
-          "id": "l3-b03",
-          "type": "infographic",
-          "title": "Lesson3 결과",
+          "id": "d2l3-b01-key",
+          "type": "rich-text",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "블로그 구조 설계"
-              },
-              {
-                "label": "뉴스레터 구조 설계"
-              },
-              {
-                "label": "ChatGPT로 장문 초안 생성"
-              },
-              {
-                "label": "사실·말투·중복 표현 검수"
-              }
-            ]
+            "markdown": "1교시 핵심 메시지와 2교시 SNS 결과를 불러와 오늘의 재료로 사용합니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l3-b04",
+          "id": "d2l3-b01-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "블로그를 뉴스레터에 복붙하는 방식과 맥락 설계의 차이를 보여주세요.",
+            "markdown": "\"블로그 = SNS를 길게 늘인 글\"이라는 오해를 먼저 깨주세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -86,44 +86,34 @@
     },
     {
       "id": "p02",
-      "title": "블로그와 뉴스레터의 차이",
+      "title": "SNS와 Blog의 차이",
       "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b05",
-          "type": "image",
-          "title": "블로그와 뉴스레터 구조 비교",
+          "id": "d2l3-b02-compare",
+          "type": "infographic",
+          "title": "SNS vs Blog",
           "visibility": "visible",
           "data": {
-            "url": "/lesson-content/week2/day2/blog_newsletter_compare.svg",
-            "alt": "블로그와 뉴스레터 읽기 맥락 비교",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "SNS",
+                "description": "빠른 관심·반응이 목적"
+              },
+              {
+                "label": "Blog",
+                "description": "질문 해결·정보 제공·설명이 목적"
+              }
+            ]
           }
         },
         {
-          "id": "l3-b06",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "같은 원천을 사용해도 **독자가 왜 이 글을 읽는지**가 다르므로 시작 문장과 설명 순서가 달라집니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l3-b07",
+          "id": "d2l3-b02-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "검색 유입자와 기존 구독자의 질문이 어떻게 다른지 묻게 하세요.",
+            "markdown": "블로그는 '검색해서 찾아온 사람'을 상대한다는 점을 강조하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -137,54 +127,15 @@
     },
     {
       "id": "p03",
-      "title": "블로그 — 검색하고 비교하는 사람에게",
-      "layout": "standard",
+      "title": "검색의도는 아주 간단히",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b08",
-          "type": "infographic",
-          "title": "블로그 기본 구조",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "문제",
-                "description": "검색자가 겪는 문제"
-              },
-              {
-                "label": "관찰",
-                "description": "왜 문제가 생기는지"
-              },
-              {
-                "label": "방법",
-                "description": "실행 가능한 방법"
-              },
-              {
-                "label": "근거",
-                "description": "원천의 사실·경험"
-              },
-              {
-                "label": "한계",
-                "description": "적용되지 않는 경우"
-              },
-              {
-                "label": "CTA",
-                "description": "다음 행동 하나"
-              }
-            ]
-          }
-        },
-        {
-          "id": "l3-b09",
+          "id": "d2l3-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### 제목보다 먼저 정할 것\n\n- 이 글을 찾는 사람은 **무슨 질문을 해결하려는가?**\n- 읽고 나서 **무엇을 할 수 있어야 하는가?**\n- 내가 **확인해서 말할 수 있는 범위**는 어디까지인가?",
+            "markdown": "## 사람이 어떤 질문을 가지고 이 글을 찾는가?\n\n예: \"카페 SNS 글 쉽게 쓰는 법\"\n\n**SEO 전문 강의로 확장하지 않습니다.** 학생이 검색할 법한 질문 하나만 생각하면 충분합니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -194,29 +145,11 @@
           }
         },
         {
-          "id": "l3-b09b",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**SEO의 출발점은 키워드 반복이 아니라 고객이 실제로 검색하는 질문에 정확히 답하는 것입니다.**",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l3-b10",
+          "id": "d2l3-b03-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "SEO 기술보다 검색자의 질문과 답변 범위를 먼저 설계합니다.",
+            "markdown": "키워드 도구·검색량 분석 같은 SEO 전문 내용으로 빠지지 마세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -230,78 +163,47 @@
     },
     {
       "id": "p04",
-      "title": "뉴스레터 — 이미 관계가 있는 사람에게",
-      "layout": "standard",
+      "title": "블로그 기본 구조",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b11",
+          "id": "d2l3-b04-structure",
           "type": "infographic",
-          "title": "뉴스레터 기본 구조",
+          "title": "블로그 구조",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
             "variant": "steps",
             "items": [
               {
-                "label": "개인적 도입",
-                "description": "보내는 이유와 맥락"
+                "label": "Title"
               },
               {
-                "label": "핵심 통찰",
-                "description": "하나만 가져갈 생각"
+                "label": "Intro"
               },
               {
-                "label": "적용법",
-                "description": "바로 해볼 방법"
+                "label": "Problem"
               },
               {
-                "label": "CTA",
-                "description": "답장·확인·참여 중 하나"
+                "label": "Useful Information"
+              },
+              {
+                "label": "Example / Method"
+              },
+              {
+                "label": "Summary"
+              },
+              {
+                "label": "CTA"
               }
             ]
           }
         },
         {
-          "id": "l3-b12",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "### 도입 예시\n\n“이번 주 카페 사장님들과 이야기하면서 같은 질문을 여러 번 들었습니다. ‘사진은 있는데 오늘은 무슨 글을 올리죠?’ 그래서 이번 메일은 **새 아이디어보다 이미 받은 고객 질문을 콘텐츠 재료로 바꾸는 방법**만 정리했습니다.”",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l3-b13",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "친근함을 위해 **가짜 경험이나 가짜 고객 사례를 만들 필요는 없습니다.**",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l3-b14",
+          "id": "d2l3-b04-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "친밀한 말투와 사실 여부는 별개라는 점을 강조하세요.",
+            "markdown": "이 7단계 순서를 페이지 상단에 계속 참고하게 하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -315,33 +217,56 @@
     },
     {
       "id": "p05",
-      "title": "인터랙티브 — 같은 원천으로 구조 바꾸기",
-      "layout": "fullscreen",
+      "title": "실습 1 — Outline 만들기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "l3-b15",
-          "type": "html-file",
-          "title": "블로그/뉴스레터 구조 비교",
+          "id": "d2l3-b05-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "src": "/lesson-content/week2/day2/longform_structure_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
+            "markdown": "# GPT에 바로 본문을 쓰게 하지 않습니다\n\nOutline 후보 3개를 먼저 만듭니다.",
+            "emphasis": "normal"
           },
           "layout": {
-            "width": "full",
-            "align": "center",
+            "width": "wide",
+            "align": "left",
             "spacing": "medium"
           }
         },
         {
-          "id": "l3-b16",
+          "id": "d2l3-b05-prompt",
+          "type": "prompt",
+          "title": "Outline 생성 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[CONTEXT]\n\n핵심 메시지:\n[ 1교시 결과 ]\n\n타겟 고객:\n[ ]\n\n독자가 검색할 질문:\n[ P03에서 정한 질문 ]\n\n[INSTRUCTION]\n\n위 Context로 블로그 Outline 후보 3개를 만들어주세요. 각 Outline은 Title / Intro / Problem / Useful Information / Example·Method / Summary / CTA 순서를 따르되, 소제목 구성을 서로 다르게 해주세요.\n\n[GUARDRAIL]\n\n제공하지 않은 사실·수치·사례를 만들지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분을 1교시 핵심 메시지와 P03에서 정한 질문으로 바꾸세요."
+        },
+        {
+          "id": "d2l3-b05-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 Outline 생성",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Outline 후보 3개 생성",
+            "practiceDescription": "블로그 구조를 따르는 Outline 후보 3개를 만듭니다.",
+            "estimatedMinutes": 10
+          }
+        },
+        {
+          "id": "d2l3-b05-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "두 버튼을 번갈아 누르며 독자 관계가 구조를 어떻게 바꾸는지 확인하세요.",
+            "markdown": "본문을 바로 쓰게 하고 싶어하는 학생이 있으면 순서를 지키게 안내하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -355,60 +280,38 @@
     },
     {
       "id": "p06",
-      "title": "장문일수록 원천 근거를 내부에 남깁니다",
-      "layout": "standard",
+      "title": "좋은 Outline 고르기",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b17",
+          "id": "d2l3-b06-criteria",
           "type": "infographic",
-          "title": "장문 콘텐츠 근거 추적",
+          "title": "선택 기준",
           "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
           "data": {
-            "variant": "steps",
+            "variant": "checklist",
             "items": [
               {
-                "label": "원천 번호 붙이기",
-                "description": "사실·고객 말·경험에 내부 번호"
+                "label": "독자 질문에 답하는가?"
               },
               {
-                "label": "초안 문단과 연결",
-                "description": "어떤 문단이 어떤 원천을 썼는지"
+                "label": "순서가 자연스러운가?"
               },
               {
-                "label": "확인 필요 분리",
-                "description": "근거 없는 주장은 초안에서 제외"
+                "label": "같은 내용 반복이 없는가?"
               },
               {
-                "label": "최종 편집",
-                "description": "내부 기록은 보관"
+                "label": "제품 홍보만 가득하지 않은가?"
               }
             ]
           }
         },
         {
-          "id": "l3-b18",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "AI가 글을 길게 만들수록 **원문에 없는 연결 문장·수치·사례**가 끼어들 수 있습니다. 길이보다 추적 가능성이 먼저입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l3-b19",
+          "id": "d2l3-b06-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "원천 번호를 내부 검수용으로 남기게 하세요.",
+            "markdown": "3개 중 1개를 고르게 하고, 고른 이유를 말로 설명시키세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -422,79 +325,15 @@
     },
     {
       "id": "p07",
-      "title": "실습 — 장문 콘텐츠 브리프",
+      "title": "실습 2 — Draft 생성",
       "layout": "practice",
       "blocks": [
         {
-          "id": "l3-b20",
-          "type": "input-form",
-          "title": "블로그·뉴스레터 브리프",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "목표 고객",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f2",
-                "label": "원천문서 핵심 메시지",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f3",
-                "label": "사용 가능한 근거",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f4",
-                "label": "블로그에서 해결할 검색 질문",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f5",
-                "label": "뉴스레터를 지금 보내는 이유",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f6",
-                "label": "브랜드 말투 규칙",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f7",
-                "label": "블로그 CTA",
-                "kind": "short-text",
-                "required": false
-              },
-              {
-                "id": "f8",
-                "label": "뉴스레터 CTA",
-                "kind": "short-text",
-                "required": false
-              }
-            ],
-            "inputArtifactTypes": [
-              "marketing",
-              "content",
-              "persona",
-              "value-proposition"
-            ]
-          }
-        },
-        {
-          "id": "l3-b21",
+          "id": "d2l3-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "블로그와 뉴스레터 CTA가 달라도 됩니다. 다만 **각 콘텐츠 안에서는 하나만** 사용합니다.",
+            "markdown": "# 선택한 Outline으로 본문 초안을 만듭니다",
             "emphasis": "normal"
           },
           "layout": {
@@ -504,11 +343,38 @@
           }
         },
         {
-          "id": "l3-b22",
+          "id": "d2l3-b07-prompt",
+          "type": "prompt",
+          "title": "Draft 생성 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "아래 Outline과 핵심 메시지를 바탕으로 블로그 본문 초안을 작성해주세요.\n\n[선택한 Outline]\n[ P06에서 고른 Outline 붙여넣기 ]\n\n[핵심 메시지]\n[ 1교시 결과 ]\n\n[Context]\n[ 필요한 추가 사실·사례가 있다면 여기에 ]\n\nOutline의 순서를 유지하고, 제공한 사실 외의 내용을 새로 만들지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분을 P06에서 고른 Outline과 1교시 핵심 메시지로 바꾸세요."
+        },
+        {
+          "id": "d2l3-b07-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 Draft 생성",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "본문 초안 생성",
+            "practiceDescription": "선택한 Outline을 본문 초안으로 확장합니다.",
+            "estimatedMinutes": 12
+          }
+        },
+        {
+          "id": "d2l3-b07-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "각각의 ‘읽는 이유’를 한 문장으로 적게 하세요.",
+            "markdown": "초안은 완성본이 아니라는 것을 미리 알려주세요 — 다음 페이지에서 편집합니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -522,43 +388,55 @@
     },
     {
       "id": "p08",
-      "title": "ChatGPT로 블로그·뉴스레터 초안 만들기",
-      "layout": "practice",
+      "title": "AI Writer → AI Editor",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b23",
-          "type": "prompt",
-          "title": "장문 콘텐츠 변환 프롬프트",
-          "description": "{{ }}를 Lesson1과 P07 결과로 바꿔 넣으세요.",
+          "id": "d2l3-b08-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "prompt": "[원천문서]와 [장문 브리프]만 사용해 블로그와 뉴스레터 초안을 만드세요.\n\n[원천문서]\n{{Lesson1 메시지 원장과 근거}}\n\n[장문 브리프]\n{{P07 작성 내용}}\n\n공통 규칙:\n- 새로운 통계, 고객 사례, 성과, 인용을 만들지 마세요.\n- 제품의 한계와 적용되지 않는 고객을 숨기지 마세요.\n- 브랜드 말투 규칙을 지키세요.\n- 각 콘텐츠의 CTA는 하나만 사용하세요.\n- 문단 끝에 사용한 원천 근거 번호를 [내부 검수용]으로 표시하세요.\n- 사람이 확인해야 할 사실 목록을 마지막에 작성하세요.\n\n출력 A — 블로그: 문제 → 관찰 → 방법 → 근거 → 한계 → CTA\n출력 B — 뉴스레터: 개인적 도입 → 핵심 통찰 → 적용법 → CTA\n두 콘텐츠가 같은 문장으로 시작하지 않게 하세요.",
-            "targetTool": "ChatGPT",
-            "copyable": true
+            "markdown": "## 생성 AI는 Writer뿐 아니라 Editor로도 사용합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l3-b24",
-          "type": "external-link",
-          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요.",
+          "id": "d2l3-b08-check",
+          "type": "infographic",
+          "title": "검토 항목",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "블로그·뉴스레터 초안 생성",
-            "practiceDescription": "같은 원천을 두 장문 맥락으로 변환합니다.",
-            "estimatedMinutes": 15
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "반복 제거"
+              },
+              {
+                "label": "애매한 표현"
+              },
+              {
+                "label": "긴 문장"
+              },
+              {
+                "label": "근거 없는 주장"
+              },
+              {
+                "label": "광고 냄새가 너무 강한 부분"
+              }
+            ]
           }
         },
         {
-          "id": "l3-b25",
+          "id": "d2l3-b08-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "두 초안이 표현만 다른 복사본인지 실제 맥락이 달라졌는지 비교하세요.",
+            "markdown": "AI를 Writer로만 쓰던 습관을 Editor로도 쓰는 습관으로 넓혀주세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -572,72 +450,56 @@
     },
     {
       "id": "p09",
-      "title": "장문 초안 검수",
-      "layout": "standard",
+      "title": "실습 3 — 편집 Prompt",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "l3-b26",
-          "type": "quiz",
-          "title": "장문 검수 퀴즈",
+          "id": "d2l3-b09-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              {
-                "id": "q1",
-                "question": "원천에는 없던 ‘전국 500개 매장이 사용하는 방식’이 초안에 생겼습니다. 어떻게 해야 할까요?",
-                "choices": [
-                  {
-                    "id": "c1",
-                    "text": "신뢰감을 주므로 유지한다"
-                  },
-                  {
-                    "id": "c2",
-                    "text": "‘많은 매장’으로 바꾼다"
-                  },
-                  {
-                    "id": "c3",
-                    "text": "삭제하고 확인 필요 목록에 남긴다"
-                  }
-                ],
-                "correctChoiceId": "c3",
-                "explanation": "숫자를 일반화해도 근거 없는 사회적 증거입니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "l3-b27",
-          "type": "infographic",
-          "title": "장문에서 자주 생기는 오류",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
+            "markdown": "# \"다시 써줘\"가 아니라 문제점부터 찾게 합니다",
+            "emphasis": "normal"
           },
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "없는 인과관계를 추가함"
-              },
-              {
-                "label": "신뢰감을 위해 수치·사례를 만듦"
-              },
-              {
-                "label": "같은 말을 여러 문단에서 반복함"
-              },
-              {
-                "label": "한계를 지우고 장점만 남김"
-              }
-            ]
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l3-b28",
+          "id": "d2l3-b09-prompt",
+          "type": "prompt",
+          "title": "편집 Prompt",
+          "visibility": "visible",
+          "data": {
+            "prompt": "아래 블로그 초안에서 문제점을 먼저 찾아주세요. 바로 다시 쓰지 마세요.\n\n[초안]\n[ P07 결과 붙여넣기 ]\n\n다음 기준으로 문제점만 나열해주세요: 반복되는 표현, 애매한 표현, 지나치게 긴 문장, 근거 없는 주장, 광고 느낌이 과한 부분.\n\n문제점을 확인한 뒤, 제가 다시 요청하면 그때 수정된 버전을 작성해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분에 P07 결과를 붙여넣으세요."
+        },
+        {
+          "id": "d2l3-b09-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 편집 검토",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "편집 검토 실행",
+            "practiceDescription": "문제점을 먼저 찾고, 그 다음에만 수정합니다.",
+            "estimatedMinutes": 10
+          }
+        },
+        {
+          "id": "d2l3-b09-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "글이 길어질수록 환각 지점도 늘어날 수 있음을 표시하게 하세요.",
+            "markdown": "문제점 리스트를 보지 않고 바로 재작성을 요청하는 학생이 없는지 확인하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -651,50 +513,15 @@
     },
     {
       "id": "p10",
-      "title": "편집은 더 멋지게가 아니라 더 명확하게",
-      "layout": "standard",
+      "title": "제목 / 소제목 / CTA 다듬기",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b29",
-          "type": "infographic",
-          "title": "사람 편집 5단계",
-          "visibility": "visible",
-          "theme": {
-            "background": "muted",
-            "bordered": false
-          },
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "중복 삭제",
-                "description": "같은 뜻 반복 제거"
-              },
-              {
-                "label": "한 문단 한 역할",
-                "description": "문제·방법·근거 분리"
-              },
-              {
-                "label": "추상어 구체화",
-                "description": "혁신적보다 실제 행동"
-              },
-              {
-                "label": "말투 통일",
-                "description": "문장 길이·용어 일관성"
-              },
-              {
-                "label": "CTA 하나 확인",
-                "description": "다음 행동 명확화"
-              }
-            ]
-          }
-        },
-        {
-          "id": "l3-b30",
+          "id": "d2l3-b10-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "❌ **혁신적인 AI 기반 솔루션으로 새로운 가능성을 엽니다.**\n\n✅ **고객이 자주 묻는 질문을 모아 다음 SNS 글의 주제와 초안을 정리하는 데 활용합니다.**",
+            "markdown": "## 제목 후보를 비교하고, 본문에 맞는 CTA를 답니다\n\nSEO는 검색 질문에 맞는 제목 수준까지만 — 기본기만 다룹니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -704,11 +531,11 @@
           }
         },
         {
-          "id": "l3-b31",
+          "id": "d2l3-b10-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "AI 티를 감으로 말하지 말고 추상어·중복·과장처럼 수정 가능한 기준으로 설명하세요.",
+            "markdown": "제목 3개 정도를 비교해서 고르는 습관을 만들어주세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -722,77 +549,75 @@
     },
     {
       "id": "p11",
-      "title": "최종 실습 — 블로그·뉴스레터 편집본",
+      "title": "최종 Blog",
       "layout": "practice",
       "blocks": [
         {
-          "id": "l3-b32",
+          "id": "d2l3-b11-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 완성한 블로그를 정리합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b11-form",
           "type": "input-form",
-          "title": "장문 콘텐츠 편집본",
+          "title": "최종 블로그",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "블로그 제목과 해결할 질문",
+                "label": "제목",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f2",
-                "label": "블로그 개요 또는 편집본",
+                "label": "도입",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f3",
-                "label": "블로그 CTA",
-                "kind": "short-text",
+                "label": "본문",
+                "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f4",
-                "label": "뉴스레터 제목/프리헤더 또는 첫 문장",
+                "label": "CTA",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f5",
-                "label": "뉴스레터 본문 또는 편집본",
+                "label": "사용한 핵심 메시지",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f6",
-                "label": "뉴스레터 CTA",
-                "kind": "short-text",
-                "required": false
-              },
-              {
-                "id": "f7",
-                "label": "사용한 원천 근거",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f8",
-                "label": "사람이 추가 확인할 사실",
+                "label": "확인 필요 사실",
                 "kind": "long-text",
                 "required": false
               }
-            ],
-            "inputArtifactTypes": [
-              "marketing",
-              "content"
             ]
           }
         },
         {
-          "id": "l3-b33",
+          "id": "d2l3-b11-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "완벽한 장문보다 원천 추적이 가능한 편집본을 완료 기준으로 잡으세요.",
+            "markdown": "확인 필요 사실 칸을 비워두지 않게 안내하세요 — 없으면 '없음'으로 명시합니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -806,57 +631,67 @@
     },
     {
       "id": "p12",
-      "title": "저장 — 같은 원천, 다른 읽기 맥락",
-      "layout": "standard",
+      "title": "Blog 저장",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "l3-b34",
+          "id": "d2l3-b12-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 만든 블로그 편집본을 저장합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b12-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
             "artifactType": "content",
-            "emptyMessage": "아직 저장된 블로그·뉴스레터 편집본이 없습니다."
+            "emptyMessage": "아직 저장된 블로그 결과가 없습니다."
           }
         },
         {
-          "id": "l3-b35",
+          "id": "d2l3-b12-save",
           "type": "save-artifact",
           "visibility": "visible",
           "data": {
             "artifactType": "content",
-            "artifactTitle": "Day2 Lesson3 — 블로그·뉴스레터 편집본",
-            "sourceBlockId": "l3-b32",
+            "artifactTitle": "Day2 Lesson3 — 블로그 편집본",
+            "sourceBlockId": "d2l3-b11-form",
             "buttonLabel": "내 프로젝트에 저장"
           }
         },
         {
-          "id": "l3-b36",
-          "type": "reflection",
+          "id": "d2l3-b12-bridge",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "블로그와 뉴스레터에서 가장 크게 달라져야 했던 부분은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## 다음 교시\n\n긴 글까지 완성했습니다. 이제 같은 원천을 다시 활용해 **Newsletter**와 여러 콘텐츠 형식으로 바꿉니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "l3-b37",
-          "type": "internal-app",
-          "visibility": "visible",
-          "data": {
-            "route": "/workspace",
-            "practiceName": "내 프로젝트 결과물 보기",
-            "completionNote": "저장한 장문 콘텐츠를 확인하고 마지막 Lesson에서 공급망으로 묶습니다.",
-            "requireCompletionCheck": false
-          }
-        },
-        {
-          "id": "l3-b38",
+          "id": "d2l3-b12-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "다음 Lesson은 개별 문구 생성보다 재사용·검수·실험 구조를 만듭니다.",
+            "markdown": "저장된 결과가 workspace에 보이는지 확인하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
