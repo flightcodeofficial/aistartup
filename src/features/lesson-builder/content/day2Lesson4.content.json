@@ -5,7 +5,7 @@
   "day": 2,
   "lesson": 4,
   "title": "GPT로 뉴스레터 만들고 콘텐츠 재활용하기",
-  "description": "블로그와 핵심 메시지를 뉴스레터로 변환하고, 하나의 원천 콘텐츠를 SNS·블로그·뉴스레터 등 여러 채널에서 다시 사용할 수 있는 콘텐츠 패키지로 만듭니다.",
+  "description": "3교시 Blog와 1교시 핵심 메시지를 Newsletter로 변환·평가·수정한 뒤, Master Source를 기준으로 Content Atom과 Multi-channel 콘텐츠까지 만들어 Human Consistency Review를 거친 최종 Content Pack을 완성합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "매번 처음부터 만들 필요가 있을까?",
+      "title": "오늘은 새 콘텐츠를 처음부터 만들지 않습니다",
       "layout": "wide",
       "blocks": [
         {
@@ -22,7 +22,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 하나의 좋은 Context는 여러 번 다시 쓸 수 있습니다",
+            "markdown": "# 하나의 좋은 Context는 여러 번 다시 쓸 수 있습니다\n\n**오늘은 이미 만든 좋은 콘텐츠를 더 많이 일하게 만듭니다.**",
             "emphasis": "hero"
           },
           "theme": {
@@ -56,26 +56,46 @@
         {
           "id": "d2l4-b01-flow",
           "type": "infographic",
-          "title": "지금까지의 흐름",
+          "title": "오늘의 Workflow",
           "visibility": "visible",
           "data": {
             "variant": "steps",
             "items": [
               {
-                "label": "1교시",
-                "description": "Core Message"
+                "label": "Blog",
+                "description": "3교시 최종 Blog"
               },
               {
-                "label": "2교시",
-                "description": "SNS"
+                "label": "Newsletter",
+                "description": "Transform (요약 아님)"
               },
               {
-                "label": "3교시",
-                "description": "Blog"
+                "label": "Critique",
+                "description": "AI가 스스로 문제점 진단"
               },
               {
-                "label": "4교시(오늘)",
-                "description": "Newsletter + Repurpose"
+                "label": "Revision",
+                "description": "선택한 문제만 수정"
+              },
+              {
+                "label": "Repurpose",
+                "description": "채널 목적에 맞게 재설계"
+              },
+              {
+                "label": "Atomize",
+                "description": "작은 콘텐츠 조각 추출"
+              },
+              {
+                "label": "Multi-channel",
+                "description": "Master Source → 여러 채널"
+              },
+              {
+                "label": "Human Review",
+                "description": "일관성 검수"
+              },
+              {
+                "label": "Final Content Pack",
+                "description": "저장"
               }
             ]
           }
@@ -99,7 +119,7 @@
     },
     {
       "id": "p02",
-      "title": "Newsletter는 Blog와 다르다",
+      "title": "Blog와 Newsletter는 읽는 상황이 다릅니다",
       "layout": "wide",
       "blocks": [
         {
@@ -112,13 +132,31 @@
             "items": [
               {
                 "label": "Blog",
-                "description": "검색·정보 탐색 맥락 — 처음 찾아온 독자"
+                "description": "검색/탐색 · 질문에 대한 충분한 답 · 독자가 필요할 때 찾아옴"
               },
               {
                 "label": "Newsletter",
-                "description": "관계·구독·반복 커뮤니케이션 맥락 — 이미 관계가 있는 독자"
+                "description": "이미 연결된 독자 · 반복 커뮤니케이션 · 직접 말을 거는 관계적 맥락"
               }
             ]
+          }
+        },
+        {
+          "id": "d2l4-b02-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**나쁜 방식**: Blog 전체를 이메일에 그대로 복사.\n\n**좋은 방식**: 같은 핵심내용을 Newsletter의 읽는 상황에 맞게 재구성.\n\n**Blog는 정보를 찾는 독자에게 답하고, Newsletter는 이미 연결된 독자에게 말을 겁니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -140,7 +178,7 @@
     },
     {
       "id": "p03",
-      "title": "Newsletter 기본 구조",
+      "title": "Newsletter를 점검하는 5가지 Lens",
       "layout": "wide",
       "blocks": [
         {
@@ -152,19 +190,24 @@
             "variant": "steps",
             "items": [
               {
-                "label": "Subject"
+                "label": "Subject",
+                "description": "메일을 열 이유"
               },
               {
-                "label": "Preheader"
+                "label": "Preheader",
+                "description": "Subject 보완"
               },
               {
-                "label": "Opening"
+                "label": "Opening",
+                "description": "계속 읽을 이유"
               },
               {
-                "label": "Main Value"
+                "label": "Main Value",
+                "description": "핵심 정보"
               },
               {
-                "label": "CTA"
+                "label": "CTA",
+                "description": "다음 행동"
               }
             ]
           }
@@ -174,7 +217,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "간단하게만 다룹니다 — 이메일 마케팅 전문 강의로 확장하지 마세요.",
+            "markdown": "간단하게만 다룹니다 — 이메일 마케팅 전문 강의로 확장하지 마세요. Blog 구조를 복사하는 것이 아니라 Newsletter에 맞는 읽기 흐름을 만든다는 것이 핵심입니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -188,15 +231,15 @@
     },
     {
       "id": "p04",
-      "title": "실습 1 — Newsletter 생성",
-      "layout": "practice",
+      "title": "Subject는 SNS Hook과 비슷하지만 같은 것은 아닙니다",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d2l4-b04-title",
+          "id": "d2l4-b04hook-def",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 블로그 + 핵심 메시지를 Context로 제공합니다",
+            "markdown": "**SNS Hook** — 스크롤을 멈추게 하는 첫 부분\n\n**Newsletter Subject** — 메일을 열 이유\n\n**Subject 5유형**: 질문형 · How-to형 · 직접형 · 변화/혜택형 · 호기심형\n\n예: \"매장 SNS 글을 빨리 만드는 3단계\" / \"오늘도 SNS 글부터 막히시나요?\" / \"이번 주 SNS 콘텐츠 체크리스트\"\n\n**Subject가 약속한 내용은 본문에서 실제로 제공해야 합니다. Clickbait 금지.**",
             "emphasis": "normal"
           },
           "layout": {
@@ -206,38 +249,11 @@
           }
         },
         {
-          "id": "d2l4-b04-prompt",
-          "type": "prompt",
-          "title": "Newsletter 생성 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[CONTEXT]\n\n블로그 본문:\n[ 3교시 결과 ]\n\n핵심 메시지:\n[ 1교시 결과 ]\n\n타겟 고객:\n[ ]\n\nTone:\n[ ]\n\n[INSTRUCTION]\n\n위 블로그를 구독자에게 보내는 Newsletter로 바꿔주세요. Subject / Preheader / Opening / Main Value / CTA 구조를 따라주세요. 블로그를 그대로 복사하지 말고, 이미 관계가 있는 독자에게 보내는 톤으로 다시 써주세요.\n\n[GUARDRAIL]\n\n블로그에 없던 사실을 새로 추가하지 마세요.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "[ ] 부분을 3교시 블로그와 1교시 핵심 메시지로 바꾸세요."
-        },
-        {
-          "id": "d2l4-b04-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 Newsletter 생성",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Newsletter 생성",
-            "practiceDescription": "블로그를 Newsletter 구조로 재구성합니다.",
-            "estimatedMinutes": 12
-          }
-        },
-        {
-          "id": "d2l4-b04-script",
+          "id": "d2l4-b04hook-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "블로그를 그대로 복사-붙여넣기한 결과가 나오면 다시 요청하도록 안내하세요.",
+            "markdown": "Subject 유형 5개를 실제 학생 사업 예시로 즉석에서 만들어보게 하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -251,106 +267,55 @@
     },
     {
       "id": "p05",
-      "title": "Subject Line 여러 후보",
+      "title": "실습 1 — ChatGPT로 Subject Variants 만들기",
       "layout": "practice",
       "blocks": [
         {
-          "id": "d2l4-b05-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# Subject Line은 5개 정도 만들어 비교합니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l4-b05-prompt",
+          "id": "d2l4-b05sv-prompt",
           "type": "prompt",
-          "title": "Subject Line 생성",
+          "title": "Subject Variants 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "위 Newsletter의 Subject Line 후보 5개를 만들어주세요. 과장되거나 클릭베이트성 표현은 피해주세요.",
+            "prompt": "[CONTEXT]\n\n타겟 고객:\n[ ]\n\nNewsletter 핵심 내용:\n[ ]\n\nCore Message:\n[ ]\n\n브랜드 Tone:\n[ ]\n\n[INSTRUCTION]\n\n위 내용을 바탕으로 Newsletter Subject 후보 7개를 만들어주세요.\n\n다음 접근을 다양하게 사용해주세요.\n\n- 질문형\n- How-to형\n- 직접형\n- 변화/혜택형\n- 호기심형\n\n각 Subject마다:\n\n1. Subject\n2. 유형\n3. 왜 이 독자에게 적합한지\n\n를 작성해주세요.\n\n[GUARDRAIL]\n\n- 본문에 없는 내용을 약속하지 마세요.\n- 확인되지 않은 숫자나 효과를 사용하지 마세요.\n- 과도한 Clickbait를 사용하지 마세요.\n- 같은 문장을 단어만 조금 바꿔 반복하지 마세요.\n\n[OUTPUT]\n\nSubject | 유형 | 적합 이유\n\n형태로 정리해주세요.",
             "targetTool": "ChatGPT",
             "copyable": true
-          }
+          },
+          "description": "[ ] 부분을 1교시 결과로 바꾼 뒤 ChatGPT에 붙여넣으세요. 복사 → [ ] 수정 → ChatGPT 실행 → 7개 중 1개 선택."
         },
         {
-          "id": "d2l4-b05-link",
+          "id": "d2l4-b05sv-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
             "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 Subject Line 생성",
+            "buttonLabel": "ChatGPT에서 Subject 생성",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "Subject Line 5개 생성",
-            "practiceDescription": "과장 없는 Subject Line 후보를 비교합니다.",
+            "practiceName": "Subject Variants 7개 생성",
+            "practiceDescription": "5가지 유형을 섞은 Subject 후보 7개를 만듭니다.",
             "estimatedMinutes": 8
-          }
-        },
-        {
-          "id": "d2l4-b05-note",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**과장/클릭베이트 문구와 좋은 문구를 구분해서 선택하세요.**",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l4-b05-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "\"무료\", \"충격\", 느낌표 남발 같은 클릭베이트 신호를 예로 들어주세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         }
       ]
     },
     {
       "id": "p06",
-      "title": "사람 편집",
+      "title": "Preheader는 Subject를 반복하지 않고 보완합니다",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d2l4-b06-check",
-          "type": "infographic",
-          "title": "편집 확인 항목",
+          "id": "d2l4-b06-def",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "너무 긴가?"
-              },
-              {
-                "label": "이메일로 읽기 자연스러운가?"
-              },
-              {
-                "label": "블로그를 그대로 복붙했는가?"
-              },
-              {
-                "label": "CTA 하나가 명확한가?"
-              }
-            ]
+            "markdown": "예) Subject: \"매장 SNS 글을 빨리 만드는 3단계\"\n\n**좋은 Preheader**: \"소재 선정부터 초안 작성까지 간단하게 정리했습니다.\"\n\n**나쁜 Preheader**: \"매장 SNS 글을 빨리 만드는 3단계\" (Subject를 그대로 반복)\n\n**Subject가 질문을 던졌다면, Preheader는 왜 열어야 하는지 보완할 수 있습니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -358,7 +323,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "CTA가 2개 이상 섞여 있으면 하나로 줄이게 하세요.",
+            "markdown": "선택한 Subject 1개로 Preheader 2개를 만들어보게 하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -372,7 +337,240 @@
     },
     {
       "id": "p07",
-      "title": "Content Repurposing",
+      "title": "Blog → Newsletter는 Summarize가 아니라 Transform입니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l4-b07trans-def",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Transformation ≠ Summarization**\n\n나쁜 Prompt: \"이 Blog를 뉴스레터로 요약해줘.\"\n\n좋은 접근 — 다시 설계할 것: 독자와의 관계 · Opening · 정보 선택 · Tone · CTA · Newsletter 길이\n\n**같은 사실과 Core Message는 유지하지만 읽는 경험은 다시 설계합니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l4-b07trans-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "\"요약해줘\"라고 쓴 학생이 있으면 다음 페이지 프롬프트의 [변환 원칙] 부분을 다시 보게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "실습 2 — Blog를 Newsletter로 변환합니다",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l4-b04-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 3교시 최종 Blog를 Context로 사용합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l4-b04-prompt",
+          "type": "prompt",
+          "title": "Newsletter 변환 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[CONTEXT]\n\n타겟 고객:\n[ ]\n\nCore Message:\n[ ]\n\n브랜드 Tone:\n[ ]\n\nCTA:\n[ ]\n\n[원본 Blog]\n[ 여기에 3교시 최종 Blog를 붙여넣으세요 ]\n\n[INSTRUCTION]\n\n이 Blog를 단순히 짧게 요약하지 말고, Newsletter에서 자연스럽게 읽히도록 다시 구성해주세요.\n\n다음 구조를 사용해주세요.\n\n1. Subject 후보 3개\n2. Preheader\n3. Opening\n4. Main Value\n5. CTA\n\n[변환 원칙]\n\n- Blog의 핵심 사실과 Core Message는 유지\n- Newsletter 독자에게 직접 말을 거는 방식으로 작성\n- Blog 문장을 그대로 복사하는 비율을 줄이고 이메일에서 자연스럽게 재구성\n- 가장 중요한 정보만 선택\n- 지나치게 광고문처럼 쓰지 않기\n\n[GUARDRAIL]\n\n- 원본에 없는 사실을 추가하지 마세요.\n- 없는 고객사례나 통계를 만들지 마세요.\n- 본문이 제공하지 않는 내용을 Subject에서 약속하지 마세요.\n- 보류한 정보는 사용하지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분을 3교시 Blog와 1교시 결과로 바꾸세요."
+        },
+        {
+          "id": "d2l4-b04-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 Newsletter 생성",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Blog → Newsletter 변환",
+            "practiceDescription": "Blog를 Newsletter 구조로 재구성합니다.",
+            "estimatedMinutes": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "Newsletter도 Writer → Critic → Human → Editor",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l4-b09recap",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Day2 공통 Workflow를 새 이론처럼 다시 가르치지 않습니다.\n\n**Writer** → Newsletter Draft\n\n**Critic** → 문제 분석\n\n**Human** → 수정할 항목 선택\n\n**Editor** → 선택한 부분 수정\n\n**Newsletter도 한 번 생성하고 끝내지 않습니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l4-b09lens",
+          "type": "infographic",
+          "title": "Newsletter Critic Lens",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Subject–Body Fit"
+              },
+              {
+                "label": "Opening"
+              },
+              {
+                "label": "Main Value"
+              },
+              {
+                "label": "Length / Repetition"
+              },
+              {
+                "label": "Tone"
+              },
+              {
+                "label": "CTA"
+              },
+              {
+                "label": "Unsupported Claim"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "실습 3 — Newsletter Critic과 Editor",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l4-b10-critic",
+          "type": "prompt",
+          "title": "Step A — Critic 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "다음 Newsletter를 아직 다시 작성하지 말고 먼저 평가해주세요.\n\n[Newsletter]\n[ ]\n\n다음 기준으로 확인해주세요.\n\n1. Subject가 본문 내용을 정확하게 약속하는가?\n2. Opening이 독자가 계속 읽을 이유를 주는가?\n3. 핵심 정보가 명확한가?\n4. Blog를 그대로 복사한 느낌이 강한가?\n5. 너무 길거나 반복되는 부분이 있는가?\n6. 브랜드 Tone과 맞는가?\n7. CTA가 하나의 행동으로 명확한가?\n8. 근거 없는 사실이나 효과가 추가되지는 않았는가?\n\n각 항목마다 좋은 점 / 문제점 / 수정 제안을 작성해주세요.\n\n아직 수정본은 작성하지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분에 P08 결과를 붙여넣으세요."
+        },
+        {
+          "id": "d2l4-b10-editor",
+          "type": "prompt",
+          "title": "Step C — Editor 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "위 평가 중 내가 선택한 다음 문제만 수정해주세요.\n\n수정할 항목:\n[예: 1번 Subject / 4번 Blog 복사 느낌 / 7번 CTA]\n\n나머지 잘된 부분은 가능한 한 유지해주세요.\n\n전체 Newsletter를 처음부터 새로 작성하지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "Step B에서 학생이 직접 수정할 항목을 선택한 뒤 실행하세요."
+        },
+        {
+          "id": "d2l4-b10-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 편집 검토",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Critic → Human Decision → Editor",
+            "practiceDescription": "문제점을 먼저 찾고, 선택한 항목만 수정합니다.",
+            "estimatedMinutes": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "전문 Newsletter 도구에서는 어떻게 작업할까요?",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l4-b11-intro",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## beehiiv (선택)\n\nNewsletter 전문 Editor / Publish Workflow를 체험합니다.\n\n1. ChatGPT Newsletter 준비 → 2. beehiiv Editor에 옮기기 → 3. Subject 확인 → 4. Opening/Main/CTA 배치 → 5. 간단 Layout 적용 → 6. Preview 확인\n\nAI 기능(Rewrite/Shorten/Tone 조정)이 무료·학생 계정에서 가능하면 선택 체험하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l4-b11-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://www.beehiiv.com/",
+            "buttonLabel": "beehiiv 살펴보기 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "Newsletter 전문도구 체험",
+            "practiceDescription": "beehiiv Editor에서 Newsletter를 배치·미리보기합니다.",
+            "estimatedMinutes": 8
+          }
+        },
+        {
+          "id": "d2l4-b11-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "beehiiv AI 기능은 플랜별 제공 여부가 바뀔 수 있어 필수 실습으로 만들지 않습니다. 가입하지 않아도 다음 페이지로 진행할 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "Content Repurposing — 복사가 아니라 재설계",
       "layout": "wide",
       "blocks": [
         {
@@ -387,6 +585,33 @@
             "width": "wide",
             "align": "left",
             "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l4-b12rp-examples",
+          "type": "infographic",
+          "title": "같은 사실, 다른 채널",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Blog → Newsletter",
+                "description": "유지: 사실/Core Message · 변경: Opening/길이/Tone/CTA"
+              },
+              {
+                "label": "Blog → Instagram",
+                "description": "유지: 핵심 메시지 · 변경: Hook/압축/Visual"
+              },
+              {
+                "label": "Blog → LinkedIn",
+                "description": "유지: 사실 · 변경: 전문 맥락/Insight"
+              },
+              {
+                "label": "Blog → Threads / Short Tip",
+                "description": "유지: 핵심 메시지 · 변경: 길이/구조"
+              }
+            ]
           }
         },
         {
@@ -407,16 +632,34 @@
       ]
     },
     {
-      "id": "p08",
-      "title": "Content Atomization",
+      "id": "p13",
+      "title": "Master Source와 Content Atom",
       "layout": "wide",
       "blocks": [
+        {
+          "id": "d2l4-b13-mastersource",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Source of Truth / Master Source\n\n**여러 콘텐츠가 모두 참고하는 사실과 핵심 메시지의 기준**입니다. 이번 Day2에서는 1교시 콘텐츠 메시지 원장 + 3교시 Final Blog가 핵심 Source 역할을 합니다.\n\n**나쁜 예**: Instagram \"10분 절약\" / Blog \"30분 절약\" / Newsletter \"1시간 절약\" — 채널마다 사실이 달라짐\n\n**표현은 달라도 사실은 같아야 합니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
         {
           "id": "d2l4-b08-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 긴 콘텐츠에서 작은 조각을 뽑을 수 있습니다",
+            "markdown": "## Content Atomization\n\n**긴 콘텐츠에서 다시 쓸 수 있는 작은 콘텐츠 조각을 뽑는 것**입니다. Blog 한 편에서 핵심 주장·Hook·Tip·Quote·Checklist·FAQ 후보·CTA를 추출할 수 있습니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -457,23 +700,9 @@
         {
           "id": "d2l4-b08-note",
           "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**FAQ는 여기서 단순 예시로만 다룹니다.** FAQ 설계와 고객 응대 시나리오는 별도 주제입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l4-b08-script",
-          "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "FAQ를 오늘의 핵심 결과물로 만들지 마세요 — 조각의 한 예시일 뿐입니다.",
+            "markdown": "**FAQ는 여기서 단순 예시로만 다룹니다.** FAQ 설계와 고객 응대 시나리오는 Day5 영역입니다. 오늘의 핵심 결과물로 만들지 마세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -486,35 +715,33 @@
       ]
     },
     {
-      "id": "p09",
-      "title": "실습 2 — One Source → Multi Channel",
+      "id": "p14",
+      "title": "실습 4 — Content Atoms를 만들고 Multi-channel로 변환합니다",
       "layout": "practice",
       "blocks": [
         {
-          "id": "d2l4-b09-title",
-          "type": "rich-text",
+          "id": "d2l4-b14-atom-prompt",
+          "type": "prompt",
+          "title": "Part A — Atomization 프롬프트",
           "visibility": "visible",
           "data": {
-            "markdown": "# 오늘의 핵심 채널은 SNS · Blog · Newsletter 이 세 개입니다\n\n다른 채널은 선택 예시로만 다룹니다.",
-            "emphasis": "normal"
+            "prompt": "[원본 Blog]\n[ ]\n\n[INSTRUCTION]\n\n이 Blog에서 다른 콘텐츠 제작에 재사용할 수 있는 작은 콘텐츠 단위를 추출해주세요.\n\n다음 항목을 만들어주세요.\n\n1. 핵심 주장 3개\n2. 짧은 Tip 5개\n3. Hook 후보 5개\n4. 인용/강조 문장 후보 3개\n5. Checklist 1개\n6. FAQ 후보 3개\n7. CTA 후보 3개\n\n[GUARDRAIL]\n\n- 원본 Blog에 없는 사실을 새로 만들지 마세요.\n- 핵심 의미를 바꾸지 마세요.\n- 숫자를 채우기 위해 비슷한 내용을 반복하지 마세요.\n\n각 결과 옆에 Blog의 어느 부분에서 가져왔는지 간단히 표시해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
           },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
+          "description": "[ ] 부분에 3교시 최종 Blog를 붙여넣으세요."
         },
         {
           "id": "d2l4-b09-prompt",
           "type": "prompt",
-          "title": "멀티채널 변환 프롬프트",
+          "title": "Part B — Multi-channel 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "아래 원천 콘텐츠 하나를 여러 채널 형식으로 변환해주세요.\n\n[원천 콘텐츠]\n[ 3교시 블로그 또는 1교시 핵심 메시지 붙여넣기 ]\n\n변환할 채널:\n1. SNS 게시물 1개\n2. Newsletter 한 단락 요약\n3. 짧은 게시물(한두 문장 Tip)\n\n각 버전은 같은 핵심 메시지를 유지하되 채널 목적에 맞게 길이와 톤을 다르게 해주세요. 원천에 없는 내용을 추가하지 마세요.",
+            "prompt": "[MASTER SOURCE]\n\n타겟 고객:\n[ ]\n\nCore Message:\n[ ]\n\n사용 가능한 사실:\n[ ]\n\n브랜드 Tone:\n[ ]\n\n[원본 Blog]\n[ ]\n\n[Newsletter]\n[ ]\n\n[INSTRUCTION]\n\n위 Source를 바탕으로 다음 콘텐츠를 만들어주세요.\n\n1. Instagram 게시물 1개\n2. Threads 게시물 1개\n3. LinkedIn 게시물 1개\n4. Newsletter 소개문 1개\n5. 짧은 Tip 콘텐츠 3개\n\n각 결과마다 어떤 Source 부분을 사용했는지 / 어떤 Content Angle을 사용했는지 / 채널에 맞게 무엇을 바꿨는지 / CTA를 함께 표시해주세요.\n\n[GUARDRAIL]\n\n- Source에 없는 사실을 추가하지 마세요.\n- Core Message를 바꾸지 마세요.\n- 같은 문장을 길이만 조절해서 반복하지 마세요.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 부분에 3교시 블로그 또는 1교시 핵심 메시지를 붙여넣으세요."
+          "description": "[ ] 부분을 Master Source(1교시)·Blog(3교시)·Newsletter(P08)로 바꾸세요."
         },
         {
           "id": "d2l4-b09-link",
@@ -522,179 +749,161 @@
           "visibility": "visible",
           "data": {
             "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 멀티채널 변환",
+            "buttonLabel": "ChatGPT에서 Atomization + 변환 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "One Source → Multi Channel 실행",
-            "practiceDescription": "하나의 원천을 여러 채널 형식으로 변환합니다.",
-            "estimatedMinutes": 12
+            "practiceName": "Content Atoms + Multi-channel 변환",
+            "practiceDescription": "Blog에서 콘텐츠 조각을 뽑고, Master Source로 여러 채널 콘텐츠를 만듭니다.",
+            "estimatedMinutes": 15
           }
         },
         {
-          "id": "d2l4-b09-script",
+          "id": "d2l4-b14-matrix",
           "type": "rich-text",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
-            "markdown": "채널을 너무 많이 늘리려는 학생이 있으면 오늘은 SNS·Blog·Newsletter 세 개가 핵심이라고 안내하세요.",
+            "markdown": "**Transformation Matrix**: Blog→Newsletter(유지: 사실/Core Message, 변경: Opening/길이/Tone/CTA) · Blog→Instagram(유지: 핵심 메시지, 변경: Hook/압축/Visual) · Blog→LinkedIn(유지: 사실, 변경: 전문 맥락/Insight)\n\n**Repurposing은 무엇을 유지하고 무엇을 바꿀지 의도적으로 결정하는 작업입니다.**",
             "emphasis": "normal"
           },
-          "title": "강사 멘트",
           "layout": {
             "width": "wide",
             "align": "left",
             "spacing": "medium"
           }
+        },
+        {
+          "id": "d2l4-b14-repurposeio-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://repurpose.io/",
+            "buttonLabel": "Repurpose.io 살펴보기 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "전문 Repurposing 도구 사례",
+            "practiceDescription": "콘텐츠 변환 원칙을 사람이 설계한 뒤 배포까지 자동화하는 전문도구 사례를 살펴봅니다.",
+            "estimatedMinutes": 5
+          }
         }
       ]
     },
     {
-      "id": "p10",
-      "title": "채널별 변환 검수",
-      "layout": "wide",
+      "id": "p15",
+      "title": "최종 Multi-channel Content Pack",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d2l4-b10-check",
+          "id": "d2l4-b15-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘까지의 결과를 하나의 Content Pack으로 정리합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l4-b15-consistency",
           "type": "infographic",
-          "title": "채널별 확인",
+          "title": "Human Consistency Review",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "목적"
+                "label": "Message Consistency",
+                "description": "채널마다 같은 Core Message인가?"
               },
               {
-                "label": "길이"
+                "label": "Fact Consistency",
+                "description": "제품 기능/가격/숫자/조건이 동일한가?"
               },
               {
-                "label": "Tone"
+                "label": "Channel Fit",
+                "description": "표현은 채널에 맞게 변했는가?"
               },
               {
-                "label": "Hook"
+                "label": "Duplication",
+                "description": "Copy & Paste 수준은 아닌가?"
               },
               {
-                "label": "CTA"
+                "label": "CTA Fit",
+                "description": "각 채널의 행동이 자연스러운가?"
               }
             ]
           }
         },
         {
-          "id": "d2l4-b10-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**같은 문장을 길이만 바꾼 것은 아닌지 검수합니다.**",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l4-b10-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "길이만 다르고 내용이 똑같은 결과가 있으면 다시 요청하게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p11",
-      "title": "최종 Multi-channel Package",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d2l4-b11-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 오늘까지의 결과를 하나의 패키지로 정리합니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l4-b11-form",
+          "id": "d2l4-b15-form",
           "type": "input-form",
-          "title": "멀티채널 콘텐츠 패키지",
+          "title": "최종 Multi-channel Content Pack",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "Core Message",
+                "label": "MASTER SOURCE + CORE MESSAGE",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f2",
-                "label": "SNS final",
+                "label": "NEWSLETTER SUBJECT + PREHEADER",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f3",
-                "label": "Blog title / summary",
+                "label": "FINAL NEWSLETTER",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f4",
-                "label": "Newsletter final",
+                "label": "CONTENT ATOMS",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f5",
-                "label": "각 채널 CTA",
+                "label": "REPURPOSED SOCIAL CONTENT",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f6",
-                "label": "다음에 다시 사용할 Source",
+                "label": "CTA / CHANNEL NOTES",
                 "kind": "long-text",
                 "required": false
+              },
+              {
+                "id": "f7",
+                "label": "NEXT USE",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "다음에 다시 사용할 Source"
+              },
+              {
+                "id": "f8",
+                "label": "HUMAN EDIT / CONSISTENCY REVIEW",
+                "kind": "long-text",
+                "required": true,
+                "placeholder": "AI 초안에서 내가 수정하거나 결정한 것, 채널 간 사실·메시지 일관성을 확인한 내용을 적어주세요. 예: Newsletter Opening 수정 / Instagram Hook 변경 / Blog와 Newsletter 숫자 일치 확인 / CTA를 채널별로 하나씩 정리"
               }
             ]
-          }
-        },
-        {
-          "id": "d2l4-b11-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "승인자·저작권체크·A/B계획 같은 항목을 새로 추가해 필드를 늘리지 마세요 — 핵심 산출물은 이 6개로 충분합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         }
       ]
     },
     {
-      "id": "p12",
-      "title": "Day2 완료",
+      "id": "p16",
+      "title": "Day2 Content Engine 완성 + 저장",
       "layout": "wide",
       "blocks": [
         {
@@ -727,7 +936,7 @@
           "data": {
             "artifactType": "content",
             "artifactTitle": "Day2 Lesson4 — 뉴스레터·멀티채널 콘텐츠 패키지",
-            "sourceBlockId": "d2l4-b11-form",
+            "sourceBlockId": "d2l4-b15-form",
             "buttonLabel": "내 프로젝트에 저장"
           }
         },
@@ -736,7 +945,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## Day2 최종 Workflow\n\nSource Context → Core Message → SNS → Blog → Newsletter → Repurpose\n\n**하나의 좋은 Context와 핵심 메시지를 만들면, AI에게 매번 처음부터 설명하지 않고 여러 콘텐츠 작업에 재사용할 수 있습니다.**\n\n발행 전에는 항상 사람이 최종 확인합니다 — 사실 확인, 저작권·개인정보 확인을 빠뜨리지 마세요.",
+            "markdown": "## Day2 전체 Workflow\n\n**LESSON1 — SOURCE**: 원천문서 + Core Message\n\n**LESSON2 — SOCIAL**: Angle + Hook + SNS\n\n**LESSON3 — LONG-FORM**: Reader Question + Source + Blog\n\n**LESSON4 — DISTRIBUTE & REUSE**: Newsletter + Repurpose + Multi-channel\n\n**AI 콘텐츠 자동화의 핵심은 많이 생성하는 것이 아니라, 좋은 Source를 만들고 → 여러 형식으로 변환하고 → 사람이 검수하고 → 다시 사용할 수 있게 쌓는 것입니다.**\n\nMaster Source → ChatGPT(Newsletter) → Human Review → Newsletter Tool → Atomization → Multi-channel Transform → Human Consistency Review → PWA Save\n\n**1교시에서 배운 Harness가 Day2 전체 콘텐츠 생산 시스템으로 완성되었습니다.**",
             "emphasis": "normal"
           },
           "theme": {
