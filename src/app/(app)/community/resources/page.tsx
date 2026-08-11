@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { formatRelativeTime } from "@/lib/formatRelativeTime";
+import { StaffOnly } from "@/features/auth/StaffOnly";
 
 function formatFileSize(bytes?: number) {
   if (!bytes) return "";
@@ -67,60 +68,61 @@ export default function ResourcesPage() {
         </p>
         <h1 className="mt-1 text-2xl font-bold text-foreground sm:text-3xl">자료실</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          PDF, 예제, 템플릿을 올리고 다운로드할 수 있습니다. (지금은 브라우저에만 저장되는
-          로컬 데모 상태입니다)
+          PDF, 예제, 템플릿을 올리고 다운로드할 수 있습니다.
         </p>
       </div>
 
-      <div className="space-y-3 rounded-2xl border border-border bg-card p-4">
-        <div>
-          <Label htmlFor="r-title">제목</Label>
-          <Input
-            id="r-title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="예: 2주차 STP 템플릿"
-            className="mt-1.5"
-          />
-        </div>
-        <div>
-          <Label htmlFor="r-desc">설명</Label>
-          <Textarea
-            id="r-desc"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            placeholder="자료에 대한 간단한 설명"
-            rows={2}
-            className="mt-1.5"
-          />
-        </div>
-        <div className="grid gap-3 sm:grid-cols-2">
+      <StaffOnly silent>
+        <div className="space-y-3 rounded-2xl border border-border bg-card p-4">
           <div>
-            <Label htmlFor="r-file">파일 업로드</Label>
+            <Label htmlFor="r-title">제목</Label>
             <Input
-              id="r-file"
-              ref={fileInputRef}
-              type="file"
-              onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+              id="r-title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder="예: 2주차 STP 템플릿"
               className="mt-1.5"
             />
           </div>
           <div>
-            <Label htmlFor="r-link">또는 링크</Label>
-            <Input
-              id="r-link"
-              value={linkUrl}
-              onChange={(e) => setLinkUrl(e.target.value)}
-              placeholder="https://..."
+            <Label htmlFor="r-desc">설명</Label>
+            <Textarea
+              id="r-desc"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              placeholder="자료에 대한 간단한 설명"
+              rows={2}
               className="mt-1.5"
             />
           </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div>
+              <Label htmlFor="r-file">파일 업로드</Label>
+              <Input
+                id="r-file"
+                ref={fileInputRef}
+                type="file"
+                onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+                className="mt-1.5"
+              />
+            </div>
+            <div>
+              <Label htmlFor="r-link">또는 링크</Label>
+              <Input
+                id="r-link"
+                value={linkUrl}
+                onChange={(e) => setLinkUrl(e.target.value)}
+                placeholder="https://..."
+                className="mt-1.5"
+              />
+            </div>
+          </div>
+          <Button onClick={handleUpload} disabled={uploading || !title.trim()} className="gap-2">
+            {uploading ? <Loader2 className="size-4 animate-spin" /> : <Upload className="size-4" />}
+            업로드
+          </Button>
         </div>
-        <Button onClick={handleUpload} disabled={uploading || !title.trim()} className="gap-2">
-          {uploading ? <Loader2 className="size-4 animate-spin" /> : <Upload className="size-4" />}
-          업로드
-        </Button>
-      </div>
+      </StaffOnly>
 
       <div className="space-y-2">
         {!loading && resources.length === 0 && (

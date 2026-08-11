@@ -13,12 +13,22 @@ import { Button } from "@/components/ui/button";
 // 여기서는 학생에게 못 쓰는 도구를 보여주지 않는 역할만 한다.
 // 로컬 모드(키 없음)에서는 역할 개념이 없으므로 통과시킨다.
 
-export function StaffOnly({ children }: { children: React.ReactNode }) {
+export function StaffOnly({
+  children,
+  silent = false,
+}: {
+  children: React.ReactNode;
+  /** true면 강사가 아닐 때 안내 카드 없이 그냥 아무것도 그리지 않는다 — 페이지 일부(자료실 업로드
+   * 폼 등)에만 걸 때 쓴다. 학생 입장에서는 "이 영역이 원래 없다"처럼 보여야지, 페이지 중간에
+   * "강사 전용입니다" 거절 카드가 끼어들면 안 되기 때문이다. */
+  silent?: boolean;
+}) {
   const { state } = useAuth();
 
   if (!isSupabaseConfigured) return <>{children}</>;
   if (state.status === "loading") return null;
   if (state.status === "signed-in" && isStaff(state.user.role)) return <>{children}</>;
+  if (silent) return null;
 
   return (
     <div className="mx-auto max-w-md px-4 py-20 text-center">
