@@ -5,7 +5,7 @@
   "day": 2,
   "lesson": 3,
   "title": "GPT로 블로그 콘텐츠 자동 생성하기",
-  "description": "1교시 핵심 메시지와 2교시 SNS 결과를 바탕으로 블로그 Outline을 만들고, GPT로 초안을 생성한 뒤 편집해 검색 맥락에 맞는 블로그 콘텐츠를 완성합니다.",
+  "description": "2교시 SNS 결과와 1교시 핵심 메시지를 바탕으로 독자의 질문(Reader Question)을 정하고, Source Pack을 준비해 GPT로 Outline·초안을 생성·평가·수정한 뒤 SEO 기본점검까지 마쳐 읽을 가치가 있는 블로그를 완성합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "SNS에서 Blog로",
+      "title": "SNS에서 관심을 끌었다면, Blog에서는 질문에 답합니다",
       "layout": "wide",
       "blocks": [
         {
@@ -22,7 +22,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 길게 늘리는 것이 Blog가 아닙니다",
+            "markdown": "# 2교시에서 만든 것을 버리고 다시 시작하지 않습니다\n\n**SNS** — 관심을 만든다\n\n↓\n\n**BLOG** — 그 관심 뒤의 질문에 충분히 답한다",
             "emphasis": "hero"
           },
           "theme": {
@@ -54,17 +54,50 @@
           }
         },
         {
-          "id": "d2l3-b01-key",
-          "type": "rich-text",
+          "id": "d2l3-b01-flow",
+          "type": "infographic",
+          "title": "오늘의 Workflow",
           "visibility": "visible",
           "data": {
-            "markdown": "1교시 핵심 메시지와 2교시 SNS 결과를 불러와 오늘의 재료로 사용합니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "variant": "steps",
+            "items": [
+              {
+                "label": "SNS Seed",
+                "description": "2교시 SNS Content Card"
+              },
+              {
+                "label": "Reader Question",
+                "description": "독자가 궁금해할 질문"
+              },
+              {
+                "label": "Search Intent",
+                "description": "그 질문 뒤의 목적"
+              },
+              {
+                "label": "Source Pack",
+                "description": "사용할 수 있는 확인된 재료"
+              },
+              {
+                "label": "Outline",
+                "description": "후보 3개 → 사람이 선택"
+              },
+              {
+                "label": "Draft",
+                "description": "본문 초안"
+              },
+              {
+                "label": "Critique",
+                "description": "AI가 스스로 문제점 진단"
+              },
+              {
+                "label": "Edit",
+                "description": "선택한 문제만 수정"
+              },
+              {
+                "label": "Final Blog",
+                "description": "SEO 기본점검 후 저장"
+              }
+            ]
           }
         },
         {
@@ -72,7 +105,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "\"블로그 = SNS를 길게 늘인 글\"이라는 오해를 먼저 깨주세요.",
+            "markdown": "\"블로그 = SNS를 길게 늘인 글\"이라는 오해를 먼저 깨주세요. 1·2교시 결과를 버리지 않고 그대로 이어 쓴다는 것도 강조하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -86,7 +119,7 @@
     },
     {
       "id": "p02",
-      "title": "SNS와 Blog의 차이",
+      "title": "SNS 콘텐츠를 길게 늘린다고 Blog가 되지는 않습니다",
       "layout": "wide",
       "blocks": [
         {
@@ -99,13 +132,31 @@
             "items": [
               {
                 "label": "SNS",
-                "description": "빠른 관심·반응이 목적"
+                "description": "빠른 관심 · 짧은 메시지 · 즉각적 반응 · Hook 비중 큼"
               },
               {
                 "label": "Blog",
-                "description": "질문 해결·정보 제공·설명이 목적"
+                "description": "질문 해결 · 충분한 설명 · 구조 · 정보와 근거 · 이해와 신뢰"
               }
             ]
+          }
+        },
+        {
+          "id": "d2l3-b02-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**나쁜 방식**: \"SNS 글을 5배 길게 써줘.\"\n\n**좋은 방식**: 독자 질문을 정하고, 구조를 만든 뒤, 필요한 내용을 충분히 설명한다.\n\n**SNS에서는 관심을 만들고, Blog에서는 그 관심 뒤의 질문에 답합니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -127,15 +178,15 @@
     },
     {
       "id": "p03",
-      "title": "검색의도는 아주 간단히",
+      "title": "Reader Question — 이 사람은 무엇이 궁금할까요?",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d2l3-b03-title",
+          "id": "d2l3-b03-def",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 사람이 어떤 질문을 가지고 이 글을 찾는가?\n\n예: \"카페 SNS 글 쉽게 쓰는 법\"\n\n**SEO 전문 강의로 확장하지 않습니다.** 학생이 검색할 법한 질문 하나만 생각하면 충분합니다.",
+            "markdown": "## Reader Question이란?\n\n**Target 고객이 실제로 검색하거나 누군가에게 물어볼 법한 질문**입니다.\n\n예) Core Message: \"바쁜 매장 운영자도 SNS 게시물 초안을 빠르게 만들 수 있다.\"\n\nReader Question 후보:\n\n- 카페 SNS 글 빨리 쓰는 방법은?\n- SNS에 매일 뭘 올려야 할까?\n- AI로 SNS 게시물을 만들어도 괜찮을까?\n- 매장 홍보글을 꾸준히 만드는 방법은?\n\n**블로그는 우리가 쓰고 싶은 글보다 독자가 알고 싶은 질문에서 시작합니다.**",
             "emphasis": "normal"
           },
           "layout": {
@@ -149,7 +200,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "키워드 도구·검색량 분석 같은 SEO 전문 내용으로 빠지지 마세요.",
+            "markdown": "학생이 \"우리 서비스 소개\"를 질문처럼 쓰지 않도록 주의시키세요 — 진짜 독자의 질문이어야 합니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -163,39 +214,34 @@
     },
     {
       "id": "p04",
-      "title": "블로그 기본 구조",
-      "layout": "wide",
+      "title": "실습 1 — ChatGPT로 Reader Question 찾기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d2l3-b04-structure",
-          "type": "infographic",
-          "title": "블로그 구조",
+          "id": "d2l3-b04-prompt",
+          "type": "prompt",
+          "title": "Reader Question 발굴 프롬프트",
           "visibility": "visible",
           "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "Title"
-              },
-              {
-                "label": "Intro"
-              },
-              {
-                "label": "Problem"
-              },
-              {
-                "label": "Useful Information"
-              },
-              {
-                "label": "Example / Method"
-              },
-              {
-                "label": "Summary"
-              },
-              {
-                "label": "CTA"
-              }
-            ]
+            "prompt": "[CONTEXT]\n\n타겟 고객:\n[ ]\n\n고객의 핵심 문제:\n[ ]\n\nCore Message:\n[ ]\n\n2교시에서 선택한 Content Angle:\n[ ]\n\n[INSTRUCTION]\n\n이 타겟 고객이 위 문제를 해결하려고 검색하거나 누군가에게 물어볼 가능성이 있는 구체적인 질문 10개를 만들어주세요.\n\n질문은 실제 사람이 검색창이나 대화에서 사용할 법한 자연스러운 표현으로 작성해주세요.\n\n그중 블로그 한 편으로 충분히 답할 가치가 있는 질문 3개를 골라주세요.\n\n[GUARDRAIL]\n\n- 지나치게 넓은 주제를 피해주세요.\n- 제공한 고객 문제와 관계없는 질문은 추가하지 마세요.\n- 실제 검색량을 모르면 숫자를 만들어내지 마세요.\n- 전문용어보다 고객이 실제 사용할 표현을 우선해주세요.\n\n[OUTPUT]\n\n질문 | 이 질문이 중요한 이유 | 추천 Blog Angle\n\n형태의 표로 작성해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분을 1·2교시 결과로 바꾼 뒤 ChatGPT에 붙여넣으세요. 복사 → [ ] 수정 → ChatGPT 실행 → Reader Question 1개 선택."
+        },
+        {
+          "id": "d2l3-b04-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 Reader Question 찾기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Reader Question 발굴",
+            "practiceDescription": "검색·질문 후보 10개 중 블로그로 답할 가치가 있는 3개를 고릅니다.",
+            "estimatedMinutes": 10
           }
         },
         {
@@ -203,7 +249,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "이 7단계 순서를 페이지 상단에 계속 참고하게 하세요.",
+            "markdown": "학생이 '우리 서비스 소개'를 질문처럼 적지 않는지 확인하세요 — 진짜 독자의 질문이어야 합니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -217,7 +263,273 @@
     },
     {
       "id": "p05",
-      "title": "실습 1 — Outline 만들기",
+      "title": "Search Intent — 이 검색 뒤에는 어떤 목적이 있을까요?",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l3-b05-def",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Search Intent란?\n\n**이 검색을 한 사람이 실제로 알고 싶거나 하려는 것**입니다.\n\n1. **알고 싶다** — 정보 탐색\n2. **방법을 찾고 싶다** — How-to / 해결 탐색\n3. **비교하고 결정하고 싶다** — 대안 탐색\n\n예) \"SNS 마케팅\"보다 \"카페 SNS 글 쉽게 쓰는 법\"이 의도가 더 분명합니다.\n\n**키워드 자체보다 그 검색 뒤의 질문을 봅니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b05-quiz",
+          "type": "quiz",
+          "title": "빠른 확인",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "\"카페 SNS 글 쉽게 쓰는 법\"이라는 검색의 의도로 가장 알맞은 것은?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "비교하고 결정하고 싶다"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "방법을 찾고 싶다"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "단순히 정보를 알고 싶다"
+                  }
+                ],
+                "correctChoiceId": "c2",
+                "explanation": "\"~하는 법\"은 대표적인 How-to / 해결 탐색 의도입니다."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "새 도구 실습 — Google Trends로 검색 표현 살펴보기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l3-b06-intro",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Google Trends (선택)\n\n이번 실습의 목적은 SEO 전문가처럼 검색량을 분석하는 것이 아니라, 사람들이 어떤 표현이나 주제에 관심을 보이는지 탐색하는 경험입니다.\n\n본인 Blog 주제와 관련된 표현 2~3개를 비교해보세요. 예: \"SNS 마케팅\" / \"Instagram 마케팅\" / \"AI SNS\"\n\n**Google Trends의 상대적 관심도를 정확한 검색량 숫자처럼 해석하지 않습니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b06-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://trends.google.com/trends/",
+            "buttonLabel": "Google Trends 열기 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "검색 표현 비교",
+            "practiceDescription": "본인 주제와 관련된 표현 2~3개의 관심도를 비교합니다.",
+            "estimatedMinutes": 6
+          }
+        },
+        {
+          "id": "d2l3-b06-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**기록해보세요**: 어떤 표현을 비교했나요? 어떤 표현이 더 자연스러웠나요? Blog 제목이나 질문에 반영할 것이 있나요? Google Trends를 사용할 수 없어도 다음 페이지로 진행할 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "긴 글일수록 Source가 더 중요합니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l3-b07-def",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Source Pack이란?\n\n**이번 글을 쓸 때 사용할 수 있는 확인된 재료 묶음**입니다.\n\n포함 가능: Lesson1 원천문서 · 2교시 SNS Seed · 공식 제품정보 · 실제 기능 · 확인한 자료 · 참고 출처 · 사용 가능한 사실 · 보류할 내용\n\n**AI에게 알아서 채우라고 하지 않고, 이 자료 안에서 쓰게 합니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b07-caution",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**왜 필요한가?** Blog는 길기 때문에 Context 빈칸을 AI가 그럴듯하게 채울 가능성이 커집니다.\n\n**특히 주의**: 통계 · 가격 · 제품효과 · 법/제도 · 고객사례 · 시장수치",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b07-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "Source Pack을 만들지 않고 바로 Outline·Draft로 넘어가려는 학생이 없는지 확인하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "전문 검색 AI도 Source Pack을 만드는 데 사용할 수 있습니다",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l3-b08-intro",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Perplexity (선택)\n\n최신 자료와 출처를 탐색할 때 사용하는 검색·리서치 AI 사례입니다. P04에서 고른 Reader Question 중 하나를 Perplexity에서 검색해보세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b08-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://www.perplexity.ai/",
+            "buttonLabel": "Perplexity 열기 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "Source 탐색",
+            "practiceDescription": "Reader Question 하나를 검색하고 출처를 확인합니다.",
+            "estimatedMinutes": 8
+          }
+        },
+        {
+          "id": "d2l3-b08-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI 요약만 보지 말고 출처 페이지 하나는 직접 확인하세요.** Perplexity 결과를 그대로 Blog에 복사하지 않습니다 — 목적은 Reader Question → 자료 탐색 → Source 확인입니다. Perplexity가 접속 불가능해도 Lesson1 원천문서와 이미 가진 공식 자료만으로 다음 페이지를 진행할 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "블로그 기본 구조",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l3-b09-structure",
+          "type": "infographic",
+          "title": "블로그 구조",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Title",
+                "description": "무슨 질문에 답하는가?"
+              },
+              {
+                "label": "Intro",
+                "description": "왜 읽어야 하는가?"
+              },
+              {
+                "label": "Problem / Context",
+                "description": "어떤 상황에서 문제가 생기는가?"
+              },
+              {
+                "label": "Main Sections",
+                "description": "실제 답과 방법"
+              },
+              {
+                "label": "Example / Method",
+                "description": "이해를 돕는 사례·방법"
+              },
+              {
+                "label": "Summary",
+                "description": "무엇을 기억할 것인가?"
+              },
+              {
+                "label": "CTA",
+                "description": "다음 행동"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2l3-b09-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 순서를 절대 공식으로 가르치지 마세요 — \"먼저 글의 구조를 결정한다\"는 습관이 핵심입니다.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "실습 2 — ChatGPT로 Outline 후보 3개 만들기",
       "layout": "practice",
       "blocks": [
         {
@@ -240,11 +552,11 @@
           "title": "Outline 생성 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "[CONTEXT]\n\n핵심 메시지:\n[ 1교시 결과 ]\n\n타겟 고객:\n[ ]\n\n독자가 검색할 질문:\n[ P03에서 정한 질문 ]\n\n[INSTRUCTION]\n\n위 Context로 블로그 Outline 후보 3개를 만들어주세요. 각 Outline은 Title / Intro / Problem / Useful Information / Example·Method / Summary / CTA 순서를 따르되, 소제목 구성을 서로 다르게 해주세요.\n\n[GUARDRAIL]\n\n제공하지 않은 사실·수치·사례를 만들지 마세요.",
+            "prompt": "[CONTEXT]\n\n타겟 고객:\n[ ]\n\n독자가 궁금해하는 질문:\n[ P04에서 고른 Reader Question ]\n\nCore Message:\n[ ]\n\nContent Angle:\n[ ]\n\n사용 가능한 사실:\n[ ]\n\n참고할 Source:\n[ P07~P08 Source Pack ]\n\n보류할 내용:\n[ ]\n\n[INSTRUCTION]\n\n위 정보를 이용해 블로그 글 Outline 후보 3개를 만들어주세요.\n\n세 구조는 제목만 다르게 하지 말고 전개 방식이 실제로 다르게 해주세요.\n\n각 Outline에는:\n\n1. 제목\n2. 도입부에서 다룰 핵심\n3. 소제목 3~5개\n4. 각 소제목에서 답할 내용\n5. 마무리\n6. CTA\n\n를 포함해주세요.\n\n[GUARDRAIL]\n\n- 자료에 없는 통계나 사례를 만들지 마세요.\n- 독자의 질문에 직접 답하지 않는 내용은 넣지 마세요.\n- 제품 홍보만 가득한 구조로 만들지 마세요.\n- 보류할 내용은 사용하지 마세요.\n\n[OUTPUT]\n\nOutline A / B / C를 비교하기 쉽게 정리해주세요. 각 Outline 아래에는 \"이 구조의 특징\"을 한 문장으로 설명해주세요.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 부분을 1교시 핵심 메시지와 P03에서 정한 질문으로 바꾸세요."
+          "description": "[ ] 부분을 지금까지의 결과(Reader Question·Source Pack 포함)로 바꾸세요."
         },
         {
           "id": "d2l3-b05-link",
@@ -257,77 +569,44 @@
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
             "practiceName": "Outline 후보 3개 생성",
-            "practiceDescription": "블로그 구조를 따르는 Outline 후보 3개를 만듭니다.",
+            "practiceDescription": "전개 방식이 서로 다른 Outline 후보 3개를 만듭니다.",
             "estimatedMinutes": 10
-          }
-        },
-        {
-          "id": "d2l3-b05-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "본문을 바로 쓰게 하고 싶어하는 학생이 있으면 순서를 지키게 안내하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         }
       ]
     },
     {
-      "id": "p06",
-      "title": "좋은 Outline 고르기",
-      "layout": "wide",
+      "id": "p11",
+      "title": "사람이 Outline을 고른 뒤 Draft를 만듭니다",
+      "layout": "practice",
       "blocks": [
         {
           "id": "d2l3-b06-criteria",
           "type": "infographic",
-          "title": "선택 기준",
+          "title": "Outline Selection Lens",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "독자 질문에 답하는가?"
+                "label": "Question Fit",
+                "description": "독자 질문에 답하는가?"
               },
               {
-                "label": "순서가 자연스러운가?"
+                "label": "Flow",
+                "description": "순서가 자연스러운가?"
               },
               {
-                "label": "같은 내용 반복이 없는가?"
+                "label": "Value",
+                "description": "실제로 얻어갈 정보가 있는가?"
               },
               {
-                "label": "제품 홍보만 가득하지 않은가?"
+                "label": "Brand Fit",
+                "description": "Core Message와 자연스럽게 연결되는가?"
               }
             ]
           }
         },
-        {
-          "id": "d2l3-b06-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "3개 중 1개를 고르게 하고, 고른 이유를 말로 설명시키세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p07",
-      "title": "실습 2 — Draft 생성",
-      "layout": "practice",
-      "blocks": [
         {
           "id": "d2l3-b07-title",
           "type": "rich-text",
@@ -348,11 +627,11 @@
           "title": "Draft 생성 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "아래 Outline과 핵심 메시지를 바탕으로 블로그 본문 초안을 작성해주세요.\n\n[선택한 Outline]\n[ P06에서 고른 Outline 붙여넣기 ]\n\n[핵심 메시지]\n[ 1교시 결과 ]\n\n[Context]\n[ 필요한 추가 사실·사례가 있다면 여기에 ]\n\nOutline의 순서를 유지하고, 제공한 사실 외의 내용을 새로 만들지 마세요.",
+            "prompt": "다음 Outline을 바꾸지 말고 블로그 초안을 작성해주세요.\n\n[타겟 고객]\n[ ]\n\n[독자 질문]\n[ ]\n\n[Core Message]\n[ ]\n\n[선택한 Outline]\n[ P06에서 고른 Outline 붙여넣기 ]\n\n[사용 가능한 사실과 Source]\n[ ]\n\n[브랜드 Tone]\n[ ]\n\n[CTA]\n[ ]\n\n[GUARDRAIL]\n\n- Outline의 순서를 임의로 바꾸지 마세요.\n- 제공하지 않은 통계·사례·효과를 만들지 마세요.\n- 확인되지 않은 내용을 사실처럼 쓰지 마세요.\n- 같은 말을 반복해서 글자 수를 늘리지 마세요.\n- 지나치게 광고문처럼 작성하지 마세요.\n- 보류할 정보는 사용하지 마세요.\n\n각 소제목은 독자가 실제로 얻어갈 정보가 있도록 작성해주세요.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 부분을 P06에서 고른 Outline과 1교시 핵심 메시지로 바꾸세요."
+          "description": "[ ] 부분을 P10에서 고른 Outline과 지금까지의 결과로 바꾸세요."
         },
         {
           "id": "d2l3-b07-link",
@@ -368,35 +647,20 @@
             "practiceDescription": "선택한 Outline을 본문 초안으로 확장합니다.",
             "estimatedMinutes": 12
           }
-        },
-        {
-          "id": "d2l3-b07-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "초안은 완성본이 아니라는 것을 미리 알려주세요 — 다음 페이지에서 편집합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
         }
       ]
     },
     {
-      "id": "p08",
-      "title": "AI Writer → AI Editor",
+      "id": "p12",
+      "title": "Blog에서도 Writer → Critic → Human → Editor",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d2l3-b08-title",
+          "id": "d2l3-b08-recap",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 생성 AI는 Writer뿐 아니라 Editor로도 사용합니다",
+            "markdown": "2교시에서 배운 Workflow를 새 이론처럼 다시 가르치지 않습니다.\n\n**Writer** → Draft\n\n**Critic** → 문제 발견\n\n**Human** → 수정할 문제 선택\n\n**Editor** → 선택한 문제 수정\n\n**SNS에서 사용한 AI 제작 Workflow가 장문 콘텐츠에도 그대로 적용됩니다.**",
             "emphasis": "normal"
           },
           "layout": {
@@ -406,78 +670,106 @@
           }
         },
         {
-          "id": "d2l3-b08-check",
+          "id": "d2l3-b12-critic-lens",
           "type": "infographic",
-          "title": "검토 항목",
+          "title": "Blog Critic Lens",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "반복 제거"
+                "label": "Question Fit"
               },
               {
-                "label": "애매한 표현"
+                "label": "Structure"
               },
               {
-                "label": "긴 문장"
+                "label": "Repetition"
               },
               {
-                "label": "근거 없는 주장"
+                "label": "Evidence"
               },
               {
-                "label": "광고 냄새가 너무 강한 부분"
+                "label": "Readability"
+              },
+              {
+                "label": "Promotional Bias"
+              },
+              {
+                "label": "CTA"
               }
             ]
           }
         },
         {
-          "id": "d2l3-b08-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
+          "id": "d2l3-b12-problems",
+          "type": "infographic",
+          "title": "AI Blog의 흔한 문제",
+          "visibility": "visible",
           "data": {
-            "markdown": "AI를 Writer로만 쓰던 습관을 Editor로도 쓰는 습관으로 넓혀주세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Fluffy Intro",
+                "description": "쓸데없이 긴 서론"
+              },
+              {
+                "label": "Repetition",
+                "description": "같은 말 반복"
+              },
+              {
+                "label": "Fake Example",
+                "description": "없는 고객사례"
+              },
+              {
+                "label": "Unsupported Fact",
+                "description": "근거 없는 주장/수치"
+              },
+              {
+                "label": "Keyword Stuffing",
+                "description": "키워드 억지 반복"
+              },
+              {
+                "label": "Generic Advice",
+                "description": "누구에게나 해당하는 뻔한 설명"
+              },
+              {
+                "label": "Over-promotion",
+                "description": "정보글이 제품소개서가 됨"
+              }
+            ]
           }
         }
       ]
     },
     {
-      "id": "p09",
-      "title": "실습 3 — 편집 Prompt",
+      "id": "p13",
+      "title": "실습 3 — Blog Critic과 Editor",
       "layout": "practice",
       "blocks": [
         {
-          "id": "d2l3-b09-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# \"다시 써줘\"가 아니라 문제점부터 찾게 합니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
           "id": "d2l3-b09-prompt",
           "type": "prompt",
-          "title": "편집 Prompt",
+          "title": "Step A — Critic 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "아래 블로그 초안에서 문제점을 먼저 찾아주세요. 바로 다시 쓰지 마세요.\n\n[초안]\n[ P07 결과 붙여넣기 ]\n\n다음 기준으로 문제점만 나열해주세요: 반복되는 표현, 애매한 표현, 지나치게 긴 문장, 근거 없는 주장, 광고 느낌이 과한 부분.\n\n문제점을 확인한 뒤, 제가 다시 요청하면 그때 수정된 버전을 작성해주세요.",
+            "prompt": "다음 블로그 초안을 아직 다시 작성하지 말고 먼저 평가해주세요.\n\n[블로그 초안]\n[ ]\n\n다음 기준으로 분석해주세요.\n\n1. 독자의 핵심 질문에 실제로 답하는가?\n2. 제목과 소제목의 흐름이 자연스러운가?\n3. 같은 내용을 반복하는 부분이 있는가?\n4. 근거 없이 단정하는 내용이 있는가?\n5. 너무 길거나 이해하기 어려운 문장이 있는가?\n6. 정보보다 광고가 앞서는 부분이 있는가?\n7. CTA가 글의 흐름과 자연스럽게 연결되는가?\n\n각 항목마다 좋은 점 / 문제점 / 수정 제안을 작성해주세요.\n\n아직 수정본은 작성하지 마세요.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 부분에 P07 결과를 붙여넣으세요."
+          "description": "[ ] 부분에 P11 Draft 결과를 붙여넣으세요."
+        },
+        {
+          "id": "d2l3-b13-editor",
+          "type": "prompt",
+          "title": "Step C — Editor 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "위 평가 중 내가 선택한 다음 문제만 수정해주세요.\n\n수정할 항목:\n[예: 2번 구조 / 3번 반복 / 6번 과도한 광고]\n\n나머지 잘된 부분과 선택한 Outline은 가능한 한 유지해주세요.\n\n전체 글을 처음부터 새로 작성하지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "Step B에서 학생이 직접 수정할 항목을 선택한 뒤 실행하세요."
         },
         {
           "id": "d2l3-b09-link",
@@ -489,149 +781,171 @@
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "편집 검토 실행",
-            "practiceDescription": "문제점을 먼저 찾고, 그 다음에만 수정합니다.",
-            "estimatedMinutes": 10
-          }
-        },
-        {
-          "id": "d2l3-b09-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "문제점 리스트를 보지 않고 바로 재작성을 요청하는 학생이 없는지 확인하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "practiceName": "Critic → Human Decision → Editor",
+            "practiceDescription": "문제점을 먼저 찾고, 선택한 항목만 수정합니다.",
+            "estimatedMinutes": 12
           }
         }
       ]
     },
     {
-      "id": "p10",
-      "title": "제목 / 소제목 / CTA 다듬기",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d2l3-b10-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 제목 후보를 비교하고, 본문에 맞는 CTA를 답니다\n\nSEO는 검색 질문에 맞는 제목 수준까지만 — 기본기만 다룹니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l3-b10-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "제목 3개 정도를 비교해서 고르는 습관을 만들어주세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p11",
-      "title": "최종 Blog",
+      "id": "p14",
+      "title": "SEO 기본점검 — 검색엔진보다 독자의 질문부터",
       "layout": "practice",
       "blocks": [
         {
-          "id": "d2l3-b11-title",
-          "type": "rich-text",
+          "id": "d2l3-b10-seo",
+          "type": "infographic",
+          "title": "SEO 기본 체크리스트",
           "visibility": "visible",
           "data": {
-            "markdown": "# 오늘 완성한 블로그를 정리합니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l3-b11-form",
-          "type": "input-form",
-          "title": "최종 블로그",
-          "visibility": "visible",
-          "data": {
-            "fields": [
+            "variant": "checklist",
+            "items": [
               {
-                "id": "f1",
-                "label": "제목",
-                "kind": "long-text",
-                "required": false
+                "label": "Reader Question이 제목에서 드러나는가?"
               },
               {
-                "id": "f2",
-                "label": "도입",
-                "kind": "long-text",
-                "required": false
+                "label": "제목과 소제목이 내용을 설명하는가?"
               },
               {
-                "id": "f3",
-                "label": "본문",
-                "kind": "long-text",
-                "required": false
+                "label": "첫 부분에서 무엇을 얻는지 알 수 있는가?"
               },
               {
-                "id": "f4",
-                "label": "CTA",
-                "kind": "long-text",
-                "required": false
+                "label": "핵심 주제를 자연스럽게 다루는가?"
               },
               {
-                "id": "f5",
-                "label": "사용한 핵심 메시지",
-                "kind": "long-text",
-                "required": false
-              },
-              {
-                "id": "f6",
-                "label": "확인 필요 사실",
-                "kind": "long-text",
-                "required": false
+                "label": "키워드를 억지로 반복하지 않는가?"
               }
             ]
           }
         },
         {
-          "id": "d2l3-b11-script",
+          "id": "d2l3-b10-title",
           "type": "rich-text",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
-            "markdown": "확인 필요 사실 칸을 비워두지 않게 안내하세요 — 없으면 '없음'으로 명시합니다.",
+            "markdown": "**SEO는 키워드를 많이 넣는 기술이 아닙니다.** 먼저 독자의 질문에 좋은 답을 제공하는 글을 만듭니다.\n\n**전문 도구(선택)**: 전문 콘텐츠팀에서는 검색 결과를 분석하는 SEO Content Editor(예: Surfer SEO)를 사용하기도 합니다. 필수 가입·결제는 필요 없으며, 강사 시연 또는 선택 탐색으로 진행합니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트",
           "layout": {
             "width": "wide",
             "align": "left",
             "spacing": "medium"
           }
+        },
+        {
+          "id": "d2l3-b14-surfer-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://surferseo.com/",
+            "buttonLabel": "Surfer SEO 살펴보기 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "전문 SEO 도구 탐색",
+            "practiceDescription": "전문 콘텐츠팀이 사용하는 SEO Content Editor를 살펴봅니다.",
+            "estimatedMinutes": 5
+          }
+        },
+        {
+          "id": "d2l3-b14-title-prompt",
+          "type": "prompt",
+          "title": "Title Variants 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "다음 블로그 초안을 바탕으로 제목 후보 5개를 만들어주세요.\n\n[블로그]\n[ ]\n\n조건:\n\n- 독자의 핵심 질문이 드러날 것\n- 과장하지 않을 것\n- 실제 글의 내용과 일치할 것\n- 서로 다른 접근의 제목을 제안할 것\n\n각 제목의 유형과 장점을 한 문장씩 설명해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분에 완성한 블로그 초안을 붙여넣으세요. Clickbait 제목은 피하세요."
         }
       ]
     },
     {
-      "id": "p12",
-      "title": "Blog 저장",
+      "id": "p15",
+      "title": "최종 Blog Content Card",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l3-b15-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 완성한 블로그를 하나의 Content Card로 정리합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l3-b15-form",
+          "type": "input-form",
+          "title": "최종 Blog Content Card",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "BLOG GOAL + TARGET",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "READER QUESTION",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "CORE MESSAGE + CONTENT ANGLE",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "FINAL TITLE",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "OUTLINE",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "FINAL BLOG",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f7",
+                "label": "CTA + SOURCES",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "사용한 자료가 없으면 \"추가 외부자료 없음\"이라고 적어도 됩니다. 없는 Source를 억지로 만들지 마세요."
+              },
+              {
+                "id": "f8",
+                "label": "HUMAN EDIT",
+                "kind": "long-text",
+                "required": true,
+                "placeholder": "AI 초안에서 내가 삭제·수정·추가한 내용을 적어주세요. 예: 긴 서론 1문단 삭제 / 근거 없는 숫자 제거 / 소제목 순서 변경 / 실제 서비스 기능 설명 추가"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "title": "Blog 저장 + Newsletter로 연결",
       "layout": "wide",
       "blocks": [
         {
@@ -664,8 +978,26 @@
           "data": {
             "artifactType": "content",
             "artifactTitle": "Day2 Lesson3 — 블로그 편집본",
-            "sourceBlockId": "d2l3-b11-form",
+            "sourceBlockId": "d2l3-b15-form",
             "buttonLabel": "내 프로젝트에 저장"
+          }
+        },
+        {
+          "id": "d2l3-b16-recap",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 오늘 Workflow를 연결해봅시다\n\nSNS Content Set → Reader Question → Search Intent → Source Pack → Outline → Human Selection → Draft → Critic → Human Decision → Editor → SEO 기본점검 → Final Blog",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -673,12 +1005,12 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 다음 교시\n\n긴 글까지 완성했습니다. 이제 같은 원천을 다시 활용해 **Newsletter**와 여러 콘텐츠 형식으로 바꿉니다.",
+            "markdown": "**SNS에서는 관심을 만들었고, Blog에서는 고객의 질문에 충분히 답했습니다.**\n\n다음 4교시에서는 이 장문 콘텐츠를 Newsletter로 바꾸고, 하나의 콘텐츠를 여러 채널에서 다시 활용합니다.",
             "emphasis": "normal"
           },
           "theme": {
-            "background": "primary-soft",
-            "bordered": false
+            "background": "muted",
+            "bordered": true
           },
           "layout": {
             "width": "wide",
