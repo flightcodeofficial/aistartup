@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "Day2 — AI에게 글부터 시키지 않습니다",
+      "title": "AI에게 글부터 시키지 않습니다",
       "layout": "wide",
       "blocks": [
         {
@@ -22,13 +22,28 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# AI에게 글부터 시키지 마세요\n# 먼저 '말할 재료'를 고정해야 합니다\n\n**Day1 고객 이해를 콘텐츠 원천문서와 핵심 메시지로 바꿉니다.**\n\n**AI 활용은 질문에서 시작하지만 질문에서 끝나지 않습니다.**\n\n| 단계 | 질문 |\n|---|---|\n| STEP 1. PROMPT | 어떻게 시킬까? (좋은 지시) |\n| STEP 2. CONTEXT | 무엇을 함께 줄까? (좋은 자료) |\n| STEP 3. HARNESS | 어떤 자료·도구·규칙·절차 안에서 일하게 할까? (좋은 작업환경) |\n\n오늘은 원천문서를 만들면서 이 세 가지를 직접 경험합니다.",
+            "markdown": "# AI에게 글부터 시키지 마세요\n# 먼저 '말할 재료'를 고정해야 합니다\n\n**Day1 고객 이해를 콘텐츠 원천문서와 핵심 메시지로 바꿉니다.**\n\n**AI 활용은 질문에서 시작하지만 질문에서 끝나지 않습니다.** 오늘은 원천문서를 만들면서 좋은 지시(Prompt)·좋은 자료(Context)·좋은 작업환경(Harness)을 차례로 직접 경험합니다. (다음 페이지에서 전체 지도를 먼저 보여드립니다.)",
             "emphasis": "normal"
           },
           "layout": {
             "width": "wide",
             "align": "left",
             "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b12",
+          "type": "image",
+          "title": "원천문서에서 핵심 메시지까지",
+          "visibility": "visible",
+          "data": {
+            "url": "/lesson-content/week2/day2/source_to_message_pipeline.svg",
+            "alt": "Day1 산출물이 원천문서로 옮겨지고, 원천문서에서 핵심 메시지가 나오는 흐름",
+            "caption": "",
+            "display": "large",
+            "objectFit": "contain",
+            "aspectRatio": "16/9",
+            "mobileRatio": "4/3"
           }
         },
         {
@@ -72,7 +87,88 @@
     },
     {
       "id": "p02",
-      "title": "Day1 결과물이 오늘의 재료가 됩니다",
+      "title": "AI 콘텐츠 제작의 3가지 설계",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b1map",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 오늘 우리가 쓸 세 가지 설계\n\n| 단계 | 질문 | 오늘 이 순서로 다룹니다 |\n|---|---|---|\n| STEP 1. PROMPT | 어떻게 시킬까? (좋은 지시) |\n| STEP 2. CONTEXT | 무엇을 함께 줄까? (좋은 자료) |\n| STEP 3. HARNESS | 어떤 자료·도구·규칙·절차 안에서 일하게 할까? (좋은 작업환경) |\n\n이 페이지는 전체 지도입니다. 세 개를 여기서 다 설명하지 않고, 다음 페이지부터 하나씩 따로 다룹니다.",
+            "emphasis": "lead"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "Prompt Engineering — 좋은 지시는 길이가 아니라 구조",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b27-intro",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Prompt Engineering — AI에게 일을 어떻게 설명할까?\n\n프롬프트 엔지니어링은 AI에게 어려운 주문문장을 외워서 입력하는 기술이 아닙니다. AI가 무엇을 해야 하는지, 어떤 기준으로 판단해야 하는지, 어떤 형태로 결과를 내야 하는지를 명확하게 전달하는 방법입니다.\n\n**좋은 프롬프트는 무조건 길게 쓰는 것이 아니라 필요한 구조가 명확한 프롬프트입니다.** 콘텐츠 생성에서는 최소한 다음이 명확할수록 좋습니다.\n\n- 목적\n- 필요한 Context\n- 해줄 일\n- 제약조건\n- 출력형식\n\n아직 실제로 프롬프트를 실행하지는 않습니다. 다음 페이지에서 같은 요청이 구조에 따라 어떻게 달라지는지 먼저 비교해봅니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "같은 AI, 다른 지시",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b27-compare",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 같은 요청, 다른 결과\n\n**BAD**\n\n> \"SNS 홍보글 써줘.\"\n\n**BETTER**\n\n> 타겟 고객 / 핵심 메시지 / Tone / CTA / 사용 가능한 사실 / 금지할 내용 / 출력형식을 함께 제공한 지시\n\nBAD 요청은 AI가 스스로 타깃과 톤을 상상해서 채웁니다. BETTER 요청은 AI가 상상할 자리를 남기지 않습니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b27-compare-reflect",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**생각해보기**\n\n어떤 요청이 결과를 더 예측 가능하게(통제 가능하게) 만들까요? 그 차이는 **문장의 길이** 때문일까요, **구조** 때문일까요?\n\n다음 페이지부터는 이 구조를 채우는 데 필요한 자료(Context)를 준비합니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "Context Engineering — AI에게 무엇을 보여줄 것인가",
       "layout": "wide",
       "blocks": [
         {
@@ -115,7 +211,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**목표 고객을 고를 때 우선순위가 있습니다.** ECP가 있으면 ECP를 먼저 씁니다. ECP가 아직 없으면 우선 검증 Segment를 씁니다. B2B라면 ICP(조직 조건) + Persona(담당자)를 함께 조합해서 씁니다.\n\n**부족한 부분은 AI가 상상해 채우지 않습니다.** 모르면 '검증 필요'로 남깁니다.\n\n**[CONTEXT]** 오늘 AI가 참고할 자료를 지금부터 만들기 시작합니다.",
+            "markdown": "**AI 결과는 질문뿐 아니라 참고정보(Context)에 따라 달라집니다.** Day1에서 만든 고객 결과가 오늘의 Context가 됩니다.\n\n**목표 고객을 고를 때 우선순위가 있습니다.** ECP가 있으면 ECP를 먼저 씁니다. ECP가 아직 없으면 우선 검증 Segment를 씁니다. B2B라면 ICP(조직 조건) + Persona(담당자)를 함께 조합해서 씁니다.\n\n**부족한 부분은 AI가 상상해 채우지 않습니다.** 모르면 '검증 필요'로 남깁니다.\n\n**[CONTEXT]** \"AI에게 많이 주는 것이 아니라, 이번 작업에 필요한 정보를 줍니다.\" 오늘 AI가 참고할 자료를 지금부터 만들기 시작합니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -142,169 +238,8 @@
       ]
     },
     {
-      "id": "p03",
-      "title": "원천문서는 AI에게 주는 '사실의 울타리'입니다",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "l1-b8",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 원천문서란?\n\nAI가 콘텐츠를 만들 때 **새로운 사실을 추가하지 않고 재사용할 수 있는 재료 묶음**입니다.\n\n고객의 실제 표현, 창업자의 경험, 제품 정보, 확인된 한계와 제약을 함께 둡니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b9",
-          "type": "infographic",
-          "title": "좋은 원천 / 위험한 원천",
-          "visibility": "visible",
-          "data": {
-            "items": [
-              {
-                "label": "좋은 원천",
-                "description": "고객 인터뷰·문의\n창업자의 실제 경험\n제품 테스트 기록\n고객 질문 모음"
-              },
-              {
-                "label": "그대로 쓰면 위험",
-                "description": "출처 불명 AI 답변\n경쟁사 블로그 복사\n확인 안 된 후기\n근거 없는 성과 수치"
-              }
-            ]
-          }
-        },
-        {
-          "id": "l1-b10",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**AI 검색 결과나 경쟁사 문장을 '우리의 사실'로 바꾸지 않습니다.**",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b11",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원문 보존 ≠ 외부 공개입니다.** 고객이 실제로 한 말은 원천문서 안에 원문 그대로 남겨둡니다. 하지만 그 말을 SNS·블로그에 그대로 노출해도 되는지는 별개 확인이 필요합니다 (실명·상호명 등 식별 정보가 없는지 먼저 확인하세요).",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b11b",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "원천문서는 멋진 소개글이 아니라 말해도 되는 사실의 경계입니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p04",
-      "title": "이전자료 불러오기와 매핑",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "l1-b12a",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**⚠️ 이 표를 먼저 보여주세요.** 안 보여주면 학생은 '어제 것 다 만들었는데 또 처음부터 쓰나?'라고 받아들이고 실제로 새로 지어내기 시작합니다.\n\n| 원천문서 칸 | Day1 어디서 가져오나 | 새로 쓰나? |\n|---|---|---|\n| ① 목표 고객 | ECP(있으면 우선) 또는 우선 검증 Segment. B2B는 ICP+Persona 조합 | 옮기기 |\n| ② 고객의 실제 말과 문제 | 고객 자료 원문 + Persona·Journey 중 확인된 것 (+ 현재 대안) | 옮기기 |\n| ③ 창업자의 실제 경험 | — | ✏️ 새로 씀 (유일) |\n| ④ 실제 제품·서비스 정보 | Value Proposition — 지금 실제로 되는 것만 | 옮기기 |\n| ⑤ 아직 못 쓰는 것 | Anti-ICP는 여기 안 옴(①에 반영). 근거 없는 주장만 | 옮기기 |\n\n> **핵심 안내 문구**\n> \"오늘 새로 쓰는 칸은 **③번 하나**입니다. 나머지는 어제 것을 옮기고, **골라내는 작업**입니다.\"",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b12b",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**B2B라면** ICP(조직이 갖춰야 할 조건)와 Persona(그 조직 안의 실제 담당자)를 **함께** 씁니다. 예: \"ICP = 직원 10명 이상 온라인 판매 사업자\" + \"Persona = 마케팅을 겸임하는 운영 담당자\".",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b12c",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**Anti-ICP는 '못 쓰는 주장'이 아니라 '목표 고객 범위'에 반영합니다.** Anti-ICP는 \"지금 우리 제품과 안 맞는 고객·조건\"이고, 아직 못 쓰는 주장은 \"근거 없이 밖에 말하면 안 되는 문장\"입니다. 완전히 다른 개념이니 섞지 마세요. Anti-ICP는 ①번 칸에 \"~에게는 해당하지 않음\" 형태로 짧게 덧붙이면 됩니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b12",
-          "type": "image",
-          "title": "원천문서에서 핵심 메시지까지",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/week2/day2/source_to_message_pipeline.svg",
-            "alt": "Day1 산출물이 원천문서로 옮겨지고, 원천문서에서 핵심 메시지가 나오는 흐름",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "l1-b14",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "내용 감사 단계를 건너뛰면 환각과 과장이 끼어들기 쉽다고 설명하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p05",
-      "title": "자료유형 × 근거상태",
+      "id": "p06",
+      "title": "좋은 Context와 나쁜 Context",
       "layout": "standard",
       "blocks": [
         {
@@ -336,11 +271,11 @@
           }
         },
         {
-          "id": "l1-b17c",
+          "id": "l1-b17rot",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**작성한 내용은 두 곳 중 하나로 갑니다.**\n\n- **원천문서** — 지금 콘텐츠 생성에 실제로 쓸 수 있는 근거자료(근거 있음 + 추론)\n- **보류함** — 아직 검증 안 된 것(🔴 검증 필요). **삭제하지 않습니다.** 나중에 근거가 생기면 그때 원천문서로 옮깁니다.\n\n**ChatGPT에게 콘텐츠를 만들어달라고 할 때는 원천문서만 넣고, 보류함은 절대 넣지 않습니다.**\n\n사실 이 페이지 전체가 **Context Engineering**입니다 — AI에게 어떤 자료를 참고시킬지 미리 골라두는 작업입니다.\n\n### 자료는 많을수록 좋을까요?\n\n**아니다.** 관련 없는 자료·오래된 자료·중복 자료·서로 충돌하는 자료가 너무 많으면 중요한 정보가 묻힐 수 있습니다. 이렇게 맥락이 복잡해져 중요한 정보가 흐려지는 현상을 **Context Rot**이라고 부릅니다. 많이 넣기보다 이번 작업에 필요한 자료를 골라 넣습니다.",
+            "markdown": "이 두 질문에 답하는 것 자체가 **Context Engineering**입니다 — AI에게 어떤 자료를 참고시킬지 미리 골라두는 작업입니다.\n\n### 자료는 많을수록 좋을까요?\n\n**아니다.** 관련 없는 자료·오래된 자료·중복 자료·서로 충돌하는 자료가 너무 많으면 중요한 정보가 묻힐 수 있습니다. 이렇게 맥락이 복잡해져 중요한 정보가 흐려지는 현상을 **Context Rot**이라고 부릅니다. 많이 넣기보다 이번 작업에 필요한 자료를 골라 넣습니다.",
             "emphasis": "normal"
           },
           "theme": {
@@ -371,8 +306,8 @@
       ]
     },
     {
-      "id": "p06",
-      "title": "직접 분류해보기 — 이 문장은 써도 될까요?",
+      "id": "p07",
+      "title": "직접 분류해봅시다 — AI에게 줘도 될 정보인가?",
       "layout": "fullscreen",
       "blocks": [
         {
@@ -411,8 +346,90 @@
       ]
     },
     {
-      "id": "p07",
-      "title": "실습 — 원천문서 작성",
+      "id": "p08",
+      "title": "오늘 사용할 콘텐츠 원천문서를 만듭니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "l1-b8",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 원천문서란?\n\nAI가 콘텐츠를 만들 때 **새로운 사실을 추가하지 않고 재사용할 수 있는 재료 묶음**입니다. 고객의 실제 표현, 창업자의 경험, 제품 정보, 확인된 한계와 제약을 함께 둡니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b9",
+          "type": "infographic",
+          "title": "좋은 원천 / 위험한 원천",
+          "visibility": "visible",
+          "data": {
+            "items": [
+              {
+                "label": "좋은 원천",
+                "description": "고객 인터뷰·문의\n창업자의 실제 경험\n제품 테스트 기록\n고객 질문 모음"
+              },
+              {
+                "label": "그대로 쓰면 위험",
+                "description": "출처 불명 AI 답변\n경쟁사 블로그 복사\n확인 안 된 후기\n근거 없는 성과 수치"
+              }
+            ]
+          }
+        },
+        {
+          "id": "l1-b910",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI 검색 결과나 경쟁사 문장을 '우리의 사실'로 바꾸지 않습니다.**\n\n**원문 보존 ≠ 외부 공개입니다.** 고객이 실제로 한 말은 원천문서 안에 원문 그대로 남겨둡니다. 하지만 그 말을 SNS·블로그에 그대로 노출해도 되는지는 별개 확인이 필요합니다 (실명·상호명 등 식별 정보가 없는지 먼저 확인하세요).",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b12route",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**⚠️ 이 표를 먼저 보세요.** 어제(Day1) 만든 것을 오늘 대부분 그대로 옮겨 씁니다.\n\n| 원천문서 칸 | Day1 어디서 가져오나 | 새로 쓰나? |\n|---|---|---|\n| ① 목표 고객 | ECP(있으면 우선) 또는 우선 검증 Segment. B2B는 ICP+Persona 조합 | 옮기기 |\n| ② 고객의 실제 말과 문제 | 고객 자료 원문 + Persona·Journey 중 확인된 것 (+ 현재 대안) | 옮기기 |\n| ③ 창업자의 실제 경험 | — | ✏️ 새로 씀 (유일) |\n| ④ 실제 제품·서비스 정보 | Value Proposition — 지금 실제로 되는 것만 | 옮기기 |\n| ⑤ 아직 못 쓰는 것 | Anti-ICP는 여기 안 옴(①에 반영). 근거 없는 주장만 | 옮기기 |\n\n> **핵심 안내**: \"오늘 새로 쓰는 칸은 **③번 하나**입니다. 나머지는 어제 것을 옮기고, **골라내는 작업**입니다.\"\n\n**B2B라면** ICP(조직이 갖춰야 할 조건)와 Persona(그 조직 안의 실제 담당자)를 **함께** 씁니다. 예: \"ICP = 직원 10명 이상 온라인 판매 사업자\" + \"Persona = 마케팅을 겸임하는 운영 담당자\".\n\n**Anti-ICP는 '못 쓰는 주장'이 아니라 '목표 고객 범위'에 반영합니다.** Anti-ICP는 \"지금 우리 제품과 안 맞는 고객·조건\"이고, 아직 못 쓰는 주장은 \"근거 없이 밖에 말하면 안 되는 문장\"입니다. Anti-ICP는 ①번 칸에 \"~에게는 해당하지 않음\" 형태로 짧게 덧붙이면 됩니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b11b",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "원천문서는 멋진 소개글이 아니라 말해도 되는 사실의 경계입니다. 내용 감사 단계를 건너뛰면 환각과 과장이 끼어들기 쉽다고 설명하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "실습 — 나의 원천문서 작성",
       "layout": "practice",
       "blocks": [
         {
@@ -420,6 +437,7 @@
           "type": "input-form",
           "title": "콘텐츠 원천문서",
           "visibility": "visible",
+          "description": "어제 만든 자료를 옮기고 골라내는 작업입니다. 새로 쓰는 칸은 ③번 하나뿐입니다.",
           "data": {
             "fields": [
               {
@@ -448,7 +466,7 @@
                 "label": "④ 실제 제품·서비스 정보",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "지금 실제로 제공 가능한 기능·조건만. Value Proposition 문장을 그대로 승격하지 마세요. 향후 기능·기대효과는 보류함(P08)으로."
+                "placeholder": "지금 실제로 제공 가능한 기능·조건만. Value Proposition 문장을 그대로 승격하지 마세요. 향후 기능·기대효과는 보류함으로."
               },
               {
                 "id": "f5",
@@ -468,8 +486,7 @@
               "journey",
               "value-proposition"
             ]
-          },
-          "description": "어제 만든 자료를 옮기고 골라내는 작업입니다. 새로 쓰는 칸은 ③번 하나뿐입니다."
+          }
         },
         {
           "id": "l1-b25",
@@ -503,10 +520,24 @@
       ]
     },
     {
-      "id": "p08",
-      "title": "실습 — 보류함",
-      "layout": "practice",
+      "id": "p10",
+      "title": "Guardrail — 무엇을 쓰지 않을지도 정합니다",
+      "layout": "wide",
       "blocks": [
+        {
+          "id": "l1-b17c-guardrail",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**작성한 내용은 두 곳 중 하나로 갑니다.**\n\n- **원천문서** — 지금 콘텐츠 생성에 실제로 쓸 수 있는 근거자료(근거 있음 + 추론)\n- **보류함** — 아직 검증 안 된 것(🔴 검증 필요)\n\n**AI에게 무엇을 하라고 할지만큼 무엇을 하지 말라고 할지도 중요합니다.**",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
         {
           "id": "l1-b41new",
           "type": "rich-text",
@@ -522,10 +553,44 @@
           }
         },
         {
+          "id": "l1-guardrail-examples",
+          "type": "infographic",
+          "title": "Guardrail에 들어갈 예시",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "확인되지 않은 성과"
+              },
+              {
+                "label": "근거 없는 숫자"
+              },
+              {
+                "label": "존재하지 않는 고객사례"
+              },
+              {
+                "label": "과장된 효과"
+              },
+              {
+                "label": "공개 전 정보"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "실습 — 보류함 작성",
+      "layout": "practice",
+      "blocks": [
+        {
           "id": "l1-b24b",
           "type": "input-form",
           "title": "보류함",
           "visibility": "visible",
+          "description": "여기 적은 내용은 오늘 ChatGPT 프롬프트에 넣지 않습니다.",
           "data": {
             "fields": [
               {
@@ -536,8 +601,7 @@
                 "placeholder": "검증 필요로 남긴 내용을 그대로 적고, 왜 보류했는지도 짧게 덧붙이세요. 예: \"AI를 쓰면 하루 2시간 절약된다\" — 출처 없음, 아직 측정 안 함. 삭제하지 않습니다."
               }
             ]
-          },
-          "description": "여기 적은 내용은 오늘 ChatGPT 프롬프트에 넣지 않습니다."
+          }
         },
         {
           "id": "l1-b26b",
@@ -557,8 +621,98 @@
       ]
     },
     {
-      "id": "p09",
-      "title": "가치제안 → 핵심 메시지, 그리고 각도",
+      "id": "p12",
+      "title": "Harness Engineering — 질문 하나를 넘어 작업환경으로",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-harness-def",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Harness란?\n\nHarness는 AI에게 질문 하나를 잘하는 것을 넘어, AI가 사용할 자료와 도구, 작업순서와 안전규칙, 검수와 저장까지 연결한 **AI 작업환경을 설계하는 접근**입니다.\n\n지금까지 만든 원천문서(Context)와 보류함(Guardrail)도 이 작업환경의 일부입니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-harness-def-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Harness ≠ 단순 자동화입니다.** 핵심은 \"AI가 안정적으로 반복 작업할 수 있는 환경\"이지, 사람 없이 저절로 돌아가는 자동화 그 자체가 아닙니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "title": "Harness 6요소와 지금 우리가 하는 일",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "l1-b40-harness",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 수업용으로 재구성한 6요소, 오늘 Lesson에서는\n\n| Harness 요소 | 오늘 Lesson에서는 |\n|---|---|\n| ① 지시 (Instructions) | 메시지 후보 생성 Prompt |\n| ② 자료 (Context) | 원천문서 |\n| ③ 도구 (Tools) | ChatGPT |\n| ④ 작업 순서 (Workflow) | P01→P16 흐름 |\n| ⑤ 안전 규칙 (Guardrails) | 없는 사실 만들지 않기, 검증 필요는 보류함으로 |\n| ⑥ 검수·저장 (Feedback/Memory) | 사람 검수 + 마지막 페이지의 저장 |\n\n**여러분이 지금 사용하는 이 학습 웹앱도, AI가 매번 처음부터 시작하지 않도록 자료·도구·순서·저장을 연결한 작은 AI 작업환경이라고 볼 수 있습니다.** (완성된 Agent Harness는 아니지만, 원리를 쉽게 이해할 수 있는 작은 예입니다.)",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "l1-b40-harness-quiz",
+          "type": "quiz",
+          "title": "Harness 미니 퀴즈",
+          "visibility": "visible",
+          "data": {
+            "questions": [
+              {
+                "id": "q1",
+                "question": "다음 중 Harness에 가장 가까운 것은?",
+                "choices": [
+                  {
+                    "id": "c1",
+                    "text": "긴 프롬프트 하나를 작성한다"
+                  },
+                  {
+                    "id": "c2",
+                    "text": "원천문서 + AI + 프롬프트 + 검수규칙 + 저장을 연결한다"
+                  },
+                  {
+                    "id": "c3",
+                    "text": "가장 비싼 AI 모델을 선택한다"
+                  }
+                ],
+                "correctChoiceId": "c2",
+                "explanation": "Harness의 핵심은 긴 Prompt나 특정 AI 모델 하나가 아니라 AI가 안정적으로 작업할 수 있는 환경과 절차를 설계하는 것입니다. 방금 여러분이 Lesson 전체에서 하던 일이 Harness의 기본 원리였습니다."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "title": "가치에서 핵심 메시지로",
       "layout": "wide",
       "blocks": [
         {
@@ -622,40 +776,27 @@
       ]
     },
     {
-      "id": "p10",
-      "title": "ChatGPT로 메시지 후보 3개 만들기",
+      "id": "p15",
+      "title": "실습 — ChatGPT로 핵심 메시지 후보 만들기",
       "layout": "practice",
       "blocks": [
-        {
-          "id": "l1-b27-intro",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## Prompt Engineering — AI에게 일을 어떻게 설명할까?\n\n프롬프트 엔지니어링은 AI에게 어려운 주문문장을 외워서 입력하는 기술이 아닙니다. AI가 무엇을 해야 하는지, 어떤 기준으로 판단해야 하는지, 어떤 형태로 결과를 내야 하는지를 명확하게 전달하는 방법입니다.\n\n**좋은 프롬프트는 무조건 길게 쓰는 것이 아니라 필요한 구조가 명확한 프롬프트입니다.**\n\n여기까지 오면서 이미 P02~P09에서 **Context**(원천문서)를 충분히 준비했습니다. 이제 그 자료를 가지고 AI에게 **명확하게 지시**해봅니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
         {
           "id": "l1-b27",
           "type": "prompt",
           "title": "핵심 메시지 후보 프롬프트",
           "visibility": "visible",
+          "description": "[ ] 부분만 자기 결과로 바꾸세요. 이 프롬프트는 CONTEXT / INSTRUCTION / GUARDRAIL / OUTPUT 네 부분으로 구조화되어 있습니다.\n\n[바꿔볼 곳]\n① [원천문서] → P09에서 작성한 원천문서 내용 (보류함(P11) 내용은 붙여넣지 않습니다)",
           "data": {
             "prompt": "당신은 초기 창업자의 핵심 메시지를 정리하는 분석 도우미입니다.\n\n[CONTEXT — 내가 제공하는 자료]\n[원천문서]\n\n[INSTRUCTION — 해줄 일]\n위 원천문서만 사용해서 핵심 메시지 후보 3개를 만들어주세요. 각 후보는 다음을 포함하세요:\n- 핵심 메시지 한 문장\n- 어떤 점을 강조했는지 (문제 / 원하는 결과 / 심해지는 순간 / 지금 쓰는 방법과 차이 / 망설이는 이유 없애기 / 지금 단계에 맞추기 중 하나)\n- 원천문서의 어느 부분을 근거로 했는지\n\n각 후보는 서로 다른 부분을 강조해주세요.\n\n[GUARDRAIL — 지켜야 할 규칙]\n이 자료에 없는 사실을 추가하지 마세요. 보류함 내용은 여기 포함되어 있지 않습니다. 자료에서 확인되지 않는 수치, 고객 사례, 후기, 성과는 만들지 마세요.\n\n[OUTPUT — 결과 형식]\n후보 3개를 번호로 구분해서 보여주세요.",
             "targetTool": "ChatGPT",
             "copyable": true
-          },
-          "description": "[ ] 부분만 자기 결과로 바꾸세요. 이 프롬프트는 CONTEXT / INSTRUCTION / GUARDRAIL / OUTPUT 네 부분으로 구조화되어 있습니다.\n\n[바꿔볼 곳]\n① [원천문서] → P07에서 작성한 원천문서 내용 (보류함(P08) 내용은 붙여넣지 않습니다)"
+          }
         },
         {
           "id": "l1-b28",
           "type": "external-link",
           "visibility": "visible",
+          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요.",
           "data": {
             "url": "https://chatgpt.com/",
             "buttonLabel": "ChatGPT에서 실행",
@@ -665,8 +806,7 @@
             "practiceName": "메시지 후보 3개 만들기",
             "practiceDescription": "원천문서만으로 서로 다른 각도의 메시지 후보 3개를 만듭니다.",
             "estimatedMinutes": 14
-          },
-          "description": "개인정보·회사 기밀·미공개 고객정보는 입력하지 마세요."
+          }
         },
         {
           "id": "l1-b29",
@@ -687,7 +827,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**이 프롬프트에는 무엇이 들어 있었나요?**\n\n| 구분 | 내용 |\n|---|---|\n| Context | P07 원천문서 |\n| Instruction | 핵심 메시지 후보 3개 요청 |\n| Guardrail | 없는 사실·수치를 지어내지 말라는 규칙 |\n| Output | 번호로 구분된 후보 3개 |\n\n**Prompt Engineering(지시)과 Context Engineering(자료)을 함께 설계한 것이 방금 한 일입니다.**",
+            "markdown": "**이 프롬프트에는 무엇이 들어 있었나요?**\n\n| 구분 | 내용 |\n|---|---|\n| Context | P09 원천문서 |\n| Instruction | 핵심 메시지 후보 3개 요청 |\n| Guardrail | 없는 사실·수치를 지어내지 말라는 규칙 |\n| Output | 번호로 구분된 후보 3개 |\n\n**Prompt Engineering(지시)과 Context Engineering(자료)을 함께 설계한 것이 방금 한 일입니다.**",
             "emphasis": "normal"
           },
           "theme": {
@@ -718,8 +858,8 @@
       ]
     },
     {
-      "id": "p11",
-      "title": "사람 검수 · 말투 · CTA",
+      "id": "p16",
+      "title": "사람이 선택하고 콘텐츠 메시지 원장으로 저장",
       "layout": "practice",
       "blocks": [
         {
@@ -807,6 +947,7 @@
           "type": "input-form",
           "title": "콘텐츠 메시지 원장",
           "visibility": "visible",
+          "description": "원천문서(P09)를 다시 옮겨 쓰지 않습니다. 여기서는 ChatGPT 후보 중 고른 문장과 톤·CTA만 정리합니다.",
           "data": {
             "fields": [
               {
@@ -831,8 +972,7 @@
                 "placeholder": "예: 샘플 보기 (문제 인식 단계)"
               }
             ]
-          },
-          "description": "원천문서(P07)를 다시 옮겨 쓰지 않습니다. 여기서는 ChatGPT 후보 중 고른 문장과 톤·CTA만 정리합니다."
+          }
         },
         {
           "id": "l1-b35",
@@ -848,28 +988,6 @@
             "spacing": "medium"
           }
         },
-        {
-          "id": "l1-b36",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "AI 후보를 그대로 복사하지 말고 수강생이 한 문장을 선택·수정하게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p12",
-      "title": "저장 — 근거 있는 재료에서 시작합니다",
-      "layout": "standard",
-      "blocks": [
         {
           "id": "l1-b37",
           "type": "result-preview",
@@ -913,50 +1031,6 @@
           }
         },
         {
-          "id": "l1-b40-harness",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 이제 우리가 한 일을 한 번 연결해봅시다 — Harness Engineering\n\nHarness는 AI에게 질문 하나를 잘하는 것을 넘어, AI가 사용할 자료와 도구, 작업순서와 안전규칙, 검수와 저장까지 연결한 **AI 작업환경을 설계하는 접근**입니다. **Harness ≠ 단순 자동화**입니다 — 핵심은 \"AI가 안정적으로 반복 작업할 수 있는 환경\"입니다.\n\n**수업용으로 재구성한 6요소, 오늘 Lesson에서는:**\n\n| Harness 요소 | 오늘 Lesson에서는 |\n|---|---|\n| ① 지시 (Instructions) | P10 프롬프트 |\n| ② 자료 (Context) | P07 원천문서 |\n| ③ 도구 (Tools) | ChatGPT |\n| ④ 작업 순서 (Workflow) | P01→P12 흐름 |\n| ⑤ 안전 규칙 (Guardrails) | 없는 사실 만들지 않기, 검증 필요는 보류함으로 |\n| ⑥ 검수·저장 (Feedback/Memory) | P11 사람 검수 + 이 페이지의 저장 |\n\n**여러분이 지금 사용하는 이 학습 웹앱도, AI가 매번 처음부터 시작하지 않도록 자료·도구·순서·저장을 연결한 작은 AI 작업환경이라고 볼 수 있습니다.** (완성된 Agent Harness는 아니지만, 원리를 쉽게 이해할 수 있는 작은 예입니다.)",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "l1-b40-harness-quiz",
-          "type": "quiz",
-          "title": "Harness 미니 퀴즈",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "q1",
-                "question": "다음 중 Harness에 가장 가까운 것은?",
-                "choices": [
-                  {
-                    "id": "c1",
-                    "text": "긴 프롬프트 하나를 작성한다"
-                  },
-                  {
-                    "id": "c2",
-                    "text": "원천문서 + AI + 프롬프트 + 검수규칙 + 저장을 연결한다"
-                  },
-                  {
-                    "id": "c3",
-                    "text": "가장 비싼 AI 모델을 선택한다"
-                  }
-                ],
-                "correctChoiceId": "c2",
-                "explanation": "Harness의 핵심은 긴 Prompt나 특정 AI 모델 하나가 아니라 AI가 안정적으로 작업할 수 있는 환경과 절차를 설계하는 것입니다. 방금 여러분이 Lesson 전체에서 하던 일이 Harness의 기본 원리였습니다."
-              }
-            ]
-          }
-        },
-        {
           "id": "l1-b42",
           "type": "rich-text",
           "visibility": "visible",
@@ -971,11 +1045,11 @@
           }
         },
         {
-          "id": "l1-b41",
+          "id": "l1-b36-41",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "저장 완료를 확인하고 다음 Lesson에서 이 artifact를 불러온다고 안내하세요.",
+            "markdown": "AI 후보를 그대로 복사하지 말고 수강생이 한 문장을 선택·수정하게 하세요. 저장 완료를 확인하고 다음 Lesson 에서 이 artifact를 불러온다고 안내하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
