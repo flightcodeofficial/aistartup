@@ -5,7 +5,7 @@
   "day": 2,
   "lesson": 2,
   "title": "GPT로 SNS 콘텐츠 자동 생성하기",
-  "description": "1교시에서 확정한 핵심 메시지를 바탕으로 GPT가 여러 SNS 콘텐츠 후보를 생성하게 하고, 채널과 목적에 맞게 수정·선택해 실제로 사용할 SNS 콘텐츠 세트를 완성합니다.",
+  "description": "1교시에서 확정한 핵심 메시지를 바탕으로 GPT가 Content Angle과 SNS Draft 여러 후보를 생성하게 하고, Critic·Editor 역할로 검토·수정한 뒤 채널에 맞게 변환하고 Visual Asset까지 연결해 최종 SNS Content Card를 완성합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "핵심 메시지 → SNS 콘텐츠",
+      "title": "1교시의 핵심 메시지를 실제 SNS 콘텐츠로 바꿉니다",
       "layout": "wide",
       "blocks": [
         {
@@ -22,7 +22,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 오늘은 다시 원천정보를 정리하지 않습니다\n\n1교시에서 만든 **콘텐츠 메시지 원장**을 그대로 사용합니다.",
+            "markdown": "# 오늘은 다시 원천정보를 정리하지 않습니다\n\n1교시에서 만든 **콘텐츠 메시지 원장**을 그대로 사용합니다. **1교시에서 만든 Context를 실제 콘텐츠 제작에 사용합니다.**",
             "emphasis": "hero"
           },
           "theme": {
@@ -57,28 +57,40 @@
                 "description": "1교시에서 확정한 핵심 메시지"
               },
               {
+                "label": "Content Angle",
+                "description": "어떤 관점을 앞세울 것인가"
+              },
+              {
                 "label": "Hook",
                 "description": "멈춰 보게 하는 첫 문장"
               },
               {
-                "label": "Body",
-                "description": "핵심 내용"
+                "label": "SNS Draft",
+                "description": "후보 여러 개 생성"
               },
               {
-                "label": "Value",
-                "description": "왜 읽을 가치가 있는가"
+                "label": "Variants",
+                "description": "다른 전개 방식 비교"
               },
               {
-                "label": "CTA",
-                "description": "다음 행동"
+                "label": "Critique",
+                "description": "AI가 스스로 문제점 진단"
               },
               {
-                "label": "Review",
-                "description": "사람 검수"
+                "label": "Revision",
+                "description": "선택한 문제만 수정"
               },
               {
-                "label": "SNS Pack",
-                "description": "채널별 콘텐츠 세트 저장"
+                "label": "Channel Adaptation",
+                "description": "채널 맥락에 맞게 변환"
+              },
+              {
+                "label": "Visual Asset",
+                "description": "텍스트를 이미지로 연결"
+              },
+              {
+                "label": "Final SNS Content",
+                "description": "최종 Content Card 저장"
               }
             ]
           }
@@ -102,7 +114,7 @@
     },
     {
       "id": "p02",
-      "title": "SNS 콘텐츠는 무엇이 다른가?",
+      "title": "Core Message와 SNS Content는 다릅니다",
       "layout": "wide",
       "blocks": [
         {
@@ -110,7 +122,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 왜 같은 메시지도 SNS에서는 다르게 표현해야 할까요?\n\nSNS는 짧게 보는 상황에서, 빠른 첫인상으로 판단됩니다. 블로그·뉴스레터처럼 시간을 들여 읽는 채널이 아닙니다.",
+            "markdown": "## Core Message와 SNS Content는 다릅니다\n\n**Core Message** — 반드시 전달하고 싶은 중심 의미.\n\n**SNS Content** — 그 메시지를 특정 채널과 상황에 맞는 표현으로 바꾼 콘텐츠.",
             "emphasis": "normal"
           },
           "layout": {
@@ -120,26 +132,21 @@
           }
         },
         {
-          "id": "d2l2-b02-context",
-          "type": "infographic",
-          "title": "SNS가 다른 이유",
+          "id": "d2l2-b02-example",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "보는 시간",
-                "description": "몇 초 안에 스크롤할지 멈출지 결정됨"
-              },
-              {
-                "label": "첫인상",
-                "description": "첫 문장(Hook)이 전체 반응을 좌우함"
-              },
-              {
-                "label": "채널 맥락",
-                "description": "각 채널마다 기대하는 톤과 정보량이 다름"
-              }
-            ]
+            "markdown": "**예시**\n\nCore Message: \"바쁜 매장 운영자도 SNS 게시물 초안을 빠르게 만들 수 있다.\"\n\nSNS 표현 A: \"오늘도 가게 문 닫고 SNS 글 때문에 고민 중인가요?\"\n\nSNS 표현 B: \"게시물 초안 때문에 영업 후까지 일하지 마세요.\"\n\n**메시지는 유지하고, 표현은 바꿉니다.**\n\n**Message Drift 주의**: AI 생성 과정에서 처음 핵심 메시지가 다른 내용으로 슬쩍 바뀌지 않게 계속 확인하세요.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -161,7 +168,7 @@
     },
     {
       "id": "p03",
-      "title": "SNS 콘텐츠 기본 구조",
+      "title": "SNS 콘텐츠를 점검하는 4가지 렌즈",
       "layout": "wide",
       "blocks": [
         {
@@ -196,13 +203,33 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**Proof(후기·수치 등 근거)는 실제 근거가 있을 때만 선택적으로 추가합니다.** 근거 없는 숫자·후기를 만들어 넣지 않습니다.",
+            "markdown": "**Proof(후기·수치 등 근거)는 실제 근거가 있을 때만 선택적으로 추가합니다.** 근거 없는 숫자·후기를 만들어 넣지 않습니다.\n\n**절대적인 공식이 아니라, 콘텐츠를 만든 뒤 점검하는 Lens입니다.**",
             "emphasis": "normal"
           },
           "layout": {
             "width": "wide",
             "align": "left",
             "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b03-check",
+          "type": "infographic",
+          "title": "간단 점검",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "내 고객 이야기인가?"
+              },
+              {
+                "label": "첫 부분에서 관심을 끄는가?"
+              },
+              {
+                "label": "지어낸 내용이 있는가?"
+              }
+            ]
           }
         },
         {
@@ -224,15 +251,15 @@
     },
     {
       "id": "p04",
-      "title": "Hook 만들기",
+      "title": "첫 부분에서 계속 읽을 이유를 만듭니다 — Hook",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d2l2-b04-title",
+          "id": "d2l2-b04-def",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## Hook 유형\n\n같은 메시지도 Hook 방식에 따라 첫인상이 달라집니다.",
+            "markdown": "## Hook이란?\n\n**콘텐츠 첫 부분에서 계속 읽을 이유를 만드는 표현**입니다.\n\n약한 시작: \"안녕하세요. 오늘은 SNS 마케팅에 대해 알아보겠습니다.\"\n\n더 나은 시작: \"오늘 SNS에 뭘 올릴지 또 고민 중인가요?\"\n\n첫 부분은 이후 내용을 계속 읽을지 결정하는 데 중요한 역할을 합니다. 다만 절대적 공식처럼 과장하지 않습니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -242,34 +269,78 @@
           }
         },
         {
-          "id": "d2l2-b04-types",
+          "id": "d2l2-b04-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "약한 시작과 나은 시작을 실제로 소리 내어 비교해서 읽어보게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "Hook 6가지 방식 — Clickbait와 구분합니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l2-b05-types",
           "type": "infographic",
-          "title": "Hook 4유형",
+          "title": "Hook 6유형",
           "visibility": "visible",
           "data": {
             "variant": "comparison",
             "items": [
               {
-                "label": "문제 공감형",
+                "label": "1. 문제 공감형",
                 "description": "\"매일 뭘 올릴지 고민되시죠?\""
               },
               {
-                "label": "질문형",
+                "label": "2. 질문형",
                 "description": "\"SNS 글, 아직도 하나하나 직접 쓰세요?\""
               },
               {
-                "label": "결과/변화형",
+                "label": "3. 변화/결과형",
                 "description": "\"게시물 준비 시간을 반으로 줄인 방법\""
               },
               {
-                "label": "반전/호기심형",
+                "label": "4. 정보/How-to형",
+                "description": "\"SNS 글이 막힐 때 먼저 정해야 할 3가지\""
+              },
+              {
+                "label": "5. 호기심형",
                 "description": "\"이 방법은 소재 고민부터 없앱니다\""
+              },
+              {
+                "label": "6. 상황/Story형",
+                "description": "\"영업을 마쳤는데 또 노트북을 켜야 하는 사장님의 하루\""
               }
             ]
           }
         },
         {
-          "id": "d2l2-b04-quiz",
+          "id": "d2l2-b05-clickbait",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Clickbait와 구분하세요**\n\n❌ \"99% 사장님이 모르는 충격적인 비밀\"\n\n❌ \"이걸 모르면 무조건 망합니다.\"\n\n**주의를 끄는 것과 사실을 과장하는 것은 다릅니다.**\n\n**자가질문**: 이 Hook이 약속한 내용을 본문이 실제로 제공하는가?",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b05-quiz",
           "type": "quiz",
           "title": "빠른 확인",
           "visibility": "visible",
@@ -297,141 +368,26 @@
               }
             ]
           }
-        },
-        {
-          "id": "d2l2-b04-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "과장 Hook과 좋은 Hook을 실제 예시로 비교해서 보여주세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p05",
-      "title": "실습 1 — GPT로 SNS 후보 3개 만들기",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d2l2-b05-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 1교시 콘텐츠 메시지 원장을 Context로 사용합니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l2-b05-prompt",
-          "type": "prompt",
-          "title": "SNS 후보 생성 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[CONTEXT]\n\n제품/서비스:\n[ ]\n\n타겟 고객:\n[ ]\n\n핵심 문제:\n[ ]\n\n핵심 메시지:\n[ ]\n\nTone:\n[ ]\n\n사용 가능한 사실:\n[ ]\n\n사용하면 안 되는 내용:\n[ ]\n\n[INSTRUCTION]\n\n위 Context를 이용해 SNS 게시물 후보 3개를 만들어주세요.\n\n각 후보는 Hook 방식을 다르게 해주세요.\n\n1. 문제 공감형\n2. 질문형\n3. 변화/결과형\n\n[OUTPUT]\n\nHook |\n본문 |\nCTA |\n사용한 핵심 메시지\n\n[GUARDRAIL]\n\n제공하지 않은 기능, 효과, 숫자, 고객반응을 만들지 마세요.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "[ ] 부분을 1교시에 저장한 콘텐츠 메시지 원장의 내용으로 바꾼 뒤 ChatGPT에 붙여넣으세요."
-        },
-        {
-          "id": "d2l2-b05-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 SNS 후보 생성",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "SNS 후보 3개 생성",
-            "practiceDescription": "Hook 방식이 다른 SNS 후보 3개를 만듭니다.",
-            "estimatedMinutes": 12
-          }
-        },
-        {
-          "id": "d2l2-b05-note",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "복사 → [ ] 수정 → ChatGPT 실행. {{변수}} 같은 자동 대입은 없습니다 — 직접 바꿔 넣으세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l2-b05-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "학생이 Context를 비운 채 실행하지 않도록, 1교시 결과를 먼저 열어보게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
         }
       ]
     },
     {
       "id": "p06",
-      "title": "AI 결과 비교",
+      "title": "같은 메시지를 여러 Content Angle로 봅니다",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d2l2-b06-title",
+          "id": "d2l2-b06-def",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 3개 후보를 비교해서 하나를 고릅니다",
+            "markdown": "## Content Angle이란?\n\n**같은 핵심 메시지에서 어떤 관점을 앞세울 것인가**입니다.\n\n같은 Core Message를 다음처럼 표현할 수 있습니다.\n\n- 문제 공감\n- 시간 절약\n- 지속성\n- How-to\n- Story\n\n**\"다시 써줘\"를 5번 요청하는 것과 서로 다른 Angle 5개를 탐색하는 것은 다릅니다.** 전자는 같은 관점을 문장만 바꿔 반복하는 것이고, 후자는 진짜 다른 관점에서 메시지를 봅니다.",
             "emphasis": "normal"
           },
           "layout": {
             "width": "wide",
             "align": "left",
             "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l2-b06-check",
-          "type": "infographic",
-          "title": "비교 질문",
-          "visibility": "visible",
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "첫 문장이 타겟에게 맞는가?"
-              },
-              {
-                "label": "핵심 메시지가 살아 있는가?"
-              },
-              {
-                "label": "과장된 내용은 없는가?"
-              },
-              {
-                "label": "CTA가 목적과 맞는가?"
-              }
-            ]
           }
         },
         {
@@ -439,7 +395,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "AI가 만든 3개 중 무조건 1개를 고르게 하세요 — 세 개를 합쳐 새로 쓰게 하지 않습니다.",
+            "markdown": "같은 Core Message로 Angle만 바꿔서 학생과 함께 예시 두세 개를 즉석에서 만들어보세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -453,11 +409,283 @@
     },
     {
       "id": "p07",
-      "title": "채널마다 같은 글을 그대로 쓰지 않는다",
-      "layout": "wide",
+      "title": "실습 1 — ChatGPT로 Content Angle 5개 만들기",
+      "layout": "practice",
       "blocks": [
         {
           "id": "d2l2-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 1교시 콘텐츠 메시지 원장을 Context로 사용합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b07-prompt",
+          "type": "prompt",
+          "title": "Content Angle 생성 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[CONTEXT]\n\n사업/서비스:\n[ ]\n\n타겟 고객:\n[ ]\n\n고객의 핵심 문제:\n[ ]\n\n핵심 메시지:\n[ ]\n\n브랜드 말투:\n[ ]\n\n사용 가능한 사실:\n[ ]\n\n사용하면 안 되는 내용:\n[ ]\n\n[INSTRUCTION]\n\n위 핵심 메시지를 바꾸지 않고, SNS 콘텐츠에 사용할 수 있는 서로 다른 Content Angle 5개를 제안해주세요.\n\n다음 관점을 참고할 수 있습니다.\n\n- 문제 공감\n- 질문\n- 변화/결과\n- 정보/How-to\n- 이야기/상황\n\n각 Angle마다:\n\n1. Angle 이름\n2. 핵심 아이디어\n3. Hook 후보 2개\n4. 왜 이 타겟에게 적합한지\n\n를 작성해주세요.\n\n[GUARDRAIL]\n\n- 제공하지 않은 기능이나 효과를 만들지 마세요.\n- 확인되지 않은 수치나 고객반응을 만들지 마세요.\n- 핵심 메시지 의미를 바꾸지 마세요.\n- 과도한 Clickbait를 사용하지 마세요.\n\n[OUTPUT]\n\nAngle | 핵심 아이디어 | Hook A | Hook B | 타겟 적합 이유\n\n형태의 표로 작성해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분을 1교시에 저장한 콘텐츠 메시지 원장의 내용으로 바꾼 뒤 ChatGPT에 붙여넣으세요. 복사 → [ ] 수정 → ChatGPT 실행 → Angle 1개 선택."
+        },
+        {
+          "id": "d2l2-b07-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 Angle 생성",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Content Angle 5개 생성",
+            "practiceDescription": "서로 다른 관점의 Content Angle 5개를 만듭니다.",
+            "estimatedMinutes": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "AI의 강점은 여러 선택지를 빠르게 만드는 것입니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l2-b08-variant",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Variant Generation\n\n**One-shot** — 1개 생성 → 바로 사용\n\n**Variant** — 여러 후보 생성 → 비교 → 선택\n\n**AI의 강점은 정답 하나가 아니라 여러 선택지를 빠르게 만드는 능력에도 있습니다.**\n\n선택한 Angle을 사용해 이제 SNS Draft 후보 3개를 만들 준비를 합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "실습 2 — SNS Draft 후보 3개 만들기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l2-b05-prompt",
+          "type": "prompt",
+          "title": "SNS Draft 생성 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[선택한 Content Angle]\n[ ]\n\n[타겟 고객]\n[ ]\n\n[Core Message]\n[ ]\n\n[Tone]\n[ ]\n\n[CTA]\n[ ]\n\n[사용 가능한 사실]\n[ ]\n\n위 내용을 이용해 SNS 게시물 후보 3개를 만들어주세요.\n\n세 후보는 단어만 조금 바꾸지 말고 전개 방식을 서로 다르게 작성해주세요.\n\n각 콘텐츠는 다음 요소를 참고해주세요.\n\n- Hook\n- Value\n- Body\n- CTA\n\n각 결과 아래에 \"이 버전의 특징\"을 한 문장으로 설명해주세요.\n\n제공한 Context에 없는 사실, 효과, 통계, 고객반응을 새로 추가하지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분을 P07에서 고른 Content Angle과 1교시 결과로 바꾸세요."
+        },
+        {
+          "id": "d2l2-b05-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 SNS 후보 생성",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "SNS Draft 후보 3개 생성",
+            "practiceDescription": "선택한 Angle로 전개 방식이 다른 후보 3개를 만듭니다.",
+            "estimatedMinutes": 12
+          }
+        },
+        {
+          "id": "d2l2-b05-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "복사 → [ ] 수정 → ChatGPT 실행. {{변수}} 같은 자동 대입은 없습니다 — 직접 바꿔 넣으세요. 3개 비교 → 가장 나은 1개 선택.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "Generate → Evaluate → Revise",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l2-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 콘텐츠 생성은 한 번에 끝내지 않습니다\n\n1. **Generate** — 여러 후보 생성\n2. **Evaluate** — 좋은 점과 문제점 확인\n3. **Revise** — 필요한 부분만 수정",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b10-roles",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## GPT의 3가지 역할\n\n**Writer** → 초안 생성\n\n**Critic** → 문제점 분석\n\n**Editor** → 선택한 문제만 수정\n\n**Writer → Critic → Human Decision → Editor** — \"다시 써줘\" 반복 대신 이 순서를 지킵니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b10-problems",
+          "type": "infographic",
+          "title": "AI SNS 콘텐츠의 흔한 문제",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Generic Content",
+                "description": "어디서 본 듯한 일반적인 문장"
+              },
+              {
+                "label": "Over-polished",
+                "description": "너무 매끈하지만 사람 냄새가 없음"
+              },
+              {
+                "label": "Unsupported Claim",
+                "description": "제공하지 않은 효과·수치"
+              },
+              {
+                "label": "Tone Drift",
+                "description": "브랜드 말투가 계속 바뀜"
+              },
+              {
+                "label": "CTA Overload",
+                "description": "여러 행동을 한 번에 요구"
+              },
+              {
+                "label": "Message Drift",
+                "description": "처음 Core Message와 달라짐"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "실습 3 — GPT를 Critic과 Editor로 사용합니다",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l2-b11-critic",
+          "type": "prompt",
+          "title": "Step A — Critic 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "다음 SNS 콘텐츠를 아직 다시 작성하지 말고 먼저 평가해주세요.\n\n[콘텐츠]\n[ ]\n\n다음 기준으로 확인해주세요.\n\n1. 타겟 고객에게 적합한가?\n2. Hook이 명확한가?\n3. Core Message가 유지되는가?\n4. 모호하거나 과장된 표현이 있는가?\n5. 브랜드 Tone과 맞는가?\n6. CTA가 자연스러운가?\n7. 제공하지 않은 사실을 새로 만들지는 않았는가?\n\n각 항목마다 좋은 점 / 문제점 / 수정 제안을 작성해주세요.\n\n아직 수정본은 작성하지 마세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분에 P09에서 고른 SNS Draft를 붙여넣으세요."
+        },
+        {
+          "id": "d2l2-b11-editor",
+          "type": "prompt",
+          "title": "Step C — Editor 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "위 평가 중에서 내가 선택한 다음 문제만 수정해주세요.\n\n수정할 항목:\n[예: 2번 Hook / 4번 과장 표현]\n\n나머지 잘된 부분은 가능한 한 유지해주세요.\n\n전체 글을 처음부터 새로 작성하지 말고 선택한 문제를 중심으로 수정해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "Step B에서 학생이 직접 수정할 항목을 선택한 뒤 이 프롬프트로 실행하세요."
+        },
+        {
+          "id": "d2l2-b11-cta",
+          "type": "infographic",
+          "title": "CTA 유형 (참고)",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Engagement",
+                "description": "\"여러분은 어떻게 하고 있나요?\""
+              },
+              {
+                "label": "Save",
+                "description": "\"나중에 사용하려면 저장해두세요.\""
+              },
+              {
+                "label": "Learn",
+                "description": "\"자세한 방법을 확인하세요.\""
+              },
+              {
+                "label": "Lead",
+                "description": "\"무료 자료를 받아보세요.\""
+              },
+              {
+                "label": "Conversion",
+                "description": "\"신청하기 / 구매하기\""
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2l2-b11-note",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "**Critique → 수정 항목 선택 → Editor 실행** 순서를 학생이 직접 수행합니다. 한 콘텐츠에서 핵심 CTA는 하나만 우선하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "채널이 바뀌어도 사실과 핵심 메시지는 바뀌지 않습니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d2l2-bchannel-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -471,7 +699,7 @@
           }
         },
         {
-          "id": "d2l2-b07-channels",
+          "id": "d2l2-bchannel-channels",
           "type": "infographic",
           "title": "채널별 맥락",
           "visibility": "visible",
@@ -494,11 +722,11 @@
           }
         },
         {
-          "id": "d2l2-b07-key",
+          "id": "d2l2-bchannel-key",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "채널별 차이를 지나치게 규칙화하지 않습니다. 다만 **읽는 맥락·기대하는 정보량·Tone·CTA**가 채널마다 다를 수 있다는 것만 기억하세요.",
+            "markdown": "채널별 차이를 지나치게 규칙화하지 않습니다. 다만 **읽는 맥락·기대하는 정보량·Tone·CTA**가 채널마다 다를 수 있다는 것만 기억하세요.\n\n**복사와 변환은 다릅니다.** 채널이 바뀌어도 사실과 Core Message는 유지합니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -508,7 +736,7 @@
           }
         },
         {
-          "id": "d2l2-b07-script",
+          "id": "d2l2-bchannel-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -525,35 +753,21 @@
       ]
     },
     {
-      "id": "p08",
-      "title": "실습 2 — 한 메시지를 채널별로 변환",
+      "id": "p13",
+      "title": "실습 4 — 채널별 변환 + SNS 전문 AI 체험",
       "layout": "practice",
       "blocks": [
         {
-          "id": "d2l2-b08-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 고른 SNS 원문 1개를 3개 채널 버전으로 바꿉니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
           "id": "d2l2-b08-prompt",
           "type": "prompt",
-          "title": "채널별 변환 프롬프트",
+          "title": "채널별 변환 프롬프트 (필수)",
           "visibility": "visible",
           "data": {
-            "prompt": "아래 SNS 게시물 1개를 세 가지 채널 버전으로 바꿔주세요.\n\n[원문]\n[ P06에서 고른 SNS 원문 붙여넣기 ]\n\n1. Instagram 버전 — 짧고 감성적인 톤\n2. Threads 버전 — 대화체, 가벼운 톤\n3. LinkedIn 버전 — 업무 맥락에 맞는 설명적인 톤\n\n핵심 메시지와 사실 관계는 세 버전 모두 동일하게 유지해주세요. 제공하지 않은 사실을 새로 추가하지 마세요.",
+            "prompt": "다음 SNS 콘텐츠의 사실과 핵심 메시지는 유지한 채 세 채널에 맞게 다시 작성해주세요.\n\n[원문]\n[ ]\n\n1. Instagram\n2. Threads\n3. LinkedIn\n\n각 버전에는 Hook / 본문 / CTA를 포함해주세요.\n\n그리고 각 결과 아래에 \"채널에 맞게 무엇을 바꿨는가\"를 한 문장으로 설명해주세요.\n\n단순히 글자 수만 줄이거나 늘리지 마세요. 원문에 없는 사실이나 효과는 추가하지 마세요.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 부분에 P06에서 고른 SNS 원문을 붙여넣으세요."
+          "description": "[ ] 부분에 P11에서 완성한 SNS 콘텐츠를 붙여넣으세요."
         },
         {
           "id": "d2l2-b08-link",
@@ -571,11 +785,11 @@
           }
         },
         {
-          "id": "d2l2-b08-note",
+          "id": "d2l2-b13-buffer-intro",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**오늘은 Repurpose의 첫 체험입니다.** 본격적인 여러 채널 재사용 설계는 4교시에서 다룹니다.",
+            "markdown": "## SNS 전문 AI 도구도 살펴봅시다 (선택)\n\nBuffer 같은 SNS 전문 AI 도구에서는 범용 AI와 어떤 차이가 있는지 체험해봅니다. Rephrase / Shorten / Tone 변경 / Channel Adaptation 등을 시도해볼 수 있습니다.\n\n**강의 환경에 따라 직접 체험 또는 강사 시연으로 진행합니다.** Buffer가 사용 불가능해도 위 ChatGPT 채널 변환만으로 이 Lesson을 완주할 수 있습니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -585,59 +799,37 @@
           }
         },
         {
-          "id": "d2l2-b08-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "4교시 Repurpose 내용을 미리 끌어와 설명하지 마세요 — 여기서는 체험만입니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p09",
-      "title": "Generate → Critique → Revise",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d2l2-b09-title",
-          "type": "rich-text",
+          "id": "d2l2-b13-buffer-link",
+          "type": "external-link",
           "visibility": "visible",
           "data": {
-            "markdown": "## 콘텐츠 생성은 한 번에 끝내지 않습니다\n\n1. **Generate** — 초안 생성\n2. **Critique** — AI에게 스스로 비평시키기\n3. **Revise** — 수정",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "url": "https://buffer.com/",
+            "buttonLabel": "Buffer 살펴보기 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "SNS 전문 AI 체험",
+            "practiceDescription": "Buffer의 Rephrase·Shorten·Tone 변경 기능을 체험합니다.",
+            "estimatedMinutes": 8
           }
         },
         {
-          "id": "d2l2-b09-prompt",
+          "id": "d2l2-b13-buffer-altprompt",
           "type": "prompt",
-          "title": "Critique 프롬프트",
+          "title": "Buffer 대체 프롬프트 (Buffer 접속이 어려울 때)",
           "visibility": "visible",
           "data": {
-            "prompt": "이 글에서 모호한 표현, 과장 표현, 타겟과 맞지 않는 표현, 약한 CTA를 찾아주세요.\n\n[검토할 글]\n[ P08에서 고른 채널 버전 붙여넣기 ]",
+            "prompt": "다음 SNS 게시물을 아래 세 방식으로 각각 처리해주세요.\n\n[게시물]\n[ ]\n\n1. 다시 표현하기 — 의미 유지, 표현만 변경\n2. 줄이기 — 핵심 유지, 약 절반 길이\n3. Tone 변경 — 더 친근하게\n\n세 결과를 나란히 보여주고 각 작업에서 무엇이 달라졌는지 한 문장씩 설명해주세요.",
             "targetTool": "ChatGPT",
             "copyable": true
-          },
-          "description": "학생이 만든 결과를 GPT에게 다시 검토시키는 프롬프트입니다."
+          }
         },
         {
-          "id": "d2l2-b09-script",
+          "id": "d2l2-b13-extra",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "\"다시 써줘\"가 아니라 \"문제점부터 찾아줘\"가 핵심입니다 — 순서를 바꾸지 않게 강조하세요.",
+            "markdown": "**참고**: 해시태그는 핵심 주제와 직접 관련된 5개 정도만 GPT에게 요청해도 충분합니다(20~30개씩 만드는 실습은 하지 않습니다). A/B Test는 Body·CTA는 그대로 두고 Hook A vs Hook B처럼 한 요소만 바꿔보는 정도로 개념만 소개합니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -650,75 +842,16 @@
       ]
     },
     {
-      "id": "p10",
-      "title": "사람 편집",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d2l2-b10-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 수정안을 그대로 사용하지 않습니다\n\n학생이 최종적으로 다음을 직접 수정합니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d2l2-b10-edit",
-          "type": "infographic",
-          "title": "최종 수정 항목",
-          "visibility": "visible",
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "Hook"
-              },
-              {
-                "label": "Body"
-              },
-              {
-                "label": "CTA"
-              },
-              {
-                "label": "Tone"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d2l2-b10-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "AI 수정안을 복사만 하고 끝내는 학생이 없는지 확인하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p11",
-      "title": "최종 SNS 콘텐츠 세트",
+      "id": "p14",
+      "title": "실습 5 — AI 텍스트를 실제 Visual Asset으로 연결합니다",
       "layout": "practice",
       "blocks": [
         {
-          "id": "d2l2-b11-title",
+          "id": "d2l2-b14-hook-compare",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 오늘 완성한 SNS 콘텐츠를 정리합니다",
+            "markdown": "## Text Hook vs Visual Hook\n\nCaption: \"오늘 SNS에 뭘 올릴지 또 고민 중인가요?\"\n\nVisual: \"오늘도 소재 없음?\"\n\n**Visual과 Caption은 같은 메시지를 서로 보완합니다.** 같은 문장을 그대로 반복할 필요는 없습니다.",
             "emphasis": "normal"
           },
           "layout": {
@@ -728,70 +861,132 @@
           }
         },
         {
-          "id": "d2l2-b11-form",
+          "id": "d2l2-b14-visualhook-prompt",
+          "type": "prompt",
+          "title": "Visual Hook 생성 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "다음 SNS 콘텐츠를 바탕으로 이미지 안에 넣을 짧은 Visual Hook 후보 5개를 만들어주세요.\n\n[Caption]\n[ ]\n\n조건:\n\n- 12자 안팎의 짧은 표현 우선\n- Caption 첫 문장을 그대로 반복하지 않기\n- 과장하지 않기\n- 이미지 한 장에서 바로 이해할 수 있게 하기\n\n각 후보가 Caption과 어떻게 보완되는지도 한 문장씩 설명해주세요.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "[ ] 부분에 P11에서 완성한 Caption을 붙여넣으세요."
+        },
+        {
+          "id": "d2l2-b14-canva-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://www.canva.com/",
+            "buttonLabel": "Canva에서 Visual 만들기 (선택)",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "Text → Visual Asset",
+            "practiceDescription": "SNS 게시물 Template에 Hook과 Visual Hook을 배치합니다.",
+            "estimatedMinutes": 10
+          },
+          "description": "1. Template 선택 → 2. 확정한 Hook 사용 → 3. Visual Hook 배치 → 4. Caption과 Visual이 같은 문장을 그대로 반복하지 않는지 확인. AI 이미지 생성은 필수가 아닙니다 — Template + Text만으로 충분합니다."
+        },
+        {
+          "id": "d2l2-b14-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Canva 접속이 어려우면 Visual Idea를 다음 페이지에 텍스트로 적는 것만으로 Lesson을 완주할 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "title": "최종 SNS Content Card",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d2l2-b15-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 완성한 것을 하나의 Content Card로 정리합니다\n\nAI 결과를 그대로 쓴 것이 아니라 내가 판단하고 수정한 흔적을 남깁니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d2l2-b15-form",
           "type": "input-form",
-          "title": "최종 SNS 콘텐츠",
+          "title": "최종 SNS Content Card",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "최종 SNS 콘텐츠",
+                "label": "CHANNEL + GOAL",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "예: Instagram / 저장 유도"
               },
               {
                 "id": "f2",
-                "label": "선택한 Hook",
+                "label": "TARGET",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f3",
-                "label": "CTA",
+                "label": "CORE MESSAGE",
                 "kind": "long-text",
                 "required": false
               },
               {
                 "id": "f4",
-                "label": "채널",
-                "kind": "select",
-                "required": false,
-                "options": [
-                  "Instagram",
-                  "Threads",
-                  "LinkedIn",
-                  "기타"
-                ]
+                "label": "CONTENT ANGLE",
+                "kind": "long-text",
+                "required": false
               },
               {
                 "id": "f5",
-                "label": "수정한 이유",
+                "label": "HOOK",
                 "kind": "long-text",
                 "required": false
+              },
+              {
+                "id": "f6",
+                "label": "BODY",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f7",
+                "label": "CTA + TONE",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f8",
+                "label": "VISUAL IDEA + HUMAN EDIT",
+                "kind": "long-text",
+                "required": true,
+                "placeholder": "AI 초안에서 내가 무엇을 수정했는지 반드시 포함하세요. 예: \"Hook을 질문형에서 상황형으로 수정했고, 과장된 표현 1개를 삭제했다.\""
               }
             ]
-          }
-        },
-        {
-          "id": "d2l2-b11-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "필드를 더 늘리려 하지 마세요 — 5개면 충분합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         }
       ]
     },
     {
-      "id": "p12",
+      "id": "p16",
       "title": "SNS 콘텐츠 저장",
       "layout": "wide",
       "blocks": [
@@ -825,8 +1020,26 @@
           "data": {
             "artifactType": "content",
             "artifactTitle": "Day2 Lesson2 — SNS 콘텐츠 세트",
-            "sourceBlockId": "d2l2-b11-form",
+            "sourceBlockId": "d2l2-b15-form",
             "buttonLabel": "내 프로젝트에 저장"
+          }
+        },
+        {
+          "id": "d2l2-b16-harness",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 오늘 Workflow를 연결해봅시다\n\n콘텐츠 메시지 원장 → ChatGPT(Angle/Variant) → Human(선택) → ChatGPT(Critic/Editor) → Channel Adaptation → Buffer(선택 체험) → Canva(Visual Asset) → Human Edit → 저장\n\n**1교시에서 배운 Harness가 실제 SNS 콘텐츠 제작 Workflow가 되었습니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
@@ -834,12 +1047,12 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 다음 교시\n\n짧은 SNS 메시지를 만들었습니다. 다음에는 같은 핵심 메시지를 **읽을 가치가 있는 장문 콘텐츠(블로그)**로 확장합니다.",
+            "markdown": "## 다음 교시\n\n짧은 SNS 콘텐츠를 완성했습니다. 다음 3교시에서는 같은 Core Message와 좋은 Angle을 이용해 검색하고 읽을 가치가 있는 장문 Blog 콘텐츠로 확장합니다.",
             "emphasis": "normal"
           },
           "theme": {
-            "background": "primary-soft",
-            "bordered": false
+            "background": "muted",
+            "bordered": true
           },
           "layout": {
             "width": "wide",
