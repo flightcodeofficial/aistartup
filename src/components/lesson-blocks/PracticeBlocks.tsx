@@ -180,6 +180,20 @@ export function SaveArtifactBlockRenderer({ block }: { block: SaveArtifactBlock 
     };
   }, [activeProjectId]);
 
+  // 이전에 이미 저장한 적이 있으면(다시 들어온 세션이어도) "완료" 상태를 그대로 보여준다.
+  useEffect(() => {
+    let cancelled = false;
+    if (!activeProjectId) return;
+    workspaceRepository.listArtifacts(activeProjectId).then((artifacts) => {
+      if (cancelled) return;
+      const existing = artifacts.find((a) => a.sourceBlockId === block.id);
+      if (existing) setSavedAt(existing.updatedAt);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [activeProjectId, block.id]);
+
   const handleSave = async () => {
     // 실습 결과가 임의 프로젝트에 자동 저장되지 않도록, 활성 프로젝트가 없으면 선택부터 받는다.
     if (!activeProjectId || !activeTitle) {
