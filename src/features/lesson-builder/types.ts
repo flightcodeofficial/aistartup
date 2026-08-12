@@ -196,6 +196,8 @@ export interface ExternalLinkBlock extends BlockBase {
     practiceName?: string;
     practiceDescription?: string;
     estimatedMinutes?: number;
+    /** 있으면 버튼 클릭 시 이 텍스트를 클립보드에 복사한 뒤 링크로 이동한다. */
+    copyText?: string;
   };
 }
 

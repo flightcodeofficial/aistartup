@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { toast } from "sonner";
-import { ArrowUpRight, CheckCircle2, Clock, ExternalLink, Loader2, Save, ShieldAlert } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Clock, Copy, ExternalLink, Loader2, Save, ShieldAlert } from "lucide-react";
 import type {
   ExternalLinkBlock,
   InternalAppBlock,
@@ -82,12 +82,26 @@ export function ExternalLinkBlockRenderer({ block }: { block: ExternalLinkBlock 
           외부 사이트({host})로 이동합니다. 개인정보나 결제 정보를 입력하지 않도록 주의하세요.
         </p>
       )}
+      {block.data.copyText && (
+        <p className="mb-3 flex items-center gap-1.5 text-xs text-muted-foreground">
+          <Copy className="size-3.5" />
+          버튼을 누르면 프롬프트가 자동으로 복사됩니다. 이동한 사이트에 붙여넣으세요.
+        </p>
+      )}
       <div className="flex flex-wrap items-center gap-2">
         <Button asChild className="min-h-11 gap-1.5 sm:min-h-9">
           <a
             href={block.data.url}
             target={block.data.openInNewTab ? "_blank" : undefined}
             rel="noopener noreferrer"
+            onClick={() => {
+              if (!block.data.copyText) return;
+              navigator.clipboard.writeText(block.data.copyText).then(() => {
+                toast.success("프롬프트가 복사되었습니다", {
+                  description: "이동한 사이트에 붙여넣으세요.",
+                });
+              });
+            }}
           >
             <ExternalLink className="size-4" />
             {block.data.buttonLabel}

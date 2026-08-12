@@ -149,6 +149,8 @@ export const lessonBlockSchema = z.discriminatedUnion("type", [
       practiceName: z.string().optional(),
       practiceDescription: z.string().optional(),
       estimatedMinutes: z.number().optional(),
+      /** 있으면 버튼 클릭 시 이 텍스트를 클립보드에 복사한 뒤 링크로 이동한다. */
+      copyText: z.string().optional(),
     }),
   }),
   z.object({
