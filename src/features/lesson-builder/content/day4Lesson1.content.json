@@ -313,7 +313,22 @@
               { "id": "f1", "label": "선택한 Feature (Selected Feature)", "kind": "long-text", "required": false },
               { "id": "f2", "label": "기능적 혜택 (Functional Benefit)", "kind": "long-text", "required": false },
               { "id": "f3", "label": "실질적 혜택 (Practical Benefit)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "기대 결과 (Expected Outcome)", "kind": "long-text", "required": false },
+              {
+                "id": "f4",
+                "label": "기대 결과 (Expected Outcome)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l1-b03-form",
+                    "sourceFieldIds": [
+                      "f5"
+                    ]
+                  }
+                ]
+              },
               { "id": "f5", "label": "가치 가설 메모 (Value Hypothesis Notes)", "kind": "long-text", "required": false, "placeholder": "Evidence로 확인되지 않은 부분은 [VALUE HYPOTHESIS]로 표시하세요." }
             ]
           },
@@ -403,13 +418,117 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "타겟 (Target)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "문제 (Problem)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "현재 대안 (Current Alternative)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "대안의 한계 (Alternative Gap)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "우리의 접근 (Our Approach)", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "혜택 (Benefit)", "kind": "long-text", "required": false },
-              { "id": "f7", "label": "기대 결과 (Expected Outcome)", "kind": "long-text", "required": false },
+              {
+                "id": "f1",
+                "label": "타겟 (Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "4차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "4차시 — Target Selection v0.1",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "문제 (Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l1-b03-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "현재 대안 (Current Alternative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l1-b03-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "대안의 한계 (Alternative Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l1-b03-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "우리의 접근 (Our Approach)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P05에서 가져오기",
+                    "sourceBlockId": "d4l1-b05-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "혜택 (Benefit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P05에서 가져오기",
+                    "sourceBlockId": "d4l1-b05-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "기대 결과 (Expected Outcome)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l1-b03-form",
+                    "sourceFieldIds": [
+                      "f5"
+                    ]
+                  }
+                ]
+              },
               { "id": "f8", "label": "한 문장 Value 가설 (Bridge Statement)", "kind": "long-text", "required": false, "placeholder": "\"[Target]이 [Problem]을 겪을 때, [Our Approach]를 통해 [Benefit/Outcome]을 얻도록 돕는다.\"" }
             ]
           },
@@ -612,19 +731,165 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "1순위 타겟 (Primary Target)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "핵심 고객 문제 (Key Customer Problem)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "현재 대안 (Current Alternative)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "대안의 한계 (Alternative Gap)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "기능에서 혜택으로 (Feature → Benefit → Outcome)", "kind": "long-text", "required": false, "placeholder": "P05 So What? Ladder 결과" },
-              { "id": "f6", "label": "가치제안 브릿지 (Value Proposition Bridge)", "kind": "long-text", "required": false, "placeholder": "P06 Bridge Statement" },
-              { "id": "f7", "label": "가치 후보들 (Value Candidates)", "kind": "long-text", "required": false, "placeholder": "P07 Value A~D" },
+              {
+                "id": "f1",
+                "label": "1순위 타겟 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "4차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "4차시 — Target Selection v0.1",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "핵심 고객 문제 (Key Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P06에서 가져오기",
+                    "sourceBlockId": "d4l1-b06-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "현재 대안 (Current Alternative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P06에서 가져오기",
+                    "sourceBlockId": "d4l1-b06-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "대안의 한계 (Alternative Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P06에서 가져오기",
+                    "sourceBlockId": "d4l1-b06-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "기능에서 혜택으로 (Feature → Benefit → Outcome)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "P05 So What? Ladder 결과",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P05에서 가져오기",
+                    "sourceBlockId": "d4l1-b05-form"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "가치제안 브릿지 (Value Proposition Bridge)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "P06 Bridge Statement",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P06에서 가져오기",
+                    "sourceBlockId": "d4l1-b06-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "가치 후보들 (Value Candidates)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "P07 Value A~D",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P07에서 가져오기",
+                    "sourceBlockId": "d4l1-b07-form"
+                  }
+                ]
+              },
               { "id": "f8", "label": "1순위 가치제안 (Primary Value Proposition)", "kind": "long-text", "required": false },
               { "id": "f9", "label": "2순위 가치 (Secondary Value)", "kind": "long-text", "required": false },
               { "id": "f10", "label": "지지 근거 (Supporting Evidence)", "kind": "long-text", "required": false },
-              { "id": "f11", "label": "반대 근거 (Counter Evidence)", "kind": "long-text", "required": false },
-              { "id": "f12", "label": "확보된 증거 (Available Proof)", "kind": "long-text", "required": false },
-              { "id": "f13", "label": "부족한 증거 (Missing Proof)", "kind": "long-text", "required": false },
+              {
+                "id": "f11",
+                "label": "반대 근거 (Counter Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l1-b08-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "확보된 증거 (Available Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l1-b08-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "부족한 증거 (Missing Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l1-b08-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
+                ]
+              },
               { "id": "f14", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "P08 Red Team 결과를 최종 검토한 뒤 KEEP/REVISE/HOLD/REJECT 결론을 적으세요." }
             ]
           },
@@ -707,21 +972,241 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "확인된 사실 (Confirmed Facts)", "kind": "long-text", "required": false, "placeholder": "4차시 Confirmed Facts + 이번 시간 확인된 내용" },
-              { "id": "f2", "label": "현재 가설 (Current Hypotheses)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "1순위 타겟 (Primary Target)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "핵심 문제 (Key Problem)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "현재 대안 (Current Alternative)", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "제품 역량 (Product Capability)", "kind": "long-text", "required": false },
-              { "id": "f7", "label": "핵심 혜택 (Key Benefit)", "kind": "long-text", "required": false },
-              { "id": "f8", "label": "기대 결과 (Expected Outcome)", "kind": "long-text", "required": false },
-              { "id": "f9", "label": "1순위 가치제안 (Primary Value Proposition)", "kind": "long-text", "required": false },
-              { "id": "f10", "label": "2순위 가치 (Secondary Value)", "kind": "long-text", "required": false },
-              { "id": "f11", "label": "가치 근거 (Value Evidence)", "kind": "long-text", "required": false },
-              { "id": "f12", "label": "확보된 증거 (Available Proof)", "kind": "long-text", "required": false },
-              { "id": "f13", "label": "부족한 증거 (Missing Proof)", "kind": "long-text", "required": false },
-              { "id": "f14", "label": "가치 리스크 (Value Risks)", "kind": "long-text", "required": false },
-              { "id": "f15", "label": "검증 대기 목록 (Validation Backlog)", "kind": "long-text", "required": false },
+              {
+                "id": "f1",
+                "label": "확인된 사실 (Confirmed Facts)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "4차시 Confirmed Facts + 이번 시간 확인된 내용",
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "4차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "4차시 — Business Context v0.4",
+                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "현재 가설 (Current Hypotheses)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "4차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "4차시 — Business Context v0.4",
+                    "sourceLabel": "현재 가설 (Current Hypotheses)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "1순위 타겟 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "핵심 문제 (Key Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "현재 대안 (Current Alternative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "제품 역량 (Product Capability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P04에서 가져오기",
+                    "sourceBlockId": "d4l1-b04-form"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "핵심 혜택 (Key Benefit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P06에서 가져오기",
+                    "sourceBlockId": "d4l1-b06-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "기대 결과 (Expected Outcome)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P06에서 가져오기",
+                    "sourceBlockId": "d4l1-b06-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "2순위 가치 (Secondary Value)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "가치 근거 (Value Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "확보된 증거 (Available Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "부족한 증거 (Missing Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d4l1-b09-form",
+                    "sourceFieldIds": [
+                      "f13"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f14",
+                "label": "가치 리스크 (Value Risks)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l1-b08-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "검증 대기 목록 (Validation Backlog)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "4차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "4차시 — Business Context v0.4",
+                    "sourceLabel": "검증 대기 목록 (Validation Backlog)"
+                  }
+                ]
+              },
               { "id": "f16", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "선택한 Target이 이 Value를 인식하고 우리 서비스를 발견·검토·선택하는 과정은 어떻게 되는가?" }
             ]
           },
