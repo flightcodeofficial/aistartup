@@ -176,7 +176,7 @@
     },
     {
       "id": "p04",
-      "title": "실습 2: 5-Block 구조화",
+      "title": "실습 2: 다섯 요소로 구조화하기",
       "layout": "practice",
       "blocks": [
         {
@@ -192,7 +192,7 @@
         {
           "id": "d3l3-b04-prompt",
           "type": "prompt",
-          "title": "Five-Block Segment Structuring 프롬프트",
+          "title": "다섯 요소 구조화 프롬프트 (Five-Block Segment Structuring)",
           "visibility": "visible",
           "data": {
             "prompt": "[ROLE]\n\n너는 Customer Segmentation을 설계하는\n시장분석 전문가다.\n\n[INPUT]\n\n아래는 실제 Evidence에서 추출한 Pattern이다.\n\n[Evidence Patterns]\n[ ]\n\n[TASK]\n\n각 Pattern을 Customer Segment 후보로 검토할 수 있도록\n다음 5개 Block으로 구조화해줘.\n\n1. Situation\n   이 고객이 어떤 상황에 놓여 있는가\n\n2. Repeated Problem\n   반복적으로 어떤 문제가 발생하는가\n\n3. Current Alternative\n   현재 무엇으로 문제를 해결하고 있는가\n\n4. Trigger\n   어떤 사건이나 상황에서 해결 행동을 시작하는가\n\n5. Expected Outcome\n   고객은 궁극적으로 무엇을 얻으려 하는가\n\n[CONSTRAINTS]\n\n- 자료에 없는 Persona 특성을 만들지 마.\n- 연령·성별·소득으로 억지로 Segment를 정의하지 마.\n- 하나의 Evidence Pattern을 과도하게 확대해 시장 전체의 특성처럼 표현하지 마.\n- Evidence가 부족한 Block은 추측해서 채우지 말고\n  [NEEDS MORE EVIDENCE]라고 표시해.\n- 서로 같은 Pattern을 억지로 별도 Segment처럼 분리하지 마.\n\n[OUTPUT]\n\nPattern별로:\n\nPattern ID\nSituation\nRepeated Problem\nCurrent Alternative\nTrigger\nExpected Outcome\nEvidence Source\nConfidence:\n- Supported\n- Partially Supported\n- Hypothesis\n- Needs More Evidence\n\n형태로 작성해줘.",
@@ -211,24 +211,24 @@
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "Five-Block 구조화",
-            "practiceDescription": "Pattern을 Situation/Problem/Alternative/Trigger/Outcome 5블록으로 정리합니다.",
+            "practiceName": "다섯 요소로 구조화하기",
+            "practiceDescription": "패턴을 상황·문제·대안·촉발요인·기대결과 다섯 요소로 정리합니다.",
             "estimatedMinutes": 10
           }
         },
         {
           "id": "d3l3-b04-form",
           "type": "input-form",
-          "title": "Five-Block 구조화 결과",
+          "title": "다섯 요소 구조화 결과",
           "visibility": "visible",
           "data": {
             "fields": [
               {
                 "id": "f1",
-                "label": "Five-Block 구조화 결과",
+                "label": "정리 결과 (다섯 요소)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "Pattern ID / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Evidence Source / Confidence 를 Pattern별로 정리해 붙여넣으세요."
+                "placeholder": "패턴 번호(Pattern ID) / 상황(Situation) / 반복 문제(Repeated Problem) / 현재 대안(Current Alternative) / 촉발요인(Trigger) / 기대결과(Expected Outcome) / 근거 출처(Evidence Source) / 확신도(Confidence)를 패턴별로 정리해 붙여넣으세요."
               }
             ]
           },
