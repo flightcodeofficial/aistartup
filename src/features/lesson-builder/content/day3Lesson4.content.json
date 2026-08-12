@@ -6,7 +6,7 @@
   "lesson": 4,
   "title": "Targeting — 누구부터 공략할 것인가",
   "description": "Segment 후보를 Evidence로 비교하고, 지금 가장 먼저 검증할 Primary Target을 선택합니다.",
-  "durationMinutes": 60,
+  "durationMinutes": 45,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
@@ -33,7 +33,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**이번 차시에서는 새로운 고객을 만들지 않습니다.**\n\n3차시에서 남긴 Segment 후보만 비교합니다. 아래 목록에서 두 가지를 확인하세요.\n\n**A. 3차시 — Customer Segment Map v0.1**\nFinal Segment A~D / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Counter Evidence / Segment Evidence Status\n\n**B. 3차시 — Business Context v0.3**\nConfirmed Facts / Current Hypotheses / Customer Segments / Segment Evidence / Segment Risks / Validation Backlog / Next Decision",
+            "markdown": "**이번 차시에서는 새로운 고객을 만들지 않습니다.**\n\n3차시에서 남긴 Segment 후보만 비교합니다. 아래 결과를 확인하세요.\n\n**A. 3차시 — Customer Segment Map v0.1**\nFinal Segment A~D / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Counter Evidence / Segment Evidence Status\n\n**B. 3차시 — Business Context v0.3**\nConfirmed Facts / Current Hypotheses / Customer Segments / Segment Evidence / Segment Risks / Validation Backlog / Next Decision",
             "emphasis": "normal"
           },
           "theme": { "background": "primary-soft", "bordered": false },
@@ -99,7 +99,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**점수는 사실이 아니라 비교를 위한 판단 도구입니다.**",
+            "markdown": "**점수는 사실이 아니라 비교를 위한 판단 도구입니다.**\n\nAI는 비교하고, 사람은 결정합니다. Target은 최종 정답이 아니라 현재 Evidence 기준 Best Hypothesis입니다.",
             "emphasis": "normal"
           },
           "theme": { "background": "card", "bordered": true },
@@ -110,7 +110,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "STP 중 오늘은 Targeting(T)까지만 한다는 것을 짚어주세요 — Positioning은 다음 차시입니다.",
+            "markdown": "STP 중 오늘은 Targeting(T)까지만 한다는 것을 짚어주세요 — Positioning은 다음 차시입니다. ECP/ICP/Anti-ICP는 6차시에서 다룹니다.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -120,7 +120,7 @@
     },
     {
       "id": "p03",
-      "title": "실습 1: Evidence 기반 Target Matrix",
+      "title": "실습 1: Segment 비교",
       "layout": "practice",
       "blocks": [
         {
@@ -128,7 +128,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# Segment를 같은 기준으로 비교합니다",
+            "markdown": "# 누구부터 검증할지 같은 기준으로 비교합니다",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
@@ -136,14 +136,14 @@
         {
           "id": "d3l4-b03-prompt",
           "type": "prompt",
-          "title": "Evidence-based Target Evaluation 프롬프트",
+          "title": "Evidence 기반 Target 비교 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 초기 창업자의 첫 고객 선택을 돕는\n시장전략 분석가다.\n\n너의 목적은 가장 큰 시장을 찾는 것이 아니라\n현재 제품과 Evidence를 기준으로\n\"지금 처음 검증하기 좋은 고객군\"을 비교하는 것이다.\n\n[BUSINESS CONTEXT]\n\n[ ]\n\n[CUSTOMER SEGMENTS]\n\n[ ]\n\n[EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n각 Customer Segment를 동일한 기준으로 비교한다.\n\n[TASK]\n\n각 Segment를 다음 6개 기준으로 분석해줘.\n\n1. Problem Strength\n   문제의 심각도와 반복성\n\n2. Urgency / Trigger\n   지금 해결해야 하는 촉발요인이 있는지\n\n3. Current Cost\n   현재 문제 때문에 지불하는 시간·돈·노력\n\n4. Reachability\n   실제로 이 고객을 찾아 접촉하기 쉬운지\n\n5. Willingness to Pay Signal\n   지불 가능성을 보여주는 실제 또는 간접 Evidence가 있는지\n\n6. Current Product Fit\n   현재 MVP로 문제를 해결할 수 있는지\n\n[SCORING RULE]\n\n필요하면 각 기준에 1~5점의 비교점수를 제안할 수 있다.\n\n그러나 점수마다 반드시 아래를 함께 표시해.\n\n- 판단 이유\n- Supporting Evidence\n- Counter Evidence\n- Evidence Confidence\n\nEvidence Confidence는:\n\n- HIGH\n- MEDIUM\n- LOW\n- NEEDS MORE EVIDENCE\n\n중 하나로 표시한다.\n\n[EVIDENCE DISCIPLINE]\n\n자료에 없는:\n\n- 시장규모\n- 구매확률\n- 지불의사\n- 고객수\n- 예상매출\n\n을 사실처럼 만들지 마.\n\n\"기관이니까 돈을 많이 낼 것이다\"\n\"개인이라서 WTP가 낮다\"\n\n같은 일반화도 Evidence 없이 단정하지 마.\n\n[OUTPUT]\n\nSegment별 Target Evaluation Matrix를 만들어줘.\n\n열:\n\nSegment |\nProblem Strength |\nUrgency |\nCurrent Cost |\nReachability |\nWTP Signal |\nProduct Fit |\nSupporting Evidence |\nCounter Evidence |\nConfidence |\nMissing Evidence\n\n마지막에는 각 Segment마다:\n\n- 가장 강한 이유\n- 가장 큰 위험\n- 추가 검증할 것\n\n을 작성해.\n\n아직 최종 Primary Target을 선택하지 마.",
+            "prompt": "[ROLE]\n\n너는 초기 창업자의 첫 Target 선택을 돕는\nEvidence 기반 시장전략 분석가다.\n\n[BUSINESS CONTEXT]\n\n[ ]\n\n[CUSTOMER SEGMENTS]\n\n[ ]\n\n[SUPPORTING / COUNTER EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n장기적으로 가장 큰 시장이 아니라\n지금 현재 제품으로 가장 먼저 검증하기 좋은\nCustomer Segment를 비교한다.\n\n[TASK]\n\n각 Segment를 다음 6개 기준으로 비교해줘.\n\n1. Problem Frequency\n2. Problem Severity\n3. Current Cost\n4. Trigger / Urgency\n5. Reachability\n6. Current MVP Fit\n\n각 기준은 필요하면 1~5점으로 비교할 수 있지만\n점수보다 이유와 Evidence가 더 중요하다.\n\n각 Segment마다 반드시:\n\n- 판단 이유\n- Supporting Evidence\n- Counter Evidence\n- Missing Evidence\n\n를 같이 표시해줘.\n\n또한 Reachability는\n\"실제로 어디에서 이 고객을 찾을 수 있는가\"를\n간단히 포함해줘.\n\nWTP는 실제 Evidence가 없으면\n높다/낮다로 단정하지 말고\n현재 비용 또는 유료 대안 사용 같은 Signal만 표시해줘.\n\n[GUARDRAIL]\n\n자료에 없는 시장규모, 구매확률, 지불의사,\n예상매출을 만들어내지 마.\n\n근거가 부족한 평가는\n[NEEDS MORE EVIDENCE]로 표시해.\n\n[OUTPUT]\n\nSegment 비교표를 만들고 마지막에:\n\n1. 현재 1순위 후보\n2. 현재 2순위 후보\n3. 1순위 후보의 강점\n4. 1순위 후보의 가장 큰 Risk\n5. 추가 확인할 Evidence\n\n를 제안해.\n\n단 최종 Target은 대신 결정하지 마.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 세 곳에 Business Context, Customer Segments, Evidence를 각각 붙여넣으세요."
+          "description": "[ ] 세 곳에 3차시 Business Context, Customer Segments, Supporting/Counter Evidence를 붙여넣으세요."
         },
         {
           "id": "d3l4-b03-link",
@@ -155,91 +155,74 @@
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "Target Evaluation Matrix 생성",
-            "practiceDescription": "Segment를 6개 기준으로 동일하게 비교합니다.",
+            "practiceName": "Segment 비교",
+            "practiceDescription": "Segment를 6개 기준으로 동일하게 비교하고 1·2순위 후보를 추천받습니다.",
             "estimatedMinutes": 10
           }
         },
         {
           "id": "d3l4-b03-form",
           "type": "input-form",
-          "title": "Target Matrix 기록",
+          "title": "AI 비교 결과",
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "세그먼트 평가 요약 (Segment Evaluation Summary)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "가장 강한 후보 (Strongest Candidate)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "가장 약한 후보 (Weakest Candidate)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "부족한 근거 (Missing Evidence)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "검토 메모 (Review Notes)", "kind": "long-text", "required": false }
+              { "id": "f1", "label": "AI 비교 결과 요약 (Segment Comparison Summary)", "kind": "long-text", "required": false, "placeholder": "표 전체를 붙여넣어도 됩니다." },
+              { "id": "f2", "label": "AI 추천 1순위 (Recommended Primary)", "kind": "long-text", "required": false },
+              { "id": "f3", "label": "AI 추천 2순위 (Recommended Secondary)", "kind": "long-text", "required": false }
             ]
           },
-          "description": "ChatGPT 결과를 요약해 옮겨 적으세요. 아직 Target을 선택하지 않습니다."
+          "description": "ChatGPT 결과를 여러 칸으로 나누지 말고, 결과 전체와 추천 1·2순위만 옮겨 적으세요."
         }
       ]
     },
     {
       "id": "p04",
-      "title": "실습 2: AI 점수 공격하기",
-      "layout": "practice",
+      "title": "결과 같이 검토",
+      "layout": "wide",
       "blocks": [
         {
           "id": "d3l4-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# AI가 높은 점수를 줬다고 믿지 않습니다",
+            "markdown": "# AI가 준 점수도 다시 의심합니다",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l4-b04-prompt",
-          "type": "prompt",
-          "title": "Target Score Critic 프롬프트",
+          "id": "d3l4-b04-checklist",
+          "type": "infographic",
+          "title": "Prompt 1 결과 체크포인트",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 방금 만든 Target Evaluation Matrix의\n점수와 논리를 공격적으로 검토하는 Reviewer다.\n\n목적은 가장 높은 점수를 찾는 것이 아니라\nEvidence 없이 만들어진 확신을 제거하는 것이다.\n\n[INPUT]\n\nTarget Evaluation Matrix:\n[ ]\n\nSupporting Evidence:\n[ ]\n\nCounter Evidence:\n[ ]\n\n[TASK]\n\n다음을 찾아줘.\n\n1. Evidence 없이 높은 점수를 준 항목\n2. 일반적인 상식이나 고정관념으로 판단한 항목\n3. 같은 Evidence를 여러 기준에 중복 사용한 부분\n4. 과도하게 낙관적인 Segment\n5. 과도하게 비관적인 Segment\n6. Evidence가 약한 WTP 판단\n7. Evidence가 약한 Reachability 판단\n8. 현재 제품 기능을 과대평가한 Product Fit\n\n[CRITIC RULE]\n\n근거가 부족하면\n기존 점수를 방어하지 마.\n\n대신:\n\n[NEEDS MORE EVIDENCE]\n\n라고 표시해.\n\n[OUTPUT]\n\nSegment |\n문제가 있는 평가항목 |\n기존 판단 |\n문제점 |\nEvidence Gap |\n수정 제안\n\n마지막에:\n\n\"현재 Matrix에서 가장 위험한 가정 3개\"\n\n를 뽑아줘.\n\n아직 Target은 선택하지 마.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "[ ] 세 곳에 P03의 Matrix, Supporting Evidence, Counter Evidence를 붙여넣으세요."
-        },
-        {
-          "id": "d3l4-b04-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Target Score Critic",
-            "practiceDescription": "Evidence 없이 만들어진 점수와 확신을 찾아 제거합니다.",
-            "estimatedMinutes": 10
+            "variant": "checklist",
+            "items": [
+              { "label": "근거 없이 높은 점수를 준 항목은 없는가?" },
+              { "label": "Reachability가 실제 확인된 내용인가, AI 추측인가?" },
+              { "label": "WTP를 AI가 상상하지 않았는가?" },
+              { "label": "같은 Evidence를 여러 기준에 반복 사용하지 않았는가?" },
+              { "label": "현재 MVP가 실제로 이 Segment의 문제를 해결하는가?" }
+            ]
           }
         },
         {
-          "id": "d3l4-b04-form",
-          "type": "input-form",
-          "title": "AI 점수 비판 검토 (Score Critic Human Review)",
-          "visibility": "visible",
+          "id": "d3l4-b04-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
           "data": {
-            "fields": [
-              { "id": "f1", "label": "유지할 평가", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "수정할 평가", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Evidence 부족 평가", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "추가 확인 항목", "kind": "long-text", "required": false }
-            ]
+            "markdown": "이 페이지는 학생 입력이 없습니다. 강사가 P03 결과를 화면에 띄워놓고 위 체크포인트를 하나씩 같이 확인하세요.",
+            "emphasis": "normal"
           },
-          "description": "ChatGPT의 지적을 그대로 받아들이지 말고, 실제로 동의하는지 검토한 뒤 옮겨 적으세요."
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
       "id": "p05",
-      "title": "실습 3: Reachability Reality Check",
+      "title": "실습 2: 현실 확인",
       "layout": "practice",
       "blocks": [
         {
@@ -247,71 +230,39 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 이 고객을 실제로 지금 찾을 수 있을까?",
+            "markdown": "# AI가 접근 가능하다고 했는데\n# 실제로 찾을 수 있을까?",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l4-b05-channels",
-          "type": "infographic",
-          "title": "채널 Reminder",
+          "id": "d3l4-b05-notice",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
-            "items": [
-              { "label": "B2C 후보", "description": "Google\nNaver\nInstagram\n커뮤니티\n플랫폼\n오프라인" },
-              { "label": "B2B 후보", "description": "기관 홈페이지\nGoogle\nLinkedIn\n협회\n기업 Directory\n대학/기관 목록\n직접 영업" }
-            ]
-          }
-        },
-        {
-          "id": "d3l4-b05-prompt",
-          "type": "prompt",
-          "title": "Reachability Planning 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[ROLE]\n\n너는 초기 창업자의 Customer Acquisition 가능성을\n점검하는 시장진입 분석가다.\n\n[TARGET CANDIDATES]\n\n[ ]\n\n[OBJECTIVE]\n\n각 Segment를 실제로 어디에서 찾을 수 있는지\n구체적인 접근경로를 설계한다.\n\n[TASK]\n\n각 Segment마다:\n\n1. 실제로 존재할 가능성이 높은 장소/채널\n2. 검색할 키워드\n3. 직접 연락 가능한지\n4. 공개된 목록/디렉터리가 있는지\n5. 커뮤니티 접근 가능성\n6. 온라인 광고 접근 가능성\n7. 초기 10~20명을 찾는 현실적인 방법\n\n을 제안해줘.\n\n[GUARDRAIL]\n\n실제로 확인하지 않은 특정 업체명이나 고객목록을\n가짜로 만들어내지 마.\n\n검색으로 확인해야 하는 내용은\n[SEARCH REQUIRED]로 표시해.\n\n[OUTPUT]\n\nSegment |\n접근 채널 |\n검색어 |\n접촉 방법 |\n예상 난이도 |\n확인 필요사항",
-            "targetTool": "ChatGPT",
-            "copyable": true
+            "markdown": "강사와 함께 1순위 후보를 **Google / Naver / (필요 시 LinkedIn)** 중 하나로 짧게 검색해봅니다.\n\n채널·검색어·접촉방법을 각각 따로 적지 않고, 확인한 내용만 한 줄로 남깁니다.",
+            "emphasis": "normal"
           },
-          "description": "[ ] 부분에 P03~P04에서 남은 Segment 후보를 붙여넣으세요."
-        },
-        {
-          "id": "d3l4-b05-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Reachability Planning",
-            "practiceDescription": "각 Segment를 실제로 찾을 수 있는 채널과 방법을 설계합니다.",
-            "estimatedMinutes": 10
-          }
+          "theme": { "background": "muted", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
           "id": "d3l4-b05-form",
           "type": "input-form",
-          "title": "실제 접근 가능성 점검 (Reachability Reality Check)",
+          "title": "현실 확인",
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "가장 찾기 쉬운 Segment", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "실제 접근 채널", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "검색 키워드", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "Reachability Reality Check 결과", "kind": "long-text", "required": false, "placeholder": "[SEARCH REQUIRED]로 표시된 항목은 강사가 실제 Google/Naver/LinkedIn 검색으로 시연 후 확인한 결과를 적으세요." }
+              { "id": "f1", "label": "현실 확인 메모 (Reality Check)", "kind": "long-text", "required": false, "placeholder": "예: 예비창업자 커뮤니티와 지원사업 관련 검색에서 실제 대상군을 확인할 수 있었으나 구매 가능성은 아직 미확인." }
             ]
           },
-          "description": "새 전문 SaaS 없이, 강사가 실제 검색하는 방식으로 시연합니다."
+          "description": "실제 검색으로 확인된 내용만 적으세요. AI가 제안한 채널을 그대로 옮겨 적지 마세요."
         }
       ]
     },
     {
       "id": "p06",
-      "title": "실습 4: Early Customer Profile",
+      "title": "실습 3: 1순위 후보 검증",
       "layout": "practice",
       "blocks": [
         {
@@ -319,7 +270,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 첫 고객은 완벽한 Persona가 아니라 검증 가능한 고객이어야 합니다",
+            "markdown": "# 좋아 보이는 1순위 후보를\n# 한 번 더 의심합니다",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
@@ -327,14 +278,14 @@
         {
           "id": "d3l4-b06-prompt",
           "type": "prompt",
-          "title": "Early Customer Profile 프롬프트",
+          "title": "Target Red Team 검증 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 초기 시장검증을 위한\nEarly Customer Profile을 설계하는 전략가다.\n\n[INPUT]\n\n현재 유력한 Segment:\n[ ]\n\nSegment Evidence:\n[ ]\n\nReachability Evidence:\n[ ]\n\nCurrent Product Capability:\n[ ]\n\n[OBJECTIVE]\n\n이 Segment 안에서\n현재 MVP를 가장 먼저 검증하기 좋은 고객의 특징을\nEvidence 기반으로 정의한다.\n\n[TASK]\n\n다음 8개만 정리해줘.\n\n1. Situation\n2. Strong Problem\n3. Current Alternative\n4. Trigger\n5. Current Cost\n6. Reachability\n7. Current Product Fit\n8. Missing Evidence\n\n[GUARDRAIL]\n\n자료에 없는:\n\n- 나이\n- 성별\n- 성격\n- 소득\n- 취미\n- 구매성향\n\n을 Persona처럼 상상해서 채우지 마.\n\n[EVIDENCE RULE]\n\n각 항목은:\n\n- EVIDENCE\n- INFERENCE\n- NEEDS MORE EVIDENCE\n\n중 하나로 표시해.\n\n[OUTPUT]\n\nEarly Customer Profile Card 형태로 작성해줘.\n\n아직 최종 Target 선택은 사람이 한다.",
+            "prompt": "[ROLE]\n\n너는 창업자의 Target 선택을\n반대편에서 검토하는 Red Team Strategy Reviewer다.\n\n[PRIMARY TARGET CANDIDATE]\n\n[ ]\n\n[SEGMENT COMPARISON RESULT]\n\n[ ]\n\n[REALITY CHECK]\n\n[ ]\n\n[EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n현재 1순위 Target 후보가\n정말 첫 검증대상으로 적합한지 비판적으로 검토한다.\n\n[TASK]\n\n다음을 확인해줘.\n\n1. Problem이 생각보다 약할 가능성\n2. Trigger가 일회성일 가능성\n3. Current Alternative로 충분할 가능성\n4. Reachability를 과대평가했을 가능성\n5. 실제 WTP가 아직 확인되지 않은 부분\n6. 현재 MVP Fit을 과대평가한 부분\n7. 우리가 지지 Evidence만 선택했을 가능성\n\n그리고 각 판단을:\n\n- EVIDENCE\n- INFERENCE\n- NEEDS VALIDATION\n\n으로 구분해줘.\n\n마지막에:\n\n- KEEP\n- REVISE\n- HOLD\n- RECONSIDER\n\n중 하나를 제안하고,\n왜 그렇게 판단했는지 3줄 이내로 설명해줘.\n\n최종 Target은 대신 결정하지 마.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 네 곳에 유력한 Segment, Segment Evidence, Reachability Evidence, Current Product Capability를 붙여넣으세요."
+          "description": "[ ] 네 곳에 1순위 후보, P03 비교 결과, P05 현실 확인, Evidence를 붙여넣으세요."
         },
         {
           "id": "d3l4-b06-link",
@@ -346,154 +297,31 @@
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "Early Customer Profile 생성",
-            "practiceDescription": "현재 MVP를 가장 먼저 검증하기 좋은 고객 특징을 Evidence 기반으로 정의합니다.",
+            "practiceName": "Target Red Team 검증",
+            "practiceDescription": "1순위 Target 후보 선택이 확증편향에 빠지지 않았는지 반대편에서 검토합니다.",
             "estimatedMinutes": 10
           }
         },
         {
-          "id": "d3l4-b06-form",
-          "type": "input-form",
-          "title": "초기 고객 프로필 (Early Customer Profile)",
-          "visibility": "visible",
+          "id": "d3l4-b06-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
           "data": {
-            "fields": [
-              { "id": "f1", "label": "ECP 후보 (ECP Candidate)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "강한 문제 (Strong Problem)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "촉발 요인 (Trigger)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "현재 대안 (Current Alternative)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "접근 가능성 (Reachability)", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "제품 적합도 (Product Fit)", "kind": "long-text", "required": false },
-              { "id": "f7", "label": "부족한 근거 (Missing Evidence)", "kind": "long-text", "required": false }
-            ]
+            "markdown": "이 페이지는 결과 확인만 하고, 별도로 저장하지 않습니다. 다음 페이지 Human Decision에서 이 결과를 반영해 최종 판단하게 하세요.",
+            "emphasis": "normal"
           },
-          "description": "ChatGPT 결과 중 EVIDENCE/INFERENCE로 표시된 내용만 옮겨 적으세요."
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
       "id": "p07",
-      "title": "실습 5: Secondary Target + Anti-ICP",
+      "title": "사람의 최종 Target 결정 (Human Decision)",
       "layout": "practice",
       "blocks": [
         {
           "id": "d3l4-b07-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 누구를 공략할지와 누구를 지금 공략하지 않을지도 정합니다\n\nSecondary Target: Primary가 실패할 경우 또는 다음 확장 후보로 하나를 남겨둡니다.",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d3l4-b07-prompt",
-          "type": "prompt",
-          "title": "Anti-ICP Boundary 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[ROLE]\n\n너는 초기 스타트업이 과도한 고객 요구와\n제품 범위 확장을 피하도록 돕는 Product Strategy Reviewer다.\n\n[CURRENT PRODUCT]\n\n[ ]\n\n[SEGMENT CANDIDATES]\n\n[ ]\n\n[CURRENT TEAM / CAPABILITY]\n\n[ ]\n\n[OBJECTIVE]\n\n\"나쁜 고객\"을 찾는 것이 아니라\n현재 단계에서는 적극 공략하지 않는 편이 좋은 고객군을 찾는다.\n\n[TASK]\n\n다음 기준으로 Anti-ICP 후보를 검토해줘.\n\n1. 현재 제품으로 핵심문제 해결이 어려움\n2. 과도한 Custom 기능 요구\n3. 구매 프로세스가 지나치게 복잡함\n4. 지원·운영비용이 큼\n5. 핵심 Value Proposition과 맞지 않음\n6. 아직 존재하지 않는 기능이 필수\n7. 보안·SSO·ERP 통합 등 현재 역량을 크게 넘어섬\n\n[GUARDRAIL]\n\n고객의 규모나 업종 자체를 이유로\n\"나쁜 고객\"이라고 표현하지 마.\n\n현재 제품단계와의 Fit만 평가해.\n\n[OUTPUT]\n\nAnti-ICP 후보 |\n왜 지금은 부적합한지 |\n향후 다시 검토할 조건",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "[ ] 세 곳에 Current Product, Segment Candidates, Current Team/Capability를 붙여넣으세요."
-        },
-        {
-          "id": "d3l4-b07-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Anti-ICP Boundary 검토",
-            "practiceDescription": "지금 단계에서 적극 공략하지 않는 편이 좋은 고객군을 찾습니다.",
-            "estimatedMinutes": 10
-          }
-        },
-        {
-          "id": "d3l4-b07-form",
-          "type": "input-form",
-          "title": "차순위 타겟 + 비선호 고객 (Secondary Target + Anti-ICP)",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              { "id": "f1", "label": "차순위 타겟 후보 (Secondary Target Candidate)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "비선호 고객 (Anti-ICP)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "지금은 안 되는 이유 (Why Not Now)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "재검토 조건 (Revisit Condition)", "kind": "long-text", "required": false }
-            ]
-          },
-          "description": "고객의 규모·업종 자체가 아니라 현재 제품단계와의 Fit을 기준으로 적으세요."
-        }
-      ]
-    },
-    {
-      "id": "p08",
-      "title": "실습 6: Target Decision Stress Test",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d3l4-b08-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 선택하기 전에 반대편에서 한 번 더 공격합니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d3l4-b08-prompt",
-          "type": "prompt",
-          "title": "Target Decision Stress Test 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[ROLE]\n\n너는 창업자의 Target 선택을 반대편에서 검토하는\nRed Team Strategy Reviewer다.\n\n[PRIMARY TARGET CANDIDATE]\n\n[ ]\n\n[SECONDARY TARGET]\n\n[ ]\n\n[EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\nPrimary Target을 선택하는 논리가\n확증편향에 빠지지 않았는지 검토한다.\n\n[TASK]\n\n다음 질문에 답해줘.\n\n1. 왜 이 고객이 실제 첫 고객이 아닐 수 있는가?\n2. Problem이 생각보다 약할 가능성은?\n3. 구매 Trigger가 약할 가능성은?\n4. 기존 Alternative가 충분할 가능성은?\n5. WTP Evidence가 부족한 부분은?\n6. Reachability를 과대평가한 부분은?\n7. 현재 제품이 실제 문제를 충분히 해결하지 못하는 부분은?\n8. Secondary Target이 더 나을 수 있는 이유는?\n\n[OUTPUT]\n\nPrimary Target을:\n\n- KEEP\n- REVISE\n- HOLD\n- RECONSIDER\n\n중 하나로 제안해.\n\n그리고 반드시:\n\n- Supporting Evidence\n- Counter Evidence\n- Missing Evidence\n\n를 분리해.\n\n최종 선택은 사람이 한다.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "[ ] 세 곳에 유력한 Primary Target 후보, Secondary Target, Evidence를 붙여넣으세요."
-        },
-        {
-          "id": "d3l4-b08-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Target Decision Stress Test",
-            "practiceDescription": "Primary Target 선택이 확증편향에 빠지지 않았는지 반대편에서 검토합니다.",
-            "estimatedMinutes": 10
-          }
-        },
-        {
-          "id": "d3l4-b08-form",
-          "type": "input-form",
-          "title": "Stress Test 결과",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              { "id": "f1", "label": "Primary Target 상태 (KEEP / REVISE / HOLD / RECONSIDER)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "Stress Test 근거 요약 (Supporting / Counter / Missing Evidence)", "kind": "long-text", "required": false }
-            ]
-          },
-          "description": "ChatGPT의 제안을 그대로 따르지 말고, 실제로 동의하는지 검토한 뒤 옮겨 적으세요."
-        }
-      ]
-    },
-    {
-      "id": "p09",
-      "title": "사람의 최종 Target 결정 (Human Target Decision)",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d3l4-b09-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -503,7 +331,7 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l4-b09-form",
+          "id": "d3l4-b07-form",
           "type": "input-form",
           "title": "Target Selection v0.1",
           "visibility": "visible",
@@ -511,83 +339,50 @@
             "fields": [
               {
                 "id": "f1",
-                "label": "세그먼트 평가 (Segment Evaluation)",
+                "label": "세그먼트 비교 요약 (Segment Comparison Summary)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "P03~P04 Target Matrix + Score Critic 요약",
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d3l4-b03-form"
-                  },
-                  {
-                    "kind": "same-lesson",
-                    "label": "P04에서 가져오기",
-                    "sourceBlockId": "d3l4-b04-form"
-                  }
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l4-b03-form", "sourceFieldIds": ["f1"] }
                 ]
               },
-              { "id": "f2", "label": "1순위 타겟 (Primary Target)", "kind": "long-text", "required": false },
               {
-                "id": "f3",
-                "label": "차순위 타겟 (Secondary Target)",
+                "id": "f2",
+                "label": "1순위 타겟 (Primary Target)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "P07 Secondary Target Candidate",
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P07에서 가져오기",
-                    "sourceBlockId": "d3l4-b07-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
-              },
-              { "id": "f4", "label": "1순위로 선택한 이유 (Why Primary)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "지지 근거 (Supporting Evidence)", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "반대 근거 / 리스크 (Counter Evidence / Risk)", "kind": "long-text", "required": false },
-              {
-                "id": "f7",
-                "label": "초기 고객 프로필 (Early Customer Profile)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "P06 ECP 요약",
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P06에서 가져오기",
-                    "sourceBlockId": "d3l4-b06-form"
-                  }
+                  { "kind": "same-lesson", "label": "P03 AI 추천에서 가져오기", "sourceBlockId": "d3l4-b03-form", "sourceFieldIds": ["f2"] }
                 ]
               },
               {
-                "id": "f8",
-                "label": "비선호 고객 (Anti-ICP)",
+                "id": "f3",
+                "label": "2순위 타겟 (Secondary Target)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "P07 Anti-ICP",
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P07에서 가져오기",
-                    "sourceBlockId": "d3l4-b07-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "P03 AI 추천에서 가져오기", "sourceBlockId": "d3l4-b03-form", "sourceFieldIds": ["f3"] }
                 ]
               },
-              { "id": "f9", "label": "추가 검증 필요 항목 (Validation Needed)", "kind": "long-text", "required": false },
-              { "id": "f10", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "P08 Stress Test 결과(KEEP/REVISE/HOLD/RECONSIDER)를 최종 검토한 뒤 결론을 적으세요." }
+              { "id": "f4", "label": "1순위 선택 이유 (Why Primary)", "kind": "long-text", "required": false },
+              { "id": "f5", "label": "가장 큰 반대근거·리스크 (Main Risk / Counter Evidence)", "kind": "long-text", "required": false, "placeholder": "P06 검토 결과를 참고해 사람이 직접 정리하세요." },
+              {
+                "id": "f6",
+                "label": "현실 확인 (Reality Check)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P05에서 가져오기", "sourceBlockId": "d3l4-b05-form", "sourceFieldIds": ["f1"] }
+                ]
+              },
+              { "id": "f7", "label": "다음에 확인할 것 (Next Validation)", "kind": "long-text", "required": false },
+              { "id": "f8", "label": "최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "P06 Red Team 결과(KEEP/REVISE/HOLD/RECONSIDER)를 최종 검토한 뒤 결론을 적으세요." }
             ]
           },
-          "description": "P03~P08에서 정리한 내용을 모아 최종 Target Selection으로 정리하세요."
+          "description": "P03~P06에서 정리한 내용을 모아 최종 Target Selection으로 정리하세요. 다음 페이지에서 저장합니다."
         },
         {
-          "id": "d3l4-b09-script",
+          "id": "d3l4-b07-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
@@ -600,12 +395,12 @@
       ]
     },
     {
-      "id": "p10",
+      "id": "p08",
       "title": "결과 저장 / 완료",
       "layout": "practice",
       "blocks": [
         {
-          "id": "d3l4-b10-title",
+          "id": "d3l4-b08-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -616,7 +411,18 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l4-b10-a-title",
+          "id": "d3l4-b08-showcase",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**BUSINESS SHOWCASE — 동네 미용실 (교육용 예시)**\n\nSegment: 정기관리형 / 중요한 일정 준비형 / 신규탐색형 / 시간절약형\n\n- 1순위 후보: **정기관리형** — 반복 Problem, 방문주기 존재, 기존 고객에서 찾기 쉬움, 현재 서비스로 대응 가능\n- 2순위 후보: **중요한 일정 준비형** — Trigger와 Urgency는 명확하지만, 높은 WTP나 재방문으로 이어진다는 Evidence는 아직 없음(Counter Evidence)\n\n※ 이 내용은 교육용 BUSINESS SHOWCASE이며 실제 성공사례처럼 표현하지 않습니다.",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l4-b08-a-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -626,18 +432,18 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l4-b10-target-save",
+          "id": "d3l4-b08-target-save",
           "type": "save-artifact",
           "visibility": "visible",
           "data": {
             "artifactType": "business-idea",
             "artifactTitle": "4차시 — Target Selection v0.1",
-            "sourceBlockId": "d3l4-b09-form",
+            "sourceBlockId": "d3l4-b07-form",
             "buttonLabel": "Target Selection 저장"
           }
         },
         {
-          "id": "d3l4-b10-preview",
+          "id": "d3l4-b08-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
@@ -646,7 +452,17 @@
           }
         },
         {
-          "id": "d3l4-b10-context-form",
+          "id": "d3l4-b08-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## B. Business Context 업데이트\n\n3차시 Business Context를 그대로 가져오고, 이번에 새로 정한 Target 관련 항목만 갱신하세요.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l4-b08-context-form",
           "type": "input-form",
           "title": "Business Context v0.4",
           "visibility": "visible",
@@ -657,32 +473,28 @@
                 "label": "확인된 사실 (Confirmed Facts)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "3차시 Confirmed Facts + 이번 시간 확인된 내용",
+                "placeholder": "3차시 Confirmed Facts",
                 "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "3차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "3차시 — Business Context v0.3",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  }
+                  { "kind": "prior-artifact", "label": "3차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "3차시 — Business Context v0.3", "sourceLabel": "확인된 사실 (Confirmed Facts)" }
                 ]
               },
-              { "id": "f2", "label": "현재 가설 (Current Hypotheses)", "kind": "long-text", "required": false },
+              {
+                "id": "f2",
+                "label": "현재 가설 (Current Hypotheses)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "3차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "3차시 — Business Context v0.3", "sourceLabel": "현재 가설 (Current Hypotheses)" }
+                ]
+              },
               {
                 "id": "f3",
                 "label": "고객 세그먼트 (Customer Segments)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "3차시 Customer Segments 요약",
+                "placeholder": "3차시 Customer Segments",
                 "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "3차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "3차시 — Business Context v0.3",
-                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
-                  }
+                  { "kind": "prior-artifact", "label": "3차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "3차시 — Business Context v0.3", "sourceLabel": "고객 세그먼트 (Customer Segments)" }
                 ]
               },
               {
@@ -691,14 +503,7 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d3l4-b09-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Human Decision에서 가져오기", "sourceBlockId": "d3l4-b07-form", "sourceFieldIds": ["f2"] }
                 ]
               },
               {
@@ -707,116 +512,45 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d3l4-b09-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Human Decision에서 가져오기", "sourceBlockId": "d3l4-b07-form", "sourceFieldIds": ["f3"] }
                 ]
               },
               {
                 "id": "f6",
-                "label": "초기 고객 프로필 (Early Customer Profile)",
+                "label": "타겟 리스크 (Target Risks)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d3l4-b09-form",
-                    "sourceFieldIds": [
-                      "f7"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Human Decision에서 가져오기", "sourceBlockId": "d3l4-b07-form", "sourceFieldIds": ["f5"] }
                 ]
               },
               {
                 "id": "f7",
-                "label": "비선호 고객 (Anti-ICP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d3l4-b09-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "타겟 근거 (Target Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Primary Target의 핵심 Supporting Evidence",
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d3l4-b09-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "타겟 리스크 (Target Risks)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Primary Target의 핵심 Counter Evidence",
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d3l4-b09-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f10",
                 "label": "검증 대기 목록 (Validation Backlog)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d3l4-b09-form",
-                    "sourceFieldIds": [
-                      "f9"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Human Decision에서 가져오기", "sourceBlockId": "d3l4-b07-form", "sourceFieldIds": ["f7"] }
                 ]
               },
-              { "id": "f11", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "선택한 Target에게 어떤 Value Proposition을 제시할 것인가?" }
+              { "id": "f8", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "선택한 Target에게 어떤 Value Proposition을 제시할 것인가?" }
             ]
           },
-          "description": "B. Business Context 업데이트 — 3차시 Business Context v0.3을 복사해 이번 Target 결과를 반영한 최신 상태로 업데이트하세요."
+          "description": "3차시 Business Context v0.3을 복사해 이번 Target 결과를 반영한 최신 상태로 업데이트하세요."
         },
         {
-          "id": "d3l4-b10-context-save",
+          "id": "d3l4-b08-context-save",
           "type": "save-artifact",
           "visibility": "visible",
           "data": {
             "artifactType": "business-idea",
             "artifactTitle": "4차시 — Business Context v0.4",
-            "sourceBlockId": "d3l4-b10-context-form",
+            "sourceBlockId": "d3l4-b08-context-form",
             "buttonLabel": "Business Context v0.4 저장"
           }
         },
         {
-          "id": "d3l4-b10-next",
+          "id": "d3l4-b08-next",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -827,7 +561,7 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d3l4-b10-script",
+          "id": "d3l4-b08-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
