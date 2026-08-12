@@ -147,9 +147,6 @@ export default function ResourcesPage() {
                     링크
                   </span>
                 )}
-                {" · 다운로드 "}
-                {r.downloadCount}
-                회
               </p>
             </div>
             <Button
