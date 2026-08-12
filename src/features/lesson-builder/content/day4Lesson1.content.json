@@ -6,7 +6,7 @@
   "lesson": 1,
   "title": "Value Proposition — 고객은 왜 우리를 선택해야 하는가",
   "description": "선택한 Target의 실제 Problem과 Current Alternative를 현재 제품 기능에 연결하여 검증 가능한 고객가치를 만듭니다.",
-  "durationMinutes": 60,
+  "durationMinutes": 45,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
@@ -33,7 +33,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**이번 차시에서는 고객을 다시 만들지 않습니다.**\n\n이미 선택한 Primary Target에게 어떤 가치를 제공할지 결정합니다. 아래 목록에서 두 가지를 확인하세요.\n\n**A. 4차시 — Target Selection v0.1**\nPrimary Target / Secondary Target / Early Customer Profile / Primary Target 선택 이유(Why Primary) / Supporting Evidence / Counter Evidence\n\n**B. 4차시 — Business Context v0.4**\nCurrent Hypotheses / Target Risks / Validation Backlog",
+            "markdown": "**이번 차시에서는 고객을 다시 만들지 않습니다.**\n\n이미 선택한 Primary Target에게 어떤 가치를 제공할지 결정합니다. 아래 목록에서 두 가지를 확인하세요.\n\n**A. 4차시 — Target Selection v0.1**\n세그먼트 비교 요약 / 1순위 타겟 / 2순위 타겟 / 1순위 선택 이유 / 가장 큰 반대근거·리스크 / 현실 확인 / 다음에 확인할 것 / 최종 판단 메모\n\n**B. 4차시 — Business Context v0.4**\n확인된 사실 / 현재 가설 / 고객 세그먼트 / 1순위 타겟 / 차순위 타겟 / 타겟 리스크 / 검증 대기 목록 / 다음 결정 사항",
             "emphasis": "normal"
           },
           "theme": { "background": "primary-soft", "bordered": false },
@@ -54,7 +54,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**오늘의 흐름**\n\nTARGET → PROBLEM → ALTERNATIVE → FEATURE → BENEFIT → OUTCOME → VALUE",
+            "markdown": "**오늘의 흐름**\n\nTARGET → PROBLEM → CAPABILITY → FEATURE → BENEFIT → OUTCOME → VALUE",
             "emphasis": "normal"
           },
           "theme": { "background": "muted", "bordered": true },
@@ -65,7 +65,7 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "목록이 비어 있으면 4차시를 아직 완료하지 않은 학생입니다 — 4차시 P10에서 저장하고 오게 하세요.",
+            "markdown": "목록이 비어 있으면 4차시를 아직 완료하지 않은 학생입니다 — 4차시 P08에서 저장하고 오게 하세요.",
             "emphasis": "normal"
           },
           "title": "강사 멘트",
@@ -128,7 +128,7 @@
     },
     {
       "id": "p03",
-      "title": "실습 1: Customer Problem 재검증",
+      "title": "실습 1: 고객 문제 → Value Proposition 뼈대",
       "layout": "practice",
       "blocks": [
         {
@@ -136,22 +136,70 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 먼저 고객의 진짜 Problem을 다시 확인합니다",
+            "markdown": "# 고객 문제에서\n# Value Proposition의 뼈대를 만듭니다",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l1-b03-prompt",
-          "type": "prompt",
-          "title": "Customer Problem Clarification 프롬프트",
+          "id": "d4l1-b03-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 초기 창업자의 Customer Problem을\nEvidence 기반으로 분석하는 Value Strategy Analyst다.\n\n너의 역할은 새로운 문제를 상상하는 것이 아니라,\n지금까지 확보한 Target과 Evidence에서\n가장 중요한 고객 문제를 명확하게 분리하는 것이다.\n\n[PRIMARY TARGET]\n\n[ ]\n\n[EARLY CUSTOMER PROFILE]\n\n[ ]\n\n[SUPPORTING EVIDENCE]\n\n[ ]\n\n[COUNTER EVIDENCE]\n\n[CURRENT BUSINESS CONTEXT]\n\n[ ]\n\n[OBJECTIVE]\n\n제품 기능이나 해결책을 먼저 제안하지 말고,\n이 Target이 실제로 경험하는 Problem을\n현재 Evidence 수준에서 명확하게 정의한다.\n\n[TASK]\n\n다음을 구분해줘.\n\n1. CUSTOMER PROBLEM\n   고객이 직접 경험하는 문제\n\n2. SITUATION\n   이 문제가 발생하는 구체적 상황\n\n3. FREQUENCY / REPETITION\n   반복되는 문제인지 여부\n\n4. TRIGGER\n   문제를 지금 해결하게 만드는 사건이나 상황\n\n5. CURRENT ALTERNATIVE\n   현재 어떻게 해결하고 있는지\n\n6. ALTERNATIVE GAP\n   현재 방식에서 실제로 확인된 불편 또는 한계\n\n7. EXPECTED OUTCOME\n   고객이 원하는 더 나은 상태\n\n[EVIDENCE RULE]\n\n각 항목에 반드시:\n\n- [EVIDENCE]\n- [INFERENCE]\n- [NEEDS MORE EVIDENCE]\n\n중 하나를 붙여줘.\n\n[GUARDRAIL]\n\n- 자료에 없는 고객 문제를 새로 만들지 마.\n- 고객이 \"반드시 필요로 한다\"고 단정하지 마.\n- 구매의사와 지불의사를 임의로 추론하지 마.\n- 제품 기능을 고객 Problem처럼 표현하지 마.\n- 회사 내부 용어보다 고객이 이해할 수 있는 언어를 우선해.\n\n[OUTPUT]\n\n표 형식:\n\nProblem |\nSituation |\nTrigger |\nCurrent Alternative |\nAlternative Gap |\nExpected Outcome |\nEvidence Status |\nSupporting Source\n\n마지막에는:\n\n\"현재 Evidence 기준 가장 중요한 Problem 후보\"\n\n를 최대 3개만 정리해줘.",
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 타겟 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Target Selection v0.1", "sourceLabel": "1순위 타겟 (Primary Target)" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "확인된 사실 (Confirmed Facts)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Business Context v0.4", "sourceLabel": "확인된 사실 (Confirmed Facts)" }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "현재 가설 (Current Hypotheses)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Business Context v0.4", "sourceLabel": "현재 가설 (Current Hypotheses)" }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "검증 대기 목록 (Validation Backlog)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Business Context v0.4", "sourceLabel": "검증 대기 목록 (Validation Backlog)" }
+                ]
+              },
+              { "id": "f5", "label": "현재 제품·서비스 설명 (Current Product / Service)", "kind": "long-text", "required": false, "placeholder": "Business Context에 없는 내용만 직접 적으세요." }
+            ]
+          },
+          "description": "버튼으로 채워지지 않는 칸(현재 제품·서비스 설명)만 직접 적으세요. 아래 프롬프트의 [ ] 자리에 이 내용을 붙여넣습니다."
+        },
+        {
+          "id": "d4l1-b03-prompt",
+          "type": "prompt",
+          "title": "Value Proposition 뼈대 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[ROLE]\n너는 초기 창업자의 Value Proposition을 설계하는\nEvidence 기반 사업전략 분석가다.\n우리는 광고 문구를 만드는 것이 아니라\n\"고객이 왜 이 제품을 선택할 가능성이 있는가\"라는\n사업가설을 검토하고 있다.\n\n[PRIMARY TARGET]\n[ ]\n\n[CURRENT BUSINESS CONTEXT]\n[ ]\n\n[KNOWN EVIDENCE]\n[ ]\n\n[CURRENT PRODUCT / SERVICE]\n[ ]\n\n[TASK 1 — CUSTOMER PROBLEM REVALIDATION]\n먼저 현재 1순위 Target을 기준으로 다음을 다시 정리해줘.\n\n- Customer Problem\n- Situation\n- Trigger\n- Current Alternative\n- Alternative Gap\n- Expected Outcome\n\n각 항목은 반드시:\n\n- EVIDENCE\n- INFERENCE\n- NEEDS MORE EVIDENCE\n\n중 하나로 구분해.\n\n자료에 없는 고객문제를 만들어내지 마.\n\n[TASK 2 — PRODUCT CAPABILITY REALITY CHECK]\n현재 제품/서비스의 역량을 다음 세 종류로 구분해.\n\n- AVAILABLE\n- PLANNED\n- IDEA\n\nPLANNED 또는 IDEA 기능을\n현재 제공 가능한 기능처럼 사용하지 마.\n\n현재 고객문제 해결에 실제 사용할 수 있는\nAVAILABLE Capability가 무엇인지 별도로 표시해.\n\n[TASK 3 — SO WHAT? LADDER]\n현재 AVAILABLE Capability 중\n가장 중요한 것들을 대상으로 다음 구조를 만들어줘.\n\nFeature\n→ Functional Benefit\n→ Practical Benefit\n→ Expected Outcome\n\nFeature 설명에서 바로 거창한 Outcome으로 뛰어넘지 말고\n각 단계의 논리를 보여줘.\n\n확인되지 않은:\n\n- 절감률\n- 매출 증가율\n- 시간 절감 수치\n- 생산성 향상 수치\n- 성공확률\n\n등은 만들어내지 마.\n\n[TASK 4 — VALUE PROPOSITION BRIDGE]\n앞의 결과를 이용해 다음 Bridge를 만들어줘.\n\nTarget\n→ Problem\n→ Current Alternative\n→ Alternative Gap\n→ Our Approach\n→ Benefit\n→ Expected Outcome\n\n그리고 마지막에\n한 문장 Value Proposition Hypothesis를 2개 제안해줘.\n\n아직 최종 선택하지 마.\n\n[OUTPUT]\n다음 순서로 출력해.\n\nA. Customer Problem Revalidation\nB. Product Capability Reality Check\nC. So What? Ladder\nD. Value Proposition Bridge\nE. Value Proposition Hypothesis 후보 2개\nF. Supporting Evidence\nG. Counter Evidence\nH. Missing Evidence\nI. 가장 위험한 가정 1~2개",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 네 곳에 Primary Target, Early Customer Profile, Supporting Evidence, Current Business Context를 붙여넣으세요."
+          "description": "위 Context 준비 칸의 내용을 [ ] 네 곳에 옮겨 붙여넣으세요."
         },
         {
           "id": "d4l1-b03-chatgpt",
@@ -163,183 +211,118 @@
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "Customer Problem 재검증",
-            "practiceDescription": "Target이 실제로 경험하는 Problem을 현재 Evidence 수준에서 명확히 정의합니다.",
-            "estimatedMinutes": 10
+            "practiceName": "Value Proposition 뼈대 만들기",
+            "practiceDescription": "Customer Problem 재검증 → Capability → So What? Ladder → Bridge까지 한 번에 진행합니다.",
+            "estimatedMinutes": 15
           }
         },
         {
-          "id": "d4l1-b03-claude",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://claude.ai/",
-            "buttonLabel": "Claude에서 실행 (선택)",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": false,
-            "practiceName": "다른 AI로 비교 실행",
-            "practiceDescription": "같은 프롬프트를 Claude에서도 실행해 결과를 비교해볼 수 있습니다.",
-            "estimatedMinutes": 10
-          }
-        },
-        {
-          "id": "d4l1-b03-form",
+          "id": "d4l1-b03-result-form",
           "type": "input-form",
-          "title": "Customer Problem 기록",
+          "title": "Prompt 1 분석결과",
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "핵심 고객 문제 (Primary Customer Problem)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "상황/촉발요인 (Situation / Trigger)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "현재 대안 (Current Alternative)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "대안의 한계 (Alternative Gap)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "기대 결과 (Expected Outcome)", "kind": "long-text", "required": false },
-              { "id": "f6", "label": "근거 메모 (Evidence Notes)", "kind": "long-text", "required": false }
+              { "id": "f1", "label": "Prompt 1 분석결과 (Prompt 1 Analysis Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
             ]
           },
-          "description": "ChatGPT 결과 중 실제 Evidence/Inference로 표시된 내용만 옮겨 적으세요."
+          "description": "A~I 결과 전체를 여러 칸으로 나누지 말고 한 번만 붙여넣으세요."
         }
       ]
     },
     {
       "id": "p04",
-      "title": "실습 2: Product Capability Reality Check",
-      "layout": "practice",
+      "title": "Prompt 1 결과 검토",
+      "layout": "wide",
       "blocks": [
         {
           "id": "d4l1-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 없는 기능으로 고객가치를 만들지 않습니다",
+            "markdown": "# AI가 만든 뼈대를 그대로 믿지 않습니다",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l1-b04-prompt",
-          "type": "prompt",
-          "title": "Product Capability Audit 프롬프트",
+          "id": "d4l1-b04-checklist",
+          "type": "infographic",
+          "title": "Prompt 1 결과 체크포인트",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 초기 제품의 현재 Capability를\n과장 없이 정리하는 Product Analyst다.\n\n[PRODUCT INFORMATION]\n\n[ ]\n\n[CURRENT BUSINESS CONTEXT]\n\n[ ]\n\n[OBJECTIVE]\n\n우리 제품이 현재 실제로 제공할 수 있는 것과\n앞으로 만들 계획인 것을 분리한다.\n\n아직 Benefit이나 Value Proposition은 만들지 않는다.\n\n[TASK]\n\n제품 기능을 다음 3개 상태로 분류해줘.\n\n1. AVAILABLE\n   현재 실제로 작동하거나 제공 가능한 기능\n\n2. PLANNED\n   설계 또는 개발계획은 있지만 아직 제공되지 않는 기능\n\n3. IDEA / HYPOTHESIS\n   아직 아이디어 또는 검토 단계인 기능\n\n각 기능마다:\n\n- Feature\n- Status\n- 확인 가능한 근거\n- 고객 Problem과의 연결 가능성\n\n을 작성해줘.\n\n[GUARDRAIL]\n\n- 미래 기능을 현재 기능처럼 표현하지 마.\n- 계획된 기능으로 고객효과를 보장하지 마.\n- 자료에 없는 기능을 추가하지 마.\n- 자동으로 Value Proposition을 만들지 마.\n\n[OUTPUT]\n\nFeature |\nStatus |\nEvidence |\nRelated Customer Problem\n\n형태로 정리해줘.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "[ ] 부분에 제품 정보와 Current Business Context를 붙여넣으세요."
-        },
-        {
-          "id": "d4l1-b04-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Product Capability Audit",
-            "practiceDescription": "현재 제공 가능한 기능과 계획·아이디어 단계 기능을 분리합니다.",
-            "estimatedMinutes": 10
+            "variant": "checklist",
+            "items": [
+              { "label": "AI가 고객 Problem을 새로 지어내지 않았는가?" },
+              { "label": "Situation과 Trigger가 구분되는가?" },
+              { "label": "Current Alternative가 실제인가?" },
+              { "label": "PLANNED/IDEA 기능을 AVAILABLE처럼 쓰지 않았는가?" },
+              { "label": "Feature와 Benefit이 구분되는가?" },
+              { "label": "Benefit에서 Outcome으로 논리적 연결이 있는가?" },
+              { "label": "근거 없는 숫자를 만들지 않았는가?" }
+            ]
           }
         },
         {
-          "id": "d4l1-b04-form",
-          "type": "input-form",
-          "title": "Product Capability 기록",
-          "visibility": "visible",
+          "id": "d4l1-b04-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
           "data": {
-            "fields": [
-              { "id": "f1", "label": "제공 가능한 기능 (Available Capabilities)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "계획된 기능 (Planned Capabilities)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "아이디어/가설 단계 (Idea / Hypothesis)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "기능 검토 메모 (Capability Review Notes)", "kind": "long-text", "required": false }
-            ]
+            "markdown": "이 페이지는 학생 입력이 없습니다. Prompt 1 결과를 화면에 띄워놓고 위 체크포인트를 하나씩 같이 확인하세요.",
+            "emphasis": "normal"
           },
-          "description": "미래 기능을 현재 기능처럼 적지 마세요."
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
       "id": "p05",
-      "title": "실습 3: So What? Ladder",
-      "layout": "practice",
+      "title": "So What? Ladder 핵심 해설",
+      "layout": "wide",
       "blocks": [
         {
           "id": "d4l1-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 기능에서 고객가치까지 내려갑니다\n\n이번 페이지는 이번 차시의 핵심 실습입니다.",
+            "markdown": "# 기능에서 고객가치까지 내려갑니다",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l1-b05-prompt",
-          "type": "prompt",
-          "title": "So What? Ladder 프롬프트",
+          "id": "d4l1-b05-ladder",
+          "type": "infographic",
+          "title": "So What? 4단계",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 제품 Feature를\n고객 Benefit과 Outcome으로 연결하는\nValue Proposition Analyst다.\n\n[PRIMARY TARGET]\n\n[ ]\n\n[CUSTOMER PROBLEM]\n\n[ ]\n\n[CURRENT ALTERNATIVE]\n\n[ ]\n\n[AVAILABLE FEATURE]\n\n[ ]\n\n[EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n선택한 Feature가 고객에게 왜 중요한지\n\"So What?\" 질문을 단계적으로 반복하여\n\nFeature\n→ Functional Benefit\n→ Practical Benefit\n→ Expected Outcome\n\n으로 연결한다.\n\n[TASK]\n\n최대 4단계까지만 진행해.\n\n각 단계마다 다음 질문을 사용해.\n\n1. 이 Feature는 고객에게 무엇을 가능하게 하는가?\n2. 그래서 고객의 기존 행동이 어떻게 달라지는가?\n3. 그래서 어떤 불편이나 비용이 줄어들 가능성이 있는가?\n4. 그래서 고객이 궁극적으로 어떤 상태에 가까워지는가?\n\n각 단계마다:\n\n- Feature / Change\n- Customer Benefit\n- Why It Matters\n- Current Alternative와의 차이\n- Evidence Status\n\n를 작성해줘.\n\n[EVIDENCE DISCIPLINE]\n\n효과가 실제 Evidence로 확인되지 않았다면\n[VALUE HYPOTHESIS]라고 표시해.\n\n[GUARDRAIL]\n\n다음과 같은 표현은 Evidence가 없으면 만들지 마.\n\n- 시간을 50% 절약\n- 매출 증가\n- 성공률 향상\n- 생산성 2배\n- 가장 빠른\n- 최고의\n- 업계 1위\n- 반드시 성공\n\nFeature 자체를 Value라고 표현하지 마.\n\n[OUTPUT]\n\nFEATURE\n↓\nBENEFIT 1\n↓\nBENEFIT 2\n↓\nEXPECTED OUTCOME\n\n형태의 Ladder와\n각 단계의 Evidence Status를 함께 표시해줘.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "[ ] 다섯 곳에 Primary Target, Customer Problem, Current Alternative, Available Feature, Evidence를 붙여넣으세요."
-        },
-        {
-          "id": "d4l1-b05-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "So What? Ladder 실행",
-            "practiceDescription": "Feature를 Functional Benefit → Practical Benefit → Expected Outcome으로 연결합니다.",
-            "estimatedMinutes": 10
+            "variant": "steps",
+            "items": [
+              { "label": "1. 이 Feature는 고객에게 무엇을 가능하게 하는가?" },
+              { "label": "2. 그래서 고객의 기존 행동이 어떻게 달라지는가?" },
+              { "label": "3. 그래서 어떤 불편이나 비용이 줄어들 가능성이 있는가?" },
+              { "label": "4. 그래서 고객이 궁극적으로 어떤 상태에 가까워지는가?" }
+            ]
           }
         },
         {
-          "id": "d4l1-b05-form",
-          "type": "input-form",
-          "title": "So What? Ladder 기록",
+          "id": "d4l1-b05-key",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "fields": [
-              { "id": "f1", "label": "선택한 Feature (Selected Feature)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "기능적 혜택 (Functional Benefit)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "실질적 혜택 (Practical Benefit)", "kind": "long-text", "required": false },
-              {
-                "id": "f4",
-                "label": "기대 결과 (Expected Outcome)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l1-b03-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              { "id": "f5", "label": "가치 가설 메모 (Value Hypothesis Notes)", "kind": "long-text", "required": false, "placeholder": "Evidence로 확인되지 않은 부분은 [VALUE HYPOTHESIS]로 표시하세요." }
-            ]
+            "markdown": "Prompt 1 결과의 **C. So What? Ladder** 부분을 보면서 이 4단계 질문을 따라가 보세요.\n\n효과가 Evidence로 확인되지 않았다면 [VALUE HYPOTHESIS]로 표시된 것이 정상입니다. \"시간 50% 절약\", \"업계 1위\" 같은 근거 없는 수치·과장 표현은 그대로 믿지 마세요.",
+            "emphasis": "normal"
           },
-          "description": "\"시간 50% 절약\", \"업계 1위\" 같은 Evidence 없는 수치·과장 표현은 옮기지 마세요."
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
       "id": "p06",
-      "title": "실습 4: Value Proposition Bridge",
-      "layout": "practice",
+      "title": "Value Proposition Bridge 핵심 해설",
+      "layout": "wide",
       "blocks": [
         {
           "id": "d4l1-b06-title",
@@ -370,175 +353,21 @@
           }
         },
         {
-          "id": "d4l1-b06-prompt",
-          "type": "prompt",
-          "title": "Evidence-based Value Proposition Bridge 프롬프트",
+          "id": "d4l1-b06-key",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 초기 창업자를 위한\nEvidence 기반 Value Proposition Strategist다.\n\n[PRIMARY TARGET]\n\n[ ]\n\n[CUSTOMER PROBLEM]\n\n[ ]\n\n[CURRENT ALTERNATIVE]\n\n[ ]\n\n[ALTERNATIVE GAP]\n\n[ ]\n\n[AVAILABLE PRODUCT CAPABILITY]\n\n[ ]\n\n[EXPECTED OUTCOME]\n\n[ ]\n\n[EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n고객이 현재 겪는 문제와\n제품이 실제 제공할 수 있는 Capability를 연결하여\nValue Proposition의 논리적 Bridge를 만든다.\n\n[TASK]\n\n다음을 순서대로 연결해줘.\n\n1. TARGET\n2. IMPORTANT PROBLEM\n3. CURRENT ALTERNATIVE\n4. ALTERNATIVE GAP\n5. OUR APPROACH\n6. CUSTOMER BENEFIT\n7. EXPECTED OUTCOME\n\n각 연결이 왜 성립하는지\n한 문장씩 설명해줘.\n\n[EVIDENCE RULE]\n\n각 연결은:\n\n- SUPPORTED\n- PARTIALLY SUPPORTED\n- VALUE HYPOTHESIS\n- NEEDS MORE EVIDENCE\n\n중 하나로 표시해.\n\n[GUARDRAIL]\n\n- 제품이 현재 제공할 수 없는 기능을 넣지 마.\n- 고객이 중요하게 생각한다는 근거가 없다면 단정하지 마.\n- 효과 수치를 만들어내지 마.\n- 마케팅 카피처럼 화려하게 쓰지 마.\n- \"AI 기반\", \"혁신적\", \"올인원\" 같은 추상어로 가치를 대신하지 마.\n\n[OUTPUT]\n\nA. Value Proposition Bridge\n\nTarget\n→ Problem\n→ Alternative\n→ Gap\n→ Approach\n→ Benefit\n→ Outcome\n\nB. 한 문장 Value Hypothesis\n\n형식:\n\n\"[Target]이 [Problem]을 겪을 때,\n[Our Approach]를 통해\n[Benefit/Outcome]을 얻도록 돕는다.\"\n\n단,\n현재 Evidence 수준에 맞게 표현해.",
-            "targetTool": "ChatGPT",
-            "copyable": true
+            "markdown": "Prompt 1 결과의 **D. Value Proposition Bridge**와 **E. Value Proposition Hypothesis 후보 2개**를 보면서 이 흐름을 확인하세요.\n\n한 문장 형식: \"[Target]이 [Problem]을 겪을 때, [Our Approach]를 통해 [Benefit/Outcome]을 얻도록 돕는다.\" — 아직 최종 선택은 아닙니다.",
+            "emphasis": "normal"
           },
-          "description": "[ ] 일곱 곳에 지금까지의 결과(Target, Problem, Alternative, Gap, Capability, Outcome, Evidence)를 붙여넣으세요."
-        },
-        {
-          "id": "d4l1-b06-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Value Proposition Bridge 생성",
-            "practiceDescription": "고객 문제와 제품 Capability를 연결하는 논리적 Bridge를 만듭니다.",
-            "estimatedMinutes": 10
-          }
-        },
-        {
-          "id": "d4l1-b06-napkin",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://www.napkin.ai/",
-            "buttonLabel": "Napkin AI 열기 (선택)",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": false,
-            "practiceName": "Value Bridge 시각화 (선택)",
-            "practiceDescription": "Target → Problem → Alternative → Approach → Benefit → Outcome을 한 장의 Visual로 만들어봅니다.",
-            "estimatedMinutes": 5
-          }
-        },
-        {
-          "id": "d4l1-b06-form",
-          "type": "input-form",
-          "title": "Value Proposition Bridge 기록",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "타겟 (Target)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Target Selection v0.1",
-                    "sourceLabel": "1순위 타겟 (Primary Target)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "문제 (Problem)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l1-b03-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "현재 대안 (Current Alternative)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l1-b03-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "대안의 한계 (Alternative Gap)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l1-b03-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "우리의 접근 (Our Approach)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P05에서 가져오기",
-                    "sourceBlockId": "d4l1-b05-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "혜택 (Benefit)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P05에서 가져오기",
-                    "sourceBlockId": "d4l1-b05-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "기대 결과 (Expected Outcome)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l1-b03-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              { "id": "f8", "label": "한 문장 Value 가설 (Bridge Statement)", "kind": "long-text", "required": false, "placeholder": "\"[Target]이 [Problem]을 겪을 때, [Our Approach]를 통해 [Benefit/Outcome]을 얻도록 돕는다.\"" }
-            ]
-          },
-          "description": "ChatGPT 결과를 옮겨 적으세요."
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
       "id": "p07",
-      "title": "실습 5: Value Angle 후보 만들기",
+      "title": "실습 2: Value를 실제로 말해도 되는지 검증",
       "layout": "practice",
       "blocks": [
         {
@@ -546,40 +375,42 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 같은 제품도 고객이 느끼는 가치는 여러 방향일 수 있습니다",
+            "markdown": "# 좋아 보이는 Value를\n# 실제로 말해도 되는지 검증합니다",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l1-b07-angles",
-          "type": "infographic",
-          "title": "Value Angle 후보 (실제 Evidence에 맞는 것만 사용)",
+          "id": "d4l1-b07-ref-form",
+          "type": "input-form",
+          "title": "Prompt 1 결과 참고",
           "visibility": "visible",
           "data": {
-            "variant": "checklist",
-            "items": [
-              { "label": "반복작업 감소" },
-              { "label": "일관성" },
-              { "label": "의사결정 지원" },
-              { "label": "진행 방향" },
-              { "label": "근거관리" },
-              { "label": "편리성" },
-              { "label": "위험 감소" }
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Prompt 1 분석결과 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l1-b03-result-form" }
+                ]
+              }
             ]
-          }
+          },
+          "description": "아래 프롬프트의 [PROMPT 1 RESULT]에 붙여넣을 때 참고하세요."
         },
         {
           "id": "d4l1-b07-prompt",
           "type": "prompt",
-          "title": "Value Angle Generation 프롬프트",
+          "title": "Value Angle + Proof + Red Team 프롬프트",
           "visibility": "visible",
           "data": {
-            "prompt": "[ROLE]\n\n너는 동일한 제품을\n서로 다른 고객가치 관점에서 검토하는\nValue Strategy Analyst다.\n\n[PRIMARY TARGET]\n\n[ ]\n\n[VALUE PROPOSITION BRIDGE]\n\n[ ]\n\n[CUSTOMER PROBLEM]\n\n[ ]\n\n[PRODUCT CAPABILITY]\n\n[ ]\n\n[EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n같은 문장을 표현만 바꾸는 것이 아니라,\n서로 다른 Customer Value Angle을 가진\nValue Proposition 후보를 만든다.\n\n[TASK]\n\n최대 4개의 후보를 만들어줘.\n\n가능한 Angle 예:\n\n- 반복작업 감소\n- 정보 일관성\n- 의사결정 지원\n- 진행 방향\n- 근거관리\n- 편의성\n- Risk 감소\n\n그러나 Evidence와 맞지 않는 Angle은 사용하지 마.\n\n각 후보마다:\n\n1. Value Proposition\n2. Value Angle\n3. 연결되는 Customer Problem\n4. 이를 가능하게 하는 Feature\n5. Supporting Evidence\n6. Counter Evidence\n7. Missing Evidence\n8. Current Claim Status\n\n를 작성해줘.\n\n[CLAIM STATUS]\n\n- SUPPORTED\n- PARTIALLY SUPPORTED\n- VALUE HYPOTHESIS\n- DO NOT USE YET\n\n[GUARDRAIL]\n\n- 단순 문장 Variation 금지\n- 서로 다른 가치논리가 있어야 함\n- 과장된 광고문구 금지\n- 경쟁우위가 확인되지 않았다면 \"유일한\", \"최고의\" 금지\n- Target을 다시 바꾸지 마\n\n[OUTPUT]\n\nValue A~D 비교표.\n\n아직 최종 Value를 선택하지 마.",
+            "prompt": "[ROLE]\n너는 Value Proposition을 공격적으로 검토하는\nEvidence Reviewer이자 Red Team Strategy Critic이다.\n목표는 좋은 문구를 만드는 것이 아니라,\n현재 Evidence와 Product Capability로\n실제로 주장할 수 있는 Value인지 확인하는 것이다.\n\n[PROMPT 1 RESULT]\n[ ]\n\n[PRIMARY TARGET]\n[ ]\n\n[KNOWN EVIDENCE]\n[ ]\n\n[TASK 1 — VALUE ANGLE GENERATION]\nPrompt 1 결과를 이용해\n서로 다른 Value Angle 후보를 최대 4개 만들어줘.\n\n각 후보가 단순한 표현 변경이 아니라\n서로 다른 고객가치 관점이 되도록 해.\n\n예:\n\n- 반복작업 감소\n- 더 나은 의사결정\n- 일관성 확보\n- 시간/절차 단순화\n- 근거관리\n- 위험 감소\n\n단 실제 Business Context와 맞지 않는 관점을\n억지로 사용하지 마.\n\n각 후보마다:\n\n- Value Proposition\n- Value Angle\n- 어떤 Customer Problem과 연결되는지\n- 어떤 AVAILABLE Capability에 기반하는지\n\n를 표시해.\n\n[TASK 2 — PROOF CHECK]\n각 Value 후보에 대해 다음을 확인해.\n\n- Supporting Evidence\n- Available Proof\n- Missing Proof\n- Counter Evidence\n\nEvidence가 없는데 사실처럼 주장하지 마.\n\n[TASK 3 — RED TEAM / STRESS TEST]\n각 Value 후보를 다음 관점에서 공격해줘.\n\n1. 고객 Problem이 실제로 충분히 강한가?\n2. 현재 대안보다 정말 나은가?\n3. 현재 AVAILABLE 제품으로 제공 가능한가?\n4. Benefit과 Outcome을 과장하지 않았는가?\n5. Evidence가 없는 효과를 주장하지 않았는가?\n6. 경쟁대안도 쉽게 말할 수 있는 가치 아닌가?\n7. Target에게 실제 중요한 가치인가?\n8. 우리가 보고 싶은 Evidence만 선택한 것은 아닌가?\n\n[TASK 4 — DECISION SUPPORT]\n각 후보에 대해 다음 중 하나를 제안해.\n\n- KEEP\n- REVISE\n- HOLD\n- REJECT\n\n필요하면 수정안을 같이 제안해.\n\n그리고 마지막에:\n\n- AI 추천 1순위\n- AI 추천 2순위\n- 1순위 추천 이유\n- 가장 큰 Risk\n- 아직 사용하면 안 되는 주장\n- 추가 검증할 Evidence\n\n를 정리해.\n\n단,\n최종 Value Proposition은 대신 결정하지 마.\n최종 결정은 사람이 한다.",
             "targetTool": "ChatGPT",
             "copyable": true
           },
-          "description": "[ ] 다섯 곳에 Primary Target, Value Proposition Bridge, Customer Problem, Product Capability, Evidence를 붙여넣으세요."
+          "description": "[ ] 세 곳에 위 Prompt 1 분석결과, 1순위 타겟(P03), Evidence(P03)를 붙여넣으세요."
         },
         {
           "id": "d4l1-b07-chatgpt",
@@ -591,33 +422,29 @@
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "Value Angle 후보 생성",
-            "practiceDescription": "서로 다른 Customer Value Angle을 가진 Value Proposition 후보를 최대 4개 만듭니다.",
-            "estimatedMinutes": 10
+            "practiceName": "Value Angle + Proof + Red Team 검증",
+            "practiceDescription": "Value Angle 후보 생성부터 Proof Check, Red Team 검토, KEEP/REVISE/HOLD/REJECT 판단까지 한 번에 진행합니다.",
+            "estimatedMinutes": 15
           }
         },
         {
-          "id": "d4l1-b07-form",
+          "id": "d4l1-b07-result-form",
           "type": "input-form",
-          "title": "Value Angle 후보 기록",
+          "title": "Prompt 2 검토결과",
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "가치 후보 A (Value Candidate A)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "가치 후보 B (Value Candidate B)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "가치 후보 C (Value Candidate C)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "가치 후보 D (Value Candidate D)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "가치 관점 메모 (Value Angle Notes)", "kind": "long-text", "required": false }
+              { "id": "f1", "label": "Prompt 2 검토결과 (Prompt 2 Review Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
             ]
           },
-          "description": "4개를 강제하지 않습니다 — ChatGPT가 제안한 만큼만, Evidence에 맞는 것만 옮겨 적으세요."
+          "description": "Value Angle A~D, Proof Check, Red Team, KEEP/REVISE/HOLD/REJECT 결과를 나누지 말고 한 번만 붙여넣으세요."
         }
       ]
     },
     {
       "id": "p08",
-      "title": "실습 6: Proof Check + Stress Test",
-      "layout": "practice",
+      "title": "Prompt 2 결과 검토",
+      "layout": "wide",
       "blocks": [
         {
           "id": "d4l1-b08-title",
@@ -630,82 +457,32 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l1-b08-proof",
+          "id": "d4l1-b08-checklist",
           "type": "infographic",
-          "title": "Proof 예시",
+          "title": "Prompt 2 결과 체크포인트",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
-              { "label": "실제 기능" },
-              { "label": "Prototype" },
-              { "label": "Demo" },
-              { "label": "Source" },
-              { "label": "Test Result" },
-              { "label": "Customer Interview" },
-              { "label": "실제 사용행동" },
-              { "label": "Case" },
-              { "label": "실제 데이터" }
+              { "label": "이 Value가 실제 Customer Problem과 연결되는가?" },
+              { "label": "현재 AVAILABLE 제품으로 약속할 수 있는가?" },
+              { "label": "현재 가진 Evidence로 말할 수 있는가?" },
+              { "label": "경쟁대안도 똑같이 주장할 수 있는 평범한 문장은 아닌가?" },
+              { "label": "가장 중요한 Counter Evidence는 무엇인가?" },
+              { "label": "KEEP / REVISE / HOLD / REJECT 중 AI의 판단을 그대로 받아들일 것인가?" }
             ]
           }
         },
         {
-          "id": "d4l1-b08-prompt",
-          "type": "prompt",
-          "title": "Value Proposition Proof & Red Team Review 프롬프트",
-          "visibility": "visible",
+          "id": "d4l1-b08-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
           "data": {
-            "prompt": "[ROLE]\n\n너는 창업자가 자신의 제품가치를\n과대평가하지 않도록 검토하는\nEvidence Reviewer이자 Red Team Critic이다.\n\n[PRIMARY TARGET]\n\n[ ]\n\n[VALUE PROPOSITION CANDIDATES]\n\n[ ]\n\n[CURRENT ALTERNATIVE]\n\n[ ]\n\n[AVAILABLE PRODUCT CAPABILITIES]\n\n[ ]\n\n[EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n각 Value Proposition이\n\n1. 실제 고객 Problem과 연결되는지\n2. 현재 제품으로 제공 가능한지\n3. Evidence로 어느 정도 증명 가능한지\n4. 기존 Alternative보다 의미 있는 차이가 있는지\n\n공격적으로 검토한다.\n\n[TASK A — PROOF CHECK]\n\n각 Value Claim에 대해:\n\n- Available Proof\n- Missing Proof\n- Claim Status\n\n를 작성해.\n\nClaim Status:\n\n- SUPPORTED\n- PARTIALLY SUPPORTED\n- VALUE HYPOTHESIS\n- DO NOT USE YET\n\n[TASK B — RED TEAM]\n\n각 후보에 대해 다음을 검토해.\n\n1. 실제로 중요한 고객 Problem인가?\n2. Feature 설명에 그치지 않았는가?\n3. Current Alternative보다 정말 나은가?\n4. 경쟁 서비스도 쉽게 같은 말을 할 수 있는가?\n5. 고객이 이 Value를 중요하게 생각하지 않을 가능성은?\n6. 현재 제품이 실제로 이 약속을 지킬 수 있는가?\n7. Evidence 없이 효과를 과장한 부분은?\n8. 어떤 Proof가 가장 부족한가?\n\n[DECISION OPTIONS]\n\n각 후보를:\n\n- KEEP\n- REVISE\n- HOLD\n- REJECT\n\n중 하나로 제안해.\n\n[GUARDRAIL]\n\n새로운 Evidence를 만들어내지 마.\n\nProof가 없으면\n\"없음\" 또는\n\"추가 검증 필요\"라고 명확히 표시해.\n\n최종 Value 선택은 사람이 한다.\n\n[OUTPUT]\n\nValue |\nAvailable Proof |\nMissing Proof |\nMain Risk |\nCounter Evidence |\nClaim Status |\nDecision Suggestion\n\n마지막에는\n\"현재 가장 위험한 Value Claim 3개\"\n를 정리해줘.",
-            "targetTool": "ChatGPT",
-            "copyable": true
+            "markdown": "이 페이지는 학생 입력이 없습니다. 다음 페이지 Human Value Decision에서 이 결과를 반영해 최종 판단하게 하세요.",
+            "emphasis": "normal"
           },
-          "description": "[ ] 다섯 곳에 Primary Target, Value Proposition 후보들, Current Alternative, 제품 Capability, Evidence를 붙여넣으세요."
-        },
-        {
-          "id": "d4l1-b08-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Proof Check + Red Team 검토",
-            "practiceDescription": "각 Value Proposition을 증명 가능성과 반대 관점에서 공격적으로 검토합니다.",
-            "estimatedMinutes": 10
-          }
-        },
-        {
-          "id": "d4l1-b08-notebooklm",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://notebooklm.google.com/",
-            "buttonLabel": "NotebookLM 열기 (선택)",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": false,
-            "practiceName": "Value Claim 근거 확인 (선택)",
-            "practiceDescription": "Value Claim이 기존 Source에 실제로 근거하는지 확인합니다.",
-            "estimatedMinutes": 5
-          }
-        },
-        {
-          "id": "d4l1-b08-form",
-          "type": "input-form",
-          "title": "Proof Check 기록",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              { "id": "f1", "label": "확보된 증거 (Available Proof)", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "부족한 증거 (Missing Proof)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "반대 근거 (Counter Evidence)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "가치 리스크 (Value Risks)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "아직 쓰면 안 되는 주장 (Claims Not To Use Yet)", "kind": "long-text", "required": false }
-            ]
-          },
-          "description": "Proof가 없으면 \"없음\" 또는 \"추가 검증 필요\"라고 명확히 적으세요."
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
@@ -719,7 +496,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 최종 고객가치는 사람이 선택합니다\n\nValue Proposition은 광고 카피가 아닙니다. 현재 Target에게 어떤 가치를 검증할 것인지 결정하는 사업가설입니다.",
+            "markdown": "# 최종 고객가치는 사람이 선택합니다\n\nValue Proposition은 광고 카피가 아닙니다. AI가 KEEP/REVISE를 제안했더라도, 현재 Target에게 어떤 가치를 검증할 것인지 최종 결정은 사람이 합니다.",
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
@@ -737,13 +514,7 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Target Selection v0.1",
-                    "sourceLabel": "1순위 타겟 (Primary Target)"
-                  }
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l1-b03-context-form", "sourceFieldIds": ["f1"] }
                 ]
               },
               {
@@ -752,14 +523,7 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P06에서 가져오기",
-                    "sourceBlockId": "d4l1-b06-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l1-b03-result-form" }
                 ]
               },
               {
@@ -768,132 +532,86 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P06에서 가져오기",
-                    "sourceBlockId": "d4l1-b06-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l1-b03-result-form" }
                 ]
               },
               {
                 "id": "f4",
-                "label": "대안의 한계 (Alternative Gap)",
+                "label": "핵심 혜택 (Key Benefit)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P06에서 가져오기",
-                    "sourceBlockId": "d4l1-b06-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l1-b03-result-form" }
                 ]
               },
               {
                 "id": "f5",
-                "label": "기능에서 혜택으로 (Feature → Benefit → Outcome)",
+                "label": "기대 결과 (Expected Outcome)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "P05 So What? Ladder 결과",
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P05에서 가져오기",
-                    "sourceBlockId": "d4l1-b05-form"
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l1-b03-result-form" }
                 ]
               },
               {
                 "id": "f6",
-                "label": "가치제안 브릿지 (Value Proposition Bridge)",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "P06 Bridge Statement",
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P06에서 가져오기",
-                    "sourceBlockId": "d4l1-b06-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l1-b07-result-form" }
                 ]
               },
               {
                 "id": "f7",
-                "label": "가치 후보들 (Value Candidates)",
+                "label": "2순위 가치 (Secondary Value)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "P07 Value A~D",
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P07에서 가져오기",
-                    "sourceBlockId": "d4l1-b07-form"
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l1-b07-result-form" }
                 ]
               },
-              { "id": "f8", "label": "1순위 가치제안 (Primary Value Proposition)", "kind": "long-text", "required": false },
-              { "id": "f9", "label": "2순위 가치 (Secondary Value)", "kind": "long-text", "required": false },
-              { "id": "f10", "label": "지지 근거 (Supporting Evidence)", "kind": "long-text", "required": false },
+              { "id": "f8", "label": "선택 이유 (Why This Value)", "kind": "long-text", "required": false },
+              {
+                "id": "f9",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l1-b07-result-form" }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "가장 큰 반대근거·리스크 (Main Counter Evidence / Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l1-b07-result-form" }
+                ]
+              },
               {
                 "id": "f11",
-                "label": "반대 근거 (Counter Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l1-b08-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f12",
                 "label": "확보된 증거 (Available Proof)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l1-b08-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l1-b07-result-form" }
                 ]
               },
               {
-                "id": "f13",
-                "label": "부족한 증거 (Missing Proof)",
+                "id": "f12",
+                "label": "부족한 증거 (Missing Proof / Next Validation)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l1-b08-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l1-b07-result-form" }
                 ]
               },
-              { "id": "f14", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "P08 Red Team 결과를 최종 검토한 뒤 KEEP/REVISE/HOLD/REJECT 결론을 적으세요." }
+              { "id": "f13", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "Prompt 2의 KEEP/REVISE/HOLD/REJECT 제안을 최종 검토한 뒤 결론을 적으세요." }
             ]
           },
-          "description": "P03~P08에서 정리한 내용을 모아 최종 Value Proposition Map으로 정리하세요."
+          "description": "버튼으로 가져온 내용은 Prompt 1·2 결과 전체입니다 — 이 필드에 해당하는 부분만 남기고 정리하세요. 1순위 타겟을 제외한 나머지는 그대로 붙여넣지 말고 다듬어 적으세요."
         },
         {
           "id": "d4l1-b09-script",
@@ -929,7 +647,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**BUSINESS SHOWCASE — 동네 미용실 (교육용 예시)**\n\n- Primary Target: 정기관리형 고객\n- Problem: 매번 예약하고 원하는 스타일을 다시 설명해야 하며 결과 편차에 대한 부담이 있음\n- Current Alternative: 기존 단골 미용실, 전화/네이버 예약, 매번 상담 반복\n- Possible Feature/Service: 고객 시술기록 + 정기관리 알림 + 예약 연결\n- Benefit: 반복 설명을 줄이고 이전 시술 이력을 참고할 수 있음\n- Expected Outcome: 매번 익숙하고 예측 가능한 관리 경험\n- Value Hypothesis 예: \"정기적으로 미용관리가 필요한 고객이 이전 시술기록을 바탕으로 예약과 상담을 더 편하게 이어갈 수 있도록 돕는다.\"\n\n※ 이 내용은 교육용 BUSINESS SHOWCASE이며 실제 성공사례 또는 검증된 성과처럼 표현하지 않습니다.",
+            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\nCustomer Problem: 매번 예약하고 원하는 스타일을 다시 설명해야 하며 결과 편차에 대한 부담이 있음\n↓\nCurrent Alternative: 기존 단골 미용실, 전화/네이버 예약, 매번 상담 반복\n↓\nAvailable Capability: 고객 시술기록 + 정기관리 알림 + 예약 연결\n↓\nBenefit: 반복 설명을 줄이고 이전 시술 이력을 참고할 수 있음\n↓\nExpected Outcome: 매번 익숙하고 예측 가능한 관리 경험\n↓\nValue Proposition: \"정기적으로 미용관리가 필요한 고객이 이전 시술기록을 바탕으로 예약과 상담을 더 편하게 이어갈 수 있도록 돕는다.\"\n\n※ 이 내용은 교육용 BUSINESS SHOWCASE이며 실제 성공사례 또는 검증된 성과처럼 표현하지 않습니다.",
             "emphasis": "normal"
           },
           "theme": { "background": "card", "bordered": true },
@@ -966,6 +684,16 @@
           }
         },
         {
+          "id": "d4l1-b10-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## B. Business Context 업데이트\n\n4차시 Business Context를 그대로 가져오고, 이번에 새로 정한 Value 관련 항목만 갱신하세요.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
           "id": "d4l1-b10-context-form",
           "type": "input-form",
           "title": "Business Context v0.5",
@@ -977,15 +705,8 @@
                 "label": "확인된 사실 (Confirmed Facts)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "4차시 Confirmed Facts + 이번 시간 확인된 내용",
                 "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Business Context v0.4",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  }
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Business Context v0.4", "sourceLabel": "확인된 사실 (Confirmed Facts)" }
                 ]
               },
               {
@@ -994,13 +715,7 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Business Context v0.4",
-                    "sourceLabel": "현재 가설 (Current Hypotheses)"
-                  }
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Business Context v0.4", "sourceLabel": "현재 가설 (Current Hypotheses)" }
                 ]
               },
               {
@@ -1009,59 +724,34 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f1"] }
                 ]
               },
               {
                 "id": "f4",
-                "label": "핵심 문제 (Key Problem)",
+                "label": "고객 세그먼트 (Customer Segments)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Business Context v0.4", "sourceLabel": "고객 세그먼트 (Customer Segments)" }
                 ]
               },
               {
                 "id": "f5",
-                "label": "현재 대안 (Current Alternative)",
+                "label": "핵심 고객 문제 (Key Customer Problem)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f2"] }
                 ]
               },
               {
                 "id": "f6",
-                "label": "제품 역량 (Product Capability)",
+                "label": "현재 대안 (Current Alternative)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P04에서 가져오기",
-                    "sourceBlockId": "d4l1-b04-form"
-                  }
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f3"] }
                 ]
               },
               {
@@ -1070,14 +760,7 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P06에서 가져오기",
-                    "sourceBlockId": "d4l1-b06-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f4"] }
                 ]
               },
               {
@@ -1086,14 +769,7 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P06에서 가져오기",
-                    "sourceBlockId": "d4l1-b06-form",
-                    "sourceFieldIds": [
-                      "f7"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f5"] }
                 ]
               },
               {
@@ -1102,115 +778,49 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f6"] }
                 ]
               },
               {
                 "id": "f10",
-                "label": "2순위 가치 (Secondary Value)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f9"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "가치 근거 (Value Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f12"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f12",
-                "label": "확보된 증거 (Available Proof)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f12"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f13",
-                "label": "부족한 증거 (Missing Proof)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P09에서 가져오기",
-                    "sourceBlockId": "d4l1-b09-form",
-                    "sourceFieldIds": [
-                      "f13"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f14",
                 "label": "가치 리스크 (Value Risks)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l1-b08-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f10"] }
                 ]
               },
               {
-                "id": "f15",
+                "id": "f11",
+                "label": "확보된 증거 (Available Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f11"] }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "부족한 증거 (Missing Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P09에서 가져오기", "sourceBlockId": "d4l1-b09-form", "sourceFieldIds": ["f12"] }
+                ]
+              },
+              {
+                "id": "f13",
                 "label": "검증 대기 목록 (Validation Backlog)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Business Context v0.4",
-                    "sourceLabel": "검증 대기 목록 (Validation Backlog)"
-                  }
+                  { "kind": "prior-artifact", "label": "4차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "4차시 — Business Context v0.4", "sourceLabel": "검증 대기 목록 (Validation Backlog)" }
                 ]
               },
-              { "id": "f16", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "선택한 Target이 이 Value를 인식하고 우리 서비스를 발견·검토·선택하는 과정은 어떻게 되는가?" }
+              { "id": "f14", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "선택한 Target이 이 Value를 인식하고 우리 서비스를 발견·검토·선택하는 과정은 어떻게 되는가?" }
             ]
           },
-          "description": "B. Business Context 업데이트 — 4차시 Business Context v0.4를 복사해 이번 Value 결과를 반영한 최신 상태로 업데이트하세요."
+          "description": "4차시 Business Context v0.4를 복사해 이번 Value 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
         },
         {
           "id": "d4l1-b10-context-save",
