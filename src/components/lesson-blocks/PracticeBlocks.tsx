@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { toast } from "sonner";
 import { ArrowUpRight, CheckCircle2, Clock, ExternalLink, Loader2, Save, ShieldAlert } from "lucide-react";
 import type {
   ExternalLinkBlock,
@@ -212,6 +213,9 @@ export function SaveArtifactBlockRenderer({ block }: { block: SaveArtifactBlock 
         sourceBlockId: block.id,
       });
       setSavedAt(Date.now());
+      toast.success(`"${block.data.artifactTitle}" 저장되었습니다`, {
+        description: "저장공간에서 확인할 수 있어요.",
+      });
     } finally {
       setSaving(false);
     }
@@ -246,9 +250,20 @@ export function SaveArtifactBlockRenderer({ block }: { block: SaveArtifactBlock 
 
       <div className="flex flex-wrap items-center gap-3">
         {/* 모바일 최소 터치 타깃 44px */}
-        <Button onClick={handleSave} disabled={saving} className="min-h-11 gap-1.5 sm:min-h-9">
-          {saving ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />}
-          {block.data.buttonLabel}
+        <Button
+          onClick={handleSave}
+          disabled={saving}
+          variant={savedAt ? "outline" : "default"}
+          className="min-h-11 gap-1.5 sm:min-h-9"
+        >
+          {saving ? (
+            <Loader2 className="size-4 animate-spin" />
+          ) : savedAt ? (
+            <CheckCircle2 className="size-4 text-success" />
+          ) : (
+            <Save className="size-4" />
+          )}
+          {savedAt ? "완료" : block.data.buttonLabel}
         </Button>
         {activeTitle && (
           <span className="flex items-center text-xs text-muted-foreground">
@@ -259,12 +274,6 @@ export function SaveArtifactBlockRenderer({ block }: { block: SaveArtifactBlock 
             >
               변경
             </button>
-          </span>
-        )}
-        {savedAt && (
-          <span className="flex items-center gap-1 text-xs text-success-strong">
-            <CheckCircle2 className="size-3.5" />
-            저장됨
           </span>
         )}
         <Button variant="link" size="sm" asChild className="min-h-11 px-0 sm:min-h-0">
