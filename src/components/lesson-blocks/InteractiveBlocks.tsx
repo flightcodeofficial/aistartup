@@ -1,23 +1,98 @@
 "use client";
 
-import { CheckCircle2, XCircle } from "lucide-react";
+import { toast } from "sonner";
+import { CheckCircle2, Download, XCircle } from "lucide-react";
 import type {
+  ImportFromSource,
   InputFormBlock,
   QuizBlock,
   ReflectionBlock,
 } from "@/features/lesson-builder/types";
 import {
+  getFormFieldLabels,
   registerFormFieldLabels,
   selectFormValues,
   selectQuizAnswers,
   useBlockResponseStore,
 } from "@/features/lesson-builder/blockResponseStore";
+import { workspaceRepository } from "@/features/workspace";
+import { useActiveProjectStore } from "@/features/workspace/activeProjectStore";
+import { isArtifactType } from "@/features/workspace/types";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { ArtifactSelector } from "./ArtifactSelector";
 import { cn } from "@/lib/utils";
+
+/** 필드 라벨 옆의 "가져오기" 버튼들. 같은 Lesson의 다른 페이지, 또는 이전 차시 저장물에서 값을 끌어온다. */
+function ImportButtons({
+  blockId,
+  fieldId,
+  sources,
+}: {
+  blockId: string;
+  fieldId: string;
+  sources: ImportFromSource[];
+}) {
+  const activeProjectId = useActiveProjectStore((s) => s.activeProjectId);
+
+  const handleImport = async (source: ImportFromSource) => {
+    let pulled = "";
+
+    if (source.kind === "same-lesson" && source.sourceBlockId) {
+      const values = useBlockResponseStore.getState().formValues[source.sourceBlockId] ?? {};
+      const labels = getFormFieldLabels(source.sourceBlockId);
+      const ids = source.sourceFieldIds ?? Object.keys(values);
+      pulled = ids
+        .map((id) => {
+          const v = values[id];
+          return v ? `${labels[id] ?? id}: ${v}` : null;
+        })
+        .filter((line): line is string => Boolean(line))
+        .join("\n");
+    } else if (source.kind === "prior-artifact" && activeProjectId) {
+      const type = source.artifactType && isArtifactType(source.artifactType) ? source.artifactType : undefined;
+      if (type) {
+        const artifacts = await workspaceRepository.listArtifactsByType(type, activeProjectId);
+        const match = source.artifactTitle
+          ? artifacts.find((a) => a.title === source.artifactTitle)
+          : artifacts[0];
+        if (match) {
+          pulled = (source.sourceLabel ? match.fields?.[source.sourceLabel] : match.content) ?? "";
+        }
+      }
+    }
+
+    if (!pulled) {
+      toast.error("가져올 내용이 아직 없습니다", {
+        description: "해당 페이지를 먼저 작성했는지 확인하세요.",
+      });
+      return;
+    }
+
+    const current = useBlockResponseStore.getState().formValues[blockId]?.[fieldId] ?? "";
+    const next = current ? `${current}\n\n${pulled}` : pulled;
+    useBlockResponseStore.getState().setFormValue(blockId, fieldId, next);
+    toast.success("가져왔습니다");
+  };
+
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {sources.map((source, i) => (
+        <button
+          key={i}
+          type="button"
+          onClick={() => handleImport(source)}
+          className="inline-flex min-h-8 items-center gap-1 rounded-full border border-primary/30 bg-primary/5 px-2 py-0.5 text-[11px] font-medium text-primary transition-colors hover:bg-primary/10"
+        >
+          <Download className="size-3" />
+          {source.label}
+        </button>
+      ))}
+    </div>
+  );
+}
 
 export function QuizBlockRenderer({ block }: { block: QuizBlock }) {
   const answers = useBlockResponseStore(selectQuizAnswers(block.id));
@@ -121,10 +196,15 @@ export function InputFormBlockRenderer({ block }: { block: InputFormBlock }) {
         const inputId = `${block.id}-${field.id}`;
         return (
           <div key={field.id}>
-            <Label htmlFor={inputId}>
-              {field.label}
-              {field.required && <span className="ml-1 text-danger">*</span>}
-            </Label>
+            <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5">
+              <Label htmlFor={inputId}>
+                {field.label}
+                {field.required && <span className="ml-1 text-danger">*</span>}
+              </Label>
+              {field.importFrom && field.importFrom.length > 0 && (
+                <ImportButtons blockId={block.id} fieldId={field.id} sources={field.importFrom} />
+              )}
+            </div>
             {field.kind === "long-text" ? (
               <Textarea
                 id={inputId}

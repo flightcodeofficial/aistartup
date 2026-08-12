@@ -650,21 +650,48 @@
                 "label": "확인된 사실 (Confirmed Facts)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "사람이 승인한 FACT 항목"
+                "placeholder": "사람이 승인한 FACT 항목",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P05에서 가져오기",
+                    "sourceBlockId": "d3l1-b05-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
               },
               {
                 "id": "f2",
                 "label": "가설 (Hypotheses)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "사람이 승인한 INFERENCE/HYPOTHESIS 항목"
+                "placeholder": "사람이 승인한 INFERENCE/HYPOTHESIS 항목",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P05에서 가져오기",
+                    "sourceBlockId": "d3l1-b05-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
+                ]
               },
               {
                 "id": "f3",
                 "label": "검증 대기 목록 (Validation Backlog)",
                 "kind": "long-text",
                 "required": false,
-                "placeholder": "검증이 필요한 항목 + 확인 질문"
+                "placeholder": "검증이 필요한 항목 + 확인 질문",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P07에서 가져오기",
+                    "sourceBlockId": "d3l1-b07-form"
+                  }
+                ]
               },
               {
                 "id": "f4",

@@ -511,15 +511,97 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "근거 패턴 (Evidence Patterns)", "kind": "long-text", "required": false, "placeholder": "P03~P04에서 정리한 Pattern 요약" },
+              {
+                "id": "f1",
+                "label": "근거 패턴 (Evidence Patterns)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "P03~P04에서 정리한 Pattern 요약",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d3l3-b03-form"
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "P04에서 가져오기",
+                    "sourceBlockId": "d3l3-b04-form"
+                  }
+                ]
+              },
               { "id": "f2", "label": "최종 세그먼트 A (Final Segment A)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
               { "id": "f3", "label": "최종 세그먼트 B (Final Segment B)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
               { "id": "f4", "label": "최종 세그먼트 C (Final Segment C)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
               { "id": "f5", "label": "최종 세그먼트 D / 추가 세그먼트 (Final Segment D / Additional Segment)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome" },
-              { "id": "f6", "label": "지지 근거 (Supporting Evidence)", "kind": "long-text", "required": false, "placeholder": "P08 Supporting Evidence 요약" },
-              { "id": "f7", "label": "반대 근거 (Counter Evidence)", "kind": "long-text", "required": false, "placeholder": "P08 Counter Evidence 요약" },
-              { "id": "f8", "label": "세그먼트 근거 상태 (Segment Evidence Status)", "kind": "long-text", "required": false, "placeholder": "Segment별 Supported / Partially Supported / Hypothesis / Needs More Evidence" },
-              { "id": "f9", "label": "사람 검토 메모 (Human Review Notes)", "kind": "long-text", "required": false, "placeholder": "Segment별 Human Decision(KEEP/MERGE/REVISE/HOLD)과 그 이유를 적으세요." }
+              {
+                "id": "f6",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "P08 Supporting Evidence 요약",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d3l3-b08-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "반대 근거 (Counter Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "P08 Counter Evidence 요약",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d3l3-b08-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "세그먼트 근거 상태 (Segment Evidence Status)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment별 Supported / Partially Supported / Hypothesis / Needs More Evidence",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d3l3-b08-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "사람 검토 메모 (Human Review Notes)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment별 Human Decision(KEEP/MERGE/REVISE/HOLD)과 그 이유를 적으세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P06에서 가져오기",
+                    "sourceBlockId": "d3l3-b06-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              }
             ]
           },
           "description": "P03~P08에서 정리한 내용과 P06의 중복 제거 결과를 반영해 최종 Segment 구조로 정리하세요."
@@ -605,11 +687,98 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "확인된 사실 (Confirmed Facts)", "kind": "long-text", "required": false, "placeholder": "2차시 Confirmed Facts + 이번 시간 확인된 내용" },
+              {
+                "id": "f1",
+                "label": "확인된 사실 (Confirmed Facts)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "2차시 Confirmed Facts + 이번 시간 확인된 내용",
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "2차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "2차시 — Business Context v0.2",
+                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                  }
+                ]
+              },
               { "id": "f2", "label": "현재 가설 (Current Hypotheses)", "kind": "long-text", "required": false, "placeholder": "여전히 가설로 남아있는 항목" },
-              { "id": "f3", "label": "고객 세그먼트 (Customer Segments)", "kind": "long-text", "required": false, "placeholder": "Final Segment A~D 요약" },
-              { "id": "f4", "label": "세그먼트 근거 (Segment Evidence)", "kind": "long-text", "required": false, "placeholder": "Segment별 핵심 Supporting Evidence" },
-              { "id": "f5", "label": "세그먼트 리스크/반대 근거 (Segment Risks / Counter Evidence)", "kind": "long-text", "required": false, "placeholder": "Segment별 핵심 Counter Evidence" },
+              {
+                "id": "f3",
+                "label": "고객 세그먼트 (Customer Segments)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Final Segment A~D 요약",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "세그먼트 A",
+                    "sourceBlockId": "d3l3-b09-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "세그먼트 B",
+                    "sourceBlockId": "d3l3-b09-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "세그먼트 C",
+                    "sourceBlockId": "d3l3-b09-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "세그먼트 D",
+                    "sourceBlockId": "d3l3-b09-form",
+                    "sourceFieldIds": [
+                      "f5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "세그먼트 근거 (Segment Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment별 핵심 Supporting Evidence",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d3l3-b09-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "세그먼트 리스크/반대 근거 (Segment Risks / Counter Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment별 핵심 Counter Evidence",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P09에서 가져오기",
+                    "sourceBlockId": "d3l3-b09-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
+                ]
+              },
               { "id": "f6", "label": "검증 대기 목록 (Validation Backlog)", "kind": "long-text", "required": false, "placeholder": "Evidence가 부족해 HOLD된 항목" },
               { "id": "f7", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "예: 4차시에서 Segment의 존재 여부가 아니라 Problem Strength / Reachability / Willingness to Pay / Fit 등을 기준으로 첫 Target 후보를 판단한다." }
             ]

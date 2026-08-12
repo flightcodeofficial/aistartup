@@ -38,6 +38,25 @@ const quizQuestionSchema = z.object({
   explanation: z.string().optional(),
 });
 
+// 필드 옆 "가져오기" 버튼 하나의 소스 정의.
+// same-lesson: 같은 Lesson 안의 다른 input-form 블록(다른 페이지 포함)에서 값을 끌어온다.
+// prior-artifact: 이전 차시에 저장된 artifact에서 값을 끌어온다.
+const importFromSourceSchema = z.object({
+  kind: z.enum(["same-lesson", "prior-artifact"]),
+  /** 버튼에 표시할 짧은 문구. 예: "P05에서 가져오기", "1차시에서 가져오기" */
+  label: z.string().min(1),
+  /** same-lesson: 값을 가져올 input-form 블록 id */
+  sourceBlockId: z.string().optional(),
+  /** same-lesson: 그 블록의 특정 필드만 가져올 때. 생략하면 블록의 모든 필드를 합쳐온다. */
+  sourceFieldIds: z.array(z.string()).optional(),
+  /** prior-artifact: 검색할 artifact type (보통 business-idea) */
+  artifactType: z.string().optional(),
+  /** prior-artifact: 정확히 일치해야 하는 artifact 제목. 예: "1차시 — Business Context v0.1" */
+  artifactTitle: z.string().optional(),
+  /** prior-artifact: artifact.fields에서 가져올 필드 라벨. 생략하면 artifact 전체 content를 가져온다. */
+  sourceLabel: z.string().optional(),
+});
+
 const inputFormFieldSchema = z.object({
   id: z.string().min(1),
   label: z.string().min(1),
@@ -46,6 +65,8 @@ const inputFormFieldSchema = z.object({
   required: z.boolean().default(false),
   options: z.array(z.string()).optional(),
   defaultChecked: z.boolean().optional(),
+  /** 필드 라벨 옆에 뜨는 "가져오기" 버튼들. 여러 개면 버튼도 여러 개 뜬다. */
+  importFrom: z.array(importFromSourceSchema).optional(),
 });
 
 const mediaDisplaySchema = z.enum(["half", "large", "hero", "fullscreen"]).optional();

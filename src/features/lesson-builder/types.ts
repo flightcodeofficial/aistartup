@@ -236,6 +236,23 @@ export interface QuizBlock extends BlockBase {
 
 export type InputFieldKind = "short-text" | "long-text" | "number" | "select" | "checkbox";
 
+/** 필드 옆 "가져오기" 버튼 하나의 소스 정의. */
+export interface ImportFromSource {
+  kind: "same-lesson" | "prior-artifact";
+  /** 버튼에 표시할 짧은 문구. 예: "P05에서 가져오기", "1차시에서 가져오기" */
+  label: string;
+  /** same-lesson: 값을 가져올 input-form 블록 id */
+  sourceBlockId?: string;
+  /** same-lesson: 그 블록의 특정 필드만 가져올 때. 생략하면 블록의 모든 필드를 합쳐온다. */
+  sourceFieldIds?: string[];
+  /** prior-artifact: 검색할 artifact type (보통 business-idea) */
+  artifactType?: string;
+  /** prior-artifact: 정확히 일치해야 하는 artifact 제목 */
+  artifactTitle?: string;
+  /** prior-artifact: artifact.fields에서 가져올 필드 라벨. 생략하면 artifact 전체 content를 가져온다. */
+  sourceLabel?: string;
+}
+
 export interface InputFormField {
   id: string;
   label: string;
@@ -246,6 +263,8 @@ export interface InputFormField {
   options?: string[];
   /** kind가 checkbox일 때 기본 체크 여부. */
   defaultChecked?: boolean;
+  /** 필드 라벨 옆에 뜨는 "가져오기" 버튼들. */
+  importFrom?: ImportFromSource[];
 }
 
 export interface InputFormBlock extends BlockBase {
