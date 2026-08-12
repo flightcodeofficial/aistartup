@@ -21,20 +21,18 @@ import {
   MessageCircleQuestion,
   MessagesSquare,
   Rocket,
-  Sparkles,
   Wand2,
 } from "lucide-react";
-import { curriculum, flattenSteps } from "@/features/curriculum/data";
+import { curriculum } from "@/features/curriculum/data";
 import { getLessonCards } from "@/features/curriculum/canonicalLessons";
 import { dayRelease, SCHEDULED_NOTICE, viewRelease } from "@/features/curriculum/release";
-import { useProgressStore, calcProgressPercent } from "@/features/progress/store";
+import { useProgressStore } from "@/features/progress/store";
 import { communityRepository } from "@/features/community";
 import { subscribeCommunityChange } from "@/features/community/realtimeChannel";
 import { useAuth } from "@/features/auth/AuthProvider";
 import { isStaff } from "@/features/auth/types";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { routes } from "@/lib/routes";
-import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -87,9 +85,6 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   }, [pathname]);
 
   const [openDay, setOpenDay] = useState<number>(currentDay);
-
-  const allStepIds = curriculum.flatMap((w) => w.days.flatMap((d) => flattenSteps(d).map((s) => s.id)));
-  const overallPercent = calcProgressPercent(steps, allStepIds);
 
   const [unreadCount, setUnreadCount] = useState(0);
   useEffect(() => {
@@ -173,9 +168,6 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
                 if (!dayView.visible) return null;
                 const isComingSoon = !dayView.canEnter;
                 const isOpen = openDay === day.day && !isComingSoon;
-                const dayStepIds = flattenSteps(day).map((s) => s.id);
-                const dayPercent = calcProgressPercent(steps, dayStepIds);
-
                 // 잠긴 Day는 접었다 폈다 하는 대신 Day 화면으로 보낸다.
                 // 거기서 "오픈 예정"인 이유를 안내한다.
                 if (isComingSoon) {
@@ -209,7 +201,6 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
                       )}
                     >
                       <span className="flex items-center gap-2">
-                        <span className="text-xs font-semibold text-primary">{dayPercent}%</span>
                         Day{day.day}
                       </span>
                       <ChevronDown
@@ -314,17 +305,6 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
           </div>
         )}
       </nav>
-
-      <div className="border-t border-sidebar-border px-4 py-4">
-        <div className="mb-2 flex items-center justify-between text-xs">
-          <span className="flex items-center gap-1 font-medium text-muted-foreground">
-            <Sparkles className="size-3.5 text-primary" />
-            전체 진행률
-          </span>
-          <span className="font-semibold text-primary">{overallPercent}%</span>
-        </div>
-        <Progress value={overallPercent} className="h-1.5" />
-      </div>
     </div>
   );
 }

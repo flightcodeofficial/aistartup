@@ -1,17 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { curriculum, getAllStepIdsForDay } from "@/features/curriculum/data";
+import { curriculum } from "@/features/curriculum/data";
 import { dayRelease, viewRelease, SCHEDULED_NOTICE } from "@/features/curriculum/release";
 import { useIsStaff } from "@/features/curriculum/useRelease";
 import { ScheduledBadge } from "@/components/curriculum/ScheduledNotice";
-import { useProgressStore, calcProgressPercent } from "@/features/progress/store";
-import { Progress } from "@/components/ui/progress";
 import { routes } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 export function WeekOverviewGrid() {
-  const steps = useProgressStore((s) => s.steps);
   const staff = useIsStaff();
 
   return (
@@ -26,9 +23,6 @@ export function WeekOverviewGrid() {
               const release = viewRelease(dayRelease(day), staff);
               // hidden은 학생 목록에 아예 그리지 않는다.
               if (!release.visible) return null;
-
-              const stepIds = getAllStepIdsForDay(week.week, day.day);
-              const percent = calcProgressPercent(steps, stepIds);
 
               return (
                 // 잠긴 Day도 눌러서 들어갈 수 있다 — 들어가면 "오픈 예정" 안내가 나온다.
@@ -51,12 +45,6 @@ export function WeekOverviewGrid() {
                     <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">
                       {day.title.trim() || (release.locked ? SCHEDULED_NOTICE.hint : "")}
                     </p>
-                    {!release.locked && (
-                      <div className="mt-auto pt-3">
-                        <Progress value={percent} className="h-1.5" />
-                        <p className="mt-1 text-[11px] text-muted-foreground">{percent}% 완료</p>
-                      </div>
-                    )}
                   </div>
                 </Link>
               );
