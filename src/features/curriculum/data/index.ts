@@ -25,7 +25,7 @@ function placeholderDay(week: number, day: number): DayMeta {
 
 export const week2: WeekMeta = {
   week: 2,
-  title: "AI 기반 고객 확보 & 자동화 마케팅",
+  title: "AI 기반 고객·시장 검증 & 가치제안 설계",
   description:
     "생성형 AI를 활용해 타깃 고객을 정의하고, SNS·블로그·뉴스레터 콘텐츠, 이메일·DM·홍보문구, 랜딩페이지, FAQ·고객 응대 시나리오까지 완성하는 주간입니다.",
   days: [
@@ -67,14 +67,14 @@ export const week2: WeekMeta = {
 // title/goal/release를 채우면 그대로 열린다.
 export const week3: WeekMeta = {
   week: 3,
-  title: "IR·피칭 자료 제작",
+  title: "AI 기반 마케팅·세일즈 & 사업화 전략",
   description: "",
   days: Array.from({ length: 4 }, (_, i) => placeholderDay(3, i + 6)),
 };
 
 export const week4: WeekMeta = {
   week: 4,
-  title: "세일즈·데모·성장 로드맵",
+  title: "AI 기반 사업운영·성장 & 실행전략",
   description: "",
   days: Array.from({ length: 6 }, (_, i) => placeholderDay(4, i + 10)),
 };
