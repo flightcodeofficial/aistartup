@@ -265,6 +265,23 @@
           }
         },
         {
+          "id": "d3l1-b04-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              { "id": "f1", "label": "사업명", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l1-b03-form", "sourceFieldIds": ["f1"] } ] },
+              { "id": "f2", "label": "사업 한 줄 설명", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l1-b03-form", "sourceFieldIds": ["f2"] } ] },
+              { "id": "f3", "label": "현재 생각하는 고객", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l1-b03-form", "sourceFieldIds": ["f3"] } ] },
+              { "id": "f4", "label": "해결하려는 문제", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l1-b03-form", "sourceFieldIds": ["f4"] } ] },
+              { "id": "f5", "label": "현재 결정된 내용", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l1-b03-form", "sourceFieldIds": ["f5"] } ] },
+              { "id": "f6", "label": "아직 모르는 내용", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l1-b03-form", "sourceFieldIds": ["f6"] } ] }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 여섯 곳에 이 내용을 순서대로 옮겨 붙여넣습니다."
+        },
+        {
           "id": "d3l1-b04-prompt",
           "type": "prompt",
           "title": "Evidence-first 분류 프롬프트",
@@ -508,6 +525,26 @@
       "layout": "practice",
       "blocks": [
         {
+          "id": "d3l1-b07-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "확인 필요 (NEEDS VERIFICATION)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P05에서 가져오기", "sourceBlockId": "d3l1-b05-form", "sourceFieldIds": ["f3"] }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 자리에 이 내용을 붙여넣습니다."
+        },
+        {
           "id": "d3l1-b07-prompt",
           "type": "prompt",
           "title": "검증질문 변환 프롬프트",
@@ -589,6 +626,35 @@
               }
             ]
           }
+        },
+        {
+          "id": "d3l1-b08-context-form",
+          "type": "input-form",
+          "title": "이전 결과 참고",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "사람 검토 결과 (P05, 참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P05에서 가져오기", "sourceBlockId": "d3l1-b05-form" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "검증 대기 목록 (P07, 참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P07에서 가져오기", "sourceBlockId": "d3l1-b07-form" }
+                ]
+              }
+            ]
+          },
+          "description": "버튼으로 채운 내용을 프롬프트 뒤에 붙여넣고 ChatGPT에서 실행하세요."
         },
         {
           "id": "d3l1-b08-prompt",

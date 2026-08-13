@@ -130,6 +130,35 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
+          "id": "d3l3-b03-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Business Context",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "2차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "2차시 — Business Context v0.2" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "Evidence",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "2차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "2차시 — Evidence Pack v0.1" }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [BUSINESS CONTEXT], [EVIDENCE] 자리에 이 내용을 순서대로 옮겨 붙여넣습니다."
+        },
+        {
           "id": "d3l3-b03-prompt",
           "type": "prompt",
           "title": "Evidence Pattern Mining 프롬프트",
@@ -215,6 +244,26 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
+          "id": "d3l3-b04-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Evidence Patterns (P03)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l3-b03-form" }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [Evidence Patterns] 자리에 이 내용을 옮겨 붙여넣습니다."
+        },
+        {
           "id": "d3l3-b04-prompt",
           "type": "prompt",
           "title": "다섯 요소 구조화 프롬프트 (Five-Block Segment Structuring)",
@@ -275,6 +324,53 @@
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l3-b05-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Business Context",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "2차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "2차시 — Business Context v0.2" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "Evidence",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "2차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "2차시 — Evidence Pack v0.1" }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "Evidence Pattern (P03)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l3-b03-form" }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "Five-Block 분석 (P04)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P04에서 가져오기", "sourceBlockId": "d3l3-b04-form" }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 네 곳에 이 내용을 순서대로 옮겨 붙여넣습니다."
         },
         {
           "id": "d3l3-b05-prompt",
@@ -365,6 +461,26 @@
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l3-b06-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Customer Segment 후보 (P05)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P05에서 가져오기", "sourceBlockId": "d3l3-b05-form" }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 자리에 이 내용을 옮겨 붙여넣습니다."
         },
         {
           "id": "d3l3-b06-prompt",
@@ -499,6 +615,38 @@
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l3-b08-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "검토할 Segment 1개 선택 (P05)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "세그먼트 A", "sourceBlockId": "d3l3-b05-form", "sourceFieldIds": ["f1"] },
+                  { "kind": "same-lesson", "label": "세그먼트 B", "sourceBlockId": "d3l3-b05-form", "sourceFieldIds": ["f2"] },
+                  { "kind": "same-lesson", "label": "세그먼트 C", "sourceBlockId": "d3l3-b05-form", "sourceFieldIds": ["f3"] },
+                  { "kind": "same-lesson", "label": "세그먼트 D", "sourceBlockId": "d3l3-b05-form", "sourceFieldIds": ["f4"] }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "현재 Business Context",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "2차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "2차시 — Business Context v0.2" }
+                ]
+              }
+            ]
+          },
+          "description": "Segment마다 반복 실행합니다. 첫 칸은 이번 라운드에 검토할 Segment 하나만 버튼으로 골라 채우세요 — 그 안에 Supporting Evidence도 포함돼 있어 [SUPPORTING EVIDENCE] 자리에도 같이 붙여넣으면 됩니다."
         },
         {
           "id": "d3l3-b08-prompt",

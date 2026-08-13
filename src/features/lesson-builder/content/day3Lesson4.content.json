@@ -152,6 +152,48 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
+          "id": "d3l4-b03-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Business Context",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "3차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "3차시 — Business Context v0.3" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "Customer Segments",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "세그먼트 A", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "최종 세그먼트 A (Final Segment A)" },
+                  { "kind": "prior-artifact", "label": "세그먼트 B", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "최종 세그먼트 B (Final Segment B)" },
+                  { "kind": "prior-artifact", "label": "세그먼트 C", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "최종 세그먼트 C (Final Segment C)" },
+                  { "kind": "prior-artifact", "label": "세그먼트 D", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "최종 세그먼트 D / 추가 세그먼트 (Final Segment D / Additional Segment)" }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "Supporting / Counter Evidence",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "지지 근거", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "지지 근거 (Supporting Evidence)" },
+                  { "kind": "prior-artifact", "label": "반대 근거", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "반대 근거 (Counter Evidence)" }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 세 곳에 이 내용을 순서대로 옮겨 붙여넣습니다."
+        },
+        {
           "id": "d3l4-b03-prompt",
           "type": "prompt",
           "title": "Evidence 기반 Target 비교 프롬프트",
@@ -292,6 +334,54 @@
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l4-b06-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 후보 (P03)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l4-b03-form", "sourceFieldIds": ["f2"] }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "Segment 비교 결과 (P03)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l4-b03-form", "sourceFieldIds": ["f1"] }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "현실 확인 (P05)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P05에서 가져오기", "sourceBlockId": "d3l4-b05-form", "sourceFieldIds": ["f1"] }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "Evidence",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "지지 근거", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "지지 근거 (Supporting Evidence)" },
+                  { "kind": "prior-artifact", "label": "반대 근거", "artifactType": "business-idea", "artifactTitle": "3차시 — Customer Segment Map v0.1", "sourceLabel": "반대 근거 (Counter Evidence)" }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 네 곳에 이 내용을 순서대로 옮겨 붙여넣습니다."
         },
         {
           "id": "d3l4-b06-prompt",

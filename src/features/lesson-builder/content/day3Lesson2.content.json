@@ -195,6 +195,19 @@
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
+          "id": "d3l2-b04-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              { "id": "f1", "label": "검증할 가설", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l2-b03-form", "sourceFieldIds": ["f1"] } ] },
+              { "id": "f2", "label": "이 가설이 중요한 이유", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l2-b03-form", "sourceFieldIds": ["f2"] } ] }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 두 곳에 이 내용을 순서대로 옮겨 붙여넣습니다."
+        },
+        {
           "id": "d3l2-b04-prompt",
           "type": "prompt",
           "title": "Evidence Plan 프롬프트",
@@ -282,6 +295,29 @@
               }
             ]
           }
+        },
+        {
+          "id": "d3l2-b05-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              { "id": "f1", "label": "검증할 가설 (Business Hypothesis)", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l2-b03-form", "sourceFieldIds": ["f1"] } ] },
+              {
+                "id": "f2",
+                "label": "사업 Context (선택)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "필요하면 아래 버튼으로 채우거나 비워두세요.",
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03 배경(가설 중요성)", "sourceBlockId": "d3l2-b03-form", "sourceFieldIds": ["f2"] },
+                  { "kind": "prior-artifact", "label": "1차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "1차시 — Business Context v0.1", "sourceLabel": "확인된 사실 (Confirmed Facts)" }
+                ]
+              }
+            ]
+          },
+          "description": "[BUSINESS HYPOTHESIS] 자리에 첫 칸을, [CONTEXT] 자리에 둘째 칸(선택)을 옮겨 붙여넣습니다."
         },
         {
           "id": "d3l2-b05-prompt",
@@ -485,6 +521,19 @@
             "emphasis": "normal"
           },
           "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d3l2-b08-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              { "id": "f1", "label": "가설", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d3l2-b03-form", "sourceFieldIds": ["f1"] } ] },
+              { "id": "f2", "label": "Evidence 요약", "kind": "long-text", "required": false, "importFrom": [ { "kind": "same-lesson", "label": "P06에서 가져오기", "sourceBlockId": "d3l2-b06-form", "sourceFieldIds": ["f4"] } ] }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 두 곳에 이 내용을 순서대로 옮겨 붙여넣습니다."
         },
         {
           "id": "d3l2-b08-prompt",
