@@ -342,13 +342,27 @@
           "data": {
             "variant": "steps",
             "items": [
-              { "label": "TARGET" },
-              { "label": "PROBLEM" },
-              { "label": "CURRENT ALTERNATIVE" },
-              { "label": "ALTERNATIVE GAP" },
-              { "label": "OUR APPROACH" },
-              { "label": "BENEFIT" },
-              { "label": "EXPECTED OUTCOME" }
+              {
+                "label": "타겟 (TARGET)"
+              },
+              {
+                "label": "문제 (PROBLEM)"
+              },
+              {
+                "label": "현재 대안 (CURRENT ALTERNATIVE)"
+              },
+              {
+                "label": "대안의 한계 (ALTERNATIVE GAP)"
+              },
+              {
+                "label": "우리의 접근 (OUR APPROACH)"
+              },
+              {
+                "label": "혜택 (BENEFIT)"
+              },
+              {
+                "label": "기대 결과 (EXPECTED OUTCOME)"
+              }
             ]
           }
         },

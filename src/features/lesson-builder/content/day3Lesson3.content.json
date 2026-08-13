@@ -163,11 +163,36 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "반복 Problem Pattern", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "행동 패턴 (Behavior Pattern)", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "상황/촉발요인 패턴 (Context / Trigger Pattern)", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "대안 패턴 (Alternative Pattern)", "kind": "long-text", "required": false },
-              { "id": "f5", "label": "기대 결과 패턴 (Expected Outcome Pattern)", "kind": "long-text", "required": false }
+              {
+                "id": "f1",
+                "label": "반복 문제 패턴 (Repeated Problem Pattern)",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "행동 패턴 (Behavior Pattern)",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "상황/촉발요인 패턴 (Context / Trigger Pattern)",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "대안 패턴 (Alternative Pattern)",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "기대 결과 패턴 (Expected Outcome Pattern)",
+                "kind": "long-text",
+                "required": false
+              }
             ]
           },
           "description": "ChatGPT 결과에서 Evidence/Inference로 표시된 패턴만 옮겨 적으세요."
@@ -285,11 +310,41 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "세그먼트 A (Segment A)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
-              { "id": "f2", "label": "세그먼트 B (Segment B)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
-              { "id": "f3", "label": "세그먼트 C (Segment C)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
-              { "id": "f4", "label": "세그먼트 D (Segment D)", "kind": "long-text", "required": false, "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status" },
-              { "id": "f5", "label": "추가 Segment / Notes", "kind": "long-text", "required": false, "placeholder": "Segment E, F가 있다면 여기에 이어서 적거나, Evidence가 가장 강한/약한 Segment 메모를 남기세요." }
+              {
+                "id": "f1",
+                "label": "세그먼트 A (Segment A)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status"
+              },
+              {
+                "id": "f2",
+                "label": "세그먼트 B (Segment B)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status"
+              },
+              {
+                "id": "f3",
+                "label": "세그먼트 C (Segment C)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status"
+              },
+              {
+                "id": "f4",
+                "label": "세그먼트 D (Segment D)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment Name / Situation / Repeated Problem / Current Alternative / Trigger / Expected Outcome / Supporting Evidence / Evidence Status"
+              },
+              {
+                "id": "f5",
+                "label": "추가 Segment / 메모",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment E, F가 있다면 여기에 이어서 적거나, Evidence가 가장 강한/약한 Segment 메모를 남기세요."
+              }
             ]
           },
           "description": "4개를 강제하지 않습니다 — ChatGPT가 제안한 만큼만 옮겨 적으세요."
@@ -479,10 +534,31 @@
           "visibility": "visible",
           "data": {
             "fields": [
-              { "id": "f1", "label": "Supporting Evidence 요약", "kind": "long-text", "required": false },
-              { "id": "f2", "label": "Counter Evidence 요약", "kind": "long-text", "required": false },
-              { "id": "f3", "label": "Missing Evidence / 추가 확인 필요", "kind": "long-text", "required": false },
-              { "id": "f4", "label": "Segment별 Current Status", "kind": "long-text", "required": false, "placeholder": "Segment명: Supported / Partially Supported / Hypothesis / Needs More Evidence" }
+              {
+                "id": "f1",
+                "label": "지지 근거 요약 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "반대 근거 요약 (Counter Evidence)",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "부족한 근거 / 추가 확인 필요 (Missing Evidence)",
+                "kind": "long-text",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "Segment별 현재 상태 (Current Status)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Segment명: Supported / Partially Supported / Hypothesis / Needs More Evidence"
+              }
             ]
           },
           "description": "Segment마다 결과를 이어서 적으세요."
@@ -614,10 +690,22 @@
           "data": {
             "variant": "comparison",
             "items": [
-              { "label": "KEEP", "description": "그대로 유지" },
-              { "label": "MERGE", "description": "다른 Segment와 통합" },
-              { "label": "REVISE", "description": "내용 수정 후 유지" },
-              { "label": "HOLD", "description": "Evidence 부족 — 보류" }
+              {
+                "label": "유지 (KEEP)",
+                "description": "그대로 유지"
+              },
+              {
+                "label": "통합 (MERGE)",
+                "description": "다른 Segment와 통합"
+              },
+              {
+                "label": "수정 (REVISE)",
+                "description": "내용 수정 후 유지"
+              },
+              {
+                "label": "보류 (HOLD)",
+                "description": "Evidence 부족 — 보류"
+              }
             ]
           }
         },

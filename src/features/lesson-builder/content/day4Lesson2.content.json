@@ -96,10 +96,22 @@
           "data": {
             "variant": "steps",
             "items": [
-              { "label": "TARGET", "description": "우리가 우선적으로 공략하기로 한 고객군" },
-              { "label": "ECP — Early Customer Profile", "description": "현재 제품과 Evidence를 기준으로, 지금 가장 먼저 만나고 검증하기 좋은 고객" },
-              { "label": "FUTURE ICP HYPOTHESIS", "description": "향후 실제 구매·사용 데이터가 쌓였을 때 이상적인 반복고객이 될 가능성이 있는 고객에 대한 가설 — 아직 확정 아님" },
-              { "label": "ANTI-ICP", "description": "현재 제품으로 충분한 가치를 제공하기 어렵기 때문에 지금은 적극적으로 받지 않는 고객" }
+              {
+                "label": "타겟 (TARGET)",
+                "description": "우리가 우선적으로 공략하기로 한 고객군"
+              },
+              {
+                "label": "첫 검증 고객 (ECP)",
+                "description": "현재 제품과 Evidence를 기준으로, 지금 가장 먼저 만나고 검증하기 좋은 고객"
+              },
+              {
+                "label": "미래 ICP 가설 (Future ICP Hypothesis)",
+                "description": "향후 실제 구매·사용 데이터가 쌓였을 때 이상적인 반복고객이 될 가능성이 있는 고객에 대한 가설 — 아직 확정 아님"
+              },
+              {
+                "label": "비선호 고객 (Anti-ICP)",
+                "description": "현재 제품으로 충분한 가치를 제공하기 어렵기 때문에 지금은 적극적으로 받지 않는 고객"
+              }
             ]
           }
         },
@@ -133,13 +145,27 @@
           "data": {
             "variant": "checklist",
             "items": [
-              { "label": "Situation" },
-              { "label": "Strong Problem" },
-              { "label": "Trigger" },
-              { "label": "Current Alternative" },
-              { "label": "Current Cost / Friction" },
-              { "label": "Reachability" },
-              { "label": "Current MVP Fit" }
+              {
+                "label": "상황 (Situation)"
+              },
+              {
+                "label": "강한 문제 (Strong Problem)"
+              },
+              {
+                "label": "촉발요인 (Trigger)"
+              },
+              {
+                "label": "현재 대안 (Current Alternative)"
+              },
+              {
+                "label": "현재 비용/마찰 (Current Cost / Friction)"
+              },
+              {
+                "label": "접근 가능성 (Reachability)"
+              },
+              {
+                "label": "현재 MVP 적합도 (Current MVP Fit)"
+              }
             ]
           }
         },
@@ -343,11 +369,18 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**교육용 예시 — AI Startup OS**\n\n**Target**\nAI를 활용해 창업을 준비하거나 초기 사업을 운영하는 사람\n\n**ECP**\n지원사업 또는 사업계획서 제출 일정이 임박했고, 고객·시장 근거를 정리하지 못한 초기 창업자\n\n**Future ICP Hypothesis**\n고객·시장 검증과 마케팅 의사결정을 반복적으로 수행하며 서비스를 지속적으로 사용하는 초기 사업자 — 단, 아직 실제 반복사용·재구매 데이터가 없으므로 가설입니다.",
+            "markdown": "**교육용 예시 — AI Startup OS**\n\n**타겟 (Target)**\nAI를 활용해 창업을 준비하거나 초기 사업을 운영하는 사람\n\n**첫 검증 고객 (ECP)**\n지원사업 또는 사업계획서 제출 일정이 임박했고, 고객·시장 근거를 정리하지 못한 초기 창업자\n\n**미래 ICP 가설 (Future ICP Hypothesis)**\n고객·시장 검증과 마케팅 의사결정을 반복적으로 수행하며 서비스를 지속적으로 사용하는 초기 사업자 — 단, 아직 실제 반복사용·재구매 데이터가 없으므로 가설입니다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         },
         {
           "id": "d4l2-b05-key",
@@ -530,7 +563,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l2-b03-context-form", "sourceFieldIds": ["f1"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-context-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
                 ]
               },
               {
@@ -539,7 +579,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l2-b03-context-form", "sourceFieldIds": ["f2"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-context-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
                 ]
               },
               {
@@ -548,7 +595,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l2-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-result-form"
+                  }
                 ]
               },
               {
@@ -557,7 +608,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l2-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-result-form"
+                  }
                 ]
               },
               {
@@ -566,8 +621,16 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l2-b03-result-form" },
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l2-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-result-form"
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b06-result-form"
+                  }
                 ]
               },
               {
@@ -576,7 +639,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l2-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-result-form"
+                  }
                 ]
               },
               {
@@ -585,16 +652,24 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l2-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-result-form"
+                  }
                 ]
               },
               {
                 "id": "f8",
-                "label": "현재 Anti-ICP",
+                "label": "현재 비선호 고객 (Anti-ICP)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l2-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b06-result-form"
+                  }
                 ]
               },
               {
@@ -603,7 +678,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l2-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b06-result-form"
+                  }
                 ]
               },
               {
@@ -612,7 +691,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l2-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b06-result-form"
+                  }
                 ]
               },
               {
@@ -621,7 +704,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l2-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b06-result-form"
+                  }
                 ]
               },
               {
@@ -630,7 +717,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l2-b03-context-form", "sourceFieldIds": ["f5"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-context-form",
+                    "sourceFieldIds": [
+                      "f5"
+                    ]
+                  }
                 ]
               },
               {
@@ -639,10 +733,23 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l2-b03-context-form", "sourceFieldIds": ["f6"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l2-b03-context-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
                 ]
               },
-              { "id": "f14", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "Prompt 2의 AI 권고안을 최종 검토한 뒤 결론을 적으세요." }
+              {
+                "id": "f14",
+                "label": "사람의 최종 판단 메모 (Human Decision Notes)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Prompt 2의 AI 권고안을 최종 검토한 뒤 결론을 적으세요."
+              }
             ]
           },
           "description": "버튼으로 가져온 내용은 Prompt 1·2 결과 전체입니다 — 이 필드에 해당하는 부분만 남기고 정리하세요."
@@ -670,11 +777,18 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\n**Primary Target**\n정기관리형 고객\n\n**ECP**\n4~6주 단위로 반복적으로 시술을 받지만, 방문할 때마다 원하는 스타일이나 이전 시술내용을 다시 설명해야 하는 고객\n\n**Why ECP**\n- 반복 문제 존재\n- Trigger가 명확함: 다음 예약/시술\n- 실제 매장에서 접근 가능\n- 현재 제공 가능한 서비스로 검증 가능\n\n**Future ICP Hypothesis**\n시술 이력 기반 개인화 서비스와 반복예약을 지속적으로 이용하는 정기고객 — 단, 아직 실제 반복사용·재예약·매출 데이터가 없으므로 가설입니다.\n\n**Anti-ICP**\n현재 매장이 제공하지 않는 고난도 특수시술만을 원하는 일회성 고객\n\n**Why Not Now**\n현재 서비스 역량과 핵심 Value Proposition이 맞지 않음.\n\n**Revisit Condition**\n해당 시술역량과 담당 인력이 확보된 이후 재검토.\n\n※ 이 내용은 교육용 적용 사례이며 실제 성공사례처럼 표현하지 않습니다.",
+            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\n**1순위 타겟 (Primary Target)**\n정기관리형 고객\n\n**첫 검증 고객 (ECP)**\n4~6주 단위로 반복적으로 시술을 받지만, 방문할 때마다 원하는 스타일이나 이전 시술내용을 다시 설명해야 하는 고객\n\n**ECP 선택 이유 (Why ECP)**\n- 반복 문제 존재\n- Trigger가 명확함: 다음 예약/시술\n- 실제 매장에서 접근 가능\n- 현재 제공 가능한 서비스로 검증 가능\n\n**미래 ICP 가설 (Future ICP Hypothesis)**\n시술 이력 기반 개인화 서비스와 반복예약을 지속적으로 이용하는 정기고객 — 단, 아직 실제 반복사용·재예약·매출 데이터가 없으므로 가설입니다.\n\n**현재 비선호 고객 (Anti-ICP)**\n현재 매장이 제공하지 않는 고난도 특수시술만을 원하는 일회성 고객\n\n**지금은 맞지 않는 이유 (Why Not Now)**\n현재 서비스 역량과 핵심 Value Proposition이 맞지 않음.\n\n**재검토 조건 (Revisit Condition)**\n해당 시술역량과 담당 인력이 확보된 이후 재검토.\n\n※ 이 내용은 교육용 적용 사례이며 실제 성공사례처럼 표현하지 않습니다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },
@@ -747,7 +861,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Business Context v0.5", "sourceLabel": "확인된 사실 (Confirmed Facts)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Business Context v0.5",
+                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                  }
                 ]
               },
               {
@@ -756,7 +876,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Business Context v0.5", "sourceLabel": "현재 가설 (Current Hypotheses)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Business Context v0.5",
+                    "sourceLabel": "현재 가설 (Current Hypotheses)"
+                  }
                 ]
               },
               {
@@ -765,7 +891,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Business Context v0.5", "sourceLabel": "고객 세그먼트 (Customer Segments)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Business Context v0.5",
+                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
+                  }
                 ]
               },
               {
@@ -774,7 +906,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f1"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
                 ]
               },
               {
@@ -783,7 +922,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f2"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
                 ]
               },
               {
@@ -792,7 +938,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f12"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
                 ]
               },
               {
@@ -801,7 +954,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Business Context v0.5", "sourceLabel": "부족한 증거 (Missing Proof)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Business Context v0.5",
+                    "sourceLabel": "부족한 증거 (Missing Proof)"
+                  }
                 ]
               },
               {
@@ -810,7 +969,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f3"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
                 ]
               },
               {
@@ -819,7 +985,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f5"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f5"
+                    ]
+                  }
                 ]
               },
               {
@@ -828,7 +1001,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f6"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
                 ]
               },
               {
@@ -837,16 +1017,30 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f7"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
                 ]
               },
               {
                 "id": "f12",
-                "label": "현재 Anti-ICP",
+                "label": "현재 비선호 고객 (Anti-ICP)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f8"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  }
                 ]
               },
               {
@@ -855,7 +1049,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f9"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
                 ]
               },
               {
@@ -864,7 +1065,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l2-b08-form", "sourceFieldIds": ["f11"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l2-b08-form",
+                    "sourceFieldIds": [
+                      "f11"
+                    ]
+                  }
                 ]
               },
               {
@@ -873,7 +1081,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l2-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l2-b06-result-form"
+                  }
                 ]
               },
               {
@@ -882,10 +1094,22 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Business Context v0.5", "sourceLabel": "검증 대기 목록 (Validation Backlog)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Business Context v0.5",
+                    "sourceLabel": "검증 대기 목록 (Validation Backlog)"
+                  }
                 ]
               },
-              { "id": "f17", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "선택한 ECP·Anti-ICP 경계 안에서 Actor(Buyer·User·Influencer)는 어떻게 구성되는가?" }
+              {
+                "id": "f17",
+                "label": "다음 결정 사항 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "선택한 ECP·Anti-ICP 경계 안에서 Actor(Buyer·User·Influencer)는 어떻게 구성되는가?"
+              }
             ]
           },
           "description": "5차시 Business Context v0.5를 복사해 이번 ECP·ICP·Anti-ICP 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."

@@ -85,12 +85,30 @@
           "data": {
             "variant": "steps",
             "items": [
-              { "label": "Problem Strength", "description": "문제가 얼마나 큰가?" },
-              { "label": "Urgency / Trigger", "description": "지금 해결해야 할 이유가 있는가?" },
-              { "label": "Current Cost", "description": "현재 시간·돈·노력을 얼마나 쓰는가?" },
-              { "label": "접근 가능성 (Reachability)", "description": "실제로 이 고객을 찾고 접근할 수 있는가?" },
-              { "label": "Willingness to Pay Signal", "description": "돈을 낼 가능성을 보여주는 실제 신호가 있는가?" },
-              { "label": "Current Product Fit", "description": "현재 MVP로 해결 가능한가?" }
+              {
+                "label": "문제 강도 (Problem Strength)",
+                "description": "문제가 얼마나 큰가?"
+              },
+              {
+                "label": "긴급성/촉발요인 (Urgency / Trigger)",
+                "description": "지금 해결해야 할 이유가 있는가?"
+              },
+              {
+                "label": "현재 비용 (Current Cost)",
+                "description": "현재 시간·돈·노력을 얼마나 쓰는가?"
+              },
+              {
+                "label": "접근 가능성 (Reachability)",
+                "description": "실제로 이 고객을 찾고 접근할 수 있는가?"
+              },
+              {
+                "label": "지불 의향 신호 (Willingness to Pay Signal)",
+                "description": "돈을 낼 가능성을 보여주는 실제 신호가 있는가?"
+              },
+              {
+                "label": "현재 제품 적합도 (Current Product Fit)",
+                "description": "현재 MVP로 해결 가능한가?"
+              }
             ]
           }
         },

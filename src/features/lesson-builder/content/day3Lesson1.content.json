@@ -107,15 +107,15 @@
             "variant": "comparison",
             "items": [
               {
-                "label": "FACT",
+                "label": "사실 (FACT)",
                 "description": "현재 자료에서 실제로 확인할 수 있는 내용"
               },
               {
-                "label": "INFERENCE / HYPOTHESIS",
+                "label": "추론/가설 (INFERENCE / HYPOTHESIS)",
                 "description": "현재 정보를 바탕으로 사람이거나 AI가 추론한 내용"
               },
               {
-                "label": "NEEDS VERIFICATION",
+                "label": "확인 필요 (NEEDS VERIFICATION)",
                 "description": "사업적으로 중요하지만 아직 확인되지 않은 내용"
               }
             ]
@@ -378,21 +378,21 @@
             "fields": [
               {
                 "id": "f1",
-                "label": "FACT (승인한 항목만)",
+                "label": "사실 (FACT) — 승인한 항목만",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "AI가 FACT로 분류한 것 중 실제로 자료에 있었다고 확인한 것만 적으세요."
               },
               {
                 "id": "f2",
-                "label": "INFERENCE / HYPOTHESIS (승인·수정한 항목)",
+                "label": "추론/가설 (INFERENCE / HYPOTHESIS) — 승인·수정한 항목",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "AI가 추론한 것 중 우리가 가설로 받아들이기로 한 것. 표현이 과하면 수정해서 적으세요."
               },
               {
                 "id": "f3",
-                "label": "NEEDS VERIFICATION (보류한 항목)",
+                "label": "확인 필요 (NEEDS VERIFICATION) — 보류한 항목",
                 "kind": "long-text",
                 "required": false,
                 "placeholder": "확신이 없거나 더 확인이 필요한 항목. 삭제하지 말고 여기 남겨두세요."

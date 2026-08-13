@@ -93,11 +93,18 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### Customer Journey\n\n고객이 **문제를 인식하고 → 해결방법을 찾고 → 비교하고 → 선택하고 → 구매/가입하고 → 사용하고 → 다시 평가하는** 과정입니다.\n\n단, 실제 사업에 맞게 Stage는 달라질 수 있습니다 — 모든 사업에 동일한 Journey Stage를 강제하지 않습니다.",
+            "markdown": "### 고객여정 (Customer Journey)\n\n고객이 **문제를 인식하고 → 해결방법을 찾고 → 비교하고 → 선택하고 → 구매/가입하고 → 사용하고 → 다시 평가하는** 과정입니다.\n\n단, 실제 사업에 맞게 Stage는 달라질 수 있습니다 — 모든 사업에 동일한 Journey Stage를 강제하지 않습니다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         },
         {
           "id": "d4l4-b02-compare",
@@ -117,22 +124,36 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### Trigger\n\nJourney의 중심은 Customer Action입니다. Journey 시작은 **광고가 아니라 고객의 Situation / Trigger**에서 시작합니다.\n\n예: 중요한 일정이 생김 / 시험이 임박함 / 오류가 반복됨 / 기존 방식이 불편해짐\n\n구매 이전뿐 아니라 **구매/가입/첫 사용/반복사용까지** Journey에 포함할 수 있습니다.",
+            "markdown": "### 촉발요인 (Trigger)\n\nJourney의 중심은 Customer Action입니다. Journey 시작은 **광고가 아니라 고객의 Situation / Trigger**에서 시작합니다.\n\n예: 중요한 일정이 생김 / 시험이 임박함 / 오류가 반복됨 / 기존 방식이 불편해짐\n\n구매 이전뿐 아니라 **구매/가입/첫 사용/반복사용까지** Journey에 포함할 수 있습니다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         },
         {
           "id": "d4l4-b02-current-desired",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### Current Journey vs Desired Journey\n\n**Current Journey** — 현재 고객이 실제로 문제를 해결하는 방식\n**Desired Journey** — 우리 제품이 들어온 이후 만들고 싶은 경험\n\n초기 단계에서는 **Desired Journey부터 상상하지 말고 Current Journey를 먼저 이해**합니다.",
+            "markdown": "### 현재 여정 vs 원하는 여정 (Current Journey vs Desired Journey)\n\n**Current Journey** — 현재 고객이 실제로 문제를 해결하는 방식\n**Desired Journey** — 우리 제품이 들어온 이후 만들고 싶은 경험\n\n초기 단계에서는 **Desired Journey부터 상상하지 말고 Current Journey를 먼저 이해**합니다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "muted", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         },
         {
           "id": "d4l4-b02-script",
@@ -171,11 +192,17 @@
             "fields": [
               {
                 "id": "f1",
-                "label": "ECP (Early Customer Profile)",
+                "label": "첫 검증 고객 (ECP)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "첫 검증 고객 (ECP)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Actor Map v0.1",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
                 ]
               },
               {
@@ -184,7 +211,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "주요 사용자 (Primary User)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Actor Map v0.1",
+                    "sourceLabel": "주요 사용자 (Primary User)"
+                  }
                 ]
               },
               {
@@ -193,7 +226,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "주요 구매자 (Primary Buyer)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Actor Map v0.1",
+                    "sourceLabel": "주요 구매자 (Primary Buyer)"
+                  }
                 ]
               },
               {
@@ -202,7 +241,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "핵심 영향자 (Key Influencer)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Actor Map v0.1",
+                    "sourceLabel": "핵심 영향자 (Key Influencer)"
+                  }
                 ]
               },
               {
@@ -211,7 +256,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "핵심 고객 문제 (Key Customer Problem)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
+                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
+                  }
                 ]
               },
               {
@@ -220,7 +271,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "현재 대안 (Current Alternative)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
+                    "sourceLabel": "현재 대안 (Current Alternative)"
+                  }
                 ]
               },
               {
@@ -229,7 +286,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "가장 큰 구매 반대요인 (Main Objection)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Actor Map v0.1",
+                    "sourceLabel": "가장 큰 구매 반대요인 (Main Objection)"
+                  }
                 ]
               },
               {
@@ -238,7 +301,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "지지 근거 (Supporting Evidence)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Actor Map v0.1",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
                 ]
               }
             ]
@@ -354,11 +423,18 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### Channel vs Touchpoint\n\n**Channel** — 고객과 연결되는 통로. 예: Google / Naver / Instagram / YouTube / Email / 매장\n\n**Touchpoint** — 그 Channel 또는 서비스 과정 안에서 발생하는 구체적인 접촉 순간.\n\n예: Naver라는 Channel 안에서도 검색결과 → 블로그 → 플레이스 → 리뷰 → 예약 → 전화는 **서로 다른 Touchpoint**입니다. 하나의 Channel 안에 여러 Touchpoint가 존재할 수 있습니다.",
+            "markdown": "### 채널과 접점의 차이 (Channel vs Touchpoint)\n\n**Channel** — 고객과 연결되는 통로. 예: Google / Naver / Instagram / YouTube / Email / 매장\n\n**Touchpoint** — 그 Channel 또는 서비스 과정 안에서 발생하는 구체적인 접촉 순간.\n\n예: Naver라는 Channel 안에서도 검색결과 → 블로그 → 플레이스 → 리뷰 → 예약 → 전화는 **서로 다른 Touchpoint**입니다. 하나의 Channel 안에 여러 Touchpoint가 존재할 수 있습니다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         },
         {
           "id": "d4l4-b05-friction",
@@ -368,10 +444,22 @@
           "data": {
             "variant": "steps",
             "items": [
-              { "label": "CUSTOMER QUESTION", "description": "각 Touchpoint에서 고객이 답을 얻으려는 질문" },
-              { "label": "FRICTION", "description": "고객이 다음 단계로 넘어가는 것을 방해하는 마찰 — 정보 부족 / 가격 불명확 / 신뢰 부족 / 가입 복잡 / 예약 불편 / 상담 지연 / 기존 대안이 더 편함 / Buyer-User 의견 충돌" },
-              { "label": "CRITICAL TOUCHPOINT", "description": "고객 판단에 특히 큰 영향을 줄 가능성이 있는 접점" },
-              { "label": "MOMENT OF TRUTH", "description": "고객이 계속 진행할지 / 이탈할지 / 기존 대안으로 돌아갈지 판단이 크게 갈릴 수 있는 순간" }
+              {
+                "label": "고객 질문 (CUSTOMER QUESTION)",
+                "description": "각 Touchpoint에서 고객이 답을 얻으려는 질문"
+              },
+              {
+                "label": "마찰 (FRICTION)",
+                "description": "고객이 다음 단계로 넘어가는 것을 방해하는 마찰 — 정보 부족 / 가격 불명확 / 신뢰 부족 / 가입 복잡 / 예약 불편 / 상담 지연 / 기존 대안이 더 편함 / Buyer-User 의견 충돌"
+              },
+              {
+                "label": "핵심 접점 (CRITICAL TOUCHPOINT)",
+                "description": "고객 판단에 특히 큰 영향을 줄 가능성이 있는 접점"
+              },
+              {
+                "label": "결정적 순간 (MOMENT OF TRUTH)",
+                "description": "고객이 계속 진행할지 / 이탈할지 / 기존 대안으로 돌아갈지 판단이 크게 갈릴 수 있는 순간"
+              }
             ]
           }
         },
@@ -416,16 +504,27 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l4-b03-result-form"
+                  }
                 ]
               },
               {
                 "id": "f2",
-                "label": "ECP (참고용)",
+                "label": "첫 검증 고객 (참고용) (ECP)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f1"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l4-b03-context-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
                 ]
               },
               {
@@ -434,7 +533,12 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Actor Map v0.1"
+                  }
                 ]
               },
               {
@@ -443,7 +547,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "1순위 가치제안 (Primary Value Proposition)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "7차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "7차시 — Business Context v0.7",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
                 ]
               },
               {
@@ -452,7 +562,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f7"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l4-b03-context-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
                 ]
               }
             ]
@@ -762,11 +879,18 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\n**ECP**\n반복적으로 시술을 받지만 원하는 스타일과 이전 시술내용을 매번 다시 설명해야 하는 정기관리 고객\n\n**Current Journey 예시**\n\n머리가 길어짐 또는 중요한 일정 발생\n↓\n미용실을 떠올림\n↓\n검색 또는 기존 예약정보 확인\n↓\n후기 / 가격 / 예약 가능시간 확인\n↓\n예약\n↓\n방문\n↓\n원하는 스타일 설명\n↓\n시술\n↓\n다음 예약 여부 결정\n\n※ Naver/Instagram 등을 반드시 사용한다고 사실처럼 단정하지 않습니다 — 실제 Evidence가 없으면 NEEDS VALIDATION입니다.\n\n**Possible Friction**\n- 원하는 시간 예약 가능 여부 확인\n- 이전 시술내용을 다시 설명해야 함\n- 원하는 스타일이 전달됐는지 불안함\n\n**Critical Touchpoint**\n예약 또는 시술 전 상담 순간\n\n**Moment of Truth**\n\"이 미용실이 내가 원하는 스타일을 정확히 이해하고 있는가?\"\n\n**Validation**\n고객 인터뷰 / 예약 문의 확인 / 상담 질문 기록 / 재방문 고객 불편사항 확인\n\n※ 이 내용은 교육용 적용 사례이며 실제 성공사례처럼 표현하지 않습니다.",
+            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\n**첫 검증 고객 (ECP)**\n반복적으로 시술을 받지만 원하는 스타일과 이전 시술내용을 매번 다시 설명해야 하는 정기관리 고객\n\n**Current Journey 예시**\n\n머리가 길어짐 또는 중요한 일정 발생\n↓\n미용실을 떠올림\n↓\n검색 또는 기존 예약정보 확인\n↓\n후기 / 가격 / 예약 가능시간 확인\n↓\n예약\n↓\n방문\n↓\n원하는 스타일 설명\n↓\n시술\n↓\n다음 예약 여부 결정\n\n※ Naver/Instagram 등을 반드시 사용한다고 사실처럼 단정하지 않습니다 — 실제 Evidence가 없으면 NEEDS VALIDATION입니다.\n\n**예상 마찰 (Possible Friction)**\n- 원하는 시간 예약 가능 여부 확인\n- 이전 시술내용을 다시 설명해야 함\n- 원하는 스타일이 전달됐는지 불안함\n\n**핵심 접점 (Critical Touchpoint)**\n예약 또는 시술 전 상담 순간\n\n**결정적 순간 (Moment of Truth)**\n\"이 미용실이 내가 원하는 스타일을 정확히 이해하고 있는가?\"\n\n**검증 방법 (Validation)**\n고객 인터뷰 / 예약 문의 확인 / 상담 질문 기록 / 재방문 고객 불편사항 확인\n\n※ 이 내용은 교육용 적용 사례이며 실제 성공사례처럼 표현하지 않습니다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         }
       ]
     },

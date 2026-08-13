@@ -93,11 +93,18 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "### Persona vs Actor\n\n**Persona** — \"이 사람은 어떤 사람인가?\"\n**Actor** — \"이 사람은 구매·사용 과정에서 어떤 역할을 하는가?\"\n\nPersona는 고객을 이해하기 위한 대표 인물상이다. Actor는 실제 구매·사용·영향 과정에서 수행하는 역할이다. Customer와 Actor는 동일 개념이 아니다 — 한 Customer 안에 여러 Actor가 있을 수 있다.",
+            "markdown": "### 페르소나 vs Actor\n\n**Persona** — \"이 사람은 어떤 사람인가?\"\n**Actor** — \"이 사람은 구매·사용 과정에서 어떤 역할을 하는가?\"\n\nPersona는 고객을 이해하기 위한 대표 인물상이다. Actor는 실제 구매·사용·영향 과정에서 수행하는 역할이다. Customer와 Actor는 동일 개념이 아니다 — 한 Customer 안에 여러 Actor가 있을 수 있다.",
             "emphasis": "normal"
           },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
         },
         {
           "id": "d4l3-b02-actors",
@@ -107,9 +114,18 @@
           "data": {
             "variant": "steps",
             "items": [
-              { "label": "BUYER", "description": "누가 돈을 내거나 구매를 승인하는가? 주요 관심: 가격 / 비용 대비 가치 / 위험 / 신뢰 / 계약·구매조건" },
-              { "label": "USER", "description": "누가 실제 제품 또는 서비스를 사용하는가? 주요 관심: 편리성 / 기능 / 사용시간 / 사용방법 / 실제 효용" },
-              { "label": "INFLUENCER", "description": "누가 Buyer/User의 선택에 영향을 주는가? 주요 관심: 전문성 / 평판 / 추천 / 사례 / 비교정보" }
+              {
+                "label": "구매자 (BUYER)",
+                "description": "누가 돈을 내거나 구매를 승인하는가? 주요 관심: 가격 / 비용 대비 가치 / 위험 / 신뢰 / 계약·구매조건"
+              },
+              {
+                "label": "사용자 (USER)",
+                "description": "누가 실제 제품 또는 서비스를 사용하는가? 주요 관심: 편리성 / 기능 / 사용시간 / 사용방법 / 실제 효용"
+              },
+              {
+                "label": "영향자 (INFLUENCER)",
+                "description": "누가 Buyer/User의 선택에 영향을 주는가? 주요 관심: 전문성 / 평판 / 추천 / 사례 / 비교정보"
+              }
             ]
           }
         },
@@ -172,11 +188,17 @@
             "fields": [
               {
                 "id": "f1",
-                "label": "ECP (Early Customer Profile)",
+                "label": "첫 검증 고객 (ECP)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Customer Boundary Map v0.1", "sourceLabel": "첫 검증 고객 (ECP)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
                 ]
               },
               {
@@ -185,7 +207,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Customer Boundary Map v0.1", "sourceLabel": "1순위 가치제안 (Primary Value Proposition)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
                 ]
               },
               {
@@ -194,7 +222,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "핵심 고객 문제 (Key Customer Problem)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
+                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
+                  }
                 ]
               },
               {
@@ -203,7 +237,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Customer Boundary Map v0.1", "sourceLabel": "지지 근거 (Supporting Evidence)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
                 ]
               },
               {
@@ -212,7 +252,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Customer Boundary Map v0.1", "sourceLabel": "반대 근거 (Counter Evidence)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
+                    "sourceLabel": "반대 근거 (Counter Evidence)"
+                  }
                 ]
               }
             ]
@@ -328,9 +374,18 @@
           "data": {
             "variant": "comparison",
             "items": [
-              { "label": "USER", "description": "\"사용하기 편한가?\"" },
-              { "label": "BUYER", "description": "\"돈을 낼 가치가 있는가?\"" },
-              { "label": "INFLUENCER", "description": "\"추천해도 안전한가?\"" }
+              {
+                "label": "사용자 (USER)",
+                "description": "\"사용하기 편한가?\""
+              },
+              {
+                "label": "구매자 (BUYER)",
+                "description": "\"돈을 낼 가치가 있는가?\""
+              },
+              {
+                "label": "영향자 (INFLUENCER)",
+                "description": "\"추천해도 안전한가?\""
+              }
             ]
           }
         },
@@ -515,7 +570,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l3-b03-context-form", "sourceFieldIds": ["f1"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-context-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
                 ]
               },
               {
@@ -524,7 +586,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -533,7 +599,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -543,7 +613,11 @@
                 "required": false,
                 "placeholder": "해당 없으면 \"없음/미확인\"으로 적어도 됩니다.",
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -553,7 +627,11 @@
                 "required": false,
                 "placeholder": "필요한 경우만 — \"동일인 / 별도 / 미확인 / 해당 없음\"",
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -563,7 +641,11 @@
                 "required": false,
                 "placeholder": "필요한 경우만 — \"없음/미확인\" 허용",
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -572,7 +654,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -581,7 +667,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -590,7 +680,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -599,7 +693,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -608,7 +706,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
@@ -617,16 +719,24 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  }
                 ]
               },
               {
                 "id": "f13",
-                "label": "가장 중요한 Actor Conflict",
+                "label": "가장 중요한 이해관계 충돌 (Actor Conflict)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l3-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b06-result-form"
+                  }
                 ]
               },
               {
@@ -635,7 +745,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l3-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b06-result-form"
+                  }
                 ]
               },
               {
@@ -644,7 +758,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 AI 추천에서 가져오기", "sourceBlockId": "d4l3-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 AI 추천에서 가져오기",
+                    "sourceBlockId": "d4l3-b06-result-form"
+                  }
                 ]
               },
               {
@@ -653,7 +771,11 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l3-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b06-result-form"
+                  }
                 ]
               },
               {
@@ -662,7 +784,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l3-b03-context-form", "sourceFieldIds": ["f4"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P03에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-context-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
                 ]
               },
               {
@@ -671,11 +800,25 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" },
-                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l3-b06-result-form" }
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b03-result-form"
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "Prompt 2 결과에서 가져오기",
+                    "sourceBlockId": "d4l3-b06-result-form"
+                  }
                 ]
               },
-              { "id": "f19", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "필요하면 간단히 — Prompt 2 Red Team 결과를 최종 검토한 결론을 적으세요." }
+              {
+                "id": "f19",
+                "label": "사람의 최종 판단 메모 (Human Decision Notes)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "필요하면 간단히 — Prompt 2 Red Team 결과를 최종 검토한 결론을 적으세요."
+              }
             ]
           },
           "description": "버튼으로 가져온 내용은 Prompt 1·2 결과 전체입니다 — 이 필드에 해당하는 부분만 남기고 정리하세요. First Contact Actor는 AI 추천을 참고해 최종 확정하세요."
@@ -791,7 +934,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Business Context v0.6", "sourceLabel": "확인된 사실 (Confirmed Facts)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Business Context v0.6",
+                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                  }
                 ]
               },
               {
@@ -800,7 +949,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Business Context v0.6", "sourceLabel": "현재 가설 (Current Hypotheses)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Business Context v0.6",
+                    "sourceLabel": "현재 가설 (Current Hypotheses)"
+                  }
                 ]
               },
               {
@@ -809,7 +964,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Business Context v0.6", "sourceLabel": "고객 세그먼트 (Customer Segments)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Business Context v0.6",
+                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
+                  }
                 ]
               },
               {
@@ -818,7 +979,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Business Context v0.6", "sourceLabel": "1순위 타겟 (Primary Target)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Business Context v0.6",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
                 ]
               },
               {
@@ -827,7 +994,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f1"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
                 ]
               },
               {
@@ -836,16 +1010,28 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Business Context v0.6", "sourceLabel": "미래 ICP 가설 (Future ICP Hypothesis)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Business Context v0.6",
+                    "sourceLabel": "미래 ICP 가설 (Future ICP Hypothesis)"
+                  }
                 ]
               },
               {
                 "id": "f7",
-                "label": "현재 Anti-ICP",
+                "label": "현재 비선호 고객 (Anti-ICP)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Business Context v0.6", "sourceLabel": "현재 Anti-ICP" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Business Context v0.6",
+                    "sourceLabel": "현재 비선호 고객 (Anti-ICP)"
+                  }
                 ]
               },
               {
@@ -854,7 +1040,13 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "prior-artifact", "label": "6차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "6차시 — Business Context v0.6", "sourceLabel": "1순위 가치제안 (Primary Value Proposition)" }
+                  {
+                    "kind": "prior-artifact",
+                    "label": "6차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "6차시 — Business Context v0.6",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
                 ]
               },
               {
@@ -863,7 +1055,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f2"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
                 ]
               },
               {
@@ -872,7 +1071,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f3"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
                 ]
               },
               {
@@ -881,7 +1087,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f4"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
                 ]
               },
               {
@@ -890,7 +1103,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f5"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f5"
+                    ]
+                  }
                 ]
               },
               {
@@ -899,16 +1119,30 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f6"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
                 ]
               },
               {
                 "id": "f14",
-                "label": "가장 중요한 Actor Conflict",
+                "label": "가장 중요한 이해관계 충돌 (Actor Conflict)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f13"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f13"
+                    ]
+                  }
                 ]
               },
               {
@@ -917,7 +1151,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f14"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f14"
+                    ]
+                  }
                 ]
               },
               {
@@ -926,7 +1167,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f15"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f15"
+                    ]
+                  }
                 ]
               },
               {
@@ -935,7 +1183,14 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f16"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f16"
+                    ]
+                  }
                 ]
               },
               {
@@ -944,10 +1199,23 @@
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
-                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l3-b08-form", "sourceFieldIds": ["f18"] }
+                  {
+                    "kind": "same-lesson",
+                    "label": "P08에서 가져오기",
+                    "sourceBlockId": "d4l3-b08-form",
+                    "sourceFieldIds": [
+                      "f18"
+                    ]
+                  }
                 ]
               },
-              { "id": "f19", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "First Contact Actor를 실제로 만나 무엇을 검증할 것인가? (8차시: Customer Journey / Touchpoint)" }
+              {
+                "id": "f19",
+                "label": "다음 결정 사항 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "First Contact Actor를 실제로 만나 무엇을 검증할 것인가? (8차시: Customer Journey / Touchpoint)"
+              }
             ]
           },
           "description": "6차시 Business Context v0.6을 복사해 이번 Actor Map 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
