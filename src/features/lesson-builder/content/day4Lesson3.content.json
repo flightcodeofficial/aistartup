@@ -4,9 +4,9 @@
   "week": 2,
   "day": 4,
   "lesson": 3,
-  "title": "Actor Map — Buyer · User · Influencer",
-  "description": "누가 쓰고, 누가 사고, 누가 영향을 주며, 우리는 누구를 먼저 만나야 하는가를 Evidence 기반으로 정리합니다.",
-  "durationMinutes": 45,
+  "title": "Actor Map — 누가 쓰고, 누가 사고, 누가 결정하는가",
+  "description": "Persona가 아니라 실제 구매·사용·의사결정 과정에서 역할을 수행하는 Actor를 구분합니다.",
+  "durationMinutes": 15,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
@@ -22,83 +22,8 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 고객은 한 사람이 아닐 수 있습니다\n\n\"누가 쓰고, 누가 사고, 누가 영향을 주며, 우리는 누구를 먼저 만나야 하는가?\"",
+            "markdown": "# Actor Map\n\n## 누가 쓰고, 누가 사고, 누가 결정하는가",
             "emphasis": "hero"
-          },
-          "theme": { "background": "dark", "bordered": false },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b01-notice",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**이번 차시에서는 ECP를 다시 만들지 않습니다.**\n\n6차시에서 정한 ECP 안에서, 실제 구매·사용 과정의 역할(Actor)을 구분합니다. 아래 목록을 확인하세요.\n\n**A. 6차시 — Customer Boundary Map v0.1**\n1순위 타겟 / 1순위 가치제안 / 첫 검증 고객(ECP) / ECP 선택 이유 / ECP의 가장 큰 리스크 / 미래 ICP 가설 / ICP 판단에 필요한 데이터 / 현재 Anti-ICP / 지금은 맞지 않는 이유 / 재검토 조건 / 지지 근거 / 반대 근거\n\n**B. 6차시 — Business Context v0.6**\n확인된 사실 / 현재 가설 / 고객 세그먼트 / 검증 대기 목록 / 다음 결정 사항",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "primary-soft", "bordered": false },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b01-preview",
-          "type": "result-preview",
-          "title": "6차시 결과",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "6차시를 먼저 완료해야 Customer Boundary Map과 Business Context가 표시됩니다."
-          }
-        },
-        {
-          "id": "d4l3-b01-flow",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**오늘의 흐름**\n\nTARGET → ECP → ACTOR MAP → BUYER / USER / INFLUENCER → FIRST CONTACT ACTOR",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "muted", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b01-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "목록이 비어 있으면 6차시를 아직 완료하지 않은 학생입니다 — 6차시 P10에서 저장하고 오게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p02",
-      "title": "Persona vs Actor / Buyer · User · Influencer",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d4l3-b02-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 고객은 한 사람이 아닐 수 있습니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b02-persona-vs-actor",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "### 페르소나 vs Actor\n\n**Persona** — \"이 사람은 어떤 사람인가?\"\n**Actor** — \"이 사람은 구매·사용 과정에서 어떤 역할을 하는가?\"\n\nPersona는 고객을 이해하기 위한 대표 인물상이다. Actor는 실제 구매·사용·영향 과정에서 수행하는 역할이다. Customer와 Actor는 동일 개념이 아니다 — 한 Customer 안에 여러 Actor가 있을 수 있다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
           },
           "layout": {
             "width": "wide",
@@ -107,1151 +32,198 @@
           }
         },
         {
-          "id": "d4l3-b02-actors",
-          "type": "infographic",
-          "title": "세 가지 역할",
+          "id": "d4l3-b01-body",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "variant": "steps",
+            "markdown": "6차시에서 지금 먼저 검증할 고객(ECP)을 개념적으로 정리했습니다. 그런데 \"고객\"이라는 말 안에는 실제로 여러 역할이 섞여 있을 수 있습니다. 쓰는 사람과 사는 사람과 결정하는 사람이 다를 수 있기 때문입니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "Persona가 아니라 Actor",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d4l3-b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Persona가 아니라 Actor입니다 (Persona ≠ Actor)",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d4l3-b02-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Persona는 가상의 인물을 상세히 꾸며내는 작업이 되기 쉽습니다. 반면 **Actor**는 실제 구매·사용·의사결정 과정에서 **역할을 수행하는 사람**을 가리킵니다. 새로운 캐릭터를 만드는 것이 아니라, 이미 아는 고객 안에서 역할을 나누는 작업입니다."
+          }
+        },
+        {
+          "id": "d4l3-b02-roles",
+          "type": "infographic",
+          "title": "다섯 가지 역할",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
             "items": [
               {
-                "label": "구매자 (BUYER)",
-                "description": "누가 돈을 내거나 구매를 승인하는가? 주요 관심: 가격 / 비용 대비 가치 / 위험 / 신뢰 / 계약·구매조건"
+                "label": "User — 실제로 제품을 쓰는 사람"
               },
               {
-                "label": "사용자 (USER)",
-                "description": "누가 실제 제품 또는 서비스를 사용하는가? 주요 관심: 편리성 / 기능 / 사용시간 / 사용방법 / 실제 효용"
+                "label": "Buyer — 실제로 돈을 내는 사람"
               },
               {
-                "label": "영향자 (INFLUENCER)",
-                "description": "누가 Buyer/User의 선택에 영향을 주는가? 주요 관심: 전문성 / 평판 / 추천 / 사례 / 비교정보"
+                "label": "Influencer — 선택에 영향을 주는 사람"
+              },
+              {
+                "label": "Decision Maker — 최종 결정을 내리는 사람"
+              },
+              {
+                "label": "Gatekeeper — 접근 자체를 막거나 열어주는 사람"
               }
             ]
           }
         },
         {
-          "id": "d4l3-b02-overlap",
+          "id": "d4l3-b02-note",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**역할 중복**\n\n한 사람이 Buyer/User/Influencer를 모두 할 수도 있습니다. 억지로 세 명의 서로 다른 사람을 만들 필요가 없습니다 — 지금 사업에서 실제로 몇 명인지가 중요합니다.",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "muted", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b02-b2b",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**B2B 심화 — 필요한 사업에서만**\n\n- **Decision Maker** — 최종 구매를 승인/거부하는 사람 (Buyer와 다를 수 있음)\n- **Gatekeeper** — Decision Maker에게 도달하기 전 걸러내는 사람\n\n모든 사업이 이 두 역할을 갖는 것은 아닙니다. 현재 Evidence에 없으면 억지로 만들지 않습니다.",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b02-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "Actor 판단도 Evidence-first입니다 — EVIDENCE/INFERENCE/NEEDS VALIDATION 구분을 다음 페이지 프롬프트에서 그대로 적용한다는 것을 짚어주세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+            "markdown": "모든 사업에 이 다섯 역할이 각각 다른 사람으로 존재하는 것은 아닙니다. 한 사람이 여러 역할을 동시에 가질 수도 있습니다."
+          }
         }
       ]
     },
     {
       "id": "p03",
-      "title": "실습 1: Actor Map",
-      "layout": "practice",
+      "title": "구매자와 사용자의 필요는 다릅니다 (Buyer Need ≠ User Need)",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d4l3-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 누가 쓰고, 누가 사고,\n# 누가 영향을 주는지 찾습니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b03-context-form",
-          "type": "input-form",
-          "title": "Context 준비",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "첫 검증 고객 (ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
-                    "sourceLabel": "첫 검증 고객 (ECP)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "1순위 가치제안 (Primary Value Proposition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
-                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "핵심 고객 문제 (Key Customer Problem)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
-                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "지지 근거 (Supporting Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
-                    "sourceLabel": "지지 근거 (Supporting Evidence)"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "반대 근거 / 리스크 (Counter Evidence / Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Customer Boundary Map v0.1",
-                    "sourceLabel": "반대 근거 (Counter Evidence)"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": "전부 버튼으로 채워집니다 — 사업 아이템을 처음부터 다시 쓰지 않습니다. 아래 프롬프트의 [ ] 다섯 곳에 이 내용을 옮겨 붙여넣습니다."
-        },
-        {
-          "id": "d4l3-b03-prompt",
-          "type": "prompt",
-          "title": "Actor Map 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[ROLE]\n\n너는 실제 구매·사용 과정의 이해관계자를 분석하는\nEvidence 기반 Customer Decision Analyst다.\n\n우리는 이미 Primary Target과 ECP,\nValue Proposition을 정의했다.\n\n이번 분석의 목적은\n고객을 새로운 Persona로 꾸며내는 것이 아니라,\n실제 구매와 사용 과정에서\n누가 어떤 역할을 수행하는지 구분하는 것이다.\n\n[ECP]\n\n[ ]\n\n[PRIMARY VALUE PROPOSITION]\n\n[ ]\n\n[KEY CUSTOMER PROBLEM]\n\n[ ]\n\n[SUPPORTING EVIDENCE]\n\n[ ]\n\n[COUNTER EVIDENCE / RISK]\n\n[ ]\n\n[OBJECTIVE]\n\n현재 ECP 안에서:\n\n- 누가 실제 제품·서비스를 사용하는지\n- 누가 돈을 내거나 구매를 승인하는지\n- 누가 선택에 영향을 미치는지\n\n를 구분한다.\n\n필요한 경우에만\nDecision Maker 또는 Gatekeeper를 추가한다.\n\n[TASK 1 — ACTOR IDENTIFICATION]\n\n현재 ECP의 구매·사용 구조를 기준으로\n다음 Actor를 분석해줘.\n\n1. User\n2. Buyer\n3. Influencer\n\n필요한 경우에만:\n\n4. Decision Maker\n5. Gatekeeper\n\n를 추가해.\n\n중요:\n\n억지로 모든 역할에\n서로 다른 사람을 만들어내지 마.\n\n한 사람이:\n\n- Buyer이면서 User\n- User이면서 Influencer\n- Buyer/User/Influencer 모두\n\n일 수도 있다.\n\n현재 Evidence로 알 수 없다면\n추측해서 확정하지 마.\n\n[TASK 2 — ACTOR ROLE]\n\n각 Actor마다 다음을 정리해줘.\n\n- 누구인가\n- 구매·사용 과정에서 맡는 역할\n- 현재 상황\n- 핵심 관심사\n- 주요 Pain 또는 불편\n- 중요하게 보는 Value\n- 제품을 선택하거나 사용하는 주요 판단기준\n\n[TASK 3 — DECISION CRITERIA]\n\n각 핵심 Actor가\n제품 또는 서비스를 판단할 때\n중요하게 볼 가능성이 높은 기준을 정리해줘.\n\n예:\n\nUser:\n- 사용 편의성\n- 시간\n- 기능\n- 실제 효용\n\nBuyer:\n- 비용\n- ROI\n- 위험\n- 신뢰성\n- 구매조건\n\nInfluencer:\n- 전문성\n- 평판\n- 사례\n- 추천 가능성\n\n단 위 예시를 기계적으로 사용하지 말고\n현재 사업 Context에 맞는 기준만 사용해.\n\n[TASK 4 — EVIDENCE CHECK]\n\n각 Actor와 역할 판단을 다음 중 하나로 구분해.\n\n- EVIDENCE\n- INFERENCE\n- NEEDS VALIDATION\n\n현재 제공된 정보에 없는:\n\n- 조직구조\n- 구매권한\n- 결재과정\n- 가족 의사결정 구조\n- 영향력\n\n등을 사실처럼 만들어내지 마.\n\n[TASK 5 — MISSING ACTOR EVIDENCE]\n\n현재 Actor Map에서\n아직 확인되지 않은 중요한 정보가 무엇인지 정리해줘.\n\n특히:\n\n- 실제 결제자는 누구인지\n- 실제 사용자는 누구인지\n- 구매 승인자가 따로 있는지\n- 선택에 강하게 영향을 주는 사람이 있는지\n\n중 확인이 필요한 것을 표시해.\n\n[OUTPUT]\n\nA. Actor Map\n\nB. Primary User\n\nC. Primary Buyer\n\nD. Key Influencer\n\nE. 필요한 경우 Decision Maker\n\nF. 필요한 경우 Gatekeeper\n\nG. Actor별 핵심 관심사\n\nH. Actor별 Decision Criteria\n\nI. Supporting Evidence\n\nJ. Inference\n\nK. Missing Evidence / Needs Validation\n\n최종 Actor 구조를 대신 확정하지 마.\n최종 판단은 사람이 한다.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 Context 준비 칸의 내용을 [ ] 다섯 곳에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d4l3-b03-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Actor Map 만들기",
-            "practiceDescription": "User/Buyer/Influencer(필요시 Decision Maker/Gatekeeper) 식별부터 Decision Criteria, Evidence 구분까지 한 번에 진행합니다.",
-            "estimatedMinutes": 15
+            "markdown": "## 구매자 필요와 사용자 필요는 다릅니다 (Buyer Need ≠ User Need)",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d4l3-b03-result-form",
-          "type": "input-form",
-          "title": "Prompt 1 결과",
+          "id": "d4l3-b03-example",
+          "type": "infographic",
+          "title": "예시",
           "visibility": "visible",
           "data": {
-            "fields": [
-              { "id": "f1", "label": "Prompt 1 결과 (Prompt 1 Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "User",
+                "description": "학생\n\"오답 관리가 귀찮지 않았으면 좋겠다\""
+              },
+              {
+                "label": "Buyer / Decision Maker",
+                "description": "학부모\n\"관리가 잘 되고 있는지 확인하고 싶다\""
+              },
+              {
+                "label": "Influencer",
+                "description": "학생 후기, 학원 추천 등"
+              }
             ]
-          },
-          "description": "A~K 결과 전체를 여러 칸으로 나누지 말고 한 번만 붙여넣으세요."
+          }
+        },
+        {
+          "id": "d4l3-b03-conflict",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Actor Conflict**: 학부모는 강한 관리를 원하지만, 학생은 그 관리가 부담스러울 수 있습니다. 이렇게 서로 다른 Actor의 필요가 충돌하는 지점을 미리 아는 것이 중요합니다."
+          }
         }
       ]
     },
     {
       "id": "p04",
-      "title": "Prompt 1 결과 검토",
-      "layout": "wide",
+      "title": "누구에게 메시지를 해야 하는가",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d4l3-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# AI가 만든 Actor Map을 그대로 믿지 않습니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b04-checklist",
-          "type": "infographic",
-          "title": "Prompt 1 결과 체크포인트",
-          "visibility": "visible",
-          "data": {
-            "variant": "checklist",
-            "items": [
-              { "label": "User와 Buyer를 근거 없이 같은 사람이라고 했는가?" },
-              { "label": "반대로 한 사람인데 AI가 억지로 역할을 나눴는가?" },
-              { "label": "Influencer를 상상으로 만들지는 않았는가?" },
-              { "label": "B2B에서 실제 구매 승인자가 따로 있을 가능성이 있는가?" },
-              { "label": "Actor별 Decision Criteria가 정말 다른가?" },
-              { "label": "EVIDENCE와 INFERENCE가 구분되어 있는가?" }
-            ]
+            "markdown": "## 핵심 질문",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d4l3-b04-script",
+          "id": "d4l3-b04-question",
           "type": "rich-text",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
-            "markdown": "이 페이지는 학생 입력이 없습니다. Prompt 1 결과를 화면에 띄워놓고 위 체크포인트를 하나씩 같이 확인하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+            "markdown": "**\"누가 쓰고, 누가 사고, 누가 결정하며, 결국 누구에게 메시지를 해야 하는가?\"**",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d4l3-b04-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "5일차에서 만들 Core Message와 SNS 콘텐츠는 결국 특정 Actor 한 명을 향해야 합니다. User에게 할 말과 Buyer에게 할 말이 다를 수 있으므로, 지금 단계에서는 **가장 먼저 메시지를 보낼 Actor 한 명**을 알아두는 것이 중요합니다."
+          }
         }
       ]
     },
     {
       "id": "p05",
-      "title": "Actor Decision Criteria / Actor Conflict",
-      "layout": "wide",
+      "title": "오늘 정리",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d4l3-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 같은 Value도 Actor마다 다르게 받아들입니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b05-questions",
-          "type": "infographic",
-          "title": "Actor별 질문",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "사용자 (USER)",
-                "description": "\"사용하기 편한가?\""
-              },
-              {
-                "label": "구매자 (BUYER)",
-                "description": "\"돈을 낼 가치가 있는가?\""
-              },
-              {
-                "label": "영향자 (INFLUENCER)",
-                "description": "\"추천해도 안전한가?\""
-              }
-            ]
+            "markdown": "## 7차시 정리",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d4l3-b05-conflict",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**Actor Conflict 예**\n\n- User는 원하지만 Buyer가 비용 때문에 반대\n- Buyer는 구매했지만 User가 사용하지 않음\n- Influencer가 신뢰성 문제로 반대\n- Decision Maker가 조직 정책 때문에 막음\n\n**중요:** Actor Conflict는 반드시 존재한다고 가정하지 않습니다. 현재 사업에서 실제로 존재하는지 Evidence로 확인합니다.",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p06",
-      "title": "실습 2: Decision Structure Critic",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d4l3-b06-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# Actor Map을 실제 구매결정 구조 관점에서\n# 다시 검증합니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b06-ref-form",
-          "type": "input-form",
-          "title": "이전 결과 참고",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "Actor Map / Prompt 1 결과 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l3-b03-result-form" }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "ECP (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l3-b03-context-form", "sourceFieldIds": ["f1"] }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "1순위 가치제안 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l3-b03-context-form", "sourceFieldIds": ["f2"] }
-                ]
-              }
-            ]
-          },
-          "description": "아래 프롬프트의 [ ] 세 곳에 붙여넣을 때 참고하세요."
-        },
-        {
-          "id": "d4l3-b06-prompt",
-          "type": "prompt",
-          "title": "Decision Structure Critic 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[ROLE]\n\n너는 고객의 구매·사용 의사결정 구조를\n비판적으로 검토하는\nCustomer Decision Red Team Reviewer다.\n\n목표는 Actor를 많이 만드는 것이 아니다.\n\n실제 구매 또는 사용이 일어나기 위해\n누가 중요하고,\n어디에서 의사결정이 막힐 수 있는지를\nEvidence 기반으로 확인하는 것이다.\n\n[ACTOR MAP / PROMPT 1 RESULT]\n\n[ ]\n\n[ECP]\n\n[ ]\n\n[PRIMARY VALUE PROPOSITION]\n\n[ ]\n\n[OBJECTIVE]\n\n현재 Actor Map이 실제 구매·사용 구조를\n제대로 설명하는지 비판적으로 검토하고,\n\n현재 단계에서\n누구를 가장 먼저 만나거나 인터뷰해야 하는지\n판단을 지원한다.\n\n[TASK 1 — ROLE CHECK]\n\n현재 Actor Map을 다음 관점에서 검토해줘.\n\n1. User와 Buyer를 근거 없이 같은 사람으로 가정했는가?\n2. 반대로 한 사람이 여러 역할을 하는데 불필요하게 나눴는가?\n3. Buyer와 실제 Decision Maker가 다를 가능성이 있는가?\n4. Influencer를 실제 Evidence 없이 만들어냈는가?\n5. 중요한 Gatekeeper가 빠졌을 가능성이 있는가?\n6. 구매과정에 필요 없는 Actor를 너무 많이 만들었는가?\n\n각 판단을 가능한 경우:\n\n- EVIDENCE\n- INFERENCE\n- NEEDS VALIDATION\n\n으로 표시해.\n\n[TASK 2 — ACTOR CONFLICT]\n\nUser / Buyer / Influencer /\n필요한 경우 Decision Maker 사이에서\n이해관계 충돌 가능성을 찾아줘.\n\n예:\n\n- User는 원하지만 Buyer가 비용 때문에 거절\n- Buyer는 원하지만 User가 사용하기 싫어함\n- Influencer가 신뢰성 문제로 반대\n- Decision Maker가 정책 또는 위험 때문에 거절\n\n현재 Context에서 근거가 있는 경우만 사용해.\n\n충돌 Evidence가 없다면\n\"확인 필요\"라고 표시해.\n\n[TASK 3 — MAIN OBJECTION]\n\n각 핵심 Actor가\n현재 제품 또는 서비스를 선택하지 않을 수 있는\n가장 중요한 Objection을 1~2개씩 제안해.\n\n다음과 같은 요소를 검토해.\n\n- 가격\n- 시간\n- 사용난이도\n- 신뢰\n- 위험\n- 기존 대안\n- 전환비용\n- 조직 또는 가족 내부 승인\n- Value 부족\n\n현재 사업과 관련 없는 요소는 제외해.\n\n근거가 부족하면\nNEEDS VALIDATION이라고 표시해.\n\n[TASK 4 — FIRST CONTACT ACTOR]\n\n현재 사업 검증 단계에서\n가장 먼저 만나거나 인터뷰해야 할 Actor를 1명 제안해.\n\n다음 기준으로 판단해.\n\n- 핵심 Problem을 가장 직접 경험하는가\n- 실제 구매 또는 사용에 중요한 정보를 가지고 있는가\n- 현재 접근 가능한가\n- 우리가 가진 가장 위험한 가정을 확인할 수 있는가\n\n그리고 다음을 정리해.\n\n1. AI 추천 First Contact Actor\n2. 왜 이 Actor를 먼저 만나야 하는가\n3. 가장 먼저 확인할 질문\n4. 그 다음에 만나야 할 Actor\n\n[TASK 5 — RED TEAM]\n\n마지막으로 현재 판단을 다시 공격해줘.\n\n- 우리가 User의 의견만 보고 있지는 않은가?\n- 실제 Buyer를 놓친 것은 아닌가?\n- 구매권한이 없는 사람을 의사결정자로 착각했는가?\n- Influencer의 영향력을 과대평가했는가?\n- Actor 구조를 지나치게 복잡하게 만들었는가?\n- 현재 Evidence보다 창업자의 상상이 더 많이 들어갔는가?\n\n[OUTPUT]\n\nA. Actor Role Critique\n\nB. Missing Actor\n\nC. Unnecessary Actor\n\nD. Actor Conflict\n\nE. Actor별 Main Objection\n\nF. AI 추천 First Contact Actor\n\nG. First Contact 이유\n\nH. First Validation Question\n\nI. 다음에 만나야 할 Actor\n\nJ. Missing Evidence / Needs Validation\n\n최종 Actor와 First Contact는 대신 결정하지 마.\n최종 판단은 사람이 한다.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 참고 칸의 내용을 [ ] 세 곳(Actor Map/Prompt 1 결과, ECP, 1순위 가치제안)에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d4l3-b06-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Decision Structure Critic",
-            "practiceDescription": "Role Check, Actor Conflict, Main Objection, First Contact Actor, Red Team 검토까지 한 번에 진행합니다.",
-            "estimatedMinutes": 15
-          }
-        },
-        {
-          "id": "d4l3-b06-result-form",
-          "type": "input-form",
-          "title": "Prompt 2 검토결과",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              { "id": "f1", "label": "Prompt 2 검토결과 (Prompt 2 Review Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
-            ]
-          },
-          "description": "Role Check, Actor Conflict, Main Objection, First Contact Actor, Red Team 결과를 나누지 말고 한 번만 붙여넣으세요."
-        }
-      ]
-    },
-    {
-      "id": "p07",
-      "title": "Prompt 2 결과 검토",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d4l3-b07-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 누구를 먼저 만날지도 신중하게 검토합니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b07-checklist",
+          "id": "d4l3-b05-summary",
           "type": "infographic",
-          "title": "Prompt 2 결과 체크포인트",
+          "title": "기억할 것",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
-              { "label": "누가 실제 사용자인가?" },
-              { "label": "누가 실제 돈을 내거나 구매를 승인하는가?" },
-              { "label": "누가 구매를 막을 수 있는가?" },
-              { "label": "User와 Buyer의 요구가 충돌하는가?" },
-              { "label": "AI가 불필요한 Actor를 만들어냈는가?" },
-              { "label": "우리가 가장 먼저 만나야 할 사람은 누구인가?" },
-              { "label": "무엇을 먼저 확인해야 하는가?" }
-            ]
-          }
-        },
-        {
-          "id": "d4l3-b07-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지는 학생 입력이 없습니다. 다음 페이지 Human Decision에서 이 결과를 반영해 최종 판단하게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p08",
-      "title": "사람의 최종 Actor 결정 (Human Decision)",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d4l3-b08-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 누구를 먼저 만날지는 사람이 결정합니다\n\nAI가 추천한 Actor 구조와 First Contact Actor를 참고하되, 최종 확정은 사람이 합니다.",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b08-form",
-          "type": "input-form",
-          "title": "Actor Map v0.1",
-          "visibility": "visible",
-          "data": {
-            "fields": [
               {
-                "id": "f1",
-                "label": "첫 검증 고객 (ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-context-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
+                "label": "Persona가 아니라 실제 역할을 하는 Actor를 본다"
               },
               {
-                "id": "f2",
-                "label": "주요 사용자 (Primary User)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
+                "label": "User / Buyer / Influencer / Decision Maker / Gatekeeper"
               },
               {
-                "id": "f3",
-                "label": "주요 구매자 (Primary Buyer)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
+                "label": "한 사람이 여러 역할을 가질 수 있다"
               },
               {
-                "id": "f4",
-                "label": "핵심 영향자 (Key Influencer)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "해당 없으면 \"없음/미확인\"으로 적어도 됩니다.",
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "의사결정자 (Decision Maker)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "필요한 경우만 — \"동일인 / 별도 / 미확인 / 해당 없음\"",
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "게이트키퍼 (Gatekeeper)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "필요한 경우만 — \"없음/미확인\" 허용",
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "사용자 니즈 (User Need)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "구매자 니즈 (Buyer Need)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "영향자 니즈 (Influencer Need)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "사용자의 중요 판단기준 (User Decision Criteria)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "구매자의 중요 판단기준 (Buyer Decision Criteria)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f12",
-                "label": "핵심 영향자의 판단기준 (Influencer Criteria)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f13",
-                "label": "가장 중요한 이해관계 충돌 (Actor Conflict)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f14",
-                "label": "가장 큰 구매 반대요인 (Main Objection)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f15",
-                "label": "먼저 만날 Actor (First Contact Actor)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 AI 추천에서 가져오기",
-                    "sourceBlockId": "d4l3-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f16",
-                "label": "먼저 확인할 질문 (First Validation Question)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f17",
-                "label": "지지 근거 (Supporting Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-context-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f18",
-                "label": "부족한 근거 (Missing Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b03-result-form"
-                  },
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l3-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f19",
-                "label": "사람의 최종 판단 메모 (Human Decision Notes)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "필요하면 간단히 — Prompt 2 Red Team 결과를 최종 검토한 결론을 적으세요."
+                "label": "Buyer Need와 User Need는 다를 수 있다 (Actor Conflict)"
               }
             ]
-          },
-          "description": "버튼으로 가져온 내용은 Prompt 1·2 결과 전체입니다 — 이 필드에 해당하는 부분만 남기고 정리하세요. First Contact Actor는 AI 추천을 참고해 최종 확정하세요."
-        },
-        {
-          "id": "d4l3-b08-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지에서는 아직 저장하지 않습니다. 다 채운 뒤 다음 페이지에서 실제로 저장 버튼을 클릭하게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p09",
-      "title": "BUSINESS SHOWCASE",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d4l3-b09-showcase-a",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\n**사례 A — 일반 정기관리 고객**\n\nECP: 반복 시술을 받고 이전 시술정보를 다시 설명해야 하는 정기고객\nPrimary User: 고객 본인\nPrimary Buyer: 고객 본인\nKey Influencer: 친구 / 가족 / SNS 후기 / 지역 후기 등이 영향을 줄 수 있음\n\n**교육 포인트:** Buyer와 User가 같은 사람일 수 있습니다. 억지로 서로 다른 Actor를 만들 필요 없습니다.",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b09-showcase-b",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**사례 B — 어린이 미용 서비스**\n\nUser: 어린이\nBuyer: 부모\nInfluencer: 어린이 + 주변 부모 후기 등이 영향을 줄 수 있음\n\n**교육 포인트:** 같은 업종에서도 상품/상황에 따라 Actor 구조가 달라집니다.\n\n※ 이 내용은 교육용 적용 사례이며 실제 성공사례처럼 표현하지 않습니다.",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p10",
-      "title": "결과 저장 / 완료",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d4l3-b10-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
-            "emphasis": "hero"
-          },
-          "theme": { "background": "dark", "bordered": false },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b10-a-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## A. Actor Map 저장\n\n앞 페이지에서 정리한 내용이 저장됩니다.",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b10-vp-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "7차시 — Actor Map v0.1",
-            "sourceBlockId": "d4l3-b08-form",
-            "buttonLabel": "Actor Map 저장"
           }
         },
         {
-          "id": "d4l3-b10-preview",
-          "type": "result-preview",
+          "id": "d4l3-b05-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "markdown": "**실제 Actor 결정은 8차시 통합 실습에서 합니다.**",
+            "emphasis": "lead"
           }
-        },
-        {
-          "id": "d4l3-b10-b-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## B. Business Context 업데이트\n\n6차시 Business Context를 그대로 가져오고, 이번에 새로 정한 Actor 관련 항목만 갱신하세요.",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b10-context-form",
-          "type": "input-form",
-          "title": "Business Context v0.7",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "확인된 사실 (Confirmed Facts)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Business Context v0.6",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "현재 가설 (Current Hypotheses)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Business Context v0.6",
-                    "sourceLabel": "현재 가설 (Current Hypotheses)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "고객 세그먼트 (Customer Segments)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Business Context v0.6",
-                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "1순위 타겟 (Primary Target)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Business Context v0.6",
-                    "sourceLabel": "1순위 타겟 (Primary Target)"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "첫 검증 고객 (ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "미래 ICP 가설 (Future ICP Hypothesis)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Business Context v0.6",
-                    "sourceLabel": "미래 ICP 가설 (Future ICP Hypothesis)"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "현재 비선호 고객 (Anti-ICP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Business Context v0.6",
-                    "sourceLabel": "현재 비선호 고객 (Anti-ICP)"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "1순위 가치제안 (Primary Value Proposition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "6차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "6차시 — Business Context v0.6",
-                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "주요 사용자 (Primary User)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "주요 구매자 (Primary Buyer)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "핵심 영향자 (Key Influencer)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f12",
-                "label": "의사결정자 (Decision Maker)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f13",
-                "label": "게이트키퍼 (Gatekeeper)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f14",
-                "label": "가장 중요한 이해관계 충돌 (Actor Conflict)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f13"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f15",
-                "label": "가장 큰 구매 반대요인 (Main Objection)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f14"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f16",
-                "label": "먼저 만날 Actor (First Contact Actor)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f15"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f17",
-                "label": "먼저 확인할 질문 (First Validation Question)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f16"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f18",
-                "label": "확인되지 않은 Actor 정보 (Missing Actor Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l3-b08-form",
-                    "sourceFieldIds": [
-                      "f18"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f19",
-                "label": "다음 결정 사항 (Next Decision)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "First Contact Actor를 실제로 만나 무엇을 검증할 것인가? (8차시: Customer Journey / Touchpoint)"
-              }
-            ]
-          },
-          "description": "6차시 Business Context v0.6을 복사해 이번 Actor Map 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
-        },
-        {
-          "id": "d4l3-b10-context-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "7차시 — Business Context v0.7",
-            "sourceBlockId": "d4l3-b10-context-form",
-            "buttonLabel": "Business Context v0.7 저장"
-          }
-        },
-        {
-          "id": "d4l3-b10-next",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 다음 차시\n\n**8차시 — Customer Journey / Touchpoint**",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "muted", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l3-b10-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "두 저장 버튼을 모두 클릭해서 목록에 새 항목 2개가 추가되는지, 1~6차시 artifact가 그대로 남아있는지 확인시키세요. First Contact Actor는 대신 결정한 것이 아니라 학생이 최종 확정한 것임을 마지막으로 다시 강조하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     }

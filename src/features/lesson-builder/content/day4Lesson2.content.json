@@ -4,9 +4,9 @@
   "week": 2,
   "day": 4,
   "lesson": 2,
-  "title": "ECP · Future ICP · Anti-ICP — 누구와 먼저 검증하고, 누구는 아직 받지 않을 것인가",
-  "description": "Primary Target 안에서 지금 가장 먼저 검증할 ECP를 고르고, Future ICP 가설과 Anti-ICP 경계를 정합니다.",
-  "durationMinutes": 45,
+  "title": "ECP · Future ICP · Anti-ICP — 지금 누구를 먼저 검증할 것인가",
+  "description": "Primary Target 전체가 곧 첫 검증 고객은 아닙니다. 지금 검증할 고객과 지금은 집중하지 않을 고객의 경계를 구분합니다.",
+  "durationMinutes": 15,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
@@ -22,1130 +22,196 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 우리는 이미\n# Target과 Value를 정했습니다\n\n\"그중에서 누구를 가장 먼저 만나야 하는가?\"",
+            "markdown": "# Customer Boundary\n\n## 지금 누구를 먼저 검증할 것인가",
             "emphasis": "hero"
           },
-          "theme": { "background": "dark", "bordered": false },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b01-notice",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**Target 전체가 첫 고객은 아닙니다.**\n\n5차시에서 정한 Target과 Value를 그대로 이어받아, 그 안에서 지금 가장 먼저 검증할 고객(ECP)을 고르고, 아직 데이터가 없는 미래의 이상 고객(Future ICP)과 지금은 받지 않을 고객(Anti-ICP)의 경계를 정합니다. 아래 목록을 확인하세요.\n\n**A. 5차시 — Value Proposition Map v0.1**\n1순위 타겟 / 핵심 고객 문제 / 현재 대안 / 핵심 혜택 / 기대 결과 / 1순위 가치제안 / 2순위 가치 / 지지 근거 / 반대근거·리스크 / 확보된 증거 / 부족한 증거\n\n**B. 5차시 — Business Context v0.5**\n확인된 사실 / 현재 가설 / 고객 세그먼트 / 가치 리스크 / 검증 대기 목록 / 다음 결정 사항",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "primary-soft", "bordered": false },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b01-preview",
-          "type": "result-preview",
-          "title": "5차시 결과",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "5차시를 먼저 완료해야 Value Proposition Map과 Business Context가 표시됩니다."
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d4l2-b01-flow",
+          "id": "d4l2-b01-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**오늘의 흐름**\n\nTARGET → VALUE PROPOSITION → ECP → FUTURE ICP HYPOTHESIS → ANTI-ICP BOUNDARY",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "muted", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b01-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "목록이 비어 있으면 5차시를 아직 완료하지 않은 학생입니다 — 5차시 P10에서 저장하고 오게 하세요. \"Target 전체가 첫 고객은 아니다\"를 처음에 분명히 강조하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+            "markdown": "3일차에서 Primary Target을 정했고, 5차시에서 그 고객에게 어떤 Value를 줄 수 있는지 정했습니다.\n\n하지만 **Primary Target 전체가 곧 오늘 당장 검증할 고객은 아닙니다.** Target군 안에서도 지금 먼저 만나야 할 고객과, 아직은 초점을 두지 않을 고객이 나뉩니다."
+          }
         }
       ]
     },
     {
       "id": "p02",
-      "title": "ECP · Future ICP · Anti-ICP 핵심 이론",
-      "layout": "wide",
+      "title": "세 가지 고객 경계 — ECP · Future ICP · Anti-ICP",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d4l2-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 지금 만날 고객과, 나중에 확인할 고객은 다릅니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b02-defs",
-          "type": "infographic",
-          "title": "세 가지 개념",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "타겟 (TARGET)",
-                "description": "우리가 우선적으로 공략하기로 한 고객군"
-              },
-              {
-                "label": "첫 검증 고객 (ECP)",
-                "description": "현재 제품과 Evidence를 기준으로, 지금 가장 먼저 만나고 검증하기 좋은 고객"
-              },
-              {
-                "label": "미래 ICP 가설 (Future ICP Hypothesis)",
-                "description": "향후 실제 구매·사용 데이터가 쌓였을 때 이상적인 반복고객이 될 가능성이 있는 고객에 대한 가설 — 아직 확정 아님"
-              },
-              {
-                "label": "비선호 고객 (Anti-ICP)",
-                "description": "현재 제품으로 충분한 가치를 제공하기 어렵기 때문에 지금은 적극적으로 받지 않는 고객"
-              }
-            ]
+            "markdown": "## 세 가지 경계 개념",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d4l2-b02-icp-warning",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**현재 단계에서는 ICP를 확정하지 않습니다.**\n\n실제 고객 데이터(전환·재구매·유지율 등)가 아직 부족하기 때문입니다. Persona는 ICP가 아닙니다 — 상상으로 채운 인물이 아니라, 향후 어떤 실제 데이터가 쌓이면 확인할 수 있는지가 핵심입니다.",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b02-anti-warning",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**Anti-ICP는 \"나쁜 고객\"이 아닙니다.**\n\n영구 제외도 아닙니다. 현재 Product Fit 기준일 뿐이며, 조건(기능 출시, 데이터 축적 등)이 바뀌면 다시 검토합니다.",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "card", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b02-ecp7",
+          "id": "d4l2-b02-terms",
           "type": "infographic",
-          "title": "ECP 핵심 7요소",
+          "title": "핵심 개념",
           "visibility": "visible",
           "data": {
-            "variant": "checklist",
+            "variant": "comparison",
             "items": [
               {
-                "label": "상황 (Situation)"
+                "label": "Target",
+                "description": "우리가 우선 보고 있는 고객군\n(3일차에서 이미 정함)"
               },
               {
-                "label": "강한 문제 (Strong Problem)"
+                "label": "ECP",
+                "description": "Early Customer Profile\n지금 실제로 가장 먼저 검증할 고객"
               },
               {
-                "label": "촉발요인 (Trigger)"
+                "label": "Future ICP",
+                "description": "Evidence와 제품 역량이 쌓였을 때\n좋은 고객이 될 가능성이 있는 고객 (가설)"
               },
               {
-                "label": "현재 대안 (Current Alternative)"
-              },
-              {
-                "label": "현재 비용/마찰 (Current Cost / Friction)"
-              },
-              {
-                "label": "접근 가능성 (Reachability)"
-              },
-              {
-                "label": "현재 MVP 적합도 (Current MVP Fit)"
+                "label": "Anti-ICP",
+                "description": "현재 단계에서는\n적극적으로 받거나 집중하지 않는 것이 좋은 고객"
               }
             ]
           }
-        },
-        {
-          "id": "d4l2-b02-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "Target ≠ ECP ≠ ICP를 반드시 구분해서 설명하세요. ICP를 지금 확정하려는 학생이 있으면 \"아직 실제 데이터가 없다\"는 점을 짚어주세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
       "id": "p03",
-      "title": "실습 1: 첫 검증 고객과 미래 이상고객 가설",
-      "layout": "practice",
+      "title": "ECP는 Target과 완전히 같지 않을 수 있다",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d4l2-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 첫 검증 고객과\n# 미래의 이상고객 가설을 구분합니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b03-context-form",
-          "type": "input-form",
-          "title": "Context 준비",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "1순위 타겟 (Primary Target)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "1순위 타겟 (Primary Target)" }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "1순위 가치제안 (Primary Value Proposition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "1순위 가치제안 (Primary Value Proposition)" }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "핵심 고객 문제 (Key Customer Problem)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "핵심 고객 문제 (Key Customer Problem)" }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "현재 대안 (Current Alternative)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "현재 대안 (Current Alternative)" }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "지지 근거 (Supporting Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "지지 근거 (Supporting Evidence)" }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "반대근거·리스크 (Counter Evidence / Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "가장 큰 반대근거·리스크 (Main Counter Evidence / Risk)" }
-                ]
-              },
-              { "id": "f7", "label": "현재 제품의 한계 (Current MVP Limitation)", "kind": "long-text", "required": false, "placeholder": "예: 다수 사용자 권한관리 기능은 아직 없음 / 기업용 관리자 대시보드는 아직 없음" }
-            ]
-          },
-          "description": "버튼으로 채워지지 않는 칸(현재 제품의 한계)만 직접 적으세요. 아래 프롬프트의 [ ] 일곱 곳에 이 내용을 옮겨 붙여넣습니다."
-        },
-        {
-          "id": "d4l2-b03-prompt",
-          "type": "prompt",
-          "title": "ECP + Future ICP 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[ROLE]\n너는 초기 창업자의 첫 검증 고객을 찾는\nEvidence 기반 Customer Strategy Analyst다.\n우리는 이미 Customer Segment,\nPrimary Target,\nValue Proposition을 정했다.\n하지만 Primary Target 전체가\n곧 첫 검증 고객은 아니다.\n\n[PRIMARY TARGET]\n[ ]\n\n[PRIMARY VALUE PROPOSITION]\n[ ]\n\n[KEY CUSTOMER PROBLEM]\n[ ]\n\n[CURRENT ALTERNATIVE]\n[ ]\n\n[SUPPORTING EVIDENCE]\n[ ]\n\n[COUNTER EVIDENCE / RISK]\n[ ]\n\n[CURRENT MVP LIMITATION]\n[ ]\n\n[OBJECTIVE]\n현재 Primary Target 안에서\n\"지금 가장 먼저 만나고 검증하기 좋은 고객\"을 정의하고,\n향후 실제 고객 데이터가 축적되었을 때 검토할\nFuture ICP Hypothesis를 만든다.\n\n현재 정보만으로 ICP를 확정하지 마라.\n\n[TASK 1 — ECP CANDIDATES]\nPrimary Target 안에서\n현재 가장 먼저 검증하기 좋은\nECP(Early Customer Profile) 후보를 2개 만들어줘.\n\n각 후보를 다음 기준으로 분석해.\n\n1. Situation\n2. Strong Problem\n3. Trigger\n4. Current Alternative\n5. Current Cost / Friction\n6. Reachability\n7. Current MVP Fit\n\n각 판단은 가능한 경우 다음 중 하나로 구분해.\n\n- EVIDENCE\n- INFERENCE\n- NEEDS VALIDATION\n\n자료에 없는:\n\n- 구매의사\n- 지불금액\n- 고객행동\n- 문제빈도\n- 시장규모\n\n등을 사실처럼 만들어내지 마.\n\n[TASK 2 — ECP COMPARISON]\nECP 후보 2개를 비교해.\n\n각 후보마다:\n\n- 지금 검증하기 좋은 이유\n- Supporting Evidence\n- Counter Evidence\n- Missing Evidence\n- 현재 가장 위험한 가정\n\n을 정리해.\n\n그리고 AI 관점의 ECP 1순위 후보를 추천해.\n\n단 최종 ECP는 대신 결정하지 마.\n최종 결정은 사람이 한다.\n\n[TASK 3 — FUTURE ICP HYPOTHESIS]\n현재 단계에서는\n실제 구매·사용 데이터가 충분하지 않으므로\nICP를 확정하지 마라.\n\n대신 다음 질문에 답해.\n\n\"향후 실제 고객 데이터가 축적된다면\n어떤 특징의 고객이\n우리에게 반복적으로 좋은 고객이 될 가능성이 있는가?\"\n\n이를 바탕으로\nFuture ICP Hypothesis를 1개 제안해.\n\n[TASK 4 — ICP DATA REQUIREMENT]\n위 Future ICP Hypothesis를\n실제 ICP로 판단하려면\n앞으로 어떤 데이터를 수집해야 하는지 정리해.\n\n예:\n\n- 실제 구매전환\n- 실제 지불 데이터\n- 반복사용\n- 재구매\n- 유지율\n- 고객획득비용\n- 지원비용\n- 실제 문제빈도\n- 추천행동\n\n사업 특성과 맞지 않는 지표를\n억지로 사용하지 마.\n\n[OUTPUT]\nA. ECP 후보 1\nB. ECP 후보 2\nC. ECP 비교표\nD. AI 추천 ECP\nE. Supporting Evidence\nF. Counter Evidence\nG. Missing Evidence\nH. 가장 위험한 가정\nI. Future ICP Hypothesis\nJ. ICP 판단을 위해 향후 필요한 실제 데이터",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 Context 준비 칸의 내용을 [ ] 일곱 곳에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d4l2-b03-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "ECP + Future ICP 만들기",
-            "practiceDescription": "ECP 후보 생성·비교부터 Future ICP Hypothesis, ICP Data Requirement까지 한 번에 진행합니다.",
-            "estimatedMinutes": 15
+            "markdown": "## Target과 ECP는 다릅니다 (Target ≠ ECP)",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d4l2-b03-result-form",
-          "type": "input-form",
-          "title": "Prompt 1 분석결과",
+          "id": "d4l2-b03-body",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "fields": [
-              { "id": "f1", "label": "Prompt 1 분석결과 (Prompt 1 Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
+            "markdown": "Primary Target은 우리가 사업을 설계할 때 기준으로 삼는 고객군입니다. 하지만 그 안에서도:\n\n- 지금 **당장 문제를 강하게 느끼는 고객**\n- 지금 **우리 제품으로 충분히 도와줄 수 있는 고객**\n\n이 실제 ECP입니다. Target 전체를 한꺼번에 검증하려 하면 어느 고객에게도 명확한 메시지를 만들 수 없습니다."
+          }
+        },
+        {
+          "id": "d4l2-b03-warn",
+          "type": "infographic",
+          "title": "주의",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "모든 고객을 받는 것이 좋은 전략은 아니다"
+              },
+              {
+                "label": "현재 Product Capability도 고객 경계를 결정한다"
+              },
+              {
+                "label": "Future ICP는 사실이 아니라 가설이다"
+              },
+              {
+                "label": "Anti-ICP는 싫어하는 고객 목록이 아니라 현재의 전략적 경계다"
+              }
             ]
           },
-          "description": "A~J 결과 전체를 여러 칸으로 나누지 말고 한 번만 붙여넣으세요."
+          "theme": {
+            "background": "muted"
+          }
         }
       ]
     },
     {
       "id": "p04",
-      "title": "Prompt 1 결과 검토",
-      "layout": "wide",
+      "title": "지금 실제로 제공 가능한 것이 경계를 만든다",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d4l2-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# AI가 만든 ECP·ICP를 그대로 믿지 않습니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b04-checklist",
-          "type": "infographic",
-          "title": "Prompt 1 결과 체크포인트",
-          "visibility": "visible",
-          "data": {
-            "variant": "checklist",
-            "items": [
-              { "label": "ECP가 Primary Target의 이름을 그대로 반복한 것 아닌가?" },
-              { "label": "구체적인 Situation과 Trigger가 있는가?" },
-              { "label": "Strong Problem이 Evidence에 기반하는가?" },
-              { "label": "현재 MVP로 실제 Value를 제공할 수 있는가?" },
-              { "label": "AI가 ICP를 실제 데이터 없이 이미 확정해버리지는 않았는가?" },
-              { "label": "Future ICP는 가설이라고 명확히 표시되어 있는가?" }
-            ]
+            "markdown": "## Product Capability가 경계를 결정한다",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d4l2-b04-script",
+          "id": "d4l2-b04-body",
           "type": "rich-text",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
-            "markdown": "이 페이지는 학생 입력이 없습니다. Prompt 1 결과를 화면에 띄워놓고 위 체크포인트를 하나씩 같이 확인하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+            "markdown": "ECP를 정할 때 \"이 고객이 우리를 좋아할까?\"보다 먼저 물어야 할 질문은:\n\n**\"지금 우리가 실제로 제공할 수 있는 Capability로 이 고객의 문제를 충분히 도울 수 있는가?\"**\n\nFuture ICP는 지금 확정하는 것이 아니라, 앞으로 Evidence와 Capability가 쌓이면 검증할 **가설**로 남겨둡니다."
+          }
+        },
+        {
+          "id": "d4l2-b04-question",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "핵심 질문:\n\n**\"우리가 지금 실제로 먼저 검증할 고객은 누구인가?\"**",
+            "emphasis": "lead"
+          }
         }
       ]
     },
     {
       "id": "p05",
-      "title": "Target / ECP / Future ICP 차이",
-      "layout": "wide",
+      "title": "오늘 정리",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d4l2-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 같은 사람이 아닙니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b05-example",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**교육용 예시 — AI Startup OS**\n\n**타겟 (Target)**\nAI를 활용해 창업을 준비하거나 초기 사업을 운영하는 사람\n\n**첫 검증 고객 (ECP)**\n지원사업 또는 사업계획서 제출 일정이 임박했고, 고객·시장 근거를 정리하지 못한 초기 창업자\n\n**미래 ICP 가설 (Future ICP Hypothesis)**\n고객·시장 검증과 마케팅 의사결정을 반복적으로 수행하며 서비스를 지속적으로 사용하는 초기 사업자 — 단, 아직 실제 반복사용·재구매 데이터가 없으므로 가설입니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 6차시 정리",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d4l2-b05-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**Target → 지금 집중할 시장**\n**ECP → 지금 먼저 검증할 고객**\n**ICP → 실제 데이터가 쌓인 뒤 확인할 반복적으로 좋은 고객**",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "muted", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p06",
-      "title": "실습 2: 누구까지 받지 않을지 결정",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d4l2-b06-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 누구까지 받지 않을지도\n# 사업의 중요한 결정입니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b06-ref-form",
-          "type": "input-form",
-          "title": "이전 결과 참고",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "Prompt 1 분석결과 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l2-b03-result-form" }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "1순위 가치제안 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l2-b03-context-form", "sourceFieldIds": ["f2"] }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "현재 제품의 한계 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l2-b03-context-form", "sourceFieldIds": ["f7"] }
-                ]
-              }
-            ]
-          },
-          "description": "아래 프롬프트의 [ ] 세 곳에 붙여넣을 때 참고하세요."
-        },
-        {
-          "id": "d4l2-b06-prompt",
-          "type": "prompt",
-          "title": "Anti-ICP + Boundary Stress Test 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[ROLE]\n너는 초기 제품의 고객 경계를 검토하는\nProduct Fit Reviewer이자\nRed Team Customer Strategy Critic이다.\n고객을 함부로 배제하는 것이 목적이 아니다.\n현재 제품으로 충분한 가치를 제공하기 어려운 고객을 찾고,\n현재 ECP / Future ICP / Anti-ICP 경계가\n논리적인지 검토하는 것이 목적이다.\n\n[PROMPT 1 RESULT]\n[ ]\n\n[PRIMARY VALUE PROPOSITION]\n[ ]\n\n[CURRENT MVP LIMITATION]\n[ ]\n\n[OBJECTIVE]\n현재 제품으로\n누구에게 먼저 집중해야 하는지뿐 아니라,\n누구는 지금 적극적으로 받지 않는 것이 좋은지도 정의한다.\n\n[TASK 1 — ANTI-ICP CANDIDATES]\n현재 단계에서\nAnti-ICP 후보를 최대 3개 제안해.\n\n다음 기준으로 판단해.\n\n1. Product Fit\n2. 필요한 Customization 정도\n3. Support Burden\n4. Buying Complexity\n5. Core Value와의 불일치\n6. Current Missing Capability\n\nAnti-ICP는\n\"나쁜 고객\"이라는 의미가 아니다.\n\n고객의 성격이나 가치판단으로 제외하지 말고,\n현재 제품과 고객 요구의 Fit만 판단해.\n\n[TASK 2 — WHY NOT NOW]\n각 Anti-ICP 후보에 대해:\n\n- 왜 지금은 맞지 않는지\n- 어떤 Current Capability가 부족한지\n- 어느 부분에서 Support/Customization 부담이 커지는지\n- 어떤 조건이 바뀌면 다시 검토할 수 있는지\n\n를 설명해.\n\n[TASK 3 — ECP BOUNDARY STRESS TEST]\nPrompt 1의 ECP를 비판적으로 검토해.\n\n다음을 확인해.\n\n1. ECP 범위가 너무 넓지는 않은가?\n2. 반대로 너무 좁아서 실제 검증이 어려운가?\n3. Trigger가 실제로 충분히 강한가?\n4. Current MVP Fit을 과대평가했는가?\n5. Reachability를 과대평가했는가?\n6. Supporting Evidence보다 추론이 많은가?\n\n[TASK 4 — FUTURE ICP STRESS TEST]\nFuture ICP Hypothesis를 검토해.\n\n다음을 확인해.\n\n1. 실제 데이터 없이 이상적인 고객을 상상한 것은 아닌가?\n2. 반복구매나 유지율을 확인하지 않았는데 반복고객이라고 가정했는가?\n3. 지불의사를 확인하지 않았는데 좋은 고객이라고 가정했는가?\n4. 지원비용을 고려하지 않았는가?\n5. 실제 ICP 판단에 필요한 데이터가 충분히 정의됐는가?\n\n[TASK 5 — ANTI-ICP STRESS TEST]\nAnti-ICP 경계를 다시 공격해.\n\n다음을 확인해.\n\n1. 너무 많은 고객을 제외하지 않았는가?\n2. 단순히 대응하기 귀찮다는 이유로 제외한 것은 아닌가?\n3. 실제로는 좋은 초기 검증고객이 포함되어 있을 가능성은 없는가?\n4. 현재 Missing Capability가 해결되면 좋은 고객이 될 수 있는가?\n5. Evidence보다 창업자의 선입견이 더 많이 반영되지 않았는가?\n\n[TASK 6 — REVISIT CONDITION]\n각 주요 Anti-ICP 또는 Customer Boundary에 대해\n언제 다시 검토해야 하는지 조건을 제안해.\n\n예:\n\n- 필요한 기능이 출시됐을 때\n- 실제 유료 고객 데이터가 축적됐을 때\n- 반복사용 패턴을 확인했을 때\n- Support Cost를 확인했을 때\n- 해당 고객의 실제 구매행동을 확인했을 때\n\n근거 없는 임의 숫자를 만들지 마.\n필요하면 날짜나 숫자보다\n조건 중심으로 표현해.\n\n[OUTPUT]\nA. Anti-ICP 후보\nB. Why Not Now\nC. Missing Capability\nD. Revisit Condition\nE. ECP Boundary Critique\nF. Future ICP Critique\nG. Anti-ICP Critique\nH. 가장 중요한 Counter Evidence\nI. 수정이 필요한 경계\nJ. AI 권고안\n\n최종 ECP / Future ICP / Anti-ICP는\n대신 결정하지 마.\n최종 판단은 사람이 한다.",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 참고 칸의 내용을 [ ] 세 곳(Prompt 1 결과, 1순위 가치제안, 현재 제품의 한계)에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d4l2-b06-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Anti-ICP + Boundary Stress Test",
-            "practiceDescription": "Anti-ICP 후보 생성부터 ECP/Future ICP/Anti-ICP 경계에 대한 Red Team 검토, Revisit Condition까지 한 번에 진행합니다.",
-            "estimatedMinutes": 15
-          }
-        },
-        {
-          "id": "d4l2-b06-result-form",
-          "type": "input-form",
-          "title": "Prompt 2 검토결과",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              { "id": "f1", "label": "Prompt 2 검토결과 (Prompt 2 Review Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
-            ]
-          },
-          "description": "Anti-ICP 후보, Why Not Now, 세 가지 Stress Test, Revisit Condition을 나누지 말고 한 번만 붙여넣으세요."
-        }
-      ]
-    },
-    {
-      "id": "p07",
-      "title": "Prompt 2 결과 검토",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d4l2-b07-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 고객을 제외하는 결정도 신중하게 검토합니다",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b07-checklist",
+          "id": "d4l2-b05-summary",
           "type": "infographic",
-          "title": "Prompt 2 결과 체크포인트",
+          "title": "기억할 것",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
-              { "label": "이 고객을 왜 제외하려는가?" },
-              { "label": "고객이 문제인가, 현재 제품 Fit이 문제인가?" },
-              { "label": "Missing Capability가 해결되면 다시 좋은 고객이 될 수 있는가?" },
-              { "label": "ECP를 너무 넓게 잡지 않았는가?" },
-              { "label": "Future ICP를 실제 데이터 없이 이상화하지 않았는가?" },
-              { "label": "Anti-ICP 안에 좋은 초기고객이 숨어 있지는 않은가?" },
-              { "label": "언제 이 결정을 다시 검토해야 하는가?" }
-            ]
-          }
-        },
-        {
-          "id": "d4l2-b07-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지는 학생 입력이 없습니다. 다음 페이지 Human Decision에서 이 결과를 반영해 최종 판단하게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p08",
-      "title": "사람의 최종 경계 결정 (Human Decision)",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d4l2-b08-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 누구를 먼저 만나고, 누구는 아직 받지 않을지는\n# 사람이 결정합니다\n\nECP, Future ICP Hypothesis, Anti-ICP 모두 AI 추천을 참고하되 최종 확정은 사람이 합니다.",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b08-form",
-          "type": "input-form",
-          "title": "Customer Boundary Map v0.1",
-          "visibility": "visible",
-          "data": {
-            "fields": [
               {
-                "id": "f1",
-                "label": "1순위 타겟 (Primary Target)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-context-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
+                "label": "ECP — 지금 가장 먼저 검증할 고객"
               },
               {
-                "id": "f2",
-                "label": "1순위 가치제안 (Primary Value Proposition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-context-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
-                ]
+                "label": "Future ICP — 아직은 가설인 미래 이상고객"
               },
               {
-                "id": "f3",
-                "label": "첫 검증 고객 (ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-result-form"
-                  }
-                ]
+                "label": "Anti-ICP — 지금은 집중하지 않는 전략적 경계"
               },
               {
-                "id": "f4",
-                "label": "ECP 선택 이유 (Why This ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "ECP의 가장 큰 리스크 (Main ECP Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-result-form"
-                  },
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "미래 ICP 가설 (Future ICP Hypothesis)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "ICP 판단에 필요한 데이터 (ICP Data Needed)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "현재 비선호 고객 (Anti-ICP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "지금은 맞지 않는 이유 (Why Not Now)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "현재 부족한 역량 (Missing Capability)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "재검토 조건 (Revisit Condition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f12",
-                "label": "지지 근거 (Supporting Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-context-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f13",
-                "label": "반대 근거 (Counter Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P03에서 가져오기",
-                    "sourceBlockId": "d4l2-b03-context-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f14",
-                "label": "사람의 최종 판단 메모 (Human Decision Notes)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Prompt 2의 AI 권고안을 최종 검토한 뒤 결론을 적으세요."
+                "label": "경계는 감정이 아니라 Evidence와 Capability로 정한다"
               }
             ]
-          },
-          "description": "버튼으로 가져온 내용은 Prompt 1·2 결과 전체입니다 — 이 필드에 해당하는 부분만 남기고 정리하세요."
-        },
-        {
-          "id": "d4l2-b08-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지에서는 아직 저장하지 않습니다. 다 채운 뒤 다음 페이지에서 실제로 저장 버튼을 클릭하게 하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        }
-      ]
-    },
-    {
-      "id": "p09",
-      "title": "BUSINESS SHOWCASE",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d4l2-b09-showcase",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\n**1순위 타겟 (Primary Target)**\n정기관리형 고객\n\n**첫 검증 고객 (ECP)**\n4~6주 단위로 반복적으로 시술을 받지만, 방문할 때마다 원하는 스타일이나 이전 시술내용을 다시 설명해야 하는 고객\n\n**ECP 선택 이유 (Why ECP)**\n- 반복 문제 존재\n- Trigger가 명확함: 다음 예약/시술\n- 실제 매장에서 접근 가능\n- 현재 제공 가능한 서비스로 검증 가능\n\n**미래 ICP 가설 (Future ICP Hypothesis)**\n시술 이력 기반 개인화 서비스와 반복예약을 지속적으로 이용하는 정기고객 — 단, 아직 실제 반복사용·재예약·매출 데이터가 없으므로 가설입니다.\n\n**현재 비선호 고객 (Anti-ICP)**\n현재 매장이 제공하지 않는 고난도 특수시술만을 원하는 일회성 고객\n\n**지금은 맞지 않는 이유 (Why Not Now)**\n현재 서비스 역량과 핵심 Value Proposition이 맞지 않음.\n\n**재검토 조건 (Revisit Condition)**\n해당 시술역량과 담당 인력이 확보된 이후 재검토.\n\n※ 이 내용은 교육용 적용 사례이며 실제 성공사례처럼 표현하지 않습니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        }
-      ]
-    },
-    {
-      "id": "p10",
-      "title": "결과 저장 / 완료",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d4l2-b10-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
-            "emphasis": "hero"
-          },
-          "theme": { "background": "dark", "bordered": false },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b10-a-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## A. Customer Boundary Map 저장\n\n앞 페이지에서 정리한 내용이 저장됩니다.",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b10-vp-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "6차시 — Customer Boundary Map v0.1",
-            "sourceBlockId": "d4l2-b08-form",
-            "buttonLabel": "Customer Boundary Map 저장"
           }
         },
         {
-          "id": "d4l2-b10-preview",
-          "type": "result-preview",
+          "id": "d4l2-b05-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "markdown": "**결정은 8차시 통합 실습에서 합니다.** 오늘은 개념만 확실히 익힙니다.",
+            "emphasis": "lead"
           }
-        },
-        {
-          "id": "d4l2-b10-b-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## B. Business Context 업데이트\n\n5차시 Business Context를 그대로 가져오고, 이번에 새로 정한 ECP·ICP·Anti-ICP 관련 항목만 갱신하세요.",
-            "emphasis": "normal"
-          },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b10-context-form",
-          "type": "input-form",
-          "title": "Business Context v0.6",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "확인된 사실 (Confirmed Facts)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Business Context v0.5",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "현재 가설 (Current Hypotheses)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Business Context v0.5",
-                    "sourceLabel": "현재 가설 (Current Hypotheses)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "고객 세그먼트 (Customer Segments)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Business Context v0.5",
-                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "1순위 타겟 (Primary Target)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "1순위 가치제안 (Primary Value Proposition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "지지 근거 (Supporting Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f12"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "부족한 증거 (Missing Proof)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Business Context v0.5",
-                    "sourceLabel": "부족한 증거 (Missing Proof)"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "첫 검증 고객 (ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "ECP 리스크 (ECP Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "미래 ICP 가설 (Future ICP Hypothesis)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "ICP 판단에 필요한 데이터 (ICP Data Needed)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f7"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f12",
-                "label": "현재 비선호 고객 (Anti-ICP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f13",
-                "label": "지금은 맞지 않는 이유 (Why Not Now)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f9"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f14",
-                "label": "재검토 조건 (Revisit Condition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d4l2-b08-form",
-                    "sourceFieldIds": [
-                      "f11"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f15",
-                "label": "고객 경계 리스크 (Customer Boundary Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Prompt 2 결과에서 가져오기",
-                    "sourceBlockId": "d4l2-b06-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f16",
-                "label": "검증 대기 목록 (Validation Backlog)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Business Context v0.5",
-                    "sourceLabel": "검증 대기 목록 (Validation Backlog)"
-                  }
-                ]
-              },
-              {
-                "id": "f17",
-                "label": "다음 결정 사항 (Next Decision)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "선택한 ECP·Anti-ICP 경계 안에서 Actor(Buyer·User·Influencer)는 어떻게 구성되는가?"
-              }
-            ]
-          },
-          "description": "5차시 Business Context v0.5를 복사해 이번 ECP·ICP·Anti-ICP 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
-        },
-        {
-          "id": "d4l2-b10-context-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "6차시 — Business Context v0.6",
-            "sourceBlockId": "d4l2-b10-context-form",
-            "buttonLabel": "Business Context v0.6 저장"
-          }
-        },
-        {
-          "id": "d4l2-b10-next",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 다음 차시\n\n**7차시 — Actor: Buyer · User · Influencer**",
-            "emphasis": "normal"
-          },
-          "theme": { "background": "muted", "bordered": true },
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
-        },
-        {
-          "id": "d4l2-b10-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "두 저장 버튼을 모두 클릭해서 목록에 새 항목 2개가 추가되는지, 1~5차시 artifact가 그대로 남아있는지 확인시키세요. Anti-ICP는 나쁜 고객이 아니라 지금 시점의 Fit 판단이라는 것을 마지막으로 다시 강조하세요.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트",
-          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     }

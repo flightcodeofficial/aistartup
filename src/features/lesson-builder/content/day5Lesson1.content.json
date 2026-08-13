@@ -471,10 +471,10 @@
                 "importFrom": [
                   {
                     "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
+                    "label": "8차시에서 가져오기",
                     "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
-                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
                   }
                 ]
               },
@@ -503,7 +503,7 @@
                     "kind": "prior-artifact",
                     "label": "8차시에서 가져오기",
                     "artifactType": "business-idea",
-                    "artifactTitle": "8차시 — Customer Journey Map v0.1",
+                    "artifactTitle": "8차시 — Business Context v0.8",
                     "sourceLabel": "지지 근거 (Supporting Evidence)"
                   }
                 ]
@@ -516,24 +516,10 @@
                 "importFrom": [
                   {
                     "kind": "prior-artifact",
-                    "label": "주요 사용자",
+                    "label": "8차시에서 가져오기",
                     "artifactType": "business-idea",
                     "artifactTitle": "8차시 — Business Context v0.8",
-                    "sourceLabel": "주요 사용자 (Primary User)"
-                  },
-                  {
-                    "kind": "prior-artifact",
-                    "label": "주요 구매자",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "8차시 — Business Context v0.8",
-                    "sourceLabel": "주요 구매자 (Primary Buyer)"
-                  },
-                  {
-                    "kind": "prior-artifact",
-                    "label": "먼저 만날 Actor",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "8차시 — Business Context v0.8",
-                    "sourceLabel": "먼저 만날 Actor (First Contact Actor)"
+                    "sourceLabel": "핵심 메시지 대상 Actor (Primary Message Actor)"
                   }
                 ]
               },
@@ -590,17 +576,17 @@
                 "importFrom": [
                   {
                     "kind": "prior-artifact",
-                    "label": "가장 큰 반대요인",
+                    "label": "반대 근거 / 주요 리스크",
                     "artifactType": "business-idea",
                     "artifactTitle": "8차시 — Business Context v0.8",
-                    "sourceLabel": "가장 큰 반대요인 (Main Objection)"
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
                   },
                   {
                     "kind": "prior-artifact",
-                    "label": "확인되지 않은 Journey 근거",
+                    "label": "메시지 경계",
                     "artifactType": "business-idea",
                     "artifactTitle": "8차시 — Business Context v0.8",
-                    "sourceLabel": "확인되지 않은 Journey 근거 (Missing Journey Evidence)"
+                    "sourceLabel": "메시지 경계 (Message Boundary)"
                   }
                 ]
               }
@@ -1155,10 +1141,10 @@
                 "importFrom": [
                   {
                     "kind": "prior-artifact",
-                    "label": "5차시에서 가져오기",
+                    "label": "8차시에서 가져오기",
                     "artifactType": "business-idea",
-                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
-                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
                   }
                 ]
               },
@@ -1202,7 +1188,7 @@
                     "kind": "prior-artifact",
                     "label": "8차시에서 가져오기",
                     "artifactType": "business-idea",
-                    "artifactTitle": "8차시 — Customer Journey Map v0.1",
+                    "artifactTitle": "8차시 — Business Context v0.8",
                     "sourceLabel": "지지 근거 (Supporting Evidence)"
                   }
                 ]
