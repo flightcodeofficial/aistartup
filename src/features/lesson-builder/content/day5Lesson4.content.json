@@ -4,523 +4,2795 @@
   "week": 2,
   "day": 5,
   "lesson": 4,
-  "title": "문의 분류·후속 흐름·승인 기반 자동화 설계",
-  "description": "폼→기록→분류→초안→사람 승인까지 최소 자동화 흐름을 설계합니다.",
-  "durationMinutes": 60,
+  "title": "AI Creative Director — AI 초안을 그대로 쓰지 않고, 비평하고 결정하고 수정하기",
+  "description": "9~11차시에서 확정한 전략을 바꾸지 않고, Writer(초안) → Critic(비평) → Human(결정) → Editor(수정)의 AI 협업 구조로 실제 콘텐츠를 완성합니다.",
+  "durationMinutes": 70,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d5l4-p01",
-      "title": "자동화는 사람 제거가 아니라 반복작업 줄이기",
-      "layout": "standard",
+      "id": "p01",
+      "title": "AI 초안을 그대로 쓰지 않고, 비평하고 결정하고 수정합니다",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d5l4-p01-b1",
+          "id": "d5l4-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 자동화는 사람 제거가 아니라 반복작업 줄이기\n\n**폼→기록→분류→초안→사람 승인까지 최소 자동화 흐름을 설계합니다.**",
+            "markdown": "# AI 초안을 그대로 쓰지 않고,\n# 비평하고 결정하고 수정합니다\n\n\"AI가 만든 첫 번째 초안을 어떻게 검토하고, 사람의 판단을 반영해 실제로 사용할 콘텐츠로 발전시킬 것인가?\"",
             "emphasis": "hero"
-          }
-        },
-        {
-          "id": "d5l4-p01-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "이전 Lesson의 결과물을 재사용해 오늘 결과물을 만듭니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p01-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 외부 발송·공개는 사람이 최종 검수한 뒤 진행합니다.",
-            "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p02",
-      "title": "최소 흐름",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l4-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최소 흐름\n\n- Tally → 기록 → 분류 → 답변 초안 → 승인",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p02-svg",
-          "type": "image",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/week2/day5/d5l4_framework.svg",
-            "alt": "문의 분류·후속 흐름·승인 기반 자동화 설계 인포그래픽",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "d5l4-p02-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 구조를 먼저 이해시킨 뒤 실습으로 이동합니다.",
-            "emphasis": "normal"
+          "theme": {
+            "background": "dark",
+            "bordered": false
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p03",
-      "title": "자동화하지 않을 단계",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l4-p03-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 자동화하지 않을 단계\n\n- 환불 승인 / 민감정보 / 분쟁 / 정책 예외",
-            "emphasis": "normal"
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d5l4-p03-b2",
-          "type": "rich-text",
+          "id": "d5l4-b01-before",
+          "type": "infographic",
           "visibility": "visible",
           "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p03-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p04",
-      "title": "분류 기준",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l4-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 분류 기준\n\n- 문의 유형 / 긴급도 / 담당자 / 다음 행동",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p04-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p04-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p05",
-      "title": "오류가 나면",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l4-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 오류가 나면\n\n- 수동 경로와 오류 알림",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p05-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p06",
-      "title": "인터랙티브: 자동화 경계",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l4-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브: 자동화 경계\n\n카드를 눌러 판단 기준을 비교합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/week2/day5/d5l4_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        },
-        {
-          "id": "d5l4-p06-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 정답 암기보다 이유를 말하게 합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p07",
-      "title": "실습: 내 문의 흐름 그리기",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l4-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실습: 내 문의 흐름 그리기\n\n내 사업 기준으로 작성합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "문의 분류·후속 흐름·승인 기반 자동화 설계 실습 입력",
-          "data": {
-            "fields": [
+            "variant": "steps",
+            "items": [
               {
-                "id": "d5l4-p07-form-f1",
-                "label": "현재 고객/대상",
-                "kind": "long-text",
-                "required": true
+                "label": "9차시",
+                "description": "핵심 메시지 (Core Message)"
               },
               {
-                "id": "d5l4-p07-form-f2",
-                "label": "사용할 근거 자료",
-                "kind": "long-text",
-                "required": true
+                "label": "10차시",
+                "description": "SNS 콘텐츠 구조\nHook → Value → Body → Proof → CTA"
               },
               {
-                "id": "d5l4-p07-form-f3",
-                "label": "핵심 메시지 또는 답변",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d5l4-p07-form-f4",
-                "label": "다음 행동(CTA/후속 단계)",
-                "kind": "long-text",
-                "required": true
+                "label": "11차시",
+                "description": "콘텐츠 관점 + Hook\nAngle → Hook"
               }
             ]
-          }
-        },
-        {
-          "id": "d5l4-p07-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 실제 고객 민감정보는 넣지 않습니다.",
-            "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p08",
-      "title": "ChatGPT로 자동화 명세",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l4-p08-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## ChatGPT로 자동화 명세\n\n트리거 1개, 액션 1~3개, 승인 1개",
-            "emphasis": "normal"
-          }
+          "title": "지금까지"
         },
         {
-          "id": "d5l4-p08-prompt",
-          "type": "prompt",
+          "id": "d5l4-b01-today",
+          "type": "infographic",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 마케팅 코치입니다.\n아래 입력만 사용해 초안을 작성하세요.\n1) 제공되지 않은 사실은 만들지 마세요.\n2) 불확실하면 \"확인 필요\"로 표시하세요.\n3) 다음 행동은 하나만 제안하세요.\n4) 과장·민감정보 추정·가짜 후기·근거 없는 수치를 사용하지 마세요.\n\n[대상]\n[근거 자료]\n[핵심 메시지]\n[다음 행동]",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          }
-        },
-        {
-          "id": "d5l4-p08-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p09",
-      "title": "Make/Zapier는 확장",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l4-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## Make/Zapier는 확장\n\n- 빠른 수강생만 실제 연결",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p09-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p10",
-      "title": "2주차 결과물 연결",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l4-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
+            "variant": "steps",
+            "items": [
               {
-                "id": "d5l4-p10-q-q1",
-                "question": "이 Lesson에서 가장 먼저 확인할 것은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d5l4-p10-q-c1",
-                    "text": "AI 문장이 멋진가"
-                  },
-                  {
-                    "id": "d5l4-p10-q-c2",
-                    "text": "고객 자료·사실·목표와 연결되는가"
-                  },
-                  {
-                    "id": "d5l4-p10-q-c3",
-                    "text": "길이가 충분히 긴가"
-                  },
-                  {
-                    "id": "d5l4-p10-q-c4",
-                    "text": "자동화할 수 있는가"
-                  }
-                ],
-                "correctChoiceId": "d5l4-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
+                "label": "12차시 — AI Creative Director",
+                "description": "초안 작성자(Writer) → 비평자(Critic) → 사람(Human) → 편집자(Editor)"
               }
             ]
-          }
+          },
+          "title": "오늘"
         },
         {
-          "id": "d5l4-p10-b2",
+          "id": "d5l4-b01-key",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "표현보다 고객 자료·사실·목표와의 연결을 먼저 확인합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-p10-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 자동화 가능성보다 정확성과 연결성이 우선입니다.",
+            "markdown": "**12차시에서는 전략을 다시 만들지 않습니다.**\n\n이미 결정된 전략(Target·Core Message·Angle·Hook)을 실제 콘텐츠로 발전시킵니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p11",
-      "title": "최종 운영 체크리스트",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l4-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 운영 체크리스트\n\n최종본과 선택 이유를 정리합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l4-final-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "문의 분류·후속 흐름·승인 기반 자동화 설계 최종 결과",
-          "data": {
-            "fields": [
-              {
-                "id": "d5l4-final-form-f1",
-                "label": "최종 결과물",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d5l4-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d5l4-final-form-f3",
-                "label": "검수한 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d5l4-final-form-f4",
-                "label": "다음 실험/후속 행동",
-                "kind": "long-text",
-                "required": true
-              }
-            ]
-          }
-        },
-        {
-          "id": "d5l4-p11-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 다음 수업에서 재사용할 수 있게 근거와 선택 이유를 함께 남깁니다.",
-            "emphasis": "normal"
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l4-p12",
-      "title": "저장",
-      "layout": "standard",
-      "blocks": [
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
         {
-          "id": "d5l4-p12-preview",
+          "id": "d5l4-b01-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "automation",
+            "artifactType": "business-idea",
+            "emptyMessage": "11차시를 먼저 완료해야 콘텐츠 관점·Hook 결과가 표시됩니다."
+          },
+          "title": "11차시 결과"
+        },
+        {
+          "id": "d5l4-b01-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "목록이 비어 있으면 11차시를 아직 완료하지 않은 학생입니다 — 11차시 P12에서 저장하고 오게 하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "AI 첫 결과는 Draft다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# Generate ≠ Final",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b02-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "AI에게 \"SNS 홍보글 써줘\"라고 요청하고 첫 결과를 바로 사용하면 문제가 생깁니다. AI가 한 번에 전략가·작가·사실검증자·브랜드 담당자·편집자 역할까지 모두 수행하려 하기 때문입니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b02-problems",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "문장은 자연스럽지만 메시지가 흐려짐"
+              },
+              {
+                "label": "Hook이 과장됨"
+              },
+              {
+                "label": "근거(Evidence) 없는 주장 추가"
+              },
+              {
+                "label": "일반적인 광고문구"
+              },
+              {
+                "label": "여러 장점 혼합"
+              },
+              {
+                "label": "CTA 남발"
+              },
+              {
+                "label": "핵심 메시지 변질(Core Message Drift)"
+              }
+            ]
+          },
+          "title": "한 번에 다 시켰을 때 흔히 생기는 문제"
+        },
+        {
+          "id": "d5l4-b02-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI의 첫 결과는 완성품이 아니라 검토해야 할 초안(Draft)입니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b02-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "10~11차시에서 만든 클릭베이트·메시지 변질 문제와 이 페이지가 같은 원인(역할을 나누지 않고 한 번에 맡김)에서 나온다는 것을 연결해주세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "네 가지 역할 — Writer · Critic · Human · Editor",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 초안 작성자, 비평자, 사람, 편집자",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b03-roles",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "초안 작성자 (Writer)",
+                "description": "\"어떻게 표현할까?\" → 초안 생성"
+              },
+              {
+                "label": "비평자 (Critic)",
+                "description": "\"무엇이 잘못됐을까?\" → 문제 탐지"
+              },
+              {
+                "label": "사람 (Human)",
+                "description": "\"무엇을 유지하고 무엇을 바꿀까?\" → 의사결정"
+              },
+              {
+                "label": "편집자 (Editor)",
+                "description": "\"사람의 결정을 어떻게 결과물에 반영할까?\" → 수정 실행"
+              }
+            ]
+          },
+          "title": "초안 작성자(Writer) → 비평자(Critic) → 사람(Human) → 편집자(Editor)"
+        },
+        {
+          "id": "d5l4-b03-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**같은 AI를 사용하더라도 역할과 작업을 분리하면 더 통제 가능한 결과를 만들 수 있습니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b03-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 네 역할이 오늘 실습의 페이지 순서(Prompt1=Writer+Critic → Human Decision → Prompt2=Editor)와 정확히 대응된다는 것을 미리 알려주세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "잘 만드는 것과 잘못을 찾는 것은 다른 작업입니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b04-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 잘 만드는 것과\n# 잘못을 찾는 것은 다른 작업입니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b04-goals",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Writer 목표",
+                "description": "가능한 초안을 만든다"
+              },
+              {
+                "label": "Critic 목표",
+                "description": "약점과 위험을 찾는다"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l4-b04-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Writer에게 동시에 \"글을 만들고 네 글을 완벽하게 검토해\"라고 하는 것보다, 역할과 평가기준을 명확하게 나누는 것이 더 좋은 결과를 만듭니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b04-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Generation ≠ Evaluation**\n\n이 원리는 SNS 콘텐츠뿐 아니라 사업계획서·IR·이메일·세일즈 문구·운영문서에서도 반복 사용할 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b04-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 원칙이 오늘 실습에만 쓰이는 게 아니라 앞으로 어떤 AI 작업에도 적용되는 범용 원칙이라는 것을 강조하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "AI 콘텐츠를 무엇으로 평가할 것인가 (1)",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# AI 콘텐츠를 무엇으로 평가할 것인가?",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b05-lens",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "① 고객 적합성 (Target Fit)",
+                "description": "질문: 이 콘텐츠가 정말 현재 1순위 고객에게 말하고 있는가?\n잘못된 예: 고객이 슬며시 넓어지거나 다른 사람 이야기가 됨"
+              },
+              {
+                "label": "② 메시지 적합성 (Message Fit)",
+                "description": "질문: 9차시에서 정한 핵심 메시지(Core Message)가 그대로 살아 있는가?\n잘못된 예: 표현을 다듬는 사이 원래 의미가 슬며시 바뀜"
+              },
+              {
+                "label": "③ 후킹 적합성 (Hook Fit)",
+                "description": "질문: Hook이 관심을 끌면서 Body가 그 약속을 실제로 충족하는가?\n잘못된 예: Hook은 강한데 본문이 그 기대를 못 채움(낚시성 문구)"
+              }
+            ]
+          },
+          "title": "평가 Lens ① — Target · Message · Hook"
+        },
+        {
+          "id": "d5l4-b05-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "각 Lens의 '점검 질문'이 실습 Prompt 1의 Critic 단계에 그대로 다시 나온다는 것을 알려주세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "AI 콘텐츠를 무엇으로 평가할 것인가 (2)",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# AI 콘텐츠를 무엇으로 평가할 것인가? (계속)",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b06-lens",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "④ 명확성 (Clarity)",
+                "description": "질문: 한 번 읽고 이해할 수 있는가?\n위험: 지나친 전문용어 / 추상적 표현 / 너무 긴 문장 / 정보 과다"
+              },
+              {
+                "label": "⑤ 신뢰성 (Credibility)",
+                "description": "질문: 실제 근거(Evidence)로 이 주장(Claim)을 감당할 수 있는가?\nClaim ≤ Evidence 원칙을 여기서도 그대로 적용"
+              },
+              {
+                "label": "⑥ 브랜드 적합성 (Brand Fit)",
+                "description": "질문: 우리 사업이 실제로 이런 말투와 태도를 사용하고 싶은가?\n단순히 예쁜 말투가 아니라 사업의 일관된 태도인지 확인"
+              }
+            ]
+          },
+          "title": "평가 Lens ② — Clarity · Credibility · Brand Fit"
+        },
+        {
+          "id": "d5l4-b06-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**6개 Lens(Target·Message·Hook·Clarity·Credibility·Brand Fit)를 한 세트로 기억하세요.** 오늘 실습의 Critic이 이 6개를 그대로 사용합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b06-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "6개 Lens를 학생이 외울 필요는 없다는 것을 알려주세요 — Prompt 1에 이미 다 들어있고, 학생은 결과를 읽고 판단만 하면 됩니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "문제를 찾는 것과 바로 고치는 것을 분리합니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 문제를 찾는 것과\n# 바로 고치는 것을 분리합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b07-bad",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "잘못된 요청",
+                "description": "\"이 글 별론데 알아서 고쳐줘.\""
+              },
+              {
+                "label": "문제",
+                "description": "AI가 무엇을 왜 바꿨는지 사람이 판단할 기회가 사라진다"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l4-b07-flow",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "비평 (Critique)",
+                "description": "무엇이 문제인가?"
+              },
+              {
+                "label": "사람의 결정 (Human Decision)",
+                "description": "실제로 무엇을 고칠 것인가?"
+              },
+              {
+                "label": "수정 (Rewrite / Edit)",
+                "description": "확정된 수정사항을 반영한다"
+              }
+            ]
+          },
+          "title": "올바른 흐름"
+        },
+        {
+          "id": "d5l4-b07-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**비평자(Critic)는 결정하지 않습니다. 사람이 결정합니다. 편집자(Editor)가 그 결정을 실행합니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b07-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "오늘 실습이 정확히 이 3단계(Prompt1 Critique → Human Decision → Prompt2 Edit)로 이루어진다는 것을 짚어주세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "사람은 마지막 승인 버튼이 아닙니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 사람은 마지막 승인 버튼이 아닙니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b08-loop",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "AI 생성"
+              },
+              {
+                "label": "AI 검토"
+              },
+              {
+                "label": "사람 판단"
+              },
+              {
+                "label": "AI 수정"
+              }
+            ]
+          },
+          "title": "사람 개입형 AI (Human-in-the-Loop)"
+        },
+        {
+          "id": "d5l4-b08-decide",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "유지할 것"
+              },
+              {
+                "label": "수정할 것"
+              },
+              {
+                "label": "삭제할 것"
+              },
+              {
+                "label": "허용하지 않을 주장"
+              },
+              {
+                "label": "원하는 표현 방향"
+              }
+            ]
+          },
+          "title": "사람이 중간에서 결정하는 것"
+        },
+        {
+          "id": "d5l4-b08-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI는 분석하고 추천합니다. 사람은 결정합니다. 사람의 결정은 다음 AI 작업의 Context가 됩니다.**",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b08-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "'사람의 결정이 다음 AI 작업의 Context가 된다'는 문장이 오늘 Prompt 2가 Human Decision 결과를 입력으로 받는 이유라는 것을 연결해주세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "'별로예요'는 비평이 아닙니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# \"별로예요\"는\n# 비평(Critique)이 아닙니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b09-structure",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "관찰 (Observation)",
+                "description": "무엇이 보이는가?"
+              },
+              {
+                "label": "위험 (Risk)",
+                "description": "왜 문제가 되는가?"
+              },
+              {
+                "label": "수정 방향 (Revision Direction)",
+                "description": "어떤 방향으로 수정해야 하는가?"
+              }
+            ]
+          },
+          "title": "좋은 Critic의 구조"
+        },
+        {
+          "id": "d5l4-b09-example",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "관찰 (Observation)",
+                "description": "Hook에서 성적 향상을 강하게 암시하고 있다."
+              },
+              {
+                "label": "위험 (Risk)",
+                "description": "현재 Evidence는 학습관리 Process만 뒷받침한다."
+              },
+              {
+                "label": "수정 방향 (Revision Direction)",
+                "description": "결과(Outcome) 주장을 과정(Process) 주장으로 낮춘다."
+              }
+            ]
+          },
+          "title": "예시(교육용)"
+        },
+        {
+          "id": "d5l4-b09-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "이 구조(관찰 → 위험 → 수정 방향)를 오늘 실습 Prompt 1의 Critic 단계에서도 그대로 사용합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b09-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "학생이 Prompt 1 결과를 읽을 때 이 3단 구조가 보이는지 확인하도록 안내하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "채널에 맞게 표현은 바꾸되, 메시지는 바꾸지 않습니다",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 채널에 맞게 표현은 바꾸되,\n# 메시지는 바꾸지 않습니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b10-adapt",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "바뀔 수 있는 것",
+                "description": "길이 / 문장 호흡 / 말투 / 줄바꿈 / 형식 / CTA 표현"
+              },
+              {
+                "label": "유지할 것",
+                "description": "1순위 고객(Target) / 핵심 문제(Problem) / 핵심 메시지(Core Message) / 근거(Evidence) / 주장 강도(Claim Strength) / 메시지 불변요소(Message Invariants)"
+              }
+            ]
+          },
+          "title": "채널 적응(Channel Adaptation)"
+        },
+        {
+          "id": "d5l4-b10-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**이번 차시에서는 각 채널용 콘텐츠 여러 개를 생성하지 않습니다.** 학생은 주 채널(Primary Channel) 1개만 선택합니다.\n\nSNS와 Blog의 본격적인 구조 차이는 13차시에서 다룹니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b10-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "오늘은 채널별 콘텐츠를 여러 개 만드는 시간이 아니라는 것을 확실히 짚어주세요 — Primary Channel 하나만 고르고 그 하나만 편집합니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "AI가 쓴 글처럼 보이는 이유 + 실습 전 리마인드",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l4-b11-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# AI가 쓴 글처럼 보이는 이유",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b11-problems",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "지나친 이모지"
+              },
+              {
+                "label": "\"혁신적인\", \"새로운 패러다임\", \"단순한 ~을 넘어\""
+              },
+              {
+                "label": "장점 줄줄이 나열"
+              },
+              {
+                "label": "지나친 확신"
+              },
+              {
+                "label": "비슷한 길이의 문장 반복"
+              },
+              {
+                "label": "모든 문단이 광고처럼 끝남"
+              },
+              {
+                "label": "실제 Context가 보이지 않음"
+              }
+            ]
+          },
+          "title": "AI Writing의 대표 문제"
+        },
+        {
+          "id": "d5l4-b11-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI 문장을 사람처럼 위장하는 것이 목표가 아닙니다.**\n\n실제 고객, 실제 문제, 실제 근거, 우리 사업의 판단이 보이게 하는 것이 목표입니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b11-reminder-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 실습 전 2분 리마인드",
+            "emphasis": "hero"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b11-lock",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "🔒 오늘 다시 정하지 않는 것",
+                "description": "1순위 고객 / 핵심 고객 문제 / 핵심 메시지 / 메시지 불변요소 / 고객 질문 / 본문 구조 / 사용할 근거 / 1차 CTA / 1순위 관점(Angle) / 1순위 Hook / 사용 금지 주장 / 메시지 변질 방지 규칙"
+              },
+              {
+                "label": "✍️ 오늘 결정하는 것",
+                "description": "Writer 초안 / Critic의 문제점 / 무엇을 KEEP·REVISE·REMOVE 할지 / 최종 말투(Tone) / 최종 콘텐츠"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l4-b11-flow",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Context 가져오기"
+              },
+              {
+                "label": "Prompt 1\n초안·비평 (Writer → Critic)"
+              },
+              {
+                "label": "사람의 결정 (Human Decision)"
+              },
+              {
+                "label": "Prompt 2\n편집 (Editor)"
+              },
+              {
+                "label": "최종 확인 (Final Check)"
+              }
+            ]
+          },
+          "title": "실습 흐름"
+        },
+        {
+          "id": "d5l4-b11-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "실습 직전 반드시 짚어주세요 — 오늘은 완벽한 SNS 글 하나를 뚝딱 만드는 시간이 아니라, AI 초안을 사람이 비평·판단·수정하는 과정을 경험하는 시간입니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "실습 1 — Writer → Critic",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l4-b12-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# AI가 초안을 쓰고,\n# 스스로 검토하게 합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b12-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 고객",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "핵심 고객 문제",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "9차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "9차시 — Core Message Map v0.1",
+                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "핵심 메시지",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "메시지 불변요소",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "메시지 불변요소 (Message Invariants)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "고객이 지금 궁금해하는 질문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "고객 질문 (Customer Question)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "본문 기본 구조",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "SNS 본문 구조 (Body Structure)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "실제 사용 가능한 근거",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "SNS 활용 근거 (Content Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "1차 행동 유도",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "1순위 콘텐츠 관점",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 콘텐츠 관점 (Primary Content Angle)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "1순위 Hook",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 Hook (Primary Hook)"
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "사용하면 안 되는 주장",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "메시지 변질 방지 규칙",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "메시지 변질 방지 규칙 (Drift Guardrail)"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": "전부 버튼으로 채웁니다 — 새로 타이핑할 칸은 없습니다. 아래 프롬프트의 [ ] 열두 곳에 순서대로 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d5l4-b12-prompt",
+          "type": "prompt",
+          "title": "Writer → Critic 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n이번 작업에서는 하나의 역할을 동시에 수행하지 않습니다. 반드시 아래 두 단계를 순서대로 수행하세요.\n\nSTEP A에서는 초안 작성자(Writer), STEP B에서는 비평자(Critic) 역할을 수행합니다. Critic은 Writer의 결과를 무조건 옹호하지 말고 독립적인 평가자로 검토하세요.\n\n================================\n[확정된 Business Context]\n================================\n\n1순위 고객:\n[ ]\n\n핵심 고객 문제:\n[ ]\n\n핵심 메시지:\n[ ]\n\n메시지 불변요소:\n[ ]\n\n고객이 지금 궁금해하는 질문:\n[ ]\n\n본문 기본 구조:\n[ ]\n\n실제 사용 가능한 근거:\n[ ]\n\n1차 행동 유도:\n[ ]\n\n1순위 콘텐츠 관점:\n[ ]\n\n1순위 Hook:\n[ ]\n\n사용하면 안 되는 주장:\n[ ]\n\n메시지 변질 방지 규칙:\n[ ]\n\n================================\nSTEP A — WRITER\n================================\n\n위에서 사람이 확정한 전략을 변경하지 않고 SNS 콘텐츠 초안 1개를 작성하세요.\n\n조건:\n\n1. 1순위 Hook을 출발점으로 사용하세요.\n\n2. 핵심 메시지를 변경하지 마세요.\n\n3. 기존 콘텐츠 구조(Hook → Value → Body → Proof → CTA)의 역할이 콘텐츠 안에서 작동하도록 하세요. 단, 억지로 5문단으로 구분하지 마세요.\n\n4. 한 콘텐츠에는 하나의 중심 생각만 담으세요.\n\n5. 제공된 실제 근거만 Proof로 사용하세요.\n\n6. 존재하지 않는 후기·고객반응·숫자·통계·성과·인증·사례를 만들지 마세요.\n\n7. 1차 행동 유도(Primary CTA) 하나만 사용하세요.\n\n8. 과장된 광고표현과 상투적인 AI 표현을 줄이세요.\n\n9. 아직 채널별 여러 버전을 만들지 마세요.\n\n[Writer 출력]\n\nSNS 콘텐츠 초안:\n-\n\n핵심 메시지가 반영된 부분:\n-\n\n사용한 Proof:\n-\n\n사용한 CTA:\n-\n\n================================\nSTEP B — CRITIC\n================================\n\nWriter 역할을 종료하고 비평자(Critic) 역할로 전환하세요. 방금 작성된 콘텐츠를 독립적으로 검토하세요.\n\n다음 6개의 Lens를 사용하세요.\n\n1. 고객 적합성 (Target Fit) — 현재 1순위 고객에게 적합한가?\n\n2. 메시지 적합성 (Message Fit) — 핵심 메시지가 유지되는가?\n\n3. 후킹 적합성 (Hook Fit) — Hook의 약속을 Body가 실제로 충족하는가?\n\n4. 명확성 (Clarity) — 쉽고 빠르게 이해되는가?\n\n5. 신뢰성 (Credibility) — 주장(Claim)이 실제 근거(Evidence)보다 강하지 않은가?\n\n6. 브랜드 적합성 (Brand Fit) — 과장되거나 흔한 AI 광고문구가 있는가?\n\n추가 확인: 낚시성 문구(Clickbait) / 메시지 변질(Message Drift) / 메시지 여러 개 혼합 / CTA 과잉 / 가짜 Evidence / 불필요하게 긴 표현\n\n문제가 있다면 다음 구조로 설명하세요.\n\n관찰(Observation): 무엇이 문제인가?\n위험(Risk): 왜 문제가 되는가?\n수정 방향(Revision Direction): 어떤 방향으로 수정해야 하는가?\n\n마지막 판정: KEEP / REVISE / HOLD / REJECT 중 하나를 추천하세요.\n\n[Critic 출력]\n\n전체 판정:\n-\n\n가장 잘 된 점:\n-\n\n가장 중요한 문제:\n-\n\nTarget Fit:\n-\n\nMessage Fit:\n-\n\nHook Fit:\n-\n\nClarity:\n-\n\nCredibility:\n-\n\nBrand Fit:\n-\n\n수정 우선순위 최대 3개:\n1.\n2.\n3.\n\n절대로 바꾸면 안 되는 부분:\n-\n\n사람이 최종 결정해야 할 부분:\n-",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "위 Context 준비 칸의 내용을 [ ] 열두 곳에 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d5l4-b12-chatgpt",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Writer → Critic 실행",
+            "practiceDescription": "확정된 전략으로 SNS 콘텐츠 초안을 쓰고, 곧바로 6개 Lens로 스스로 비평합니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "d5l4-b12-result-form",
+          "type": "input-form",
+          "title": "실습 1 AI 초안·비평 결과",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "실습 1 AI 초안·비평 결과 (Writer + Critic Result)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체(Writer 출력 + Critic 출력)를 여기 한 번만 붙여넣으세요."
+              }
+            ]
+          },
+          "description": "Writer 출력과 Critic 출력을 각각 다른 칸에 나누지 말고, 전체를 한 번만 붙여넣으세요."
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "title": "사람의 결정 — 무엇을 유지하고 무엇을 고칠 것인가",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l4-b13-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# Critic의 추천을 그대로 저장하지 않습니다\n\nAI 초안과 비평을 읽고, 사람이 실제 수정 방향을 결정하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b13-form",
+          "type": "input-form",
+          "title": "사람의 결정 (Human Decision)",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "핵심 메시지 (Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "1순위 콘텐츠 관점 (Primary Angle)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 콘텐츠 관점 (Primary Content Angle)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "1순위 Hook (Primary Hook)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 Hook (Primary Hook)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "사용할 근거 (Content Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "SNS 활용 근거 (Content Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "유지할 것 (KEEP)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Writer 초안에서 반드시 살릴 부분을 짧게 적으세요."
+              },
+              {
+                "id": "f7",
+                "label": "수정할 것 (REVISE)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "실제로 수정할 사항 최대 3개."
+              },
+              {
+                "id": "f8",
+                "label": "삭제할 것 (REMOVE)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "빼야 할 표현이나 내용. 없으면 '없음'."
+              },
+              {
+                "id": "f9",
+                "label": "절대 추가하지 말 것 (DO NOT ADD)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "기존 사용 금지 주장을 버튼으로 가져오고, 이번 콘텐츠에서 추가로 조심할 과장·표현이 있으면 더하세요.",
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "원하는 말투·태도 (Tone Direction)",
+                "kind": "select",
+                "required": false,
+                "placeholder": "가장 가까운 방향을 선택하세요.",
+                "options": [
+                  "차분하고 전문적",
+                  "친근하지만 과장 없이",
+                  "간결하고 실용적",
+                  "신뢰 중심",
+                  "기타"
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "말투 보완 설명",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "선택한 방향을 좀 더 구체적으로 적거나, '기타'를 선택했다면 여기에 설명하세요."
+              },
+              {
+                "id": "f12",
+                "label": "사용할 채널 (Primary Channel)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "Instagram",
+                  "Threads",
+                  "Facebook",
+                  "LinkedIn",
+                  "기타"
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "최종 편집 지시 (Human Editing Direction)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "1~3문장. 예: 첫 Hook은 유지한다. 성적 향상으로 오해될 수 있는 표현은 제거하고, 실제 오답관리 과정을 중심으로 본문을 더 짧게 만든다."
+              }
+            ]
+          },
+          "description": "1~5, 9번은 버튼으로 채워집니다. 나머지가 이번 시간의 실제 결정입니다 — Writer·Critic 결과를 참고해 짧게 적으세요."
+        },
+        {
+          "id": "d5l4-b13-decision",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "유지 (KEEP)",
+                "description": "그대로 유지"
+              },
+              {
+                "label": "수정 (REVISE)",
+                "description": "수정해서 사용"
+              },
+              {
+                "label": "삭제 (REMOVE)",
+                "description": "빼고 사용"
+              },
+              {
+                "label": "추가 금지 (DO NOT ADD)",
+                "description": "절대 추가하지 않음"
+              }
+            ]
+          },
+          "title": "Critic의 판정을 참고해 결정하세요"
+        },
+        {
+          "id": "d5l4-b13-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 페이지에서는 아직 저장하지 않습니다. 다 채운 뒤 P15에서 실제로 저장 버튼을 클릭하게 하세요. 학생이 새로 판단할 것은 KEEP/REVISE/REMOVE/DO NOT ADD 보완/Tone/Channel/편집지시 정도라는 것을 안내하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "title": "실습 2 — Editor + 최종 확인",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l4-b14-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 사람의 결정을\n# AI가 그대로 집행합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b14-context-form",
+          "type": "input-form",
+          "title": "이전 결과 참고",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 고객 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "핵심 메시지 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "메시지 불변요소 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "1순위 콘텐츠 관점 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "1순위 Hook (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "실제 사용 가능한 근거 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "1차 행동 유도 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "사용하면 안 되는 주장 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f11"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "메시지 변질 방지 규칙 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-context-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "Writer + Critic 결과 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "사람의 결정 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "유지할 것",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "수정할 것",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "삭제할 것",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "절대 추가하지 말 것",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  },
+                  {
+                    "kind": "same-lesson",
+                    "label": "최종 편집 지시",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f13"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 자리에 이 내용을 순서대로 옮겨 붙여넣습니다."
+        },
+        {
+          "id": "d5l4-b14-prompt",
+          "type": "prompt",
+          "title": "Editor 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n당신은 새로운 콘텐츠 전략이나 새로운 아이디어를 제안하는 Writer가 아닙니다. 이미 만들어진 초안, 비평자(Critic)의 검토, 사람이 최종 확정한 수정 지시를 바탕으로 콘텐츠를 편집하는 편집자(Editor)입니다.\n\n사람의 결정이 AI Critic의 추천보다 우선합니다.\n\n================================\n[변경하면 안 되는 전략]\n================================\n\n1순위 고객:\n[ ]\n\n핵심 메시지:\n[ ]\n\n메시지 불변요소:\n[ ]\n\n1순위 콘텐츠 관점:\n[ ]\n\n1순위 Hook:\n[ ]\n\n실제 사용 가능한 근거:\n[ ]\n\n1차 행동 유도:\n[ ]\n\n사용하면 안 되는 주장:\n[ ]\n\n메시지 변질 방지 규칙:\n[ ]\n\n================================\n[Writer + Critic 결과]\n================================\n\n[ ]\n\n================================\n[사람의 결정]\n================================\n\n[ ]\n\n================================\n[편집 작업]\n================================\n\n1. 사람이 KEEP으로 지정한 부분은 유지하세요.\n\n2. REVISE로 지정한 사항을 반영하세요.\n\n3. REMOVE 항목은 제거하세요.\n\n4. DO NOT ADD 항목은 절대 추가하지 마세요.\n\n5. 핵심 메시지, 1순위 콘텐츠 관점, 근거의 범위(Evidence Boundary)를 변경하지 마세요.\n\n6. 선택된 채널에 맞게 길이·문장 호흡·줄바꿈·표현 방식 정도만 조정하세요. 채널 적응을 이유로 새로운 Value나 Claim을 만들지 마세요.\n\n7. AI 특유의 상투적인 광고표현을 줄이세요.\n\n8. 1차 행동 유도(Primary CTA)는 하나만 유지하세요.\n\n9. 근거보다 강한 주장을 사용하지 마세요.\n\n10. 사람의 최종 편집 지시가 Critic의 제안과 충돌한다면 사람의 지시를 우선하세요. 단, 사람의 지시가 기존 사용 금지 주장이나 근거의 범위와 직접 충돌하는 경우에는 해당 충돌을 마지막에 경고하세요.\n\n[출력]\n\n===== 최종 콘텐츠 =====\n\n첫 문장 / Hook:\n-\n\n본문:\n-\n\nCTA:\n-\n\n===== 편집 기록 =====\n\n유지한 것:\n-\n\n수정한 것:\n-\n\n삭제한 것:\n-\n\n채널에 맞춰 조정한 것:\n-\n\n근거 범위(Evidence Boundary) 확인:\n-\n\n메시지 변질(Message Drift) 여부:\n-\n\n사용 전 사람이 마지막으로 확인할 것:\n-",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "위 참고 칸의 내용을 [ ] 자리에 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d5l4-b14-chatgpt",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Editor 실행",
+            "practiceDescription": "새 전략을 만들지 않고, 사람이 결정한 KEEP/REVISE/REMOVE/DO NOT ADD를 그대로 반영해 최종 콘텐츠를 편집합니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "d5l4-b14-result-form",
+          "type": "input-form",
+          "title": "실습 2 AI 편집 결과",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "실습 2 AI 편집 결과 (Editor Result)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요."
+              }
+            ]
+          },
+          "description": "최종 콘텐츠와 편집 기록까지 전체 결과를 나누지 말고 한 번만 붙여넣으세요."
+        },
+        {
+          "id": "d5l4-b14-final-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Final Human Check",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b14-final-form",
+          "type": "input-form",
+          "title": "최종 확인",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Core Message가 유지됐다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f2",
+                "label": "현재 Target에게 맞는다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f3",
+                "label": "Hook과 Body가 연결된다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f4",
+                "label": "실제 Evidence만 사용했다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f5",
+                "label": "Evidence보다 강한 Claim이 없다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f6",
+                "label": "Primary CTA가 하나다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f7",
+                "label": "내가 실제 사용할 수 있는 말투다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f8",
+                "label": "Message Drift가 없다",
+                "kind": "checkbox",
+                "required": false
+              },
+              {
+                "id": "f9",
+                "label": "최종 사용 결정 (Final Decision)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "USE",
+                  "REVISE LATER",
+                  "HOLD"
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "사람의 최종 메모 (Final Human Note)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "1~2문장."
+              }
+            ]
+          },
+          "description": "편집 결과를 읽고 아래 8가지를 체크한 뒤, 최종 사용 결정을 내리세요."
+        },
+        {
+          "id": "d5l4-b14-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "장문 입력을 또 요구하지 않는다는 것이 핵심입니다 — 체크박스와 선택형으로 빠르게 마무리하도록 안내하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l4-b15-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
+            "emphasis": "hero"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b15-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## A. AI Creative Direction Map 저장\n\n앞 페이지에서 정리한 내용이 저장됩니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b15-cdmap-form",
+          "type": "input-form",
+          "title": "AI Creative Direction Map v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "핵심 메시지 (Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "1순위 콘텐츠 관점 (Primary Angle)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 콘텐츠 관점 (Primary Content Angle)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "1순위 Hook (Primary Hook)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 Hook (Primary Hook)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "주 채널 (Primary Channel)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "AI 초안·비평 결과 (Writer/Critic Result)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "유지 요소 (Keep)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "수정 요소 (Revise)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "삭제 요소 (Remove)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "편집 금지사항 (Do Not Add)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "말투 방향 (Tone Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "사람의 편집 지시 (Human Editing Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f13"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "최종 콘텐츠 (Final Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P14에서 가져오기",
+                    "sourceBlockId": "d5l4-b14-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "최종 CTA (Final CTA)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Editor 결과의 CTA 부분만 짧게 옮겨 적으세요."
+              },
+              {
+                "id": "f14",
+                "label": "콘텐츠 상태 (Final Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "최종 확인에서 가져오기",
+                    "sourceBlockId": "d5l4-b14-final-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "사람의 최종 메모 (Final Human Note)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "최종 확인에서 가져오기",
+                    "sourceBlockId": "d5l4-b14-final-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "description": "1~3, 6~9, 12, 14, 15번은 버튼으로 채워집니다. 13번(최종 CTA)만 Editor 결과를 보고 짧게 옮겨 적으세요."
+        },
+        {
+          "id": "d5l4-b15-cdmap-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "12차시 — AI Creative Direction Map v0.1",
+            "sourceBlockId": "d5l4-b15-cdmap-form",
+            "buttonLabel": "AI Creative Direction Map 저장"
+          }
+        },
+        {
+          "id": "d5l4-b15-preview",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
             "emptyMessage": "아직 저장된 결과물이 없습니다."
           }
         },
         {
-          "id": "d5l4-p12-save",
-          "type": "save-artifact",
+          "id": "d5l4-b15-b-title",
+          "type": "rich-text",
           "visibility": "visible",
-          "title": "Day5 Lesson4 — 문의 분류·후속 흐름·승인 기반 자동화 설계",
           "data": {
-            "artifactType": "automation",
-            "artifactTitle": "Day5 Lesson4 — 문의 분류·후속 흐름·승인 기반 자동화 설계",
-            "sourceBlockId": "d5l4-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "markdown": "## B. Business Context 업데이트\n\n11차시 Business Context v0.11을 그대로 가져오고, 이번에 완성한 콘텐츠 관련 항목만 새로 채우세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d5l4-p12-reflection",
-          "type": "reflection",
+          "id": "d5l4-b15-context-form",
+          "type": "input-form",
+          "title": "Business Context v0.12",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 판단 기준 한 가지는 무엇이었나요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "fields": [
+              {
+                "id": "f1",
+                "label": "확인된 사실 (Confirmed Facts)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "현재 가설 (Current Hypotheses)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "현재 가설 (Current Hypotheses)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "고객 세그먼트 (Customer Segments)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "1순위 타겟 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "핵심 메시지 (Primary Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "보조 메시지 (Secondary Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "보조 메시지 (Secondary Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "메시지 불변요소 (Message Invariants)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "메시지 불변요소 (Message Invariants)"
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "핵심 메시지 근거 (Message Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "핵심 메시지 근거 (Message Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "핵심 메시지 리스크 (Message Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "핵심 메시지 리스크 (Message Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "사용 금지 주장 (Prohibited Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "f14",
+                "label": "메시지 변질 방지 규칙 (Drift Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "메시지 변질 방지 규칙 (Drift Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "고객 질문 (Customer Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "고객 질문 (Customer Question)"
+                  }
+                ]
+              },
+              {
+                "id": "f16",
+                "label": "SNS 본문 구조 (Body Structure)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "SNS 본문 구조 (Body Structure)"
+                  }
+                ]
+              },
+              {
+                "id": "f17",
+                "label": "SNS 활용 근거 (Content Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "SNS 활용 근거 (Content Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "f18",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "f19",
+                "label": "1순위 콘텐츠 관점 (Primary Content Angle)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 콘텐츠 관점 (Primary Content Angle)"
+                  }
+                ]
+              },
+              {
+                "id": "f20",
+                "label": "1순위 Hook (Primary Hook)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "1순위 Hook (Primary Hook)"
+                  }
+                ]
+              },
+              {
+                "id": "f21",
+                "label": "낚시성 문구 위험 (Clickbait Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "낚시성 문구 위험 (Clickbait Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "f22",
+                "label": "다른 버전 제작 기준 (Variant Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "11차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "11차시 — Business Context v0.11",
+                    "sourceLabel": "다른 버전 제작 기준 (Variant Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "f23",
+                "label": "주 채널 (Primary Channel)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f24",
+                "label": "콘텐츠 평가 결과 (Content Evaluation)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P12에서 가져오기",
+                    "sourceBlockId": "d5l4-b12-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "f25",
+                "label": "유지 요소 (Keep)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f26",
+                "label": "수정 요소 (Revise)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f27",
+                "label": "삭제 요소 (Remove)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f28",
+                "label": "편집 금지사항 (Do Not Add)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f29",
+                "label": "말투 방향 (Tone Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f30",
+                "label": "편집 가이드 (Editing Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l4-b13-form",
+                    "sourceFieldIds": [
+                      "f13"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f31",
+                "label": "최종 콘텐츠 (Final Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P14에서 가져오기",
+                    "sourceBlockId": "d5l4-b14-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "f32",
+                "label": "최종 CTA (Final CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P15에서 가져오기",
+                    "sourceBlockId": "d5l4-b15-cdmap-form",
+                    "sourceFieldIds": [
+                      "f13"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f33",
+                "label": "콘텐츠 상태 (Final Content Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "최종 확인에서 가져오기",
+                    "sourceBlockId": "d5l4-b14-final-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f34",
+                "label": "사람 승인 (Human Approval)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "최종 확인에서 가져오기",
+                    "sourceBlockId": "d5l4-b14-final-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f35",
+                "label": "다음 결정 사항 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 완성한 SNS 콘텐츠와 Core Message를 바탕으로, 검색 목적(Search Intent)과 독자 질문(Reader Question)에 맞는 Blog 콘텐츠 구조는 어떻게 달라져야 하는가?"
+              }
+            ]
+          },
+          "description": "11차시 Business Context v0.11을 복사해 이번 콘텐츠 편집 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
+        },
+        {
+          "id": "d5l4-b15-context-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "12차시 — Business Context v0.12",
+            "sourceBlockId": "d5l4-b15-context-form",
+            "buttonLabel": "Business Context v0.12 저장"
           }
+        },
+        {
+          "id": "d5l4-b15-next",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 다음 단계 — SNS와 Blog는 같은 콘텐츠가 아닙니다\n\n지금까지 하나의 핵심 메시지(Core Message)를 SNS 콘텐츠로 발전시키는 과정을 완료했습니다.\n\n다음 차시에서는 짧게 소비되는 SNS 콘텐츠와, 검색하고 읽는 Blog 콘텐츠가 왜 다른 구조를 가져야 하는지 살펴봅니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l4-b15-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "두 저장 버튼을 모두 클릭해서 목록에 두 결과물이 함께 남아있는지, 11차시 v0.11이 그대로 남아있는지 확인시키세요. 13차시는 Core Message/Angle/Hook/Final Content 등을 그대로 가져와 SNS와 Blog의 구조 차이로 이어집니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
         }
       ]
     }
