@@ -1,5 +1,6 @@
 "use client";
 
+import { useLayoutEffect, useRef } from "react";
 import { toast } from "sonner";
 import { CheckCircle2, Download, XCircle } from "lucide-react";
 import type {
@@ -166,6 +167,51 @@ export function QuizBlockRenderer({ block }: { block: QuizBlock }) {
   );
 }
 
+/** 붙여넣은 긴 텍스트가 잘리지 않도록 내용에 맞춰 늘어나는 textarea. 최대 높이 이후엔 스크롤. */
+function AutoGrowTextarea({
+  id,
+  value,
+  placeholder,
+  onChange,
+  className,
+}: {
+  id: string;
+  value: string;
+  placeholder?: string;
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  className?: string;
+}) {
+  const ref = useRef<HTMLTextAreaElement>(null);
+
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    el.style.height = "auto";
+    el.style.height = `${Math.min(el.scrollHeight, 480)}px`;
+  }, [value]);
+
+  return (
+    <Textarea
+      ref={ref}
+      id={id}
+      value={value}
+      placeholder={placeholder}
+      onChange={onChange}
+      className={cn(className, "overflow-y-auto")}
+      style={{ minHeight: "6rem", maxHeight: "30rem" }}
+    />
+  );
+}
+
+/** 버튼을 누르면 필드 전체가 아니라 블록 전체(또는 아티팩트 전체) 내용이 통째로 들어오는지 — 그런 경우 "필요한 부분만 남기고 지우라"는 안내가 필요하다. */
+function hasWholeBlockImport(field: InputFormBlock["data"]["fields"][number]): boolean {
+  return (field.importFrom ?? []).some(
+    (src) =>
+      (src.kind === "same-lesson" && !src.sourceFieldIds) ||
+      (src.kind === "prior-artifact" && !src.sourceLabel)
+  );
+}
+
 export function InputFormBlockRenderer({ block }: { block: InputFormBlock }) {
   const values = useBlockResponseStore(selectFormValues(block.id));
   const setFormValue = useBlockResponseStore((s) => s.setFormValue);
@@ -205,10 +251,14 @@ export function InputFormBlockRenderer({ block }: { block: InputFormBlock }) {
                 <ImportButtons blockId={block.id} fieldId={field.id} sources={field.importFrom} />
               )}
             </div>
+            {hasWholeBlockImport(field) && (
+              <p className="mt-1 text-xs text-muted-foreground">
+                버튼을 누르면 전체 내용이 들어옵니다 — 이 항목에 필요한 부분만 남기고 나머지는 지우세요.
+              </p>
+            )}
             {field.kind === "long-text" ? (
-              <Textarea
+              <AutoGrowTextarea
                 id={inputId}
-                rows={4}
                 value={value}
                 placeholder={field.placeholder}
                 onChange={(e) => setFormValue(block.id, field.id, e.target.value)}
