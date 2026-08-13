@@ -4,523 +4,1061 @@
   "week": 2,
   "day": 4,
   "lesson": 4,
-  "title": "Framer·Carrd로 랜딩 제작·공개·검수",
-  "description": "앞에서 만든 구조·카피·폼을 실제 단일 랜딩페이지로 구현하고 검수합니다.",
-  "durationMinutes": 60,
+  "title": "Customer Journey & Touchpoint — 고객은 어디에서 우리를 만나고, 어디에서 멈추는가",
+  "description": "ECP가 문제를 느낀 순간부터 해결방법을 찾고 비교하고 선택하고 사용하는 과정을 Evidence 기반으로 그리고, 가장 먼저 검증할 접점을 정합니다.",
+  "durationMinutes": 45,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d4l4-p01",
-      "title": "완성 기준은 ‘예쁜 페이지’보다 ‘작동하는 페이지’",
-      "layout": "standard",
+      "id": "p01",
+      "title": "누가 움직이는지 알았다면, 이제 어떻게 움직이는지 봅니다",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d4l4-p01-b1",
+          "id": "d4l4-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 완성 기준은 ‘예쁜 페이지’보다 ‘작동하는 페이지’\n\n**앞에서 만든 구조·카피·폼을 실제 단일 랜딩페이지로 구현하고 검수합니다.**",
+            "markdown": "# 누가 움직이는지 알았다면\n# 이제 어떻게 움직이는지 봅니다\n\n\"ECP가 문제를 느낀 순간부터 해결방법을 찾고, 비교하고, 선택하고, 사용하는 과정에서 무엇을 하고 어디에서 막히는가?\"",
             "emphasis": "hero"
-          }
+          },
+          "theme": { "background": "dark", "bordered": false },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l4-p01-b2",
+          "id": "d4l4-b01-notice",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "이전 Lesson의 결과물을 재사용해 오늘 결과물을 만듭니다.",
+            "markdown": "**이번 차시에서는 Actor를 다시 만들지 않습니다.**\n\n7차시에서 정한 ECP와 Actor(User/Buyer/Influencer)가 실제로 어떻게 움직이는지, 어디에서 막히는지를 봅니다. 아래 목록을 확인하세요.\n\n**A. 7차시 — Actor Map v0.1**\n첫 검증 고객(ECP) / 주요 사용자 / 주요 구매자 / 핵심 영향자 / 의사결정자 / 먼저 만날 Actor / 먼저 확인할 질문 / 가장 큰 구매 반대요인 / 지지 근거 / 부족한 근거\n\n**B. 7차시 — Business Context v0.7**\n확인된 사실 / 현재 가설 / 고객 세그먼트 / 1순위 타겟 / 1순위 가치제안 / 다음 결정 사항",
             "emphasis": "normal"
+          },
+          "theme": { "background": "primary-soft", "bordered": false },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b01-preview",
+          "type": "result-preview",
+          "title": "7차시 결과",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "emptyMessage": "7차시를 먼저 완료해야 Actor Map과 Business Context가 표시됩니다."
           }
         },
         {
-          "id": "d4l4-p01-i1",
+          "id": "d4l4-b01-flow",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**오늘의 흐름**\n\nECP → ACTOR → CUSTOMER ACTION → TOUCHPOINT → FRICTION → PRIORITY TOUCHPOINT",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "muted", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b01-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 외부 발송·공개는 사람이 최종 검수한 뒤 진행합니다.",
+            "markdown": "목록이 비어 있으면 7차시를 아직 완료하지 않은 학생입니다 — 7차시 P10에서 저장하고 오게 하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d4l4-p02",
-      "title": "Framer/Carrd 선택",
+      "id": "p02",
+      "title": "Customer Journey 기본 이론",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d4l4-p02-b1",
+          "id": "d4l4-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## Framer/Carrd 선택\n\n- 하나만 선택해 끝까지",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p02-svg",
-          "type": "image",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/week2/day4/d4l4_framework.svg",
-            "alt": "Framer·Carrd로 랜딩 제작·공개·검수 인포그래픽",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "d4l4-p02-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 구조를 먼저 이해시킨 뒤 실습으로 이동합니다.",
+            "markdown": "# 고객은 어떤 과정을 거쳐 우리에게 도달하는가",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d4l4-p03",
-      "title": "섹션 배치",
-      "layout": "standard",
-      "blocks": [
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
         {
-          "id": "d4l4-p03-b1",
+          "id": "d4l4-b02-def",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 섹션 배치\n\n- Hero / 문제 / 해결 / 근거 / CTA / FAQ",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p03-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p03-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
+            "markdown": "### Customer Journey\n\n고객이 **문제를 인식하고 → 해결방법을 찾고 → 비교하고 → 선택하고 → 구매/가입하고 → 사용하고 → 다시 평가하는** 과정입니다.\n\n단, 실제 사업에 맞게 Stage는 달라질 수 있습니다 — 모든 사업에 동일한 Journey Stage를 강제하지 않습니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d4l4-p04",
-      "title": "Tally 연결",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d4l4-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## Tally 연결\n\n- 버튼 또는 임베드 연결",
-            "emphasis": "normal"
-          }
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l4-p04-b2",
-          "type": "rich-text",
+          "id": "d4l4-b02-compare",
+          "type": "infographic",
+          "title": "기업 관점 vs 고객 관점",
           "visibility": "visible",
           "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p04-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d4l4-p05",
-      "title": "모바일 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d4l4-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 모바일 검수\n\n- 글자 / 버튼 / 여백 / 이미지 / 폼",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p05-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d4l4-p06",
-      "title": "인터랙티브: 공개 전 QA",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d4l4-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브: 공개 전 QA\n\n카드를 눌러 판단 기준을 비교합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/week2/day4/d4l4_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        },
-        {
-          "id": "d4l4-p06-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 정답 암기보다 이유를 말하게 합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d4l4-p07",
-      "title": "실습: 제작 체크리스트",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d4l4-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실습: 제작 체크리스트\n\n내 사업 기준으로 작성합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "Framer·Carrd로 랜딩 제작·공개·검수 실습 입력",
-          "data": {
-            "fields": [
-              {
-                "id": "d4l4-p07-form-f1",
-                "label": "현재 고객/대상",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d4l4-p07-form-f2",
-                "label": "사용할 근거 자료",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d4l4-p07-form-f3",
-                "label": "핵심 메시지 또는 답변",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d4l4-p07-form-f4",
-                "label": "다음 행동(CTA/후속 단계)",
-                "kind": "long-text",
-                "required": true
-              }
+            "variant": "comparison",
+            "items": [
+              { "label": "잘못된 예 (기업 관점)", "description": "광고한다 → 상담한다 → 판매한다" },
+              { "label": "Customer Journey 관점", "description": "문제를 느낀다 → 검색한다 → 비교한다 → 질문한다 → 선택한다 → 사용한다" }
             ]
           }
         },
         {
-          "id": "d4l4-p07-i1",
+          "id": "d4l4-b02-trigger",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Trigger\n\nJourney의 중심은 Customer Action입니다. Journey 시작은 **광고가 아니라 고객의 Situation / Trigger**에서 시작합니다.\n\n예: 중요한 일정이 생김 / 시험이 임박함 / 오류가 반복됨 / 기존 방식이 불편해짐\n\n구매 이전뿐 아니라 **구매/가입/첫 사용/반복사용까지** Journey에 포함할 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b02-current-desired",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Current Journey vs Desired Journey\n\n**Current Journey** — 현재 고객이 실제로 문제를 해결하는 방식\n**Desired Journey** — 우리 제품이 들어온 이후 만들고 싶은 경험\n\n초기 단계에서는 **Desired Journey부터 상상하지 말고 Current Journey를 먼저 이해**합니다.",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "muted", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b02-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 실제 고객 민감정보는 넣지 않습니다.",
+            "markdown": "\"광고부터 시작하는 Journey\"는 기업 관점의 함정이라는 것을 강조하세요. 다음 페이지 Prompt에서 Trigger를 먼저 확인하도록 설계돼 있습니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d4l4-p08",
-      "title": "공개 URL",
-      "layout": "wide",
+      "id": "p03",
+      "title": "실습 1: Current Journey Map",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d4l4-p08-b1",
+          "id": "d4l4-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 공개 URL\n\n검증용 URL 실제 접속 확인",
+            "markdown": "# 현재 고객이 실제로 어떻게 움직이는지 그립니다",
             "emphasis": "normal"
-          }
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l4-p08-prompt",
-          "type": "prompt",
+          "id": "d4l4-b03-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 마케팅 코치입니다.\n아래 입력만 사용해 초안을 작성하세요.\n1) 제공되지 않은 사실은 만들지 마세요.\n2) 불확실하면 \"확인 필요\"로 표시하세요.\n3) 다음 행동은 하나만 제안하세요.\n4) 과장·민감정보 추정·가짜 후기·근거 없는 수치를 사용하지 마세요.\n\n[대상]\n[근거 자료]\n[핵심 메시지]\n[다음 행동]",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          }
+            "fields": [
+              {
+                "id": "f1",
+                "label": "ECP (Early Customer Profile)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "첫 검증 고객 (ECP)" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "주요 사용자 (Primary User)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "주요 사용자 (Primary User)" }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "주요 구매자 (Primary Buyer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "주요 구매자 (Primary Buyer)" }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "핵심 영향자 (Key Influencer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "핵심 영향자 (Key Influencer)" }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "핵심 고객 문제 (Key Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "핵심 고객 문제 (Key Customer Problem)" }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "현재 대안 (Current Alternative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "5차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "5차시 — Value Proposition Map v0.1", "sourceLabel": "현재 대안 (Current Alternative)" }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "가장 큰 구매 반대요인 (Main Objection)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "가장 큰 구매 반대요인 (Main Objection)" }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "지지 근거 (Known Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1", "sourceLabel": "지지 근거 (Supporting Evidence)" }
+                ]
+              }
+            ]
+          },
+          "description": "전부 버튼으로 채워집니다 — 사업 아이템을 처음부터 다시 쓰지 않습니다. 아래 프롬프트의 [ ] 여덟 곳에 이 내용을 옮겨 붙여넣습니다."
         },
         {
-          "id": "d4l4-p08-link",
+          "id": "d4l4-b03-prompt",
+          "type": "prompt",
+          "title": "Current Journey Map 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[ROLE]\n\n너는 초기 창업자의 고객 행동을 분석하는\nEvidence 기반 Customer Journey Analyst다.\n\n우리는 이미:\n\n- Primary Target\n- ECP\n- 주요 User / Buyer / Influencer\n- Value Proposition\n\n을 정의했다.\n\n이번 작업의 목적은\n우리 회사가 만들고 싶은 이상적인 Customer Journey를 그리는 것이 아니다.\n\n현재 고객이 문제를 느끼고,\n해결방법을 찾고,\n비교하고,\n선택하고,\n필요한 경우 구매·가입·사용하기까지의\nCurrent Journey를 이해하는 것이다.\n\n[ECP]\n\n[ ]\n\n[PRIMARY USER]\n\n[ ]\n\n[PRIMARY BUYER]\n\n[ ]\n\n[KEY INFLUENCER]\n\n[ ]\n\n[KEY CUSTOMER PROBLEM]\n\n[ ]\n\n[CURRENT ALTERNATIVE]\n\n[ ]\n\n[MAIN OBJECTION]\n\n[ ]\n\n[KNOWN EVIDENCE]\n\n[ ]\n\n[OBJECTIVE]\n\n현재 ECP가\n문제 또는 필요를 인식하는 순간부터\n해결방법을 찾고,\n검토하고,\n결정하고,\n필요한 경우 구매·가입·첫 사용·반복사용하기까지\n어떤 행동을 하는지 분석한다.\n\n[TASK 1 — JOURNEY START / TRIGGER]\n\nJourney가 어디에서 시작되는지 먼저 분석해줘.\n\n고객이 광고를 보는 순간부터 시작하지 말고:\n\n- Situation\n- Trigger\n- Problem Recognition\n\n을 먼저 확인해.\n\n현재 Evidence로 Trigger를 알 수 없다면\nNEEDS VALIDATION으로 표시해.\n\n[TASK 2 — CURRENT JOURNEY STAGES]\n\n현재 사업에 적절한 Customer Journey Stage를 구성해줘.\n\n필요하다면 다음을 참고할 수 있다.\n\nTrigger\n→ Discovery\n→ Evaluation\n→ Decision\n→ Purchase / Signup\n→ First Use\n→ Continued Use / Repeat\n\n하지만 위 단계를 기계적으로 적용하지 마.\n\n현재 사업에 필요 없는 Stage는 제외하고,\n실제 고객행동에 필요한 Stage는 추가해.\n\nStage 이름보다 고객의 실제 행동을 우선해.\n\n[TASK 3 — CUSTOMER ACTION]\n\n각 Stage마다 다음을 정리해줘.\n\n- Main Actor\n- Customer Action\n- Customer Question\n- Current Alternative\n- 예상 Touchpoint\n- Main Friction\n\n중요:\n\nCustomer Action과 Business Action을 구분해.\n\n예:\n\n\"광고를 보여준다\"\n= Business Action\n\n\"해결방법을 검색한다\"\n= Customer Action\n\nCustomer Journey의 중심은\n기업이 무엇을 하는지가 아니라\n고객이 무엇을 하는지다.\n\n[TASK 4 — ACTOR HANDOFF]\n\nBuyer / User / Influencer가 서로 다른 경우:\n\n- 어느 Stage에서 다른 Actor가 개입하는지\n- 누가 누구에게 정보를 전달하는지\n- 어느 지점에서 구매 또는 사용 판단이 이동하는지\n\nActor Handoff를 표시해.\n\n근거가 없다면 임의로 만들지 말고\nNEEDS VALIDATION으로 표시해.\n\n[TASK 5 — CUSTOMER QUESTION]\n\n각 주요 Stage에서\n고객이 실제로 해결하려는 질문을 한 문장으로 정리해.\n\n예:\n\n\"이 문제를 해결할 방법이 있나?\"\n\"이게 나한테 맞나?\"\n\"믿을 수 있나?\"\n\"가격만큼 가치가 있나?\"\n\"어떻게 시작하지?\"\n\n위 문장을 기계적으로 사용하지 말고\n현재 사업과 Journey에 맞는 질문을 만들어.\n\n[TASK 6 — EVIDENCE CHECK]\n\nJourney의 주요 판단을:\n\n- EVIDENCE\n- INFERENCE\n- NEEDS VALIDATION\n\n으로 구분해.\n\n특히 다음은 Evidence가 없으면\n사실처럼 확정하지 마.\n\n- 고객이 사용하는 검색 Channel\n- 특정 SNS 사용\n- 검색어\n- 비교행동\n- 구매절차\n- 리뷰 사용\n- Influencer 개입\n- 가격비교\n- 반복사용\n- 추천행동\n\n[TASK 7 — CURRENT JOURNEY GAP]\n\n현재 Journey에서 다음을 찾아줘.\n\n1. 가장 큰 Friction\n2. 가장 큰 정보 부족\n3. 가장 큰 신뢰 문제\n4. 고객이 기존 대안으로 돌아갈 가능성이 높은 지점\n5. 구매 또는 사용이 멈출 가능성이 높은 지점\n6. 가장 위험한 Journey 가정\n\n[OUTPUT]\n\nA. Journey Start / Trigger\n\nB. Current Customer Journey Map\n\n다음 열을 사용해.\n\n- Stage\n- Main Actor\n- Customer Action\n- Customer Question\n- Current Alternative\n- Touchpoint\n- Friction\n- Evidence Status\n\nC. Actor Handoff\n\nD. 가장 큰 Friction\n\nE. 가장 큰 Information Gap\n\nF. 가장 큰 Trust Gap\n\nG. 기존 대안으로 돌아갈 가능성이 높은 지점\n\nH. 가장 위험한 Journey 가정\n\nI. Missing Evidence / Needs Validation\n\n현재 Evidence가 없는 Journey를\n그럴듯하게 완성하지 마.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "위 Context 준비 칸의 내용을 [ ] 여덟 곳에 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d4l4-b03-chatgpt",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
+            "practiceName": "Current Journey Map 만들기",
+            "practiceDescription": "Trigger부터 Journey Stage, Customer Action, Actor Handoff, Evidence 검토, Journey Gap 분석까지 한 번에 진행합니다.",
             "estimatedMinutes": 15
           }
-        }
-      ]
-    },
-    {
-      "id": "d4l4-p09",
-      "title": "신뢰 요소 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d4l4-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 신뢰 요소 점검\n\n- 허위 후기·확인 안 된 숫자 삭제",
-            "emphasis": "normal"
-          }
         },
         {
-          "id": "d4l4-p09-b2",
-          "type": "rich-text",
+          "id": "d4l4-b03-result-form",
+          "type": "input-form",
+          "title": "Prompt 1 분석결과",
           "visibility": "visible",
           "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p09-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d4l4-p10",
-      "title": "퀴즈",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d4l4-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d4l4-p10-q-q1",
-                "question": "이 Lesson에서 가장 먼저 확인할 것은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d4l4-p10-q-c1",
-                    "text": "AI 문장이 멋진가"
-                  },
-                  {
-                    "id": "d4l4-p10-q-c2",
-                    "text": "고객 자료·사실·목표와 연결되는가"
-                  },
-                  {
-                    "id": "d4l4-p10-q-c3",
-                    "text": "길이가 충분히 긴가"
-                  },
-                  {
-                    "id": "d4l4-p10-q-c4",
-                    "text": "자동화할 수 있는가"
-                  }
-                ],
-                "correctChoiceId": "d4l4-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
+            "fields": [
+              { "id": "f1", "label": "Prompt 1 분석결과 (Prompt 1 Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
             ]
-          }
-        },
-        {
-          "id": "d4l4-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "표현보다 고객 자료·사실·목표와의 연결을 먼저 확인합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d4l4-p10-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 자동화 가능성보다 정확성과 연결성이 우선입니다.",
-            "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "description": "A~I 결과 전체를 여러 칸으로 나누지 말고 한 번만 붙여넣으세요."
         }
       ]
     },
     {
-      "id": "d4l4-p11",
-      "title": "최종 공개 점검표",
+      "id": "p04",
+      "title": "Prompt 1 결과 검토",
       "layout": "wide",
       "blocks": [
         {
-          "id": "d4l4-p11-b1",
+          "id": "d4l4-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 최종 공개 점검표\n\n최종본과 선택 이유를 정리합니다.",
+            "markdown": "# AI가 그린 Journey를 그대로 믿지 않습니다",
             "emphasis": "normal"
-          }
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         },
         {
-          "id": "d4l4-final-form",
-          "type": "input-form",
+          "id": "d4l4-b04-checklist",
+          "type": "infographic",
+          "title": "Prompt 1 결과 체크포인트",
           "visibility": "visible",
-          "title": "Framer·Carrd로 랜딩 제작·공개·검수 최종 결과",
           "data": {
-            "fields": [
-              {
-                "id": "d4l4-final-form-f1",
-                "label": "최종 결과물",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d4l4-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d4l4-final-form-f3",
-                "label": "검수한 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d4l4-final-form-f4",
-                "label": "다음 실험/후속 행동",
-                "kind": "long-text",
-                "required": true
-              }
+            "variant": "checklist",
+            "items": [
+              { "label": "Journey가 광고부터 시작하지 않았는가?" },
+              { "label": "Situation / Trigger가 있는가?" },
+              { "label": "Current Journey인가, 우리가 원하는 Desired Journey인가?" },
+              { "label": "Customer Action과 Business Action이 섞이지 않았는가?" },
+              { "label": "AI가 Google/Naver/Instagram 등을 근거 없이 만들어냈는가?" },
+              { "label": "Buyer/User가 다른데 하나의 Journey로 뭉개지 않았는가?" },
+              { "label": "Actor Handoff가 실제 Evidence에 기반하는가?" },
+              { "label": "Current Alternative가 Journey 안에 살아 있는가?" },
+              { "label": "구매 이후 단계가 필요한 사업인데 빠지지는 않았는가?" }
             ]
           }
         },
         {
-          "id": "d4l4-p11-i1",
+          "id": "d4l4-b04-script",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 다음 수업에서 재사용할 수 있게 근거와 선택 이유를 함께 남깁니다.",
+            "markdown": "이 페이지는 학생 입력이 없습니다. Prompt 1 결과를 화면에 띄워놓고 위 체크포인트를 하나씩 같이 확인하세요.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     },
     {
-      "id": "d4l4-p12",
-      "title": "저장",
-      "layout": "standard",
+      "id": "p05",
+      "title": "Touchpoint / Friction / Moment of Truth",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d4l4-p12-preview",
+          "id": "d4l4-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 접점마다 고객은 다른 질문을 합니다",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b05-channel",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Channel vs Touchpoint\n\n**Channel** — 고객과 연결되는 통로. 예: Google / Naver / Instagram / YouTube / Email / 매장\n\n**Touchpoint** — 그 Channel 또는 서비스 과정 안에서 발생하는 구체적인 접촉 순간.\n\n예: Naver라는 Channel 안에서도 검색결과 → 블로그 → 플레이스 → 리뷰 → 예약 → 전화는 **서로 다른 Touchpoint**입니다. 하나의 Channel 안에 여러 Touchpoint가 존재할 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b05-friction",
+          "type": "infographic",
+          "title": "Customer Question / Friction",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              { "label": "CUSTOMER QUESTION", "description": "각 Touchpoint에서 고객이 답을 얻으려는 질문" },
+              { "label": "FRICTION", "description": "고객이 다음 단계로 넘어가는 것을 방해하는 마찰 — 정보 부족 / 가격 불명확 / 신뢰 부족 / 가입 복잡 / 예약 불편 / 상담 지연 / 기존 대안이 더 편함 / Buyer-User 의견 충돌" },
+              { "label": "CRITICAL TOUCHPOINT", "description": "고객 판단에 특히 큰 영향을 줄 가능성이 있는 접점" },
+              { "label": "MOMENT OF TRUTH", "description": "고객이 계속 진행할지 / 이탈할지 / 기존 대안으로 돌아갈지 판단이 크게 갈릴 수 있는 순간" }
+            ]
+          }
+        },
+        {
+          "id": "d4l4-b05-warning",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**중요**\n\n모든 Friction을 발견했다고 바로 기능을 만들지 않습니다. 먼저 \"이 Friction이 실제인가?\"를 검증합니다.",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "muted", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "실습 2: Journey Red Team + Priority Touchpoint",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d4l4-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 어디가 진짜 중요한 접점인지\n# 다시 검증합니다",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b06-ref-form",
+          "type": "input-form",
+          "title": "이전 결과 참고",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "Current Journey Map / Prompt 1 결과 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "ECP (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f1"] }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "Actor Map (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Actor Map v0.1" }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "1순위 가치제안 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "1순위 가치제안 (Primary Value Proposition)" }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "가장 큰 구매 반대요인 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f7"] }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 다섯 곳에 붙여넣을 때 참고하세요."
+        },
+        {
+          "id": "d4l4-b06-prompt",
+          "type": "prompt",
+          "title": "Journey Red Team + Priority Touchpoint 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[ROLE]\n\n너는 Customer Journey를 비판적으로 검토하는\nEvidence 기반 Journey Red Team Reviewer다.\n\n목표는 보기 좋은 Journey Map을 만드는 것이 아니다.\n\n고객이 실제로:\n\n- 어디에서 멈추는지\n- 어디에서 의심하는지\n- 어디에서 기존 대안으로 돌아가는지\n- 어떤 Touchpoint를 먼저 검증해야 하는지\n\n찾는 것이 목적이다.\n\n[CURRENT JOURNEY MAP / PROMPT 1 RESULT]\n\n[ ]\n\n[ECP]\n\n[ ]\n\n[ACTOR MAP]\n\n[ ]\n\n[PRIMARY VALUE PROPOSITION]\n\n[ ]\n\n[MAIN OBJECTION]\n\n[ ]\n\n[OBJECTIVE]\n\nPrompt 1의 Current Journey를\nEvidence 관점에서 다시 검토하고,\n\n현재 사업에서 가장 중요한:\n\n- Friction\n- Critical Touchpoint\n- Moment of Truth\n- Priority Touchpoint\n\n를 찾는다.\n\n[TASK 1 — JOURNEY RED TEAM]\n\n현재 Journey를 다음 관점에서 비판적으로 검토해줘.\n\n1. 존재하지 않는 Stage를 AI가 만들어냈는가?\n2. 고객행동보다 기업행동 중심으로 작성됐는가?\n3. 검색/비교/구매 Channel을 근거 없이 가정했는가?\n4. 중요한 Actor가 Journey에서 빠졌는가?\n5. Buyer/User/Influencer의 개입 시점을 잘못 가정했는가?\n6. Current Alternative가 Journey 중간에서 사라졌는가?\n7. Main Objection이 실제 Journey와 연결되어 있는가?\n8. 구매 이후 중요한 사용단계가 빠졌는가?\n9. 반대로 필요 없는 Stage를 너무 많이 만들었는가?\n10. Desired Journey를 Current Journey처럼 표현한 부분이 있는가?\n\n각 판단은 가능한 경우:\n\n- EVIDENCE\n- INFERENCE\n- NEEDS VALIDATION\n\n으로 구분해.\n\n[TASK 2 — FRICTION ANALYSIS]\n\nJourney 전체에서\n가장 중요한 Friction 후보를 최대 3개 찾아줘.\n\n각 Friction마다 다음을 정리해.\n\n- 발생 Stage\n- Main Actor\n- Customer Action\n- Customer Question\n- 무엇 때문에 멈출 가능성이 있는가\n- Current Alternative가 왜 더 편할 수 있는가\n- Supporting Evidence\n- Missing Evidence\n\n[TASK 3 — CRITICAL TOUCHPOINT]\n\n고객의 판단에 큰 영향을 줄 가능성이 있는\nCritical Touchpoint 후보를 최대 3개 제안해.\n\n예:\n\n- 첫 검색\n- 리뷰\n- 가격 확인\n- 상담\n- 데모\n- 예약\n- 가입\n- 첫 사용\n\n위 예를 기계적으로 적용하지 마.\n\n현재 Journey에 실제로 존재하거나\n합리적 근거가 있는 Touchpoint만 사용해.\n\n[TASK 4 — MOMENT OF TRUTH]\n\n현재 Journey에서 고객이:\n\n- 계속 진행하거나\n- 이탈하거나\n- 구매를 미루거나\n- 기존 대안으로 돌아갈\n\n가능성이 가장 크게 갈리는\nMoment of Truth 후보를 찾아줘.\n\n다음도 설명해.\n\n- 어떤 Actor의 순간인가\n- 고객은 어떤 질문을 하고 있는가\n- 어떤 Friction이 있는가\n- 어떤 Objection이 작동하는가\n- 어떤 Evidence가 필요한가\n\n[TASK 5 — PRIORITY TOUCHPOINT]\n\n현재 단계에서\n가장 먼저 검증하거나 개선해야 할\nPriority Touchpoint 후보 1개를 추천해.\n\n다음 기준으로 판단해.\n\n1. 고객의 실제 다음 행동에 중요한가?\n2. 핵심 Friction과 연결되는가?\n3. Main Objection과 연결되는가?\n4. 현재 가장 위험한 Journey 가정을 검증할 수 있는가?\n5. 현실적으로 접근·관찰·인터뷰할 수 있는가?\n\n[TASK 6 — VALIDATION ACTION]\n\nPriority Touchpoint에 대해\n새 기능 개발보다 먼저 할 수 있는\n간단한 Validation Action을 제안해.\n\n예:\n\n- 고객 인터뷰\n- 실제 검색행동 관찰\n- 예약/문의 로그 확인\n- 상담내용 확인\n- 클릭/이탈 데이터 확인\n- 고객 질문 수집\n- 후기/문의 내용 확인\n\n현재 사업에 맞는 방법만 사용해.\n\n근거 없이 대규모 개발을 먼저 제안하지 마.\n\n[OUTPUT]\n\nA. Journey Critique\n\nB. Missing Stage\n\nC. Unnecessary Stage\n\nD. Top Friction 후보 최대 3개\n\nE. Critical Touchpoint 후보 최대 3개\n\nF. Moment of Truth\n\nG. AI 추천 Priority Touchpoint\n\nH. Main Actor\n\nI. 해당 Touchpoint의 Customer Question\n\nJ. Main Friction\n\nK. Main Objection\n\nL. 필요한 Evidence\n\nM. Validation Action\n\nN. 아직 확인되지 않은 Journey 가정\n\n최종 Priority Touchpoint는 대신 결정하지 마.\n최종 결정은 사람이 한다.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "위 참고 칸의 내용을 [ ] 다섯 곳(Prompt 1 결과, ECP, Actor Map, 1순위 가치제안, Main Objection)에 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d4l4-b06-chatgpt",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Journey Red Team + Priority Touchpoint",
+            "practiceDescription": "Journey Red Team 검토부터 Friction/Critical Touchpoint/Moment of Truth 분석, Priority Touchpoint와 Validation Action 도출까지 한 번에 진행합니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "d4l4-b06-result-form",
+          "type": "input-form",
+          "title": "Prompt 2 검토결과",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              { "id": "f1", "label": "Prompt 2 검토결과 (Prompt 2 Review Result)", "kind": "long-text", "required": false, "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요." }
+            ]
+          },
+          "description": "Journey Critique, Friction/Critical Touchpoint/Moment of Truth, Priority Touchpoint, Validation Action을 나누지 말고 한 번만 붙여넣으세요."
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "Prompt 2 결과 검토",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d4l4-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 어디를 먼저 검증할지도 신중하게 결정합니다",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b07-checklist",
+          "type": "infographic",
+          "title": "Prompt 2 결과 체크포인트",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              { "label": "실제로 고객이 가장 많이 멈출 가능성이 있는 곳은 어디인가?" },
+              { "label": "그 판단에 Evidence가 있는가?" },
+              { "label": "고객이 정말 그 Channel/Touchpoint를 사용하는가?" },
+              { "label": "Buyer와 User가 갈리는 지점은 어디인가?" },
+              { "label": "Main Objection은 어느 Stage에서 강해지는가?" },
+              { "label": "Critical Touchpoint와 단순 Touchpoint를 구분했는가?" },
+              { "label": "Moment of Truth는 어느 순간인가?" },
+              { "label": "기능을 만들기 전에 무엇을 먼저 확인할 수 있는가?" }
+            ]
+          }
+        },
+        {
+          "id": "d4l4-b07-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 페이지는 학생 입력이 없습니다. 다음 페이지 Human Decision에서 이 결과를 반영해 최종 판단하게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "사람의 최종 Journey 결정 (Human Decision)",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d4l4-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 어디를 먼저 검증할지는 사람이 결정합니다\n\nAI가 추천한 Priority Touchpoint와 Validation Action을 참고하되, 최종 확정은 사람이 합니다.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b08-form",
+          "type": "input-form",
+          "title": "Customer Journey Map v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f1"] }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "주요 사용자 (Primary User)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f2"] }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "주요 구매자 (Primary Buyer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f3"] }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "현재 고객여정 요약 (Current Journey Summary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "고객여정 단계 (Journey Stages)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "주요 Actor 전환 (Actor Handoff)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "고객의 핵심 질문 (Customer Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" },
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l4-b06-result-form" }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "가장 큰 마찰 (Top Friction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" },
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l4-b06-result-form" }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "가장 큰 정보 부족 (Information Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "가장 큰 신뢰 문제 (Trust Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "핵심 접점 (Critical Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l4-b06-result-form" }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "결정적 순간 (Moment of Truth)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l4-b06-result-form" }
+                ]
+              },
+              {
+                "id": "f14",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 2 AI 추천에서 가져오기", "sourceBlockId": "d4l4-b06-result-form" }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "가장 큰 반대요인 (Main Objection)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f7"] }
+                ]
+              },
+              {
+                "id": "f16",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P03에서 가져오기", "sourceBlockId": "d4l4-b03-context-form", "sourceFieldIds": ["f8"] }
+                ]
+              },
+              {
+                "id": "f17",
+                "label": "부족한 근거 (Missing Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 1 결과에서 가져오기", "sourceBlockId": "d4l4-b03-result-form" },
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l4-b06-result-form" }
+                ]
+              },
+              {
+                "id": "f18",
+                "label": "검증 행동 (Validation Action)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "Prompt 2 결과에서 가져오기", "sourceBlockId": "d4l4-b06-result-form" }
+                ]
+              },
+              { "id": "f19", "label": "사람의 최종 판단 메모 (Human Decision Notes)", "kind": "long-text", "required": false, "placeholder": "필요하면 간단히 — Priority Touchpoint 최종 확정 이유를 적으세요." }
+            ]
+          },
+          "description": "버튼으로 가져온 내용은 Prompt 1·2 결과 전체입니다 — 이 필드에 해당하는 부분만 남기고 정리하세요. 우선 검증 접점은 AI 추천을 참고해 최종 확정하세요."
+        },
+        {
+          "id": "d4l4-b08-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 페이지에서는 아직 저장하지 않습니다. 다 채운 뒤 다음 페이지에서 실제로 저장 버튼을 클릭하게 하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "BUSINESS SHOWCASE",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d4l4-b09-showcase",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**BUSINESS SHOWCASE / 교육용 적용 사례 — 동네 미용실**\n\n**ECP**\n반복적으로 시술을 받지만 원하는 스타일과 이전 시술내용을 매번 다시 설명해야 하는 정기관리 고객\n\n**Current Journey 예시**\n\n머리가 길어짐 또는 중요한 일정 발생\n↓\n미용실을 떠올림\n↓\n검색 또는 기존 예약정보 확인\n↓\n후기 / 가격 / 예약 가능시간 확인\n↓\n예약\n↓\n방문\n↓\n원하는 스타일 설명\n↓\n시술\n↓\n다음 예약 여부 결정\n\n※ Naver/Instagram 등을 반드시 사용한다고 사실처럼 단정하지 않습니다 — 실제 Evidence가 없으면 NEEDS VALIDATION입니다.\n\n**Possible Friction**\n- 원하는 시간 예약 가능 여부 확인\n- 이전 시술내용을 다시 설명해야 함\n- 원하는 스타일이 전달됐는지 불안함\n\n**Critical Touchpoint**\n예약 또는 시술 전 상담 순간\n\n**Moment of Truth**\n\"이 미용실이 내가 원하는 스타일을 정확히 이해하고 있는가?\"\n\n**Validation**\n고객 인터뷰 / 예약 문의 확인 / 상담 질문 기록 / 재방문 고객 불편사항 확인\n\n※ 이 내용은 교육용 적용 사례이며 실제 성공사례처럼 표현하지 않습니다.",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "card", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d4l4-b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
+            "emphasis": "hero"
+          },
+          "theme": { "background": "dark", "bordered": false },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b10-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## A. Customer Journey Map 저장\n\n앞 페이지에서 정리한 내용이 저장됩니다.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b10-vp-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "8차시 — Customer Journey Map v0.1",
+            "sourceBlockId": "d4l4-b08-form",
+            "buttonLabel": "Customer Journey Map 저장"
+          }
+        },
+        {
+          "id": "d4l4-b10-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "landing",
+            "artifactType": "business-idea",
             "emptyMessage": "아직 저장된 결과물이 없습니다."
           }
         },
         {
-          "id": "d4l4-p12-save",
+          "id": "d4l4-b10-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## B. Business Context 업데이트\n\n7차시 Business Context를 그대로 가져오고, 이번에 새로 정한 Journey·Touchpoint 관련 항목만 갱신하세요.",
+            "emphasis": "normal"
+          },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b10-context-form",
+          "type": "input-form",
+          "title": "Business Context v0.8",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "확인된 사실 (Confirmed Facts)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "확인된 사실 (Confirmed Facts)" }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "현재 가설 (Current Hypotheses)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "현재 가설 (Current Hypotheses)" }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "고객 세그먼트 (Customer Segments)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "고객 세그먼트 (Customer Segments)" }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "1순위 타겟 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "1순위 타겟 (Primary Target)" }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f1"] }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "1순위 가치제안 (Primary Value Proposition)" }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "주요 사용자 (Primary User)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f2"] }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "주요 구매자 (Primary Buyer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f3"] }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "핵심 영향자 (Key Influencer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "핵심 영향자 (Key Influencer)" }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "가장 큰 반대요인 (Main Objection)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f15"] }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "먼저 만날 Actor (First Contact Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "prior-artifact", "label": "7차시에서 가져오기", "artifactType": "business-idea", "artifactTitle": "7차시 — Business Context v0.7", "sourceLabel": "먼저 만날 Actor (First Contact Actor)" }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f4"] }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "현재 고객여정 (Current Journey)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f5"] }
+                ]
+              },
+              {
+                "id": "f14",
+                "label": "주요 Actor 전환 (Actor Handoff)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f7"] }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "가장 큰 마찰 (Top Friction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f9"] }
+                ]
+              },
+              {
+                "id": "f16",
+                "label": "핵심 접점 (Critical Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f12"] }
+                ]
+              },
+              {
+                "id": "f17",
+                "label": "결정적 순간 (Moment of Truth)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f13"] }
+                ]
+              },
+              {
+                "id": "f18",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f14"] }
+                ]
+              },
+              {
+                "id": "f19",
+                "label": "고객의 핵심 질문 (Customer Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f8"] }
+                ]
+              },
+              {
+                "id": "f20",
+                "label": "검증 행동 (Validation Action)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f18"] }
+                ]
+              },
+              {
+                "id": "f21",
+                "label": "확인되지 않은 Journey 근거 (Missing Journey Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  { "kind": "same-lesson", "label": "P08에서 가져오기", "sourceBlockId": "d4l4-b08-form", "sourceFieldIds": ["f17"] }
+                ]
+              },
+              { "id": "f22", "label": "다음 결정 사항 (Next Decision)", "kind": "long-text", "required": false, "placeholder": "Priority Touchpoint를 실제로 검증한 뒤, 메시지·콘텐츠 설계에 무엇을 반영할 것인가?" }
+            ]
+          },
+          "description": "7차시 Business Context v0.7을 복사해 이번 Journey·Touchpoint 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
+        },
+        {
+          "id": "d4l4-b10-context-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day4 Lesson4 — Framer·Carrd로 랜딩 제작·공개·검수",
           "data": {
-            "artifactType": "landing",
-            "artifactTitle": "Day4 Lesson4 — Framer·Carrd로 랜딩 제작·공개·검수",
-            "sourceBlockId": "d4l4-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "8차시 — Business Context v0.8",
+            "sourceBlockId": "d4l4-b10-context-form",
+            "buttonLabel": "Business Context v0.8 저장"
           }
         },
         {
-          "id": "d4l4-p12-reflection",
-          "type": "reflection",
+          "id": "d4l4-b10-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 판단 기준 한 가지는 무엇이었나요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
-          }
+            "markdown": "## 다음 차시\n\n**9차시 — 메시지·콘텐츠 설계**",
+            "emphasis": "normal"
+          },
+          "theme": { "background": "muted", "bordered": true },
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
+        },
+        {
+          "id": "d4l4-b10-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "두 저장 버튼을 모두 클릭해서 목록에 새 항목 2개가 추가되는지, 1~7차시 artifact가 그대로 남아있는지 확인시키세요. Priority Touchpoint는 기능 개발이 아니라 검증부터 시작한다는 것을 마지막으로 다시 강조하세요.",
+            "emphasis": "normal"
+          },
+          "title": "강사 멘트",
+          "layout": { "width": "wide", "align": "left", "spacing": "medium" }
         }
       ]
     }
