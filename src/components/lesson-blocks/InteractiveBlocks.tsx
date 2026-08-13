@@ -26,6 +26,30 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArtifactSelector } from "./ArtifactSelector";
 import { cn } from "@/lib/utils";
 
+/**
+ * "한국어 뜻 (English)" 라벨에서 괄호 안 영어 용어만 뽑아 비교 키로 쓴다.
+ * 콘텐츠가 리팩토링되며 라벨이 "Primary Target" → "1순위 타겟 (Primary Target)"처럼
+ * 바뀌어도, 예전에 저장된 아티팩트의 필드 키(예전 라벨 그대로)를 계속 찾을 수 있게 한다.
+ */
+function normalizeLabel(label: string): string {
+  const match = label.match(/\(([^)]+)\)\s*$/);
+  return (match ? match[1] : label).trim().toLowerCase();
+}
+
+/** 아티팩트에서 sourceLabel(또는 그 라벨의 예전 버전)에 해당하는 값을 찾는다. */
+function resolveArtifactValue(
+  artifact: { content: string; fields?: Record<string, string> },
+  sourceLabel?: string
+): string | undefined {
+  if (!sourceLabel) return artifact.content || undefined;
+  const exact = artifact.fields?.[sourceLabel];
+  if (exact) return exact;
+  if (!artifact.fields) return undefined;
+  const target = normalizeLabel(sourceLabel);
+  const fallbackKey = Object.keys(artifact.fields).find((key) => normalizeLabel(key) === target);
+  return fallbackKey ? artifact.fields[fallbackKey] : undefined;
+}
+
 /** 필드 라벨 옆의 "가져오기" 버튼들. 같은 Lesson의 다른 페이지, 또는 이전 차시 저장물에서 값을 끌어온다. */
 function ImportButtons({
   blockId,
@@ -55,12 +79,19 @@ function ImportButtons({
     } else if (source.kind === "prior-artifact" && activeProjectId) {
       const type = source.artifactType && isArtifactType(source.artifactType) ? source.artifactType : undefined;
       if (type) {
+        // 최신순으로 정렬되어 온다 — 콘텐츠 리팩토링으로 같은 제목의 저장물이
+        // 여러 개 생겨도(예: 저장 블록 ID가 바뀌어 새 빈 저장물이 생긴 경우),
+        // 값이 실제로 있는 것 중 가장 최근 것을 찾는다.
         const artifacts = await workspaceRepository.listArtifactsByType(type, activeProjectId);
-        const match = source.artifactTitle
-          ? artifacts.find((a) => a.title === source.artifactTitle)
-          : artifacts[0];
-        if (match) {
-          pulled = (source.sourceLabel ? match.fields?.[source.sourceLabel] : match.content) ?? "";
+        const candidates = source.artifactTitle
+          ? artifacts.filter((a) => a.title === source.artifactTitle)
+          : artifacts.slice(0, 1);
+        for (const candidate of candidates) {
+          const value = resolveArtifactValue(candidate, source.sourceLabel);
+          if (value) {
+            pulled = value;
+            break;
+          }
         }
       }
     }
