@@ -4,8 +4,8 @@
   "week": 2,
   "day": 5,
   "lesson": 1,
-  "title": "고객 질문을 모아 FAQ 원장 만들기",
-  "description": "문의·리뷰·상담 기록에서 반복 질문을 모아 FAQ 질문 원장을 만듭니다.",
+  "title": "핵심 메시지 — 고객에게 무엇을 기억시킬 것인가",
+  "description": "지금까지 정리한 타겟·가치·이해관계자·고객여정을 하나의 핵심 메시지로 모으고, AI가 반복 표현하는 동안 메시지의 본질이 변질되지 않았는지 검증합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -13,514 +13,1632 @@
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d5l1-p01",
-      "title": "FAQ는 고객이 반복해서 묻는 것",
-      "layout": "standard",
+      "id": "p01",
+      "title": "지금까지의 결정을 하나의 의미로 모읍니다",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d5l1-p01-b1",
+          "id": "d5l1-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# FAQ는 고객이 반복해서 묻는 것\n\n**문의·리뷰·상담 기록에서 반복 질문을 모아 FAQ 질문 원장을 만듭니다.**",
+            "markdown": "# 지금까지의 결정을\n# 하나의 의미로 모읍니다\n\n\"우리 사업이 고객에게 딱 하나의 의미만 기억시킬 수 있다면 무엇을 남길 것인가?\"",
             "emphasis": "hero"
-          }
-        },
-        {
-          "id": "d5l1-p01-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "이전 Lesson의 결과물을 재사용해 오늘 결과물을 만듭니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p01-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 외부 발송·공개는 사람이 최종 검수한 뒤 진행합니다.",
-            "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p02",
-      "title": "질문 출처",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l1-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 질문 출처\n\n- 문의 / 댓글 / 리뷰 / 상담 / 판매 전 / 환불",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p02-svg",
-          "type": "image",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/week2/day5/d5l1_framework.svg",
-            "alt": "고객 질문을 모아 FAQ 원장 만들기 인포그래픽",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        },
-        {
-          "id": "d5l1-p02-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 구조를 먼저 이해시킨 뒤 실습으로 이동합니다.",
-            "emphasis": "normal"
+          "theme": {
+            "background": "dark",
+            "bordered": false
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p03",
-      "title": "질문 묶기",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l1-p03-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 질문 묶기\n\n- 같은 의도 질문 통합",
-            "emphasis": "normal"
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d5l1-p03-b2",
-          "type": "rich-text",
+          "id": "d5l1-b01-flow",
+          "type": "infographic",
           "visibility": "visible",
           "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p03-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p04",
-      "title": "우선순위",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l1-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 우선순위\n\n- 빈도 / 구매 영향 / 혼란 위험 / 대응 비용",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p04-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p04-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p05",
-      "title": "답변 전에 근거 확인",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l1-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 답변 전에 근거 확인\n\n- 가격·환불·기능·정책 최신 정보 확인",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p05-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p06",
-      "title": "인터랙티브: FAQ 분류",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l1-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브: FAQ 분류\n\n카드를 눌러 판단 기준을 비교합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/week2/day5/d5l1_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        },
-        {
-          "id": "d5l1-p06-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 정답 암기보다 이유를 말하게 합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p07",
-      "title": "실습: 질문 15개 모으기",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l1-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실습: 질문 15개 모으기\n\n내 사업 기준으로 작성합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "고객 질문을 모아 FAQ 원장 만들기 실습 입력",
-          "data": {
-            "fields": [
+            "variant": "steps",
+            "items": [
               {
-                "id": "d5l1-p07-form-f1",
-                "label": "현재 고객/대상",
-                "kind": "long-text",
-                "required": true
+                "label": "타겟 (Target)",
+                "description": "누구에게"
               },
               {
-                "id": "d5l1-p07-form-f2",
-                "label": "사용할 근거 자료",
-                "kind": "long-text",
-                "required": true
+                "label": "가치 (Value)",
+                "description": "어떤 가치를"
               },
               {
-                "id": "d5l1-p07-form-f3",
-                "label": "핵심 메시지 또는 답변",
-                "kind": "long-text",
-                "required": true
+                "label": "이해관계자 (Actor)",
+                "description": "실제 누가 관여하고"
               },
               {
-                "id": "d5l1-p07-form-f4",
-                "label": "다음 행동(CTA/후속 단계)",
-                "kind": "long-text",
-                "required": true
+                "label": "고객여정 (Journey)",
+                "description": "어떤 경로를 거치는가"
+              },
+              {
+                "label": "핵심 메시지 (Core Message)",
+                "description": "그것을 하나의 중심 의미로"
+              },
+              {
+                "label": "SNS·블로그·이메일·랜딩페이지",
+                "description": "여러 채널로 표현"
               }
             ]
-          }
+          },
+          "title": "오늘까지의 흐름"
         },
         {
-          "id": "d5l1-p07-i1",
+          "id": "d5l1-b01-notice",
           "type": "rich-text",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
-            "markdown": "강사 포인트: 실제 고객 민감정보는 넣지 않습니다.",
+            "markdown": "**지금까지는** 누구에게 어떤 가치를 줄지, 실제 고객이 누구이고 어떤 경로를 거치는지 정리했습니다.\n\n**이제** 그 정보를 고객이 기억할 수 있는 하나의 중심 의미로 바꿉니다.",
             "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p08",
-      "title": "ChatGPT로 질문 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l1-p08-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## ChatGPT로 질문 정리\n\n제공 자료 안에서만 묶고 중복 제거",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p08-prompt",
-          "type": "prompt",
-          "visibility": "visible",
-          "data": {
-            "prompt": "당신은 초기 창업자의 실무 마케팅 코치입니다.\n아래 입력만 사용해 초안을 작성하세요.\n1) 제공되지 않은 사실은 만들지 마세요.\n2) 불확실하면 \"확인 필요\"로 표시하세요.\n3) 다음 행동은 하나만 제안하세요.\n4) 과장·민감정보 추정·가짜 후기·근거 없는 수치를 사용하지 마세요.\n\n[대상]\n[근거 자료]\n[핵심 메시지]\n[다음 행동]",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          }
-        },
-        {
-          "id": "d5l1-p08-link",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p09",
-      "title": "FAQ 카테고리",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l1-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## FAQ 카테고리\n\n- 서비스 / 가격 / 이용 / 일정 / 환불 / 개인정보",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**실습 기준:** 제공된 고객 자료와 실제 확인 가능한 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p09-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 비개발자 초급 수강생이 바로 적용할 수 있는 쉬운 예시로 설명합니다.",
-            "emphasis": "normal"
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p10",
-      "title": "퀴즈",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l1-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d5l1-p10-q-q1",
-                "question": "이 Lesson에서 가장 먼저 확인할 것은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d5l1-p10-q-c1",
-                    "text": "AI 문장이 멋진가"
-                  },
-                  {
-                    "id": "d5l1-p10-q-c2",
-                    "text": "고객 자료·사실·목표와 연결되는가"
-                  },
-                  {
-                    "id": "d5l1-p10-q-c3",
-                    "text": "길이가 충분히 긴가"
-                  },
-                  {
-                    "id": "d5l1-p10-q-c4",
-                    "text": "자동화할 수 있는가"
-                  }
-                ],
-                "correctChoiceId": "d5l1-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d5l1-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "표현보다 고객 자료·사실·목표와의 연결을 먼저 확인합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-p10-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 자동화 가능성보다 정확성과 연결성이 우선입니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p11",
-      "title": "최종 FAQ 질문 원장",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l1-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 FAQ 질문 원장\n\n최종본과 선택 이유를 정리합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d5l1-final-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "고객 질문을 모아 FAQ 원장 만들기 최종 결과",
-          "data": {
-            "fields": [
-              {
-                "id": "d5l1-final-form-f1",
-                "label": "최종 결과물",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d5l1-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d5l1-final-form-f3",
-                "label": "검수한 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d5l1-final-form-f4",
-                "label": "다음 실험/후속 행동",
-                "kind": "long-text",
-                "required": true
-              }
-            ]
-          }
-        },
-        {
-          "id": "d5l1-p11-i1",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 다음 수업에서 재사용할 수 있게 근거와 선택 이유를 함께 남깁니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d5l1-p12",
-      "title": "저장",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d5l1-p12-preview",
+          "id": "d5l1-b01-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "faq",
+            "artifactType": "business-idea",
+            "emptyMessage": "8차시를 먼저 완료해야 Customer Journey Map과 Business Context가 표시됩니다."
+          },
+          "title": "8차시 결과"
+        },
+        {
+          "id": "d5l1-b01-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "목록이 비어 있으면 8차시를 아직 완료하지 않은 학생입니다 — 8차시 P10에서 저장하고 오게 하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "핵심 메시지란 무엇인가",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l1-b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 가치제안과 핵심 메시지는 다릅니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b02-compare",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "가치제안 (Value Proposition)",
+                "description": "고객에게 어떤 가치를 제공하는가?"
+              },
+              {
+                "label": "핵심 메시지 (Core Message)",
+                "description": "그 가치를 고객에게 어떤 중심 의미로 전달할 것인가?"
+              }
+            ]
+          },
+          "title": "가치제안 vs 핵심 메시지"
+        },
+        {
+          "id": "d5l1-b02-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**핵심 메시지는 광고 카피가 아닙니다.**\n\n광고 문구는 계속 바뀔 수 있지만, 핵심 메시지는 쉽게 바뀌면 안 됩니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b02-example",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "광고 카피 — 수시로 바뀜",
+                "description": "중간고사 영어, 지금부터 완벽 대비!\n(캠페인성 문구 — 상황마다 계속 바뀌어도 괜찮음)"
+              },
+              {
+                "label": "핵심 메시지 — 절대 바뀌지 않음",
+                "description": "자녀가 반복해서 틀리는 영어 영역을 확인하고, 다음 학습에서 무엇을 보완해야 하는지 돕는다.\n(브랜드의 뼈대 — 어떤 광고 카피를 만들든 이 의미는 유지됨)"
+              }
+            ]
+          },
+          "title": "예시(교육용) — 영어학원"
+        },
+        {
+          "id": "d5l1-b02-terms",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "가치제안 (Value Proposition)",
+                "description": "왜 우리를 선택해야 하는가?"
+              },
+              {
+                "label": "핵심 메시지 (Core Message)",
+                "description": "그 가치를 어떤 중심 의미로 기억시킬 것인가?"
+              },
+              {
+                "label": "콘텐츠 관점 (Angle)",
+                "description": "같은 메시지를 어떤 관점에서 보여줄 것인가?"
+              },
+              {
+                "label": "후킹 문장 (Hook)",
+                "description": "어떻게 관심을 끌 것인가?"
+              },
+              {
+                "label": "행동 유도 (CTA)",
+                "description": "무엇을 하게 할 것인가?"
+              }
+            ]
+          },
+          "title": "용어 구분"
+        },
+        {
+          "id": "d5l1-b02-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "Angle/Hook/CTA는 10차시 SNS 실습에서 다룬다는 것을 미리 알려주세요. 오늘은 그 앞 단계, 무엇을 말할지를 정하는 시간입니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "핵심 메시지의 구조",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l1-b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 메시지를 만들기 전에 확인하는 네 가지",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b03-elements",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "대상 고객 (Audience)",
+                "description": "누구에게 말하는가"
+              },
+              {
+                "label": "고객 문제 (Problem)",
+                "description": "그 고객의 어떤 문제인가"
+              },
+              {
+                "label": "제공 가치 (Value)",
+                "description": "무엇으로 해결해주는가"
+              },
+              {
+                "label": "믿을 근거 (Reason to Believe / Proof)",
+                "description": "왜 믿어도 되는가"
+              }
+            ]
+          },
+          "title": "핵심 메시지 설계 4요소"
+        },
+        {
+          "id": "d5l1-b03-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**이 4개를 한 문장에 전부 넣으라는 뜻이 아닙니다.**\n\n메시지를 만들기 전에 확인해야 하는 설계 구조입니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b03-feature",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "기능 (Feature)",
+                "description": "AI 기반 고객관리 시스템을 제공합니다."
+              },
+              {
+                "label": "핵심 메시지 (Core Message)",
+                "description": "고객의 반복되는 문제를 놓치지 않고 다음 대응에 이어갈 수 있습니다."
+              }
+            ]
+          },
+          "title": "기능 ≠ 핵심 메시지"
+        },
+        {
+          "id": "d5l1-b03-onemessage",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**1 Message = 1 Meaning**\n\n가장 중요한 고객 문제 1개 + 가장 중요한 가치 1개에 집중합니다.\n\n여러 장점을 한 문장에 전부 넣으면 아무것도 기억되지 않습니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b03-formula-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 네 요소를 한 문장으로 조립하기",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b03-formula",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "조립 공식",
+                "description": "[대상 고객]가 [고객 문제]를 겪을 때,\n[제공 가치]를 돕습니다.\n이는 [믿을 근거]로 증명됩니다."
+              },
+              {
+                "label": "예시(교육용) — 영어학원",
+                "description": "[자녀의 영어 학습상태 파악이 어려운 학부모님께]\n[아이가 계속 틀리는데 원인을 몰라 답답하신 문제]를 해결하기 위해,\n[반복되는 취약영역을 확인해 다음 학습에 반영하도록] 돕습니다.\n이는 [학생별 오답 확인 및 1:1 학습 피드백 시스템]으로 증명됩니다."
+              }
+            ]
+          },
+          "title": "핵심 메시지 조립 공식"
+        },
+        {
+          "id": "d5l1-b03-formula-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**이 문장 자체가 광고 카피로 나가는 것은 아닙니다.**\n\n우리가 만드는 모든 콘텐츠가 흔들리지 않게 잡아주는 '설계도'일 뿐입니다. 다음 실습에서는 이 공식에 여러분의 실제 결정을 넣어 후보를 만듭니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b03-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "'다 넣고 싶은 마음'이 메시지를 망가뜨린다는 것을 강조하세요. 위 조립 공식은 다음 실습(P04) Prompt 1에서 AI가 그대로 사용하는 틀입니다. 다음 페이지 실습에서 후보 3개를 만들고, 그중 정말 하나만 남기는 감각을 연습합니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "실습 1 — 이전 결정에서 핵심 메시지 후보 만들기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l1-b04-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 지금까지 결정한 내용에서\n# 핵심 메시지 후보를 만듭니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b04-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "사업 설명 / 확인된 사실 (Business Context)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "1순위 타겟 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "핵심 고객 문제 (Key Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
+                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Customer Journey Map v0.1",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "관련 Actor (주요 사용자·구매자·먼저 만날 Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "주요 사용자",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "주요 사용자 (Primary User)"
+                  },
+                  {
+                    "kind": "prior-artifact",
+                    "label": "주요 구매자",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "주요 구매자 (Primary Buyer)"
+                  },
+                  {
+                    "kind": "prior-artifact",
+                    "label": "먼저 만날 Actor",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "먼저 만날 Actor (First Contact Actor)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "가장 큰 마찰 (Top Friction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "가장 큰 마찰 (Top Friction)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "주요 리스크 / 검증 필요 (반대요인 · 확인 안 된 근거)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "가장 큰 반대요인",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "가장 큰 반대요인 (Main Objection)"
+                  },
+                  {
+                    "kind": "prior-artifact",
+                    "label": "확인되지 않은 Journey 근거",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "확인되지 않은 Journey 근거 (Missing Journey Evidence)"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": "버튼으로 채워지지 않는 칸은 없습니다. 모두 버튼으로 채운 뒤, 아래 프롬프트의 [ ] 열 곳에 순서대로 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d5l1-b04-prompt",
+          "type": "prompt",
+          "title": "핵심 메시지 후보 생성 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n당신은 창업자의 고객·가치·근거를 바탕으로 핵심 메시지를 설계하는 메시지 전략가입니다.\n광고 카피라이터가 아니라, 무엇을 말해야 하는지를 결정하는 전략가입니다.\n\n[입력 — 이전 차시의 실제 Business Context와 Evidence]\n\n[사업 설명 / 확인된 사실]\n[ ]\n\n[1순위 타겟]\n[ ]\n\n[핵심 고객 문제]\n[ ]\n\n[1순위 가치제안]\n[ ]\n\n[지지 근거]\n[ ]\n\n[관련 Actor]\n[ ]\n\n[고객여정 촉발요인]\n[ ]\n\n[가장 큰 마찰]\n[ ]\n\n[우선 검증 접점]\n[ ]\n\n[주요 리스크 / 검증 필요]\n[ ]\n\n[작업]\n\n1. 현재 1순위 고객이 누구인지 정리해줘.\n2. 그 고객의 가장 중요한 문제 1개를 찾아줘.\n3. 현재 제품/서비스가 제공하는 핵심 가치 1개를 찾아줘.\n4. 실제 Evidence와 아직 검증되지 않은 가설을 구분해줘.\n5. 핵심 메시지 후보 3개를 만들어줘.\n6. 각 후보가 어떤 대상 고객 / 문제 / 가치 / 믿을 근거에 기반하는지 표시해줘.\n7. 각 후보가 Feature 중심 표현은 아닌지 점검해줘.\n8. 각 후보가 Evidence보다 강한 주장을 하지 않는지 점검해줘.\n9. 반드시 유지해야 할 메시지 불변요소 후보를 제안해줘.\n\n[중요 제약]\n\n- Evidence에 없는 수치, 고객반응, 성과, 시장자료를 만들어내지 마세요.\n- Target을 임의로 넓히지 마세요.\n- \"업계 최고\", \"완벽\", \"혁신적\", \"무조건\", \"보장\" 같은 과장 표현을 근거 없이 쓰지 마세요.\n- SNS 문구, Hook, CTA까지 만들지 마세요 — 지금 단계의 목적은 Core Message 후보 생성입니다.\n- 최종 선택은 사람이 합니다.\n\n[출력]\n\n후보 1\n- 핵심 메시지:\n- 대상 고객:\n- 핵심 문제:\n- 핵심 가치:\n- 믿을 근거:\n- 근거 상태:\n- 위험한 주장 여부:\n\n후보 2\n(위와 동일한 형식)\n\n후보 3\n(위와 동일한 형식)\n\n마지막:\n- 공통으로 유지해야 할 핵심 의미\n- 아직 검증이 필요한 부분\n- AI 추천 후보와 추천 이유",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "위 Context 준비 칸의 내용을 [ ] 열 곳에 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d5l1-b04-chatgpt",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "핵심 메시지 후보 생성",
+            "practiceDescription": "Target/Problem/Value/Evidence를 바탕으로 핵심 메시지 후보 3개를 만듭니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "d5l1-b04-result-form",
+          "type": "input-form",
+          "title": "실습 1 AI 분석 결과",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "실습 1 AI 분석 결과 (Prompt 1 Analysis Result)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요."
+              }
+            ]
+          },
+          "description": "후보 1~3, 공통 핵심 의미, AI 추천까지 전체 결과를 여러 칸으로 나누지 말고 한 번만 붙여넣으세요."
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "메시지가 AI 때문에 변질되는 이유",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l1-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 멋있는 문장보다 맞는 문장이 중요합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b05-fit",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "고객 적합성 (Audience Fit) — 지금 그 고객을 향하고 있는가"
+              },
+              {
+                "label": "문제 적합성 (Problem Fit) — 실제 확인된 문제인가"
+              },
+              {
+                "label": "가치 적합성 (Value Fit) — 지금 제공 가능한 가치인가"
+              },
+              {
+                "label": "근거 적합성 (Evidence Fit) — 뒷받침할 근거가 있는가"
+              }
+            ]
+          },
+          "title": "메시지 적합성 (Message Fit)"
+        },
+        {
+          "id": "d5l1-b05-mirror-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 같은 메시지, 다른 거울\n\n메시지 적합성은 대상(Actor)에 따라 강조점을 다르게 비출 때도 지켜야 합니다. 7차시에서 나눈 Buyer/User가 그 대상입니다 — 핵심 의미는 그대로 두고, 어느 부분을 앞에 보여줄지만 조정합니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b05-mirror",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "구매자 (Buyer)",
+                "description": "\"아이의 현재 학습상태를 정확히 파악할 수 있습니다.\"\n(구매를 결정하는 사람이 궁금한 것 먼저)"
+              },
+              {
+                "label": "사용자 (User)",
+                "description": "\"내가 어떤 부분을 다시 공부해야 하는지 명확히 알 수 있습니다.\"\n(실제로 쓰는 사람이 궁금한 것 먼저)"
+              }
+            ]
+          },
+          "title": "예시(교육용) — 같은 핵심 메시지를 두 Actor에게"
+        },
+        {
+          "id": "d5l1-b05-mirror-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**대상(Audience)·문제(Problem)·가치(Value)가 완벽히 같은 뿌리에서 나와야 합니다.** 강조 순서만 다를 뿐, 서로 다른 메시지를 만드는 것이 아닙니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b05-drift-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 메시지 변질 (Message Drift)\n\nAI에게 반복해서 표현을 바꿔달라고 요청하면, 표현뿐 아니라 메시지의 본질까지 바뀔 수 있습니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b05-drift",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "고객 변질 (Audience Drift)",
+                "description": "말하는 대상이 슬며시 넓어지거나 바뀜"
+              },
+              {
+                "label": "문제 변질 (Problem Drift)",
+                "description": "다루는 문제 자체가 슬며시 바뀜"
+              },
+              {
+                "label": "가치 변질 (Value Drift)",
+                "description": "제공하는 가치가 슬며시 바뀜"
+              },
+              {
+                "label": "주장 변질 (Claim Drift)",
+                "description": "주장의 강도가 슬며시 세짐"
+              },
+              {
+                "label": "근거 변질 (Evidence Drift)",
+                "description": "근거 없는 내용이 사실처럼 슬며시 섞임"
+              }
+            ]
+          },
+          "title": "대표적인 변질 5가지"
+        },
+        {
+          "id": "d5l1-b05-invariant",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "바뀌어도 되는 것",
+                "description": "표현 / 길이 / 말투 / Hook / Angle / 사례 / 콘텐츠 형식 / 채널"
+              },
+              {
+                "label": "바뀌면 안 되는 것 — 메시지 불변요소 (Message Invariant)",
+                "description": "대상 고객 / 핵심 문제 / 핵심 가치 / 근거의 범위 / 주장의 강도 / 현재 포지션"
+              }
+            ]
+          },
+          "title": "바뀌어도 되는 것 vs 바뀌면 안 되는 것"
+        },
+        {
+          "id": "d5l1-b05-claim",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**주장(Claim)은 근거(Evidence)보다 강해질 수 없습니다.**\n\n1차시에서 배운 FACT / INFERENCE / NEEDS VERIFICATION 구분을 여기서 다시 사용합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b05-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "1차시의 Evidence-first 원칙을 다시 소환하는 페이지입니다. '그때 배운 FACT/INFERENCE 구분이 메시지에도 그대로 적용된다'는 것을 짚어주세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "핵심 메시지가 콘텐츠로 자라나는 구조",
+      "layout": "wide",
+      "blocks": [
+        {
+          "id": "d5l1-b06t-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 만든 핵심 메시지는\n# 여기서 끝나지 않습니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b06t-hierarchy",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "핵심 메시지 (Core Message)",
+                "description": "오늘 결정하는 중심 의미"
+              },
+              {
+                "label": "보조 메시지 (Supporting Message)",
+                "description": "핵심 메시지를 뒷받침하는 근거·설명"
+              },
+              {
+                "label": "증명 수단 (Proof)",
+                "description": "실제로 확인 가능한 근거·수치·사례"
+              },
+              {
+                "label": "콘텐츠 관점 (Angle)",
+                "description": "누구의 어떤 감정·상황에 맞춰 보여줄 것인가"
+              },
+              {
+                "label": "후킹 / 최종 콘텐츠 (Hook / Content)",
+                "description": "실제 SNS 게시글·블로그·랜딩페이지"
+              }
+            ]
+          },
+          "title": "핵심 메시지 계층 구조 (Core Message Hierarchy)"
+        },
+        {
+          "id": "d5l1-b06t-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**예시(교육용) — 영어학원**\n\n핵심 메시지: 반복되는 취약영역을 확인해 다음 학습에 반영하도록 돕는다\n\n보조 메시지: 학생별 오답을 지속적으로 확인한다\n\n증명 수단: 실제 오답관리 및 학습 피드백 시스템\n\n콘텐츠 관점: 학부모의 불안감을 해소하는 시각\n\n최종 콘텐츠: 시선을 끄는 인스타그램 릴스, 블로그 썸네일",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b06t-key",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**핵심 메시지는 하나의 광고 문구가 아니라, 수백 개의 콘텐츠를 만들어내는 마르지 않는 샘물입니다.**\n\nAI가 아무리 화려한 문장을 써내려가도, 이 뼈대가 없으면 고객의 마음을 움직일 수 없습니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "primary-soft",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b06t-next",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 다음 시간 예고\n\n다음 차시에서는 오늘 만든 핵심 메시지를 무기 삼아, 고객의 시선을 사로잡는 Hook(후킹)과 CTA(행동 촉구)를 본격적으로 설계합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b06t-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 페이지는 오늘 배운 이론(Fit/Drift/Invariant)과 다음 실습(Red Team), 그리고 다음 차시(Hook/CTA)를 잇는 다리 역할입니다. '오늘 만드는 건 광고 문구 1개가 아니라 앞으로 만들 모든 콘텐츠의 설계도'라는 것을 강조하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "실습 2 — AI가 만든 메시지를 반대편에서 공격하기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l1-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 좋아 보이는 메시지를\n# 한 번 더 의심합니다",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b06-context-form",
+          "type": "input-form",
+          "title": "이전 결과 참고",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "핵심 메시지 후보 (Prompt 1 결과, 참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P04에서 가져오기",
+                    "sourceBlockId": "d5l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "1순위 타겟 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P04에서 가져오기",
+                    "sourceBlockId": "d5l1-b04-context-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "1순위 가치제안 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P04에서 가져오기",
+                    "sourceBlockId": "d5l1-b04-context-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "주요 리스크 (참고용)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "P04에서 가져오기",
+                    "sourceBlockId": "d5l1-b04-context-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "description": "아래 프롬프트의 [ ] 네 곳에 이 내용을 순서대로 옮겨 붙여넣습니다."
+        },
+        {
+          "id": "d5l1-b06-prompt",
+          "type": "prompt",
+          "title": "핵심 메시지 Red Team 프롬프트",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n당신은 메시지를 더 화려하게 만드는 카피라이터가 아닙니다.\n당신은 현재 핵심 메시지가 고객·문제·가치·근거에서 벗어나지 않았는지 공격적으로 검토하는 Red Team Reviewer입니다.\n\n[핵심 메시지 후보 — Prompt 1 결과]\n[ ]\n\n[1순위 타겟]\n[ ]\n\n[1순위 가치제안]\n[ ]\n\n[주요 리스크]\n[ ]\n\n[작업]\n\nPrompt 1의 각 핵심 메시지 후보를 다음 기준으로 검토하세요.\n\n1. 고객 적합성\n   - 현재 1순위 타겟을 정확히 향하고 있는가?\n   - 고객을 임의로 넓히지 않았는가?\n\n2. 문제 적합성\n   - 실제 Evidence에서 확인된 문제인가?\n   - 더 큰 문제로 과장하지 않았는가?\n\n3. 가치 적합성\n   - 현재 제품이 실제 제공 가능한 가치인가?\n   - 미래 기능이나 아이디어를 현재 기능처럼 표현하지 않았는가?\n\n4. 근거 적합성\n   - 주장(Claim)을 뒷받침할 근거(Evidence)가 있는가?\n   - 가설을 사실처럼 말하지 않았는가?\n\n5. 메시지 변질 점검\n   - 고객 변질 (Audience Drift)\n   - 문제 변질 (Problem Drift)\n   - 가치 변질 (Value Drift)\n   - 주장 변질 (Claim Drift)\n   - 근거 변질 (Evidence Drift)\n\n6. 경쟁사도 그대로 쓸 수 있는 너무 일반적인 표현인지 확인해줘.\n\n7. 가장 크게 오해될 수 있는 부분을 제시해줘.\n\n각 후보에 대해 아래 중 하나를 제안하세요.\n\n- KEEP (유지)\n- REVISE (수정)\n- HOLD (근거가 더 필요해 보류)\n- REJECT (현재 메시지로 사용하지 않음)\n\n[출력]\n\n최종적으로 다음을 정리해줘.\n\n- 가장 안전한 후보 1개\n- 수정이 필요한 부분\n- 반드시 유지해야 할 의미\n- 사용하면 안 되는 과장 주장\n- 메시지 변질 방지 규칙\n\n중요: 최종 결정은 사람이 합니다.",
+            "targetTool": "ChatGPT",
+            "copyable": true
+          },
+          "description": "위 참고 칸의 내용을 [ ] 네 곳에 옮겨 붙여넣으세요."
+        },
+        {
+          "id": "d5l1-b06-chatgpt",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "핵심 메시지 Red Team 검증",
+            "practiceDescription": "고객·문제·가치·근거 적합성과 메시지 변질 여부를 검토받고 KEEP/REVISE/HOLD/REJECT 제안을 받습니다.",
+            "estimatedMinutes": 15
+          }
+        },
+        {
+          "id": "d5l1-b06-result-form",
+          "type": "input-form",
+          "title": "실습 2 AI 검토 결과",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "실습 2 AI 검토 결과 (Prompt 2 Review Result)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요."
+              }
+            ]
+          },
+          "description": "적합성 검토, 변질 점검, KEEP/REVISE/HOLD/REJECT, 최종 제안까지 전체 결과를 나누지 말고 한 번만 붙여넣으세요."
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "사람의 결정 — 핵심 메시지 지도 (Core Message Map) v0.1",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l1-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 최종 핵심 메시지는 사람이 선택합니다\n\nAI 결과를 그대로 복제하지 않습니다. 읽고, 사업에 실제로 남길 결정만 추려 적으세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b07-form",
+          "type": "input-form",
+          "title": "핵심 메시지 지도 (Core Message Map) v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 고객 (Primary Audience)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "핵심 고객 문제 (Key Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "5차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "5차시 — Value Proposition Map v0.1",
+                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "핵심 가치 (Core Value)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "최종 핵심 메시지 (Primary Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Prompt 1·2 결과를 읽고, 사업에 실제로 남길 핵심 메시지 하나를 결정해 적으세요."
+              },
+              {
+                "id": "f5",
+                "label": "보조 메시지 (Secondary Message)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "선택 입력 — 꼭 필요하지 않으면 비워두세요."
+              },
+              {
+                "id": "f6",
+                "label": "핵심 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "버튼으로 가져온 뒤, 이번 메시지에 맞게 필요한 부분만 남기세요.",
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Customer Journey Map v0.1",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "가장 큰 리스크 / 반대근거 (Main Risk / Counter Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Prompt 2 Red Team 결과를 참고해 핵심 1개만 결정해 적으세요."
+              },
+              {
+                "id": "f8",
+                "label": "메시지 불변요소 (Message Invariants)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 예비·초기창업자 / 고객검증 / 이전 결정 연결 / 성공 보장 표현 금지"
+              },
+              {
+                "id": "f9",
+                "label": "사용하면 안 되는 주장 (Prohibited Claim)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Prompt 2에서 지적된 과장·근거 없는 표현을 적으세요."
+              },
+              {
+                "id": "f10",
+                "label": "메시지 변질 방지 규칙 (Drift Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: Target을 넓히지 않는다 / Feature를 Value처럼 말하지 않는다"
+              },
+              {
+                "id": "f11",
+                "label": "사람의 최종 판단 메모 (Human Decision Note)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "왜 이 메시지를 선택했는지 1~3문장으로 적으세요."
+              }
+            ]
+          },
+          "description": "1~3, 6번은 버튼으로 채워집니다. 4·5·7~11번이 이번 시간의 실제 결정입니다 — Prompt 1·2 결과를 참고해 짧게 적으세요."
+        },
+        {
+          "id": "d5l1-b07-decision",
+          "type": "infographic",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "유지 (KEEP)",
+                "description": "그대로 유지"
+              },
+              {
+                "label": "수정 (REVISE)",
+                "description": "내용 수정 후 유지"
+              },
+              {
+                "label": "보류 (HOLD)",
+                "description": "근거 부족 — 보류"
+              },
+              {
+                "label": "폐기 (REJECT)",
+                "description": "현재 메시지로 사용하지 않음"
+              }
+            ]
+          },
+          "title": "Prompt 2의 KEEP/REVISE/HOLD/REJECT를 참고하세요"
+        },
+        {
+          "id": "d5l1-b07-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "이 페이지에서는 아직 저장하지 않습니다. 다 채운 뒤 다음 페이지에서 실제로 저장 버튼을 클릭하게 하세요. 실제 신규 타이핑은 4·5·7~11번(6개 이내)뿐이라는 것을 안내하세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d5l1-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
+            "emphasis": "hero"
+          },
+          "theme": {
+            "background": "dark",
+            "bordered": false
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b08-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## A. 핵심 메시지 지도 저장\n\n앞 페이지에서 정리한 내용이 저장됩니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b08-cm-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "9차시 — Core Message Map v0.1",
+            "sourceBlockId": "d5l1-b07-form",
+            "buttonLabel": "Core Message Map 저장"
+          }
+        },
+        {
+          "id": "d5l1-b08-preview",
+          "type": "result-preview",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
             "emptyMessage": "아직 저장된 결과물이 없습니다."
           }
         },
         {
-          "id": "d5l1-p12-save",
-          "type": "save-artifact",
+          "id": "d5l1-b08-b-title",
+          "type": "rich-text",
           "visibility": "visible",
-          "title": "Day5 Lesson1 — 고객 질문을 모아 FAQ 원장 만들기",
           "data": {
-            "artifactType": "faq",
-            "artifactTitle": "Day5 Lesson1 — 고객 질문을 모아 FAQ 원장 만들기",
-            "sourceBlockId": "d5l1-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "markdown": "## B. Business Context 업데이트\n\n8차시 Business Context v0.8을 그대로 가져오고, 이번에 결정한 메시지 관련 항목만 새로 채우세요.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d5l1-p12-reflection",
-          "type": "reflection",
+          "id": "d5l1-b08-context-form",
+          "type": "input-form",
+          "title": "Business Context v0.9",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 판단 기준 한 가지는 무엇이었나요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "fields": [
+              {
+                "id": "f1",
+                "label": "확인된 사실 (Confirmed Facts)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "현재 가설 (Current Hypotheses)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "현재 가설 (Current Hypotheses)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "고객 세그먼트 (Customer Segments)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "1순위 타겟 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "1순위 타겟 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "8차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "8차시 — Business Context v0.8",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "핵심 메시지 (Primary Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l1-b07-form",
+                    "sourceFieldIds": [
+                      "f4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "보조 메시지 (Secondary Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l1-b07-form",
+                    "sourceFieldIds": [
+                      "f5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "메시지 불변요소 (Message Invariants)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l1-b07-form",
+                    "sourceFieldIds": [
+                      "f8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "핵심 메시지 근거 (Message Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l1-b07-form",
+                    "sourceFieldIds": [
+                      "f6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "핵심 메시지 리스크 (Message Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l1-b07-form",
+                    "sourceFieldIds": [
+                      "f7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "사용 금지 주장 (Prohibited Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l1-b07-form",
+                    "sourceFieldIds": [
+                      "f9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f14",
+                "label": "메시지 변질 방지 규칙 (Drift Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d5l1-b07-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "다음 결정 사항 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 이 핵심 메시지를 SNS의 Hook / Value / Body / Proof / CTA 구조로 어떻게 표현할 것인가?"
+              }
+            ]
+          },
+          "description": "8차시 Business Context v0.8을 복사해 이번 핵심 메시지 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
+        },
+        {
+          "id": "d5l1-b08-context-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "9차시 — Business Context v0.9",
+            "sourceBlockId": "d5l1-b08-context-form",
+            "buttonLabel": "Business Context v0.9 저장"
           }
+        },
+        {
+          "id": "d5l1-b08-next",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 다음 단계 — 같은 메시지를 SNS로 표현합니다\n\n오늘은 무엇을 말할지 정했습니다.\n\n다음 차시에서는 이 핵심 메시지를 바꾸지 않고 Hook / Value / Body / Proof / CTA 구조로 표현합니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "muted",
+            "bordered": true
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          }
+        },
+        {
+          "id": "d5l1-b08-script",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "두 저장 버튼을 모두 클릭해서 목록에 두 결과물이 함께 남아있는지, 8차시 v0.8이 그대로 남아있는지 확인시키세요. 10차시는 Primary Core Message / Message Invariants / Message Evidence / Prohibited Claim / Drift Guardrail을 그대로 가져오는 것으로 시작합니다.",
+            "emphasis": "normal"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
+          },
+          "title": "강사 멘트"
         }
       ]
     }
