@@ -345,21 +345,6 @@
               },
               {
                 "id": "f3",
-                "label": "핵심 고객 문제",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Business Context v0.4",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
                 "label": "확인된 사실",
                 "kind": "long-text",
                 "required": false,
@@ -374,22 +359,22 @@
                 ]
               },
               {
-                "id": "f5",
-                "label": "현재 가설",
+                "id": "f4",
+                "label": "선택된 고객/Segment 관련 근거",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
                   {
                     "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
+                    "label": "3차시에서 가져오기",
                     "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Business Context v0.4",
-                    "sourceLabel": "현재 가설 (Current Hypotheses)"
+                    "artifactTitle": "3차시 — Business Context v0.3",
+                    "sourceLabel": "세그먼트 근거 (Segment Evidence)"
                   }
                 ]
               },
               {
-                "id": "f6",
+                "id": "f5",
                 "label": "지지 근거",
                 "kind": "long-text",
                 "required": false,
@@ -404,7 +389,7 @@
                 ]
               },
               {
-                "id": "f7",
+                "id": "f6",
                 "label": "반대 근거",
                 "kind": "long-text",
                 "required": false,
@@ -422,6 +407,21 @@
                     "artifactType": "business-idea",
                     "artifactTitle": "4차시 — Target Selection v0.1",
                     "sourceLabel": "가장 큰 반대근거·리스크 (Main Risk / Counter Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "Target 선택 근거",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "4차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "4차시 — Target Selection v0.1",
+                    "sourceLabel": "1순위 선택 이유 (Why Primary)"
                   }
                 ]
               },
@@ -472,7 +472,7 @@
           "description": "위 Context 준비 칸의 내용을 아래 [ ] 자리에 옮겨 붙인 뒤 ChatGPT에 실행하세요.",
           "visibility": "visible",
           "data": {
-            "prompt": "[역할]\n\n당신은 창업자의 고객 전략을\n불필요하게 복잡하게 만드는 컨설턴트가 아닙니다.\n\n이미 앞 단계에서 결정한\n고객 Segment, Target, Evidence를 바탕으로\n\n5일차의 Core Message와 Marketing Content 설계에\n반드시 필요한 고객전략 핵심만 추출하는\nCustomer Strategy Bridge Analyst입니다.\n\n새로운 고객·사실·시장규모·구매확률을\n임의로 만들지 마세요.\n\n================================\n[기존 확정 Context]\n================================\n\n사업 한줄 설명:\n[ ]\n\n1순위 고객:\n[ ]\n\n핵심 고객 문제:\n[ ]\n\n확인된 사실:\n[ ]\n\n현재 가설:\n[ ]\n\n지지 근거:\n[ ]\n\n반대 근거:\n[ ]\n\nTarget Risk:\n[ ]\n\n현재 검증 과제:\n[ ]\n\n================================\nPART A — VALUE\n================================\n\n1. Primary Target에게\n가장 중요한 핵심 Value를 1개 제안하세요.\n\n2. Feature → Benefit → Outcome을 간단히 구분하세요.\n\n3. 현재 실제로 제공 가능한 Capability / Proof를 구분하세요.\n\n4. Evidence보다 강한 Value Claim은 사용하지 마세요.\n\n출력:\n\nPrimary Value Proposition:\n-\n\nFeature:\n-\n\nBenefit:\n-\n\nExpected Outcome:\n-\n\nAvailable Capability / Proof:\n-\n\nMain Value Risk:\n-\n\nEvidence Status:\nEVIDENCE / INFERENCE / NEEDS VALIDATION\n\n================================\nPART B — CUSTOMER BOUNDARY\n================================\n\n현재 단계에서:\n\nECP:\n지금 가장 먼저 검증할 고객\n\nFuture ICP:\n향후 Evidence와 Capability가 쌓이면\n좋은 고객이 될 수 있는 고객\n\nAnti-ICP / Current Boundary:\n현재는 집중하지 않는 것이 좋은 고객 또는 조건\n\n을 간단하게 제안하세요.\n\n출력:\n\nECP:\n-\n\nECP 이유:\n-\n\nFuture ICP:\n-\n\nAnti-ICP / Current Boundary:\n-\n\nBoundary Risk:\n-\n\n================================\nPART C — ACTOR\n================================\n\n현재 사업에서 실제로 중요한 Actor를 구분하세요.\n\n가능한 역할:\n\nUser\nBuyer\nInfluencer\nDecision Maker\nGatekeeper\n\n모든 역할을 억지로 따로 만들지 마세요.\n\n출력:\n\nUser:\n-\n\nBuyer:\n-\n\nInfluencer:\n-\n\nDecision Maker:\n-\n\nGatekeeper:\n-\n\nPrimary Message Actor:\n-\n\nActor Conflict / Decision Bottleneck:\n-\n\n추가 확인이 필요한 Actor 가설:\n-\n\n================================\nPART D — CUSTOMER JOURNEY\n================================\n\n5일차 메시지 설계에 필요한 Journey 핵심만 뽑으세요.\n\n출력:\n\nJourney Trigger:\n-\n\n현재 Journey 요약:\n-\n\nTop Friction:\n-\n\nCustomer Question:\n-\n\nCritical Touchpoint:\n-\n\nMoment of Truth:\n-\n\nPriority Touchpoint:\n-\n\nActor Handoff가 중요하다면:\n-\n\n================================\nPART E — EVIDENCE BOUNDARY\n================================\n\nSupporting Evidence:\n-\n\nCounter Evidence / Main Risk:\n-\n\n현재 말할 수 있는 것:\n-\n\n현재 함부로 약속하면 안 되는 것:\n-\n\n다음 검증 1순위:\n-\n\n================================\nFINAL BRIDGE\n================================\n\n마지막에 5일차로 가져갈 핵심을\n다음 형식으로 한 번 더 정리하세요.\n\n1. Primary Target:\n2. Core Customer Problem:\n3. Primary Value Proposition:\n4. ECP:\n5. Primary Message Actor:\n6. Available Proof / Supporting Evidence:\n7. Main Risk / Counter Evidence:\n8. Journey Trigger:\n9. Top Friction / Customer Question:\n10. Priority Touchpoint:\n11. Message Boundary:\n12. Next Validation:",
+            "prompt": "[역할]\n\n당신은 창업자의 고객 전략을\n불필요하게 복잡하게 만드는 컨설턴트가 아닙니다.\n\n이미 앞 단계에서 결정한\n고객 Segment, Target, Evidence를 바탕으로\n\n5일차의 Core Message와 Marketing Content 설계에\n반드시 필요한 고객전략 핵심만 추출하는\nCustomer Strategy Bridge Analyst입니다.\n\n새로운 고객·사실·시장규모·구매확률을\n임의로 만들지 마세요.\n\n================================\n[기존 확정 Context]\n================================\n\n사업 한줄 설명:\n[ ]\n\n1순위 고객:\n[ ]\n\n확인된 사실:\n[ ]\n\n선택된 고객/Segment 관련 근거:\n[ ]\n\n지지 근거:\n[ ]\n\n반대 근거:\n[ ]\n\nTarget 선택 근거:\n[ ]\n\nTarget Risk:\n[ ]\n\n현재 검증 과제:\n[ ]\n\n================================\nPART 0 — CORE CUSTOMER PROBLEM\n================================\n\n현재 Primary Target과\n제공된 Confirmed Facts,\nSegment Evidence,\nSupporting Evidence,\nCounter Evidence,\nTarget Selection 근거를 바탕으로\n\n이 고객에게 현재 가장 중요한\n핵심 고객 문제(Core Customer Problem) 후보를\n1개 제안하세요.\n\n주의:\n\n1.\n새로운 문제를 상상해서 만들지 마세요.\n\n2.\nEvidence에서 직접 확인되는 문제인지,\n합리적인 추론인지,\n추가 확인이 필요한 가설인지 구분하세요.\n\n상태는 반드시 아래 중 하나로 표시하세요.\n\nEVIDENCE\n= 제공된 근거에서 직접 확인 가능\n\nINFERENCE\n= 여러 근거를 연결해 합리적으로 추론\n\nNEEDS VALIDATION\n= 추가 고객 확인이 필요\n\n3.\nConfirmed Facts 전체를\n하나의 Customer Problem처럼 요약하지 마세요.\n\n4.\n문제는 가능한 한:\n\n\"누가 + 어떤 상황에서 + 무엇 때문에 어려움을 겪는가\"\n\n가 드러나게 작성하세요.\n\n5.\n제품 기능이나 해결책을\nCustomer Problem으로 쓰지 마세요.\n\n출력:\n\nCore Customer Problem Candidate:\n-\n\nEvidence Status:\nEVIDENCE / INFERENCE / NEEDS VALIDATION\n\nSupporting Basis:\n-\n\nCounter Evidence / Uncertainty:\n-\n\nHuman Validation Question:\n-\n\n================================\nPART A — VALUE\n================================\n\nPART 0에서 도출한 Core Customer Problem Candidate를\n현재 확정 문제가 아니라 \"후보\"로 취급하면서\nPrimary Value Proposition을 분석하세요.\n\nProblem Candidate의 Evidence Status가\nNEEDS VALIDATION이면\nValue Claim도 과도하게 확정적으로 작성하지 마세요.\n\n1. Primary Target에게\n가장 중요한 핵심 Value를 1개 제안하세요.\n\n2. Feature → Benefit → Outcome을 간단히 구분하세요.\n\n3. 현재 실제로 제공 가능한 Capability / Proof를 구분하세요.\n\n4. Evidence보다 강한 Value Claim은 사용하지 마세요.\n\n출력:\n\nPrimary Value Proposition:\n-\n\nFeature:\n-\n\nBenefit:\n-\n\nExpected Outcome:\n-\n\nAvailable Capability / Proof:\n-\n\nMain Value Risk:\n-\n\nEvidence Status:\nEVIDENCE / INFERENCE / NEEDS VALIDATION\n\n================================\nPART B — CUSTOMER BOUNDARY\n================================\n\n현재 단계에서:\n\nECP:\n지금 가장 먼저 검증할 고객\n\nFuture ICP:\n향후 Evidence와 Capability가 쌓이면\n좋은 고객이 될 수 있는 고객\n\nAnti-ICP / Current Boundary:\n현재는 집중하지 않는 것이 좋은 고객 또는 조건\n\n을 간단하게 제안하세요.\n\n출력:\n\nECP:\n-\n\nECP 이유:\n-\n\nFuture ICP:\n-\n\nAnti-ICP / Current Boundary:\n-\n\nBoundary Risk:\n-\n\n================================\nPART C — ACTOR\n================================\n\n현재 사업에서 실제로 중요한 Actor를 구분하세요.\n\n가능한 역할:\n\nUser\nBuyer\nInfluencer\nDecision Maker\nGatekeeper\n\n모든 역할을 억지로 따로 만들지 마세요.\n\n출력:\n\nUser:\n-\n\nBuyer:\n-\n\nInfluencer:\n-\n\nDecision Maker:\n-\n\nGatekeeper:\n-\n\nPrimary Message Actor:\n-\n\nActor Conflict / Decision Bottleneck:\n-\n\n추가 확인이 필요한 Actor 가설:\n-\n\n================================\nPART D — CUSTOMER JOURNEY\n================================\n\n5일차 메시지 설계에 필요한 Journey 핵심만 뽑으세요.\n\n출력:\n\nJourney Trigger:\n-\n\n현재 Journey 요약:\n-\n\nTop Friction:\n-\n\nCustomer Question:\n-\n\nCritical Touchpoint:\n-\n\nMoment of Truth:\n-\n\nPriority Touchpoint:\n-\n\nActor Handoff가 중요하다면:\n-\n\n================================\nPART E — EVIDENCE BOUNDARY\n================================\n\nSupporting Evidence:\n-\n\nCounter Evidence / Main Risk:\n-\n\n현재 말할 수 있는 것:\n-\n\n현재 함부로 약속하면 안 되는 것:\n-\n\n다음 검증 1순위:\n-\n\n================================\nFINAL BRIDGE\n================================\n\n마지막에 5일차로 가져갈 핵심을\n다음 형식으로 한 번 더 정리하세요.\n\n1. Primary Target:\n2. Core Customer Problem Candidate:\n2-1. Problem Evidence Status:\n3. Primary Value Proposition:\n4. ECP:\n5. Primary Message Actor:\n6. Available Proof / Supporting Evidence:\n7. Main Risk / Counter Evidence:\n8. Journey Trigger:\n9. Top Friction / Customer Question:\n10. Priority Touchpoint:\n11. Message Boundary:\n12. Next Validation:",
             "targetTool": "ChatGPT",
             "copyable": true
           }
@@ -620,16 +620,14 @@
               },
               {
                 "id": "f3",
-                "label": "Core Customer Problem",
+                "label": "Core Customer Problem Candidate (실습 1 결과 참고)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
                   {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Business Context v0.4",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
+                    "kind": "same-lesson",
+                    "label": "실습 1 결과에서 가져오기",
+                    "sourceBlockId": "d4l4-b06-result-form"
                   }
                 ]
               },
@@ -686,7 +684,7 @@
           "description": "위 Context 준비 칸의 내용을 아래 [ ] 자리와 [4일차 실습 1 AI 통합분석 결과] 자리에 옮겨 붙인 뒤 실행하세요.",
           "visibility": "visible",
           "data": {
-            "prompt": "[역할]\n\n당신은 새로운 고객전략을 다시 만드는 사람이 아닙니다.\n\n앞에서 만든 Customer Strategy Bridge가\n실제 Evidence를 벗어나거나\n5일차 메시지 설계에 잘못된 Context를 전달하지 않는지\n검토하는 Strategy Red Team Reviewer입니다.\n\n[기존 Evidence / Target Context]\n\n사업:\n[ ]\n\nPrimary Target:\n[ ]\n\nCore Customer Problem:\n[ ]\n\nSupporting Evidence:\n[ ]\n\nCounter Evidence / Risk:\n[ ]\n\n[검토 대상]\n\n[4일차 실습 1 AI 통합분석 결과]\n\n================================\n1. VALUE 검토\n================================\n\n- Feature를 Value처럼 말하지 않았는가?\n- Target Problem과 연결되는가?\n- 실제 Capability 범위 안인가?\n- Evidence보다 강한 약속이 있는가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n2. CUSTOMER BOUNDARY 검토\n================================\n\n- ECP가 너무 넓지 않은가?\n- Future ICP를 사실처럼 확정하지 않았는가?\n- Anti-ICP / Boundary가 합리적인가?\n- 현재 Product Fit과 맞는가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n3. ACTOR 검토\n================================\n\n- User와 Buyer를 혼동하지 않았는가?\n- Decision Maker를 임의로 만들지 않았는가?\n- Gatekeeper가 실제 필요한 사업인가?\n- Actor Conflict가 Evidence인지 추론인지 구분되는가?\n- 실제 메시지를 누구에게 해야 할지 명확한가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n4. JOURNEY 검토\n================================\n\n- Trigger가 실제 Evidence인가?\n- Journey Stage를 AI가 소설처럼 만들지 않았는가?\n- Top Friction이 기존 고객문제와 연결되는가?\n- Customer Question이 합리적인가?\n- Priority Touchpoint가 정말 가장 먼저 검증할 접점인가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n5. 5일차 진입 가능성 검토\n================================\n\n다음 질문에 답하세요.\n\n이 Context만 가지고도 다음 수업에서:\n\nAudience\n+\nProblem\n+\nValue\n+\nReason to Believe\n+\nCustomer Situation\n\n을 이용해\nCore Message를 만들 수 있는가?\n\nYES / PARTIAL / NO\n\n부족하다면\n추가해야 할 정보는 최대 3개만 제안하세요.\n\n================================\n[최종 출력]\n================================\n\nVALUE 판정:\n-\n\nBOUNDARY 판정:\n-\n\nACTOR 판정:\n-\n\nJOURNEY 판정:\n-\n\n가장 큰 모순:\n-\n\n가장 위험한 가설:\n-\n\n반드시 수정할 사항 최대 5개:\n1.\n2.\n3.\n4.\n5.\n\n현재 그대로 유지해도 되는 핵심:\n-\n\n5일차 진입 상태:\nYES / PARTIAL / NO\n\n사람이 최종 확인해야 할 것:\n-",
+            "prompt": "[역할]\n\n당신은 새로운 고객전략을 다시 만드는 사람이 아닙니다.\n\n앞에서 만든 Customer Strategy Bridge가\n실제 Evidence를 벗어나거나\n5일차 메시지 설계에 잘못된 Context를 전달하지 않는지\n검토하는 Strategy Red Team Reviewer입니다.\n\n[기존 Evidence / Target Context]\n\n사업:\n[ ]\n\nPrimary Target:\n[ ]\n\nCore Customer Problem Candidate (실습 1 결과 참고):\n[ ]\n\nSupporting Evidence:\n[ ]\n\nCounter Evidence / Risk:\n[ ]\n\n[검토 대상]\n\n[4일차 실습 1 AI 통합분석 결과]\n\n================================\n1. CORE CUSTOMER PROBLEM 검토\n================================\n\n- Confirmed Facts를 단순 요약한 것은 아닌가?\n- Primary Target과 직접 연결되는가?\n- 제품 기능/해결책을 Problem으로 착각하지 않았는가?\n- Supporting Evidence가 실제로 있는가?\n- Counter Evidence가 있는가?\n- EVIDENCE / INFERENCE / NEEDS VALIDATION 상태가 적절한가?\n- 아직 추론인데 확정 사실처럼 표현하지 않았는가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n2. VALUE 검토\n================================\n\n- Feature를 Value처럼 말하지 않았는가?\n- Target Problem과 연결되는가?\n- 실제 Capability 범위 안인가?\n- Evidence보다 강한 약속이 있는가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n3. CUSTOMER BOUNDARY 검토\n================================\n\n- ECP가 너무 넓지 않은가?\n- Future ICP를 사실처럼 확정하지 않았는가?\n- Anti-ICP / Boundary가 합리적인가?\n- 현재 Product Fit과 맞는가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n4. ACTOR 검토\n================================\n\n- User와 Buyer를 혼동하지 않았는가?\n- Decision Maker를 임의로 만들지 않았는가?\n- Gatekeeper가 실제 필요한 사업인가?\n- Actor Conflict가 Evidence인지 추론인지 구분되는가?\n- 실제 메시지를 누구에게 해야 할지 명확한가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n5. JOURNEY 검토\n================================\n\n- Trigger가 실제 Evidence인가?\n- Journey Stage를 AI가 소설처럼 만들지 않았는가?\n- Top Friction이 기존 고객문제와 연결되는가?\n- Customer Question이 합리적인가?\n- Priority Touchpoint가 정말 가장 먼저 검증할 접점인가?\n\n판정:\nKEEP / REVISE / HOLD\n\n================================\n6. 5일차 진입 가능성 검토\n================================\n\n다음 질문에 답하세요.\n\n이 Context만 가지고도 다음 수업에서:\n\nAudience\n+\nProblem\n+\nValue\n+\nReason to Believe\n+\nCustomer Situation\n\n을 이용해\nCore Message를 만들 수 있는가?\n\nYES / PARTIAL / NO\n\n부족하다면\n추가해야 할 정보는 최대 3개만 제안하세요.\n\n================================\n[최종 출력]\n================================\n\nCore Customer Problem 판정:\n-\n\n수정이 필요하다면:\n-\n\nVALUE 판정:\n-\n\nBOUNDARY 판정:\n-\n\nACTOR 판정:\n-\n\nJOURNEY 판정:\n-\n\n가장 큰 모순:\n-\n\n가장 위험한 가설:\n-\n\n반드시 수정할 사항 최대 5개:\n1.\n2.\n3.\n4.\n5.\n\n현재 그대로 유지해도 되는 핵심:\n-\n\n5일차 진입 상태:\nYES / PARTIAL / NO\n\n사람이 최종 확인해야 할 것:\n-",
             "targetTool": "ChatGPT",
             "copyable": true
           }
@@ -774,20 +772,7 @@
                 "label": "핵심 고객 문제 (Core Customer Problem)",
                 "kind": "long-text",
                 "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "4차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "4차시 — Business Context v0.4",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  },
-                  {
-                    "kind": "same-lesson",
-                    "label": "실습 1 결과에서 가져오기",
-                    "sourceBlockId": "d4l4-b06-result-form"
-                  }
-                ]
+                "placeholder": "AI가 제안한 문제 후보를 그대로 확정하지 마세요. 3일차 Evidence와 Red Team 검토를 보고 현재 1순위 고객의 가장 중요한 문제를 직접 최종 결정해 적으세요."
               },
               {
                 "id": "h3",
