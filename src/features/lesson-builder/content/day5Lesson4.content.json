@@ -2795,6 +2795,64 @@
           "title": "강사 멘트"
         }
       ]
+    },
+    {
+      "id": "p16",
+      "title": "추가 시연 도구",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d5l4-b16-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 추가 시연 도구\n\n오늘 배운 **Writer → Critic → Human → Editor** 흐름을 실제 콘텐츠 도구에서도 확인해보세요.",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d5l4-b16-buffer-desc",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Buffer AI Assistant\n\nSNS 글 생성, 재작성, 줄이기/늘리기, 톤 조정, repurposing을 직접 볼 수 있다. 12차시의 Writer/Editor 차이를 시연하기 좋다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "d5l4-b16-buffer-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://buffer.com/ai-assistant",
+            "buttonLabel": "Buffer AI Assistant 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false
+          }
+        },
+        {
+          "id": "d5l4-b16-canva-desc",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Canva Magic Write\n\n작성한 최종 콘텐츠를 다듬고 실제 SNS 디자인으로 연결하는 시연에 적합하다. Rewrite, Expand, Shorten, Polish 같은 편집 기능도 지원한다.",
+            "emphasis": "normal"
+          }
+        },
+        {
+          "id": "d5l4-b16-canva-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://www.canva.com/features/ai-writing-assistant/",
+            "buttonLabel": "Canva Magic Write 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false
+          }
+        }
+      ]
     }
   ]
 }
