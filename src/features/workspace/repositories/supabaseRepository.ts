@@ -117,6 +117,19 @@ const CHANNEL = "workspace-realtime";
 // 그래서 호출마다 topic을 유니크하게 만들어 항상 새 채널을 받는다.
 let subscriberSeq = 0;
 
+// "가져오기" 버튼 하나 누를 때마다 프로젝트의 같은 artifactType 전체를 왕복 조회하면
+// (한 페이지에 버튼이 10개 넘게 있는 lesson도 있다) 같은 데이터를 반복 요청하느라 느려진다.
+// 같은 (type, projectId) 조회는 짧은 시간 안에는 하나의 in-flight 요청만 실제 네트워크로
+// 보내고 나머지는 그 결과를 공유해서 기다리게 한다. 저장/수정/삭제가 일어나면 즉시 비운다.
+const ARTIFACT_LIST_CACHE_TTL_MS = 30_000;
+const artifactListCache = new Map<string, { expiresAt: number; promise: Promise<ProjectArtifact[]> }>();
+
+function invalidateArtifactListCache(projectId: string) {
+  for (const key of artifactListCache.keys()) {
+    if (key.endsWith(`:${projectId}`)) artifactListCache.delete(key);
+  }
+}
+
 class SupabaseWorkspaceRepository implements WorkspaceRepository {
   readonly name = "Supabase Workspace Repository";
 
@@ -210,11 +223,21 @@ class SupabaseWorkspaceRepository implements WorkspaceRepository {
   }
 
   async listArtifactsByType(type: ArtifactType, projectId?: string): Promise<ProjectArtifact[]> {
-    let query = this.client().from("project_artifacts").select("*").eq("artifact_type", type);
-    if (projectId) query = query.eq("project_id", projectId);
-    const { data, error } = await query.order("updated_at", { ascending: false });
-    if (error) throw error;
-    return (data as ArtifactRow[]).map(rowToArtifact);
+    const cacheKey = `${type}:${projectId ?? ""}`;
+    const cached = artifactListCache.get(cacheKey);
+    if (cached && cached.expiresAt > Date.now()) return cached.promise;
+
+    const promise = (async () => {
+      let query = this.client().from("project_artifacts").select("*").eq("artifact_type", type);
+      if (projectId) query = query.eq("project_id", projectId);
+      const { data, error } = await query.order("updated_at", { ascending: false });
+      if (error) throw error;
+      return (data as ArtifactRow[]).map(rowToArtifact);
+    })();
+    artifactListCache.set(cacheKey, { expiresAt: Date.now() + ARTIFACT_LIST_CACHE_TTL_MS, promise });
+    // 실패한 조회는 캐시에 남겨두지 않는다 — 다음 클릭이 바로 재시도할 수 있게.
+    promise.catch(() => artifactListCache.delete(cacheKey));
+    return promise;
   }
 
   async getArtifact(artifactId: string): Promise<ProjectArtifact | undefined> {
@@ -256,6 +279,7 @@ class SupabaseWorkspaceRepository implements WorkspaceRepository {
           .select()
           .single();
         if (error) throw error;
+        invalidateArtifactListCache(input.projectId);
         return rowToArtifact(data as ArtifactRow);
       }
     }
@@ -276,6 +300,7 @@ class SupabaseWorkspaceRepository implements WorkspaceRepository {
       .select()
       .single();
     if (error) throw error;
+    invalidateArtifactListCache(input.projectId);
     return rowToArtifact(data as ArtifactRow);
   }
 
@@ -293,6 +318,7 @@ class SupabaseWorkspaceRepository implements WorkspaceRepository {
 
     const { error } = await this.client().from("project_artifacts").update(row).eq("id", artifactId);
     if (error) throw error;
+    invalidateArtifactListCache(current.projectId);
   }
 
   async duplicateArtifact(artifactId: string): Promise<ProjectArtifact | undefined> {
@@ -315,12 +341,15 @@ class SupabaseWorkspaceRepository implements WorkspaceRepository {
       .select()
       .single();
     if (error) throw error;
+    invalidateArtifactListCache(source.projectId);
     return rowToArtifact(data as ArtifactRow);
   }
 
   async deleteArtifact(artifactId: string): Promise<void> {
+    const existing = await this.getArtifact(artifactId);
     const { error } = await this.client().from("project_artifacts").delete().eq("id", artifactId);
     if (error) throw error;
+    if (existing) invalidateArtifactListCache(existing.projectId);
   }
 
   // ---------- Submission ----------
