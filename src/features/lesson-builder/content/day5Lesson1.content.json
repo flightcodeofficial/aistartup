@@ -158,20 +158,20 @@
             "variant": "steps",
             "items": [
               {
-                "label": "Audience",
-                "description": "누구에게"
+                "label": "Audience (누구에게)",
+                "description": "누구에게 말하는가?"
               },
               {
-                "label": "Problem",
-                "description": "어떤 문제에서"
+                "label": "Problem (어떤 문제)",
+                "description": "지금 그들이 가장 답답해하는 것은?"
               },
               {
-                "label": "Value",
-                "description": "어떤 가치를 주는가"
+                "label": "Value (어떤 가치)",
+                "description": "우리가 어떤 변화를 만들어 주는가?"
               },
               {
-                "label": "Reason to Believe",
-                "description": "왜 믿을 수 있는가(Evidence)"
+                "label": "Reason to Believe (왜 믿는가)",
+                "description": "왜 우리 말을 믿어야 하는가?(Evidence)"
               }
             ]
           }
@@ -183,12 +183,24 @@
           "data": {
             "markdown": "**Feature ≠ Value**는 5차시에서 이미 배웠습니다. Core Message도 똑같습니다 — 기능을 나열한 문장은 Core Message가 아닙니다. 4축이 실제로 드러나야 합니다."
           }
+        },
+        {
+          "id": "d5l1-b03-formula",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 문장 공식\n\n**[Audience]께 [Problem]을 해결하기 위해, [Value]하도록 돕습니다. 이는 [Reason to Believe]로 증명됩니다.**\n\n예: \"반복입력에 지친 예비창업자에게, 이전 사업정보를 자동으로 이어주는 Business Memory로 매번 다시 설명하지 않도록 돕습니다. 이는 Business Memory Prototype 실증으로 증명됩니다.\"\n\n이 문장 자체가 바로 광고 카피로 나가는 것은 아닙니다 — 모든 콘텐츠가 흔들리지 않게 잡아주는 **설계도**일 뿐입니다.",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card"
+          }
         }
       ]
     },
     {
       "id": "p04",
-      "title": "하나의 메시지, 하나의 의미 (1 Message = 1 Meaning)",
+      "title": "하나의 의미 (1 Message = 1 Meaning)",
       "layout": "standard",
       "blocks": [
         {
@@ -206,6 +218,25 @@
           "visibility": "visible",
           "data": {
             "markdown": "가장 중요한 Problem 1개와 가장 중요한 Value 1개에 집중하세요. 여러 장점을 한 문장에 다 담으려 하면 결국 아무것도 기억되지 않습니다."
+          }
+        },
+        {
+          "id": "d5l1-b04-compare",
+          "type": "infographic",
+          "title": "욕심을 버려야 꽂힌다",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "너무 많은 장점",
+                "description": "맞춤수업 + 소수정예 + 자기주도학습 + 학부모 상담까지 다 되는 학원 → 무슨 말을 하는지 기억에 남지 않는다"
+              },
+              {
+                "label": "단 하나의 중심",
+                "description": "핵심 문제 해결에만 집중 → 모든 장점을 한 문장에 구겨 넣지 않는다"
+              }
+            ]
           }
         },
         {
@@ -238,11 +269,62 @@
     },
     {
       "id": "p05",
-      "title": "메시지가 새어나간다 (Message Drift)",
+      "title": "같은 메시지, 다른 거울 (Message Fit)",
       "layout": "standard",
       "blocks": [
         {
           "id": "d5l1-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 같은 메시지를 누구의 거울에 비추는가",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d5l1-b05-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Message Fit은 메시지를 통째로 바꾸는 것이 아니라, **대상(Actor)의 입장에 맞춰 강조점을 미세하게 조정하는 것**입니다. 7차시에서 배운 Buyer·User가 다시 등장합니다."
+          }
+        },
+        {
+          "id": "d5l1-b05-mirror",
+          "type": "infographic",
+          "title": "같은 서비스, 다른 강조점",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Buyer (구매를 결정하는 사람)",
+                "description": "결과·리스크·투자 대비 효과가 명확히 보이는가에 반응한다"
+              },
+              {
+                "label": "User (실제로 사용하는 사람)",
+                "description": "지금 당장 무엇이 더 쉬워지는지에 반응한다"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l1-b05-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Audience + Problem + Value가 완벽한 합을 이뤄야** 합니다. Core Message 자체(Invariant)는 그대로 두고, Buyer에게는 근거를, User에게는 즉각적인 변화를 조금 더 앞세우는 정도의 조정입니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "메시지가 새어나간다 (Message Drift)",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d5l1-b06-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -251,7 +333,7 @@
           }
         },
         {
-          "id": "d5l1-b05-drift",
+          "id": "d5l1-b06-drift",
           "type": "infographic",
           "title": "Message Drift 5종",
           "visibility": "visible",
@@ -277,7 +359,15 @@
           }
         },
         {
-          "id": "d5l1-b05-body",
+          "id": "d5l1-b06-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "예: \"반복 오답을 확인해 다음 학습에 반영합니다\"라는 메시지를 AI에게 \"더 자극적으로 써줘\"라며 여러 번 다듬게 하면, 어느새 \"성적 폭발적 상승 보장!\"으로 바뀌어 있을 수 있습니다. 학습관리라는 본질이 성적보장이라는 다른 주장으로 완전히 변질된 것입니다."
+          }
+        },
+        {
+          "id": "d5l1-b06-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -287,12 +377,12 @@
       ]
     },
     {
-      "id": "p06",
+      "id": "p07",
       "title": "변하지 않아야 할 것 (Message Invariant · Claim ≤ Evidence)",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l1-b06-title",
+          "id": "d5l1-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -301,9 +391,17 @@
           }
         },
         {
-          "id": "d5l1-b06-invariant",
+          "id": "d5l1-b07-iceberg",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "메시지를 빙산이라고 생각하면 쉽습니다. **수면 위(바뀌어도 되는 것)**는 표현 방식, 글의 길이, 문체, Hook, 채널(인스타/블로그)입니다. **수면 아래(절대 지켜야 하는 것)**는 다음 목록입니다 — 겉모습이 화려하게 바뀌어도 이 본질은 묵직하게 그대로 있어야 합니다."
+          }
+        },
+        {
+          "id": "d5l1-b07-invariant",
           "type": "infographic",
-          "title": "Message Invariant",
+          "title": "Message Invariant (메시지 불변요소)",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
@@ -330,7 +428,7 @@
           }
         },
         {
-          "id": "d5l1-b06-claim",
+          "id": "d5l1-b07-claim",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -340,12 +438,75 @@
       ]
     },
     {
-      "id": "p07",
+      "id": "p08",
+      "title": "메시지가 완성되는 구조 (Core Message Hierarchy)",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d5l1-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 메시지가 완성되는 구조",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d5l1-b08-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Core Message는 혼자 존재하지 않습니다. 아래로는 그것을 뒷받침하는 근거가 있고, 위로는 그것에서 뻗어나가는 콘텐츠가 있습니다. 이 구조를 알면 10~12차시가 왜 필요한지 보입니다."
+          }
+        },
+        {
+          "id": "d5l1-b08-hierarchy",
+          "type": "infographic",
+          "title": "Core Message Hierarchy (메시지 위계 구조)",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "1. Core Message (중심 의미)",
+                "description": "고객에게 기억시킬 단 하나의 의미"
+              },
+              {
+                "label": "2. Supporting Message (뒷받침)",
+                "description": "Core Message를 계속 지지하는 보조 근거"
+              },
+              {
+                "label": "3. Proof (증명 수단)",
+                "description": "실제 Evidence로 증명하는 부분 — 12차시 Content Proof"
+              },
+              {
+                "label": "4. Angle (관점)",
+                "description": "같은 메시지를 어떤 시각으로 보여줄 것인가 — 11차시"
+              },
+              {
+                "label": "5. Hook / Content (최종 콘텐츠)",
+                "description": "시선을 끄는 실제 문구 — 10·12차시"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l1-b08-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Core Message는 수백 개의 콘텐츠를 만들어내는 단 하나의 마르지 않는 샘물입니다.** AI가 아무리 화려한 문장을 써내려가도, 이 뼈대가 없으면 고객의 마음을 움직일 수 없습니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
       "title": "오늘 정리",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l1-b07-title",
+          "id": "d5l1-b09-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -354,7 +515,7 @@
           }
         },
         {
-          "id": "d5l1-b07-summary",
+          "id": "d5l1-b09-summary",
           "type": "infographic",
           "title": "기억할 것",
           "visibility": "visible",
@@ -371,16 +532,19 @@
                 "label": "1 Message = 1 Meaning"
               },
               {
-                "label": "Message Fit 4종, Message Drift 5종"
+                "label": "Message Fit — 같은 메시지, 다른 거울(Buyer/User)"
               },
               {
-                "label": "Message Invariant, Claim ≤ Evidence"
+                "label": "Message Drift 5종, Message Invariant, Claim ≤ Evidence"
+              },
+              {
+                "label": "Core Message Hierarchy(메시지 위계 구조) — Core Message → Supporting → Proof → Angle → Hook"
               }
             ]
           }
         },
         {
-          "id": "d5l1-b07-question",
+          "id": "d5l1-b09-question",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -389,7 +553,7 @@
           }
         },
         {
-          "id": "d5l1-b07-next",
+          "id": "d5l1-b09-next",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
