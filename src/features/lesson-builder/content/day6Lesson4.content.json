@@ -4,391 +4,731 @@
   "week": 3,
   "day": 6,
   "lesson": 4,
-  "title": "투자 요청과 다음 마일스톤 설계",
-  "description": "현재 단계에 맞는 자금 용도·12~24개월 마일스톤·검증 계획을 연결합니다.",
-  "durationMinutes": 60,
+  "title": "Content Repurposing Automation — Blog 하나로 Newsletter·SNS 자동 생성",
+  "description": "15차시 Blog Draft를 Master Source로 삼아, Make로 Newsletter·SNS Draft를 자동 생성하고 Google Sheet에 기록하는 자동화를 직접 만듭니다.",
+  "durationMinutes": 50,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d6l4-p01",
-      "title": "오늘 만들 결과물",
-      "layout": "standard",
+      "id": "p01",
+      "title": "15차시 → 16차시 연결",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d6l4-p01-b1",
+          "id": "d6l4-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 투자 요청과 다음 마일스톤 설계\n\n**현재 단계에 맞는 자금 용도·12~24개월 마일스톤·검증 계획을 연결합니다.**",
+            "markdown": "# Content Repurposing Automation\n\n## Blog 하나로 Newsletter·SNS를 자동 생성합니다",
             "emphasis": "hero"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d6l4-p01-b2",
+          "id": "d6l4-b01-flow",
+          "type": "infographic",
+          "title": "13~16차시",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "13차시",
+                "description": "Search Intent → Reader Question"
+              },
+              {
+                "label": "14차시",
+                "description": "Sub Question → Claim → Outline"
+              },
+              {
+                "label": "15차시",
+                "description": "Blog Draft → Critic → Revision"
+              },
+              {
+                "label": "16차시",
+                "description": "Blog(Master Source) → 자동화로 Newsletter·SNS 생성"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l4-b01-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "오늘은 결과물 수보다 **근거와 판단 기준**을 우선합니다.",
-            "emphasis": "normal"
+            "markdown": "**ChatGPT에서 한 번 변환하는 것은 어렵지 않습니다.** 문제는 Blog를 만들 때마다 Newsletter 만들고, SNS 만들고, 복사해서 저장하는 행동을 계속 반복한다는 것입니다. 오늘 그 반복을 없앱니다."
           }
         },
         {
-          "id": "d6l4-p01-i",
+          "id": "d6l4-b01-instructor",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 수강생의 실제 사업 단계에 따라 없는 실적·고객·숫자를 만들지 않도록 강조합니다.",
-            "emphasis": "normal"
+            "markdown": "0-10분 이론(P01-P03), 10-15분 전체 그림(P04), 15-40분 강사 시연↔학생 따라하기 Guided Build(P05-P11), 40-47분 각자 실행(P12), 47-50분 결과비교+Human Review(P12-P13). 실습 20분+시연 20분을 분리하지 않고 하나로 합친다. 사전에 강사가 Template Google Sheet를 만들어 배포해야 한다(학생은 사본 만들기만)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "Master Source와 Repurposing",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l4-b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 하나의 원본이 여러 채널이 됩니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b02-diagram",
+          "type": "infographic",
+          "title": "Master Source → 여러 채널",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Master Source (원본)",
+                "description": "15차시에서 만든 Blog Draft"
+              },
+              {
+                "label": "Newsletter (뉴스레터)",
+                "description": "Master Source에서 파생"
+              },
+              {
+                "label": "SNS (소셜 게시물)",
+                "description": "Master Source에서 파생"
+              }
+            ]
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d6l4-p02",
-      "title": "핵심 구조",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l4-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 핵심 구조\n\n- 입력 자료를 먼저 정리합니다.\n- AI가 추가한 내용과 원자료를 구분합니다.\n- 결과물은 다음 Lesson에서 재사용합니다.",
-            "emphasis": "normal"
+          "theme": {
+            "background": "primary-soft"
           }
         },
         {
-          "id": "d6l4-p02-img",
-          "type": "image",
+          "id": "d6l4-b02-note",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "url": "/lesson-content/day6/d6l4_framework.svg",
-            "alt": "투자 요청과 다음 마일스톤 설계 구조",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
+            "markdown": "**Repurposing(재활용)**: 이미 만든 콘텐츠를 다른 채널 형식으로 다시 만드는 것. 매번 새로 쓰지 않고, 하나의 Master Source를 기준으로 변환합니다."
           }
         }
       ]
     },
     {
-      "id": "d6l4-p03",
-      "title": "좋은 결과물의 기준",
+      "id": "p03",
+      "title": "왜 자동화가 필요한가",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d6l4-p03-b1",
+          "id": "d6l4-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 좋은 결과물의 기준\n\n- 명확성\n- 근거 연결\n- 대상 적합성\n- 다음 행동",
-            "emphasis": "normal"
+            "markdown": "## 반복되는 작업을 사람이 계속하지 않아도 됩니다",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d6l4-p03-b2",
+          "id": "d6l4-b03-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
+            "markdown": "Blog를 쓸 때마다 Newsletter로 바꾸고, SNS로 바꾸고, 결과를 어딘가에 정리해서 저장하는 일은 매번 똑같이 반복됩니다. 이 반복을 사람이 계속하지 않고 자동화로 넘기는 것이 오늘의 목표입니다."
+          }
+        },
+        {
+          "id": "d6l4-b03-structure",
+          "type": "infographic",
+          "title": "자동화의 다섯 조각",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "① Trigger (시작 신호)",
+                "description": "언제 자동화가 시작되는가"
+              },
+              {
+                "label": "② Input (입력)",
+                "description": "무엇을 가져오는가"
+              },
+              {
+                "label": "③ Transformation (변환)",
+                "description": "AI가 무엇을 바꾸는가"
+              },
+              {
+                "label": "④ Output (저장)",
+                "description": "어디에 저장하는가"
+              },
+              {
+                "label": "⑤ Human Review (사람의 확인)",
+                "description": "사람이 무엇을 판단하는가"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l4-b03-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**이 다섯 조각을 배우면 고객문의 자동화, 이메일 자동화, 리드 관리, FAQ, 보고서 자동화에도 그대로 재사용할 수 있습니다.**",
+            "emphasis": "lead"
           }
         }
       ]
     },
     {
-      "id": "d6l4-p04",
-      "title": "흔한 실패",
+      "id": "p04",
+      "title": "오늘 만들 자동화 전체 그림",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d6l4-p04-b1",
+          "id": "d6l4-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 흔한 실패\n\n- 근거 없는 숫자\n- 가짜 고객·성과\n- 추측을 사실처럼 표현\n- 한 번에 너무 많은 자동화",
-            "emphasis": "normal"
+            "markdown": "## 다섯 단계로 이어지는 하나의 흐름",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d6l4-p04-b2",
+          "id": "d6l4-b04-scenario",
+          "type": "infographic",
+          "title": "Scenario (자동화 흐름도)",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Google Sheets (구글 시트)",
+                "description": "새 Blog 등록"
+              },
+              {
+                "label": "Make — Watch New Rows (새 행 감지)",
+                "description": "새 행 감지 (Trigger)"
+              },
+              {
+                "label": "AI — Newsletter Draft 생성",
+                "description": "Make AI Toolkit의 Simple Text Prompt 모듈 사용"
+              },
+              {
+                "label": "AI — SNS Draft 생성",
+                "description": "Make AI Toolkit의 Simple Text Prompt 모듈 사용"
+              },
+              {
+                "label": "Google Sheets (구글 시트)",
+                "description": "결과 자동 기록"
+              }
+            ]
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d6l4-b04-note",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
+            "markdown": "현재 Make의 AI Scenario는 고정된 Workflow 안 특정 단계에 AI를 넣는 방식이고, 콘텐츠 생성·형식 변환처럼 경로가 예측 가능한 작업에 적합합니다. 오늘 만들 자동화가 정확히 이 구조입니다."
           }
         }
       ]
     },
     {
-      "id": "d6l4-p05",
-      "title": "실무 체크리스트",
+      "id": "p05",
+      "title": "사전 준비 — Google Sheet 템플릿",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d6l4-p05-b1",
+          "id": "d6l4-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 실무 체크리스트\n\n- 사실/가설 분리\n- 개인정보 최소화\n- 외부 공개 전 사람 검수",
-            "emphasis": "normal"
+            "markdown": "## Google Sheet 템플릿",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d6l4-p05-b2",
-          "type": "rich-text",
+          "id": "d6l4-b05-columns",
+          "type": "infographic",
+          "title": "Sheet 컬럼(열)",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l4-p06",
-      "title": "인터랙티브 판단 연습",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l4-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브 판단 연습\n\n카드를 눌러 사실·가설·검증 필요를 구분합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l4-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/day6/d6l4_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l4-p07",
-      "title": "내 사업 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l4-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 내 사업 입력\n\n실제 고객 개인정보 대신 익명화·가명·공개 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l4-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "투자 요청과 다음 마일스톤 설계 입력",
-          "data": {
-            "fields": [
+            "variant": "comparison",
+            "items": [
               {
-                "id": "d6l4-p07-form-f1",
-                "label": "현재 사업/서비스 한 문장",
-                "kind": "long-text",
-                "required": true
+                "label": "A. Content ID (콘텐츠 식별자)",
+                "description": "행 구분용"
               },
               {
-                "id": "d6l4-p07-form-f2",
-                "label": "확인된 근거",
-                "kind": "long-text",
-                "required": true
+                "label": "B. Master Blog (원본 Blog)",
+                "description": "학생이 입력"
               },
               {
-                "id": "d6l4-p07-form-f3",
-                "label": "현재 가설",
-                "kind": "long-text",
-                "required": true
+                "label": "C. Core Message (핵심 메시지)",
+                "description": "학생이 입력"
               },
               {
-                "id": "d6l4-p07-form-f4",
-                "label": "이번 Lesson에서 만들 결과물",
-                "kind": "long-text",
-                "required": true
+                "label": "D. 사용 금지 주장",
+                "description": "학생이 입력"
+              },
+              {
+                "label": "E. Newsletter Draft (뉴스레터 초안)",
+                "description": "Make가 채움"
+              },
+              {
+                "label": "F. SNS Draft (SNS 초안)",
+                "description": "Make가 채움"
+              },
+              {
+                "label": "G. Status (상태)",
+                "description": "Make가 채움"
               }
             ]
           }
+        },
+        {
+          "id": "d6l4-b05-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**학생이 직접 넣는 값은 사실상 Master Blog · Core Message · 사용 금지 주장 세 가지뿐입니다.** 전부 15차시/이전 Business Context에서 복사합니다. E, F, G는 Make가 채웁니다."
+          }
+        },
+        {
+          "id": "d6l4-b05-instructor",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "강사가 미리 Template Sheet를 만들어 배포한다. 학생은 사본 만들기만 한다 — 수업 중에 Sheet 설계부터 시키지 않는다."
+          }
         }
       ]
     },
     {
-      "id": "d6l4-p08",
-      "title": "ChatGPT 실습 프롬프트",
-      "layout": "wide",
+      "id": "p06",
+      "title": "STEP 1-2 — Sheet 사본 만들기 + Make Scenario 시작",
+      "layout": "standard",
       "blocks": [
         {
-          "id": "d6l4-p08-b1",
+          "id": "d6l4-b06-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## ChatGPT 실습 프롬프트",
-            "emphasis": "normal"
+            "markdown": "## 시작 신호부터 만듭니다",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d6l4-p08-prompt",
-          "type": "prompt",
+          "id": "d6l4-b06-steps",
+          "type": "infographic",
+          "title": "학생이 따라 할 것",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 코치입니다.\n목표: 현재 단계에 맞는 자금 용도·12~24개월 마일스톤·검증 계획을 연결합니다.\n규칙:\n1. 제공되지 않은 사실·고객·매출·파트너·시장수치를 만들지 않는다.\n2. 사실/계산값/창업자 가설/AI 추론을 구분한다.\n3. 불확실한 내용은 [검증 필요]로 표시한다.\n4. 개인정보·기밀정보를 재생성하지 않는다.\n5. 결과는 초급 창업자가 바로 수정할 수 있는 표와 체크리스트로 만든다.\n\n[사업 설명]\n[확인된 근거]\n[현재 가설]\n[원하는 산출물]",
-            "targetTool": "ChatGPT",
+            "variant": "steps",
+            "items": [
+              {
+                "label": "STEP 1 — Sheet 준비",
+                "description": "Template Sheet 사본 만들기 → 15차시 Blog Draft, Core Message, 사용 금지 주장 복사 (아직 행에 넣지 않아도 됨)"
+              },
+              {
+                "label": "STEP 2 — Scenario 만들기",
+                "description": "Make에서 Create a new scenario → 첫 Module: Google Sheets → Watch New Rows → Google 계정 연결 → Sheet 선택"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l4-b06-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Trigger = 자동화가 시작되는 사건.** Watch New Rows는 Scenario가 실행될 때 새 행을 확인하는 Trigger Module입니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "STEP 3 — Newsletter 자동 생성",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l4-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## AI Module로 첫 번째 변환을 만듭니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b07-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "다음 Module: **Make AI Toolkit → Simple Text Prompt**. Make AI Toolkit은 Make 자체 AI Provider를 쓸 수 있어, Free/Core 플랜에서도 별도 OpenAI API Key 없이 테스트할 수 있습니다."
+          }
+        },
+        {
+          "id": "d6l4-b07-prompt",
+          "type": "prompt",
+          "title": "Newsletter Prompt",
+          "description": "Make의 Simple Text Prompt 모듈에 그대로 붙여넣으세요. {{ }}는 Make가 Google Sheets 열 값으로 자동 채웁니다.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "당신은 Newsletter Editor입니다.\n\n아래 Master Blog를 새로운 사실을 추가하지 않고\nNewsletter용 콘텐츠로 변환하세요.\n\n[Core Message]\n{{Google Sheets의 Core Message}}\n\n[사용 금지 주장]\n{{Google Sheets의 사용 금지 주장}}\n\n[Master Blog]\n{{Google Sheets의 Master Blog}}\n\n규칙:\n\n- Master Blog에 없는 사실, 통계, 후기, 성과를 만들지 마세요.\n- Core Message의 의미를 변경하지 마세요.\n- 사용 금지 주장을 추가하지 마세요.\n- Blog를 단순 요약하지 마세요.\n- Newsletter 독자가 빠르게 읽을 수 있도록 다시 구성하세요.\n\n구조:\n\n1. 이메일 제목\n2. 짧은 도입\n3. 오늘의 핵심 Insight\n4. 핵심 내용 2~3개\n5. 작은 다음 행동 또는 CTA\n\n과도한 광고문구를 사용하지 마세요.",
+            "targetTool": "Make AI Toolkit",
             "copyable": true
           }
         },
         {
-          "id": "d6l4-p08-link",
+          "id": "d6l4-b07-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**이것이 Transformation입니다.** \"짧게 요약해줘\"라고 하지 않았다는 점에 주목하세요 — Newsletter 독자가 읽는 방식에 맞게 다시 구성하도록 지시합니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "STEP 4 — SNS Draft도 자동 생성",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l4-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 두 번째 변환도 원본에서 다시 시작합니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b08-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Newsletter AI Module 뒤에 AI Toolkit → Simple Text Prompt를 하나 더 붙입니다. 이번에는 입력 원본을 **Newsletter가 아니라 Master Blog로 다시 잡는 것이 중요합니다.**"
+          }
+        },
+        {
+          "id": "d6l4-b08-diagram",
+          "type": "infographic",
+          "title": "왜 Master Blog에서 다시 시작하는가",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "잘못된 흐름",
+                "description": "Blog → Newsletter → SNS\n계속 변환하면 의미가 점점 변질될 수 있음"
+              },
+              {
+                "label": "올바른 흐름",
+                "description": "Master Blog에서 Newsletter와 SNS가 각각 갈라짐\n(Master Blog → Newsletter, Master Blog → SNS)"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l4-b08-prompt",
+          "type": "prompt",
+          "title": "SNS Prompt",
+          "description": "Make의 두 번째 Simple Text Prompt 모듈에 붙여넣으세요. Source는 Newsletter가 아니라 Master Blog 필드를 매핑합니다.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "당신은 SNS Content Editor입니다.\n\n아래 Master Blog의 사실과 핵심 메시지를 유지하면서\nSNS 게시물 Draft 1개로 변환하세요.\n\n[Core Message]\n{{Core Message}}\n\n[사용 금지 주장]\n{{사용 금지 주장}}\n\n[Master Blog]\n{{Master Blog}}\n\n규칙:\n\n- 새로운 사실이나 Evidence를 만들지 마세요.\n- Core Message를 변경하지 마세요.\n- 사용 금지 주장을 쓰지 마세요.\n- Blog 내용을 단순히 잘라 붙이지 마세요.\n- 하나의 중심 메시지만 전달하세요.\n- 과장된 Clickbait를 만들지 마세요.\n\n구조:\n\nHook\n→ 핵심 Insight\n→ 짧은 설명\n→ 실제 근거가 있다면 Proof\n→ CTA 1개\n\n출력은 실제 SNS 게시물 Draft 하나만 작성하세요.",
+            "targetTool": "Make AI Toolkit",
+            "copyable": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "STEP 5-6 — 결과 저장 + 실제 실행",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l4-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 마지막 조각을 붙이고 실제로 돌려봅니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b09-steps",
+          "type": "infographic",
+          "title": "마지막 Module과 실행",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "STEP 5 — Google Sheets: Update a Row (행 업데이트)",
+                "description": "Newsletter Draft ← Newsletter AI 결과 · SNS Draft ← SNS AI 결과 · Status ← \"DRAFT - HUMAN REVIEW REQUIRED\""
+              },
+              {
+                "label": "STEP 6 — Run once (한 번 실행)",
+                "description": "강사와 학생이 각자 Run once 실행 → Sheet에 새 Blog Row 추가 → Watch New Rows가 감지"
+              }
+            ]
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d6l4-b09-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Make는 테스트 시 Run once와 각 모듈의 output bubble로 처리 결과를 확인할 수 있습니다. Module bubble이 1 → 1 → 1 → 1로 움직이는 것을 직접 확인하세요."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "결과 확인과 Human Review",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l4-b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 처음엔 빈칸이던 것이 자동으로 채워집니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b10-result",
+          "type": "infographic",
+          "title": "실행 전 → 실행 후",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "실행 전",
+                "description": "Master Blog: 원본\nNewsletter Draft: 빈칸\nSNS Draft: 빈칸"
+              },
+              {
+                "label": "실행 후",
+                "description": "Newsletter Draft: 자동 생성됨\nSNS Draft: 자동 생성됨\nStatus: DRAFT - HUMAN REVIEW REQUIRED"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d6l4-b10-title2",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## STEP 7 — Human Review",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b10-review",
+          "type": "infographic",
+          "title": "확인할 세 가지",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "① Core Message 유지? — Newsletter와 SNS가 Master Blog와 같은 중심 의미인가?"
+              },
+              {
+                "label": "② 없는 사실 추가? — Master Blog에 없던 숫자·성과·후기 등이 생기지 않았는가?"
+              },
+              {
+                "label": "③ 채널에 맞게 변환? — 단순 복사·요약이 아니라 각 목적에 맞게 달라졌는가?"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l4-b10-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "자동으로 만들어졌다고 끝내지 않습니다. 괜찮다면 Sheet의 Status를 **REVIEWED**로, 문제가 있으면 **NEEDS REVISION**으로 바꾸세요.",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "오늘 일부러 넣지 않은 것",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l4-b11-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 오늘 배우지 않아도 되는 것도 있습니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b11-skip",
+          "type": "infographic",
+          "title": "다음 기회로 남기는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Router (분기)",
+                "description": "하나의 Scenario를 여러 경로로 분기하는 기능. \"실무에서는 여기서 Newsletter와 SNS를 두 갈래로 나눌 수도 있습니다\" — 화면만 보여줍니다."
+              },
+              {
+                "label": "Scheduling (예약 실행)",
+                "description": "Watch New Rows를 일정 간격(예: 15분)으로 자동 확인하게 켜는 기능. 오늘은 Run once로 성공 경험까지만 — Scenario를 켜두면 계속 확인하며 credits를 씁니다."
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l4-b11-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Trigger·Mapping·Router·Filter·Scheduling·JSON Parser·API Connection을 한꺼번에 넣으면 다시 3일차처럼 부담스러워집니다. \"실무에서는 Schedule을 켜면 사람이 버튼을 누르지 않아도 됩니다\"만 보여주는 정도로 충분합니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "title": "실습 — 내 Master Blog로 직접 실행하기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d6l4-b12-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 실습 — 내 Master Blog로 직접 실행하기",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b12-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "이제 각자 자신의 Sheet에 실제 Blog Row를 추가하고 자동화를 실행합니다."
+          }
+        },
+        {
+          "id": "d6l4-b12-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://www.make.com/en",
+            "buttonLabel": "Make 열기",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l4-p09",
-      "title": "AI 결과 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d6l4-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 결과 검수\n\n- 원자료와 대조\n- 누락 확인\n- 과장 삭제\n- 확인 필요 표시",
-            "emphasis": "normal"
+            "practiceName": "Content Repurposing Scenario 실행",
+            "practiceDescription": "내 Google Sheet에 Master Blog·Core Message·사용 금지 주장을 넣은 새 행을 추가하고, Scenario를 Run once로 실행합니다.",
+            "estimatedMinutes": 12
           }
         },
         {
-          "id": "d6l4-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l4-p10",
-      "title": "이해 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d6l4-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d6l4-p10-q-q1",
-                "question": "가장 먼저 확인해야 할 기준은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d6l4-p10-q-c1",
-                    "text": "표현이 화려한가"
-                  },
-                  {
-                    "id": "d6l4-p10-q-c2",
-                    "text": "근거·목표·대상과 연결되는가"
-                  },
-                  {
-                    "id": "d6l4-p10-q-c3",
-                    "text": "AI가 자신 있게 말하는가"
-                  },
-                  {
-                    "id": "d6l4-p10-q-c4",
-                    "text": "슬라이드 수가 많은가"
-                  }
-                ],
-                "correctChoiceId": "d6l4-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "d6l4-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정답은 **근거·목표·대상과 연결되는가**입니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l4-p11",
-      "title": "최종 결과 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l4-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 결과 정리\n\n다음 단계에서 재사용할 수 있도록 근거와 선택 이유까지 남깁니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l4-final-form",
+          "id": "d6l4-b12-form",
           "type": "input-form",
+          "title": "Human Decision",
           "visibility": "visible",
-          "title": "투자 요청과 다음 마일스톤 설계 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d6l4-final-form-f1",
-                "label": "최종 결과물",
+                "id": "h1",
+                "label": "Master Source (15차시 Blog Draft)",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "아래에는 Draft와 Critic 결과가 함께 들어 있습니다. Google Sheet의 Master Blog 칸에는 Draft 부분만 옮겨 붙이세요.",
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "15차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "15차시 — Blog Revision Map v0.1",
+                    "sourceLabel": "AI Draft · Critic 원본 결과"
+                  }
+                ]
               },
               {
-                "id": "d6l4-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
+                "id": "h2",
+                "label": "자동화 결과 (Automation Result)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "SUCCESS",
+                  "PARTIAL",
+                  "FAILED"
+                ]
               },
               {
-                "id": "d6l4-final-form-f3",
-                "label": "검증 필요 항목",
+                "id": "h3",
+                "label": "사람의 검토 (Human Review)",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "Core Message 유지 / Evidence Boundary / 채널 변환에서 발견한 문제를 한두 줄로 적으세요."
               },
               {
-                "id": "d6l4-final-form-f4",
-                "label": "다음 행동",
-                "kind": "long-text",
-                "required": true
+                "id": "h4",
+                "label": "자동화 결정 (Automation Decision)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "USE",
+                  "REVISE WORKFLOW",
+                  "MANUAL REVIEW REQUIRED"
+                ]
               }
             ]
           }
@@ -396,40 +736,120 @@
       ]
     },
     {
-      "id": "d6l4-p12",
-      "title": "저장 및 다음 단계",
-      "layout": "standard",
+      "id": "p13",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d6l4-p12-preview",
+          "id": "d6l4-b13-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 결과 저장 / 완료",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l4-b13-save-form",
+          "type": "input-form",
+          "title": "16차시 — Content Repurposing Workflow v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "s1",
+                "label": "Master Source (15차시 Blog Draft)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l4-b12-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "s2",
+                "label": "자동화 결과 (Automation Result)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l4-b12-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "s3",
+                "label": "사람의 검토 (Human Review)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l4-b12-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "s4",
+                "label": "자동화 결정 (Automation Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l4-b12-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d6l4-b13-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "automation",
+            "artifactTitle": "16차시 — Content Repurposing Workflow v0.1",
+            "sourceBlockId": "d6l4-b13-save-form",
+            "buttonLabel": "Content Repurposing Workflow v0.1 저장"
+          }
+        },
+        {
+          "id": "d6l4-b13-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "pitch",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "artifactType": "automation",
+            "emptyMessage": "아직 저장된 결과가 없습니다."
           }
         },
         {
-          "id": "d6l4-p12-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "title": "Day6 Lesson4 — 투자 요청과 다음 마일스톤 설계",
-          "data": {
-            "artifactType": "pitch",
-            "artifactTitle": "Day6 Lesson4 — 투자 요청과 다음 마일스톤 설계",
-            "sourceBlockId": "d6l4-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
-          }
-        },
-        {
-          "id": "d6l4-p12-reflection",
-          "type": "reflection",
+          "id": "d6l4-b13-summary",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 검증 항목은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## 오늘 배운 것\n\n단순히 Make 사용법이 아닙니다. **Trigger → Input → Transformation → Output → Human Review**, 이 다섯 조각이 머릿속에 남아야 합니다. 나중에 고객문의 자동화·이메일 자동화·리드 관리·FAQ·보고서 자동화를 배울 때도 그대로 재사용할 수 있습니다.",
+            "emphasis": "lead"
           }
         }
       ]

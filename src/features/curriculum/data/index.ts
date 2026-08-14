@@ -78,7 +78,7 @@ export const week3: WeekMeta = {
   title: "AI 기반 마케팅·세일즈 & 사업화 전략",
   description: "",
   days: [
-    openDay(3, 6, "DAY 6 — IR 근거 대장과 스토리 구조 설계", "아이디어·시장·해결책을 사실/가설로 분리해 Claim Ledger를 만들고, 투자자 관점의 IR 스토리 구조와 투자 요청을 설계합니다."),
+    openDay(3, 6, "DAY 6 — Blog Search Intent부터 Repurposing 자동화까지", "SNS에서 검색해서 찾아오는 Blog로 전환하고, Reader Question에 근거 있게 답하는 Draft를 쓴 뒤, Make로 Newsletter·SNS 자동 생성까지 연결합니다."),
     openDay(3, 7, "DAY 7 — Gamma·Canva로 IR Deck 제작", "Gamma로 IR 초안을 만들고 Canva로 시각 정리한 뒤, 슬라이드별 주장·근거·수치를 검수하고 발표용 파일로 내보냅니다."),
     openDay(3, 8, "DAY 8 — 사업계획서·소개서 문서화", "Source Pack을 만들어 IR·사업계획서·서비스 소개서로 재구성하고, 1쪽 요약과 숫자 일치표로 문서 간 정합성을 확인합니다."),
     openDay(3, 9, "DAY 9 — 제품 데모 영상과 발표 준비", "60~120초 데모 영상 스토리보드를 만들어 촬영·편집하고, Mini Brand Kit과 3분 발표 스크립트로 예상 질문까지 준비합니다."),
