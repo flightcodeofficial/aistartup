@@ -13,6 +13,14 @@ function scheduledDay(day: number, title: string, goal: string): DayMeta {
 }
 
 /**
+ * 실제 canonical Lesson 콘텐츠가 준비된 Day를 연다.
+ * week2의 scheduledDay+release:"open" 패턴과 동일하되, week을 지정할 수 있다.
+ */
+function openDay(week: number, day: number, title: string, goal: string): DayMeta {
+  return { week, day, title, goal, lessons: [], status: "ready", release: "open" };
+}
+
+/**
  * 아직 주제를 배정하지 않은 Day — 커리큘럼 shell만 있는 상태.
  *
  * title을 지어내지 않는다. "" 로 두면 카드·상세 화면이 "AI 마케팅 콘텐츠 생성" 같은
@@ -62,21 +70,29 @@ export const week2: WeekMeta = {
   ],
 };
 
-// week3(Day6~9)·week4(Day10~15)는 아직 주제를 배정하지 않은 shell이다 — canonical
-// Lesson(day6Lesson1.ts 등)의 week/day 메타를 그대로 따라간다. 관리자가 나중에
-// title/goal/release를 채우면 그대로 열린다.
+// week3(Day6~9)·week4(Day10~15)는 canonical Lesson(day6Lesson1.ts 등)의 week/day
+// 메타를 그대로 따라간다. Day6~10은 콘텐츠가 준비되어 열었다. Day11~15는 아직
+// 주제를 배정하지 않은 shell이다 — 관리자가 나중에 title/goal/release를 채우면 열린다.
 export const week3: WeekMeta = {
   week: 3,
   title: "AI 기반 마케팅·세일즈 & 사업화 전략",
   description: "",
-  days: Array.from({ length: 4 }, (_, i) => placeholderDay(3, i + 6)),
+  days: [
+    openDay(3, 6, "DAY 6 — IR 근거 대장과 스토리 구조 설계", "아이디어·시장·해결책을 사실/가설로 분리해 Claim Ledger를 만들고, 투자자 관점의 IR 스토리 구조와 투자 요청을 설계합니다."),
+    openDay(3, 7, "DAY 7 — Gamma·Canva로 IR Deck 제작", "Gamma로 IR 초안을 만들고 Canva로 시각 정리한 뒤, 슬라이드별 주장·근거·수치를 검수하고 발표용 파일로 내보냅니다."),
+    openDay(3, 8, "DAY 8 — 사업계획서·소개서 문서화", "Source Pack을 만들어 IR·사업계획서·서비스 소개서로 재구성하고, 1쪽 요약과 숫자 일치표로 문서 간 정합성을 확인합니다."),
+    openDay(3, 9, "DAY 9 — 제품 데모 영상과 발표 준비", "60~120초 데모 영상 스토리보드를 만들어 촬영·편집하고, Mini Brand Kit과 3분 발표 스크립트로 예상 질문까지 준비합니다."),
+  ],
 };
 
 export const week4: WeekMeta = {
   week: 4,
   title: "AI 기반 사업운영·성장 & 실행전략",
   description: "",
-  days: Array.from({ length: 6 }, (_, i) => placeholderDay(4, i + 10)),
+  days: [
+    openDay(4, 10, "DAY 10 — 고객 문의 자동화 운영 설계", "문의 접수부터 기록까지 운영 흐름을 설계하고 Make·Zapier로 최소 자동화를 구현한 뒤, AI 분류·초안과 사람 승인 절차를 연결합니다."),
+    ...Array.from({ length: 5 }, (_, i) => placeholderDay(4, i + 11)),
+  ],
 };
 
 export const curriculum: WeekMeta[] = [week2, week3, week4];
