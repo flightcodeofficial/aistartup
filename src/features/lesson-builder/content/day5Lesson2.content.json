@@ -4,9 +4,9 @@
   "week": 2,
   "day": 5,
   "lesson": 2,
-  "title": "SNS 콘텐츠 구조 — 핵심 메시지를 읽히는 콘텐츠로 바꾸기",
-  "description": "9차시에서 확정한 핵심 메시지를 바꾸지 않고, 후킹 문장(Hook)·가치(Value)·본문(Body)·근거(Proof)·행동 유도(CTA) 구조로 변환합니다.",
-  "durationMinutes": 70,
+  "title": "SNS Content Structure — 핵심 메시지를 읽히는 콘텐츠로 바꾸기",
+  "description": "Hook·Value·Body·Proof·CTA 다섯 역할과 1 Content = 1 Main Idea 원칙으로 SNS 콘텐츠 구조를 설계합니다.",
+  "durationMinutes": 15,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "무엇을 말할지는 정했습니다",
+      "title": "Core Message를 콘텐츠로 옮기기",
       "layout": "wide",
       "blocks": [
         {
@@ -22,13 +22,9 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 무엇을 말할지는\n# 정했습니다\n\n\"고객이 읽고 이해하고 행동하게 하려면 어떤 순서로 전달해야 하는가?\"",
+            "markdown": "# SNS Content Structure\n\n## 핵심 메시지를 읽히는 콘텐츠로 바꾸기",
             "emphasis": "hero"
           },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
           "layout": {
             "width": "wide",
             "align": "left",
@@ -36,2191 +32,329 @@
           }
         },
         {
-          "id": "d5l2-b01-before",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "타겟 (Target)",
-                "description": "누구에게"
-              },
-              {
-                "label": "문제 (Problem)",
-                "description": "어떤 문제를"
-              },
-              {
-                "label": "가치 (Value)",
-                "description": "무엇으로 해결"
-              },
-              {
-                "label": "핵심 메시지 (Core Message)",
-                "description": "어떤 중심 의미로"
-              },
-              {
-                "label": "메시지 불변요소 (Invariants)",
-                "description": "무엇은 절대 안 바뀌는가"
-              }
-            ]
-          },
-          "title": "지난 시간까지"
-        },
-        {
-          "id": "d5l2-b01-today",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "핵심 메시지 (Core Message)",
-                "description": "바꾸지 않음"
-              },
-              {
-                "label": "후킹 문장 (Hook)",
-                "description": "시선을 멈추게"
-              },
-              {
-                "label": "가치 (Value)",
-                "description": "계속 읽을 이유"
-              },
-              {
-                "label": "본문 (Body)",
-                "description": "이해시킴"
-              },
-              {
-                "label": "근거 (Proof)",
-                "description": "믿을 이유"
-              },
-              {
-                "label": "행동 유도 (CTA)",
-                "description": "다음 행동"
-              }
-            ]
-          },
-          "title": "오늘"
-        },
-        {
-          "id": "d5l2-b01-notice",
+          "id": "d5l2-b01-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "지난 차시에는 고객에게 어떤 중심 의미를 기억시킬 것인지 정했습니다.\n\n오늘은 그 핵심 메시지를 **바꾸지 않고**, 고객이 실제로 읽고 이해하고 다음 행동으로 이어질 수 있도록 SNS 콘텐츠의 구조를 만듭니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "9차시에서 Core Message를 어떻게 설계하는지 배웠습니다. 오늘은 그 메시지를 실제로 읽히는 SNS 콘텐츠 구조로 바꾸는 이론을 배웁니다."
           }
-        },
-        {
-          "id": "d5l2-b01-lock",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "🔒 오늘 바꾸지 않는 것",
-                "description": "핵심 메시지 (Core Message)"
-              },
-              {
-                "label": "✍️ 오늘 설계하는 것",
-                "description": "전달 구조 (Hook·Value·Body·Proof·CTA)"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d5l2-b01-preview",
-          "type": "result-preview",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "9차시를 먼저 완료해야 핵심 메시지 지도와 Business Context가 표시됩니다."
-          },
-          "title": "9차시 결과"
-        },
-        {
-          "id": "d5l2-b01-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "목록이 비어 있으면 9차시를 아직 완료하지 않은 학생입니다 — 9차시 P09에서 저장하고 오게 하세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     },
     {
       "id": "p02",
-      "title": "SNS는 글쓰기보다 구조가 먼저",
-      "layout": "wide",
+      "title": "Writing First가 아니라 Structure First",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l2-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# AI에게 바로 \"SNS 글 써줘\"라고 하면\n# 왜 문제가 생길까?",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 먼저 쓰지 말고, 먼저 구조를 잡습니다 (Writing First ❌ Structure First ✅)",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l2-b02-symptoms",
+          "id": "d5l2-b02-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "AI에게 바로 \"SNS 홍보글 써줘\"라고 하면 생기는 문제들:"
+          }
+        },
+        {
+          "id": "d5l2-b02-problems",
           "type": "infographic",
+          "title": "구조 없이 바로 쓰면 생기는 문제",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "자극적인 Hook 생성"
+                "label": "자극적인 Hook"
               },
               {
-                "label": "기능과 장점 나열"
+                "label": "장점 나열"
               },
               {
-                "label": "여러 메시지를 한 글에 혼합"
+                "label": "여러 메시지 혼합"
               },
               {
-                "label": "실제 없는 후기·성과·숫자 추가"
+                "label": "가짜 Proof"
               },
               {
-                "label": "무조건 \"지금 구매하세요\" CTA"
+                "label": "CTA 남발"
               },
               {
-                "label": "기존 핵심 메시지(Core Message) 변질"
+                "label": "Core Message Drift"
               }
             ]
-          },
-          "title": "Context 없이 바로 'SNS 글 써줘'라고 하면 흔히 생기는 문제"
-        },
-        {
-          "id": "d5l2-b02-compare",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "글부터 쓰기 (Writing First) ❌",
-                "description": "문장을 먼저 예쁘게 쓰고, 나중에 의미를 끼워 맞춤"
-              },
-              {
-                "label": "구조부터 설계 (Structure First) ✅",
-                "description": "누구에게·어떤 순서로 전달할지 먼저 정하고 문장은 그다음"
-              }
-            ]
-          },
-          "title": "글부터 쓰기 vs 구조부터 설계"
-        },
-        {
-          "id": "d5l2-b02-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "SNS 콘텐츠는 문장을 잘 쓰는 문제이기 전에 **전달 순서를 설계하는 문제**입니다.\n\n누구에게, 어떤 질문에서 시작하고, 어떤 가치를 보여주고, 무엇으로 믿게 하고, 어떤 다음 행동을 제안할지 먼저 구조를 잡아야 합니다.",
-            "emphasis": "normal"
           },
           "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "background": "muted"
           }
         },
         {
-          "id": "d5l2-b02-link",
-          "type": "infographic",
+          "id": "d5l2-b02-note",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "핵심 메시지 (Core Message)",
-                "description": "무엇을 기억시킬 것인가"
-              },
-              {
-                "label": "SNS 구조 (SNS Structure)",
-                "description": "그 의미를 어떤 순서로 전달할 것인가"
-              }
-            ]
-          },
-          "title": "9차시와 연결"
-        },
-        {
-          "id": "d5l2-b02-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "학생들이 이미 AI에게 'SNS 글 써줘'를 시도해본 적 있다면 위 6가지 증상 중 몇 개가 나왔는지 물어보세요. 오늘은 그 증상의 원인(구조 없이 바로 문장을 요청함)을 고칩니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
+            "markdown": "구조를 먼저 정하고 그 안에 글을 채워야 이 문제들을 막을 수 있습니다."
+          }
         }
       ]
     },
     {
       "id": "p03",
-      "title": "SNS 콘텐츠의 5가지 역할",
-      "layout": "wide",
+      "title": "다섯 가지 역할",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l2-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# Hook → Value → Body → Proof → CTA",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 다섯 가지 역할 (Hook · Value · Body · Proof · CTA)",
+            "emphasis": "lead"
           }
         },
         {
           "id": "d5l2-b03-roles",
           "type": "infographic",
+          "title": "다섯 역할",
           "visibility": "visible",
           "data": {
             "variant": "comparison",
             "items": [
               {
-                "label": "후킹 문장 (Hook)",
-                "description": "역할: 고객의 시선을 멈추게 한다\n고객 질문: \"이 내용이 왜 나와 관련 있지?\"\n나쁜 예: 99%가 모르는 충격적인 영어성적의 비밀\n좋은 방향: 왜 같은 영어 문제를 계속 틀릴까요?"
+                "label": "Hook",
+                "description": "역할: 멈추게 한다\n질문: 왜 계속 읽어야 하는가?"
               },
               {
-                "label": "가치 (Value)",
-                "description": "역할: 계속 읽을 이유를 준다\n고객 질문: \"그래서 나에게 무엇이 달라지지?\"\nFeature: 학생별 오답 관리\nValue: 반복되는 약점을 확인해 다음 학습에서 다시 놓치지 않도록 한다"
+                "label": "Value",
+                "description": "역할: 무엇이 달라지는지 보여준다\n질문: 나에게 어떤 의미인가?"
               },
               {
-                "label": "본문 (Body)",
-                "description": "역할: Hook에서 던진 문제를 이해시킨다\n고객 질문: \"왜 그런 문제가 생기고, 어떻게 접근할 수 있지?\"\n상황·문제·원인·현재 대안·한계·새로운 접근·기대 변화 중 필요한 것만 선택"
+                "label": "Body",
+                "description": "역할: Hook의 질문에 답한다\n질문: 어떻게 그게 가능한가?"
               },
               {
-                "label": "근거 (Proof)",
-                "description": "역할: 주장을 믿을 이유를 제공한다\n고객 질문: \"왜 이 말을 믿어야 하지?\""
+                "label": "Proof",
+                "description": "역할: 믿을 근거를 준다\n질문: 진짜인가?"
               },
               {
-                "label": "행동 유도 (CTA)",
-                "description": "역할: 다음 행동을 제안한다\n고객 질문: \"그래서 내가 지금 무엇을 하면 되지?\""
+                "label": "CTA",
+                "description": "역할: 다음 행동을 안내한다\n질문: 지금 무엇을 하면 되는가?"
               }
             ]
-          },
-          "title": "5가지 역할"
+          }
         },
         {
           "id": "d5l2-b03-note",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**Hook 유형 6종은 11차시에서 다룹니다.** 오늘은 Hook의 역할과 기본 원칙만 배웁니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "**5요소는 5문단 공식이 아닙니다.** 한 문단이 여러 역할을 겸할 수도 있고, 순서가 섞일 수도 있습니다 — 역할이 다 살아있으면 됩니다."
           }
-        },
-        {
-          "id": "d5l2-b03-not5",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 5요소는 5문단 공식이 아닙니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b03-flex",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "짧은 콘텐츠",
-                "description": "Hook → Value → Proof → CTA 만으로도 가능"
-              },
-              {
-                "label": "Body 생략 가능",
-                "description": "Body 안에 Value와 Proof가 포함될 수도 있음"
-              }
-            ]
-          },
-          "title": "콘텐츠 길이에 따라 유연하게"
-        },
-        {
-          "id": "d5l2-b03-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "Hook / Value / Body / Proof / CTA는 무조건 5문단으로 써야 한다는 뜻이 아닙니다. 이들은 콘텐츠 안에서 수행하는 **\"역할\"**입니다.\n\n**칸을 채우는 것이 아니라 각 요소가 어떤 역할을 하는지 이해합니다.**",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b03-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "5요소를 '무조건 채워야 하는 빈칸'으로 오해하지 않도록 강조하세요. 오늘 실습에서도 실제로 Body에 Value/Proof가 녹아드는 경우가 흔합니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     },
     {
       "id": "p04",
-      "title": "Hook · Value · Body를 제대로 이해하기",
-      "layout": "wide",
+      "title": "Feature → Benefit → Value, Body의 역할",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l2-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 관심을 끌고, 읽을 이유를 주고, 이해시킨다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## Body는 모든 걸 설명하는 곳이 아닙니다",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l2-b04-hook-title",
+          "id": "d5l2-b04-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## A. 후킹 문장 (Hook)",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "5차시에서 배운 **Feature → Benefit → Value** 사다리가 여기서도 적용됩니다. Body는 우리 제품의 모든 기능을 나열하는 곳이 아니라, **Hook이 던진 질문에 필요한 만큼만 답하는 곳**입니다."
           }
         },
         {
-          "id": "d5l2-b04-hook-cond",
+          "id": "d5l2-b04-chain",
           "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "현재 Target과 관련 있음"
-              },
-              {
-                "label": "실제 고객 문제(Customer Problem)와 연결"
-              },
-              {
-                "label": "뒤 콘텐츠와 약속이 일치"
-              },
-              {
-                "label": "근거(Evidence)보다 과하지 않음"
-              }
-            ]
-          },
-          "title": "좋은 Hook의 조건"
-        },
-        {
-          "id": "d5l2-b04-clickbait",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "후킹 문장 (Hook)",
-                "description": "관심을 끌지만 뒤 내용이 약속을 지킨다"
-              },
-              {
-                "label": "낚시성 문구 (Clickbait)",
-                "description": "클릭을 얻기 위해 실제 내용보다 더 큰 기대나 공포를 만든다"
-              }
-            ]
-          },
-          "title": "후킹 문장(Hook) ≠ 낚시성 문구(Clickbait)"
-        },
-        {
-          "id": "d5l2-b04-hook-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**상세한 낚시성 문구(Clickbait) 이론은 11차시에서 다룹니다.**\n\n이번 차시 핵심 원칙: 후킹 문장(Hook)의 약속은 본문이 제공할 수 있는 내용보다 커지면 안 됩니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b04-value-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## B. 가치 (Value)",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b04-value-chain",
-          "type": "infographic",
+          "title": "이어지는 원칙",
           "visibility": "visible",
           "data": {
             "variant": "steps",
             "items": [
               {
-                "label": "기능 (Feature)",
-                "description": "무엇이 있는가?"
+                "label": "1 Message = 1 Meaning",
+                "description": "9차시에서 배운 원칙"
               },
               {
-                "label": "이점 (Benefit)",
-                "description": "어떤 도움이 되는가?"
+                "label": "1 Content = 1 Main Idea",
+                "description": "콘텐츠 하나엔 중심 생각 하나"
               },
               {
-                "label": "가치 (Value)",
-                "description": "그래서 고객에게 무엇이 달라지는가?"
+                "label": "1 Content = 1 Primary CTA",
+                "description": "행동 유도도 하나만"
               }
             ]
           },
-          "title": "기능(Feature) → 이점(Benefit) → 가치(Value)"
-        },
-        {
-          "id": "d5l2-b04-body-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## C. 본문 (Body)",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b04-body-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "본문(Body)의 목적은 모든 설명을 하는 것이 아닙니다. 후킹 문장(Hook)에서 시작한 질문에 필요한 만큼 답하는 것입니다.\n\n**한 게시물에서 모든 것을 설명하려 하지 않습니다.**",
-            "emphasis": "normal"
-          },
           "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "background": "primary-soft"
           }
-        },
-        {
-          "id": "d5l2-b04-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "5차시 So What? Ladder(Feature→Benefit→Value)를 다시 소환하는 페이지입니다. '그때 배운 사다리를 SNS 문장에도 그대로 쓴다'는 것을 짚어주세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     },
     {
       "id": "p05",
-      "title": "Proof · Claim · Evidence",
-      "layout": "wide",
+      "title": "근거는 주장보다 커야 합니다 (Proof — Claim ≤ Evidence)",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l2-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 마케팅이라고 Evidence 규칙이 사라지지 않습니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## Proof는 Claim보다 작아야 합니다",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l2-b05-terms",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "주장 (Claim)",
-                "description": "고객에게 하고 싶은 말"
-              },
-              {
-                "label": "근거 자료 (Evidence)",
-                "description": "그 말을 실제로 뒷받침하는 것"
-              }
-            ]
-          },
-          "title": "1~2차시 Evidence-first와 직접 연결"
-        },
-        {
-          "id": "d5l2-b05-claim-example",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "안전한 주장 ✅",
-                "description": "매 수업 후 학생별 오답을 기록합니다.\n(실제로 운영하고 있다면 말할 수 있음)"
-              },
-              {
-                "label": "위험한 주장 ❌",
-                "description": "3개월이면 성적이 반드시 상승합니다.\n(충분한 실제 Evidence가 없다면 사용할 수 없음)"
-              }
-            ]
-          },
-          "title": "핵심 원칙: Claim ≤ Evidence"
-        },
-        {
-          "id": "d5l2-b05-proof-ok",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "Proof로 사용할 수 있는 것",
-                "description": "실제 고객 후기 / 실제 데이터 / 제품 화면 / 실제 운영 과정 / 실제 사례 / 자격·인증 / 공개 객관자료"
-              },
-              {
-                "label": "AI가 만들면 안 되는 것",
-                "description": "가짜 후기 / 가짜 통계 / 가짜 성과 / 가짜 고객반응 / 가짜 인증 / 존재하지 않는 사례"
-              }
-            ]
-          },
-          "title": "Proof로 사용할 수 있는 것 vs 안 되는 것"
-        },
-        {
-          "id": "d5l2-b05-shortage-title",
+          "id": "d5l2-b05-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## Proof가 부족할 때 3가지 대응",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "**Claim ≤ Evidence** 원칙이 콘텐츠에도 그대로 적용됩니다. Proof가 부족하면 다음 중 하나를 선택하세요:"
           }
         },
         {
-          "id": "d5l2-b05-shortage",
+          "id": "d5l2-b05-options",
           "type": "infographic",
+          "title": "Proof가 부족할 때",
           "visibility": "visible",
           "data": {
-            "variant": "steps",
+            "variant": "checklist",
             "items": [
               {
-                "label": "1. 주장을 낮춘다",
-                "description": "\"성적 향상을 보장합니다.\" → \"학생별 반복 오답을 기록하고 관리합니다.\""
+                "label": "Claim 낮추기 — 더 약한 주장으로 조정"
               },
               {
-                "label": "2. 실제 Process를 보여준다",
-                "description": "결과를 증명할 수 없다면 실제로 어떻게 운영하는지를 보여준다"
+                "label": "실제 Process 보여주기 — 결과 대신 과정을 증거로"
               },
               {
-                "label": "3. 검증 필요로 남긴다",
-                "description": "모르는 것을 AI가 채우게 하지 않는다 — Needs Validation으로 표시"
+                "label": "Needs Validation으로 표시 — 아직 확정하지 않기"
               }
             ]
+          },
+          "theme": {
+            "background": "muted"
           }
-        },
-        {
-          "id": "d5l2-b05-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "1차시 FACT/INFERENCE/NEEDS VERIFICATION 구분이 여기서 Claim/Evidence/Needs Validation으로 이어진다는 것을 강조하세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     },
     {
       "id": "p06",
-      "title": "CTA와 고객 여정",
-      "layout": "wide",
+      "title": "여정에 맞는 행동 유도 (Customer Journey ↔ CTA)",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l2-b06-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# CTA는 회사가 원하는 행동이 아니라\n# 고객의 다음 자연스러운 행동입니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 같은 메시지, 다른 순서로",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l2-b06-note",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "8차시 고객 여정(Customer Journey)과 직접 연결합니다. CTA(행동 유도, Call to Action)는 단순히 \"지금 구매하세요\"가 아닙니다 — 고객의 현재 여정 위치에 따라 적절한 CTA가 달라집니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b06-stages",
+          "id": "d5l2-b06-journey",
           "type": "infographic",
+          "title": "여정 단계별 CTA",
           "visibility": "visible",
           "data": {
-            "variant": "steps",
+            "variant": "comparison",
             "items": [
               {
-                "label": "문제 인식 단계",
-                "description": "고객 질문: \"이 문제가 왜 생기지?\"\n콘텐츠: 정보 콘텐츠\nCTA: 더 알아보기 / 저장하기"
+                "label": "문제 인식",
+                "description": "더 알아보기 / 저장"
               },
               {
-                "label": "비교 단계",
-                "description": "고객 질문: \"어떤 해결방법이 맞지?\"\n콘텐츠: 비교 / 근거(Proof) 콘텐츠\nCTA: 상세내용 보기 / 상담하기"
+                "label": "비교",
+                "description": "상세정보 / 상담"
               },
               {
-                "label": "결정 단계",
-                "description": "고객 질문: \"정말 신청해도 될까?\"\n콘텐츠: 신뢰 / 반대의견 대응 콘텐츠\nCTA: 체험 / 예약 / 신청"
+                "label": "결정",
+                "description": "체험 / 예약 / 신청"
               }
             ]
-          },
-          "title": "여정 단계별 CTA"
-        },
-        {
-          "id": "d5l2-b06-flow",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "현재 고객 여정 (Customer Journey)"
-              },
-              {
-                "label": "고객 질문 (Customer Question)"
-              },
-              {
-                "label": "핵심 메시지 (Core Message)"
-              },
-              {
-                "label": "SNS 콘텐츠 (SNS Content)"
-              },
-              {
-                "label": "다음 행동 (Next Action)"
-              }
-            ]
-          },
-          "title": "시각 흐름"
-        },
-        {
-          "id": "d5l2-b06-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**CTA는 우리의 매출 목표에서 출발하는 것이 아니라, 고객이 지금 받아들일 수 있는 다음 행동에서 출발합니다.**",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         },
         {
-          "id": "d5l2-b06-script",
+          "id": "d5l2-b06-question",
           "type": "rich-text",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
-            "markdown": "8차시에서 만든 Journey Stages/Priority Touchpoint를 다시 꺼내 놓고, 오늘 CTA가 그 여정의 어느 단계에 해당하는지 짚어보게 하세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
+            "markdown": "**핵심 질문: \"같은 Core Message를 어떤 순서로 전달할 것인가?\"** — 8차시에서 정한 Journey Trigger와 Priority Touchpoint가 여기서 다시 쓰입니다.",
+            "emphasis": "lead"
+          }
         }
       ]
     },
     {
       "id": "p07",
-      "title": "한 콘텐츠, 하나의 중심 생각",
-      "layout": "wide",
+      "title": "오늘 정리",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l2-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 한 콘텐츠에 모든 말을 넣지 않습니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 10차시 정리",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l2-b07-onemessage",
+          "id": "d5l2-b07-summary",
           "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "9차시 — 1 Message = 1 Meaning",
-                "description": "하나의 메시지 = 하나의 중심 의미"
-              },
-              {
-                "label": "10차시 — 1 Content = 1 Main Idea",
-                "description": "하나의 콘텐츠 = 하나의 중심 생각"
-              },
-              {
-                "label": "10차시 — 1 Content = 1 Primary CTA",
-                "description": "하나의 콘텐츠 = 하나의 1차 행동 유도"
-              }
-            ]
-          },
-          "title": "원칙이 콘텐츠 단위로 이어짐"
-        },
-        {
-          "id": "d5l2-b07-bad",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "나쁜 예 — 정보 과다",
-                "description": "회사 소개 / 서비스 소개 / 기능 6개 / 가격 / 이벤트 / 브랜드 철학 / 후기 / 상담 신청 / 팔로우 / 공유 / 저장 — 전부 한 게시물에"
-              },
-              {
-                "label": "나쁜 예 — CTA 과다",
-                "description": "\"구매하고 팔로우하고 저장하고 공유하고 댓글도 남겨주세요.\" → 현재 단계의 1차 CTA 하나로"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d5l2-b07-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정보가 많아지는 것이 아니라 고객이 무엇을 기억해야 할지 흐려집니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b07-reminder-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 실습 전 2분 리마인드",
-            "emphasis": "hero"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b07-lock",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "🔒 오늘 바꾸지 않는 것",
-                "description": "1순위 고객 / 핵심 고객 문제 / 핵심 가치 / 핵심 메시지 / 메시지 불변요소 / 근거의 범위 / 사용 금지 주장"
-              },
-              {
-                "label": "✍️ 오늘 새로 만드는 것",
-                "description": "고객 질문(Customer Question) / 기준 후킹 문장(Baseline Hook) / 가치 표현 / 본문 구조 / 근거 사용 방식 / 1차 행동 유도(CTA)"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d5l2-b07-checklist",
-          "type": "infographic",
+          "title": "기억할 것",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "1. 핵심 메시지(Core Message)를 새로 만들지 않는다"
+                "label": "Structure First — 구조를 먼저 정한다"
               },
               {
-                "label": "2. 한 콘텐츠에는 하나의 중심 생각만 담는다"
+                "label": "Hook / Value / Body / Proof / CTA"
               },
               {
-                "label": "3. 후킹 문장(Hook)은 본문보다 과장하지 않는다"
+                "label": "5요소 ≠ 5문단"
               },
               {
-                "label": "4. 근거(Proof)는 실제 확보된 것 안에서만 쓴다"
+                "label": "1 Content = 1 Main Idea, 1 Primary CTA"
               },
               {
-                "label": "5. 행동 유도(CTA)는 고객 여정의 자연스러운 다음 행동으로 정한다"
-              }
-            ]
-          },
-          "title": "실습 체크포인트"
-        },
-        {
-          "id": "d5l2-b07-flow",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "핵심 메시지"
+                "label": "Claim ≤ Evidence"
               },
               {
-                "label": "후킹 문장 (Hook)"
-              },
-              {
-                "label": "가치 (Value)"
-              },
-              {
-                "label": "본문 (Body)"
-              },
-              {
-                "label": "근거 (Proof)"
-              },
-              {
-                "label": "행동 유도 (CTA)"
-              }
-            ]
-          },
-          "title": "실습 흐름"
-        },
-        {
-          "id": "d5l2-b07-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지는 P02~P07 이론 전체를 압축해서 실습 직전 다시 보여주는 페이지입니다. 시간이 부족하면 이 페이지만이라도 꼭 함께 짚어주세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "p08",
-      "title": "실습 1 — 핵심 메시지를 SNS 콘텐츠 구조로 바꾸기",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d5l2-b08-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 확정된 핵심 메시지를\n# SNS 구조로 바꿉니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b08-context-form",
-          "type": "input-form",
-          "title": "Context 준비",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "1순위 고객",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "1순위 타겟 (Primary Target)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "핵심 고객 문제",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Core Message Map v0.1",
-                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "핵심 가치",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Core Message Map v0.1",
-                    "sourceLabel": "핵심 가치 (Core Value)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "핵심 메시지",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "핵심 근거",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Core Message Map v0.1",
-                    "sourceLabel": "핵심 근거 (Supporting Evidence)"
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "메시지 불변요소",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "메시지 불변요소 (Message Invariants)"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "사용하면 안 되는 주장",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "메시지 변질 방지 규칙",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "메시지 변질 방지 규칙 (Drift Guardrail)"
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "고객의 촉발 상황 (Journey Trigger)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "8차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "8차시 — Business Context v0.8",
-                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "주요 불편 (Main Friction)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "8차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "8차시 — Business Context v0.8",
-                    "sourceLabel": "가장 큰 마찰 (Top Friction)"
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "우선 접점 (Priority Touchpoint)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": "전부 버튼으로 채웁니다 — 새로 타이핑할 칸은 없습니다. 아래 프롬프트의 [ ] 열한 곳에 순서대로 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d5l2-b08-prompt",
-          "type": "prompt",
-          "title": "SNS 콘텐츠 구조 설계 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[역할]\n당신은 자극적인 광고문구를 만드는 카피라이터가 아닙니다.\n\n이미 사람이 확정한 핵심 메시지(Core Message)를 유지하면서, 고객이 읽고 이해하고 다음 행동을 할 수 있도록 SNS 콘텐츠의 구조를 설계하는 전략가입니다.\n\n[확정된 이전 결정]\n\n1순위 고객:\n[ ]\n\n핵심 고객 문제:\n[ ]\n\n핵심 가치:\n[ ]\n\n핵심 메시지:\n[ ]\n\n핵심 근거:\n[ ]\n\n메시지 불변요소:\n[ ]\n\n사용하면 안 되는 주장:\n[ ]\n\n메시지 변질 방지 규칙:\n[ ]\n\n고객의 촉발 상황:\n[ ]\n\n주요 불편:\n[ ]\n\n우선 접점:\n[ ]\n\n[작업]\n\n1. 현재 고객이 이 상황에서 실제로 궁금해할 가능성이 높은 질문을 1~2개 제안하세요. 근거가 부족하면 \"추가 확인 필요\"라고 표시하세요.\n\n2. 확정된 핵심 메시지를 바꾸지 않고 SNS 콘텐츠 구조를 설계하세요.\n   - 후킹 문장(Hook)\n   - 가치(Value)\n   - 본문(Body)\n   - 근거(Proof)\n   - 행동 유도(CTA)\n\n3. Hook은 실제 고객 문제(Customer Problem)와 연결하세요. 본문이 제공할 수 있는 것보다 강한 기대·공포·성과를 약속하지 마세요.\n\n4. Value는 Feature 나열이 아니라 \"그래서 고객에게 무엇이 달라지는가?\" 관점으로 표현하세요.\n\n5. Body는 한 콘텐츠의 중심 생각 하나를 이해시키는 데 필요한 내용만 구성하세요.\n\n6. Proof는 제공된 근거(Evidence) 안에서만 사용하세요. 존재하지 않는 후기·고객반응·숫자·통계·성과·인증·사례를 만들지 마세요.\n\n7. Proof가 부족하다면 가짜 근거를 만드는 대신, 다음 중 하나를 선택하세요.\n   - 주장(Claim)을 낮추기\n   - 실제 Process 보여주기\n   - 검증 필요(Needs Validation)로 표시하기\n\n8. CTA는 회사가 원하는 행동이 아니라 현재 고객 여정에서 고객이 자연스럽게 할 수 있는 다음 행동으로 제안하세요.\n\n9. 1차 행동 유도(Primary CTA)는 하나만 제안하세요.\n\n10. 마지막으로 전체 구조가 핵심 메시지를 유지하는지 점검하세요.\n\n[금지]\n\n- Target 변경 금지\n- 핵심 메시지 변경 금지\n- 새로운 가치제안 생성 금지\n- 근거 없는 성과/수치/후기 생성 금지\n- 콘텐츠 관점(Angle) 여러 개 생성 금지\n- Hook 유형별 변형 생성 금지\n- 채널별 변형 생성 금지\n- 낚시성 문구(Clickbait) 생성 금지\n\n[출력]\n\n고객이 지금 궁금해할 질문:\n1.\n2.\n\nSNS 콘텐츠 구조 초안\n\n후킹 문장(Hook):\n-\n\n가치(Value):\n-\n\n본문 구조(Body):\n1.\n2.\n3.\n\n사용할 근거(Proof):\n-\n\n1차 행동 유도(Primary CTA):\n-\n\nCTA가 현재 여정에 맞는 이유:\n-\n\n구조 점검:\n- 핵심 메시지와 일치하는가:\n- 하나의 중심 생각인가:\n- 근거보다 강한 주장이 있는가:\n- Hook이 본문보다 과장되었는가:\n- CTA가 현재 여정에 적절한가:\n\n추가로 확인이 필요한 것:\n-",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 Context 준비 칸의 내용을 [ ] 열한 곳에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d5l2-b08-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "SNS 콘텐츠 구조 설계",
-            "practiceDescription": "핵심 메시지를 유지하면서 Hook/Value/Body/Proof/CTA 구조를 설계합니다.",
-            "estimatedMinutes": 15
-          }
-        },
-        {
-          "id": "d5l2-b08-result-form",
-          "type": "input-form",
-          "title": "실습 1 AI 분석 결과",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "실습 1 AI 분석 결과 (Prompt 1 Analysis Result)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요."
-              }
-            ]
-          },
-          "description": "질문, 구조 초안, 구조 점검까지 전체 결과를 여러 칸으로 나누지 말고 한 번만 붙여넣으세요."
-        }
-      ]
-    },
-    {
-      "id": "p09",
-      "title": "예쁜 문장 말고 구조를 봅니다",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l2-b09-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 예쁜 문장인지 보지 말고,\n# 구조가 맞는지 확인합니다",
-            "emphasis": "hero"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b09-checks",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "checklist",
-            "items": [
-              {
-                "label": "① 핵심 메시지 — 원래 의미가 유지되는가?"
-              },
-              {
-                "label": "② 고객 — AI가 새로운 고객을 만들지 않았는가?"
-              },
-              {
-                "label": "③ 주장 — 주장이 실제 근거보다 커지지 않았는가?"
-              },
-              {
-                "label": "④ 초점 — 한 콘텐츠에 여러 메시지가 섞이지 않았는가?"
-              },
-              {
-                "label": "⑤ CTA — 고객에게 너무 큰 행동을 요구하지 않는가?"
-              },
-              {
-                "label": "⑥ 근거 — 없는 후기·성과·숫자가 생기지 않았는가?"
+                "label": "Journey ↔ CTA"
               }
             ]
           }
         },
         {
-          "id": "d5l2-b09-key",
+          "id": "d5l2-b07-next",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**Red Team의 목적은 글을 더 멋있게 만드는 것이 아니라 틀린 구조를 찾아내는 것입니다.**",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "**별도 실습은 하지 않습니다.** 12차시 Marketing Content Sprint에서 함께 적용합니다."
           }
-        },
-        {
-          "id": "d5l2-b09-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "실습2 직전 반드시 짚고 넘어가세요 — 학생들이 'AI가 다시 써준 더 화려한 문장'을 그대로 채택하지 않도록 하는 것이 이 페이지의 목적입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "p10",
-      "title": "실습 2 — AI가 만든 콘텐츠 구조를 반대편에서 검토하기",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d5l2-b10-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 좋아 보이는 구조를\n# 한 번 더 의심합니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b10-context-form",
-          "type": "input-form",
-          "title": "이전 결과 참고",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "SNS 구조 초안 (Prompt 1 결과, 참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d5l2-b08-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "1순위 고객 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "핵심 메시지 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "메시지 불변요소 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "핵심 근거 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "사용하면 안 되는 주장 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f7"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "메시지 변질 방지 규칙 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P08에서 가져오기",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "고객 여정 관련 정보 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "촉발 상황",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f9"
-                    ]
-                  },
-                  {
-                    "kind": "same-lesson",
-                    "label": "주요 불편",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f10"
-                    ]
-                  },
-                  {
-                    "kind": "same-lesson",
-                    "label": "우선 접점",
-                    "sourceBlockId": "d5l2-b08-context-form",
-                    "sourceFieldIds": [
-                      "f11"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          "description": "아래 프롬프트의 [ ] 자리에 이 내용을 순서대로 옮겨 붙여넣습니다."
-        },
-        {
-          "id": "d5l2-b10-prompt",
-          "type": "prompt",
-          "title": "SNS 구조 Red Team 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[역할]\n당신은 SNS 문장을 더 자극적으로 만드는 카피라이터가 아닙니다.\n\n현재 SNS 콘텐츠 구조가 고객, 핵심 메시지, 실제 근거(Evidence), 고객 여정(Customer Journey)에서 벗어나지 않았는지 공격적으로 검토하는 Red Team Reviewer입니다.\n\n[확정 정보]\n\n1순위 고객:\n[ ]\n\n핵심 메시지:\n[ ]\n\n메시지 불변요소:\n[ ]\n\n핵심 근거:\n[ ]\n\n사용하면 안 되는 주장:\n[ ]\n\n메시지 변질 방지 규칙:\n[ ]\n\n고객 여정 관련 정보:\n[ ]\n\n[검토할 SNS 콘텐츠 구조]\n\n[실습 1 결과]\n[ ]\n\n[검토]\n\n1. 핵심 메시지 일치\n   Hook/Value/Body/Proof/CTA가 하나의 핵심 메시지를 향하는가? 다른 메시지가 섞이지 않았는가?\n\n2. Hook\n   실제 고객 문제와 연결되는가? 본문보다 더 큰 기대를 만들지 않는가? 낚시성 문구(Clickbait)가 되지 않았는가?\n\n3. Value\n   Feature를 Value처럼 말하고 있지 않은가? 고객에게 무엇이 달라지는지가 명확한가?\n\n4. Body\n   Hook에서 시작한 질문에 실제 답하는가? 한 콘텐츠에 너무 많은 내용을 넣지 않았는가? 중심 생각이 하나인가?\n\n5. Proof\n   제공되지 않은 후기·수치·성과를 만들지 않았는가? 주장(Claim)이 근거(Evidence)보다 강하지 않은가? 가설을 사실처럼 표현하지 않았는가?\n\n6. CTA\n   회사 입장에서 원하는 행동만 강요하지 않았는가? 현재 고객 여정에서 자연스러운 다음 행동인가? 1차 행동 유도가 하나인가?\n\n7. 메시지 변질(Message Drift)\n   다음 중 변질된 것이 있는지 확인하세요: 고객 / 문제 / 가치 / 주장 / 근거\n\n8. 경쟁사도 그대로 사용할 수 있을 정도로 너무 일반적인 표현인지 확인하세요.\n\n[판정]\n- KEEP = 유지\n- REVISE = 수정 후 사용\n- HOLD = 근거가 더 필요\n- REJECT = 현재 구조 사용하지 않음\n\n[출력]\n\n전체 판정:\n-\n\n가장 잘 된 부분:\n-\n\n가장 큰 문제:\n-\n\nHook 점검:\n-\n\nValue 점검:\n-\n\nBody 점검:\n-\n\nProof 점검:\n-\n\nCTA 점검:\n-\n\n메시지 변질(Message Drift):\n-\n\n반드시 수정할 것 최대 3개:\n1.\n2.\n3.\n\n추천 1차 행동 유도(Primary CTA):\n-\n\n추가로 필요한 근거:\n-\n\n사람이 최종 결정해야 할 것:\n-",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 참고 칸의 내용을 [ ] 자리에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d5l2-b10-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "SNS 구조 Red Team 검증",
-            "practiceDescription": "핵심메시지·고객·근거·여정 일치 여부를 검토받고 KEEP/REVISE/HOLD/REJECT 제안을 받습니다.",
-            "estimatedMinutes": 15
-          }
-        },
-        {
-          "id": "d5l2-b10-result-form",
-          "type": "input-form",
-          "title": "실습 2 AI 검토 결과",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "실습 2 AI 검토 결과 (Prompt 2 Review Result)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요."
-              }
-            ]
-          },
-          "description": "판정, 점검 결과, 수정 제안까지 전체 결과를 나누지 말고 한 번만 붙여넣으세요."
-        }
-      ]
-    },
-    {
-      "id": "p11",
-      "title": "사람의 결정 — SNS 콘텐츠 구조 지도 v0.1",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d5l2-b11-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 최종 구조는 사람이 결정합니다\n\nAI 결과를 그대로 복제하지 않습니다. 읽고, 이 콘텐츠에 실제로 쓸 결정만 추려 적으세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b11-form",
-          "type": "input-form",
-          "title": "SNS 콘텐츠 구조 지도 v0.1",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "핵심 메시지 (Core Message)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "9차시에서 가져온 그대로 유지하세요 — 다시 쓰지 않습니다.",
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "고객이 지금 궁금해할 질문 (Customer Question)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Prompt 1 결과를 참고해 1~2문장으로 정하세요."
-              },
-              {
-                "id": "f3",
-                "label": "기준 후킹 문장 (Baseline Hook)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Prompt 1·2 결과 중 골라 다듬으세요. 11차시에서 여러 버전을 만들 것이므로 '최종 Hook'은 아닙니다."
-              },
-              {
-                "id": "f4",
-                "label": "핵심 가치 표현 (Value)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Prompt 1·2 결과 중 골라 다듬으세요."
-              },
-              {
-                "id": "f5",
-                "label": "본문 핵심 구조 (Body Structure)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "완성된 글이 아니라 2~4개의 구조 포인트만 적으세요. 예: 문제 상황 → 현재 방식의 한계 → 우리의 접근 → 기대 변화"
-              },
-              {
-                "id": "f6",
-                "label": "사용할 근거 (Proof)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "버튼으로 가져온 뒤, 이 콘텐츠에서 실제로 쓸 근거만 남기세요.",
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Core Message Map v0.1",
-                    "sourceLabel": "핵심 근거 (Supporting Evidence)"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "1차 행동 유도 (Primary CTA)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Prompt 2의 추천을 참고해 하나만 결정하세요."
-              },
-              {
-                "id": "f8",
-                "label": "CTA 선택 이유",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "현재 고객 여정과 왜 맞는지 1문장으로 적으세요."
-              },
-              {
-                "id": "f9",
-                "label": "사용하면 안 되는 주장 (Prohibited Claim)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "추가로 필요한 근거 (Missing Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Prompt 2 결과를 참고해 핵심만 정리하세요."
-              },
-              {
-                "id": "f11",
-                "label": "사람의 최종 판단 (Human Decision)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "KEEP / REVISE / HOLD 중 하나와 짧은 이유를 적으세요."
-              }
-            ]
-          },
-          "description": "1·6·9번은 버튼으로 채워집니다. 나머지가 이번 시간의 실제 결정입니다 — Prompt 1·2 결과를 참고해 짧게 적으세요."
-        },
-        {
-          "id": "d5l2-b11-decision",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "유지 (KEEP)",
-                "description": "그대로 유지"
-              },
-              {
-                "label": "수정 (REVISE)",
-                "description": "수정 후 사용"
-              },
-              {
-                "label": "보류 (HOLD)",
-                "description": "근거 부족 — 보류"
-              }
-            ]
-          },
-          "title": "Prompt 2의 판정을 참고하세요"
-        },
-        {
-          "id": "d5l2-b11-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지에서는 아직 저장하지 않습니다. 다 채운 뒤 다음 페이지에서 실제로 저장 버튼을 클릭하게 하세요. 1·6·9번은 버튼, 나머지 8개가 이번 시간의 실제 결정이라는 것을 안내하세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "p12",
-      "title": "결과 저장 / 완료",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d5l2-b12-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
-            "emphasis": "hero"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b12-a-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## A. SNS 콘텐츠 구조 지도 저장\n\n앞 페이지에서 정리한 내용이 저장됩니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b12-structure-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "10차시 — SNS Structure Map v0.1",
-            "sourceBlockId": "d5l2-b11-form",
-            "buttonLabel": "SNS 콘텐츠 구조 지도 저장"
-          }
-        },
-        {
-          "id": "d5l2-b12-preview",
-          "type": "result-preview",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
-          }
-        },
-        {
-          "id": "d5l2-b12-b-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## B. Business Context 업데이트\n\n9차시 Business Context v0.9를 그대로 가져오고, 이번에 만든 SNS 구조 관련 항목만 새로 채우세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b12-context-form",
-          "type": "input-form",
-          "title": "Business Context v0.10",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "확인된 사실 (Confirmed Facts)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "현재 가설 (Current Hypotheses)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "현재 가설 (Current Hypotheses)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "고객 세그먼트 (Customer Segments)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "1순위 타겟 (Primary Target)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "1순위 타겟 (Primary Target)"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "첫 검증 고객 (ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "첫 검증 고객 (ECP)"
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "1순위 가치제안 (Primary Value Proposition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "우선 검증 접점 (Priority Touchpoint)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "핵심 메시지 (Primary Core Message)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "보조 메시지 (Secondary Message)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "보조 메시지 (Secondary Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "메시지 불변요소 (Message Invariants)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "메시지 불변요소 (Message Invariants)"
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "핵심 메시지 근거 (Message Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "핵심 메시지 근거 (Message Evidence)"
-                  }
-                ]
-              },
-              {
-                "id": "f12",
-                "label": "핵심 메시지 리스크 (Message Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "핵심 메시지 리스크 (Message Risk)"
-                  }
-                ]
-              },
-              {
-                "id": "f13",
-                "label": "사용 금지 주장 (Prohibited Claim)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
-                  }
-                ]
-              },
-              {
-                "id": "f14",
-                "label": "메시지 변질 방지 규칙 (Drift Guardrail)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Business Context v0.9",
-                    "sourceLabel": "메시지 변질 방지 규칙 (Drift Guardrail)"
-                  }
-                ]
-              },
-              {
-                "id": "f15",
-                "label": "고객 질문 (Customer Question)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f16",
-                "label": "기준 후킹 문장 (Baseline Hook)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f17",
-                "label": "SNS 가치 표현 (SNS Value)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f18",
-                "label": "SNS 본문 구조 (Body Structure)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f19",
-                "label": "SNS 활용 근거 (Content Proof)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f20",
-                "label": "1차 행동 유도 (Primary CTA)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f7"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f21",
-                "label": "CTA 선택 이유 (CTA Reason)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f22",
-                "label": "추가 필요 근거 (Missing Content Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l2-b11-form",
-                    "sourceFieldIds": [
-                      "f10"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f23",
-                "label": "다음 결정 사항 (Next Decision)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "예: 같은 핵심 메시지를 유지하면서 어떤 콘텐츠 관점(Angle)과 Hook으로 서로 다른 콘텐츠 후보를 만들 것인가?"
-              }
-            ]
-          },
-          "description": "9차시 Business Context v0.9를 복사해 이번 SNS 구조 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
-        },
-        {
-          "id": "d5l2-b12-context-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "10차시 — Business Context v0.10",
-            "sourceBlockId": "d5l2-b12-context-form",
-            "buttonLabel": "Business Context v0.10 저장"
-          }
-        },
-        {
-          "id": "d5l2-b12-next",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 다음 단계 — 같은 메시지를 다른 관점으로 시작합니다\n\n오늘은 하나의 핵심 메시지를 Hook / Value / Body / Proof / CTA 구조로 만들었습니다.\n\n다음 차시에서는 핵심 메시지는 유지하면서 어떤 관점(Angle)에서 이야기를 시작하느냐에 따라 서로 다른 콘텐츠 후보를 만들어봅니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "muted",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l2-b12-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "두 저장 버튼을 모두 클릭해서 목록에 두 결과물이 함께 남아있는지, 9차시 v0.9가 그대로 남아있는지 확인시키세요. 11차시는 Primary Core Message / Message Invariants / Customer Question / Baseline Hook / Body Structure / Content Proof / Primary CTA / Prohibited Claim / Drift Guardrail을 그대로 가져오는 것으로 시작합니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     }

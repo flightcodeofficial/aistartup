@@ -5,8 +5,8 @@
   "day": 5,
   "lesson": 3,
   "title": "Content Angle & Hook — 같은 메시지, 다른 시작점",
-  "description": "10차시에서 만든 SNS 구조를 바꾸지 않고, 어떤 관점(Angle)에서 시작할지와 어떤 후킹 문장(Hook)이 적합한지 AI 후보 중 사람이 고른다.",
-  "durationMinutes": 60,
+  "description": "하나의 Core Message에서 서로 다른 진입점(Angle)과 시작 문장(Hook)을 설계하고, Hook과 Clickbait를 구분합니다.",
+  "durationMinutes": 15,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "같은 메시지를 다른 시작점에서 꺼냅니다",
+      "title": "구조는 정했다, 이제 시작점을 고른다",
       "layout": "wide",
       "blocks": [
         {
@@ -22,13 +22,9 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 같은 메시지를\n# 다른 시작점에서 꺼냅니다\n\n\"똑같은 핵심 메시지를 매번 지루하지 않게, 새로운 이야기처럼 전달하려면?\"",
+            "markdown": "# Content Angle & Hook\n\n## 같은 메시지, 다른 시작점",
             "emphasis": "hero"
           },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
           "layout": {
             "width": "wide",
             "align": "left",
@@ -36,1944 +32,350 @@
           }
         },
         {
-          "id": "d5l3-b01-flow",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "9차시 — 무엇을 말할까?",
-                "description": "핵심 메시지 (Core Message)"
-              },
-              {
-                "label": "10차시 — 어떤 순서로?",
-                "description": "Hook → Value → Body → Proof → CTA"
-              },
-              {
-                "label": "11차시 — 어떤 관점에서?",
-                "description": "관점(Angle) · 후킹 문장(Hook) · 변형(Variant)"
-              },
-              {
-                "label": "12차시 — 어떻게 다듬을까?",
-                "description": "편집자(Editor)"
-              }
-            ]
-          },
-          "title": "9 → 10 → 11 → 12 차시 흐름"
-        },
-        {
-          "id": "d5l3-b01-funnel-title",
+          "id": "d5l3-b01-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 오늘의 흐름 — 넓은 것에서 뾰족한 것으로",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "10차시에서 콘텐츠의 구조(Hook-Value-Body-Proof-CTA)를 배웠습니다. 오늘은 그 Hook을 실제로 어떤 관점에서, 어떻게 시작할지 배웁니다."
           }
-        },
-        {
-          "id": "d5l3-b01-funnel",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "1. 주제 (Topic)",
-                "description": "가장 넓은 범위의 소재"
-              },
-              {
-                "label": "2. 핵심 메시지 (Core Message)",
-                "description": "우리가 변함없이 주장할 내용 — 9차시에서 이미 확정"
-              },
-              {
-                "label": "3. 관점 (Angle)",
-                "description": "메시지를 포장하는 방식과 진입로"
-              },
-              {
-                "label": "4. 후킹 문장 (Hook)",
-                "description": "고객이 가장 먼저 보게 될 첫 문장"
-              }
-            ]
-          },
-          "title": "주제(Topic) → 핵심 메시지(Core Message) → 관점(Angle) → 후킹 문장(Hook)"
-        },
-        {
-          "id": "d5l3-b01-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**말하고 싶은 핵심은 같아도, 고객이 들어오는 문(門)은 여러 개 만들어둘 수 있습니다.**\n\n오늘은 그 문(관점·Angle)을 만들고, 문 앞에 걸어둘 첫 문장(Hook)을 고릅니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b01-preview",
-          "type": "result-preview",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "10차시를 먼저 완료해야 SNS 콘텐츠 구조가 표시됩니다."
-          },
-          "title": "10차시 결과"
-        },
-        {
-          "id": "d5l3-b01-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "목록이 비어 있으면 10차시를 아직 완료하지 않은 학생입니다 — 10차시 P12에서 저장하고 오게 하세요. 오늘 핵심 메시지는 절대 다시 만들지 않는다는 것을 처음부터 강조하세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     },
     {
       "id": "p02",
-      "title": "관점(Angle)이란 무엇인가",
-      "layout": "wide",
+      "title": "세 가지는 다릅니다 (Core Message ≠ Angle ≠ Hook)",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l3-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 관점(Angle)과 후킹 문장(Hook)은 다릅니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 세 가지는 다른 질문에 답합니다",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l3-b02-compare",
+          "id": "d5l3-b02-terms",
           "type": "infographic",
+          "title": "세 가지 개념",
           "visibility": "visible",
           "data": {
             "variant": "comparison",
             "items": [
               {
-                "label": "관점 (Angle) = 시작점",
-                "description": "기획자 머릿속에 있는 추상적인 방향\n예: 부모의 답답함에서 바라보기"
+                "label": "Core Message",
+                "description": "무엇을 기억시킬 것인가"
               },
               {
-                "label": "후킹 문장 (Hook) = 낚싯바늘",
-                "description": "고객의 시선을 낚아채는 실제 첫 문장이나 화면\n예: \"학원은 다니는데, 우리 아이가 정확히 어디서 막히는지 알고 계신가요?\""
+                "label": "Angle",
+                "description": "어떤 관점에서 시작할 것인가"
+              },
+              {
+                "label": "Hook",
+                "description": "그 관점을 실제로 어떻게 시작할 것인가"
               }
             ]
-          },
-          "title": "관점(Angle) vs 후킹 문장(Hook)"
-        },
-        {
-          "id": "d5l3-b02-prism",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**핵심 메시지(Core Message)는 절대 변하지 않는 알맹이입니다.**\n\n관점(Angle)은 그 알맹이를 바라보는 서로 다른 시선이나 입구입니다 — 프리즘에 흰 빛을 통과시키면 여러 색으로 갈라지듯, 하나의 핵심 메시지도 여러 관점으로 갈라질 수 있습니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         },
         {
-          "id": "d5l3-b02-key",
+          "id": "d5l3-b02-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**핵심 원칙: 관점(Angle)을 바꾸는 것 ≠ 메시지(Message)를 바꾸는 것.**\n\n말하고 싶은 핵심은 같아도, 고객이 들어오는 문은 여러 개 만들어둘 수 있습니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "**One Core Message → Many Angles.** Core Message는 하나여도, 고객이 콘텐츠에 들어오는 진입점(Angle)은 여러 개일 수 있습니다."
           }
-        },
-        {
-          "id": "d5l3-b02-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "9차시에서 배운 '메시지 불변요소'가 오늘도 그대로 적용된다는 것을 짚어주세요 — 오늘 바뀌는 건 알맹이가 아니라 포장과 입구뿐입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     },
     {
       "id": "p03",
-      "title": "콘텐츠를 바라보는 6가지 관점",
-      "layout": "wide",
+      "title": "대표 Angle 6종",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l3-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 콘텐츠를 바라보는 6가지 실전 관점",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 대표 Angle",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l3-b03-angles1",
+          "id": "d5l3-b03-angles",
           "type": "infographic",
+          "title": "6가지 관점",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
+            "variant": "checklist",
             "items": [
               {
-                "label": "① 문제 관점 (Problem Angle)",
-                "description": "고객이 지금 당장 겪고 있는 아픈 문제에서 시작\n예: 왜 우리 아이는 매번 같은 실수를 반복할까요?"
+                "label": "문제 관점 — 고객이 겪는 문제에서 시작"
               },
               {
-                "label": "② 상황 관점 (Situation Angle)",
-                "description": "문제가 터지는 구체적인 '그 순간'을 콕 집어 말함\n예: 시험지를 받아봤는데 지난번과 비슷한 문제를 또 틀렸다면?"
+                "label": "상황 관점 — 특정 상황을 묘사하며 시작"
               },
               {
-                "label": "③ 질문 관점 (Question Angle)",
-                "description": "고객이 마음속으로 진짜 궁금해하던 질문을 던짐\n예: 우리 아이는 도대체 정확히 어떤 부분이 약한 걸까요?"
+                "label": "질문 관점 — 질문을 던지며 시작"
+              },
+              {
+                "label": "오해/통념 관점 — 흔한 오해를 반박하며 시작"
+              },
+              {
+                "label": "과정/방법 관점 — 어떻게 해결하는지 과정으로 시작"
+              },
+              {
+                "label": "결과/변화 관점 — 달라진 결과로 시작"
               }
             ]
-          },
-          "title": "관점 1~3"
+          }
         },
         {
-          "id": "d5l3-b03-angles2",
+          "id": "d5l3-b03-fit",
           "type": "infographic",
+          "title": "Angle 선택 기준 — 5 Fit",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
+            "variant": "checklist",
             "items": [
               {
-                "label": "④ 오해·통념 관점 (Misconception Angle)",
-                "description": "사람들이 흔히 믿고 있는 착각을 깨면서 시작\n예: 틀린 문제를 다시 풀기만 하면 오답 관리가 끝난 걸까요?"
+                "label": "Target Fit"
               },
               {
-                "label": "⑤ 과정·방법 관점 (Process Angle)",
-                "description": "우리 서비스가 실제로 어떻게 작동하는지 과정을 보여줌\n예: 틀린 문제 하나가 다음 수업에 100% 반영되는 과정"
+                "label": "Problem Fit"
               },
               {
-                "label": "⑥ 결과·변화 관점 (Outcome Angle)",
-                "description": "고객이 궁극적으로 얻게 될 변화를 보여줌 (단, 증명할 수 없는 결과를 보장하면 안 됨)\n예: 무엇을 다시 공부해야 하는지 명확해지는 학습법"
+                "label": "Journey Fit"
+              },
+              {
+                "label": "Message Fit"
+              },
+              {
+                "label": "Evidence Fit"
               }
             ]
-          },
-          "title": "관점 4~6"
-        },
-        {
-          "id": "d5l3-b03-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "모든 관점을 억지로 다 사용할 필요는 없습니다. 현재 고객·문제와 실제로 맞는 관점만 고르면 됩니다.",
-            "emphasis": "normal"
           },
           "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "background": "muted"
           }
-        },
-        {
-          "id": "d5l3-b03-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "오해·통념 관점에서 억지로 반대말을 지어내는 것은 절대 금지라는 것을 짚어주세요 — 근거 없이 통념을 반박하면 그 자체가 근거 없는 주장이 됩니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     },
     {
       "id": "p04",
-      "title": "기발하다고 다 좋은 건 아닙니다",
-      "layout": "wide",
+      "title": "Hook 6종과 좋은 Hook의 조건",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l3-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 기발하다고 다 좋은 건 아닙니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## Hook 6종",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l3-b04-note",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "AI가 기발하고 재밌는 관점을 줬다고 바로 쓰면 안 됩니다. 재미보다 중요한 건 우리 사업 목적과의 적합성(Fit)입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b04-filters",
+          "id": "d5l3-b04-hooks",
           "type": "infographic",
+          "title": "Hook 유형",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "Target Fit (타겟 핏) — 우리의 1순위 고객이 자기 이야기라고 공감할 내용인가요?"
+                "label": "질문형"
               },
               {
-                "label": "Problem Fit (프라블럼 핏) — 고객이 겪는 진짜 핵심 문제를 건드리고 있나요?"
+                "label": "문제형"
               },
               {
-                "label": "Journey Fit (저니 핏) — 고객이 현재 있는 여정(인지-고려-결정) 단계와 맞나요?"
+                "label": "상황형"
               },
               {
-                "label": "Message Fit (메시지 핏) — 우리의 진짜 핵심 메시지(Core Message)가 잘 담겨 있나요?"
+                "label": "통념 반박형"
               },
               {
-                "label": "Evidence Fit (에비던스 핏) — 우리가 실제로 증명할 수 있는 근거 안에 있나요?"
+                "label": "방법/과정형"
+              },
+              {
+                "label": "변화/결과형"
               }
             ]
-          },
-          "title": "완벽한 관점을 고르는 5가지 필터"
-        },
-        {
-          "id": "d5l3-b04-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "다섯 필터를 모두 통과한 관점만 다음 단계(Hook 만들기)로 넘어갑니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
           }
         },
         {
-          "id": "d5l3-b04-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
+          "id": "d5l3-b04-good",
+          "type": "infographic",
+          "title": "좋은 Hook의 조건",
+          "visibility": "visible",
           "data": {
-            "markdown": "Journey Fit은 8차시 Customer Journey, Priority Touchpoint와 직접 연결됩니다 — 지금 고객이 여정의 어느 단계에 있는지 다시 떠올리게 하세요.",
-            "emphasis": "normal"
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Attention",
+                "description": "멈추게 한다"
+              },
+              {
+                "label": "Relevance",
+                "description": "이 고객과 관련 있다"
+              },
+              {
+                "label": "Truth",
+                "description": "Body가 실제로 답할 수 있다"
+              }
+            ]
           },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
+          "theme": {
+            "background": "primary-soft"
+          }
         }
       ]
     },
     {
       "id": "p05",
-      "title": "후킹 문장(Hook), 첫인상의 무게",
-      "layout": "wide",
+      "title": "Hook과 Clickbait의 차이",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l3-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# Hook은 무조건 자극적이고 강해야 할까요? 절대 아닙니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## Hook의 약속은 본문이 지킬 수 있는 만큼만 (Hook Promise ≤ Content Delivery)",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l3-b05-hooktypes",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "질문형",
-                "description": "왜 같은 문제를 또 틀릴까요? (고객 스스로 답을 고민하게 만듦)"
-              },
-              {
-                "label": "문제형",
-                "description": "틀린 문제는 산더미, 뭐부터 다시 볼지 막막하시죠? (현재 불편함을 찌름)"
-              },
-              {
-                "label": "상황형",
-                "description": "시험지 확인해보니 지난번 그 유형 또 틀렸다면? (내 얘기잖아! 몰입시킴)"
-              },
-              {
-                "label": "통념 반박형",
-                "description": "오답 노트만 만든다고 끝이 아닙니다. (기존 생각을 다시 보게 함)"
-              },
-              {
-                "label": "과정형",
-                "description": "반복 오답을 다음 학습에 연결하는 과정 (실용적인 정보 기대감 상승)"
-              },
-              {
-                "label": "결과형",
-                "description": "무엇을 공부할지 명확해지는 방법 (기대하는 변화 제시)"
-              }
-            ]
-          },
-          "title": "Hook 6가지 유형"
-        },
-        {
-          "id": "d5l3-b05-balance",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "Hook Promise (훅이 한 약속)",
-                "description": "관심을 끌되, 뒤에 나오는 내용이 그 기대를 100% 충족시켜야 함"
-              },
-              {
-                "label": "Content Delivery (실제 콘텐츠가 주는 가치)",
-                "description": "관련성 + 진실 — Hook에서 약속한 것보다 커지면 안 됨"
-              }
-            ]
-          },
-          "title": "핵심 공식: Hook Promise ≤ Content Delivery"
-        },
-        {
-          "id": "d5l3-b05-warning",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "근거 없는 확신 / 과장된 비밀",
-                "description": "무조건, 100%, 반드시, 절대 / 이것만 알면, 99%가 모르는"
-              },
-              {
-                "label": "과도한 감정 자극 / 기적의 논리",
-                "description": "충격, 경악 / 단 3일 만에 완성, 성적 폭발"
-              }
-            ]
-          },
-          "title": "AI가 만든 문구 주의 — 낚시성 문구(Clickbait) 위험 신호"
-        },
-        {
-          "id": "d5l3-b05-key",
+          "id": "d5l3-b05-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "이 단어들을 쓰는 것 자체가 잘못은 아닙니다. 하지만 뒷받침할 확실한 근거(Evidence) 없이 사용하면, 훅에서 약속한 것보다 실제 내용이 부실해 고객이 배신감을 느끼고 떠납니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "Hook이 만든 기대(Promise)가 실제 Body가 주는 내용(Delivery)보다 크면 Clickbait가 됩니다. Attention만 노리고 Truth를 버리면 신뢰를 잃습니다."
           }
         },
         {
-          "id": "d5l3-b05-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
+          "id": "d5l3-b05-compare",
+          "type": "infographic",
+          "title": "Hook vs Clickbait",
+          "visibility": "visible",
           "data": {
-            "markdown": "10차시에서 배운 Hook vs Clickbait 원칙(Hook의 약속은 본문이 제공할 수 있는 것보다 커지면 안 된다)을 그대로 다시 소환하는 페이지입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "좋은 Hook",
+                "description": "약속한 만큼 Body가 답한다"
+              },
+              {
+                "label": "Clickbait",
+                "description": "약속만 크고 Body는 답하지 못한다"
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "p06",
-      "title": "진짜 변형 vs 가짜 변형",
-      "layout": "wide",
+      "title": "Variant — 단어 바꾸기가 아니다",
+      "layout": "standard",
       "blocks": [
         {
           "id": "d5l3-b06-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 변형 만들기(Variant Generation)는\n# 단순한 단어 바꾸기가 아닙니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 진짜 Variant 만들기 (Variant Generation)",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l3-b06-variant",
+          "id": "d5l3-b06-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Variant ≠ 단어 바꾸기.** 진짜 Variant는 Core Message를 유지한 채 시작점(Angle)을 바꾸는 것입니다."
+          }
+        },
+        {
+          "id": "d5l3-b06-rules",
           "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "가짜 변형 ❌ (AI의 흔한 실수)",
-                "description": "\"이 문장 10개로 바꿔줘\" → 유의어 교체, 어순 변경, 반복 — 의미 없는 변형"
-              },
-              {
-                "label": "진짜 변형 ✅ (우리의 목표)",
-                "description": "핵심 메시지는 꽉 쥐고 있으면서, 관점(Angle)과 후킹 문장(Hook)이라는 진입로만 바꾸는 것 — 카메라 여러 대로 같은 피사체를 다른 각도에서 찍는 것과 같음"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d5l3-b06-invariant",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "∞ 마음껏 바꿔도 되는 것 (유연성)",
-                "description": "관점(Content Angle) / 후킹 문장(Hook) / 표현·예시·말투(시작점)"
-              },
-              {
-                "label": "🔒 절대 바꾸면 안 되는 것 (불변성)",
-                "description": "1순위 타겟 / 핵심 메시지(진짜 하고 싶은 말) / 근거의 한계(Evidence Boundary) / 사용 금지 주장(Prohibited Claim)"
-              }
-            ]
-          },
-          "title": "변형에도 지켜야 할 경계선"
-        },
-        {
-          "id": "d5l3-b06-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**변형(Variant)을 만들 때 메시지 변질(Message Drift)을 조심하세요.** 입구를 다양하게 하려다 배가 산으로 가면 안 됩니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "card",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b06-next",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 이제 실습으로 넘어갑니다\n\n이전 결과를 버튼으로 가져와서, 핵심 메시지는 그대로 둔 채 관점(Angle)과 후킹 문장(Hook) 후보만 여러 개 만들고, AI 검토를 거쳐 사람이 최종 고릅니다.",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "muted",
-            "bordered": true
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b06-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지가 이론의 마지막입니다. 다음 페이지(실습 전 리마인드)로 넘어가기 전, '오늘 실제로 쓸 문장을 완성하는 게 아니라 관점과 Hook 후보를 고르는 것까지만 한다'는 것을 한 번 더 강조하세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "p07",
-      "title": "실습 전 리마인드",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l3-b10-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 오늘 이미 확정되어 있는 것과\n# 오늘 새로 결정하는 것",
-            "emphasis": "hero"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b10-lock",
-          "type": "infographic",
-          "visibility": "visible",
-          "data": {
-            "variant": "comparison",
-            "items": [
-              {
-                "label": "🔒 오늘 이미 확정되어 있는 것 — 다시 만들지 않는다",
-                "description": "1순위 고객 / 핵심 고객 문제 / 핵심 메시지(Core Message) / 메시지 불변요소(Message Invariants) / 고객 질문(Customer Question) / 본문 구조(Body Structure) / 사용할 근거(Proof) / 1차 CTA / 사용 금지 주장(Prohibited Claim) / 메시지 변질 방지 규칙"
-              },
-              {
-                "label": "✍️ 오늘 새로 결정하는 것",
-                "description": "콘텐츠 관점(Content Angle) / 후킹 문장(Hook) / 어떤 후보를 실제 콘텐츠 제작에 사용할지"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d5l3-b10-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**핵심 메시지(Core Message)는 같아도 관점(Angle)은 달라질 수 있습니다.**\n\n그리고: **Angle을 바꾸는 것 ≠ 메시지(Message)를 바꾸는 것**",
-            "emphasis": "normal"
-          },
-          "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b10-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "실습 직전 반드시 짚어주세요 — 오늘은 SNS 글을 완성하는 시간이 아니라 '어떤 관점으로 시작할지'만 정하는 시간입니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "p08",
-      "title": "실습 1 — 하나의 핵심 메시지에서 Angle과 Hook 후보 만들기",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d5l3-b11-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 같은 메시지를\n# 다른 시작점에서 꺼내봅니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b11-context-form",
-          "type": "input-form",
-          "title": "Context 준비",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "1순위 고객",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "1순위 타겟 (Primary Target)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "핵심 고객 문제",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "9차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "9차시 — Core Message Map v0.1",
-                    "sourceLabel": "핵심 고객 문제 (Key Customer Problem)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "핵심 메시지",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "메시지 불변요소",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "메시지 불변요소 (Message Invariants)"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "고객이 지금 궁금해하는 질문",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "고객 질문 (Customer Question)"
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "기준 후킹 문장",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "기준 후킹 문장 (Baseline Hook)"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "본문 기본 구조",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "SNS 본문 구조 (Body Structure)"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "사용 가능한 실제 근거",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "SNS 활용 근거 (Content Proof)"
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "1차 행동 유도",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "사용하면 안 되는 주장",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "메시지 변질 방지 규칙",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "메시지 변질 방지 규칙 (Drift Guardrail)"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": "전부 버튼으로 채웁니다 — 새로 타이핑할 칸은 없습니다. 아래 프롬프트의 [ ] 열한 곳에 순서대로 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d5l3-b11-prompt",
-          "type": "prompt",
-          "title": "Angle & Hook 생성 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[역할]\n당신은 자극적인 광고문구를 대량 생산하는 카피라이터가 아닙니다.\n\n이미 사람이 확정한 핵심 메시지(Core Message)는 유지하면서, 같은 메시지를 서로 다른 관점(Content Angle)에서 시작할 수 있도록 콘텐츠 후보를 설계하는 전략가입니다.\n\n[확정된 이전 결정]\n\n1순위 고객:\n[ ]\n\n핵심 고객 문제:\n[ ]\n\n핵심 메시지:\n[ ]\n\n메시지 불변요소:\n[ ]\n\n고객이 지금 궁금해하는 질문:\n[ ]\n\n기준 후킹 문장:\n[ ]\n\n본문 기본 구조:\n[ ]\n\n사용 가능한 실제 근거:\n[ ]\n\n1차 행동 유도:\n[ ]\n\n사용하면 안 되는 주장:\n[ ]\n\n메시지 변질 방지 규칙:\n[ ]\n\n[작업]\n\n1. 핵심 메시지를 절대 새로 만들거나 변경하지 마세요.\n\n2. 현재 고객과 핵심 메시지에 적합한 서로 다른 콘텐츠 관점(Content Angle) 후보 4개를 만드세요. 다음 유형을 참고할 수 있습니다.\n   - 문제 관점\n   - 상황 관점\n   - 질문 관점\n   - 오해·통념 관점\n   - 과정·방법 관점\n   - 변화·결과 관점\n   모든 유형을 억지로 사용할 필요는 없습니다.\n\n3. 네 후보는 단어만 바꾼 유사 후보가 아니라 실제로 시작점이 달라야 합니다.\n\n4. 각 Angle마다 다음을 설명하세요.\n   - 어떤 관점인가\n   - 왜 현재 Target에게 의미가 있는가\n   - 핵심 메시지의 어떤 부분과 연결되는가\n\n5. 각 Angle마다 Hook 후보를 2개씩 제안하세요. Hook은:\n   - 현재 Target과 관련되어야 함\n   - 실제 Customer Problem과 연결되어야 함\n   - Body에서 실제로 설명할 수 있어야 함\n   - Evidence보다 강한 약속을 하면 안 됨\n   - 근거 없는 숫자·성과·후기를 만들면 안 됨\n   - 낚시성 문구(Clickbait)를 사용하면 안 됨\n\n6. 각 Angle/Hook의 근거 상태를 아래 중 하나로 표시하세요.\n   - EVIDENCE = 현재 실제 근거가 있음\n   - INFERENCE = 현재 Context에서 합리적으로 추론할 수 있음\n   - NEEDS VALIDATION = 추가 확인이 필요함\n\n7. 기준 후킹 문장과 비교해서 실제로 새로운 시작점인지도 확인하세요.\n\n[금지]\n\n- 새로운 Target 생성 금지\n- 새로운 Customer Problem 생성 금지\n- 핵심 메시지 변경 금지\n- 가치제안 변경 금지\n- Evidence 없는 성과 주장 금지\n- 가짜 후기·통계·사례 금지\n- SNS 전체 완성글 작성 금지\n- 채널별 버전 생성 금지\n- Instagram/TikTok/Blog 등에 맞춘 변형 금지\n\n[출력]\n\n===== ANGLE 1 =====\n콘텐츠 관점:\n-\n관점 유형:\n-\n이 고객에게 중요한 이유:\n-\n핵심 메시지 연결:\n-\nHook A:\n-\nHook B:\n-\n근거 상태:\n-\n주의할 위험:\n-\n\n===== ANGLE 2 =====\n(위와 동일한 형식)\n\n===== ANGLE 3 =====\n(위와 동일한 형식)\n\n===== ANGLE 4 =====\n(위와 동일한 형식)\n\n===== 후보 비교 =====\n가장 서로 다른 Angle 3개:\n1.\n2.\n3.\n\n기준 후킹 문장과 가장 다른 후보:\n-\n\n가장 안전하게 사용할 수 있는 Hook:\n-\n\n가장 관심을 끌지만 주의가 필요한 Hook:\n-\n\n추가 검증이 필요한 표현:\n-",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 Context 준비 칸의 내용을 [ ] 열한 곳에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d5l3-b11-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Angle & Hook 후보 생성",
-            "practiceDescription": "핵심 메시지를 유지하면서 서로 다른 관점(Angle) 4개와 Hook 후보를 만듭니다.",
-            "estimatedMinutes": 15
-          }
-        },
-        {
-          "id": "d5l3-b11-result-form",
-          "type": "input-form",
-          "title": "실습 1 AI 분석 결과",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "실습 1 AI 분석 결과 (Prompt 1 Analysis Result)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요."
-              }
-            ]
-          },
-          "description": "Angle 1~4, 후보 비교까지 전체 결과를 여러 칸으로 나누지 말고 한 번만 붙여넣으세요."
-        }
-      ]
-    },
-    {
-      "id": "p09",
-      "title": "가장 자극적인 Hook을 고르는 시간이 아닙니다",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d5l3-b12-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# \"가장 자극적인 Hook\"을\n# 고르는 시간이 아닙니다",
-            "emphasis": "hero"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b12-criteria",
-          "type": "infographic",
+          "title": "Variant 원칙",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "1. 고객 적합성(Target Fit) — 우리 1순위 고객에게 실제 관련 있는가?"
+                "label": "Distinctness — 후보들이 사실 같은 질문이면 Variant가 아니다"
               },
               {
-                "label": "2. 문제 적합성(Problem Fit) — 실제 핵심 문제에서 출발하는가?"
-              },
-              {
-                "label": "3. 메시지 적합성(Message Fit) — 핵심 메시지가 유지되는가?"
-              },
-              {
-                "label": "4. 근거 적합성(Evidence Fit) — 근거보다 강한 말을 하지 않는가?"
-              },
-              {
-                "label": "5. 관심도(Attention) — 첫 문장으로 관심을 끄는가?"
-              },
-              {
-                "label": "6. 차별성(Distinctness) — 다른 후보와 진짜 다른 Angle인가?"
+                "label": "Variant ≠ Message Drift — 시작점은 바뀌어도 Core Message는 그대로"
               }
             ]
-          },
-          "title": "좋은 후보의 6가지 기준"
-        },
-        {
-          "id": "d5l3-b12-key",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**좋은 Hook = 가장 센 문장 ❌**\n\n**좋은 Hook = 적절한 고객이 정확한 기대를 가지고 읽게 만드는 문장 ✅**",
-            "emphasis": "normal"
           },
           "theme": {
-            "background": "primary-soft",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "background": "muted"
           }
         },
         {
-          "id": "d5l3-b12-script",
+          "id": "d5l3-b06-question",
           "type": "rich-text",
-          "visibility": "instructor-only",
+          "visibility": "visible",
           "data": {
-            "markdown": "Prompt 1 직후 학생들이 가장 강한 문장을 고르기 쉬우므로 Red Team 실습 전 반드시 짚어주세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
+            "markdown": "**핵심 질문: \"같은 Core Message를 어떤 다른 시작점으로 보여줄 것인가?\"**",
+            "emphasis": "lead"
+          }
         }
       ]
     },
     {
-      "id": "p10",
-      "title": "실습 2 — Angle & Hook Red Team",
-      "layout": "practice",
+      "id": "p07",
+      "title": "오늘 정리",
+      "layout": "standard",
       "blocks": [
         {
-          "id": "d5l3-b13-title",
+          "id": "d5l3-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 후보를 새로 만들지 않고\n# 반대편에서 검토합니다",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "## 11차시 정리",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d5l3-b13-context-form",
-          "type": "input-form",
-          "title": "이전 결과 참고",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "Angle·Hook 후보 (Prompt 1 결과, 참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-result-form"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "1순위 고객 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f1"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "핵심 고객 문제 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f2"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "핵심 메시지 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f3"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "메시지 불변요소 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f4"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "본문 기본 구조 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f7"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "실제 사용 가능한 근거 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "사용하면 안 되는 주장 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f10"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "메시지 변질 방지 규칙 (참고용)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "P11에서 가져오기",
-                    "sourceBlockId": "d5l3-b11-context-form",
-                    "sourceFieldIds": [
-                      "f11"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          "description": "아래 프롬프트의 [ ] 자리에 이 내용을 순서대로 옮겨 붙여넣습니다."
-        },
-        {
-          "id": "d5l3-b13-prompt",
-          "type": "prompt",
-          "title": "Angle & Hook Red Team 프롬프트",
-          "visibility": "visible",
-          "data": {
-            "prompt": "[역할]\n당신은 Hook을 더 자극적으로 수정하는 카피라이터가 아닙니다.\n\n현재 Angle과 Hook 후보가 고객, 핵심 문제, 핵심 메시지, 실제 근거(Evidence)에서 벗어나거나 낚시성 문구(Clickbait)와 메시지 변질(Message Drift)을 만들고 있지 않은지 검토하는 Red Team Reviewer입니다.\n\n[확정 정보]\n\n1순위 고객:\n[ ]\n\n핵심 고객 문제:\n[ ]\n\n핵심 메시지:\n[ ]\n\n메시지 불변요소:\n[ ]\n\n본문 기본 구조:\n[ ]\n\n실제 사용 가능한 근거:\n[ ]\n\n사용하면 안 되는 주장:\n[ ]\n\n메시지 변질 방지 규칙:\n[ ]\n\n[검토 대상]\n\n[실습 1 AI 분석 결과]\n[ ]\n\n[검토 기준]\n\n각 Angle과 Hook을 다음 기준으로 검토하세요.\n\n1. Target Fit\n   현재 1순위 고객에게 실제 관련 있는가?\n\n2. Problem Fit\n   실제 핵심 고객 문제에서 출발하는가? AI가 새로운 문제를 만들어내지는 않았는가?\n\n3. Message Fit\n   원래 핵심 메시지를 유지하는가? Angle을 바꾸는 과정에서 Value나 의미가 달라지지는 않았는가?\n\n4. Evidence Fit\n   Hook이 실제 Evidence보다 강한 기대를 만들고 있지 않은가? 가설을 사실처럼 말하고 있지 않은가?\n\n5. Attention\n   첫 문장으로 관심을 끌 수 있는가? 단순하고 이해하기 쉬운가?\n\n6. Clickbait Risk\n   Hook에서 약속한 내용을 실제 Body와 Proof가 제공할 수 있는가? 다음과 같은 과장이 있는지 확인하세요: 무조건 / 100% / 반드시 / 충격 / 이것만 알면 / 단기간 성과 보장 / 과도한 공포 / Evidence 없는 숫자.\n\n7. Distinctness\n   4개의 Angle이 실제로 다른 관점인가? 단어만 조금 바꾼 중복 후보는 없는가?\n\n8. Message Drift\n   다음 중 변질된 것이 있는지 확인하세요: 고객 / 문제 / 가치 / 주장 / 근거\n\n9. 핵심 메시지와 연결은 유지하면서 가장 사용 가치가 높은 후보를 판단하세요.\n\n[판정]\n- KEEP = 현재 상태로 사용 가능\n- REVISE = 수정하면 사용 가능\n- HOLD = Evidence 또는 검증이 더 필요\n- REJECT = 사용하지 않는 것이 좋음\n\n[출력]\n\n===== 후보별 평가 =====\nANGLE 1\n- Target Fit:\n- Problem Fit:\n- Message Fit:\n- Evidence Fit:\n- Attention:\n- Clickbait Risk:\n- Distinctness:\n- Message Drift:\n- 판정:\n- 가장 큰 장점:\n- 가장 큰 위험:\n\nANGLE 2\n(같은 형식)\n\nANGLE 3\n(같은 형식)\n\nANGLE 4\n(같은 형식)\n\n===== 최종 비교 =====\n추천 1순위 Angle:\n-\n\n추천 Hook:\n-\n\n추천 이유:\n-\n\n추천 2순위 Angle:\n-\n\n추천 Hook:\n-\n\n가장 강하지만 위험한 Hook:\n-\n\nClickbait 위험 후보:\n-\n\n중복성이 높은 후보:\n-\n\n추가 Evidence가 필요한 후보:\n-\n\n사람이 최종 선택할 때 반드시 판단해야 할 것:\n-",
-            "targetTool": "ChatGPT",
-            "copyable": true
-          },
-          "description": "위 참고 칸의 내용을 [ ] 자리에 옮겨 붙여넣으세요."
-        },
-        {
-          "id": "d5l3-b13-chatgpt",
-          "type": "external-link",
-          "visibility": "visible",
-          "data": {
-            "url": "https://chatgpt.com/",
-            "buttonLabel": "ChatGPT에서 실행",
-            "openInNewTab": true,
-            "showSecurityNotice": true,
-            "requireCompletionCheck": true,
-            "practiceName": "Angle & Hook Red Team 검증",
-            "practiceDescription": "고객·문제·메시지·근거 일치 여부와 낚시성 문구·메시지 변질 위험을 검토받고 KEEP/REVISE/HOLD/REJECT 판정을 받습니다.",
-            "estimatedMinutes": 15
-          }
-        },
-        {
-          "id": "d5l3-b13-result-form",
-          "type": "input-form",
-          "title": "실습 2 AI 검토 결과",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "실습 2 AI 검토 결과 (Prompt 2 Review Result)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "ChatGPT 결과 전체를 여기 한 번만 붙여넣으세요."
-              }
-            ]
-          },
-          "description": "후보별 평가, 최종 비교까지 전체 결과를 나누지 말고 한 번만 붙여넣으세요."
-        }
-      ]
-    },
-    {
-      "id": "p11",
-      "title": "사람의 결정 — 내가 실제로 사용할 Angle과 Hook 정하기",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d5l3-b14-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "# 최종 Angle과 Hook은 사람이 선택합니다\n\nAI 추천을 그대로 저장하지 않습니다. 후보를 읽고 실제로 사용할 것을 고르세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b14-form",
-          "type": "input-form",
-          "title": "Content Angle & Hook Map v0.1",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "핵심 메시지 (Core Message)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "메시지 불변요소 (Message Invariants)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "메시지 불변요소 (Message Invariants)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "사용할 근거 (Proof)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "SNS 활용 근거 (Content Proof)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "1차 행동 유도 (Primary CTA)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "1순위 콘텐츠 관점 (Primary Angle)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "Prompt 1·2 결과를 보고 직접 선택하거나 수정하세요."
-              },
-              {
-                "id": "f6",
-                "label": "1순위 Hook (Primary Hook)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "직접 확정하세요."
-              },
-              {
-                "id": "f7",
-                "label": "이 Angle을 선택한 이유 (Angle Selection Reason)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "한두 문장. 예: 현재 고객이 가장 먼저 느끼는 답답함에서 출발하기 때문에 선택했다."
-              },
-              {
-                "id": "f8",
-                "label": "2순위 콘텐츠 관점 (Secondary Angle)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "후보 하나 선택하세요."
-              },
-              {
-                "id": "f9",
-                "label": "2순위 Hook (Secondary Hook)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "후보 하나 선택하세요."
-              },
-              {
-                "id": "f10",
-                "label": "낚시성 문구 / 과장 위험 (Clickbait Risk)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "가장 조심해야 할 표현 한두 개."
-              },
-              {
-                "id": "f11",
-                "label": "다른 버전을 만들 때도 지킬 기준 (Variant Guardrail)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "예: 성적 향상을 보장하지 않고 반복 오답 확인이라는 실제 Process까지만 말한다."
-              },
-              {
-                "id": "f12",
-                "label": "사람의 최종 판단 (Human Decision)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "KEEP / REVISE / HOLD 중 하나와 짧은 판단 메모."
-              }
-            ]
-          },
-          "description": "1~4번은 버튼으로 채워집니다. 나머지가 이번 시간의 실제 결정입니다 — Prompt 1·2 결과를 참고해 짧게 적으세요."
-        },
-        {
-          "id": "d5l3-b14-decision",
+          "id": "d5l3-b07-summary",
           "type": "infographic",
+          "title": "기억할 것",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
+            "variant": "checklist",
             "items": [
               {
-                "label": "유지 (KEEP)",
-                "description": "현재 상태로 사용 가능"
+                "label": "Core Message ≠ Angle ≠ Hook"
               },
               {
-                "label": "수정 (REVISE)",
-                "description": "수정하면 사용 가능"
+                "label": "One Core Message → Many Angles"
               },
               {
-                "label": "보류 (HOLD)",
-                "description": "근거 또는 검증이 더 필요"
+                "label": "Angle 6종, Hook 6종"
+              },
+              {
+                "label": "Hook Promise ≤ Content Delivery"
+              },
+              {
+                "label": "Variant는 Distinct해야 하고, Drift와는 다르다"
               }
             ]
-          },
-          "title": "Prompt 2의 판정을 참고하세요"
+          }
         },
         {
-          "id": "d5l3-b14-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "이 페이지에서는 아직 저장하지 않습니다. 다 채운 뒤 다음 페이지에서 실제로 저장 버튼을 클릭하게 하세요. 1~4번은 버튼, 나머지 8개가 이번 시간의 실제 결정이라는 것을 안내하세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "p12",
-      "title": "결과 저장 / 완료",
-      "layout": "practice",
-      "blocks": [
-        {
-          "id": "d5l3-b15-title",
+          "id": "d5l3-b07-next",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 오늘 만든 두 가지 결과물을 저장합니다",
-            "emphasis": "hero"
-          },
-          "theme": {
-            "background": "dark",
-            "bordered": false
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
+            "markdown": "**별도 실습은 하지 않습니다.** 12차시에서 Writer가 실제로 Angle과 Hook을 만들 때 이 기준으로 검토합니다."
           }
-        },
-        {
-          "id": "d5l3-b15-a-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## A. Content Angle & Hook Map 저장\n\n앞 페이지에서 정리한 내용이 저장됩니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b15-angle-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "11차시 — Content Angle & Hook Map v0.1",
-            "sourceBlockId": "d5l3-b14-form",
-            "buttonLabel": "Content Angle & Hook Map 저장"
-          }
-        },
-        {
-          "id": "d5l3-b15-preview",
-          "type": "result-preview",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
-          }
-        },
-        {
-          "id": "d5l3-b15-b-title",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## B. Business Context 업데이트\n\n10차시 Business Context v0.10을 그대로 가져오고, 이번에 결정한 Angle·Hook 관련 항목만 새로 채우세요.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          }
-        },
-        {
-          "id": "d5l3-b15-context-form",
-          "type": "input-form",
-          "title": "Business Context v0.11",
-          "visibility": "visible",
-          "data": {
-            "fields": [
-              {
-                "id": "f1",
-                "label": "확인된 사실 (Confirmed Facts)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "확인된 사실 (Confirmed Facts)"
-                  }
-                ]
-              },
-              {
-                "id": "f2",
-                "label": "현재 가설 (Current Hypotheses)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "현재 가설 (Current Hypotheses)"
-                  }
-                ]
-              },
-              {
-                "id": "f3",
-                "label": "고객 세그먼트 (Customer Segments)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "고객 세그먼트 (Customer Segments)"
-                  }
-                ]
-              },
-              {
-                "id": "f4",
-                "label": "1순위 타겟 (Primary Target)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "1순위 타겟 (Primary Target)"
-                  }
-                ]
-              },
-              {
-                "id": "f5",
-                "label": "첫 검증 고객 (ECP)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "첫 검증 고객 (ECP)"
-                  }
-                ]
-              },
-              {
-                "id": "f6",
-                "label": "1순위 가치제안 (Primary Value Proposition)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
-                  }
-                ]
-              },
-              {
-                "id": "f7",
-                "label": "우선 검증 접점 (Priority Touchpoint)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
-                  }
-                ]
-              },
-              {
-                "id": "f8",
-                "label": "핵심 메시지 (Primary Core Message)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "핵심 메시지 (Primary Core Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f9",
-                "label": "보조 메시지 (Secondary Message)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "보조 메시지 (Secondary Message)"
-                  }
-                ]
-              },
-              {
-                "id": "f10",
-                "label": "메시지 불변요소 (Message Invariants)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "메시지 불변요소 (Message Invariants)"
-                  }
-                ]
-              },
-              {
-                "id": "f11",
-                "label": "핵심 메시지 근거 (Message Evidence)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "핵심 메시지 근거 (Message Evidence)"
-                  }
-                ]
-              },
-              {
-                "id": "f12",
-                "label": "핵심 메시지 리스크 (Message Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "핵심 메시지 리스크 (Message Risk)"
-                  }
-                ]
-              },
-              {
-                "id": "f13",
-                "label": "사용 금지 주장 (Prohibited Claim)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
-                  }
-                ]
-              },
-              {
-                "id": "f14",
-                "label": "메시지 변질 방지 규칙 (Drift Guardrail)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "메시지 변질 방지 규칙 (Drift Guardrail)"
-                  }
-                ]
-              },
-              {
-                "id": "f15",
-                "label": "고객 질문 (Customer Question)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "고객 질문 (Customer Question)"
-                  }
-                ]
-              },
-              {
-                "id": "f16",
-                "label": "SNS 본문 구조 (Body Structure)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "SNS 본문 구조 (Body Structure)"
-                  }
-                ]
-              },
-              {
-                "id": "f17",
-                "label": "SNS 활용 근거 (Content Proof)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "SNS 활용 근거 (Content Proof)"
-                  }
-                ]
-              },
-              {
-                "id": "f18",
-                "label": "1차 행동 유도 (Primary CTA)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "prior-artifact",
-                    "label": "10차시에서 가져오기",
-                    "artifactType": "business-idea",
-                    "artifactTitle": "10차시 — Business Context v0.10",
-                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
-                  }
-                ]
-              },
-              {
-                "id": "f19",
-                "label": "1순위 콘텐츠 관점 (Primary Content Angle)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l3-b14-form",
-                    "sourceFieldIds": [
-                      "f5"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f20",
-                "label": "1순위 Hook (Primary Hook)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l3-b14-form",
-                    "sourceFieldIds": [
-                      "f6"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f21",
-                "label": "Angle 선택 이유 (Angle Selection Reason)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l3-b14-form",
-                    "sourceFieldIds": [
-                      "f7"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f22",
-                "label": "2순위 콘텐츠 관점 (Secondary Content Angle)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l3-b14-form",
-                    "sourceFieldIds": [
-                      "f8"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f23",
-                "label": "2순위 Hook (Secondary Hook)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l3-b14-form",
-                    "sourceFieldIds": [
-                      "f9"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f24",
-                "label": "낚시성 문구 위험 (Clickbait Risk)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l3-b14-form",
-                    "sourceFieldIds": [
-                      "f10"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f25",
-                "label": "다른 버전 제작 기준 (Variant Guardrail)",
-                "kind": "long-text",
-                "required": false,
-                "importFrom": [
-                  {
-                    "kind": "same-lesson",
-                    "label": "Human Decision에서 가져오기",
-                    "sourceBlockId": "d5l3-b14-form",
-                    "sourceFieldIds": [
-                      "f11"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "f26",
-                "label": "다음 결정 사항 (Next Decision)",
-                "kind": "long-text",
-                "required": false,
-                "placeholder": "예: 선택한 Angle과 Hook을 실제 콘텐츠 초안으로 발전시키고, AI Critic의 검토와 사람의 판단을 거쳐 어떻게 개선할 것인가?"
-              }
-            ]
-          },
-          "description": "10차시 Business Context v0.10을 복사해 이번 Angle·Hook 결과를 반영한 최신 상태로 업데이트하세요. 새로 직접 쓰는 것은 다음 결정 사항 1개뿐입니다."
-        },
-        {
-          "id": "d5l3-b15-context-save",
-          "type": "save-artifact",
-          "visibility": "visible",
-          "data": {
-            "artifactType": "business-idea",
-            "artifactTitle": "11차시 — Business Context v0.11",
-            "sourceBlockId": "d5l3-b15-context-form",
-            "buttonLabel": "Business Context v0.11 저장"
-          }
-        },
-        {
-          "id": "d5l3-b15-script",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "두 저장 버튼을 모두 클릭해서 목록에 두 결과물이 함께 남아있는지, 10차시 v0.10이 그대로 남아있는지 확인시키세요. 12차시는 Primary Angle/Hook, Body Structure, Content Proof, Primary CTA, Clickbait Risk, Variant Guardrail을 그대로 가져와 Writer→Critic→Human→Editor로 이어집니다.",
-            "emphasis": "normal"
-          },
-          "layout": {
-            "width": "wide",
-            "align": "left",
-            "spacing": "medium"
-          },
-          "title": "강사 멘트"
         }
       ]
     }
