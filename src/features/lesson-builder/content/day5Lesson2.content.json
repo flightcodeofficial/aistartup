@@ -128,24 +128,24 @@
             "variant": "comparison",
             "items": [
               {
-                "label": "Hook",
-                "description": "역할: 멈추게 한다\n질문: 왜 계속 읽어야 하는가?"
+                "label": "Hook (후크)",
+                "description": "역할: 멈추게 한다\n질문: 왜 멈춰서 보아야 하는가?"
               },
               {
-                "label": "Value",
-                "description": "역할: 무엇이 달라지는지 보여준다\n질문: 나에게 어떤 의미인가?"
+                "label": "Value (가치)",
+                "description": "역할: 무엇이 달라지는지 보여준다\n질문: 그래서 나에게 무슨 도움이 되는가?"
               },
               {
-                "label": "Body",
-                "description": "역할: Hook의 질문에 답한다\n질문: 어떻게 그게 가능한가?"
+                "label": "Body (본문)",
+                "description": "역할: Hook의 질문에 답한다\n질문: 무슨 말인지 충분히 이해할 수 있는가?"
               },
               {
-                "label": "Proof",
-                "description": "역할: 믿을 근거를 준다\n질문: 진짜인가?"
+                "label": "Proof (근거)",
+                "description": "역할: 믿을 근거를 준다\n질문: 왜 이 말을 믿어야 하는가?"
               },
               {
-                "label": "CTA",
-                "description": "역할: 다음 행동을 안내한다\n질문: 지금 무엇을 하면 되는가?"
+                "label": "CTA (행동 유도)",
+                "description": "역할: 다음 행동을 안내한다\n질문: 그래서 다음에 무엇을 하면 되는가?"
               }
             ]
           }
@@ -155,7 +155,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**5요소는 5문단 공식이 아닙니다.** 한 문단이 여러 역할을 겸할 수도 있고, 순서가 섞일 수도 있습니다 — 역할이 다 살아있으면 됩니다."
+            "markdown": "**5요소는 5문단 공식이 아닙니다.** 한 문단이 여러 역할을 겸할 수도 있고, 순서가 섞일 수도 있습니다. 이 5가지는 단순한 순서가 아니라 **고객의 마음을 여는 심리적 단계**입니다 — 역할이 다 살아있으면 됩니다."
           }
         }
       ]
@@ -180,6 +180,52 @@
           "visibility": "visible",
           "data": {
             "markdown": "5차시에서 배운 **Feature → Benefit → Value** 사다리가 여기서도 적용됩니다. Body는 우리 제품의 모든 기능을 나열하는 곳이 아니라, **Hook이 던진 질문에 필요한 만큼만 답하는 곳**입니다."
+          }
+        },
+        {
+          "id": "d5l2-b04-bodystructure",
+          "type": "infographic",
+          "title": "Body 내부 구조",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "상황 (Situation)",
+                "description": "고객이 처한 상황"
+              },
+              {
+                "label": "문제 (Problem)",
+                "description": "그 상황에서 겪는 문제"
+              },
+              {
+                "label": "원인 (Cause)",
+                "description": "왜 그 문제가 반복되는가"
+              },
+              {
+                "label": "대안 (Alternative)",
+                "description": "우리가 제시하는 해결 방향"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l2-b04-compare",
+          "type": "infographic",
+          "title": "장바구니 vs 레이저",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "초점 없는 콘텐츠 (장바구니)",
+                "description": "학원 소개 + 강사 소개 + 오답관리 + 내신 + 수능 + 할인 이벤트를 한 번에 → 아무것도 기억되지 않고 이탈"
+              },
+              {
+                "label": "레이저 포커스",
+                "description": "\"반복되는 오답 관리의 중요성\" 하나만 → 명확한 1개의 메시지가 남는다"
+              }
+            ]
           }
         },
         {
@@ -212,7 +258,7 @@
     },
     {
       "id": "p05",
-      "title": "근거는 주장보다 커야 합니다 (Proof — Claim ≤ Evidence)",
+      "title": "완성 예시 — 5요소가 하나의 게시물로",
       "layout": "standard",
       "blocks": [
         {
@@ -220,7 +266,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## Proof는 Claim보다 작아야 합니다",
+            "markdown": "## 다섯 블록이 실제로 조립되면",
             "emphasis": "lead"
           }
         },
@@ -229,11 +275,82 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**Claim ≤ Evidence** 원칙이 콘텐츠에도 그대로 적용됩니다. Proof가 부족하면 다음 중 하나를 선택하세요:"
+            "markdown": "역할이 나뉘어 있다고 문단이 5개로 딱딱 나뉘는 것은 아닙니다. 아래처럼 하나의 짧은 게시물 안에 다섯 역할이 자연스럽게 녹아듭니다."
           }
         },
         {
-          "id": "d5l2-b05-options",
+          "id": "d5l2-b05-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "> **왜 반복되는 오답을 그냥 넘기고 계셨나요?** (Hook)\n>\n> 같은 실수를 반복하면 다음 시험에서도 똑같이 틀립니다. 원인을 정확히 기록해야 무엇을 집중해서 봐야 할지 뚜렷해집니다. (Value + Body)\n>\n> 실제로 학생별 오답을 기록하고 다음 학습에 반영하는 시스템을 운영하고 있습니다. (Proof)\n>\n> 우리 아이의 반복 오답 패턴이 궁금하다면, 지금 무료 상담을 신청해보세요. (CTA)",
+            "emphasis": "normal"
+          },
+          "theme": {
+            "background": "card"
+          }
+        },
+        {
+          "id": "d5l2-b05-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Hook 하나, Value·Body는 자연스럽게 섞이고, Proof는 실제로 확인 가능한 것만, CTA는 하나만 — 5요소가 다 있지만 5문단으로 딱딱 나뉘지 않았습니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "근거는 주장보다 커야 합니다 (Proof — Claim ≤ Evidence)",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d5l2-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Proof는 Claim보다 작아야 합니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d5l2-b06-warning",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**AI Hallucination 경고**: AI에게 맡겨두면 가장 위험한 부분이 바로 근거입니다. 없는 후기나 데이터를 AI가 지어내게(Hallucination) 두면 안 됩니다."
+          }
+        },
+        {
+          "id": "d5l2-b06-compare",
+          "type": "infographic",
+          "title": "안전한 연결 vs 위험한 주장",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "안전한 연결",
+                "description": "\"학생별 반복 오답을 기록합니다\" — 실제 시스템 화면으로 증거 있음"
+              },
+              {
+                "label": "위험한 주장",
+                "description": "\"3개월 안에 성적이 무조건 오릅니다\" — 객관적 증명 자료가 없다면 즉각 삭제"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l2-b06-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Claim ≤ Evidence** 원칙이 콘텐츠에도 그대로 적용됩니다. 마케팅이라고 해서 근거의 규칙이 사라지는 것은 아닙니다. Proof가 부족하면 다음 중 하나를 선택하세요:"
+          }
+        },
+        {
+          "id": "d5l2-b06-options",
           "type": "infographic",
           "title": "Proof가 부족할 때",
           "visibility": "visible",
@@ -241,13 +358,13 @@
             "variant": "checklist",
             "items": [
               {
-                "label": "Claim 낮추기 — 더 약한 주장으로 조정"
+                "label": "Claim 낮추기 — 더 약한 주장으로 조정 (예: \"효과 100%\" → \"이런 방식으로 꼼꼼하게 관리합니다\")"
               },
               {
-                "label": "실제 Process 보여주기 — 결과 대신 과정을 증거로"
+                "label": "실제 Process 보여주기 — 결과 후기 대신 작업 과정을 솔직하게 공유"
               },
               {
-                "label": "Needs Validation으로 표시 — 아직 확정하지 않기"
+                "label": "Needs Validation으로 표시 — 아직 증명되지 않았음을 인정하고 고객 필요만 확인"
               }
             ]
           },
@@ -258,60 +375,60 @@
       ]
     },
     {
-      "id": "p06",
+      "id": "p07",
       "title": "여정에 맞는 행동 유도 (Customer Journey ↔ CTA)",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l2-b06-title",
+          "id": "d5l2-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 같은 메시지, 다른 순서로",
+            "markdown": "## CTA는 사업 목표가 아니라 고객의 다음 발걸음입니다",
             "emphasis": "lead"
           }
         },
         {
-          "id": "d5l2-b06-journey",
+          "id": "d5l2-b07-journey",
           "type": "infographic",
           "title": "여정 단계별 CTA",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
+            "variant": "steps",
             "items": [
               {
-                "label": "문제 인식",
-                "description": "더 알아보기 / 저장"
+                "label": "Stage 1 · 문제 인지 (처음 보는 고객)",
+                "description": "고객 질문: \"이게 나랑 무슨 상관이지?\" → CTA: 팔로우(가벼운 행동)"
               },
               {
-                "label": "비교",
-                "description": "상세정보 / 상담"
+                "label": "Stage 2 · 대안 비교 (문제를 인식한 고객)",
+                "description": "고객 질문: \"어떤 식으로 해결해 줄 수 있지?\" → CTA: 상세 페이지 확인(정보 탐색)"
               },
               {
-                "label": "결정",
-                "description": "체험 / 예약 / 신청"
+                "label": "Stage 3 · 구매 결정 (준비된 고객)",
+                "description": "고객 질문: \"나도 시작해 볼까?\" → CTA: 상담 신청(직접 행동)"
               }
             ]
           }
         },
         {
-          "id": "d5l2-b06-question",
+          "id": "d5l2-b07-question",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**핵심 질문: \"같은 Core Message를 어떤 순서로 전달할 것인가?\"** — 8차시에서 정한 Journey Trigger와 Priority Touchpoint가 여기서 다시 쓰입니다.",
+            "markdown": "**핵심 질문: \"같은 Core Message를 어떤 순서로 전달할 것인가?\"** — 현재 고객이 서 있는 위치(Journey)에 맞는 CTA를 제안해야 합니다. 8차시에서 정한 Journey Trigger와 Priority Touchpoint가 여기서 다시 쓰입니다.",
             "emphasis": "lead"
           }
         }
       ]
     },
     {
-      "id": "p07",
+      "id": "p08",
       "title": "오늘 정리",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l2-b07-title",
+          "id": "d5l2-b08-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -320,7 +437,7 @@
           }
         },
         {
-          "id": "d5l2-b07-summary",
+          "id": "d5l2-b08-summary",
           "type": "infographic",
           "title": "기억할 것",
           "visibility": "visible",
@@ -331,25 +448,25 @@
                 "label": "Structure First — 구조를 먼저 정한다"
               },
               {
-                "label": "Hook / Value / Body / Proof / CTA"
+                "label": "Hook / Value / Body / Proof / CTA — 5가지 심리적 단계"
               },
               {
-                "label": "5요소 ≠ 5문단"
+                "label": "5요소 ≠ 5문단, Body 내부는 상황→문제→원인→대안"
               },
               {
                 "label": "1 Content = 1 Main Idea, 1 Primary CTA"
               },
               {
-                "label": "Claim ≤ Evidence"
+                "label": "Claim ≤ Evidence, AI Hallucination 주의"
               },
               {
-                "label": "Journey ↔ CTA"
+                "label": "Journey 단계(Awareness/Consideration/Decision)에 맞는 CTA"
               }
             ]
           }
         },
         {
-          "id": "d5l2-b07-next",
+          "id": "d5l2-b08-next",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
