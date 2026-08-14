@@ -58,6 +58,7 @@ import { DAY15_LESSON1_META } from "@/features/lesson-builder/day15Lesson1";
 import { DAY15_LESSON2_META } from "@/features/lesson-builder/day15Lesson2";
 import { DAY15_LESSON3_META } from "@/features/lesson-builder/day15Lesson3";
 import { DAY15_LESSON4_META } from "@/features/lesson-builder/day15Lesson4";
+import { DAY16_LESSON1_META } from "@/features/lesson-builder/day16Lesson1";
 import { getDay, getLesson } from "./data";
 import { lessonRelease, type ReleaseStatus } from "./release";
 import type { Step } from "./types";
@@ -94,6 +95,7 @@ export const CANONICAL_LESSONS: CanonicalLessonMeta[] = [
   DAY13_LESSON1_META, DAY13_LESSON2_META, DAY13_LESSON3_META, DAY13_LESSON4_META,
   DAY14_LESSON1_META, DAY14_LESSON2_META, DAY14_LESSON3_META, DAY14_LESSON4_META,
   DAY15_LESSON1_META, DAY15_LESSON2_META, DAY15_LESSON3_META, DAY15_LESSON4_META,
+  DAY16_LESSON1_META,
 ];
 
 function getCanonicalLessonMetas(week: number, day: number): CanonicalLessonMeta[] {
