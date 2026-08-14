@@ -67,7 +67,6 @@ import { buildDay15Lesson1 } from "./day15Lesson1";
 import { buildDay15Lesson2 } from "./day15Lesson2";
 import { buildDay15Lesson3 } from "./day15Lesson3";
 import { buildDay15Lesson4 } from "./day15Lesson4";
-import { buildDay16Lesson1 } from "./day16Lesson1";
 
 // 이 브라우저(IndexedDB)에 만들어 둔 Lesson + canonical lesson을 Supabase로 올린다.
 //
@@ -163,7 +162,6 @@ const CANONICAL_BUILDERS: Record<string, () => LessonContent> = {
   "w4-d15-l2-kpi": () => buildDay15Lesson2(),
   "w4-d15-l3-growth": () => buildDay15Lesson3(),
   "w4-d15-l4-portfolio": () => buildDay15Lesson4(),
-  "w2-d6-l1-blog-intent": () => buildDay16Lesson1(),
 };
 
 export interface LessonUploadReport {
