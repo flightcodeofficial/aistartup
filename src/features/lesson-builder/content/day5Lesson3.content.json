@@ -90,11 +90,62 @@
     },
     {
       "id": "p03",
-      "title": "대표 Angle 6종",
+      "title": "가장 넓은 것에서 가장 좁은 것으로 (Topic → Hook 깔때기)",
       "layout": "standard",
       "blocks": [
         {
           "id": "d5l3-b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 콘텐츠 기획은 깔때기입니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d5l3-b03-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "이 4가지 단어만 정확히 구분해도 기획의 해상도가 확 높아집니다. 고객이 최종적으로 만나는 건 가장 아래에 뾰족하게 다듬어진 Hook입니다."
+          }
+        },
+        {
+          "id": "d5l3-b03-funnel",
+          "type": "infographic",
+          "title": "깔때기 — Topic → Core Message → Angle → Hook",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "1. Topic (주제)",
+                "description": "가장 넓은 범위의 소재 — 예: 반복 오답 관리"
+              },
+              {
+                "label": "2. Core Message (핵심 메시지)",
+                "description": "우리가 변함없이 주장할 내용 — 예: 반복되는 약점을 확인해 다음 학습에 연결한다"
+              },
+              {
+                "label": "3. Angle (관점)",
+                "description": "메시지를 포장하는 방식과 진입로 — 예: 부모의 답답함에서 바라보기"
+              },
+              {
+                "label": "4. Hook (훅)",
+                "description": "고객이 가장 먼저 보게 될 첫 문장 — 예: 학원은 다니는데 아이가 무엇을 반복해서 틀리는지 아시나요?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "대표 Angle 6종",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d5l3-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -103,56 +154,70 @@
           }
         },
         {
-          "id": "d5l3-b03-angles",
+          "id": "d5l3-b04-angles",
           "type": "infographic",
           "title": "6가지 관점",
           "visibility": "visible",
           "data": {
-            "variant": "checklist",
+            "variant": "comparison",
             "items": [
               {
-                "label": "문제 관점 — 고객이 겪는 문제에서 시작"
+                "label": "① 문제 관점",
+                "description": "고객이 지금 당장 겪고 있는 아픈 문제에서 시작\n예: 왜 우리 아이는 매번 같은 실수를 반복할까요?"
               },
               {
-                "label": "상황 관점 — 특정 상황을 묘사하며 시작"
+                "label": "② 상황 관점",
+                "description": "문제가 터지는 구체적인 '그 순간'을 콕 집어 말함\n예: 시험지를 받아봤는데 지난번과 비슷한 문제를 또 틀렸다면?"
               },
               {
-                "label": "질문 관점 — 질문을 던지며 시작"
+                "label": "③ 질문 관점",
+                "description": "고객이 마음속으로 진짜 궁금해하던 질문을 던짐\n예: 우리 아이는 도대체 정확히 어떤 부분이 약한 걸까요?"
               },
               {
-                "label": "오해/통념 관점 — 흔한 오해를 반박하며 시작"
+                "label": "④ 오해/통념 관점",
+                "description": "사람들이 흔히 믿고 있는 착각을 깨면서 시작\n예: 틀린 문제를 다시 풀기만 하면 오답 관리가 끝난 걸까요?"
               },
               {
-                "label": "과정/방법 관점 — 어떻게 해결하는지 과정으로 시작"
+                "label": "⑤ 과정/방법 관점",
+                "description": "실제로 어떻게 작동하는지 과정을 보여줌\n예: 틀린 문제 하나가 다음 수업에 반영되는 과정"
               },
               {
-                "label": "결과/변화 관점 — 달라진 결과로 시작"
+                "label": "⑥ 결과/변화 관점",
+                "description": "고객이 궁극적으로 얻게 될 변화를 보여줌 (단, 증명 못 할 결과는 보장 금지)\n예: 무엇을 다시 공부해야 하는지 명확해지는 학습법"
               }
             ]
           }
         },
         {
-          "id": "d5l3-b03-fit",
+          "id": "d5l3-b04-fittitle",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Angle 선택 기준 — 5 Fit\n\n기발하다고 다 좋은 것은 아닙니다. 재미보다 중요한 건 우리 비즈니스 목적과의 '적합성(Fit)'입니다."
+          }
+        },
+        {
+          "id": "d5l3-b04-fit",
           "type": "infographic",
-          "title": "Angle 선택 기준 — 5 Fit",
+          "title": "다섯 가지 적합성 (5 Fit)",
           "visibility": "visible",
           "data": {
             "variant": "checklist",
             "items": [
               {
-                "label": "Target Fit"
+                "label": "Target Fit — 우리의 1순위 고객이 자기 이야기라고 공감할 내용인가?"
               },
               {
-                "label": "Problem Fit"
+                "label": "Problem Fit — 고객이 겪는 진짜 핵심 문제를 건드리고 있나?"
               },
               {
-                "label": "Journey Fit"
+                "label": "Journey Fit — 고객이 현재 있는 여정(인지-고려-결정) 단계와 맞나?"
               },
               {
-                "label": "Message Fit"
+                "label": "Message Fit — 우리의 진짜 핵심 메시지(Core Message)가 잘 담겨 있나?"
               },
               {
-                "label": "Evidence Fit"
+                "label": "Evidence Fit — 우리가 실제로 증명할 수 있는 근거 안에 있나?"
               }
             ]
           },
@@ -163,12 +228,12 @@
       ]
     },
     {
-      "id": "p04",
+      "id": "p05",
       "title": "Hook 6종과 좋은 Hook의 조건",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l3-b04-title",
+          "id": "d5l3-b05-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -177,36 +242,50 @@
           }
         },
         {
-          "id": "d5l3-b04-hooks",
+          "id": "d5l3-b05-hooks",
           "type": "infographic",
           "title": "Hook 유형",
           "visibility": "visible",
           "data": {
-            "variant": "checklist",
+            "variant": "comparison",
             "items": [
               {
-                "label": "질문형"
+                "label": "질문형",
+                "description": "고객 스스로 답을 고민하게 만듦\n예: 왜 같은 문제를 또 틀릴까요?"
               },
               {
-                "label": "문제형"
+                "label": "문제형",
+                "description": "현재 불편함을 찌름\n예: 틀린 문제는 산더미, 뭐부터 다시 볼지 막막하시죠?"
               },
               {
-                "label": "상황형"
+                "label": "상황형",
+                "description": "\"내 얘기잖아!\" 하며 몰입시킴\n예: 시험지 확인해보니 지난번 그 유형 또 틀렸다면?"
               },
               {
-                "label": "통념 반박형"
+                "label": "통념 반박형",
+                "description": "기존 생각을 다시 보게 함\n예: 오답 노트만 만든다고 끝이 아닙니다"
               },
               {
-                "label": "방법/과정형"
+                "label": "과정/방법형",
+                "description": "실용적인 정보 기대감 상승\n예: 반복 오답을 다음 학습에 연결하는 3단계"
               },
               {
-                "label": "변화/결과형"
+                "label": "변화/결과형",
+                "description": "기대하는 변화를 제시\n예: 무엇을 공부할지 명확해지는 방법"
               }
             ]
           }
         },
         {
-          "id": "d5l3-b04-good",
+          "id": "d5l3-b05-warning",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**단, 통념 반박형에서 억지로 반대말을 지어내는 무리수는 피하세요.**"
+          }
+        },
+        {
+          "id": "d5l3-b05-good",
           "type": "infographic",
           "title": "좋은 Hook의 조건",
           "visibility": "visible",
@@ -234,12 +313,12 @@
       ]
     },
     {
-      "id": "p05",
+      "id": "p06",
       "title": "Hook과 Clickbait의 차이",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l3-b05-title",
+          "id": "d5l3-b06-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -248,17 +327,17 @@
           }
         },
         {
-          "id": "d5l3-b05-body",
+          "id": "d5l3-b06-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "Hook이 만든 기대(Promise)가 실제 Body가 주는 내용(Delivery)보다 크면 Clickbait가 됩니다. Attention만 노리고 Truth를 버리면 신뢰를 잃습니다."
+            "markdown": "Hook이 만든 기대(Promise)가 실제 Body가 주는 내용(Delivery)보다 크면 Clickbait가 됩니다. Attention만 노리고 Truth를 버리면 고객은 배신감을 느끼고 영영 떠납니다."
           }
         },
         {
-          "id": "d5l3-b05-compare",
+          "id": "d5l3-b06-compare",
           "type": "infographic",
-          "title": "Hook vs Clickbait",
+          "title": "Hook과 Clickbait",
           "visibility": "visible",
           "data": {
             "variant": "comparison",
@@ -273,16 +352,50 @@
               }
             ]
           }
+        },
+        {
+          "id": "d5l3-b06-redflags",
+          "type": "infographic",
+          "title": "AI 문구 클릭베이트 위험 신호",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "근거 없는 확신 — \"무조건\", \"100%\", \"반드시\", \"절대\""
+              },
+              {
+                "label": "과도한 감정 자극 — \"충격\", \"경악\""
+              },
+              {
+                "label": "과장된 비밀 — \"이것만 알면\", \"99%가 모르는\""
+              },
+              {
+                "label": "기적의 논리 — \"단 3일 만에\", \"성적 폭발\""
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d5l3-b06-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "이 단어들을 쓰는 것 자체가 문제는 아닙니다. 하지만 뒷받침할 확실한 근거(Evidence) 없이 사용한다면 브랜드의 신뢰를 갉아먹습니다."
+          }
         }
       ]
     },
     {
-      "id": "p06",
+      "id": "p07",
       "title": "Variant — 단어 바꾸기가 아니다",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l3-b06-title",
+          "id": "d5l3-b07-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -291,7 +404,7 @@
           }
         },
         {
-          "id": "d5l3-b06-body",
+          "id": "d5l3-b07-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -299,7 +412,26 @@
           }
         },
         {
-          "id": "d5l3-b06-rules",
+          "id": "d5l3-b07-compare",
+          "type": "infographic",
+          "title": "가짜 변형 vs 진짜 변형",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "가짜 변형 (AI의 흔한 실수)",
+                "description": "유의어로 바꾸기, 어순 변경, 반복 — 의미 없는 변형"
+              },
+              {
+                "label": "진짜 변형 (우리의 목표)",
+                "description": "Core Message는 꼭 쥐고, Angle과 Hook이라는 진입로만 바꾸는 것"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d5l3-b07-rules",
           "type": "infographic",
           "title": "Variant 원칙",
           "visibility": "visible",
@@ -319,7 +451,7 @@
           }
         },
         {
-          "id": "d5l3-b06-question",
+          "id": "d5l3-b07-question",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -330,12 +462,12 @@
       ]
     },
     {
-      "id": "p07",
+      "id": "p08",
       "title": "오늘 정리",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d5l3-b07-title",
+          "id": "d5l3-b08-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
@@ -344,7 +476,7 @@
           }
         },
         {
-          "id": "d5l3-b07-summary",
+          "id": "d5l3-b08-summary",
           "type": "infographic",
           "title": "기억할 것",
           "visibility": "visible",
@@ -352,16 +484,19 @@
             "variant": "checklist",
             "items": [
               {
+                "label": "Topic → Core Message → Angle → Hook 깔때기"
+              },
+              {
                 "label": "Core Message ≠ Angle ≠ Hook"
               },
               {
                 "label": "One Core Message → Many Angles"
               },
               {
-                "label": "Angle 6종, Hook 6종"
+                "label": "Angle 6종 + 5 Fit, Hook 6종"
               },
               {
-                "label": "Hook Promise ≤ Content Delivery"
+                "label": "Hook Promise ≤ Content Delivery, 클릭베이트 위험 신호"
               },
               {
                 "label": "Variant는 Distinct해야 하고, Drift와는 다르다"
@@ -370,7 +505,7 @@
           }
         },
         {
-          "id": "d5l3-b07-next",
+          "id": "d5l3-b08-next",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
