@@ -67,7 +67,6 @@ export const week2: WeekMeta = {
       status: "ready",
       release: "open",
     },
-    openDay(2, 16, "DAY 16 — SNS에서 Blog로: Search Intent 설계", "같은 Core Message를 유지하면서, 고객이 검색해서 찾아오는 Blog 콘텐츠의 Search Intent와 Reader Question을 설계합니다."),
   ],
 };
 
