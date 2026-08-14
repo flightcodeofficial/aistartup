@@ -4,226 +4,168 @@
   "week": 3,
   "day": 6,
   "lesson": 3,
-  "title": "투자자 관점의 IR 스토리 구조",
-  "description": "문제→고객→해결→검증→시장→모델→팀→요청의 흐름으로 덱 구조를 잡습니다.",
-  "durationMinutes": 60,
+  "title": "Evidence-based Blog Writer & Critic — Draft를 만들고 검토하기",
+  "description": "14차시에서 만든 Outline으로 Blog Draft 1개를 쓰고, AI Critic으로 검토한 뒤 사람이 무엇을 수정할지 결정합니다.",
+  "durationMinutes": 50,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d6l3-p01",
-      "title": "오늘 만들 결과물",
-      "layout": "standard",
+      "id": "p01",
+      "title": "14차시 → 15차시 연결",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d6l3-p01-b1",
+          "id": "d6l3-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 투자자 관점의 IR 스토리 구조\n\n**문제→고객→해결→검증→시장→모델→팀→요청의 흐름으로 덱 구조를 잡습니다.**",
+            "markdown": "# Evidence-based Blog Writer & Critic\n\n## Evidence 기반 Outline을 Blog Draft로 만들고 검토합니다",
             "emphasis": "hero"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d6l3-p01-b2",
+          "id": "d6l3-b01-flow",
+          "type": "infographic",
+          "title": "13차시 → 14차시 → 15차시",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "13차시",
+                "description": "Search Intent → Reader Question 확정"
+              },
+              {
+                "label": "14차시",
+                "description": "Sub Question → Claim → Source Need → Evidence Gap → Outline"
+              },
+              {
+                "label": "15차시",
+                "description": "Draft → Critic → Revision Direction"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l3-b01-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "오늘은 결과물 수보다 **근거와 판단 기준**을 우선합니다.",
-            "emphasis": "normal"
+            "markdown": "**이번 차시의 최종 산출물은 Blog Draft v0.1 + Revision Direction입니다.** 아직 완벽한 SEO 최종본을 만들 필요는 없습니다."
           }
         },
         {
-          "id": "d6l3-p01-i",
+          "id": "d6l3-b01-instructor",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 수강생의 실제 사업 단계에 따라 없는 실적·고객·숫자를 만들지 않도록 강조합니다.",
-            "emphasis": "normal"
+            "markdown": "이론은 P01-P06, 학생 실습은 P07-P09(GPT 실행 정확히 1회, Writer+Critic 한 Prompt). Blog Draft는 1개만 만든다. AI 결과 저장 필드도 1개."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "잘 쓰는 것보다 제대로 답하는 것",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l3-b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 오늘의 목표: 잘 쓰는 것보다 제대로 답하는 것",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l3-b02-flow",
+          "type": "infographic",
+          "title": "오늘 확인할 순서",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Reader Question (독자 질문)",
+                "description": "이 글이 답해야 할 질문"
+              },
+              {
+                "label": "Answer (답)",
+                "description": "그 질문에 실제로 답하고 있는가"
+              },
+              {
+                "label": "Evidence (근거)",
+                "description": "그 답이 근거 범위 안에 있는가"
+              },
+              {
+                "label": "Structure (구조)",
+                "description": "설명 순서가 자연스러운가"
+              },
+              {
+                "label": "Business Message (사업 메시지)",
+                "description": "Core Message와 자연스럽게 연결되는가"
+              }
+            ]
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p02",
-      "title": "핵심 구조",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l3-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 핵심 구조\n\n- 입력 자료를 먼저 정리합니다.\n- AI가 추가한 내용과 원자료를 구분합니다.\n- 결과물은 다음 Lesson에서 재사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l3-p02-img",
-          "type": "image",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/day6/d6l3_framework.svg",
-            "alt": "투자자 관점의 IR 스토리 구조 구조",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
+          "theme": {
+            "background": "primary-soft"
           }
         }
       ]
     },
     {
-      "id": "d6l3-p03",
-      "title": "좋은 결과물의 기준",
+      "id": "p03",
+      "title": "Writer와 Critic, 한 Prompt 안에서 역할을 분리",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d6l3-p03-b1",
+          "id": "d6l3-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 좋은 결과물의 기준\n\n- 명확성\n- 근거 연결\n- 대상 적합성\n- 다음 행동",
-            "emphasis": "normal"
+            "markdown": "## 왜 Critic이 자동으로 다시 쓰지 않을까",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d6l3-p03-b2",
+          "id": "d6l3-b03-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p04",
-      "title": "흔한 실패",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d6l3-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 흔한 실패\n\n- 근거 없는 숫자\n- 가짜 고객·성과\n- 추측을 사실처럼 표현\n- 한 번에 너무 많은 자동화",
-            "emphasis": "normal"
+            "markdown": "이번 Prompt는 STEP A(Writer)와 STEP B(Critic)로 나뉩니다. Critic은 Writer의 결과를 무조건 옹호하지 않고 문제를 찾지만, **글을 자동으로 다시 쓰지는 않습니다.** 무엇을 수정할지는 사람이 결정하기 때문입니다."
           }
         },
         {
-          "id": "d6l3-p04-b2",
-          "type": "rich-text",
+          "id": "d6l3-b03-roles",
+          "type": "infographic",
+          "title": "STEP A → STEP B → 사람",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p05",
-      "title": "실무 체크리스트",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d6l3-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실무 체크리스트\n\n- 사실/가설 분리\n- 개인정보 최소화\n- 외부 공개 전 사람 검수",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l3-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p06",
-      "title": "인터랙티브 판단 연습",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l3-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브 판단 연습\n\n카드를 눌러 사실·가설·검증 필요를 구분합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l3-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/day6/d6l3_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p07",
-      "title": "내 사업 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l3-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 내 사업 입력\n\n실제 고객 개인정보 대신 익명화·가명·공개 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l3-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "투자자 관점의 IR 스토리 구조 입력",
-          "data": {
-            "fields": [
+            "variant": "steps",
+            "items": [
               {
-                "id": "d6l3-p07-form-f1",
-                "label": "현재 사업/서비스 한 문장",
-                "kind": "long-text",
-                "required": true
+                "label": "STEP A — Writer (초안 작성)",
+                "description": "Evidence 기반 Blog Draft 1개 작성"
               },
               {
-                "id": "d6l3-p07-form-f2",
-                "label": "확인된 근거",
-                "kind": "long-text",
-                "required": true
+                "label": "STEP B — Critic (검토)",
+                "description": "6 Lens + Basic SEO로 문제 진단, 판정(KEEP/REVISE/HOLD)"
               },
               {
-                "id": "d6l3-p07-form-f3",
-                "label": "현재 가설",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d6l3-p07-form-f4",
-                "label": "이번 Lesson에서 만들 결과물",
-                "kind": "long-text",
-                "required": true
+                "label": "사람 — Human Decision",
+                "description": "Critic의 지적 중 실제로 반영할 것을 결정"
               }
             ]
           }
@@ -231,164 +173,407 @@
       ]
     },
     {
-      "id": "d6l3-p08",
-      "title": "ChatGPT 실습 프롬프트",
-      "layout": "wide",
+      "id": "p04",
+      "title": "Blog Critic의 6가지 기준",
+      "layout": "standard",
       "blocks": [
         {
-          "id": "d6l3-p08-b1",
+          "id": "d6l3-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## ChatGPT 실습 프롬프트",
-            "emphasis": "normal"
+            "markdown": "## Blog Critic의 6가지 기준 (6 Lens)",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d6l3-p08-prompt",
-          "type": "prompt",
+          "id": "d6l3-b04-lens",
+          "type": "infographic",
+          "title": "6 Lens (6가지 기준)",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 코치입니다.\n목표: 문제→고객→해결→검증→시장→모델→팀→요청의 흐름으로 덱 구조를 잡습니다.\n규칙:\n1. 제공되지 않은 사실·고객·매출·파트너·시장수치를 만들지 않는다.\n2. 사실/계산값/창업자 가설/AI 추론을 구분한다.\n3. 불확실한 내용은 [검증 필요]로 표시한다.\n4. 개인정보·기밀정보를 재생성하지 않는다.\n5. 결과는 초급 창업자가 바로 수정할 수 있는 표와 체크리스트로 만든다.\n\n[사업 설명]\n[확인된 근거]\n[현재 가설]\n[원하는 산출물]",
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Intent Fit (의도 적합성)",
+                "description": "현재 Search Intent와 맞는가? 너무 일찍 구매·상담을 요구하지 않는가?"
+              },
+              {
+                "label": "Answer Fit (답변 적합성)",
+                "description": "Reader Question에 실제로 충분히 답하는가? 주제가 벗어나지 않았는가?"
+              },
+              {
+                "label": "Evidence Fit (근거 적합성)",
+                "description": "각 Claim이 제공된 Evidence 범위 안에 있는가? Claim ≤ Evidence 원칙"
+              },
+              {
+                "label": "Structure Fit (구조 적합성)",
+                "description": "설명 순서가 자연스러운가? 중복·순서 뒤바뀜은 없는가?"
+              },
+              {
+                "label": "Clarity (명확성)",
+                "description": "긴 문장·추상적 표현·전문용어·Fluffy Introduction·Generic Advice는 없는가?"
+              },
+              {
+                "label": "Business Fit (사업 적합성)",
+                "description": "Core Message와 자연스럽게 연결되는가? 갑자기 광고로 바뀌지 않는가?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "Basic SEO는 점수가 아니라 질문입니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l3-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 숫자를 맞추는 게 아니라 질문에 답하는 것부터",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l3-b05-seo",
+          "type": "infographic",
+          "title": "간단히 확인할 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "제목이 Reader Question과 맞는가?"
+              },
+              {
+                "label": "Heading 구조가 내용을 이해하기 쉬운가?"
+              },
+              {
+                "label": "제목의 약속을 본문이 충족하는가?"
+              },
+              {
+                "label": "같은 Keyword를 억지로 반복하지 않았는가?"
+              },
+              {
+                "label": "중요한 관련 질문이나 개념이 빠졌을 가능성이 있는가?"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d6l3-b05-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**실제 검색순위·Keyword 경쟁도·검색량·SEO 점수는 임의로 만들지 않습니다.** 지금은 질문 형태의 점검이지, 숫자로 된 SEO 최적화가 아닙니다.",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "실습 전 리마인드",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d6l3-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 오늘 실습에서 하지 않는 것",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l3-b06-reminder",
+          "type": "infographic",
+          "title": "오늘 하지 않는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "검색어 반복 삽입"
+              },
+              {
+                "label": "SEO 점수 맞추기"
+              },
+              {
+                "label": "새로운 Source 만들기"
+              },
+              {
+                "label": "Evidence 없는 내용 채우기"
+              },
+              {
+                "label": "Blog 3~5개 생성 — Draft는 1개만 만듭니다"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "실습 — Blog Draft를 쓰고 AI Critic으로 검토하기",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d6l3-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 실습 — Blog Draft를 쓰고 AI Critic으로 검토하기",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l3-b07-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "학생이 사업설명을 다시 타이핑하지 않습니다. 14차시 Business Context에서 전부 버튼으로 가져옵니다."
+          }
+        },
+        {
+          "id": "d6l3-b07-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 고객",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "핵심 메시지",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "검색 의도",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "검색 의도 (Primary Search Intent)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "핵심 독자 질문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "독자 질문 (Primary Reader Question)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "Blog 방향",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "Blog 방향 (Blog Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "임시 제목",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "임시 제목 (Working Title)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "조사 하위 질문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "조사 하위 질문 (Research Sub Questions)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "핵심 주장",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "핵심 주장 (Primary Blog Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "Blog Outline (개요)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "Blog 개요 구조 (Outline Skeleton)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "현재 사용 가능한 실제 근거",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "현재 부족한 Evidence",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "근거 공백 (Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "사용하면 안 되는 주장 / Evidence Boundary",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d6l3-b07-prompt",
+          "type": "prompt",
+          "title": "실습 — Blog Draft를 쓰고 AI Critic으로 검토하기",
+          "description": "위 Context 준비 칸의 내용을 아래 [ ] 열두 곳에 순서대로 옮겨 붙인 뒤 실행하세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n\n이번 작업은 반드시 두 단계로 수행합니다.\n\nSTEP A에서는\nEvidence 기반 Blog Writer 역할을 수행합니다.\n\nSTEP B에서는\n방금 작성한 초안을 검토하는 Blog Critic 역할을 수행합니다.\n\nCritic은 Writer의 결과를 무조건 옹호하지 마세요.\n\n그리고 Critic 단계에서\n글을 자동으로 다시 작성하지 마세요.\n\n무엇을 수정할지는 사람이 결정합니다.\n\n================================\n[확정된 Business Context]\n================================\n\n1순위 고객:\n[ ]\n\n핵심 메시지:\n[ ]\n\n검색 의도:\n[ ]\n\n핵심 독자 질문:\n[ ]\n\nBlog 방향:\n[ ]\n\n임시 제목:\n[ ]\n\n조사 하위 질문:\n[ ]\n\n핵심 주장:\n[ ]\n\nBlog Outline:\n[ ]\n\n현재 사용 가능한 실제 근거:\n[ ]\n\n현재 부족한 Evidence:\n[ ]\n\n사용하면 안 되는 주장 / Evidence Boundary:\n[ ]\n\n================================\nSTEP A — BLOG WRITER\n================================\n\n위 Context를 이용하여\nBlog Draft 1개를 작성하세요.\n\n가장 중요한 목적은:\n\n\"Reader Question에 실제로 답하는 것\"\n\n입니다.\n\n다음 원칙을 지키세요.\n\n1.\n\n기존 Reader Question을 바꾸지 마세요.\n\n2.\n\n제공된 Blog Outline의 논리적 순서를 기본으로 사용하세요.\n\n필요하다면 읽기 쉽게 문단을 조정할 수 있지만\n새로운 핵심 주장이나 새로운 전략을 만들지 마세요.\n\n3.\n\n각 주요 Section은\nReader Question 또는 Sub Question에 답하도록 작성하세요.\n\n4.\n\n현재 제공된 실제 Evidence 범위 안에서만\n사실과 Claim을 작성하세요.\n\n5.\n\nEvidence가 부족한 부분은\n확정적으로 채우지 마세요.\n\n필요하면:\n\n[추가 근거 필요]\n\n라고 표시하세요.\n\n6.\n\n존재하지 않는:\n\n- 통계\n- 논문\n- 고객 사례\n- 후기\n- 전문가 발언\n- 조사결과\n- 숫자\n\n를 만들지 마세요.\n\n7.\n\n긴 일반론으로 시작하지 마세요.\n\n예:\n\n\"현대 사회에서 ○○의 중요성은 날로 증가하고 있습니다.\"\n\n같은 Fluffy Introduction을 피하세요.\n\n8.\n\n\"꾸준히 노력해야 합니다\",\n\"개인에게 맞는 방법이 중요합니다\"\n\n같은 Generic Advice만으로 내용을 채우지 마세요.\n\n9.\n\n같은 내용을 표현만 바꾸어 반복하지 마세요.\n\n10.\n\n사업이나 서비스 소개는\nReader Question에 충분히 답한 뒤\n자연스럽게 연결할 수 있는 경우에만 사용하세요.\n\n11.\n\nCTA는 필요하다면 마지막에 1개만 사용하세요.\n\n12.\n\nSEO를 위해 Keyword를 억지로 반복하지 마세요.\n\n================================\n[WRITER 출력]\n================================\n\n제목:\n-\n\nBlog Draft:\n-\n\n사용한 주요 Evidence:\n-\n\n추가 Evidence가 필요한 부분:\n-\n\n================================\nSTEP B — BLOG CRITIC\n================================\n\nWriter 역할을 종료하고\n독립적인 Blog Critic으로 전환하세요.\n\n방금 작성한 Blog Draft를\n다음 6가지 Lens로 검토하세요.\n\n--------------------------------\n1. Intent Fit\n--------------------------------\n\n현재 Search Intent와 맞는가?\n\n정보를 찾는 독자에게\n너무 일찍 구매나 상담을 요구하지 않는가?\n\n--------------------------------\n2. Answer Fit\n--------------------------------\n\nReader Question에\n실제로 충분히 답하고 있는가?\n\n글이 다른 주제로 벗어나지 않았는가?\n\n--------------------------------\n3. Evidence Fit\n--------------------------------\n\n각 주요 Claim이\n제공된 Evidence 범위 안에 있는가?\n\nEvidence가 없는 내용을\n사실처럼 쓴 부분은 없는가?\n\nClaim ≤ Evidence 원칙을 지키는가?\n\n--------------------------------\n4. Structure Fit\n--------------------------------\n\n설명의 순서가\n독자가 이해하기 자연스러운가?\n\n중복되거나\n순서가 뒤바뀐 Section은 없는가?\n\n--------------------------------\n5. Clarity\n--------------------------------\n\n다음 문제가 있는지 확인하세요.\n\n- 긴 문장\n- 추상적인 표현\n- 어려운 전문용어\n- 같은 말 반복\n- Fluffy Introduction\n- Generic Advice\n\n--------------------------------\n6. Business Fit\n--------------------------------\n\nCore Message와 자연스럽게 연결되는가?\n\n독자의 질문에 답하다가\n갑자기 광고 콘텐츠로 바뀌지는 않는가?\n\n================================\n[추가 Basic SEO 점검]\n================================\n\n다음도 간단히 확인하세요.\n\n- 제목이 Reader Question과 맞는가?\n- Heading 구조가 내용을 이해하기 쉬운가?\n- 제목의 약속을 본문이 충족하는가?\n- 같은 Keyword를 억지로 반복하지 않았는가?\n- 중요한 관련 질문이나 개념이 빠졌을 가능성이 있는가?\n\n실제 검색순위,\nKeyword 경쟁도,\n검색량,\nSEO 점수를 임의로 만들지 마세요.\n\n================================\n[판정]\n================================\n\nKEEP\n= 현재 Draft 방향 유지 가능\n\nREVISE\n= 일부 수정 필요\n\nHOLD\n= 추가 Evidence가 필요해 작성 보류\n\n중 하나를 선택하세요.\n\n================================\n[CRITIC 출력]\n================================\n\n전체 판정:\n-\n\n가장 잘 된 부분:\n-\n\n가장 중요한 문제:\n-\n\nIntent Fit:\n-\n\nAnswer Fit:\n-\n\nEvidence Fit:\n-\n\nStructure Fit:\n-\n\nClarity:\n-\n\nBusiness Fit:\n-\n\nBasic SEO 점검:\n-\n\n가장 먼저 수정할 것 최대 3개:\n1.\n2.\n3.\n\n삭제하면 좋은 부분:\n-\n\n추가 Evidence가 필요한 부분:\n-\n\nContent Gap 가능성이 있는 부분:\n-\n\n사람이 최종 결정해야 할 것:\n-",
             "targetTool": "ChatGPT",
             "copyable": true
           }
         },
         {
-          "id": "d6l3-p08-link",
+          "id": "d6l3-b07-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p09",
-      "title": "AI 결과 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d6l3-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 결과 검수\n\n- 원자료와 대조\n- 누락 확인\n- 과장 삭제\n- 확인 필요 표시",
-            "emphasis": "normal"
+            "practiceName": "Evidence-based Blog Writer & Critic",
+            "practiceDescription": "Blog Draft 1개를 작성하고, 같은 대화 안에서 Critic 역할로 전환해 6 Lens + Basic SEO로 검토합니다.",
+            "estimatedMinutes": 8
           }
         },
         {
-          "id": "d6l3-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p10",
-      "title": "이해 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d6l3-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d6l3-p10-q-q1",
-                "question": "가장 먼저 확인해야 할 기준은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d6l3-p10-q-c1",
-                    "text": "표현이 화려한가"
-                  },
-                  {
-                    "id": "d6l3-p10-q-c2",
-                    "text": "근거·목표·대상과 연결되는가"
-                  },
-                  {
-                    "id": "d6l3-p10-q-c3",
-                    "text": "AI가 자신 있게 말하는가"
-                  },
-                  {
-                    "id": "d6l3-p10-q-c4",
-                    "text": "슬라이드 수가 많은가"
-                  }
-                ],
-                "correctChoiceId": "d6l3-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "d6l3-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정답은 **근거·목표·대상과 연결되는가**입니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d6l3-p11",
-      "title": "최종 결과 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d6l3-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 결과 정리\n\n다음 단계에서 재사용할 수 있도록 근거와 선택 이유까지 남깁니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d6l3-final-form",
+          "id": "d6l3-b07-result-form",
           "type": "input-form",
+          "title": "15차시 AI Draft · Critic 결과",
           "visibility": "visible",
-          "title": "투자자 관점의 IR 스토리 구조 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d6l3-final-form-f1",
-                "label": "최종 결과물",
+                "id": "r1",
+                "label": "15차시 AI Draft · Critic 결과",
                 "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d6l3-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d6l3-final-form-f3",
-                "label": "검증 필요 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d6l3-final-form-f4",
-                "label": "다음 행동",
-                "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체(Writer + Critic)를 여기에 붙여넣으세요."
               }
             ]
           }
@@ -396,40 +581,956 @@
       ]
     },
     {
-      "id": "d6l3-p12",
-      "title": "저장 및 다음 단계",
-      "layout": "standard",
+      "id": "p08",
+      "title": "사람의 결정 — Blog Revision Map",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d6l3-p12-preview",
+          "id": "d6l3-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사람의 결정 — Blog Revision Map",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l3-b08-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Critic의 말을 모두 따르는 것이 아닙니다. 최종적으로 무엇을 반영할지는 사람이 결정합니다."
+          }
+        },
+        {
+          "id": "d6l3-b08-form",
+          "type": "input-form",
+          "title": "Human Decision",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "h1",
+                "label": "Reader Question (독자 질문)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "독자 질문 (Primary Reader Question)"
+                  }
+                ]
+              },
+              {
+                "id": "h2",
+                "label": "유지할 것 (KEEP)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 반복 오답 원인 → 관리방법으로 이어지는 전체 구조",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "15차시 AI Draft·Critic 결과에서 가져오기",
+                    "sourceBlockId": "d6l3-b07-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h3",
+                "label": "수정할 것 (REVISE)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "최대 3개. 예: 첫 문단 삭제 / 3번째 Section 설명 축소 / 마지막 서비스 소개 표현 완화",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "15차시 AI Draft·Critic 결과에서 가져오기",
+                    "sourceBlockId": "d6l3-b07-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h4",
+                "label": "삭제할 것 (REMOVE)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "없으면 \"없음\". 예: 근거 없는 \"많은 학생들이\" 표현",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "15차시 AI Draft·Critic 결과에서 가져오기",
+                    "sourceBlockId": "d6l3-b07-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h5",
+                "label": "추가 근거가 필요한 부분 (Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "15차시 AI Draft·Critic 결과에서 가져오기",
+                    "sourceBlockId": "d6l3-b07-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h6",
+                "label": "추가로 보완할 질문 / Content Gap",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: \"오답을 어떤 기준으로 분류해야 하는가?\" — AI가 제안했다고 무조건 추가하지 말고, 실제 Reader Question에 필요한지 학생이 판단하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "15차시 AI Draft·Critic 결과에서 가져오기",
+                    "sourceBlockId": "d6l3-b07-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h7",
+                "label": "사람의 수정 방향 (Human Revision Direction)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "1~3문장. 예: \"첫 서론은 삭제하고 바로 반복 오답 문제에서 시작한다. 현재 확보된 Evidence 안에서만 원인을 설명하고, 근거가 부족한 부분은 다음 조사 대상으로 남긴다.\""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d6l3-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 결과 저장 / 완료",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d6l3-b09-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### A. Blog Revision Map 저장"
+          }
+        },
+        {
+          "id": "d6l3-b09-map-form",
+          "type": "input-form",
+          "title": "15차시 — Blog Revision Map v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "m1",
+                "label": "Reader Question (독자 질문)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l3-b08-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m2",
+                "label": "유지할 것 (KEEP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l3-b08-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m3",
+                "label": "수정할 것 (REVISE)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l3-b08-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m4",
+                "label": "삭제할 것 (REMOVE)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l3-b08-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m5",
+                "label": "추가 근거가 필요한 부분 (Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l3-b08-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m6",
+                "label": "추가로 보완할 질문 / Content Gap",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l3-b08-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m7",
+                "label": "사람의 수정 방향 (Human Revision Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d6l3-b08-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m8",
+                "label": "AI Draft · Critic 원본 결과",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "15차시 AI Draft·Critic 결과에서 가져오기",
+                    "sourceBlockId": "d6l3-b07-result-form"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d6l3-b09-map-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "15차시 — Blog Revision Map v0.1",
+            "sourceBlockId": "d6l3-b09-map-form",
+            "buttonLabel": "Blog Revision Map v0.1 저장"
+          }
+        },
+        {
+          "id": "d6l3-b09-map-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "pitch",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "artifactType": "business-idea",
+            "emptyMessage": "아직 저장된 결과가 없습니다."
           }
         },
         {
-          "id": "d6l3-p12-save",
+          "id": "d6l3-b09-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### B. Business Context 누적 저장"
+          }
+        },
+        {
+          "id": "d6l3-b09-context-form",
+          "type": "input-form",
+          "title": "15차시 — Business Context v0.15",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "c1",
+                "label": "1순위 고객 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "c2",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c3",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "c4",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "c5",
+                "label": "핵심 메시지 대상 Actor (Primary Message Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "핵심 메시지 대상 Actor (Primary Message Actor)"
+                  }
+                ]
+              },
+              {
+                "id": "c6",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "c7",
+                "label": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "c8",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
+                  }
+                ]
+              },
+              {
+                "id": "c9",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "c10",
+                "label": "최종 핵심 메시지 (Final Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c11",
+                "label": "메시지 불변요소 / 경계 (Message Invariants / Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "메시지 불변요소 / 경계 (Message Invariants / Boundary)"
+                  }
+                ]
+              },
+              {
+                "id": "c12",
+                "label": "1순위 콘텐츠 관점 (Primary Content Angle)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "1순위 콘텐츠 관점 (Primary Content Angle)"
+                  }
+                ]
+              },
+              {
+                "id": "c13",
+                "label": "1순위 Hook (Primary Hook)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "1순위 Hook (Primary Hook)"
+                  }
+                ]
+              },
+              {
+                "id": "c14",
+                "label": "SNS Structure 요약 (Body Structure)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "SNS Structure 요약 (Body Structure)"
+                  }
+                ]
+              },
+              {
+                "id": "c15",
+                "label": "사용한 근거 (Content Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "사용한 근거 (Content Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "c16",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c17",
+                "label": "사용 금지 주장 (Prohibited Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "c18",
+                "label": "편집 방향 / 톤 (Tone Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "편집 방향 / 톤 (Tone Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c19",
+                "label": "최종 SNS 콘텐츠 (Final SNS Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "최종 SNS 콘텐츠 (Final SNS Content)"
+                  }
+                ]
+              },
+              {
+                "id": "c20",
+                "label": "콘텐츠 상태 (Final Content Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "콘텐츠 상태 (Final Content Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c21",
+                "label": "사람 승인 (Human Approval)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "사람 승인 (Human Approval)"
+                  }
+                ]
+              },
+              {
+                "id": "c22",
+                "label": "검색 의도 (Primary Search Intent)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "검색 의도 (Primary Search Intent)"
+                  }
+                ]
+              },
+              {
+                "id": "c23",
+                "label": "독자 질문 (Primary Reader Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "독자 질문 (Primary Reader Question)"
+                  }
+                ]
+              },
+              {
+                "id": "c24",
+                "label": "검색 표현 가설 (Search Phrase Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "검색 표현 가설 (Search Phrase Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c25",
+                "label": "Blog 방향 (Blog Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "Blog 방향 (Blog Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c26",
+                "label": "임시 제목 (Working Title)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "임시 제목 (Working Title)"
+                  }
+                ]
+              },
+              {
+                "id": "c27",
+                "label": "검색 검증 질문 (Search Validation Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "검색 검증 질문 (Search Validation Question)"
+                  }
+                ]
+              },
+              {
+                "id": "c28",
+                "label": "조사 하위 질문 (Research Sub Questions)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "조사 하위 질문 (Research Sub Questions)"
+                  }
+                ]
+              },
+              {
+                "id": "c29",
+                "label": "핵심 주장 (Primary Blog Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "핵심 주장 (Primary Blog Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "c30",
+                "label": "주장 상태 (Claim Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "주장 상태 (Claim Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c31",
+                "label": "우선 Source 필요사항 (Priority Source Need)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "우선 Source 필요사항 (Priority Source Need)"
+                  }
+                ]
+              },
+              {
+                "id": "c32",
+                "label": "근거 공백 (Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "근거 공백 (Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c33",
+                "label": "Blog 개요 구조 (Outline Skeleton)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "Blog 개요 구조 (Outline Skeleton)"
+                  }
+                ]
+              },
+              {
+                "id": "c34",
+                "label": "검색 질의 (Research Query)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "14차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "14차시 — Business Context v0.14",
+                    "sourceLabel": "검색 질의 (Research Query)"
+                  }
+                ]
+              },
+              {
+                "id": "n1",
+                "label": "Blog Draft 유지 부분 (KEEP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Revision Map에서 가져오기",
+                    "sourceBlockId": "d6l3-b09-map-form",
+                    "sourceFieldIds": [
+                      "m2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n2",
+                "label": "Blog Draft 수정 부분 (REVISE)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Revision Map에서 가져오기",
+                    "sourceBlockId": "d6l3-b09-map-form",
+                    "sourceFieldIds": [
+                      "m3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n3",
+                "label": "Blog Draft 삭제 부분 (REMOVE)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Revision Map에서 가져오기",
+                    "sourceBlockId": "d6l3-b09-map-form",
+                    "sourceFieldIds": [
+                      "m4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n4",
+                "label": "남은 Evidence Gap",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Revision Map에서 가져오기",
+                    "sourceBlockId": "d6l3-b09-map-form",
+                    "sourceFieldIds": [
+                      "m5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n5",
+                "label": "Content Gap / 보완 질문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Revision Map에서 가져오기",
+                    "sourceBlockId": "d6l3-b09-map-form",
+                    "sourceFieldIds": [
+                      "m6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n6",
+                "label": "사람의 수정 방향 (Human Revision Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Revision Map에서 가져오기",
+                    "sourceBlockId": "d6l3-b09-map-form",
+                    "sourceFieldIds": [
+                      "m7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n7",
+                "label": "다음 결정 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이 수정 방향대로 Draft를 고친다면, Newsletter·재활용 콘텐츠로 확장할 때 무엇을 유지해야 하는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d6l3-b09-context-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day6 Lesson3 — 투자자 관점의 IR 스토리 구조",
           "data": {
-            "artifactType": "pitch",
-            "artifactTitle": "Day6 Lesson3 — 투자자 관점의 IR 스토리 구조",
-            "sourceBlockId": "d6l3-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "15차시 — Business Context v0.15",
+            "sourceBlockId": "d6l3-b09-context-form",
+            "buttonLabel": "Business Context v0.15 저장"
           }
         },
         {
-          "id": "d6l3-p12-reflection",
-          "type": "reflection",
+          "id": "d6l3-b09-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 검증 항목은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## 다음 단계\n\n오늘은 Blog Draft 1개와 Revision Direction을 만들었습니다. 다음 차시에서는 이 Blog를 Newsletter와 다른 채널 콘텐츠로 재활용하는 방법을 다룹니다.",
+            "emphasis": "lead"
           }
         }
       ]
