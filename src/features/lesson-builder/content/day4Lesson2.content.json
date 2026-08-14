@@ -64,7 +64,7 @@
             "variant": "comparison",
             "items": [
               {
-                "label": "Target",
+                "label": "Target (타겟)",
                 "description": "우리가 우선 보고 있는 고객군\n(3일차에서 이미 정함)"
               },
               {

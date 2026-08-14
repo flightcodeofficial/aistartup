@@ -80,23 +80,23 @@
             "variant": "steps",
             "items": [
               {
-                "label": "Trigger",
+                "label": "Trigger (촉발요인)",
                 "description": "문제를 인식하는 계기"
               },
               {
-                "label": "Discovery",
+                "label": "Discovery (탐색)",
                 "description": "해결방법을 찾기 시작"
               },
               {
-                "label": "Evaluation",
+                "label": "Evaluation (평가)",
                 "description": "대안들을 비교·검토"
               },
               {
-                "label": "Decision",
+                "label": "Decision (결정)",
                 "description": "선택을 결정"
               },
               {
-                "label": "First Use",
+                "label": "First Use (첫 사용)",
                 "description": "실제로 처음 사용"
               }
             ]
@@ -127,15 +127,15 @@
             "variant": "comparison",
             "items": [
               {
-                "label": "Touchpoint",
+                "label": "Touchpoint (접점)",
                 "description": "고객이 우리와 실제로 만나는 지점"
               },
               {
-                "label": "Friction",
+                "label": "Friction (마찰)",
                 "description": "고객이 멈추거나 망설이는 지점"
               },
               {
-                "label": "Moment of Truth",
+                "label": "Moment of Truth (결정적 순간)",
                 "description": "선택 여부가 실제로 갈리는 결정적 순간"
               }
             ]
@@ -204,7 +204,7 @@
     },
     {
       "id": "p05",
-      "title": "지금부터 5~8차시를 한 번에 연결합니다",
+      "title": "실습 전 리마인드",
       "layout": "standard",
       "blocks": [
         {
@@ -225,19 +225,19 @@
             "variant": "steps",
             "items": [
               {
-                "label": "VALUE",
+                "label": "VALUE (가치)",
                 "description": "이 고객에게 무엇이 달라지는가?"
               },
               {
-                "label": "BOUNDARY",
+                "label": "BOUNDARY (경계)",
                 "description": "지금 누구를 먼저 검증할 것인가?"
               },
               {
-                "label": "ACTOR",
+                "label": "ACTOR (관계자)",
                 "description": "누가 쓰고, 사고, 결정하는가?"
               },
               {
-                "label": "JOURNEY",
+                "label": "JOURNEY (여정)",
                 "description": "고객은 언제 문제를 느끼고 어디에서 멈추는가?"
               }
             ]
@@ -276,7 +276,7 @@
                 "description": "5일차로 넘기기 전 오류 점검"
               },
               {
-                "label": "4. Human Decision",
+                "label": "4. Human Decision (사람의 결정)",
                 "description": "12개 핵심값 최종 확정"
               }
             ]
@@ -427,7 +427,7 @@
               },
               {
                 "id": "f8",
-                "label": "Target Risk",
+                "label": "Target Risk (타겟 리스크)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
@@ -605,7 +605,7 @@
               },
               {
                 "id": "f2",
-                "label": "Primary Target",
+                "label": "Primary Target (1순위 타겟)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
@@ -633,7 +633,7 @@
               },
               {
                 "id": "f4",
-                "label": "Supporting Evidence",
+                "label": "Supporting Evidence (지지 근거)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
@@ -648,7 +648,7 @@
               },
               {
                 "id": "f5",
-                "label": "Counter Evidence / Risk",
+                "label": "Counter Evidence / Risk (반대 근거 / 리스크)",
                 "kind": "long-text",
                 "required": false,
                 "importFrom": [
@@ -725,7 +725,7 @@
     },
     {
       "id": "p09",
-      "title": "사람의 최종 결정 — Customer Strategy Bridge",
+      "title": "사람의 최종 결정",
       "layout": "practice",
       "blocks": [
         {
@@ -941,7 +941,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 결과 저장 / 완료",
+            "markdown": "## 오늘 만든 결과를 저장합니다",
             "emphasis": "lead"
           }
         },

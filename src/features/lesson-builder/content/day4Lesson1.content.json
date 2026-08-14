@@ -103,15 +103,15 @@
             "variant": "comparison",
             "items": [
               {
-                "label": "Feature",
+                "label": "Feature (기능)",
                 "description": "무엇이 있는가\n예: 이전 대화·자료 자동 재사용 기능"
               },
               {
-                "label": "Benefit",
+                "label": "Benefit (도움)",
                 "description": "무슨 도움이 되는가\n예: 매번 다시 설명하지 않아도 된다"
               },
               {
-                "label": "Outcome",
+                "label": "Outcome (결과)",
                 "description": "그래서 고객에게 무엇이 달라지는가\n예: 여러 창업 업무를 하나의 흐름으로 이어서 진행할 수 있다"
               }
             ]
@@ -150,19 +150,19 @@
             "variant": "steps",
             "items": [
               {
-                "label": "1. Feature",
+                "label": "1. Feature (기능)",
                 "description": "우리 제품에 무엇이 있는가"
               },
               {
-                "label": "2. So What? → Benefit",
+                "label": "2. So What? → Benefit (도움)",
                 "description": "그래서 고객이 무엇을 할 수 있게 되는가"
               },
               {
-                "label": "3. So What? → Outcome",
+                "label": "3. So What? → Outcome (결과)",
                 "description": "그래서 고객의 상황이 실제로 어떻게 바뀌는가"
               },
               {
-                "label": "4. So What? → Value",
+                "label": "4. So What? → Value (가치)",
                 "description": "그래서 이 고객은 왜 이것을 선택하는가"
               }
             ]
@@ -282,7 +282,7 @@
                 "label": "Feature ≠ Value — Outcome까지 가야 Value다"
               },
               {
-                "label": "So What? Ladder — Feature → Benefit → Outcome → Value"
+                "label": "So What? 사다리 — Feature(기능) → Benefit(도움) → Outcome(결과) → Value(가치)"
               },
               {
                 "label": "Value Proposition Bridge — 누구에게 + 어떤 문제 + 어떤 가치"
