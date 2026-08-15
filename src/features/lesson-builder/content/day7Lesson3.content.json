@@ -4,226 +4,177 @@
   "week": 3,
   "day": 7,
   "lesson": 3,
-  "title": "슬라이드별 주장·근거·수치 검수",
-  "description": "각 슬라이드의 핵심 주장과 필요한 증거를 대조해 숫자·출처·표현을 검수합니다.",
-  "durationMinutes": 60,
+  "title": "Landing Page Blueprint — 관심을 실제 행동으로 연결하는 한 페이지 설계",
+  "description": "17·18차시 결과로 Message Match·Hero·Section 구조·Conversion Friction을 설계하고, AI 웹빌더로 실제 화면까지 만듭니다.",
+  "durationMinutes": 50,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d7l3-p01",
-      "title": "오늘 만들 결과물",
-      "layout": "standard",
+      "id": "p01",
+      "title": "18차시 → 19차시 연결",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d7l3-p01-b1",
+          "id": "d7l3-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 슬라이드별 주장·근거·수치 검수\n\n**각 슬라이드의 핵심 주장과 필요한 증거를 대조해 숫자·출처·표현을 검수합니다.**",
+            "markdown": "# Landing Page Blueprint\n\n## 관심을 실제 행동으로 연결하는 한 페이지 설계",
             "emphasis": "hero"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d7l3-p01-b2",
+          "id": "d7l3-b01-flow",
+          "type": "infographic",
+          "title": "18차시 → 19차시",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "18차시",
+                "description": "Recipient Context → Contact Reason → First Message → Follow-up"
+              },
+              {
+                "label": "19차시",
+                "description": "Outreach Message → Offer → Hero → Problem → Value → Proof → Objection → CTA"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d7l3-b01-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "오늘은 결과물 수보다 **근거와 판단 기준**을 우선합니다.",
-            "emphasis": "normal"
+            "markdown": "**학생 실습 결과물은 완성 웹페이지가 아니라 Landing Blueprint입니다.** 뒤 20분 시연에서 그 Blueprint를 AI 웹빌더에 넣어 실제 화면으로 만듭니다."
           }
         },
         {
-          "id": "d7l3-p01-i",
+          "id": "d7l3-b01-instructor",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 수강생의 실제 사업 단계에 따라 없는 실적·고객·숫자를 만들지 않도록 강조합니다.",
-            "emphasis": "normal"
+            "markdown": "이론은 P01-P03, 학생 실습은 P04-P06(GPT 실행 정확히 1회). P07-P11은 AI 웹빌더(Lovable 또는 Bolt 중 하나로 고정) Guided Demo — 강사 시연 + 학생 따라하기를 함께 진행한다. 목표는 Blueprint → Prototype까지, 도메인 연결·Production 배포·결제·CRM·Analytics·SEO는 다루지 않는다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "Landing Page는 홈페이지가 아니라 하나의 결정입니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d7l3-b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 하나의 Offer를 하나의 행동으로 연결하는 페이지",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b02-reminder",
+          "type": "infographic",
+          "title": "오늘 하지 않는 것 vs 오늘 만드는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "오늘 하지 않는 것",
+                "description": "회사 홈페이지 전체 설계\n메뉴 여러 개 만들기\nAbout Us 장문 작성\n블로그 붙이기\n디자인 세부 조정\nHTML 코딩"
+              },
+              {
+                "label": "오늘 만드는 것",
+                "description": "하나의 Offer를 하나의 행동으로 연결하는 Landing Page"
+              }
+            ]
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p02",
-      "title": "핵심 구조",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d7l3-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 핵심 구조\n\n- 입력 자료를 먼저 정리합니다.\n- AI가 추가한 내용과 원자료를 구분합니다.\n- 결과물은 다음 Lesson에서 재사용합니다.",
-            "emphasis": "normal"
+          "theme": {
+            "background": "muted"
           }
         },
         {
-          "id": "d7l3-p02-img",
-          "type": "image",
+          "id": "d7l3-b02-core",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "url": "/lesson-content/day7/d7l3_framework.svg",
-            "alt": "슬라이드별 주장·근거·수치 검수 구조",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
+            "markdown": "**핵심: One Page → One Offer → One Conversion Goal**",
+            "emphasis": "lead"
           }
         }
       ]
     },
     {
-      "id": "d7l3-p03",
-      "title": "좋은 결과물의 기준",
+      "id": "p03",
+      "title": "Message Match — 클릭 전 기대와 이어져야 합니다",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d7l3-p03-b1",
+          "id": "d7l3-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 좋은 결과물의 기준\n\n- 명확성\n- 근거 연결\n- 대상 적합성\n- 다음 행동",
-            "emphasis": "normal"
+            "markdown": "## Landing 첫 화면은 Outreach의 약속과 이어져야 합니다",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d7l3-p03-b2",
+          "id": "d7l3-b03-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p04",
-      "title": "흔한 실패",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d7l3-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 흔한 실패\n\n- 근거 없는 숫자\n- 가짜 고객·성과\n- 추측을 사실처럼 표현\n- 한 번에 너무 많은 자동화",
-            "emphasis": "normal"
+            "markdown": "고객은 18차시에서 만든 Outreach Message를 보고 클릭합니다. Landing Page 첫 화면이 그 기대와 다른 이야기를 하면 이탈합니다 — 이것이 Message Match입니다."
           }
         },
         {
-          "id": "d7l3-p04-b2",
-          "type": "rich-text",
+          "id": "d7l3-b03-sections",
+          "type": "infographic",
+          "title": "Section 역할 (필요한 것만 사용)",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p05",
-      "title": "실무 체크리스트",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d7l3-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실무 체크리스트\n\n- 사실/가설 분리\n- 개인정보 최소화\n- 외부 공개 전 사람 검수",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d7l3-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p06",
-      "title": "인터랙티브 판단 연습",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d7l3-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브 판단 연습\n\n카드를 눌러 사실·가설·검증 필요를 구분합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d7l3-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/day7/d7l3_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p07",
-      "title": "내 사업 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d7l3-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 내 사업 입력\n\n실제 고객 개인정보 대신 익명화·가명·공개 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d7l3-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "슬라이드별 주장·근거·수치 검수 입력",
-          "data": {
-            "fields": [
+            "variant": "comparison",
+            "items": [
               {
-                "id": "d7l3-p07-form-f1",
-                "label": "현재 사업/서비스 한 문장",
-                "kind": "long-text",
-                "required": true
+                "label": "Hero (첫 화면)",
+                "description": "누구를 위한 페이지인지, 무엇을 얻는지"
               },
               {
-                "id": "d7l3-p07-form-f2",
-                "label": "확인된 근거",
-                "kind": "long-text",
-                "required": true
+                "label": "Problem (문제)",
+                "description": "고객이 가진 문제"
               },
               {
-                "id": "d7l3-p07-form-f3",
-                "label": "현재 가설",
-                "kind": "long-text",
-                "required": true
+                "label": "Value (가치)",
+                "description": "얻게 되는 가치"
               },
               {
-                "id": "d7l3-p07-form-f4",
-                "label": "이번 Lesson에서 만들 결과물",
-                "kind": "long-text",
-                "required": true
+                "label": "How It Works (진행 방식)",
+                "description": "진행 방식"
+              },
+              {
+                "label": "Proof (근거)",
+                "description": "믿을 근거"
+              },
+              {
+                "label": "Objection (반론 해소)",
+                "description": "망설이는 이유 해소"
+              },
+              {
+                "label": "CTA (다음 행동)",
+                "description": "다음 행동"
               }
             ]
           }
@@ -231,164 +182,257 @@
       ]
     },
     {
-      "id": "d7l3-p08",
-      "title": "ChatGPT 실습 프롬프트",
-      "layout": "wide",
+      "id": "p04",
+      "title": "실습 — 내 Landing Blueprint 만들기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d7l3-p08-b1",
+          "id": "d7l3-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## ChatGPT 실습 프롬프트",
-            "emphasis": "normal"
+            "markdown": "## 실습 — 내 Landing Blueprint 만들기",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d7l3-p08-prompt",
-          "type": "prompt",
+          "id": "d7l3-b04-body",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 코치입니다.\n목표: 각 슬라이드의 핵심 주장과 필요한 증거를 대조해 숫자·출처·표현을 검수합니다.\n규칙:\n1. 제공되지 않은 사실·고객·매출·파트너·시장수치를 만들지 않는다.\n2. 사실/계산값/창업자 가설/AI 추론을 구분한다.\n3. 불확실한 내용은 [검증 필요]로 표시한다.\n4. 개인정보·기밀정보를 재생성하지 않는다.\n5. 결과는 초급 창업자가 바로 수정할 수 있는 표와 체크리스트로 만든다.\n\n[사업 설명]\n[확인된 근거]\n[현재 가설]\n[원하는 산출물]",
+            "markdown": "학생이 사업설명을 다시 타이핑하지 않습니다. 18차시 Business Context에서 전부 버튼으로 가져옵니다."
+          }
+        },
+        {
+          "id": "d7l3-b04-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 고객",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "핵심 고객 문제",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "Offer 헤드라인 (Headline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 헤드라인 (Headline)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "믿을 근거 (Reason to Believe / Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 믿을 근거 (Reason to Believe)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "고객 부담을 낮추는 요소",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "고객 부담 완화 (Risk Reduction)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "Offer Guardrail / 사용하면 안 되는 주장",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 안전장치 (Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "연락 대상 Context",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "연락 대상 Context (Recipient Context)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "연락 이유",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "연락 이유 (Contact Reason)"
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "첫 Outreach 메시지 (First Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "첫 Outreach 메시지 (First Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "Outreach 행동 유도 (CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Outreach 행동 유도 (CTA)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d7l3-b04-prompt",
+          "type": "prompt",
+          "title": "실습 — 내 Landing Blueprint 만들기",
+          "description": "위 Context 준비 칸의 내용을 아래 [ ] 열두 곳에 순서대로 옮겨 붙인 뒤 실행하세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n\n당신은 예쁜 웹페이지를 만드는 디자이너가 아닙니다.\n\n이미 사람이 확정한 고객, Offer, Outreach Message를 기반으로\n고객이 페이지에 들어온 뒤\n\n\"이 페이지가 나와 관련 있는가?\"\n→ \"무엇을 얻을 수 있는가?\"\n→ \"왜 믿을 수 있는가?\"\n→ \"무엇을 하면 되는가?\"\n\n를 자연스럽게 이해하도록\nLanding Page의 정보 구조를 설계하는\nConversion Strategist입니다.\n\n================================\n[확정된 Business Context]\n================================\n\n1순위 고객:\n[ ]\n\n핵심 고객 문제:\n[ ]\n\nPrimary Offer:\n[ ]\n\nOffer Headline:\n[ ]\n\nReason to Believe / Proof:\n[ ]\n\nPrimary CTA:\n[ ]\n\n고객 부담을 낮추는 요소:\n[ ]\n\nOffer Guardrail / 사용하면 안 되는 주장:\n[ ]\n\n================================\n[고객이 Landing 전에 본 내용]\n================================\n\n연락 대상 Context:\n[ ]\n\n연락 이유:\n[ ]\n\nFirst Outreach Message:\n[ ]\n\nOutreach CTA:\n[ ]\n\n================================\nSTEP 1 — MESSAGE MATCH\n================================\n\n먼저 고객이 Outreach Message를 보고 기대하는 것이 무엇인지\n1~2문장으로 정리하세요.\n\n그리고 Landing Page 첫 화면이\n그 약속과 어떻게 이어져야 하는지 설명하세요.\n\n출력:\n\n고객이 클릭 전에 기대한 것:\n-\n\nLanding에서 바로 이어져야 할 메시지:\n-\n\nMessage Match 위험:\n-\n\n================================\nSTEP 2 — HERO\n================================\n\nHero Section 후보를 2개 제안하세요.\n\n각 후보:\n\nHeadline:\n-\n\nSubheadline:\n-\n\nPrimary CTA:\n-\n\nOptional Proof:\n-\n\n조건:\n\n- 누구를 위한 페이지인지 명확할 것\n- 고객이 무엇을 얻는지 보여줄 것\n- 기존 Offer를 변경하지 않을 것\n- Outreach에서 한 약속보다 강한 말을 만들지 않을 것\n- Evidence 없는 성과를 추가하지 않을 것\n\n================================\nSTEP 3 — LANDING STRUCTURE\n================================\n\n현재 Offer에 필요한 Section만 골라\nLanding Page 구조를 설계하세요.\n\n다음 역할을 참고하세요.\n\n- Hero\n- Problem\n- Value\n- How It Works\n- Proof\n- Objection\n- CTA\n\n모든 Section을 억지로 사용할 필요는 없습니다.\n\n각 Section마다:\n\n1. Section 목적\n2. 고객이 가진 질문\n3. 핵심 메시지\n4. 사용할 Evidence\n5. CTA가 필요한지 여부\n\n를 간단히 작성하세요.\n\n================================\nSTEP 4 — CONVERSION FRICTION\n================================\n\n현재 고객이 CTA를 누르기 전에\n망설일 수 있는 요소를 최대 4개 제안하세요.\n\n예:\n\n- 무엇을 신청하는지 불명확\n- 상담 후 강한 영업이 걱정\n- 비용/시간 불확실\n- 개인정보 입력 부담\n- Proof 부족\n\n각 Friction에 대해:\n\n- 왜 생기는가\n- Landing에서 무엇을 설명하면 줄어드는가\n\n를 제안하세요.\n\n================================\nSTEP 5 — CTA CHECK\n================================\n\nPrimary CTA가 현재 고객에게 적절한지 검토하세요.\n\n다음을 확인하세요.\n\n- 너무 큰 행동을 요구하지 않는가?\n- 무엇을 신청하는지 명확한가?\n- 클릭 후 무엇이 일어나는지 설명 가능한가?\n- CTA Goal이 하나인가?\n\n필요하면 CTA 문구를 더 명확하게 수정하세요.\n\n================================\nSTEP 6 — MOBILE FIRST CHECK\n================================\n\n모바일 첫 화면에서 반드시 보여야 하는 것만 정리하세요.\n\n최대 4개:\n\n1.\n2.\n3.\n4.\n\n긴 문장이나 불필요한 정보를 제거하세요.\n\n================================\n[금지]\n================================\n\n- 새로운 Offer 생성 금지\n- 새로운 Target 생성 금지\n- 가짜 고객 후기 생성 금지\n- 가짜 숫자/성과/인증 생성 금지\n- 회사 연혁 임의 생성 금지\n- 가짜 Urgency/Scarcity 생성 금지\n- 여러 Conversion Goal 생성 금지\n- 가격을 임의로 생성 금지\n- FAQ 10개 생성 금지\n- 웹사이트 코드 작성 금지\n\n================================\n[출력]\n================================\n\n===== MESSAGE MATCH =====\n\n클릭 전 고객 기대:\n-\n\nLanding 연결 메시지:\n-\n\n===== HERO A =====\n\nHeadline:\n-\n\nSubheadline:\n-\n\nCTA:\n-\n\nProof:\n-\n\n===== HERO B =====\n같은 형식\n\n===== LANDING BLUEPRINT =====\n\nSECTION 1\n- 역할:\n- 고객 질문:\n- 핵심 내용:\n- Evidence:\n- CTA 여부:\n\nSECTION 2\n...\n\n===== CONVERSION FRICTION =====\n\nFriction 1:\n-\n\n감소 방법:\n-\n\nFriction 2:\n-\n\n감소 방법:\n-\n\n===== PRIMARY CTA =====\n\n추천 CTA:\n-\n\nCTA 선택 이유:\n-\n\n===== MOBILE FIRST =====\n\n첫 화면에 반드시 보여야 할 것:\n1.\n2.\n3.\n4.\n\n===== FINAL CHECK =====\n\nMessage Match:\nKEEP / REVISE\n\nOffer Fit:\nKEEP / REVISE\n\nEvidence Fit:\nKEEP / REVISE / NEEDS EVIDENCE\n\nCTA Fit:\nKEEP / REVISE\n\n사람이 최종 결정해야 할 것:\n-",
             "targetTool": "ChatGPT",
             "copyable": true
           }
         },
         {
-          "id": "d7l3-p08-link",
+          "id": "d7l3-b04-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p09",
-      "title": "AI 결과 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d7l3-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 결과 검수\n\n- 원자료와 대조\n- 누락 확인\n- 과장 삭제\n- 확인 필요 표시",
-            "emphasis": "normal"
+            "practiceName": "Landing Page Conversion Strategist",
+            "practiceDescription": "Message Match, Hero 후보 2개, Landing 구조, Conversion Friction, CTA 검토, 모바일 우선 체크를 설계합니다.",
+            "estimatedMinutes": 8
           }
         },
         {
-          "id": "d7l3-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p10",
-      "title": "이해 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d7l3-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d7l3-p10-q-q1",
-                "question": "가장 먼저 확인해야 할 기준은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d7l3-p10-q-c1",
-                    "text": "표현이 화려한가"
-                  },
-                  {
-                    "id": "d7l3-p10-q-c2",
-                    "text": "근거·목표·대상과 연결되는가"
-                  },
-                  {
-                    "id": "d7l3-p10-q-c3",
-                    "text": "AI가 자신 있게 말하는가"
-                  },
-                  {
-                    "id": "d7l3-p10-q-c4",
-                    "text": "슬라이드 수가 많은가"
-                  }
-                ],
-                "correctChoiceId": "d7l3-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "d7l3-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정답은 **근거·목표·대상과 연결되는가**입니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d7l3-p11",
-      "title": "최종 결과 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d7l3-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 결과 정리\n\n다음 단계에서 재사용할 수 있도록 근거와 선택 이유까지 남깁니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d7l3-final-form",
+          "id": "d7l3-b04-result-form",
           "type": "input-form",
+          "title": "19차시 AI Landing Blueprint 결과",
           "visibility": "visible",
-          "title": "슬라이드별 주장·근거·수치 검수 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d7l3-final-form-f1",
-                "label": "최종 결과물",
+                "id": "r1",
+                "label": "19차시 AI Landing Blueprint 결과",
                 "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d7l3-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d7l3-final-form-f3",
-                "label": "검증 필요 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d7l3-final-form-f4",
-                "label": "다음 행동",
-                "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기에 붙여넣으세요."
               }
             ]
           }
@@ -396,40 +440,1586 @@
       ]
     },
     {
-      "id": "d7l3-p12",
-      "title": "저장 및 다음 단계",
-      "layout": "standard",
+      "id": "p05",
+      "title": "사람의 결정 — Landing Page Blueprint",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d7l3-p12-preview",
+          "id": "d7l3-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사람의 결정 — Landing Page Blueprint",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b05-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "완성 카피를 또 작성시키지 않습니다. AI 후보를 선택·수정하는 수준입니다."
+          }
+        },
+        {
+          "id": "d7l3-b05-form",
+          "type": "input-form",
+          "title": "Human Decision",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "h1",
+                "label": "전환 목표 (Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "하나만. 예: 20분 공간진단 상담 신청"
+              },
+              {
+                "id": "h2",
+                "label": "Hero 헤드라인 (Headline)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 후보 선택 또는 수정.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "19차시 AI Landing Blueprint 결과에서 가져오기",
+                    "sourceBlockId": "d7l3-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h3",
+                "label": "Hero 서브헤드라인 (Subheadline)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "선택/수정.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "19차시 AI Landing Blueprint 결과에서 가져오기",
+                    "sourceBlockId": "d7l3-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h4",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "하나.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "19차시 AI Landing Blueprint 결과에서 가져오기",
+                    "sourceBlockId": "d7l3-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h5",
+                "label": "Section 순서 (Section Order)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: Hero → Problem → Value → How It Works → Proof → CTA",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "19차시 AI Landing Blueprint 결과에서 가져오기",
+                    "sourceBlockId": "d7l3-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h6",
+                "label": "사용할 Proof",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "실제로 있는 Evidence만 선택. 예: 실제 시공 Before/After 사진, 실제 상담 Process"
+              },
+              {
+                "id": "h7",
+                "label": "가장 큰 Conversion Friction",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "하나만 선택. 예: 상담 후 계약 압박에 대한 걱정",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "19차시 AI Landing Blueprint 결과에서 가져오기",
+                    "sourceBlockId": "d7l3-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h8",
+                "label": "Friction 완화 메시지 (Reduction Message)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "한두 문장. 예: \"상담만으로 계약 의무는 없으며, 현재 공간과 예상 공사 범위를 먼저 정리합니다.\""
+              }
+            ]
+          }
+        },
+        {
+          "id": "d7l3-b05-checklist",
+          "type": "infographic",
+          "title": "마지막 Human Check",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Outreach에서 본 약속과 Hero가 이어진다"
+              },
+              {
+                "label": "한 페이지에 Offer가 하나다"
+              },
+              {
+                "label": "Primary CTA가 하나다"
+              },
+              {
+                "label": "실제 Proof만 사용한다"
+              },
+              {
+                "label": "고객이 CTA 후 무엇이 일어나는지 이해할 수 있다"
+              },
+              {
+                "label": "모바일 첫 화면에서 핵심을 이해할 수 있다"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d7l3-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 결과 저장 / 완료",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b06-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### A. Landing Page Blueprint 저장"
+          }
+        },
+        {
+          "id": "d7l3-b06-map-form",
+          "type": "input-form",
+          "title": "19차시 — Landing Page Blueprint v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "m1",
+                "label": "1순위 고객 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "m2",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "m3",
+                "label": "전환 목표 (Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m4",
+                "label": "Hero 헤드라인 (Headline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m5",
+                "label": "Hero 서브헤드라인 (Subheadline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m6",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m7",
+                "label": "Section 순서 (Section Order)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m8",
+                "label": "사용할 Proof",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m9",
+                "label": "가장 큰 Conversion Friction",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m10",
+                "label": "Friction 완화 메시지 (Reduction Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d7l3-b05-form",
+                    "sourceFieldIds": [
+                      "h8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m11",
+                "label": "Landing 안전장치 (Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 안전장치 (Guardrail)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d7l3-b06-map-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "19차시 — Landing Page Blueprint v0.1",
+            "sourceBlockId": "d7l3-b06-map-form",
+            "buttonLabel": "Landing Page Blueprint v0.1 저장"
+          }
+        },
+        {
+          "id": "d7l3-b06-map-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "pitch",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "artifactType": "business-idea",
+            "emptyMessage": "아직 저장된 결과가 없습니다."
           }
         },
         {
-          "id": "d7l3-p12-save",
+          "id": "d7l3-b06-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### B. Business Context 누적 저장"
+          }
+        },
+        {
+          "id": "d7l3-b06-context-form",
+          "type": "input-form",
+          "title": "19차시 — Business Context v0.19",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "c1",
+                "label": "1순위 고객 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "c2",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c3",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "c4",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "c5",
+                "label": "핵심 메시지 대상 Actor (Primary Message Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "핵심 메시지 대상 Actor (Primary Message Actor)"
+                  }
+                ]
+              },
+              {
+                "id": "c6",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "c7",
+                "label": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "c8",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
+                  }
+                ]
+              },
+              {
+                "id": "c9",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "c10",
+                "label": "최종 핵심 메시지 (Final Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c11",
+                "label": "메시지 불변요소 / 경계 (Message Invariants / Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "메시지 불변요소 / 경계 (Message Invariants / Boundary)"
+                  }
+                ]
+              },
+              {
+                "id": "c12",
+                "label": "1순위 콘텐츠 관점 (Primary Content Angle)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 콘텐츠 관점 (Primary Content Angle)"
+                  }
+                ]
+              },
+              {
+                "id": "c13",
+                "label": "1순위 Hook (Primary Hook)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 Hook (Primary Hook)"
+                  }
+                ]
+              },
+              {
+                "id": "c14",
+                "label": "SNS Structure 요약 (Body Structure)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "SNS Structure 요약 (Body Structure)"
+                  }
+                ]
+              },
+              {
+                "id": "c15",
+                "label": "사용한 근거 (Content Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "사용한 근거 (Content Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "c16",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c17",
+                "label": "사용 금지 주장 (Prohibited Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "사용 금지 주장 (Prohibited Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "c18",
+                "label": "편집 방향 / 톤 (Tone Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "편집 방향 / 톤 (Tone Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c19",
+                "label": "최종 SNS 콘텐츠 (Final SNS Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "최종 SNS 콘텐츠 (Final SNS Content)"
+                  }
+                ]
+              },
+              {
+                "id": "c20",
+                "label": "콘텐츠 상태 (Final Content Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "콘텐츠 상태 (Final Content Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c21",
+                "label": "사람 승인 (Human Approval)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "사람 승인 (Human Approval)"
+                  }
+                ]
+              },
+              {
+                "id": "c22",
+                "label": "검색 의도 (Primary Search Intent)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "검색 의도 (Primary Search Intent)"
+                  }
+                ]
+              },
+              {
+                "id": "c23",
+                "label": "독자 질문 (Primary Reader Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "독자 질문 (Primary Reader Question)"
+                  }
+                ]
+              },
+              {
+                "id": "c24",
+                "label": "검색 표현 가설 (Search Phrase Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "검색 표현 가설 (Search Phrase Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c25",
+                "label": "Blog 방향 (Blog Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Blog 방향 (Blog Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c26",
+                "label": "임시 제목 (Working Title)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "임시 제목 (Working Title)"
+                  }
+                ]
+              },
+              {
+                "id": "c27",
+                "label": "검색 검증 질문 (Search Validation Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "검색 검증 질문 (Search Validation Question)"
+                  }
+                ]
+              },
+              {
+                "id": "c28",
+                "label": "조사 하위 질문 (Research Sub Questions)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "조사 하위 질문 (Research Sub Questions)"
+                  }
+                ]
+              },
+              {
+                "id": "c29",
+                "label": "핵심 주장 (Primary Blog Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "핵심 주장 (Primary Blog Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "c30",
+                "label": "주장 상태 (Claim Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "주장 상태 (Claim Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c31",
+                "label": "우선 Source 필요사항 (Priority Source Need)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "우선 Source 필요사항 (Priority Source Need)"
+                  }
+                ]
+              },
+              {
+                "id": "c32",
+                "label": "근거 공백 (Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "근거 공백 (Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c33",
+                "label": "Blog 개요 구조 (Outline Skeleton)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Blog 개요 구조 (Outline Skeleton)"
+                  }
+                ]
+              },
+              {
+                "id": "c34",
+                "label": "검색 질의 (Research Query)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "검색 질의 (Research Query)"
+                  }
+                ]
+              },
+              {
+                "id": "c35",
+                "label": "Blog Draft 유지 부분 (KEEP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Blog Draft 유지 부분 (KEEP)"
+                  }
+                ]
+              },
+              {
+                "id": "c36",
+                "label": "Blog Draft 수정 부분 (REVISE)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Blog Draft 수정 부분 (REVISE)"
+                  }
+                ]
+              },
+              {
+                "id": "c37",
+                "label": "Blog Draft 삭제 부분 (REMOVE)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Blog Draft 삭제 부분 (REMOVE)"
+                  }
+                ]
+              },
+              {
+                "id": "c38",
+                "label": "남은 Evidence Gap",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "남은 Evidence Gap"
+                  }
+                ]
+              },
+              {
+                "id": "c39",
+                "label": "Content Gap / 보완 질문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Content Gap / 보완 질문"
+                  }
+                ]
+              },
+              {
+                "id": "c40",
+                "label": "사람의 수정 방향 (Human Revision Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "사람의 수정 방향 (Human Revision Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c41",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "c42",
+                "label": "Offer 헤드라인 (Headline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 헤드라인 (Headline)"
+                  }
+                ]
+              },
+              {
+                "id": "c43",
+                "label": "Offer 믿을 근거 (Reason to Believe)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 믿을 근거 (Reason to Believe)"
+                  }
+                ]
+              },
+              {
+                "id": "c44",
+                "label": "고객 부담 완화 (Risk Reduction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "고객 부담 완화 (Risk Reduction)"
+                  }
+                ]
+              },
+              {
+                "id": "c45",
+                "label": "Offer 안전장치 (Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 안전장치 (Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c46",
+                "label": "Offer 상태 (Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Offer 상태 (Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c47",
+                "label": "연락 대상 Context (Recipient Context)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "연락 대상 Context (Recipient Context)"
+                  }
+                ]
+              },
+              {
+                "id": "c48",
+                "label": "연락 이유 (Contact Reason)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "연락 이유 (Contact Reason)"
+                  }
+                ]
+              },
+              {
+                "id": "c49",
+                "label": "개인화 포인트 (Personalization Point)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "개인화 포인트 (Personalization Point)"
+                  }
+                ]
+              },
+              {
+                "id": "c50",
+                "label": "첫 Outreach 메시지 (First Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "첫 Outreach 메시지 (First Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c51",
+                "label": "Follow-up 추가 가치 (Value)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Follow-up 추가 가치 (Value)"
+                  }
+                ]
+              },
+              {
+                "id": "c52",
+                "label": "Follow-up 메시지 (Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "18차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "18차시 — Business Context v0.18",
+                    "sourceLabel": "Follow-up 메시지 (Message)"
+                  }
+                ]
+              },
+              {
+                "id": "n1",
+                "label": "전환 목표 (Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n2",
+                "label": "Hero 헤드라인 (Headline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n3",
+                "label": "Hero 서브헤드라인 (Subheadline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n4",
+                "label": "Landing 1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n5",
+                "label": "Landing Section 순서",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n6",
+                "label": "Landing 근거 (Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n7",
+                "label": "주요 Conversion Friction",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n8",
+                "label": "Friction 완화 메시지",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Landing Blueprint에서 가져오기",
+                    "sourceBlockId": "d7l3-b06-map-form",
+                    "sourceFieldIds": [
+                      "m10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n9",
+                "label": "Landing 상태 (Status)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "READY TO PROTOTYPE",
+                  "NEEDS REVISION",
+                  "NEEDS EVIDENCE"
+                ]
+              },
+              {
+                "id": "n10",
+                "label": "다음 결정 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이 Landing Blueprint를 실제 화면으로 만든 뒤, 무엇을 가장 먼저 검증해야 하는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d7l3-b06-context-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day7 Lesson3 — 슬라이드별 주장·근거·수치 검수",
           "data": {
-            "artifactType": "pitch",
-            "artifactTitle": "Day7 Lesson3 — 슬라이드별 주장·근거·수치 검수",
-            "sourceBlockId": "d7l3-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "19차시 — Business Context v0.19",
+            "sourceBlockId": "d7l3-b06-context-form",
+            "buttonLabel": "Business Context v0.19 저장"
           }
         },
         {
-          "id": "d7l3-p12-reflection",
-          "type": "reflection",
+          "id": "d7l3-b06-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 검증 항목은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## 다음 단계\n\n오늘은 Blueprint를 만들었습니다. 이제 AI 웹빌더로 실제 화면을 만듭니다.",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "AI Web Builder — STEP 1 일부러 Generic Landing 생성",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d7l3-b07-badge",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사 시연 + 학생 따라하기** — Lovable 또는 Bolt 중 하나로 고정합니다",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d7l3-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 먼저 전략 없이 만들어보면 무엇이 다른지 보입니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b07-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "강사가 먼저 \"인테리어 업체 상담 랜딩페이지 만들어줘.\" 정도만 입력합니다. 결과는 대개 큰 Hero, 서비스 카드, 후기, Contact, Generic Copy로 나옵니다."
+          }
+        },
+        {
+          "id": "d7l3-b07-question",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**질문: \"이 페이지가 우리가 17-19차시에서 결정한 걸 알고 있나요?\" — 당연히 아닙니다.**",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "STEP 2 — Blueprint 넣기",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d7l3-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 방금 만든 구조를 그대로 넣습니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b08-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "학생도 자기 Blueprint를 붙여 넣습니다."
+          }
+        },
+        {
+          "id": "d7l3-b08-prompt",
+          "type": "prompt",
+          "title": "AI 웹빌더용 Blueprint 프롬프트",
+          "description": "17~19차시에서 결정한 값을 [ ] 자리에 옮겨 붙인 뒤 Lovable 또는 Bolt에 실행하세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "아래 전략을 변경하지 말고\n모바일 우선 Landing Page Prototype을 만들어줘.\n\nTarget:\n[ ]\n\nOffer:\n[ ]\n\nConversion Goal:\n[ ]\n\nHero Headline:\n[ ]\n\nHero Subheadline:\n[ ]\n\nPrimary CTA:\n[ ]\n\nSection Order:\n[ ]\n\nAvailable Proof:\n[ ]\n\nPrimary Friction:\n[ ]\n\nFriction Reduction:\n[ ]\n\nGuardrail:\n[ ]\n\n규칙:\n\n- 새로운 Offer를 만들지 말 것\n- 가짜 후기/통계/성과를 만들지 말 것\n- Primary CTA는 하나\n- 모바일 첫 화면에서 Headline/Subheadline/CTA가 명확할 것",
+            "targetTool": "Lovable / Bolt",
+            "copyable": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "STEP 3 — 두 결과 비교",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d7l3-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Generic Prompt vs Blueprint Prompt",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b09-compare",
+          "type": "infographic",
+          "title": "무엇이 다른가",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Generic Prompt (전략 없는 입력)",
+                "description": "예쁜데 흔함"
+              },
+              {
+                "label": "Blueprint Prompt (전략 있는 입력)",
+                "description": "누구에게 · 무엇을 · 왜 · 어떤 Evidence로 · 무엇을 하게 할지가 보임"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d7l3-b09-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**핵심 교육 메시지: \"AI 웹빌더가 갑자기 똑똑해진 게 아닙니다. 우리가 먼저 전략을 결정했기 때문에 결과가 좋아진 겁니다.\"**",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "STEP 4-5 — 모바일 확인과 실제 수정",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d7l3-b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 모바일에서 확인하고, 한 번 수정해봅니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b10-mobile",
+          "type": "infographic",
+          "title": "STEP 4 — 모바일 확인",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Hero가 한 화면에 읽히나?"
+              },
+              {
+                "label": "CTA가 보이나?"
+              },
+              {
+                "label": "Headline이 길지 않나?"
+              },
+              {
+                "label": "필요 없는 Section이 있나?"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d7l3-b10-step5",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**STEP 5 — 실제 수정 명령 한 번**\n\n예: \"Hero를 더 짧게 하고 회사소개보다 고객 문제를 먼저 보여줘. CTA 목표는 바꾸지 마.\""
+          }
+        },
+        {
+          "id": "d7l3-b10-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "AI 웹빌더는 단순 생성기가 아니라 정해진 Blueprint를 수정하는 도구입니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "title": "이번 차시에 일부러 안 하는 것",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d7l3-b11-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 오늘은 Blueprint → Prototype까지입니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d7l3-b11-skip",
+          "type": "infographic",
+          "title": "다음 기회로 남기는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "도메인 연결"
+              },
+              {
+                "label": "Production 배포"
+              },
+              {
+                "label": "실제 결제 연결"
+              },
+              {
+                "label": "CRM 연결"
+              },
+              {
+                "label": "Analytics (방문 분석)"
+              },
+              {
+                "label": "SEO 설정"
+              },
+              {
+                "label": "완벽한 디자인 수정"
+              },
+              {
+                "label": "여러 Landing Variant"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
           }
         }
       ]
