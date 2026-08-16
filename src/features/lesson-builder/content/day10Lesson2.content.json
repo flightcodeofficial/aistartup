@@ -4,8 +4,8 @@
   "week": 4,
   "day": 10,
   "lesson": 2,
-  "title": "Make·Zapier로 최소 자동화 구현",
-  "description": "트리거 1개와 핵심 액션만 연결하고 무료 한도·실패 경로를 함께 설계합니다.",
+  "title": "Generative AI Brand Kit — 브랜드 전략을 언어·비주얼 규칙으로",
+  "description": "29차시 Brand Direction을 근거로 Working Name, Tagline, Voice Rules, Visual/Color/Typography/Image Direction, Guardrail을 만듭니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -13,382 +13,462 @@
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d10l2-p01",
-      "title": "오늘 만들 결과물",
-      "layout": "standard",
+      "id": "p01",
+      "title": "Generative AI Brand Kit 핵심 이론",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d10l2-p01-b1",
+          "id": "d10l2-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# Make·Zapier로 최소 자동화 구현\n\n**트리거 1개와 핵심 액션만 연결하고 무료 한도·실패 경로를 함께 설계합니다.**",
+            "markdown": "# Generative AI Brand Kit\n\n## 브랜드 전략을 언어·비주얼 규칙으로 바꾸기",
             "emphasis": "hero"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d10l2-p01-b2",
+          "id": "d10l2-b01-make",
+          "type": "infographic",
+          "title": "오늘 만드는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Working Brand Name"
+              },
+              {
+                "label": "Tagline"
+              },
+              {
+                "label": "Key Message"
+              },
+              {
+                "label": "Voice Rules"
+              },
+              {
+                "label": "Color Direction"
+              },
+              {
+                "label": "Typography Direction"
+              },
+              {
+                "label": "Image Style"
+              },
+              {
+                "label": "Logo Direction"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l2-b01-notmake",
+          "type": "infographic",
+          "title": "오늘 확정하지 않는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "법적 상표 사용 가능성"
+              },
+              {
+                "label": "최종 로고 원본"
+              },
+              {
+                "label": "최종 CI/BI 매뉴얼"
+              },
+              {
+                "label": "실제 상표등록"
+              },
+              {
+                "label": "최종 도메인"
+              },
+              {
+                "label": "인쇄용 디자인 규격"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l2-b01-core",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "오늘은 결과물 수보다 **근거와 판단 기준**을 우선합니다.",
-            "emphasis": "normal"
+            "markdown": "## \"오늘 만드는 것은 Brand Kit v0.1입니다.\"\n\n완성된 CI가 아니라 다음 콘텐츠를 일관되게 만들기 위한 기준입니다.",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d10l2-p01-i",
+          "id": "d10l2-b01-instructor",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 수강생의 실제 사업 단계에 따라 없는 실적·고객·숫자를 만들지 않도록 강조합니다.",
-            "emphasis": "normal"
-          },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p02",
-      "title": "핵심 구조",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l2-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 핵심 구조\n\n- 입력 자료를 먼저 정리합니다.\n- AI가 추가한 내용과 원자료를 구분합니다.\n- 결과물은 다음 Lesson에서 재사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l2-p02-img",
-          "type": "image",
-          "visibility": "visible",
-          "data": {
-            "url": "/lesson-content/day10/d10l2_framework.svg",
-            "alt": "Make·Zapier로 최소 자동화 구현 구조",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
+            "markdown": "전체 수업 — Context 가져오기 2분, GPT Brand Kit Architect 1회 8분, Human Selection 5분, Brand Kit 저장 5분, 이후 Canva + 선택적 Image AI Guided Live Build 약 20분. 웹앱 실습과 Canva 시연은 분리해도 되고, 후반 20분은 학생이 강사를 따라 만드는 방식으로 진행한다."
           }
         }
       ]
     },
     {
-      "id": "d10l2-p03",
-      "title": "좋은 결과물의 기준",
-      "layout": "standard",
+      "id": "p02",
+      "title": "실습 — Brand Kit 받기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d10l2-p03-b1",
+          "id": "d10l2-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 좋은 결과물의 기준\n\n- 명확성\n- 근거 연결\n- 대상 적합성\n- 다음 행동",
-            "emphasis": "normal"
+            "markdown": "## 실습 — Brand Kit 받기",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d10l2-p03-b2",
+          "id": "d10l2-b02-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p04",
-      "title": "흔한 실패",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l2-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 흔한 실패\n\n- 근거 없는 숫자\n- 가짜 고객·성과\n- 추측을 사실처럼 표현\n- 한 번에 너무 많은 자동화",
-            "emphasis": "normal"
+            "markdown": "30차시 AI에게 다시 사업을 해석시키지 않습니다. 29차시에서 사람이 결정한 Brand Direction을 표현하도록 시킵니다."
           }
         },
         {
-          "id": "d10l2-p04-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p05",
-      "title": "실무 체크리스트",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l2-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실무 체크리스트\n\n- 사실/가설 분리\n- 개인정보 최소화\n- 외부 공개 전 사람 검수",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l2-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p06",
-      "title": "인터랙티브 판단 연습",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l2-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브 판단 연습\n\n카드를 눌러 사실·가설·검증 필요를 구분합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l2-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/day10/d10l2_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p07",
-      "title": "내 사업 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l2-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 내 사업 입력\n\n실제 고객 개인정보 대신 익명화·가명·공개 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l2-p07-form",
+          "id": "d10l2-b02-context-form",
           "type": "input-form",
+          "title": "Context 준비",
           "visibility": "visible",
-          "title": "Make·Zapier로 최소 자동화 구현 입력",
           "data": {
             "fields": [
               {
-                "id": "d10l2-p07-form-f1",
-                "label": "현재 사업/서비스 한 문장",
+                "id": "f1",
+                "label": "1순위 고객 (Primary Customer)",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
               },
               {
-                "id": "d10l2-p07-form-f2",
-                "label": "확인된 근거",
+                "id": "f2",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
               },
               {
-                "id": "d10l2-p07-form-f3",
-                "label": "현재 가설",
+                "id": "f3",
+                "label": "핵심 가치제안 (Primary Value Proposition)",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
               },
               {
-                "id": "d10l2-p07-form-f4",
-                "label": "이번 Lesson에서 만들 결과물",
+                "id": "f4",
+                "label": "현재 제공 가능한 역량 (Actual Capability)",
                 "kind": "long-text",
-                "required": true
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 활동 (Key Activities)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "지지 근거 / 고객용 Proof (Supporting Evidence / Customer-facing Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "지지 근거 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  },
+                  {
+                    "kind": "prior-artifact",
+                    "label": "고객용 Proof 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객용 Proof (Customer-facing Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "주장 경계 / DO NOT CLAIM (Claim Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "계획 주장 금지 항목 (Plan Do Not Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "최종 브랜드 Positioning (Final Brand Positioning)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "최종 브랜드 Positioning (Final Brand Positioning)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "브랜드 카테고리 (Brand Category)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 카테고리 (Brand Category)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "브랜드 약속 (Brand Promise)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 약속 (Brand Promise)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "1순위 Brand Personality (Primary Brand Personality)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 Brand Personality (Primary Brand Personality)"
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "보조 Brand Personality (Supporting Brand Personality)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "보조 Brand Personality (Supporting Brand Personality)"
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "브랜드가 되지 않을 모습 (Brand NOT)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드가 되지 않을 모습 (Brand NOT)"
+                  }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "브랜드 말투 (Brand Voice)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 말투 (Brand Voice)"
+                  }
+                ]
+              },
+              {
+                "id": "f14",
+                "label": "브랜드 일관성 안전장치 (Brand Consistency Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 일관성 안전장치 (Brand Consistency Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "Brand Direction 상태 (Brand Direction Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Brand Direction 상태 (Brand Direction Status)"
+                  }
+                ]
+              },
+              {
+                "id": "f16",
+                "label": "핵심 메시지 (Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f17",
+                "label": "Service Introduction 핵심 문장 (Core Statement)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객용 서비스 문장 (Customer-facing Service Statement)"
+                  }
+                ]
+              },
+              {
+                "id": "f18",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
               }
             ]
           }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p08",
-      "title": "ChatGPT 실습 프롬프트",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l2-p08-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## ChatGPT 실습 프롬프트",
-            "emphasis": "normal"
-          }
         },
         {
-          "id": "d10l2-p08-prompt",
+          "id": "d10l2-b02-prompt",
           "type": "prompt",
+          "title": "실습 — Brand Kit 받기",
+          "description": "위 Context 준비 칸의 내용을 아래 [ ] 열여덟 곳에 순서대로 옮겨 붙인 뒤 실행하세요.",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 코치입니다.\n목표: 트리거 1개와 핵심 액션만 연결하고 무료 한도·실패 경로를 함께 설계합니다.\n규칙:\n1. 제공되지 않은 사실·고객·매출·파트너·시장수치를 만들지 않는다.\n2. 사실/계산값/창업자 가설/AI 추론을 구분한다.\n3. 불확실한 내용은 [검증 필요]로 표시한다.\n4. 개인정보·기밀정보를 재생성하지 않는다.\n5. 결과는 초급 창업자가 바로 수정할 수 있는 표와 체크리스트로 만든다.\n\n[사업 설명]\n[확인된 근거]\n[현재 가설]\n[원하는 산출물]",
+            "prompt": "[역할]\n\n당신은 브랜드 이름이나 로고를 최종 확정하는 Designer가 아닙니다.\n\n이미 사람이 결정한 29차시 Brand Direction(Positioning, Promise,\nPersonality, Voice, NOT, Consistency Guardrail)을 근거로,\n이를 언어와 비주얼 규칙으로 표현하는\nEvidence-bound Brand Kit Architect입니다.\n\n새로운 Brand Strategy를 만들지 말고, 29차시에서 확정된 내용을\n표현하세요.\n\n================================\n[현재 Business Context]\n================================\n\nPrimary Customer:\n[ ]\n\nCore Customer Problem:\n[ ]\n\nPrimary Value Proposition:\n[ ]\n\nActual Capability:\n[ ]\n\nSupporting Evidence / Customer-facing Proof:\n[ ]\n\nClaim Boundary / DO NOT CLAIM:\n[ ]\n\nFinal Brand Positioning:\n[ ]\n\nBrand Category:\n[ ]\n\nBrand Promise:\n[ ]\n\nPrimary Brand Personality:\n[ ]\n\nSupporting Brand Personality:\n[ ]\n\nBrand NOT:\n[ ]\n\nBrand Voice:\n[ ]\n\nBrand Consistency Guardrail:\n[ ]\n\nBrand Direction Status:\n[ ]\n\nCore Message:\n[ ]\n\nService Introduction Core Statement:\n[ ]\n\nPrimary Offer:\n[ ]\n\n================================\nSTEP 1 — WORKING NAME & TAGLINE\n================================\n\nPositioning과 Brand Promise에 맞는 Working Brand Name 후보를\n최대 5개, Tagline 후보를 최대 3개 제안하세요.\n\nWorking Name은 사용 가능성이 검증된 최종 상호/상표명이 아니라\n후보임을 명시하세요.\n\n================================\nSTEP 2 — VOICE RULES\n================================\n\nBrand Voice를 실제로 쓸 수 있는 DO / DON'T 규칙으로 바꾸세요.\n\nPreferred Words와 Avoid Words도 함께 제안하세요.\n\n================================\nSTEP 3 — VISUAL DIRECTION\n================================\n\nVisual Direction 후보를 3개(A/B/C) 제안하세요.\n\n각 후보에 Mood / Color / Typography / Image / Logo / Avoid를\n표시하고, Brand Strategy와 얼마나 맞는지 Strategy Fit으로\n평가하세요.\n\n================================\nSTEP 4 — IMAGE STYLE SPEC\n================================\n\nImage AI 생성에 바로 쓸 수 있는 Image Style Spec을\nSubject / Environment / Mood / Lighting / Composition / Style /\nMust Include / Avoid / Guardrail로 작성하세요.\n\n================================\nSTEP 5 — MUST / PREFER / AVOID / NEVER\n================================\n\nBrand Kit을 실제로 쓸 때 지켜야 할 규칙을\nMUST / PREFER / AVOID / NEVER로 정리하세요.\n\nClaim Boundary를 넘어서는 표현은 반드시 NEVER에 포함하세요.\n\n================================\nSTEP 6 — AI RECOMMENDATION\n================================\n\n지금까지 분석을 바탕으로 하나의 Brand Kit을 추천하세요.\n\n이 추천은 최종 결정이 아니라 사람이 검토할 제안임을 명시하세요.\n\n================================\n[금지]\n================================\n\n- 최종 상표/상호 확정 금지\n- 법적 상표 사용 가능성 판단 금지\n- 최종 로고 원본 생성 금지\n- 실제 상표등록 절차 생성 금지\n- Capability보다 큰 Promise 생성 금지\n- Evidence보다 강한 Claim 생성 금지\n- 가짜 실적/후기/인증 생성 금지\n\n================================\n[출력]\n================================\n\n===== NAMING & TAGLINE CANDIDATES =====\n\nWorking Name 후보:\n1.\n2.\n3.\n4.\n5.\n\nTagline 후보:\n1.\n2.\n3.\n\n===== BRAND VOICE RULES =====\n\nDO:\n-\n\nDON'T:\n-\n\nPreferred Words:\n-\n\nAvoid Words:\n-\n\n===== VISUAL DIRECTION A =====\n\nMood:\nColor:\nTypography:\nImage:\nLogo:\nAvoid:\nStrategy Fit:\n\n===== VISUAL DIRECTION B =====\n...\n\n===== VISUAL DIRECTION C =====\n...\n\n===== IMAGE STYLE SPEC =====\n\nSubject:\nEnvironment:\nMood:\nLighting:\nComposition:\nStyle:\nMust Include:\nAvoid:\nGuardrail:\n\n===== MUST / PREFER / AVOID / NEVER =====\n\nMUST:\n-\n\nPREFER:\n-\n\nAVOID:\n-\n\nNEVER:\n-\n\n===== AI RECOMMENDED BRAND KIT =====\n\nWorking Name:\nTagline:\nKey Message:\nVisual Direction:\nColor Direction:\nTypography Direction:\nImage Style:\nLogo Direction:\nVoice:\nGuardrail:\n\n===== HUMAN DECISION REQUIRED =====\n\n-",
             "targetTool": "ChatGPT",
             "copyable": true
           }
         },
         {
-          "id": "d10l2-p08-link",
+          "id": "d10l2-b02-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p09",
-      "title": "AI 결과 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l2-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 결과 검수\n\n- 원자료와 대조\n- 누락 확인\n- 과장 삭제\n- 확인 필요 표시",
-            "emphasis": "normal"
+            "practiceName": "Evidence-bound Brand Kit Architect",
+            "practiceDescription": "Naming/Tagline 후보, Brand Voice Rules, Visual Direction 3안, Image Style Spec, MUST/PREFER/AVOID/NEVER, AI Recommended Brand Kit을 만듭니다.",
+            "estimatedMinutes": 8
           }
         },
         {
-          "id": "d10l2-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p10",
-      "title": "이해 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l2-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d10l2-p10-q-q1",
-                "question": "가장 먼저 확인해야 할 기준은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d10l2-p10-q-c1",
-                    "text": "표현이 화려한가"
-                  },
-                  {
-                    "id": "d10l2-p10-q-c2",
-                    "text": "근거·목표·대상과 연결되는가"
-                  },
-                  {
-                    "id": "d10l2-p10-q-c3",
-                    "text": "AI가 자신 있게 말하는가"
-                  },
-                  {
-                    "id": "d10l2-p10-q-c4",
-                    "text": "슬라이드 수가 많은가"
-                  }
-                ],
-                "correctChoiceId": "d10l2-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "d10l2-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정답은 **근거·목표·대상과 연결되는가**입니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l2-p11",
-      "title": "최종 결과 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l2-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 결과 정리\n\n다음 단계에서 재사용할 수 있도록 근거와 선택 이유까지 남깁니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l2-final-form",
+          "id": "d10l2-b02-result-form",
           "type": "input-form",
+          "title": "30차시 AI Brand Kit 결과",
           "visibility": "visible",
-          "title": "Make·Zapier로 최소 자동화 구현 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d10l2-final-form-f1",
-                "label": "최종 결과물",
+                "id": "r1",
+                "label": "30차시 AI Brand Kit 결과",
                 "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l2-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l2-final-form-f3",
-                "label": "검증 필요 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l2-final-form-f4",
-                "label": "다음 행동",
-                "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기에 붙여넣으세요."
               }
             ]
           }
@@ -396,40 +476,2525 @@
       ]
     },
     {
-      "id": "d10l2-p12",
-      "title": "저장 및 다음 단계",
+      "id": "p03",
+      "title": "사람의 결정 — Brand Director Board",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d10l2-b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사람의 결정 — Brand Director Board",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l2-b03-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Naming 5개, Tagline 3개, Visual 3개를 각각 폼으로 다시 옮겨 적지 않습니다. AI Raw는 한 번만 저장하고 사람이 선택합니다."
+          }
+        },
+        {
+          "id": "d10l2-b03-form",
+          "type": "input-form",
+          "title": "Human Decision",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "h1",
+                "label": "Working Brand Name — 사용 가능성 미검증",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 후보 중 하나를 선택하거나 수정하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h2",
+                "label": "이름 선택 이유 (Name Selection Reason)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "왜 이 이름을 골랐는가? 예: 방문돌봄과 연결이라는 서비스 범위를 과장 없이 표현하며 Brand Promise와 가장 잘 맞는다."
+              },
+              {
+                "id": "h3",
+                "label": "최종 Tagline (Final Tagline)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "선택·수정한 Tagline.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h4",
+                "label": "최종 Key Message (Final Key Message)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "고객에게 반복 사용할 1-2문장.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h5",
+                "label": "비주얼 방향 (Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: Calm / Warm / Clear / High Readability",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h6",
+                "label": "컬러 방향 (Color Direction)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "색상 코드를 일일이 입력하기보다 방향을 저장하세요. 예: 차분한 Primary + 따뜻한 Secondary + 명확한 CTA Accent",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h7",
+                "label": "타이포그래피 방향 (Typography Direction)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 명확한 Sans-serif 중심, Heading은 따뜻하지만 단정하게, Body/UI는 가독성 우선",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h8",
+                "label": "이미지 스타일 (Image Style)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 실제 생활공간의 보호자·반려동물 중심, 자연광, 따뜻하지만 과도하게 귀엽거나 의료적으로 보이지 않는 사진 스타일",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h9",
+                "label": "Brand Kit 안전장치 (Brand Kit Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "MUST/AVOID/NEVER 중 가장 중요한 내용을 짧게 정리하세요. 예: Caring하게 표현하되 질병 진단·치료효과·검증되지 않은 전문성을 암시하지 않는다."
+              },
+              {
+                "id": "h10",
+                "label": "Brand Kit 상태 (Brand Kit Status)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "READY FOR CREATIVE USE",
+                  "NEEDS NAME REVIEW",
+                  "NEEDS VISUAL REVISION",
+                  "NEEDS CLAIM REVIEW"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l2-b03-check",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 빠른 Brand Kit Check — Strategy Fit\n\n- [ ] Name이 Positioning과 맞는다\n- [ ] Tagline이 Brand Promise를 과장하지 않는다\n- [ ] Visual Direction이 Personality와 맞는다\n- [ ] Voice와 Visual이 서로 다른 브랜드처럼 보이지 않는다\n- [ ] Claim Boundary가 유지된다"
+          }
+        },
+        {
+          "id": "d10l2-b03-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**예쁜가? 보다 먼저, 우리 Brand Strategy와 같은가?**"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "Canva 시작 전 — Brand Board 템플릿",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d10l2-p12-preview",
+          "id": "d10l2-b04-badge",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사 시연 + 학생 동시 제작** — Canva Guided Live Build 약 20분",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d10l2-b04-goal",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "목표는 Logo 만들기가 아니라 **Brand Strategy가 실제 Visual System으로 보이는지 확인**하는 것입니다."
+          }
+        },
+        {
+          "id": "d10l2-b04-prep",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "강사가 미리 준비할 것: Canva에 Brand Board 템플릿 1장. 6영역이면 충분합니다. 학생에게 템플릿 쇼핑을 시키지 않습니다."
+          }
+        },
+        {
+          "id": "d10l2-b04-areas",
+          "type": "infographic",
+          "title": "Brand Board 6영역",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Working Name + Tagline"
+              },
+              {
+                "label": "Positioning / Promise"
+              },
+              {
+                "label": "Primary / Secondary / Accent / Neutral"
+              },
+              {
+                "label": "Heading / Body Typography"
+              },
+              {
+                "label": "Image Style Sample"
+              },
+              {
+                "label": "MUST / AVOID / NEVER"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l2-b04-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://www.canva.com/",
+            "buttonLabel": "Canva 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Brand Board Guided Build",
+            "practiceDescription": "준비된 Brand Board 템플릿을 사본으로 만들고 Working Name/Tagline/Color/Typography/Image Style/Guardrail을 채웁니다.",
+            "estimatedMinutes": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "Canva STEP 1-2 — Name·Tagline, Color",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l2-b05-step1-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 1 — Working Name + Tagline"
+          }
+        },
+        {
+          "id": "d10l2-b05-step1",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "학생이 웹앱에서 선택한 Working Name과 Tagline을 그대로 넣습니다. 예: \"PET CARE LINK\" / \"곁에 없을 때도, 돌봄은 이어지도록.\"\n\n**중요: 멋있어 보이게 변경하지 않습니다.** 이미 선택한 Strategy를 표현합니다."
+          }
+        },
+        {
+          "id": "d10l2-b05-step2-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 2 — Color Direction"
+          }
+        },
+        {
+          "id": "d10l2-b05-step2",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "GPT가 제안한 Color Direction으로 실제 Palette를 하나 만듭니다. 예: Brand = Calm / Caring / Clear → Canva에서 Primary / Secondary / Accent / Neutral 4개 역할로 봅니다."
+          }
+        },
+        {
+          "id": "d10l2-b05-question",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사가 묻습니다**: \"이 Palette가 예쁜가?\"가 아니라 **\"이 Palette가 Calm / Caring / Clear를 표현하는가?\"**"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "Canva STEP 3 — Typography + Image AI 1장",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l2-b06-step3-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 3 — Typography"
+          }
+        },
+        {
+          "id": "d10l2-b06-step3",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Heading / Body 두 단계면 충분합니다. 폰트 20개를 비교시키지 않습니다.\n\nHeading = Brand Personality를 표현. Body = Readability(가독성) 우선. 모바일 화면이라면 특히 가독성 우선을 보여줍니다."
+          }
+        },
+        {
+          "id": "d10l2-b06-image-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Image AI — 1장만 생성 (선택)"
+          }
+        },
+        {
+          "id": "d10l2-b06-image",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "GPT가 만든 Image Style Spec을 그대로 프롬프트 재료로 씁니다. 예(반려동물 사례): \"실제 한국의 생활공간, 보호자가 집을 비운 동안 방문 돌봄을 받는 반려견, 펫시터가 차분하게 식사 상태와 행동을 기록하는 장면, 따뜻한 자연광, 신뢰감 있고 현실적인 라이프스타일 사진, 과도한 의료 분위기 없음, 공포나 응급상황 연출 없음, 텍스트 없음\""
+          }
+        },
+        {
+          "id": "d10l2-b06-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "이미지 생성 AI에서 실행",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "Image Style 생성 (선택)",
+            "practiceDescription": "Image Style Spec을 프롬프트로 사용해 1장만 생성합니다. 핵심은 Image AI Prompt도 Brand Kit을 따라간다는 것을 보여주는 것입니다.",
+            "estimatedMinutes": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "Canva STEP 4 — Image·Logo Direction",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l2-b07-step4-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 4 — Image Style 넣기"
+          }
+        },
+        {
+          "id": "d10l2-b07-step4",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "생성 이미지 1장을 Brand Board에 넣습니다. 그다음 질문합니다.\n\n이 이미지가 Positioning과 맞는가? Personality와 맞는가? 고객에게 잘못된 Capability를 암시하지 않는가?\n\n**이것이 단순 이미지 생성 수업과 다른 점입니다.**"
+          }
+        },
+        {
+          "id": "d10l2-b07-logo-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Logo는 어떻게 할까?"
+          }
+        },
+        {
+          "id": "d10l2-b07-logo",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Logo Direction까지만 강하게 가르치고, 생성은 선택적으로 둡니다. 예: Combination Mark / Simple / Rounded but not childish / Calm / Professional. Canva에서 5분 남으면 Wordmark 정도만 임시로 보여줍니다.\n\n**학생 결과에는 \"Final Logo\"라고 저장하지 않습니다. 저장은 \"Logo Direction\"입니다.**"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "시연 — Brand Drift 보여주기",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l2-b08-badge",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사 시연** — 일부러 Brand Drift를 만들어 보여주기",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d10l2-b08-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "현재 Brand: Calm / Caring / Clear. Image AI에 \"더 자극적이고 바이럴하게 만들어줘\"라고 요청합니다."
+          }
+        },
+        {
+          "id": "d10l2-b08-result",
+          "type": "infographic",
+          "title": "결과",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "강한 빨강"
+              },
+              {
+                "label": "응급실 느낌"
+              },
+              {
+                "label": "놀란 반려동물"
+              },
+              {
+                "label": "경고 그래픽"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l2-b08-questions",
+          "type": "infographic",
+          "title": "질문",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "더 눈에 띄게 됐나?",
+                "description": "그렇다."
+              },
+              {
+                "label": "더 우리 브랜드다워졌나?",
+                "description": "아니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l2-b08-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 이게 Brand Drift입니다.",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "시연 — Naming 비교",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l2-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Naming 시연 — 반려동물 사례",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l2-b09-compare",
+          "type": "infographic",
+          "title": "AI Naming 후보",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "PetDoctor AI",
+                "description": "문제: 진료/진단 서비스 기대 가능성"
+              },
+              {
+                "label": "PetCare Link",
+                "description": "장점: 돌봄 + 연결이라는 현재 Capability와 상대적으로 잘 맞음"
+              },
+              {
+                "label": "HappyPuppy",
+                "description": "문제: 귀엽지만 병원안내·신뢰 요소와 연결이 약하고 반려견 이외 확장에도 제약 가능"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l2-b09-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "학생에게 **\"뭐가 더 멋있나요?\"**가 아니라 **\"뭐가 Positioning에 가장 맞나요?\"**라고 묻습니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d10l2-b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 결과 저장 / 완료",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l2-b10-preview",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## YOUR BRAND KIT v0.1 (예시)\n\n**Working Name**: PetCare Link — UNVERIFIED\n\n**Tagline**: 곁에 없을 때도, 돌봄은 이어지도록.\n\n**Personality**: Calm / Caring / Clear\n\n**Voice**: 차분하게 / 사실 먼저 / 다음 행동 명확하게\n\n**Visual Direction**: Warm / Calm / High Readability\n\n**Image Style**: Real-life / Natural Light / Caring Interaction\n\n**MUST**: 실제 관찰정보와 Capability 안에서 설명\n\n**AVOID**: 과도한 의료·응급 이미지\n\n**NEVER**: 진단·치료효과·검증되지 않은 전문성 주장"
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l2-b10-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### A. Generative AI Brand Kit 저장"
+          }
+        },
+        {
+          "id": "d10l2-b10-map-form",
+          "type": "input-form",
+          "title": "30차시 — Generative AI Brand Kit v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "m1",
+                "label": "작업용 브랜드 이름 (Working Brand Name)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m2",
+                "label": "Name 상태 (Name Status)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "WORKING",
+                  "UNVERIFIED"
+                ]
+              },
+              {
+                "id": "m3",
+                "label": "태그라인 (Tagline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m4",
+                "label": "핵심 메시지 (Key Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m5",
+                "label": "브랜드 말투 규칙 (Brand Voice Rules)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 결과의 BRAND VOICE RULES(DO/DON'T, Preferred/Avoid Words)를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m6",
+                "label": "비주얼 방향 (Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m7",
+                "label": "컬러 방향 (Color Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m8",
+                "label": "타이포그래피 방향 (Typography Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m9",
+                "label": "이미지 스타일 (Image Style)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m10",
+                "label": "로고 방향 (Logo Direction)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 결과의 Visual Direction 중 Logo 항목이나 AI RECOMMENDED BRAND KIT의 Logo Direction을 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m11",
+                "label": "필수 규칙 (MUST)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 결과의 MUST / PREFER / AVOID / NEVER 중 MUST를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m12",
+                "label": "권장 규칙 (PREFER)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "PREFER를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m13",
+                "label": "회피 규칙 (AVOID)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AVOID를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m14",
+                "label": "금지 규칙 (NEVER)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "NEVER를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "30차시 AI Brand Kit 결과에서 가져오기",
+                    "sourceBlockId": "d10l2-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m15",
+                "label": "Brand Kit 상태 (Brand Kit Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l2-b03-form",
+                    "sourceFieldIds": [
+                      "h10"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l2-b10-map-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "30차시 — Generative AI Brand Kit v0.1",
+            "sourceBlockId": "d10l2-b10-map-form",
+            "buttonLabel": "Generative AI Brand Kit v0.1 저장"
+          }
+        },
+        {
+          "id": "d10l2-b10-map-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "automation",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "artifactType": "business-idea",
+            "emptyMessage": "아직 저장된 결과가 없습니다."
           }
         },
         {
-          "id": "d10l2-p12-save",
+          "id": "d10l2-b10-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### B. Business Context 누적 저장"
+          }
+        },
+        {
+          "id": "d10l2-b10-context-form",
+          "type": "input-form",
+          "title": "30차시 — Business Context v0.30",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "c1",
+                "label": "1순위 고객 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "c2",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c3",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "c4",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "c5",
+                "label": "핵심 메시지 대상 Actor (Primary Message Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 메시지 대상 Actor (Primary Message Actor)"
+                  }
+                ]
+              },
+              {
+                "id": "c6",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "c7",
+                "label": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "c8",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
+                  }
+                ]
+              },
+              {
+                "id": "c9",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "c10",
+                "label": "최종 핵심 메시지 (Final Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c11",
+                "label": "메시지 불변요소 / 경계 (Message Invariants / Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "메시지 불변요소 / 경계 (Message Invariants / Boundary)"
+                  }
+                ]
+              },
+              {
+                "id": "c12",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "c13",
+                "label": "Offer 안전장치 (Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Offer 안전장치 (Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c14",
+                "label": "연락 대상 Context (Recipient Context)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "연락 대상 Context (Recipient Context)"
+                  }
+                ]
+              },
+              {
+                "id": "c15",
+                "label": "전환 목표 (Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "전환 목표 (Conversion Goal)"
+                  }
+                ]
+              },
+              {
+                "id": "c16",
+                "label": "Landing 1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Landing 1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c17",
+                "label": "우선순위 FAQ (Priority FAQ)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "우선순위 FAQ (Priority FAQ)"
+                  }
+                ]
+              },
+              {
+                "id": "c18",
+                "label": "사람 이관 규칙 (Human Handoff Rule)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "사람 이관 규칙 (Human Handoff Rule)"
+                  }
+                ]
+              },
+              {
+                "id": "c19",
+                "label": "고객응대 안전장치 (Customer Response Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객응대 안전장치 (Customer Response Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c20",
+                "label": "1순위 Channel (Primary Channel)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 Channel (Primary Channel)"
+                  }
+                ]
+              },
+              {
+                "id": "c21",
+                "label": "고객 관계 (Customer Relationship)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객 관계 (Customer Relationship)"
+                  }
+                ]
+              },
+              {
+                "id": "c22",
+                "label": "Revenue 가설 (Revenue Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Revenue 가설 (Revenue Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c23",
+                "label": "핵심 활동 (Key Activities)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 활동 (Key Activities)"
+                  }
+                ]
+              },
+              {
+                "id": "c24",
+                "label": "핵심 자원 (Key Resources)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 자원 (Key Resources)"
+                  }
+                ]
+              },
+              {
+                "id": "c25",
+                "label": "핵심 파트너 (Key Partners)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 파트너 (Key Partners)"
+                  }
+                ]
+              },
+              {
+                "id": "c26",
+                "label": "주요 비용 요인 (Main Cost Driver)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "주요 비용 요인 (Main Cost Driver)"
+                  }
+                ]
+              },
+              {
+                "id": "c27",
+                "label": "가장 약한 사업모델 연결 (Weakest Business Model Link)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가장 약한 사업모델 연결 (Weakest Business Model Link)"
+                  }
+                ]
+              },
+              {
+                "id": "c28",
+                "label": "가장 위험한 모델 가설 (Highest-risk Model Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가장 위험한 모델 가설 (Highest-risk Model Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c29",
+                "label": "바람직성 (Desirability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "바람직성 (Desirability)"
+                  }
+                ]
+              },
+              {
+                "id": "c30",
+                "label": "실행 가능성 (Feasibility)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "실행 가능성 (Feasibility)"
+                  }
+                ]
+              },
+              {
+                "id": "c31",
+                "label": "지속 가능성 (Viability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "지속 가능성 (Viability)"
+                  }
+                ]
+              },
+              {
+                "id": "c32",
+                "label": "고객이 돈을 내는 가치 (Value for Payment)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객이 돈을 내는 가치 (Value for Payment)"
+                  }
+                ]
+              },
+              {
+                "id": "c33",
+                "label": "1순위 Pricing Metric (Primary Pricing Metric)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 Pricing Metric (Primary Pricing Metric)"
+                  }
+                ]
+              },
+              {
+                "id": "c34",
+                "label": "주요 대안 (Primary Alternative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "주요 대안 (Primary Alternative)"
+                  }
+                ]
+              },
+              {
+                "id": "c35",
+                "label": "가격 가설 (Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가격 가설 (Price Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c36",
+                "label": "가격 근거 상태 (Pricing Evidence Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가격 근거 상태 (Pricing Evidence Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c37",
+                "label": "가장 위험한 가격 가설 (Highest-risk Pricing Assumption)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가장 위험한 가격 가설 (Highest-risk Pricing Assumption)"
+                  }
+                ]
+              },
+              {
+                "id": "c38",
+                "label": "가격 검증 대상 (Pricing Validation Audience)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가격 검증 대상 (Pricing Validation Audience)"
+                  }
+                ]
+              },
+              {
+                "id": "c39",
+                "label": "가격 검증 질문 (Pricing Validation Questions)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가격 검증 질문 (Pricing Validation Questions)"
+                  }
+                ]
+              },
+              {
+                "id": "c40",
+                "label": "One-Pager 헤드라인 (One-Pager Headline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "One-Pager 헤드라인 (One-Pager Headline)"
+                  }
+                ]
+              },
+              {
+                "id": "c41",
+                "label": "One-Pager 핵심 가치 (One-Pager Core Value)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "One-Pager 핵심 가치 (One-Pager Core Value)"
+                  }
+                ]
+              },
+              {
+                "id": "c42",
+                "label": "One-Pager 구조 (One-Pager Structure)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "One-Pager 구조 (One-Pager Structure)"
+                  }
+                ]
+              },
+              {
+                "id": "c43",
+                "label": "One-Pager 근거 (One-Pager Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "One-Pager 근거 (One-Pager Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "c44",
+                "label": "Package 표시 결정 (Package Display Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Package 표시 결정 (Package Display Decision)"
+                  }
+                ]
+              },
+              {
+                "id": "c45",
+                "label": "One-Pager 행동 유도 (One-Pager CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "One-Pager 행동 유도 (One-Pager CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c46",
+                "label": "커뮤니케이션 상태 (Communication Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "커뮤니케이션 상태 (Communication Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c47",
+                "label": "Package 전략 (Package Strategy)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Package 전략 (Package Strategy)"
+                  }
+                ]
+              },
+              {
+                "id": "c48",
+                "label": "손익분기 판매량 (Break-even Units)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "손익분기 판매량 (Break-even Units)"
+                  }
+                ]
+              },
+              {
+                "id": "c49",
+                "label": "사업계획 핵심 문제 (Business Plan Core Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "사업계획 핵심 문제 (Business Plan Core Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c50",
+                "label": "사업계획 고객 (Business Plan Customer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "사업계획 고객 (Business Plan Customer)"
+                  }
+                ]
+              },
+              {
+                "id": "c51",
+                "label": "사업계획 해결책 (Business Plan Solution)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "사업계획 해결책 (Business Plan Solution)"
+                  }
+                ]
+              },
+              {
+                "id": "c52",
+                "label": "시장 / 대안 Gap (Market / Alternative Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "시장 / 대안 Gap (Market / Alternative Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c53",
+                "label": "사업모델 서술 (Business Model Narrative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "사업모델 서술 (Business Model Narrative)"
+                  }
+                ]
+              },
+              {
+                "id": "c54",
+                "label": "실행 우선순위 (Execution Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "실행 우선순위 (Execution Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "c55",
+                "label": "핵심 Milestone (Key Milestones)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 Milestone (Key Milestones)"
+                  }
+                ]
+              },
+              {
+                "id": "c56",
+                "label": "가장 위험한 계획 가설 (Highest-risk Plan Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가장 위험한 계획 가설 (Highest-risk Plan Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c57",
+                "label": "추가조사 목록 (Research Backlog)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "추가조사 목록 (Research Backlog)"
+                  }
+                ]
+              },
+              {
+                "id": "c58",
+                "label": "계획 준비도 (Plan Readiness)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "계획 준비도 (Plan Readiness)"
+                  }
+                ]
+              },
+              {
+                "id": "c59",
+                "label": "Business Plan Draft v0.1 전문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Business Plan Draft v0.1 전문"
+                  }
+                ]
+              },
+              {
+                "id": "c60",
+                "label": "Draft 상태 (Draft Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Draft 상태 (Draft Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c61",
+                "label": "계획 확정 내용 (Confirmed Plan Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "계획 확정 내용 (Confirmed Plan Content)"
+                  }
+                ]
+              },
+              {
+                "id": "c62",
+                "label": "계획 가설 내용 (Hypothesis Plan Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "계획 가설 내용 (Hypothesis Plan Content)"
+                  }
+                ]
+              },
+              {
+                "id": "c63",
+                "label": "계획 근거 공백 (Plan Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "계획 근거 공백 (Plan Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c64",
+                "label": "계획 주장 금지 항목 (Plan Do Not Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "계획 주장 금지 항목 (Plan Do Not Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "c65",
+                "label": "가장 약한 계획 Section (Weakest Plan Section)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가장 약한 계획 Section (Weakest Plan Section)"
+                  }
+                ]
+              },
+              {
+                "id": "c66",
+                "label": "AI 창작 여부 상태 (AI Invention Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "AI 창작 여부 상태 (AI Invention Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c67",
+                "label": "다음 Critic 검토 대상 (Next Critic Focus)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "다음 Critic 검토 대상 (Next Critic Focus)"
+                  }
+                ]
+              },
+              {
+                "id": "c68",
+                "label": "고객용 서비스 문장 (Customer-facing Service Statement)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객용 서비스 문장 (Customer-facing Service Statement)"
+                  }
+                ]
+              },
+              {
+                "id": "c69",
+                "label": "Service Introduction Draft v0.1 전문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Service Introduction Draft v0.1 전문"
+                  }
+                ]
+              },
+              {
+                "id": "c70",
+                "label": "유지 정보 (Keep Information)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "유지 정보 (Keep Information)"
+                  }
+                ]
+              },
+              {
+                "id": "c71",
+                "label": "번역 정보 (Translated Information)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "번역 정보 (Translated Information)"
+                  }
+                ]
+              },
+              {
+                "id": "c72",
+                "label": "제거된 내부 정보 (Removed Internal Information)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "제거된 내부 정보 (Removed Internal Information)"
+                  }
+                ]
+              },
+              {
+                "id": "c73",
+                "label": "고객용 Proof (Customer-facing Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "고객용 Proof (Customer-facing Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "c74",
+                "label": "문서 변형 방지선 (Document Drift Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "문서 변형 방지선 (Document Drift Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c75",
+                "label": "Service Intro 상태 (Service Intro Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Service Intro 상태 (Service Intro Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c76",
+                "label": "가장 중요한 Critic Issue (Highest Priority Critic Issue)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "가장 중요한 Critic Issue (Highest Priority Critic Issue)"
+                  }
+                ]
+              },
+              {
+                "id": "c77",
+                "label": "Critic 사람 결정 (Critic Human Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Critic 사람 결정 (Critic Human Decision)"
+                  }
+                ]
+              },
+              {
+                "id": "c78",
+                "label": "Critic 결정 이유 (Critic Decision Reason)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Critic 결정 이유 (Critic Decision Reason)"
+                  }
+                ]
+              },
+              {
+                "id": "c79",
+                "label": "Business Plan 수정 우선순위 (Business Plan Revision Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Business Plan 수정 우선순위 (Business Plan Revision Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "c80",
+                "label": "Service Intro 수정 우선순위 (Service Intro Revision Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Service Intro 수정 우선순위 (Service Intro Revision Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "c81",
+                "label": "Cross-document Drift 상태 (Cross-document Drift Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Cross-document Drift 상태 (Cross-document Drift Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c82",
+                "label": "핵심 Evidence 공백 (Critical Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "핵심 Evidence 공백 (Critical Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c83",
+                "label": "수정 방향 (Revision Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "수정 방향 (Revision Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c84",
+                "label": "Critic 상태 (Critic Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Critic 상태 (Critic Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c85",
+                "label": "다음 문서 작업 (Next Document Action)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "다음 문서 작업 (Next Document Action)"
+                  }
+                ]
+              },
+              {
+                "id": "c86",
+                "label": "최종 브랜드 Positioning (Final Brand Positioning)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "최종 브랜드 Positioning (Final Brand Positioning)"
+                  }
+                ]
+              },
+              {
+                "id": "c87",
+                "label": "브랜드 카테고리 (Brand Category)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 카테고리 (Brand Category)"
+                  }
+                ]
+              },
+              {
+                "id": "c88",
+                "label": "브랜드 약속 (Brand Promise)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 약속 (Brand Promise)"
+                  }
+                ]
+              },
+              {
+                "id": "c89",
+                "label": "1순위 Brand Personality (Primary Brand Personality)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "1순위 Brand Personality (Primary Brand Personality)"
+                  }
+                ]
+              },
+              {
+                "id": "c90",
+                "label": "보조 Brand Personality (Supporting Brand Personality)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "보조 Brand Personality (Supporting Brand Personality)"
+                  }
+                ]
+              },
+              {
+                "id": "c91",
+                "label": "브랜드가 되지 않을 모습 (Brand NOT)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드가 되지 않을 모습 (Brand NOT)"
+                  }
+                ]
+              },
+              {
+                "id": "c92",
+                "label": "브랜드 말투 (Brand Voice)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 말투 (Brand Voice)"
+                  }
+                ]
+              },
+              {
+                "id": "c93",
+                "label": "브랜드 일관성 안전장치 (Brand Consistency Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "브랜드 일관성 안전장치 (Brand Consistency Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c94",
+                "label": "Brand Direction 상태 (Brand Direction Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "Brand Direction 상태 (Brand Direction Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c95",
+                "label": "다음 Brand Kit 검토 대상 (Next Brand Kit Focus)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "29차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "29차시 — Business Context v0.29",
+                    "sourceLabel": "다음 Brand Kit 검토 대상 (Next Brand Kit Focus)"
+                  }
+                ]
+              },
+              {
+                "id": "n1",
+                "label": "작업용 브랜드 이름 (Working Brand Name)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n2",
+                "label": "Working Name 상태 (Working Name Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n3",
+                "label": "최종 Tagline (Final Tagline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n4",
+                "label": "최종 Key Message (Final Key Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n5",
+                "label": "브랜드 말투 규칙 (Brand Voice Rules)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n6",
+                "label": "최종 Visual Direction (Final Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n7",
+                "label": "컬러 방향 (Color Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n8",
+                "label": "타이포그래피 방향 (Typography Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n9",
+                "label": "이미지 스타일 (Image Style)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n10",
+                "label": "로고 방향 (Logo Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n11",
+                "label": "브랜드 필수 규칙 (Brand MUST)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m11"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n12",
+                "label": "브랜드 권장 규칙 (Brand PREFER)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n13",
+                "label": "브랜드 회피 규칙 (Brand AVOID)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m13"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n14",
+                "label": "브랜드 금지 규칙 (Brand NEVER)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m14"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n15",
+                "label": "Brand Kit 상태 (Brand Kit Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Generative AI Brand Kit에서 가져오기",
+                    "sourceBlockId": "d10l2-b10-map-form",
+                    "sourceFieldIds": [
+                      "m15"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n16",
+                "label": "다음 IR 커뮤니케이션 검토 대상 (Next IR Communication Focus)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이 Brand Kit을 실제 IR·사업계획서 커뮤니케이션에 적용하기 전에 가장 먼저 확인해야 할 것은 무엇인가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l2-b10-context-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day10 Lesson2 — Make·Zapier로 최소 자동화 구현",
           "data": {
-            "artifactType": "automation",
-            "artifactTitle": "Day10 Lesson2 — Make·Zapier로 최소 자동화 구현",
-            "sourceBlockId": "d10l2-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "30차시 — Business Context v0.30",
+            "sourceBlockId": "d10l2-b10-context-form",
+            "buttonLabel": "Business Context v0.30 저장"
           }
         },
         {
-          "id": "d10l2-p12-reflection",
-          "type": "reflection",
+          "id": "d10l2-b10-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 검증 항목은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## 다음 단계\n\n오늘 만든 Working Name/Tagline/Voice/Visual Direction은 앞으로 AI에 다시 넣어서 홈페이지나 SNS를 만드는 데 그대로 쓸 수 있는 기준입니다.",
+            "emphasis": "lead"
           }
         }
       ]
