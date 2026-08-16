@@ -4,8 +4,8 @@
   "week": 4,
   "day": 10,
   "lesson": 4,
-  "title": "사람 승인·오류 알림·수동 대체 절차",
-  "description": "외부 발송 전 사람 승인을 두고 실패해도 문의가 사라지지 않는 운영 절차를 만듭니다.",
+  "title": "IR Deck Production — Story를 판단하기 쉬운 슬라이드로",
+  "description": "31차시 IR Story Blueprint를 근거로 Slide Production Map, Gamma Generation Brief를 만들고, Gamma+Canva Guided Live Build로 실제 IR Deck v0.1을 완성합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -13,382 +13,650 @@
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d10l4-p01",
-      "title": "오늘 만들 결과물",
-      "layout": "standard",
+      "id": "p01",
+      "title": "IR Deck Production 핵심 이론",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d10l4-p01-b1",
+          "id": "d10l4-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 사람 승인·오류 알림·수동 대체 절차\n\n**외부 발송 전 사람 승인을 두고 실패해도 문의가 사라지지 않는 운영 절차를 만듭니다.**",
+            "markdown": "# IR Deck Production\n\n## Story를 판단하기 쉬운 슬라이드로 변환하기",
             "emphasis": "hero"
-          }
-        },
-        {
-          "id": "d10l4-p01-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "오늘은 결과물 수보다 **근거와 판단 기준**을 우선합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l4-p01-i",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 수강생의 실제 사업 단계에 따라 없는 실적·고객·숫자를 만들지 않도록 강조합니다.",
-            "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p02",
-      "title": "핵심 구조",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l4-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 핵심 구조\n\n- 입력 자료를 먼저 정리합니다.\n- AI가 추가한 내용과 원자료를 구분합니다.\n- 결과물은 다음 Lesson에서 재사용합니다.",
-            "emphasis": "normal"
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d10l4-p02-img",
-          "type": "image",
+          "id": "d10l4-b01-roles",
+          "type": "infographic",
+          "title": "31차시 vs 32차시",
           "visibility": "visible",
           "data": {
-            "url": "/lesson-content/day10/d10l4_framework.svg",
-            "alt": "사람 승인·오류 알림·수동 대체 절차 구조",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p03",
-      "title": "좋은 결과물의 기준",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l4-p03-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 좋은 결과물의 기준\n\n- 명확성\n- 근거 연결\n- 대상 적합성\n- 다음 행동",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l4-p03-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p04",
-      "title": "흔한 실패",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l4-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 흔한 실패\n\n- 근거 없는 숫자\n- 가짜 고객·성과\n- 추측을 사실처럼 표현\n- 한 번에 너무 많은 자동화",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l4-p04-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p05",
-      "title": "실무 체크리스트",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l4-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실무 체크리스트\n\n- 사실/가설 분리\n- 개인정보 최소화\n- 외부 공개 전 사람 검수",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l4-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p06",
-      "title": "인터랙티브 판단 연습",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l4-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브 판단 연습\n\n카드를 눌러 사실·가설·검증 필요를 구분합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l4-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/day10/d10l4_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p07",
-      "title": "내 사업 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l4-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 내 사업 입력\n\n실제 고객 개인정보 대신 익명화·가명·공개 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l4-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "사람 승인·오류 알림·수동 대체 절차 입력",
-          "data": {
-            "fields": [
+            "variant": "comparison",
+            "items": [
               {
-                "id": "d10l4-p07-form-f1",
-                "label": "현재 사업/서비스 한 문장",
-                "kind": "long-text",
-                "required": true
+                "label": "31차시",
+                "description": "무엇을 말할 것인가"
               },
               {
-                "id": "d10l4-p07-form-f2",
-                "label": "확인된 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l4-p07-form-f3",
-                "label": "현재 가설",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l4-p07-form-f4",
-                "label": "이번 Lesson에서 만들 결과물",
-                "kind": "long-text",
-                "required": true
+                "label": "32차시",
+                "description": "어떻게 보여줄 것인가"
               }
             ]
           }
+        },
+        {
+          "id": "d10l4-b01-result",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**이번 차시 완료 결과**: ① Deck Production Brief ② 실제 IR Deck v0.1 ③ Human Deck Review 결과"
+          }
+        },
+        {
+          "id": "d10l4-b01-allowed",
+          "type": "infographic",
+          "title": "오늘 AI에게 시킬 것 vs 맡기지 않을 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "오늘 AI에게 시킬 것",
+                "description": "IR Story를 Slide 단위로 변환\n각 Slide의 질문과 Takeaway 결정\n정보 우선순위 지정\n적절한 Visual Type 선택\nEvidence 표시\nGamma용 제작 Brief 작성"
+              },
+              {
+                "label": "오늘 AI에게 맡기지 않을 것",
+                "description": "시장 숫자 생성\n그래프 데이터 생성\nTraction 생성\n고객·Partner 생성\n없는 Feature 생성\nStory 자체 재설계\nClaim 강화"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l4-b01-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Story는 이미 31차시에서 결정했습니다.\n\n32차시는 Story를 다시 만드는 시간이 아닙니다.",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l4-b01-instructor",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "전체 수업 — Context 자동 가져오기 2분, GPT IR Deck Production Director 1회 7분, Human Deck Direction 결정 4분, Production Brief 확인 및 저장 7분, 이후 Gamma → Canva Guided Live Build 약 20분. 웹앱 GPT는 정확히 1회 — Gamma 생성은 별도 제작도구 사용이므로 웹앱 GPT 횟수와 분리한다."
+          }
         }
       ]
     },
     {
-      "id": "d10l4-p08",
-      "title": "ChatGPT 실습 프롬프트",
-      "layout": "wide",
+      "id": "p02",
+      "title": "실습 — Deck Production Brief 받기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d10l4-p08-b1",
+          "id": "d10l4-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## ChatGPT 실습 프롬프트",
-            "emphasis": "normal"
+            "markdown": "## 실습 — Deck Production Brief 받기",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d10l4-p08-prompt",
-          "type": "prompt",
+          "id": "d10l4-b02-body",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 코치입니다.\n목표: 외부 발송 전 사람 승인을 두고 실패해도 문의가 사라지지 않는 운영 절차를 만듭니다.\n규칙:\n1. 제공되지 않은 사실·고객·매출·파트너·시장수치를 만들지 않는다.\n2. 사실/계산값/창업자 가설/AI 추론을 구분한다.\n3. 불확실한 내용은 [검증 필요]로 표시한다.\n4. 개인정보·기밀정보를 재생성하지 않는다.\n5. 결과는 초급 창업자가 바로 수정할 수 있는 표와 체크리스트로 만든다.\n\n[사업 설명]\n[확인된 근거]\n[현재 가설]\n[원하는 산출물]",
+            "markdown": "필드가 많아도 학생은 입력하지 않습니다. 31차시까지 누적된 Business Context에서 전부 자동 import합니다."
+          }
+        },
+        {
+          "id": "d10l4-b02-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 IR Audience (Primary IR Audience)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 IR Audience (Primary IR Audience)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "핵심 논지 (IR Core Thesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 IR Core Thesis (Final IR Core Thesis)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "가장 중요한 Investor Question (Primary Investor Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 중요한 Investor Question (Primary Investor Question)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "IR Story 우선순위 (IR Story Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR Story 우선순위 (IR Story Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "IR Story 청사진 (IR Story Blueprint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR Story 청사진 (IR Story Blueprint)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "가장 강한 Evidence (Strongest Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 강한 IR Evidence (Strongest IR Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "가장 큰 Evidence Gap (Biggest Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 큰 IR Evidence Gap (Biggest IR Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "가장 위험한 IR Claim (Highest-risk IR Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 위험한 IR Claim (Highest-risk IR Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "최종 Ask (Final Ask)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 IR Ask (Final IR Ask)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "IR Deck 안전장치 (IR Deck Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR Deck 안전장치 (IR Deck Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "f11",
+                "label": "IR 준비도 (IR Readiness)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR 준비도 (IR Readiness)"
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "1순위 고객 (Primary Customer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f13",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "f14",
+                "label": "핵심 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "f15",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "f16",
+                "label": "현재 제공 가능한 역량 (Actual Capability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 활동 (Key Activities)"
+                  }
+                ]
+              },
+              {
+                "id": "f17",
+                "label": "사업모델 요약 (Business Model Summary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "사업모델 서술 (Business Model Narrative)"
+                  }
+                ]
+              },
+              {
+                "id": "f18",
+                "label": "Revenue / 가격 상태 (Revenue / Pricing Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "Revenue 가설 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Revenue 가설 (Revenue Hypothesis)"
+                  },
+                  {
+                    "kind": "prior-artifact",
+                    "label": "가격 근거 상태 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가격 근거 상태 (Pricing Evidence Status)"
+                  }
+                ]
+              },
+              {
+                "id": "f19",
+                "label": "1순위 GTM (Primary GTM)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 Channel (Primary Channel)"
+                  }
+                ]
+              },
+              {
+                "id": "f20",
+                "label": "실행 우선순위 (Execution Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "실행 우선순위 (Execution Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "f21",
+                "label": "가장 위험한 가설 (Highest-risk Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 위험한 계획 가설 (Highest-risk Plan Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "f22",
+                "label": "주장 경계 / DO NOT CLAIM (Claim Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "계획 주장 금지 항목 (Plan Do Not Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "f23",
+                "label": "작업용 브랜드 이름 (Working Brand Name)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "작업용 브랜드 이름 (Working Brand Name)"
+                  }
+                ]
+              },
+              {
+                "id": "f24",
+                "label": "태그라인 (Tagline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 Tagline (Final Tagline)"
+                  }
+                ]
+              },
+              {
+                "id": "f25",
+                "label": "핵심 메시지 (Key Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 Key Message (Final Key Message)"
+                  }
+                ]
+              },
+              {
+                "id": "f26",
+                "label": "브랜드 성격/말투 (Brand Personality / Voice)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "Brand Personality 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 Brand Personality (Primary Brand Personality)"
+                  },
+                  {
+                    "kind": "prior-artifact",
+                    "label": "Brand Voice 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 말투 (Brand Voice)"
+                  }
+                ]
+              },
+              {
+                "id": "f27",
+                "label": "비주얼 방향 (Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 Visual Direction (Final Visual Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "f28",
+                "label": "컬러 방향 (Color Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "컬러 방향 (Color Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "f29",
+                "label": "타이포그래피 방향 (Typography Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "타이포그래피 방향 (Typography Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "f30",
+                "label": "이미지 스타일 (Image Style)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "이미지 스타일 (Image Style)"
+                  }
+                ]
+              },
+              {
+                "id": "f31",
+                "label": "브랜드 회피/금지 규칙 (Brand AVOID / NEVER)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "Brand AVOID 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 회피 규칙 (Brand AVOID)"
+                  },
+                  {
+                    "kind": "prior-artifact",
+                    "label": "Brand NEVER 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 금지 규칙 (Brand NEVER)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l4-b02-prompt",
+          "type": "prompt",
+          "title": "실습 — Deck Production Brief 받기",
+          "description": "위 Context 준비 칸의 내용을 아래 [ ] 서른한 곳에 순서대로 옮겨 붙인 뒤 실행하세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n\n당신은 새로운 IR Story를 만드는 사람이 아닙니다.\n\n당신은 31차시에서 사람이 결정한 IR Story Blueprint와\n현재 Business Context를 Source of Truth로 사용하여,\n그 Story를 투자자·심사자가 빠르게 이해할 수 있는\n슬라이드 제작 지침으로 변환하는\nEvidence-bound IR Deck Production Director입니다.\n\n새로운 시장정보, 고객수, 성과, 경쟁사, 매출,\nTraction, Partner, 투자성과를 만들지 마세요.\n\n오늘의 목표는 최종 디자인 파일 생성이 아니라\nGamma / Canva에서 사용할 수 있는\nIR Deck Production Brief를 만드는 것입니다.\n\n================================\n[IR SOURCE OF TRUTH]\n================================\n\nPrimary IR Audience:\n[ ]\n\nIR Core Thesis:\n[ ]\n\nPrimary Investor Question:\n[ ]\n\nIR Story Priority:\n[ ]\n\nIR Story Blueprint:\n[ ]\n\nStrongest Evidence:\n[ ]\n\nBiggest Evidence Gap:\n[ ]\n\nHighest-risk IR Claim:\n[ ]\n\nFinal Ask:\n[ ]\n\nIR Deck Guardrail:\n[ ]\n\nIR Readiness:\n[ ]\n\n================================\n[BUSINESS SOURCE OF TRUTH]\n================================\n\nPrimary Customer:\n[ ]\n\nCore Customer Problem:\n[ ]\n\nPrimary Value Proposition:\n[ ]\n\nPrimary Offer:\n[ ]\n\nActual Capability:\n[ ]\n\nBusiness Model Summary:\n[ ]\n\nRevenue / Pricing Status:\n[ ]\n\nPrimary GTM:\n[ ]\n\nExecution Priority:\n[ ]\n\nHighest-risk Hypothesis:\n[ ]\n\nClaim Boundary / DO NOT CLAIM:\n[ ]\n\n================================\n[BRAND KIT]\n================================\n\nWorking Brand Name:\n[ ]\n\nTagline:\n[ ]\n\nKey Message:\n[ ]\n\nBrand Personality / Voice:\n[ ]\n\nVisual Direction:\n[ ]\n\nColor Direction:\n[ ]\n\nTypography Direction:\n[ ]\n\nImage Style:\n[ ]\n\nBrand AVOID / NEVER:\n[ ]\n\n================================\nSTEP 1 — STORY LOCK\n================================\n\n31차시 IR Story Blueprint를 다시 설계하지 마세요.\n\n먼저 다음을 잠급니다.\n\nCORE THESIS:\n-\n\nAUDIENCE:\n-\n\nASK:\n-\n\nSTORY ORDER:\n-\n\nSTRONGEST EVIDENCE:\n-\n\nBIGGEST GAP:\n-\n\nDECK GUARDRAIL:\n-\n\nStory를 변경해야 할 이유가 발견되면\n자동 수정하지 말고:\n\nSTORY ISSUE — HUMAN REVIEW REQUIRED\n\n라고 표시하세요.\n\n================================\nSTEP 2 — SLIDE PURPOSE MAP\n================================\n\nIR Story Blueprint를 기준으로\n최대 12개의 Slide Production Map을 만드세요.\n\n각 Slide는 반드시 질문 하나에 답해야 합니다.\n\n각 Slide:\n\nSLIDE #:\n-\n\nINVESTOR QUESTION:\n이 장이 답할 질문\n\nTAKEAWAY TITLE:\nTopic 제목이 아니라\n이 장에서 기억해야 할 결론 한 문장\n\nPURPOSE:\n왜 이 장이 필요한가?\n\nPRIMARY CONTENT:\n가장 중요한 내용 1개\n\nSUPPORTING CONTENT:\n최대 2개\n\nEVIDENCE:\n실제로 사용 가능한 근거\n\nEVIDENCE STATUS:\nCONFIRMED / PARTIAL / NEEDS EVIDENCE\n\nDO NOT CLAIM:\n현재 이 장에서 말하면 안 되는 내용\n\n================================\nSTEP 3 — INFORMATION HIERARCHY\n================================\n\n각 Slide의 정보를 다음 세 단계로 분류하세요.\n\nLEVEL 1 — TAKEAWAY\n가장 먼저 보여야 할 한 문장\n\nLEVEL 2 — LOGIC / EVIDENCE\nTakeaway를 뒷받침하는 핵심 내용\n\nLEVEL 3 — DETAIL\n필요한 보충내용\n\nSlide 하나에 핵심 메시지를 여러 개 만들지 마세요.\n\n불필요한 Detail은:\n\nAPPENDIX CANDIDATE\n\n로 표시하세요.\n\n================================\nSTEP 4 — VISUAL TYPE\n================================\n\n각 Slide에 가장 적합한 표현방식을 하나 추천하세요.\n\n사용 가능:\n\nTEXT + KEY MESSAGE\nFLOW\nTIMELINE\nPROCESS DIAGRAM\nCOMPARISON\nMATRIX\nBIG NUMBER\nCHART\nSCREENSHOT\nPRODUCT / SERVICE FLOW\nCUSTOMER JOURNEY\nEVIDENCE CARD\nTABLE\nIMAGE\nMINIMAL TEXT\n\n각 Visual에 대해:\n\nWHY THIS VISUAL:\n-\n\n를 설명하세요.\n\n단,\n꾸미기 위한 Visual은 추천하지 마세요.\n\n================================\nSTEP 5 — DATA / CHART INTEGRITY\n================================\n\nCHART 또는 BIG NUMBER를 추천하는 Slide는\n반드시 Source를 확인하세요.\n\n각 Data Visual:\n\nDATA AVAILABLE:\nYES / NO / PARTIAL\n\nSOURCE AVAILABLE:\nYES / NO\n\nSTATUS:\nCHART ALLOWED\nQUALITATIVE ONLY\nPLACEHOLDER — SOURCE NEEDED\nHOLD\n\nSource가 없는 숫자를 생성하지 마세요.\n\nNo Data → No Fake Chart.\n\n================================\nSTEP 6 — EVIDENCE VISUAL\n================================\n\n현재 실제 Evidence를\n어떻게 보여주는 것이 가장 적절한지 제안하세요.\n\n가능한 형식:\n\n- Customer Quote\n- Interview Pattern\n- Prototype Screenshot\n- Pilot Result\n- Usage Result\n- Purchase / Conversion\n- Process Evidence\n- Source-backed Market Data\n\n각 Evidence에 대해:\n\nWHAT IT PROVES:\n-\n\nWHAT IT DOES NOT PROVE:\n-\n\n를 명시하세요.\n\n================================\nSTEP 7 — BRAND APPLICATION\n================================\n\nBrand Kit을 IR Deck에 적용하되\nBusiness Logic과 Evidence를 방해하지 않도록 설계하세요.\n\n정리:\n\nCOLOR ROLE:\n-\n\nTYPOGRAPHY ROLE:\n-\n\nIMAGE ROLE:\n-\n\nBRAND VOICE:\n-\n\nVISUAL CONSISTENCY:\n-\n\n중요:\nBrand는 Story를 지원해야 합니다.\n\n광고 포스터처럼 만들지 마세요.\n\n================================\nSTEP 8 — VISUAL CLAIM CHECK\n================================\n\n텍스트뿐 아니라 이미지와 Diagram도\nClaim을 만들 수 있습니다.\n\n각 Slide에서 다음 위험을 확인하세요.\n\n- 실제 제공지역보다 넓은 Network Map\n- 존재하지 않는 Partner Logo\n- 존재하지 않는 고객 Logo\n- 실제보다 완성도가 높은 Product 화면\n- 의료/법률/금융 Capability 오해\n- 실제 데이터가 아닌 성장 Chart\n- 존재하지 않는 AI 기능 표현\n- 실제보다 큰 운영규모 표현\n\n문제가 있으면:\n\nVISUAL CLAIM RISK\n\n로 표시하세요.\n\n================================\nSTEP 9 — GAMMA GENERATION BRIEF\n================================\n\nGamma와 같은 AI Presentation Tool에 전달할\nDeck Generation Brief를 작성하세요.\n\n반드시 포함:\n\n1. Audience\n2. Deck Goal\n3. Core Thesis\n4. Story Order\n5. Slide별 Takeaway\n6. 사용할 Evidence\n7. Brand Direction\n8. Visual Direction\n9. Slides that must NOT fabricate data\n10. Claim Boundary\n11. Ask\n\n중요:\n\nAI에게 Story를 다시 만들라고 하지 마세요.\n\n\"아래 Blueprint를 충실히 표현하라\"\n\n는 방향으로 작성하세요.\n\n================================\nSTEP 10 — CANVA REFINEMENT PLAN\n================================\n\nAI Draft 생성 후\nCanva 또는 수동 편집에서 우선 수정할 항목을 정리하세요.\n\n우선순위:\n\n1. Takeaway Title\n2. Information Hierarchy\n3. Evidence\n4. Visual Integrity\n5. Brand Consistency\n6. Readability\n7. Decorative polish\n\n각 항목에 대해\n무엇을 확인할지 한 줄로 작성하세요.\n\n================================\nSTEP 11 — DECK HALLUCINATION CHECK\n================================\n\nAI Deck 생성 후 반드시 찾아야 할 것을 체크리스트로 만드세요.\n\n- 제공하지 않은 숫자\n- 제공하지 않은 시장규모\n- 제공하지 않은 고객수\n- 제공하지 않은 Partner\n- 제공하지 않은 경쟁사\n- 제공하지 않은 Feature\n- 제공하지 않은 Traction\n- 제공하지 않은 인증\n- 제공하지 않은 Revenue\n- 제공하지 않은 Forecast\n\n발견 시:\n\nREMOVE\nVERIFY\nHOLD\n\n중 하나를 사용하세요.\n\n================================\nSTEP 12 — RECOMMENDED PRODUCTION PLAN\n================================\n\n최종적으로 다음을 정리하세요.\n\nRECOMMENDED SLIDE COUNT:\n-\n\nOPENING TAKEAWAY:\n-\n\nMOST IMPORTANT EVIDENCE SLIDE:\n-\n\nMOST IMPORTANT VISUAL:\n-\n\nSLIDE TO HOLD / VERIFY:\n-\n\nBIGGEST VISUAL CLAIM RISK:\n-\n\nGAMMA PRIORITY:\n-\n\nCANVA REFINEMENT PRIORITY:\n-\n\nDECK GUARDRAIL:\n-\n\n================================\n[금지]\n================================\n\n- IR Story 재작성 금지\n- 시장규모 생성 금지\n- TAM/SAM/SOM 생성 금지\n- 성장률 생성 금지\n- 고객수 생성 금지\n- 매출 생성 금지\n- Traction 생성 금지\n- Forecast 생성 금지\n- Partner Logo 생성 금지\n- 경쟁사 생성 금지\n- 존재하지 않는 Product 기능 생성 금지\n- 존재하지 않는 Screenshot 설명 금지\n- Evidence 없는 Chart 생성 금지\n- Brand를 이유로 Claim 강화 금지\n- 화려함을 이유로 Story 구조 변경 금지\n\n================================\n[출력]\n================================\n\n===== STORY LOCK =====\n\nAudience:\nCore Thesis:\nAsk:\nStory Order:\nStrongest Evidence:\nBiggest Gap:\nGuardrail:\n\n===== SLIDE PRODUCTION MAP =====\n\nSLIDE 1\nInvestor Question:\nTakeaway Title:\nPurpose:\nPrimary Content:\nSupporting Content:\nEvidence:\nEvidence Status:\nVisual Type:\nWhy This Visual:\nDo Not Claim:\nVisual Claim Risk:\n\nSLIDE 2\n...\n\n===== DATA / CHART STATUS =====\n\n-\n\n===== EVIDENCE VISUAL PLAN =====\n\n-\n\n===== BRAND APPLICATION =====\n\n-\n\n===== GAMMA GENERATION BRIEF =====\n\n-\n\n===== CANVA REFINEMENT PLAN =====\n\n-\n\n===== DECK HALLUCINATION CHECK =====\n\n-\n\n===== AI RECOMMENDATION =====\n\nRecommended Slide Count:\nOpening Takeaway:\nMost Important Evidence Slide:\nMost Important Visual:\nSlide to Hold / Verify:\nBiggest Visual Claim Risk:\nGamma Priority:\nCanva Priority:\nDeck Guardrail:\n\n===== HUMAN DECISION REQUIRED =====\n\n-",
             "targetTool": "ChatGPT",
             "copyable": true
           }
         },
         {
-          "id": "d10l4-p08-link",
+          "id": "d10l4-b02-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p09",
-      "title": "AI 결과 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l4-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 결과 검수\n\n- 원자료와 대조\n- 누락 확인\n- 과장 삭제\n- 확인 필요 표시",
-            "emphasis": "normal"
+            "practiceName": "Evidence-bound IR Deck Production Director",
+            "practiceDescription": "Story Lock, Slide Production Map(최대 12장), Data/Chart Integrity, Evidence Visual Plan, Brand Application, Visual Claim Check, Gamma Generation Brief, Canva Refinement Plan, Deck Hallucination Check, AI Recommendation을 만듭니다.",
+            "estimatedMinutes": 7
           }
         },
         {
-          "id": "d10l4-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p10",
-      "title": "이해 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d10l4-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d10l4-p10-q-q1",
-                "question": "가장 먼저 확인해야 할 기준은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d10l4-p10-q-c1",
-                    "text": "표현이 화려한가"
-                  },
-                  {
-                    "id": "d10l4-p10-q-c2",
-                    "text": "근거·목표·대상과 연결되는가"
-                  },
-                  {
-                    "id": "d10l4-p10-q-c3",
-                    "text": "AI가 자신 있게 말하는가"
-                  },
-                  {
-                    "id": "d10l4-p10-q-c4",
-                    "text": "슬라이드 수가 많은가"
-                  }
-                ],
-                "correctChoiceId": "d10l4-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "d10l4-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정답은 **근거·목표·대상과 연결되는가**입니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d10l4-p11",
-      "title": "최종 결과 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d10l4-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 결과 정리\n\n다음 단계에서 재사용할 수 있도록 근거와 선택 이유까지 남깁니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d10l4-final-form",
+          "id": "d10l4-b02-result-form",
           "type": "input-form",
+          "title": "32차시 AI Deck Production 결과",
           "visibility": "visible",
-          "title": "사람 승인·오류 알림·수동 대체 절차 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d10l4-final-form-f1",
-                "label": "최종 결과물",
+                "id": "r1",
+                "label": "32차시 AI Deck Production 결과",
                 "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l4-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l4-final-form-f3",
-                "label": "검증 필요 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d10l4-final-form-f4",
-                "label": "다음 행동",
-                "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기에 붙여넣으세요."
               }
             ]
           }
@@ -396,40 +664,3169 @@
       ]
     },
     {
-      "id": "d10l4-p12",
-      "title": "저장 및 다음 단계",
+      "id": "p03",
+      "title": "사람의 결정 — Deck Director Board (제작 전)",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d10l4-b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사람의 결정 — Deck Director Board",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l4-b03-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "12개 Slide 내용을 하나씩 Human Form에 복붙하지 않습니다. 제작 전 결정만 남깁니다."
+          }
+        },
+        {
+          "id": "d10l4-b03-form",
+          "type": "input-form",
+          "title": "Human Decision — 제작 전",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "h1",
+                "label": "최종 Slide 수 (Final Slide Count)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 10 slides. AI 추천을 그대로 쓰거나 수정하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h2",
+                "label": "오프닝 핵심 메시지 (Opening Takeaway)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "첫 장 또는 초반에서 반드시 전달할 핵심.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h3",
+                "label": "가장 중요한 Evidence Slide (Most Important Evidence Slide)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "없다면 EVIDENCE BUILD REQUIRED로 남기세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h4",
+                "label": "1순위 Visual Direction (Primary Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "전체 Deck의 시각 원칙. 예: Diagram과 실제 서비스 Flow 중심, 장식용 Stock Image 사용 절제",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h5",
+                "label": "보류/검증 필요 슬라이드 (HOLD / VERIFY Slide)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "현재 Evidence가 부족해 조심해야 할 Slide. 없으면 NONE.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h6",
+                "label": "가장 위험한 Visual Claim (Highest-risk Visual Claim)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 전국 서비스처럼 보이는 지도 표현 금지",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h7",
+                "label": "Deck 안전장치 (Deck Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "한 문장. 예: Source가 없는 시장·성과·Revenue 수치는 Gamma가 생성하더라도 사용하지 않는다."
+              },
+              {
+                "id": "h8",
+                "label": "Deck 상태 (Deck Status)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "READY FOR GAMMA",
+                  "READY WITH HOLD SLIDES",
+                  "NEEDS EVIDENCE BEFORE GENERATION"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "Gamma 시연 — Story → Deck Draft",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d10l4-p12-preview",
+          "id": "d10l4-b04-badge",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사 시연 + 학생 동시 제작** — Gamma → Canva Guided Live Build 약 20분",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d10l4-b04-compare",
+          "type": "infographic",
+          "title": "BAD Prompt vs GOOD Prompt",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "BAD",
+                "description": "\"반려동물 스타트업 IR 자료 10장 만들어줘.\"\n\n결과는 그럴듯해 보이지만: 실제 Context가 없음 / 시장 숫자 위험 / Generic Story / Capability 확대 위험"
+              },
+              {
+                "label": "GOOD",
+                "description": "31-32차시에서 만든 Gamma Generation Brief를 넣는다."
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l4-b04-q",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "학생에게 질문: \"Prompt가 길어서 좋아진 걸까요?\" 아니다. **우리가 이미 Business Context와 Story를 결정했기 때문에 좋아진 것입니다.**"
+          }
+        },
+        {
+          "id": "d10l4-b04-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://gamma.app/",
+            "buttonLabel": "Gamma 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "IR Deck Draft 생성",
+            "practiceDescription": "저장한 Gamma Generation Brief를 그대로 붙여넣어 Deck Draft를 생성합니다.",
+            "estimatedMinutes": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "STEP 1-2 — Content Audit + Takeaway 검토",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l4-b05-step1-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 1 — Content Audit"
+          }
+        },
+        {
+          "id": "d10l4-b05-step1",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Gamma Draft가 나오면 먼저 디자인을 보지 않습니다. 학생이 바로 \"와 예쁘다\"하지 않도록 합니다. 첫 검사는 **\"내가 주지 않은 내용이 들어갔나?\"**입니다. 예: 시장규모, 성장률, 고객수, 매출, Partner, Traction, Feature. 발견 시: REMOVE / VERIFY / HOLD"
+          }
+        },
+        {
+          "id": "d10l4-b05-step2-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 2 — Takeaway Title 검토"
+          }
+        },
+        {
+          "id": "d10l4-b05-titles",
+          "type": "infographic",
+          "title": "Gamma 기본 제목 vs 개선된 제목",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Gamma 기본 제목",
+                "description": "\"Market Opportunity\"\n\"Our Solution\""
+              },
+              {
+                "label": "개선된 제목",
+                "description": "\"초기 시장은 장시간 집을 비우는 지역 반려견 보호자부터 검증합니다.\"\n\"방문 돌봄의 상태정보를 보호자의 다음 행동으로 연결합니다.\""
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l4-b05-q",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "학생에게: **\"Slide 제목만 읽어도 전체 Story가 보이는가?\"**를 확인하게 합니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "STEP 3-4 — Information Density + Chart Audit",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l4-b06-step3-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 3 — Information Density"
+          }
+        },
+        {
+          "id": "d10l4-b06-step3",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "한 Slide에 AI가 Heading + 2 paragraph + 8 bullets + 사진 + Icon 5개를 넣었다면 줄입니다. 기본 질문: \"이 장의 질문이 무엇이지?\" 그리고 **Takeaway 1 + Support 2-3 + Visual 1** 정도로 정리합니다. 절대 숫자 규칙은 아니지만 좋은 기준입니다."
+          }
+        },
+        {
+          "id": "d10l4-b06-step4-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 4 — Chart Audit"
+          }
+        },
+        {
+          "id": "d10l4-b06-step4",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Gamma가 시장 그래프를 생성했습니다. 학생에게 묻습니다: \"이거 어디서 나온 숫자죠?\" 모릅니다. 그럼 **삭제**하거나 **[Source Needed]**로 HOLD합니다.\n\n**이번 수업에서 이것을 실제로 한 번 보여주는 것이 굉장히 중요합니다.**"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "STEP 5-6 — Evidence Slide + Canva Refinement",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l4-b07-step5-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 5 — Evidence Slide"
+          }
+        },
+        {
+          "id": "d10l4-b07-evidence",
+          "type": "infographic",
+          "title": "나쁜 예 vs 실제 Evidence",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "❌",
+                "description": "예쁜 강아지 사진 한 장"
+              },
+              {
+                "label": "✅ 실제 Evidence가 있다면",
+                "description": "인터뷰 패턴 / Prototype Screenshot / 서비스 Workflow / Pilot 결과"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l4-b07-evidence-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "그리고 **WHAT IT PROVES / WHAT IT DOES NOT PROVE**를 구분합니다."
+          }
+        },
+        {
+          "id": "d10l4-b07-step6-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### STEP 6 — Canva로 Refinement"
+          }
+        },
+        {
+          "id": "d10l4-b07-step6",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Gamma Draft 전체를 처음부터 다시 디자인하지 않습니다. Canva 단계에서는 **우선순위를 정해서 다듬습니다.**"
+          }
+        },
+        {
+          "id": "d10l4-b07-priority",
+          "type": "infographic",
+          "title": "Refinement 우선순위",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "1순위",
+                "description": "Takeaway Title"
+              },
+              {
+                "label": "2순위",
+                "description": "정보 위계"
+              },
+              {
+                "label": "3순위",
+                "description": "Evidence"
+              },
+              {
+                "label": "4순위",
+                "description": "Visual"
+              },
+              {
+                "label": "5순위",
+                "description": "Brand Kit"
+              },
+              {
+                "label": "마지막",
+                "description": "장식"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l4-b07-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Design Polish는 마지막입니다.",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l4-b07-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://www.canva.com/",
+            "buttonLabel": "Canva 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "IR Deck Refinement",
+            "practiceDescription": "Gamma Draft를 가져와 Takeaway Title → 정보 위계 → Evidence → Visual → Brand Kit → 장식 순서로 다듬습니다.",
+            "estimatedMinutes": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "Brand Kit 적용 + Visual Claim 시연",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d10l4-b08-brand-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Brand Kit 적용"
+          }
+        },
+        {
+          "id": "d10l4-b08-brand",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "30차시에서 만든 것을 가져옵니다. 예: Personality = Calm / Caring / Clear, Visual Direction = Warm / Clear / High readability, Image Style = Real-life / natural light / caring interaction. 그러면 Font hierarchy, Color 역할, 이미지 스타일, Diagram 스타일을 맞춥니다.\n\n하지만 시장 Slide에 귀여운 강아지 사진을 크게 넣는 것이 Brand Fit이라고 생각하면 안 됩니다."
+          }
+        },
+        {
+          "id": "d10l4-b08-claim-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Visual Claim 시연"
+          }
+        },
+        {
+          "id": "d10l4-b08-claim",
+          "type": "infographic",
+          "title": "서비스 상태 vs AI 이미지",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "서비스 상태",
+                "description": "서울 특정 지역 Pilot 예정"
+              },
+              {
+                "label": "AI 이미지",
+                "description": "대한민국 전체 지도에 수십 개 지점 표시"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d10l4-b08-q",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "질문: 텍스트에 \"전국 서비스\"라고 썼나? 아니다. 그런데 투자자는 무엇을 느끼나? 전국 Network가 있는 것처럼 보인다."
+          }
+        },
+        {
+          "id": "d10l4-b08-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Visual Claim도 Claim입니다. 삭제합니다.",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "5-Lens Final Review + Human Deck Review",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d10l4-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 5-Lens Final Review",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l4-b09-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "실제 Gamma/Canva Deck이 나오면 학생은 5개만 체크합니다."
+          }
+        },
+        {
+          "id": "d10l4-b09-check",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**① STORY FIT** — v0.31 IR Blueprint와 같은 Story인가?\n\n**② EVIDENCE FIT** — 중요한 Claim이 실제 Evidence 범위 안인가?\n\n**③ VISUAL FIT** — Visual이 장식이 아니라 이해를 돕는가?\n\n**④ BRAND FIT** — v0.30 Brand Kit과 일치하는가?\n\n**⑤ AUDIENCE FIT** — 투자자·심사자가 사업을 판단하기 쉬운가?"
+          }
+        },
+        {
+          "id": "d10l4-b09-lens-form",
+          "type": "input-form",
+          "title": "5-Lens 결과",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "l1",
+                "label": "스토리 적합성 (Story Fit)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "PASS",
+                  "NEEDS WORK"
+                ]
+              },
+              {
+                "id": "l2",
+                "label": "근거 적합성 (Evidence Fit)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "PASS",
+                  "NEEDS WORK"
+                ]
+              },
+              {
+                "id": "l3",
+                "label": "비주얼 적합성 (Visual Fit)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "PASS",
+                  "NEEDS WORK"
+                ]
+              },
+              {
+                "id": "l4",
+                "label": "브랜드 적합성 (Brand Fit)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "PASS",
+                  "NEEDS WORK"
+                ]
+              },
+              {
+                "id": "l5",
+                "label": "대상 적합성 (Audience Fit)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "PASS",
+                  "NEEDS WORK"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l4-b09-review-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Gamma/Canva 작업 후 — Human Deck Review"
+          }
+        },
+        {
+          "id": "d10l4-b09-review-form",
+          "type": "input-form",
+          "title": "Human Decision — 제작 후",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "v1",
+                "label": "AI가 근거 없는 내용을 추가했는가? (AI Added Unsupported Content?)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "NONE FOUND",
+                  "FOUND AND REMOVED",
+                  "VERIFY REQUIRED"
+                ]
+              },
+              {
+                "id": "v2",
+                "label": "가장 크게 수정한 것 (Biggest Deck Revision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "가장 크게 바꾼 것 하나."
+              },
+              {
+                "id": "v3",
+                "label": "남은 Evidence Gap (Remaining Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Deck 완성 후에도 남은 Evidence Gap."
+              },
+              {
+                "id": "v4",
+                "label": "최종 Deck 준비도 (Final Deck Readiness)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "DECK v0.1 READY",
+                  "READY WITH GAPS",
+                  "NOT READY — EVIDENCE REQUIRED"
+                ]
+              },
+              {
+                "id": "v5",
+                "label": "IR Deck 링크 (Optional)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Gamma나 Canva 공유링크가 있다면 붙여넣으세요. 선택 항목입니다."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d10l4-b10-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 결과 저장 / 완료",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d10l4-b10-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### A. IR Deck Production Brief 저장"
+          }
+        },
+        {
+          "id": "d10l4-b10-brief-form",
+          "type": "input-form",
+          "title": "32차시 — IR Deck Production Brief v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "m1",
+                "label": "IR 대상 (IR Audience)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Context 준비에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-context-form",
+                    "sourceFieldIds": [
+                      "f1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m2",
+                "label": "핵심 논지 (Core Thesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Context 준비에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-context-form",
+                    "sourceFieldIds": [
+                      "f2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m3",
+                "label": "최종 Slide 수 (Final Slide Count)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m4",
+                "label": "오프닝 핵심 메시지 (Opening Takeaway)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m5",
+                "label": "슬라이드 제작 지도 (Slide Production Map)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 결과의 SLIDE PRODUCTION MAP 전체를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m6",
+                "label": "근거 시각화 계획 (Evidence Visual Plan)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 결과의 EVIDENCE VISUAL PLAN을 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m7",
+                "label": "1순위 Visual Direction (Primary Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m8",
+                "label": "보류/검증 필요 슬라이드 (HOLD / VERIFY Slide)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m9",
+                "label": "가장 위험한 Visual Claim (Highest-risk Visual Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m10",
+                "label": "Gamma 생성 지시문 (Gamma Generation Brief)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 결과의 GAMMA GENERATION BRIEF를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m11",
+                "label": "Canva Refinement 우선순위 (Canva Refinement Priority)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI 결과의 CANVA REFINEMENT PLAN / AI RECOMMENDATION의 Canva Priority를 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "32차시 AI Deck Production 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m12",
+                "label": "Deck 안전장치 (Deck Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m13",
+                "label": "제작 전 상태 (Pre-production Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h8"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l4-b10-brief-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "32차시 — IR Deck Production Brief v0.1",
+            "sourceBlockId": "d10l4-b10-brief-form",
+            "buttonLabel": "IR Deck Production Brief v0.1 저장"
+          }
+        },
+        {
+          "id": "d10l4-b10-brief-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "automation",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "artifactType": "business-idea",
+            "emptyMessage": "아직 저장된 결과가 없습니다."
           }
         },
         {
-          "id": "d10l4-p12-save",
+          "id": "d10l4-b10-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### B. IR Deck Review 저장"
+          }
+        },
+        {
+          "id": "d10l4-b10-review-form2",
+          "type": "input-form",
+          "title": "32차시 — IR Deck Review v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "w1",
+                "label": "Deck 링크 (Optional)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w2",
+                "label": "스토리 적합성 (Story Fit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "5-Lens 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-lens-form",
+                    "sourceFieldIds": [
+                      "l1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w3",
+                "label": "근거 적합성 (Evidence Fit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "5-Lens 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-lens-form",
+                    "sourceFieldIds": [
+                      "l2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w4",
+                "label": "비주얼 적합성 (Visual Fit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "5-Lens 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-lens-form",
+                    "sourceFieldIds": [
+                      "l3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w5",
+                "label": "브랜드 적합성 (Brand Fit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "5-Lens 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-lens-form",
+                    "sourceFieldIds": [
+                      "l4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w6",
+                "label": "대상 적합성 (Audience Fit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "5-Lens 결과에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-lens-form",
+                    "sourceFieldIds": [
+                      "l5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w7",
+                "label": "근거 없는 내용 상태 (Unsupported Content Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w8",
+                "label": "가장 크게 수정한 것 (Biggest Deck Revision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w9",
+                "label": "남은 Evidence Gap (Remaining Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "w10",
+                "label": "최종 Deck 준비도 (Final Deck Readiness)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v4"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l4-b10-review-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day10 Lesson4 — 사람 승인·오류 알림·수동 대체 절차",
           "data": {
-            "artifactType": "automation",
-            "artifactTitle": "Day10 Lesson4 — 사람 승인·오류 알림·수동 대체 절차",
-            "sourceBlockId": "d10l4-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "32차시 — IR Deck Review v0.1",
+            "sourceBlockId": "d10l4-b10-review-form2",
+            "buttonLabel": "IR Deck Review v0.1 저장"
           }
         },
         {
-          "id": "d10l4-p12-reflection",
-          "type": "reflection",
+          "id": "d10l4-b10-c-title",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 검증 항목은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "### C. Business Context 누적 저장"
+          }
+        },
+        {
+          "id": "d10l4-b10-context-form",
+          "type": "input-form",
+          "title": "32차시 — Business Context v0.32",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "c1",
+                "label": "1순위 고객 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "c2",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c3",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "c4",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "c5",
+                "label": "핵심 메시지 대상 Actor (Primary Message Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 메시지 대상 Actor (Primary Message Actor)"
+                  }
+                ]
+              },
+              {
+                "id": "c6",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "c7",
+                "label": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "c8",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
+                  }
+                ]
+              },
+              {
+                "id": "c9",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "c10",
+                "label": "최종 핵심 메시지 (Final Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c11",
+                "label": "메시지 불변요소 / 경계 (Message Invariants / Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "메시지 불변요소 / 경계 (Message Invariants / Boundary)"
+                  }
+                ]
+              },
+              {
+                "id": "c12",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "c13",
+                "label": "Offer 안전장치 (Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Offer 안전장치 (Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c14",
+                "label": "연락 대상 Context (Recipient Context)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "연락 대상 Context (Recipient Context)"
+                  }
+                ]
+              },
+              {
+                "id": "c15",
+                "label": "전환 목표 (Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "전환 목표 (Conversion Goal)"
+                  }
+                ]
+              },
+              {
+                "id": "c16",
+                "label": "Landing 1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Landing 1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c17",
+                "label": "우선순위 FAQ (Priority FAQ)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "우선순위 FAQ (Priority FAQ)"
+                  }
+                ]
+              },
+              {
+                "id": "c18",
+                "label": "사람 이관 규칙 (Human Handoff Rule)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "사람 이관 규칙 (Human Handoff Rule)"
+                  }
+                ]
+              },
+              {
+                "id": "c19",
+                "label": "고객응대 안전장치 (Customer Response Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "고객응대 안전장치 (Customer Response Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c20",
+                "label": "1순위 Channel (Primary Channel)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 Channel (Primary Channel)"
+                  }
+                ]
+              },
+              {
+                "id": "c21",
+                "label": "고객 관계 (Customer Relationship)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "고객 관계 (Customer Relationship)"
+                  }
+                ]
+              },
+              {
+                "id": "c22",
+                "label": "Revenue 가설 (Revenue Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Revenue 가설 (Revenue Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c23",
+                "label": "핵심 활동 (Key Activities)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 활동 (Key Activities)"
+                  }
+                ]
+              },
+              {
+                "id": "c24",
+                "label": "핵심 자원 (Key Resources)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 자원 (Key Resources)"
+                  }
+                ]
+              },
+              {
+                "id": "c25",
+                "label": "핵심 파트너 (Key Partners)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 파트너 (Key Partners)"
+                  }
+                ]
+              },
+              {
+                "id": "c26",
+                "label": "주요 비용 요인 (Main Cost Driver)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "주요 비용 요인 (Main Cost Driver)"
+                  }
+                ]
+              },
+              {
+                "id": "c27",
+                "label": "가장 약한 사업모델 연결 (Weakest Business Model Link)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 약한 사업모델 연결 (Weakest Business Model Link)"
+                  }
+                ]
+              },
+              {
+                "id": "c28",
+                "label": "가장 위험한 모델 가설 (Highest-risk Model Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 위험한 모델 가설 (Highest-risk Model Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c29",
+                "label": "바람직성 (Desirability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "바람직성 (Desirability)"
+                  }
+                ]
+              },
+              {
+                "id": "c30",
+                "label": "실행 가능성 (Feasibility)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "실행 가능성 (Feasibility)"
+                  }
+                ]
+              },
+              {
+                "id": "c31",
+                "label": "지속 가능성 (Viability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "지속 가능성 (Viability)"
+                  }
+                ]
+              },
+              {
+                "id": "c32",
+                "label": "고객이 돈을 내는 가치 (Value for Payment)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "고객이 돈을 내는 가치 (Value for Payment)"
+                  }
+                ]
+              },
+              {
+                "id": "c33",
+                "label": "1순위 Pricing Metric (Primary Pricing Metric)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 Pricing Metric (Primary Pricing Metric)"
+                  }
+                ]
+              },
+              {
+                "id": "c34",
+                "label": "주요 대안 (Primary Alternative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "주요 대안 (Primary Alternative)"
+                  }
+                ]
+              },
+              {
+                "id": "c35",
+                "label": "가격 가설 (Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가격 가설 (Price Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c36",
+                "label": "가격 근거 상태 (Pricing Evidence Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가격 근거 상태 (Pricing Evidence Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c37",
+                "label": "가장 위험한 가격 가설 (Highest-risk Pricing Assumption)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 위험한 가격 가설 (Highest-risk Pricing Assumption)"
+                  }
+                ]
+              },
+              {
+                "id": "c38",
+                "label": "가격 검증 대상 (Pricing Validation Audience)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가격 검증 대상 (Pricing Validation Audience)"
+                  }
+                ]
+              },
+              {
+                "id": "c39",
+                "label": "가격 검증 질문 (Pricing Validation Questions)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가격 검증 질문 (Pricing Validation Questions)"
+                  }
+                ]
+              },
+              {
+                "id": "c40",
+                "label": "One-Pager 헤드라인 (One-Pager Headline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "One-Pager 헤드라인 (One-Pager Headline)"
+                  }
+                ]
+              },
+              {
+                "id": "c41",
+                "label": "One-Pager 핵심 가치 (One-Pager Core Value)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "One-Pager 핵심 가치 (One-Pager Core Value)"
+                  }
+                ]
+              },
+              {
+                "id": "c42",
+                "label": "One-Pager 구조 (One-Pager Structure)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "One-Pager 구조 (One-Pager Structure)"
+                  }
+                ]
+              },
+              {
+                "id": "c43",
+                "label": "One-Pager 근거 (One-Pager Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "One-Pager 근거 (One-Pager Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "c44",
+                "label": "Package 표시 결정 (Package Display Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Package 표시 결정 (Package Display Decision)"
+                  }
+                ]
+              },
+              {
+                "id": "c45",
+                "label": "One-Pager 행동 유도 (One-Pager CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "One-Pager 행동 유도 (One-Pager CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c46",
+                "label": "커뮤니케이션 상태 (Communication Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "커뮤니케이션 상태 (Communication Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c47",
+                "label": "Package 전략 (Package Strategy)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Package 전략 (Package Strategy)"
+                  }
+                ]
+              },
+              {
+                "id": "c48",
+                "label": "손익분기 판매량 (Break-even Units)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "손익분기 판매량 (Break-even Units)"
+                  }
+                ]
+              },
+              {
+                "id": "c49",
+                "label": "사업계획 핵심 문제 (Business Plan Core Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "사업계획 핵심 문제 (Business Plan Core Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c50",
+                "label": "사업계획 고객 (Business Plan Customer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "사업계획 고객 (Business Plan Customer)"
+                  }
+                ]
+              },
+              {
+                "id": "c51",
+                "label": "사업계획 해결책 (Business Plan Solution)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "사업계획 해결책 (Business Plan Solution)"
+                  }
+                ]
+              },
+              {
+                "id": "c52",
+                "label": "시장 / 대안 Gap (Market / Alternative Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "시장 / 대안 Gap (Market / Alternative Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c53",
+                "label": "사업모델 서술 (Business Model Narrative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "사업모델 서술 (Business Model Narrative)"
+                  }
+                ]
+              },
+              {
+                "id": "c54",
+                "label": "실행 우선순위 (Execution Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "실행 우선순위 (Execution Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "c55",
+                "label": "핵심 Milestone (Key Milestones)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 Milestone (Key Milestones)"
+                  }
+                ]
+              },
+              {
+                "id": "c56",
+                "label": "가장 위험한 계획 가설 (Highest-risk Plan Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 위험한 계획 가설 (Highest-risk Plan Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c57",
+                "label": "추가조사 목록 (Research Backlog)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "추가조사 목록 (Research Backlog)"
+                  }
+                ]
+              },
+              {
+                "id": "c58",
+                "label": "계획 준비도 (Plan Readiness)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "계획 준비도 (Plan Readiness)"
+                  }
+                ]
+              },
+              {
+                "id": "c59",
+                "label": "Business Plan Draft v0.1 전문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Business Plan Draft v0.1 전문"
+                  }
+                ]
+              },
+              {
+                "id": "c60",
+                "label": "Draft 상태 (Draft Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Draft 상태 (Draft Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c61",
+                "label": "계획 확정 내용 (Confirmed Plan Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "계획 확정 내용 (Confirmed Plan Content)"
+                  }
+                ]
+              },
+              {
+                "id": "c62",
+                "label": "계획 가설 내용 (Hypothesis Plan Content)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "계획 가설 내용 (Hypothesis Plan Content)"
+                  }
+                ]
+              },
+              {
+                "id": "c63",
+                "label": "계획 근거 공백 (Plan Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "계획 근거 공백 (Plan Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c64",
+                "label": "계획 주장 금지 항목 (Plan Do Not Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "계획 주장 금지 항목 (Plan Do Not Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "c65",
+                "label": "가장 약한 계획 Section (Weakest Plan Section)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 약한 계획 Section (Weakest Plan Section)"
+                  }
+                ]
+              },
+              {
+                "id": "c66",
+                "label": "AI 창작 여부 상태 (AI Invention Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "AI 창작 여부 상태 (AI Invention Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c67",
+                "label": "다음 Critic 검토 대상 (Next Critic Focus)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "다음 Critic 검토 대상 (Next Critic Focus)"
+                  }
+                ]
+              },
+              {
+                "id": "c68",
+                "label": "고객용 서비스 문장 (Customer-facing Service Statement)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "고객용 서비스 문장 (Customer-facing Service Statement)"
+                  }
+                ]
+              },
+              {
+                "id": "c69",
+                "label": "Service Introduction Draft v0.1 전문",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Service Introduction Draft v0.1 전문"
+                  }
+                ]
+              },
+              {
+                "id": "c70",
+                "label": "유지 정보 (Keep Information)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "유지 정보 (Keep Information)"
+                  }
+                ]
+              },
+              {
+                "id": "c71",
+                "label": "번역 정보 (Translated Information)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "번역 정보 (Translated Information)"
+                  }
+                ]
+              },
+              {
+                "id": "c72",
+                "label": "제거된 내부 정보 (Removed Internal Information)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "제거된 내부 정보 (Removed Internal Information)"
+                  }
+                ]
+              },
+              {
+                "id": "c73",
+                "label": "고객용 Proof (Customer-facing Proof)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "고객용 Proof (Customer-facing Proof)"
+                  }
+                ]
+              },
+              {
+                "id": "c74",
+                "label": "문서 변형 방지선 (Document Drift Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "문서 변형 방지선 (Document Drift Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c75",
+                "label": "Service Intro 상태 (Service Intro Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Service Intro 상태 (Service Intro Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c76",
+                "label": "가장 중요한 Critic Issue (Highest Priority Critic Issue)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 중요한 Critic Issue (Highest Priority Critic Issue)"
+                  }
+                ]
+              },
+              {
+                "id": "c77",
+                "label": "Critic 사람 결정 (Critic Human Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Critic 사람 결정 (Critic Human Decision)"
+                  }
+                ]
+              },
+              {
+                "id": "c78",
+                "label": "Critic 결정 이유 (Critic Decision Reason)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Critic 결정 이유 (Critic Decision Reason)"
+                  }
+                ]
+              },
+              {
+                "id": "c79",
+                "label": "Business Plan 수정 우선순위 (Business Plan Revision Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Business Plan 수정 우선순위 (Business Plan Revision Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "c80",
+                "label": "Service Intro 수정 우선순위 (Service Intro Revision Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Service Intro 수정 우선순위 (Service Intro Revision Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "c81",
+                "label": "Cross-document Drift 상태 (Cross-document Drift Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Cross-document Drift 상태 (Cross-document Drift Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c82",
+                "label": "핵심 Evidence 공백 (Critical Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "핵심 Evidence 공백 (Critical Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c83",
+                "label": "수정 방향 (Revision Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "수정 방향 (Revision Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c84",
+                "label": "Critic 상태 (Critic Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Critic 상태 (Critic Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c85",
+                "label": "다음 문서 작업 (Next Document Action)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "다음 문서 작업 (Next Document Action)"
+                  }
+                ]
+              },
+              {
+                "id": "c86",
+                "label": "최종 브랜드 Positioning (Final Brand Positioning)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 브랜드 Positioning (Final Brand Positioning)"
+                  }
+                ]
+              },
+              {
+                "id": "c87",
+                "label": "브랜드 카테고리 (Brand Category)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 카테고리 (Brand Category)"
+                  }
+                ]
+              },
+              {
+                "id": "c88",
+                "label": "브랜드 약속 (Brand Promise)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 약속 (Brand Promise)"
+                  }
+                ]
+              },
+              {
+                "id": "c89",
+                "label": "1순위 Brand Personality (Primary Brand Personality)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 Brand Personality (Primary Brand Personality)"
+                  }
+                ]
+              },
+              {
+                "id": "c90",
+                "label": "보조 Brand Personality (Supporting Brand Personality)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "보조 Brand Personality (Supporting Brand Personality)"
+                  }
+                ]
+              },
+              {
+                "id": "c91",
+                "label": "브랜드가 되지 않을 모습 (Brand NOT)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드가 되지 않을 모습 (Brand NOT)"
+                  }
+                ]
+              },
+              {
+                "id": "c92",
+                "label": "브랜드 말투 (Brand Voice)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 말투 (Brand Voice)"
+                  }
+                ]
+              },
+              {
+                "id": "c93",
+                "label": "브랜드 일관성 안전장치 (Brand Consistency Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 일관성 안전장치 (Brand Consistency Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c94",
+                "label": "Brand Direction 상태 (Brand Direction Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Brand Direction 상태 (Brand Direction Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c95",
+                "label": "다음 Brand Kit 검토 대상 (Next Brand Kit Focus)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "다음 Brand Kit 검토 대상 (Next Brand Kit Focus)"
+                  }
+                ]
+              },
+              {
+                "id": "c96",
+                "label": "작업용 브랜드 이름 (Working Brand Name)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "작업용 브랜드 이름 (Working Brand Name)"
+                  }
+                ]
+              },
+              {
+                "id": "c97",
+                "label": "Working Name 상태 (Working Name Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Working Name 상태 (Working Name Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c98",
+                "label": "최종 Tagline (Final Tagline)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 Tagline (Final Tagline)"
+                  }
+                ]
+              },
+              {
+                "id": "c99",
+                "label": "최종 Key Message (Final Key Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 Key Message (Final Key Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c100",
+                "label": "브랜드 말투 규칙 (Brand Voice Rules)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 말투 규칙 (Brand Voice Rules)"
+                  }
+                ]
+              },
+              {
+                "id": "c101",
+                "label": "최종 Visual Direction (Final Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 Visual Direction (Final Visual Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c102",
+                "label": "컬러 방향 (Color Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "컬러 방향 (Color Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c103",
+                "label": "타이포그래피 방향 (Typography Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "타이포그래피 방향 (Typography Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c104",
+                "label": "이미지 스타일 (Image Style)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "이미지 스타일 (Image Style)"
+                  }
+                ]
+              },
+              {
+                "id": "c105",
+                "label": "로고 방향 (Logo Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "로고 방향 (Logo Direction)"
+                  }
+                ]
+              },
+              {
+                "id": "c106",
+                "label": "브랜드 필수 규칙 (Brand MUST)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 필수 규칙 (Brand MUST)"
+                  }
+                ]
+              },
+              {
+                "id": "c107",
+                "label": "브랜드 권장 규칙 (Brand PREFER)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 권장 규칙 (Brand PREFER)"
+                  }
+                ]
+              },
+              {
+                "id": "c108",
+                "label": "브랜드 회피 규칙 (Brand AVOID)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 회피 규칙 (Brand AVOID)"
+                  }
+                ]
+              },
+              {
+                "id": "c109",
+                "label": "브랜드 금지 규칙 (Brand NEVER)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "브랜드 금지 규칙 (Brand NEVER)"
+                  }
+                ]
+              },
+              {
+                "id": "c110",
+                "label": "Brand Kit 상태 (Brand Kit Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "Brand Kit 상태 (Brand Kit Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c111",
+                "label": "다음 IR 커뮤니케이션 검토 대상 (Next IR Communication Focus)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "다음 IR 커뮤니케이션 검토 대상 (Next IR Communication Focus)"
+                  }
+                ]
+              },
+              {
+                "id": "c112",
+                "label": "1순위 IR Audience (Primary IR Audience)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "1순위 IR Audience (Primary IR Audience)"
+                  }
+                ]
+              },
+              {
+                "id": "c113",
+                "label": "최종 IR Core Thesis (Final IR Core Thesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 IR Core Thesis (Final IR Core Thesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c114",
+                "label": "가장 중요한 Investor Question (Primary Investor Question)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 중요한 Investor Question (Primary Investor Question)"
+                  }
+                ]
+              },
+              {
+                "id": "c115",
+                "label": "IR Story 우선순위 (IR Story Priority)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR Story 우선순위 (IR Story Priority)"
+                  }
+                ]
+              },
+              {
+                "id": "c116",
+                "label": "IR Story 청사진 (IR Story Blueprint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR Story 청사진 (IR Story Blueprint)"
+                  }
+                ]
+              },
+              {
+                "id": "c117",
+                "label": "가장 강한 IR Evidence (Strongest IR Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 강한 IR Evidence (Strongest IR Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "c118",
+                "label": "가장 큰 IR Evidence Gap (Biggest IR Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 큰 IR Evidence Gap (Biggest IR Evidence Gap)"
+                  }
+                ]
+              },
+              {
+                "id": "c119",
+                "label": "가장 위험한 IR Claim (Highest-risk IR Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "가장 위험한 IR Claim (Highest-risk IR Claim)"
+                  }
+                ]
+              },
+              {
+                "id": "c120",
+                "label": "최종 IR Ask (Final IR Ask)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "최종 IR Ask (Final IR Ask)"
+                  }
+                ]
+              },
+              {
+                "id": "c121",
+                "label": "IR Deck 안전장치 (IR Deck Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR Deck 안전장치 (IR Deck Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c122",
+                "label": "IR 준비도 (IR Readiness)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "IR 준비도 (IR Readiness)"
+                  }
+                ]
+              },
+              {
+                "id": "c123",
+                "label": "다음 Deck 검토 대상 (Next Deck Focus)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "31차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "31차시 — Business Context v0.31",
+                    "sourceLabel": "다음 Deck 검토 대상 (Next Deck Focus)"
+                  }
+                ]
+              },
+              {
+                "id": "n1",
+                "label": "최종 IR Slide 수 (Final IR Slide Count)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n2",
+                "label": "IR 오프닝 핵심 메시지 (IR Opening Takeaway)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n3",
+                "label": "가장 중요한 Evidence Slide (Most Important Evidence Slide)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n4",
+                "label": "IR 1순위 Visual Direction (IR Primary Visual Direction)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n5",
+                "label": "IR 보류/검증 필요 슬라이드 (IR HOLD / VERIFY Slide)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n6",
+                "label": "가장 위험한 Visual Claim (Highest-risk Visual Claim)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n7",
+                "label": "최종 IR Deck 안전장치 (Final IR Deck Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b03-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n8",
+                "label": "IR Deck 링크 (IR Deck URL)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n9",
+                "label": "근거 없는 Deck 내용 상태 (Unsupported Deck Content Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n10",
+                "label": "가장 크게 수정한 것 (Biggest Deck Revision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n11",
+                "label": "남은 IR Evidence Gap (Remaining IR Evidence Gap)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n12",
+                "label": "IR Deck 준비도 (IR Deck Readiness)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d10l4-b09-review-form",
+                    "sourceFieldIds": [
+                      "v4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n13",
+                "label": "다음 Pitch 검토 대상 (Next Pitch Focus)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이 Deck으로 실제 피칭·심사를 준비하기 전에 가장 먼저 확인해야 할 것은 무엇인가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d10l4-b10-context-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "32차시 — Business Context v0.32",
+            "sourceBlockId": "d10l4-b10-context-form",
+            "buttonLabel": "Business Context v0.32 저장"
+          }
+        },
+        {
+          "id": "d10l4-b10-next",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 25-32차시에서 계속 배웠던 Source of Truth와 Claim Boundary가 Deck 제작까지 살아남았습니다.",
+            "emphasis": "lead"
           }
         }
       ]
