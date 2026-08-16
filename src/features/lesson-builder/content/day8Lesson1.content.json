@@ -4,391 +4,407 @@
   "week": 3,
   "day": 8,
   "lesson": 1,
-  "title": "사업계획서·소개서용 Source Pack 만들기",
-  "description": "인터뷰·기능·가격 가설·팀·마일스톤을 하나의 사실 자료 묶음으로 정리합니다.",
-  "durationMinutes": 60,
+  "title": "Business Model Canvas — 고객전략을 사업 전체 구조로 연결하기",
+  "description": "20차시까지 누적한 결과로 Business Model Canvas 초안을 만들고, 9개 요소가 서로 연결되는지 판단합니다.",
+  "durationMinutes": 50,
   "status": "draft",
   "version": 1,
   "createdAt": 0,
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d8l1-p01",
-      "title": "오늘 만들 결과물",
-      "layout": "standard",
+      "id": "p01",
+      "title": "20차시 → 21차시 연결",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d8l1-p01-b1",
+          "id": "d8l1-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 사업계획서·소개서용 Source Pack 만들기\n\n**인터뷰·기능·가격 가설·팀·마일스톤을 하나의 사실 자료 묶음으로 정리합니다.**",
+            "markdown": "# Business Model Canvas\n\n## 지금까지 만든 고객전략을 '사업 전체 구조'로 연결하기",
             "emphasis": "hero"
+          },
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d8l1-p01-b2",
+          "id": "d8l1-b01-flow",
+          "type": "infographic",
+          "title": "지금까지 → 오늘",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "13-16차시",
+                "description": "Blog Search Intent → Draft → Repurposing 자동화"
+              },
+              {
+                "label": "17-20차시",
+                "description": "Offer → Outreach → Landing → Knowledge Base"
+              },
+              {
+                "label": "21차시",
+                "description": "Customer → Value → Channel → Relationship → Revenue → Activities → Resources → Partners → Cost"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d8l1-b01-body",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "오늘은 결과물 수보다 **근거와 판단 기준**을 우선합니다.",
-            "emphasis": "normal"
+            "markdown": "**학생은 단순히 9칸을 채우는 게 아니라, \"이 사업모델이 서로 연결되는가?\"를 판단합니다.** 최종 결과물은 Business Model Canvas v0.1입니다."
           }
         },
         {
-          "id": "d8l1-p01-i",
+          "id": "d8l1-b01-instructor",
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "강사 포인트: 수강생의 실제 사업 단계에 따라 없는 실적·고객·숫자를 만들지 않도록 강조합니다.",
-            "emphasis": "normal"
+            "markdown": "이론은 P01-P03, 학생 실습은 P04-P06(GPT 실행 정확히 1회). P07-P09는 Miro BMC 시각화 강사 시연 — 학생 일부 따라하기 가능. 본격적인 가격·수익성 계산은 22-23차시로 남긴다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "BMC는 9칸 채우기가 아니라 9개 연결입니다",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l1-b02-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 9칸을 채우는 게 아니라 9개를 연결하는 것입니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l1-b02-reminder",
+          "type": "infographic",
+          "title": "오늘 하지 않는 것 vs 오늘 하는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "오늘 하지 않는 것",
+                "description": "사업계획서 작성\n매출 숫자 예측\n시장규모 계산\n실제 가격 결정\n비용 세부 계산\nBMC 9칸 장문 작성"
+              },
+              {
+                "label": "오늘 하는 것",
+                "description": "지금까지 만든 사업이 전체적으로 어떻게 작동할지 연결해본다"
+              }
+            ]
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p02",
-      "title": "핵심 구조",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l1-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 핵심 구조\n\n- 입력 자료를 먼저 정리합니다.\n- AI가 추가한 내용과 원자료를 구분합니다.\n- 결과물은 다음 Lesson에서 재사용합니다.",
-            "emphasis": "normal"
+          "theme": {
+            "background": "muted"
           }
         },
         {
-          "id": "d8l1-p02-img",
-          "type": "image",
+          "id": "d8l1-b02-core",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "url": "/lesson-content/day8/d8l1_framework.svg",
-            "alt": "사업계획서·소개서용 Source Pack 만들기 구조",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
+            "markdown": "**BMC = 9칸 채우기 ❌ · BMC = 9개 요소 연결하기 ✅**",
+            "emphasis": "lead"
           }
         }
       ]
     },
     {
-      "id": "d8l1-p03",
-      "title": "좋은 결과물의 기준",
+      "id": "p03",
+      "title": "Desirability · Feasibility · Viability",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d8l1-p03-b1",
+          "id": "d8l1-b03-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## 좋은 결과물의 기준\n\n- 명확성\n- 근거 연결\n- 대상 적합성\n- 다음 행동",
-            "emphasis": "normal"
+            "markdown": "## 사업모델을 보는 세 가지 관점",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d8l1-p03-b2",
-          "type": "rich-text",
+          "id": "d8l1-b03-dfv",
+          "type": "infographic",
+          "title": "세 가지 관점",
           "visibility": "visible",
           "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p04",
-      "title": "흔한 실패",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l1-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 흔한 실패\n\n- 근거 없는 숫자\n- 가짜 고객·성과\n- 추측을 사실처럼 표현\n- 한 번에 너무 많은 자동화",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l1-p04-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p05",
-      "title": "실무 체크리스트",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l1-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실무 체크리스트\n\n- 사실/가설 분리\n- 개인정보 최소화\n- 외부 공개 전 사람 검수",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l1-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p06",
-      "title": "인터랙티브 판단 연습",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l1-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브 판단 연습\n\n카드를 눌러 사실·가설·검증 필요를 구분합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l1-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/day8/d8l1_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p07",
-      "title": "내 사업 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l1-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 내 사업 입력\n\n실제 고객 개인정보 대신 익명화·가명·공개 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l1-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "사업계획서·소개서용 Source Pack 만들기 입력",
-          "data": {
-            "fields": [
+            "variant": "comparison",
+            "items": [
               {
-                "id": "d8l1-p07-form-f1",
-                "label": "현재 사업/서비스 한 문장",
-                "kind": "long-text",
-                "required": true
+                "label": "Desirability (바람직성)",
+                "description": "고객이 원하는가?"
               },
               {
-                "id": "d8l1-p07-form-f2",
-                "label": "확인된 근거",
-                "kind": "long-text",
-                "required": true
+                "label": "Feasibility (실행 가능성)",
+                "description": "우리가 실제로 제공할 수 있는가?"
               },
               {
-                "id": "d8l1-p07-form-f3",
-                "label": "현재 가설",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d8l1-p07-form-f4",
-                "label": "이번 Lesson에서 만들 결과물",
-                "kind": "long-text",
-                "required": true
+                "label": "Viability (지속 가능성)",
+                "description": "경제적으로 지속 가능할 가능성이 있는가?"
               }
             ]
           }
+        },
+        {
+          "id": "d8l1-b03-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**여기서 중요한 건 Viability를 계산하는 게 아닙니다.** 본격적인 가격과 수익성은 22-23차시에서 다룹니다."
+          }
         }
       ]
     },
     {
-      "id": "d8l1-p08",
-      "title": "ChatGPT 실습 프롬프트",
-      "layout": "wide",
+      "id": "p04",
+      "title": "실습 — 내 Business Model Canvas 만들기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d8l1-p08-b1",
+          "id": "d8l1-b04-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## ChatGPT 실습 프롬프트",
-            "emphasis": "normal"
+            "markdown": "## 실습 — 내 Business Model Canvas 만들기",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d8l1-p08-prompt",
-          "type": "prompt",
+          "id": "d8l1-b04-body",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 코치입니다.\n목표: 인터뷰·기능·가격 가설·팀·마일스톤을 하나의 사실 자료 묶음으로 정리합니다.\n규칙:\n1. 제공되지 않은 사실·고객·매출·파트너·시장수치를 만들지 않는다.\n2. 사실/계산값/창업자 가설/AI 추론을 구분한다.\n3. 불확실한 내용은 [검증 필요]로 표시한다.\n4. 개인정보·기밀정보를 재생성하지 않는다.\n5. 결과는 초급 창업자가 바로 수정할 수 있는 표와 체크리스트로 만든다.\n\n[사업 설명]\n[확인된 근거]\n[현재 가설]\n[원하는 산출물]",
+            "markdown": "학생이 사업설명을 다시 타이핑하지 않습니다. 20차시까지 누적된 Business Context에서 대부분 버튼으로 가져오고, 아직 없는 두 가지만 직접 적습니다."
+          }
+        },
+        {
+          "id": "d8l1-b04-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "1순위 고객",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "첫 검증 고객(ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "핵심 고객 문제",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "1순위 가치제안",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "Landing 1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "현재 고객접점 / Channel",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이전 차시에 저장된 값이 없습니다 — 지금 실제로 고객에게 도달하는 채널을 직접 적어주세요. 예: 검색 Blog + Landing, Instagram, Direct Outreach"
+              },
+              {
+                "id": "f8",
+                "label": "Landing 전환 목표 (Landing Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "전환 목표 (Conversion Goal)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "고객관계 / FAQ·응대 방식",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "우선순위 FAQ (Priority FAQ)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "현재 제공 가능한 역량",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이전 차시에 저장된 값이 없습니다 — 지금 실제로 제공 가능한 역량을 직접 적어주세요."
+              },
+              {
+                "id": "f11",
+                "label": "현재 지지 근거",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "f12",
+                "label": "현재 주요 Risk / Evidence Boundary",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l1-b04-prompt",
+          "type": "prompt",
+          "title": "실습 — 내 Business Model Canvas 만들기",
+          "description": "위 Context 준비 칸의 내용을 아래 [ ] 열두 곳에 순서대로 옮겨 붙인 뒤 실행하세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n\n당신은 그럴듯한 Business Model Canvas를\n빈칸 없이 채우는 컨설턴트가 아닙니다.\n\n이미 사람이 검토한 고객·문제·가치·Offer·채널 Context를 기준으로\n현재 사업이 어떻게 가치를 만들고 전달하고 수익을 얻을 수 있는지\nBusiness Model Canvas 초안을 설계하는\nBusiness Model Architect입니다.\n\n이미 확인된 정보와\n아직 검증되지 않은 사업모델 가설을 반드시 구분하세요.\n\n================================\n[현재 Business Context]\n================================\n\n1순위 고객:\n[ ]\n\n첫 검증 고객(ECP):\n[ ]\n\n핵심 고객 문제:\n[ ]\n\n1순위 가치제안:\n[ ]\n\nPrimary Offer:\n[ ]\n\nPrimary CTA:\n[ ]\n\n현재 고객접점 / Channel:\n[ ]\n\nLanding Conversion Goal:\n[ ]\n\n고객관계 / FAQ·응대 방식:\n[ ]\n\n현재 제공 가능한 역량:\n[ ]\n\n현재 지지 근거:\n[ ]\n\n현재 주요 Risk / Evidence Boundary:\n[ ]\n\n================================\nSTEP 1 — EXISTING MODEL\n================================\n\n먼저 앞 단계에서 이미 어느 정도 확인된\nBusiness Model 요소를 정리하세요.\n\n- Customer Segments\n- Value Propositions\n- Channels\n- Customer Relationships\n\n각 항목에:\n\nCONFIRMED\nINFERENCE\nNEEDS VALIDATION\n\n중 하나를 표시하세요.\n\n새로운 고객이나 Value를 만들지 마세요.\n\n================================\nSTEP 2 — REVENUE HYPOTHESIS\n================================\n\n현재 Offer와 Value를 기준으로\n가능한 Revenue Stream 후보를 최대 3개 제안하세요.\n\n예:\n\n- 일회성 판매\n- 서비스 이용료\n- 프로젝트 비용\n- 구독\n- 중개 수수료\n- 사용량 기반 요금\n\n단,\n\n현재 Context에 맞는 것만 제안하세요.\n\n실제 가격이나 매출을 임의로 생성하지 마세요.\n\n각 후보에:\n\n- 고객은 무엇에 돈을 내는가?\n- 어떤 Customer Segment와 연결되는가?\n- 어떤 Value에 대한 대가인가?\n- 현재 상태:\n  INFERENCE / NEEDS VALIDATION\n\n를 표시하세요.\n\n================================\nSTEP 3 — OPERATING MODEL\n================================\n\n이 Value를 실제 제공하기 위해 필요한 것을 제안하세요.\n\nA. Key Activities\n반드시 잘해야 하는 핵심 활동 최대 4개\n\nB. Key Resources\n반드시 필요한 핵심 자원 최대 4개\n\nC. Key Partners\n직접 보유하지 않고 외부와 협력할 가능성이 있는 파트너 최대 3개\n\n중요:\n\n모든 사업에 Partner가 필요한 것은 아닙니다.\n\n억지로 채우지 마세요.\n\n================================\nSTEP 4 — COST HYPOTHESIS\n================================\n\n현재 Business Model을 운영할 때\n발생할 가능성이 큰 비용 범주를 최대 5개 제안하세요.\n\n실제 금액은 만들지 마세요.\n\n예:\n\n- 인건비\n- 소프트웨어\n- 마케팅\n- 공간\n- 제작/원가\n- 외주\n- 물류\n\n각 비용이 어떤 Activity / Resource와 연결되는지 표시하세요.\n\n================================\nSTEP 5 — CONNECTION CHECK\n================================\n\n9개 Block 사이의 연결을 검토하세요.\n\n다음 질문에 답하세요.\n\n1.\nPrimary Customer가\nPrimary Value Proposition과 명확히 연결되는가?\n\n2.\n현재 Channel이\n실제로 이 Customer에게 도달할 수 있는가?\n\n3.\nRevenue Stream이\nCustomer가 얻는 Value와 연결되는가?\n\n4.\nKey Activities와 Resources가\nValue를 실제 제공할 수 있게 만드는가?\n\n5.\n현재 Revenue 가설과 Cost 구조 사이에\n명백한 모순이 있는가?\n\n6.\n현재 Business Model에서\n가장 약하게 연결된 Block은 무엇인가?\n\n================================\nSTEP 6 — DESIRABILITY / FEASIBILITY / VIABILITY\n================================\n\n현재 Business Model을 세 관점으로 평가하세요.\n\nDESIRABILITY\n고객이 원하는가?\n\nFEASIBILITY\n우리가 실제로 제공할 수 있는가?\n\nVIABILITY\n경제적으로 지속 가능할 가능성이 있는가?\n\n각각:\n\nSTRONG / PARTIAL / UNKNOWN\n\n중 하나로 표시하고 이유를 설명하세요.\n\n================================\n[금지]\n================================\n\n- 실제 매출 생성 금지\n- 실제 가격 임의 생성 금지\n- 시장점유율 생성 금지\n- 고객 수 생성 금지\n- 가짜 Partner 생성 금지\n- 검증되지 않은 Channel을 확정적 사실로 표현 금지\n- Revenue Hypothesis를 확정 사실로 표현 금지\n- 9칸을 채우기 위해 필요 없는 내용을 억지로 생성 금지\n\n================================\n[출력]\n================================\n\n===== BUSINESS MODEL CANVAS DRAFT =====\n\n1. Customer Segments\n-\n상태:\n-\n\n2. Value Propositions\n-\n상태:\n-\n\n3. Channels\n-\n상태:\n-\n\n4. Customer Relationships\n-\n상태:\n-\n\n5. Revenue Streams\n-\n상태:\n-\n\n6. Key Activities\n-\n상태:\n-\n\n7. Key Resources\n-\n상태:\n-\n\n8. Key Partners\n-\n상태:\n-\n\n9. Cost Structure\n-\n상태:\n-\n\n===== CONNECTION CHECK =====\n\n가장 강한 연결:\n-\n\n가장 약한 연결:\n-\n\n가장 큰 모순:\n-\n\n===== 3가지 사업성 관점 =====\n\nDesirability:\n-\n\nFeasibility:\n-\n\nViability:\n-\n\n===== 우선 검증 =====\n\n가장 먼저 검증해야 할 Business Model Hypothesis 1:\n-\n\n두 번째:\n-\n\n세 번째:\n-\n\n사람이 최종 결정해야 할 것:\n-",
             "targetTool": "ChatGPT",
             "copyable": true
           }
         },
         {
-          "id": "d8l1-p08-link",
+          "id": "d8l1-b04-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p09",
-      "title": "AI 결과 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l1-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 결과 검수\n\n- 원자료와 대조\n- 누락 확인\n- 과장 삭제\n- 확인 필요 표시",
-            "emphasis": "normal"
+            "practiceName": "Business Model Architect",
+            "practiceDescription": "9개 Block의 Business Model Canvas 초안, Connection Check, Desirability/Feasibility/Viability 평가를 만듭니다.",
+            "estimatedMinutes": 8
           }
         },
         {
-          "id": "d8l1-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p10",
-      "title": "이해 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l1-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d8l1-p10-q-q1",
-                "question": "가장 먼저 확인해야 할 기준은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d8l1-p10-q-c1",
-                    "text": "표현이 화려한가"
-                  },
-                  {
-                    "id": "d8l1-p10-q-c2",
-                    "text": "근거·목표·대상과 연결되는가"
-                  },
-                  {
-                    "id": "d8l1-p10-q-c3",
-                    "text": "AI가 자신 있게 말하는가"
-                  },
-                  {
-                    "id": "d8l1-p10-q-c4",
-                    "text": "슬라이드 수가 많은가"
-                  }
-                ],
-                "correctChoiceId": "d8l1-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "d8l1-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정답은 **근거·목표·대상과 연결되는가**입니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l1-p11",
-      "title": "최종 결과 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l1-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 결과 정리\n\n다음 단계에서 재사용할 수 있도록 근거와 선택 이유까지 남깁니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l1-final-form",
+          "id": "d8l1-b04-result-form",
           "type": "input-form",
+          "title": "21차시 AI Business Model 분석 결과",
           "visibility": "visible",
-          "title": "사업계획서·소개서용 Source Pack 만들기 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d8l1-final-form-f1",
-                "label": "최종 결과물",
+                "id": "r1",
+                "label": "21차시 AI Business Model 분석 결과",
                 "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d8l1-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d8l1-final-form-f3",
-                "label": "검증 필요 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d8l1-final-form-f4",
-                "label": "다음 행동",
-                "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기에 붙여넣으세요."
               }
             ]
           }
@@ -396,40 +412,1260 @@
       ]
     },
     {
-      "id": "d8l1-p12",
-      "title": "저장 및 다음 단계",
-      "layout": "standard",
+      "id": "p05",
+      "title": "사람의 결정 — Business Model Canvas",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d8l1-p12-preview",
+          "id": "d8l1-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사람의 결정 — Business Model Canvas",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l1-b05-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "9개 Block 전체를 다시 장문 작성하지 않습니다. AI 초안을 보고 사업모델의 핵심 결정만 남깁니다."
+          }
+        },
+        {
+          "id": "d8l1-b05-form",
+          "type": "input-form",
+          "title": "Human Decision",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "h1",
+                "label": "1순위 Customer Segment",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "h2",
+                "label": "1순위 Value Proposition",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "h3",
+                "label": "1순위 Channel",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "현재 고객에게 실제 도달할 핵심 Channel 하나. 예: 검색 Blog + Landing / Instagram / Direct Outreach",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h4",
+                "label": "고객 관계 (Customer Relationship)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "고객과 어떤 관계를 유지할지. 예: 상담 중심 / 셀프서비스 + 필요 시 상담 / 반복 이용 고객 관리",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h5",
+                "label": "1순위 Revenue 가설 (Revenue Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 프로젝트 단위 서비스 비용. 아직 검증 전인 가설임을 표시하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h6",
+                "label": "핵심 활동 (Key Activity)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이 사업이 실제로 돌아가려면 가장 중요한 활동 1-3개.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h7",
+                "label": "핵심 자원 (Key Resource)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "가장 중요한 자원 1-3개.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h8",
+                "label": "핵심 파트너 (Key Partner)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "필요한 경우만. 없다면 \"현재 핵심 Partner 가설 없음\"으로 적어도 됩니다.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h9",
+                "label": "주요 비용 요인 (Main Cost Driver)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "가장 큰 비용이 될 가능성이 있는 범주. 금액은 쓰지 않습니다.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h10",
+                "label": "가장 약한 연결 (Weakest Link)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 고객은 명확하지만 실제 유료 전환 방식이 검증되지 않음",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h11",
+                "label": "가장 위험한 사업모델 가설",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 고객이 월 구독료를 지불할 것이라는 가설",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "21차시 AI Business Model 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l1-b04-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "h12",
+                "label": "다음 검증 (Next Validation)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 실제 고객 5명에게 결제 방식 선호 확인"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l1-b05-check",
+          "type": "infographic",
+          "title": "마지막 3가지 체크",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Desirability",
+                "description": "고객이 정말 원하는가? YES / PARTIAL / UNKNOWN"
+              },
+              {
+                "label": "Feasibility",
+                "description": "실제 제공 가능한가? YES / PARTIAL / UNKNOWN"
+              },
+              {
+                "label": "Viability",
+                "description": "수익·비용 구조가 살아남을 수 있을 것 같은가? YES / PARTIAL / UNKNOWN"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d8l1-b05-status-form",
+          "type": "input-form",
+          "title": "3가지 사업성 상태",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "s1",
+                "label": "Desirability 상태",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "YES",
+                  "PARTIAL",
+                  "UNKNOWN"
+                ]
+              },
+              {
+                "id": "s2",
+                "label": "Feasibility 상태",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "YES",
+                  "PARTIAL",
+                  "UNKNOWN"
+                ]
+              },
+              {
+                "id": "s3",
+                "label": "Viability 상태",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "YES",
+                  "PARTIAL",
+                  "UNKNOWN"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d8l1-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 결과 저장 / 완료",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l1-b06-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### A. Business Model Canvas 저장"
+          }
+        },
+        {
+          "id": "d8l1-b06-map-form",
+          "type": "input-form",
+          "title": "21차시 — Business Model Canvas v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "m1",
+                "label": "1순위 Customer Segment",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m2",
+                "label": "1순위 Value Proposition",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m3",
+                "label": "1순위 Channel",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m4",
+                "label": "고객 관계 (Customer Relationship)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m5",
+                "label": "1순위 Revenue 가설 (Revenue Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m6",
+                "label": "핵심 활동 (Key Activities)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m7",
+                "label": "핵심 자원 (Key Resources)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m8",
+                "label": "핵심 파트너 (Key Partners)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m9",
+                "label": "주요 비용 요인 (Main Cost Driver)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m10",
+                "label": "가장 약한 연결 (Weakest Link)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m11",
+                "label": "가장 위험한 사업모델 가설",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h11"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m12",
+                "label": "다음 검증 (Next Validation)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-form",
+                    "sourceFieldIds": [
+                      "h12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m13",
+                "label": "바람직성 상태 (Desirability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "3가지 사업성 상태에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-status-form",
+                    "sourceFieldIds": [
+                      "s1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m14",
+                "label": "실행 가능성 상태 (Feasibility)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "3가지 사업성 상태에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-status-form",
+                    "sourceFieldIds": [
+                      "s2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m15",
+                "label": "지속 가능성 상태 (Viability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "3가지 사업성 상태에서 가져오기",
+                    "sourceBlockId": "d8l1-b05-status-form",
+                    "sourceFieldIds": [
+                      "s3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l1-b06-map-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "21차시 — Business Model Canvas v0.1",
+            "sourceBlockId": "d8l1-b06-map-form",
+            "buttonLabel": "Business Model Canvas v0.1 저장"
+          }
+        },
+        {
+          "id": "d8l1-b06-map-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "business-model",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "artifactType": "business-idea",
+            "emptyMessage": "아직 저장된 결과가 없습니다."
           }
         },
         {
-          "id": "d8l1-p12-save",
+          "id": "d8l1-b06-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### B. Business Context 누적 저장"
+          }
+        },
+        {
+          "id": "d8l1-b06-context-form",
+          "type": "input-form",
+          "title": "21차시 — Business Context v0.21",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "c1",
+                "label": "1순위 고객 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "c2",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c3",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "c4",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "c5",
+                "label": "핵심 메시지 대상 Actor (Primary Message Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "핵심 메시지 대상 Actor (Primary Message Actor)"
+                  }
+                ]
+              },
+              {
+                "id": "c6",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "c7",
+                "label": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "c8",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
+                  }
+                ]
+              },
+              {
+                "id": "c9",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "c10",
+                "label": "최종 핵심 메시지 (Final Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c11",
+                "label": "메시지 불변요소 / 경계 (Message Invariants / Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "메시지 불변요소 / 경계 (Message Invariants / Boundary)"
+                  }
+                ]
+              },
+              {
+                "id": "c12",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "c13",
+                "label": "Offer 안전장치 (Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "Offer 안전장치 (Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c14",
+                "label": "연락 대상 Context (Recipient Context)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "연락 대상 Context (Recipient Context)"
+                  }
+                ]
+              },
+              {
+                "id": "c15",
+                "label": "전환 목표 (Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "전환 목표 (Conversion Goal)"
+                  }
+                ]
+              },
+              {
+                "id": "c16",
+                "label": "Landing 1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "Landing 1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c17",
+                "label": "우선순위 FAQ (Priority FAQ)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "우선순위 FAQ (Priority FAQ)"
+                  }
+                ]
+              },
+              {
+                "id": "c18",
+                "label": "사람 이관 규칙 (Human Handoff Rule)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "사람 이관 규칙 (Human Handoff Rule)"
+                  }
+                ]
+              },
+              {
+                "id": "c19",
+                "label": "고객응대 안전장치 (Customer Response Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "20차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "20차시 — Business Context v0.20",
+                    "sourceLabel": "고객응대 안전장치 (Customer Response Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "n1",
+                "label": "1순위 Channel (Primary Channel)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n2",
+                "label": "고객 관계 (Customer Relationship)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n3",
+                "label": "Revenue 가설 (Revenue Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n4",
+                "label": "핵심 활동 (Key Activities)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n5",
+                "label": "핵심 자원 (Key Resources)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n6",
+                "label": "핵심 파트너 (Key Partners)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n7",
+                "label": "주요 비용 요인 (Main Cost Driver)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n8",
+                "label": "가장 약한 사업모델 연결 (Weakest Business Model Link)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n9",
+                "label": "가장 위험한 모델 가설 (Highest-risk Model Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m11"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n10",
+                "label": "바람직성 (Desirability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m13"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n11",
+                "label": "실행 가능성 (Feasibility)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m14"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n12",
+                "label": "지속 가능성 (Viability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "BMC에서 가져오기",
+                    "sourceBlockId": "d8l1-b06-map-form",
+                    "sourceFieldIds": [
+                      "m15"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n13",
+                "label": "다음 결정 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "이 Business Model Canvas를 실제 가격·수익성 계산으로 검증하려면 무엇을 먼저 확인해야 하는가?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l1-b06-context-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day8 Lesson1 — 사업계획서·소개서용 Source Pack 만들기",
           "data": {
-            "artifactType": "business-model",
-            "artifactTitle": "Day8 Lesson1 — 사업계획서·소개서용 Source Pack 만들기",
-            "sourceBlockId": "d8l1-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "21차시 — Business Context v0.21",
+            "sourceBlockId": "d8l1-b06-context-form",
+            "buttonLabel": "Business Context v0.21 저장"
           }
         },
         {
-          "id": "d8l1-p12-reflection",
-          "type": "reflection",
+          "id": "d8l1-b06-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 검증 항목은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## 다음 단계\n\n오늘은 사업 전체 구조의 초안을 만들었습니다. 본격적인 가격과 수익성 계산은 22-23차시에서 다룹니다.",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "Miro 시연 — 빈 BMC와 이미 아는 것",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l1-b07-badge",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사 시연** — 학생 일부 따라하기 가능",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d8l1-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## STEP 1-2 — 빈 BMC 보여주기, 이미 아는 것부터 배치",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l1-b07-step1",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**STEP 1**: \"9칸이 있죠. 그런데 오늘 목표는 이걸 꽉 채우는 게 아닙니다.\""
+          }
+        },
+        {
+          "id": "d8l1-b07-step2",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**STEP 2**: 학생 실습 결과 중 Customer Segment, Value Proposition, Channel, Customer Relationship을 먼저 Miro에 배치합니다. \"이건 오늘 새로 상상한 게 아니라 앞에서 만든 결과입니다.\"를 강조하세요."
+          }
+        },
+        {
+          "id": "d8l1-b07-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://miro.com/",
+            "buttonLabel": "Miro 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": false,
+            "practiceName": "Miro (강사 시연용)",
+            "practiceDescription": "학생이 만든 Business Model Canvas를 시각화하고 9개 요소 사이의 연결을 확인합니다. 학생 필수 과제가 아닙니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "오늘 만든 가설 추가 + 연결선 긋기",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l1-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## STEP 3-4 — 새 가설 추가, 연결선 긋기",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l1-b08-colors",
+          "type": "infographic",
+          "title": "STEP 3 — Post-it 색상 두 종류",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "기존 확인값",
+                "description": "Customer, Value, Channel, Relationship — 앞에서 만든 결과"
+              },
+              {
+                "label": "새 가설",
+                "description": "Revenue, Activity, Resource, Partner, Cost — 오늘 만든 가설"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l1-b08-step4",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**STEP 4 — 연결선을 그어봅니다.** Customer → Value → Channel, Customer+Value → Revenue, Value → Key Activity → Key Resource → Cost. 그리고 학생에게 묻습니다: \"이 Revenue는 어느 고객이 어떤 Value 때문에 내는 돈입니까?\" 답이 안 되면 연결이 약한 것입니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "일부러 오류 찾기 + 이번에 하지 않을 것",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l1-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## STEP 5-6 — 모순 찾기, UNKNOWN 표시",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l1-b09-step5",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**STEP 5 — 일부러 오류 찾기.** 예: Revenue = 저가 월구독, Key Activity = 고강도 1:1 컨설팅. 질문: \"둘이 경제적으로 맞을까요?\" 아직 계산은 하지 않지만 모순 가능성을 발견합니다."
+          }
+        },
+        {
+          "id": "d8l1-b09-step6",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**STEP 6 — UNKNOWN 표시.** 검증 안 된 것은 억지로 확정하지 않습니다. 예: \"월 구독 지불 의사\" → NEEDS VALIDATION. \"Canvas에 UNKNOWN이 있다는 것은 실패가 아닙니다. 다음에 무엇을 검증해야 하는지 보인다는 뜻입니다.\""
+          }
+        },
+        {
+          "id": "d8l1-b09-skip",
+          "type": "infographic",
+          "title": "이번 Miro 실습에서 하지 않을 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Post-it 50개"
+              },
+              {
+                "label": "팀별 브레인스토밍"
+              },
+              {
+                "label": "복잡한 색상체계"
+              },
+              {
+                "label": "시장규모 계산"
+              },
+              {
+                "label": "수익 예측"
+              },
+              {
+                "label": "가격 결정"
+              },
+              {
+                "label": "BMC 디자인 꾸미기"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d8l1-b09-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**학생이 알아야 하는 것: Business Model은 한눈에 연결을 보는 지도입니다.**",
+            "emphasis": "lead"
           }
         }
       ]
