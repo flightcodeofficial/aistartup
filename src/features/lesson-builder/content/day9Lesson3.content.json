@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "Same Business, Different Lens 핵심 이론",
+      "title": "같은 사업, 다른 문서 목적",
       "layout": "wide",
       "blocks": [
         {
@@ -22,7 +22,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# Same Business, Different Lens\n\n## Business Plan을 고객용 Service Introduction으로 변환하기",
+            "markdown": "# Same Business, Different Lens\n\n## 같은 사업이라도 문서의 목적이 다르면 강조점이 달라집니다",
             "emphasis": "hero"
           },
           "layout": {
@@ -32,28 +32,28 @@
           }
         },
         {
-          "id": "d9l3-b01-goal",
+          "id": "d9l3-b01-question",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**학생이 최종적으로 이해해야 할 것: 정보 자체를 바꾸는 것이 아니라, 독자와 문서 목적에 맞춰 강조점과 표현을 바꿉니다.**"
+            "markdown": "**\"완벽한 사업계획서를 고객에게 그대로 보여주면 좋은 서비스 소개서가 될까요?\"**\n\n정보가 많다고 좋은 문서가 아닙니다. 독자(Audience)가 달라지면 그들이 던지는 질문도 달라집니다."
           }
         },
         {
-          "id": "d9l3-b01-reminder",
+          "id": "d9l3-b01-compare",
           "type": "infographic",
-          "title": "오늘 하지 않는 것 vs 오늘 하는 것",
+          "title": "Business Plan vs Service Introduction",
           "visibility": "visible",
           "data": {
             "variant": "comparison",
             "items": [
               {
-                "label": "오늘 하지 않는 것",
-                "description": "Business Plan 요약하기\n새로운 고객 만들기\nBenefit 과장하기\n가설을 고객용 Fact로 바꾸기\nOne-Pager 다시 디자인하기\nIR Deck 만들기"
+                "label": "Business Plan",
+                "description": "목적: 사업의 타당성과 실행 가능성 설명\n핵심 질문: \"이 사업이 현실적으로 가능한가?\"\n주요 독자: 지원기관, 투자자, 내부 팀, 파트너\n강조: Problem, Market, Business Model, Revenue, Execution, Risk, Hypothesis"
               },
               {
-                "label": "오늘 하는 것",
-                "description": "같은 사업정보를 고객의 질문에 맞게 변환한다"
+                "label": "Service Introduction",
+                "description": "목적: 서비스의 고객가치와 선택 이유 설명\n핵심 질문: \"이 서비스가 나에게 왜 필요한가?\"\n주요 독자: 실제 고객, 서비스 이용자, 필요 시 파트너\n강조: Customer Problem, Value, Offer, Benefit, How, Proof, CTA"
               }
             ]
           },
@@ -62,40 +62,248 @@
           }
         },
         {
-          "id": "d9l3-b01-ktr",
-          "type": "infographic",
-          "title": "K.T.R 핵심 프레임",
+          "id": "d9l3-b01-core",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "variant": "steps",
-            "items": [
-              {
-                "label": "KEEP",
-                "description": "그대로 유지"
-              },
-              {
-                "label": "TRANSLATE",
-                "description": "고객 언어로 번역"
-              },
-              {
-                "label": "REMOVE",
-                "description": "고객 판단에 필요 없으면 제거"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d9l3-b01-instructor",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "전체 20분 — 26차시 결과 가져오기 2분, GPT 1회 8분, Business Plan vs Service Intro 비교 3분, Human Decision 5분, 저장 2분. GPT 실행 정확히 1회. Red Team은 하지 않는다 — 문서 비평은 28차시에서 본격적으로 한다."
+            "markdown": "## \"같은 사업이라도 Context를 바꾸는 것이 아니라 독자의 렌즈를 바꿉니다.\"",
+            "emphasis": "lead"
           }
         }
       ]
     },
     {
       "id": "p02",
+      "title": "Summarization ≠ Transformation + K.T.R",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d9l3-b02t-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사업계획서를 짧게 줄인다고 서비스 소개서가 되지는 않습니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d9l3-b02t-compare",
+          "type": "infographic",
+          "title": "요약 vs 변환",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "요약 (Summarization)",
+                "description": "10페이지 Business Plan\n↓\n분량을 줄임\n\n문제: 내부 논리가 그대로 남을 수 있음. Revenue/Cost/Market 정보가 고객에게 그대로 노출. 고객의 질문에 맞는 구조가 아님."
+              },
+              {
+                "label": "변환 (Transformation)",
+                "description": "같은 Source of Truth\n↓\nAudience / Purpose 변경\n↓\n고객이 판단하기 좋은 정보구조로 재구성"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l3-b02t-core1",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Shorter ≠ Customer-facing",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d9l3-b02t-ktr-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### 무엇을 유지하고, 번역하고, 제거할 것인가?"
+          }
+        },
+        {
+          "id": "d9l3-b02t-ktr",
+          "type": "infographic",
+          "title": "K.T.R Framework",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "KEEP — 유지",
+                "description": "고객의 선택 판단에도 필요한 핵심 정보. 예: Target, Core Problem, Core Value, 실제 Offer, 실제 Proof, 확정된 가격/Package 정보"
+              },
+              {
+                "label": "TRANSLATE — 번역",
+                "description": "Fact는 유지하되 내부 언어를 고객이 이해할 수 있는 언어로 바꾼다.\n내부: \"AI 기반 다채널 콘텐츠 Workflow 자동화\"\n고객: \"Blog 하나를 기준으로 SNS와 Newsletter 초안을 매번 처음부터 다시 만드는 시간을 줄입니다.\""
+              },
+              {
+                "label": "REMOVE — 제거",
+                "description": "고객의 서비스 선택과 직접 관련 없는 내부 정보. 예: 상세 TAM, Break-even 내부 계산, Cost Structure, Revenue Hypothesis 상세, 내부 운영 Risk, 내부 Milestone"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l3-b02t-core2",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## \"정보를 숨기는 것이 아닙니다. 고객의 판단에 불필요한 정보부담을 줄이는 것입니다.\"",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "Internal Logic → Customer Meaning + Feature→Value + Proof",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d9l3-b03t-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사업자의 언어를 고객의 의미로 번역합니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d9l3-b03t-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "Business Plan 내부 언어(Technology, Workflow, Process, System, Operation, Revenue)를 그대로 옮기면 고객은 이렇게 묻습니다: **\"그래서 나한테 뭐가 좋아지는데?\"**"
+          }
+        },
+        {
+          "id": "d9l3-b03t-example",
+          "type": "infographic",
+          "title": "내부 논리 → 고객 의미",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "내부 논리",
+                "description": "\"AI 기반 자동화 기술을 활용해 다채널 콘텐츠 Workflow를 효율화합니다.\""
+              },
+              {
+                "label": "고객 의미",
+                "description": "\"Blog 하나를 만들면 SNS와 Newsletter 초안을 다시 처음부터 만드는 시간을 줄일 수 있습니다.\""
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l3-b03t-core1",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Fact는 바뀌지 않았습니다. Meaning for the Reader가 바뀌었습니다.**"
+          }
+        },
+        {
+          "id": "d9l3-b03t-fbv",
+          "type": "infographic",
+          "title": "Feature → Benefit → Value",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Feature",
+                "description": "무엇이 있는가? 예: AI 기반 다채널 콘텐츠 변환"
+              },
+              {
+                "label": "Benefit",
+                "description": "무엇을 해주는가? 예: Blog를 SNS/Newsletter 초안으로 변환"
+              },
+              {
+                "label": "Value",
+                "description": "그래서 고객에게 무엇이 달라지는가? 예: 반복 콘텐츠 제작 시간을 줄인다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d9l3-b03t-core2",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**\"서비스 소개서의 핵심은 기능 나열이 아니라 고객가치 전달입니다.\"**"
+          }
+        },
+        {
+          "id": "d9l3-b03t-proof-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Evidence vs Customer Proof"
+          }
+        },
+        {
+          "id": "d9l3-b03t-proof",
+          "type": "infographic",
+          "title": "Evidence vs Proof의 목적",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Business Plan Evidence",
+                "description": "목적: \"이 사업 논리가 믿을 만한가?\"\n예: 시장 Source, Revenue Hypothesis 근거, Break-even 분석, 사업모델 검증정보"
+              },
+              {
+                "label": "Service Introduction Proof",
+                "description": "목적: \"이 서비스를 선택해도 괜찮은가?\"\n예: 실제 제품 화면, 실제 Process, 실제 Before/After, 실제 고객 결과, 실제 사례, 실제 인증"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l3-b03t-warning",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Proof가 없다고 새로 만들지 않습니다.** 고객용으로 변환한다고 Evidence Boundary가 넓어지는 것도 아닙니다."
+          }
+        },
+        {
+          "id": "d9l3-b03t-core3",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## \"문서의 목적이 바뀌면 신뢰를 주는 방식은 달라지지만, Fact와 Claim Boundary는 바뀌지 않습니다.\"",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d9l3-b03t-instructor",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "전체 20분 — 26차시 결과 가져오기 2분, GPT 1회 8분, Business Plan vs Service Intro 비교 3분, Human Decision 5분, 저장 2분. 이론은 P01-P03(약 10분), 실습은 P04-P07. GPT 실행 정확히 1회. Red Team은 하지 않는다 — 문서 비평은 28차시에서 본격적으로 한다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
       "title": "실습 — Service Introduction 변환",
       "layout": "practice",
       "blocks": [
@@ -114,6 +322,55 @@
           "visibility": "visible",
           "data": {
             "markdown": "학생이 사업정보를 다시 입력하지 않습니다. 26차시까지 누적된 Business Context와 Business Plan Draft에서 구조화된 값만 버튼으로 가져옵니다. AI raw history 전체는 가져오지 않습니다."
+          }
+        },
+        {
+          "id": "d9l3-b02-remind",
+          "type": "infographic",
+          "title": "실습 전 체크",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "오늘 바꾸는 것",
+                "description": "문서의 Audience\n표현 방식\n정보 순서\n설명 깊이\n고객용 CTA"
+              },
+              {
+                "label": "오늘 바꾸면 안 되는 것",
+                "description": "Primary Customer\nCore Problem\nCore Value\nActual Offer\nActual Capability\nActual Proof\nPrice / Package Fact\nClaim Boundary"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l3-b02-remindflow",
+          "type": "infographic",
+          "title": "실습 흐름",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Business Plan Draft",
+                "description": "출발점"
+              },
+              {
+                "label": "KEEP / TRANSLATE / REMOVE",
+                "description": "분류"
+              },
+              {
+                "label": "Customer Meaning",
+                "description": "고객 언어로 번역"
+              },
+              {
+                "label": "Service Introduction Draft",
+                "description": "결과물"
+              }
+            ]
           }
         },
         {
@@ -383,7 +640,7 @@
       ]
     },
     {
-      "id": "p03",
+      "id": "p05",
       "title": "사람의 결정 — Service Introduction Transformation Map",
       "layout": "practice",
       "blocks": [
@@ -527,7 +784,7 @@
       ]
     },
     {
-      "id": "p04",
+      "id": "p06",
       "title": "시연 — Same Fact, Different Lens",
       "layout": "standard",
       "blocks": [
@@ -592,17 +849,66 @@
           }
         },
         {
+          "id": "d9l3-b04-drift-def",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Document Drift란**: 같은 Business Context를 다른 목적의 문서로 변환하는 과정에서 Fact나 사업결정 자체까지 변해버리는 현상."
+          }
+        },
+        {
+          "id": "d9l3-b04-drift-risks",
+          "type": "infographic",
+          "title": "대표 위험",
+          "visibility": "visible",
+          "data": {
+            "variant": "checklist",
+            "items": [
+              {
+                "label": "Target 확대"
+              },
+              {
+                "label": "Benefit 과장"
+              },
+              {
+                "label": "없는 Feature 추가"
+              },
+              {
+                "label": "Hypothesis → Fact"
+              },
+              {
+                "label": "실제 Proof보다 강한 Claim"
+              },
+              {
+                "label": "가격 / Package 변경"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
           "id": "d9l3-b04-drift",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
             "markdown": "강사가 AI에 \"좀 더 고객에게 강력하게 설득되게 바꿔줘\"라고 요청합니다. AI가 만약 \"콘텐츠 제작시간을 80% 절감합니다\"처럼 Source에 없는 Claim을 추가하면 멈춥니다.\n\n**질문**: \"고객용으로 표현을 바꿨나요, 아니면 사실까지 바꿨나요?\" — 후자입니다. 이게 Document Drift입니다."
           }
+        },
+        {
+          "id": "d9l3-b04-iron",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Iron Rule: Tone은 바뀌어도 Claim Boundary는 바뀌지 않습니다.",
+            "emphasis": "lead"
+          }
         }
       ]
     },
     {
-      "id": "p05",
+      "id": "p07",
       "title": "결과 저장 / 완료",
       "layout": "practice",
       "blocks": [
