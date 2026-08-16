@@ -4,8 +4,8 @@
   "week": 3,
   "day": 8,
   "lesson": 3,
-  "title": "1쪽 사업 요약과 2쪽 서비스 소개서",
-  "description": "1분 안에 이해되는 원페이지와 고객 언어 중심의 서비스 소개서를 만듭니다.",
+  "title": "Break-even & Package — 고객가와 생존가의 교집합",
+  "description": "22차시 Price Hypothesis를 Price → Variable Cost → Contribution Margin → Fixed Cost → Break-even → Capacity → Package 순서로 검토합니다.",
   "durationMinutes": 60,
   "status": "draft",
   "version": 1,
@@ -13,382 +13,331 @@
   "updatedAt": 0,
   "pages": [
     {
-      "id": "d8l3-p01",
-      "title": "오늘 만들 결과물",
-      "layout": "standard",
+      "id": "p01",
+      "title": "Break-even & Package 핵심 이론",
+      "layout": "wide",
       "blocks": [
         {
-          "id": "d8l3-p01-b1",
+          "id": "d8l3-b01-hero",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# 1쪽 사업 요약과 2쪽 서비스 소개서\n\n**1분 안에 이해되는 원페이지와 고객 언어 중심의 서비스 소개서를 만듭니다.**",
+            "markdown": "# Break-even & Package\n\n## 고객이 받아들일 가격과 사업이 살아남을 가격의 교집합 찾기",
             "emphasis": "hero"
-          }
-        },
-        {
-          "id": "d8l3-p01-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "오늘은 결과물 수보다 **근거와 판단 기준**을 우선합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l3-p01-i",
-          "type": "rich-text",
-          "visibility": "instructor-only",
-          "data": {
-            "markdown": "강사 포인트: 수강생의 실제 사업 단계에 따라 없는 실적·고객·숫자를 만들지 않도록 강조합니다.",
-            "emphasis": "normal"
           },
-          "title": "강사 멘트"
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p02",
-      "title": "핵심 구조",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l3-p02-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 핵심 구조\n\n- 입력 자료를 먼저 정리합니다.\n- AI가 추가한 내용과 원자료를 구분합니다.\n- 결과물은 다음 Lesson에서 재사용합니다.",
-            "emphasis": "normal"
+          "layout": {
+            "width": "wide",
+            "align": "left",
+            "spacing": "medium"
           }
         },
         {
-          "id": "d8l3-p02-img",
-          "type": "image",
+          "id": "d8l3-b01-reminder",
+          "type": "infographic",
+          "title": "오늘 하지 않는 것 vs 오늘 하는 것",
           "visibility": "visible",
           "data": {
-            "url": "/lesson-content/day8/d8l3_framework.svg",
-            "alt": "1쪽 사업 요약과 2쪽 서비스 소개서 구조",
-            "caption": "",
-            "display": "large",
-            "objectFit": "contain",
-            "aspectRatio": "16/9",
-            "mobileRatio": "4/3"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p03",
-      "title": "좋은 결과물의 기준",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l3-p03-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 좋은 결과물의 기준\n\n- 명확성\n- 근거 연결\n- 대상 적합성\n- 다음 행동",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l3-p03-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p04",
-      "title": "흔한 실패",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l3-p04-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 흔한 실패\n\n- 근거 없는 숫자\n- 가짜 고객·성과\n- 추측을 사실처럼 표현\n- 한 번에 너무 많은 자동화",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l3-p04-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p05",
-      "title": "실무 체크리스트",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l3-p05-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 실무 체크리스트\n\n- 사실/가설 분리\n- 개인정보 최소화\n- 외부 공개 전 사람 검수",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l3-p05-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p06",
-      "title": "인터랙티브 판단 연습",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l3-p06-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 인터랙티브 판단 연습\n\n카드를 눌러 사실·가설·검증 필요를 구분합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l3-p06-html",
-          "type": "html-file",
-          "visibility": "visible",
-          "data": {
-            "src": "/lesson-content/day8/d8l3_interactive.html",
-            "trustedScript": true,
-            "designWidth": 1280,
-            "designHeight": 720,
-            "mobileRenderMode": "responsive"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p07",
-      "title": "내 사업 입력",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l3-p07-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 내 사업 입력\n\n실제 고객 개인정보 대신 익명화·가명·공개 정보만 사용합니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l3-p07-form",
-          "type": "input-form",
-          "visibility": "visible",
-          "title": "1쪽 사업 요약과 2쪽 서비스 소개서 입력",
-          "data": {
-            "fields": [
+            "variant": "comparison",
+            "items": [
               {
-                "id": "d8l3-p07-form-f1",
-                "label": "현재 사업/서비스 한 문장",
-                "kind": "long-text",
-                "required": true
+                "label": "오늘 하지 않는 것",
+                "description": "회계장부 만들기\n세무 계산\n3년 재무제표\n정확한 매출 예측\nAI가 비용을 추측하게 하기\n보기 좋은 Basic/Pro/Premium 가격표부터 만들기"
               },
               {
-                "id": "d8l3-p07-form-f2",
-                "label": "확인된 근거",
-                "kind": "long-text",
-                "required": true
+                "label": "오늘 하는 것",
+                "description": "\"하나 팔면 얼마가 남고, 몇 개 팔아야 고정비를 감당하는가?\"\n\"그 판매량을 내가 실제로 처리할 수 있는가?\""
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d8l3-b01-flow",
+          "type": "infographic",
+          "title": "오늘의 흐름",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Price",
+                "description": "가격 가설"
               },
               {
-                "id": "d8l3-p07-form-f3",
-                "label": "현재 가설",
-                "kind": "long-text",
-                "required": true
+                "label": "Variable Cost",
+                "description": "판매 1건당 변동비"
               },
               {
-                "id": "d8l3-p07-form-f4",
-                "label": "이번 Lesson에서 만들 결과물",
-                "kind": "long-text",
-                "required": true
+                "label": "Contribution Margin",
+                "description": "Price - Variable Cost"
+              },
+              {
+                "label": "Fixed Cost",
+                "description": "월 고정비"
+              },
+              {
+                "label": "Break-even",
+                "description": "Fixed Cost ÷ Contribution Margin"
+              },
+              {
+                "label": "Capacity",
+                "description": "현실적으로 처리 가능한 양"
+              },
+              {
+                "label": "Package",
+                "description": "나눌 필요가 있는가"
               }
             ]
           }
+        },
+        {
+          "id": "d8l3-b01-goal",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**최종 목적은 \"정확한 재무계획\"이 아니라, 지금 사업모델에서 어떤 숫자가 위험하고 무엇을 다시 검증해야 하는지 발견하는 것입니다.** 학생이 최종적으로 얻을 결과는 딱 다섯 가지: 기준 가격 가설 / 단위당 공헌이익 / 손익분기 판매량 / 이 판매량이 현실적으로 가능한지 / 단일상품 또는 Package 여부."
+          }
+        },
+        {
+          "id": "d8l3-b01-instructor",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "GPT는 정확히 1회. 웹앱 실습(Context+Prompt+Human Decision) 이후 Google Sheets Guided Build로 이어진다. 학생에게 빈 Sheet를 만들라고 하지 말고 템플릿 Sheet를 미리 준비해 파일→사본 만들기만 하게 한다."
+          }
         }
       ]
     },
     {
-      "id": "d8l3-p08",
-      "title": "ChatGPT 실습 프롬프트",
-      "layout": "wide",
+      "id": "p02",
+      "title": "실습 — Unit Economics 검토 받기",
+      "layout": "practice",
       "blocks": [
         {
-          "id": "d8l3-p08-b1",
+          "id": "d8l3-b02-title",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "## ChatGPT 실습 프롬프트",
-            "emphasis": "normal"
+            "markdown": "## 실습 — Unit Economics 검토 받기",
+            "emphasis": "lead"
           }
         },
         {
-          "id": "d8l3-p08-prompt",
-          "type": "prompt",
+          "id": "d8l3-b02-body",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "prompt": "당신은 초기 창업자의 실무 코치입니다.\n목표: 1분 안에 이해되는 원페이지와 고객 언어 중심의 서비스 소개서를 만듭니다.\n규칙:\n1. 제공되지 않은 사실·고객·매출·파트너·시장수치를 만들지 않는다.\n2. 사실/계산값/창업자 가설/AI 추론을 구분한다.\n3. 불확실한 내용은 [검증 필요]로 표시한다.\n4. 개인정보·기밀정보를 재생성하지 않는다.\n5. 결과는 초급 창업자가 바로 수정할 수 있는 표와 체크리스트로 만든다.\n\n[사업 설명]\n[확인된 근거]\n[현재 가설]\n[원하는 산출물]",
+            "markdown": "학생이 사업 설명을 다시 입력하지 않습니다. 22차시까지 누적된 Business Context에서 대부분 버튼으로 가져오고, 비용 관련 숫자 세 가지만 직접 적습니다. 숫자를 모르면 UNKNOWN — AI가 대신 만들어주게 하지 않습니다."
+          }
+        },
+        {
+          "id": "d8l3-b02-context-form",
+          "type": "input-form",
+          "title": "Context 준비",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "f1",
+                "label": "고객이 돈을 내는 가치",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Context에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "고객이 돈을 내는 가치 (Value for Payment)"
+                  }
+                ]
+              },
+              {
+                "id": "f2",
+                "label": "가격 단위",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Context에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "1순위 Pricing Metric (Primary Pricing Metric)"
+                  }
+                ]
+              },
+              {
+                "id": "f3",
+                "label": "하한 가격 가설 (Lower Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Pricing Map에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Pricing Hypothesis Map v0.1",
+                    "sourceLabel": "하한 가격 가설 (Lower Price Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "f4",
+                "label": "기준 가격 가설 (Base Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Pricing Map에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Pricing Hypothesis Map v0.1",
+                    "sourceLabel": "기준 가격 가설 (Base Price Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "f5",
+                "label": "상한 가격 가설 (Upper Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Pricing Map에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Pricing Hypothesis Map v0.1",
+                    "sourceLabel": "상한 가격 가설 (Upper Price Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "f6",
+                "label": "주요 대안",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Context에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "주요 대안 (Primary Alternative)"
+                  }
+                ]
+              },
+              {
+                "id": "f7",
+                "label": "핵심 활동",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Context에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "핵심 활동 (Key Activities)"
+                  }
+                ]
+              },
+              {
+                "id": "f8",
+                "label": "핵심 자원",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Context에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "핵심 자원 (Key Resources)"
+                  }
+                ]
+              },
+              {
+                "id": "f9",
+                "label": "주요 비용 Driver",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Context에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "주요 비용 요인 (Main Cost Driver)"
+                  }
+                ]
+              },
+              {
+                "id": "f10",
+                "label": "월 고정비 추정 (Monthly Fixed Cost Estimate)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "SaaS, 임대료, 고정 인건비, 기본 운영비 등의 합계만 우선 입력하세요."
+              },
+              {
+                "id": "f11",
+                "label": "고객 1명/상품 1개당 변동비 추정 (Variable Cost per Unit)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "재료, 건당 외주, 배송, 결제수수료, AI API 사용료, 건당 작업시간 비용 등."
+              },
+              {
+                "id": "f12",
+                "label": "현실적인 월 처리 가능량 (Monthly Capacity)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 대표 혼자 월 20건 정도 처리 가능. 모르면 UNKNOWN."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l3-b02-prompt",
+          "type": "prompt",
+          "title": "실습 — Unit Economics 검토 받기",
+          "description": "위 Context 준비 칸의 내용을 아래 [ ] 열두 곳에 순서대로 옮겨 붙인 뒤 실행하세요.",
+          "visibility": "visible",
+          "data": {
+            "prompt": "[역할]\n\n당신은 근거 없는 비용이나 매출 숫자를 만들어\n사업성을 좋게 보이게 만드는 재무 컨설턴트가 아닙니다.\n\n이미 사람이 입력한 가격 가설과 비용 추정치를 이용하여\n\n1. 비용 구조가 논리적인지\n2. 하나 판매했을 때 경제성이 어떻게 작동하는지\n3. 손익분기 결과에서 어떤 위험을 봐야 하는지\n4. Package를 나누는 것이 실제 고객가치와 제공비용 측면에서 의미가 있는지\n\n검토하는 Unit Economics & Package Reviewer입니다.\n\n계산의 최종 기준은 Google Sheets이며,\n제공되지 않은 숫자는 절대로 임의 생성하지 마세요.\n\n================================\n[현재 Business Context]\n================================\n\n고객이 돈을 내는 가치:\n[ ]\n\n가격 단위:\n[ ]\n\nLower Price Hypothesis:\n[ ]\n\nBase Price Hypothesis:\n[ ]\n\nUpper Price Hypothesis:\n[ ]\n\n주요 대안:\n[ ]\n\n핵심 활동:\n[ ]\n\n핵심 자원:\n[ ]\n\n주요 비용 Driver:\n[ ]\n\n================================\n[학생의 비용 추정]\n================================\n\n월 고정비 추정:\n[ ]\n\n단위당 변동비 추정:\n[ ]\n\n현실적인 월 처리 가능량:\n[ ]\n\n모르는 항목은 UNKNOWN입니다.\n\n================================\nSTEP 1 — COST CHECK\n================================\n\n입력한 비용 항목이\n\n- Fixed Cost\n- Variable Cost\n- 확인 필요\n\n중 어디에 해당하는지 검토하세요.\n\n빠졌을 가능성이 높은 비용 범주는 제안할 수 있지만,\n금액은 만들지 마세요.\n\n출력:\n\n현재 Fixed Cost 구조:\n-\n\n현재 Variable Cost 구조:\n-\n\n누락 가능성이 있는 Cost:\n-\n\n추가 확인 필요:\n-\n\n================================\nSTEP 2 — UNIT ECONOMICS CHECK\n================================\n\nBase Price를 기준으로 다음 개념을 검토하세요.\n\n- Price\n- Variable Cost\n- Contribution Margin\n- Fixed Cost\n- Break-even Units\n\n숫자가 모두 제공되어 있을 때만 계산할 수 있습니다.\n\n계산 가능하지 않은 경우:\n\nINSUFFICIENT DATA\n\n라고 표시하세요.\n\n이 단계의 숫자는 Google Sheets에서 다시 확인해야 합니다.\n\n================================\nSTEP 3 — CAPACITY CHECK\n================================\n\nBreak-even 판매량과\n학생이 입력한 Monthly Capacity를 비교할 때\n확인해야 할 질문을 제시하세요.\n\n예:\n\n- 이 판매량을 실제 처리할 수 있는가?\n- 대표 혼자 가능한가?\n- 추가 인력이 필요한가?\n- 판매량이 늘수록 Variable Cost도 증가하는가?\n\n결론은 다음 중 하나:\n\nPOSSIBLE\nTIGHT\nUNREALISTIC\nUNKNOWN\n\n단,\n입력 데이터 범위 안에서만 판단하세요.\n\n================================\nSTEP 4 — BUSINESS MODEL LEVER\n================================\n\n현재 구조가 어려워 보인다면\n무조건 가격 인상만 제안하지 마세요.\n\n가능한 조정축을 검토하세요.\n\n- Price\n- Variable Cost\n- Fixed Cost\n- Delivery Model\n- Automation\n- Package Scope\n\n현재 상황에서 검토 가치가 높은 조정축을\n최대 3개 제안하세요.\n\n================================\nSTEP 5 — PACKAGE NEED\n================================\n\n현재 사업이 Package를 나누는 것이 의미가 있는지 검토하세요.\n\n다음 차이가 실제로 존재하는지 확인하세요.\n\n- 고객 Need\n- 사용량\n- 서비스 범위\n- Human Support Level\n- Automation Level\n- 제공 Cost\n\n차이가 명확하지 않다면:\n\nSINGLE OFFER RECOMMENDED\n\n라고 제안할 수 있습니다.\n\nPackage가 의미 있다면\n최대 3개의 Package 역할만 제안하세요.\n\n각 Package:\n\n- 누구를 위한 것인가\n- 핵심 Value 차이\n- 제공범위 차이\n- Cost가 증가하는 이유\n- 가격을 달리 받을 논리\n\n를 설명하세요.\n\n가격 숫자는 새로 만들지 마세요.\n\n================================\nSTEP 6 — PACKAGE GUARDRAIL\n================================\n\n다음을 확인하세요.\n\n- 비싼 Package가 단순히 기능만 많은가?\n- 높은 가격만큼 고객 Value가 커지는가?\n- 높은 Package에서 Human Work가 과도하게 늘어나는가?\n- 가격은 높지만 실제 Contribution이 더 나빠질 위험이 있는가?\n\n================================\n[금지]\n================================\n\n- 가짜 비용 생성 금지\n- 가짜 고객수 생성 금지\n- 가짜 매출 생성 금지\n- 실제 가격 Reference 없이 새로운 가격 생성 금지\n- 시장 평균 마진 생성 금지\n- Basic / Pro / Premium을 이유 없이 강제 생성 금지\n- 실제 Cost를 모르는데 수익성이 좋다고 확정 금지\n\n================================\n[출력]\n================================\n\n===== COST REVIEW =====\n\nFixed Cost:\n-\n\nVariable Cost:\n-\n\n추가 확인 필요:\n-\n\n===== UNIT ECONOMICS =====\n\nBase Price:\n-\n\nVariable Cost:\n-\n\nContribution Margin:\n-\n\nBreak-even:\n-\n\n계산 상태:\nCALCULABLE / INSUFFICIENT DATA\n\n===== CAPACITY =====\n\n월 처리 가능량:\n-\n\nBreak-even과 Capacity 관계:\n-\n\n상태:\nPOSSIBLE / TIGHT / UNREALISTIC / UNKNOWN\n\n===== BUSINESS MODEL LEVERS =====\n\n우선 검토 1:\n-\n\n우선 검토 2:\n-\n\n우선 검토 3:\n-\n\n===== PACKAGE =====\n\nPackage 필요성:\nSINGLE OFFER / PACKAGE MAY HELP / NEEDS VALIDATION\n\n이유:\n-\n\nPackage 후보가 필요한 경우:\n\nPackage 1\n- 대상:\n- 핵심 Value:\n- 제공 차이:\n- Cost 영향:\n\nPackage 2\n...\n\n===== 가장 큰 위험 =====\n\n-\n\n===== 사람이 최종 결정해야 할 것 =====\n\n-",
             "targetTool": "ChatGPT",
             "copyable": true
           }
         },
         {
-          "id": "d8l3-p08-link",
+          "id": "d8l3-b02-link",
           "type": "external-link",
           "visibility": "visible",
           "data": {
-            "url": "https://chatgpt.com",
-            "buttonLabel": "ChatGPT에서 실습하기",
+            "url": "https://chatgpt.com/",
+            "buttonLabel": "ChatGPT에서 실행",
             "openInNewTab": true,
             "showSecurityNotice": true,
             "requireCompletionCheck": true,
-            "practiceName": "외부 도구 실습",
-            "practiceDescription": "외부 도구에서 실습 후 결과를 확인합니다.",
-            "estimatedMinutes": 15
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p09",
-      "title": "AI 결과 검수",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l3-p09-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## AI 결과 검수\n\n- 원자료와 대조\n- 누락 확인\n- 과장 삭제\n- 확인 필요 표시",
-            "emphasis": "normal"
+            "practiceName": "Unit Economics & Package Reviewer",
+            "practiceDescription": "Cost 구조 검토, Unit Economics 계산 상태, Capacity 판단, Business Model Lever, Package 필요성을 검토합니다.",
+            "estimatedMinutes": 8
           }
         },
         {
-          "id": "d8l3-p09-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "**원칙:** AI는 초안을 빠르게 만들지만, 사실·수치·공개 여부는 사람이 확인합니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p10",
-      "title": "이해 점검",
-      "layout": "standard",
-      "blocks": [
-        {
-          "id": "d8l3-p10-q",
-          "type": "quiz",
-          "visibility": "visible",
-          "data": {
-            "questions": [
-              {
-                "id": "d8l3-p10-q-q1",
-                "question": "가장 먼저 확인해야 할 기준은 무엇인가요?",
-                "choices": [
-                  {
-                    "id": "d8l3-p10-q-c1",
-                    "text": "표현이 화려한가"
-                  },
-                  {
-                    "id": "d8l3-p10-q-c2",
-                    "text": "근거·목표·대상과 연결되는가"
-                  },
-                  {
-                    "id": "d8l3-p10-q-c3",
-                    "text": "AI가 자신 있게 말하는가"
-                  },
-                  {
-                    "id": "d8l3-p10-q-c4",
-                    "text": "슬라이드 수가 많은가"
-                  }
-                ],
-                "correctChoiceId": "d8l3-p10-q-c2",
-                "explanation": "근거와 목표 연결성을 확인합니다."
-              }
-            ]
-          }
-        },
-        {
-          "id": "d8l3-p10-b2",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "정답은 **근거·목표·대상과 연결되는가**입니다.",
-            "emphasis": "normal"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d8l3-p11",
-      "title": "최종 결과 정리",
-      "layout": "wide",
-      "blocks": [
-        {
-          "id": "d8l3-p11-b1",
-          "type": "rich-text",
-          "visibility": "visible",
-          "data": {
-            "markdown": "## 최종 결과 정리\n\n다음 단계에서 재사용할 수 있도록 근거와 선택 이유까지 남깁니다.",
-            "emphasis": "normal"
-          }
-        },
-        {
-          "id": "d8l3-final-form",
+          "id": "d8l3-b02-result-form",
           "type": "input-form",
+          "title": "23차시 AI Unit Economics 분석 결과",
           "visibility": "visible",
-          "title": "1쪽 사업 요약과 2쪽 서비스 소개서 최종 결과",
           "data": {
             "fields": [
               {
-                "id": "d8l3-final-form-f1",
-                "label": "최종 결과물",
+                "id": "r1",
+                "label": "23차시 AI Unit Economics 분석 결과",
                 "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d8l3-final-form-f2",
-                "label": "사용한 근거",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d8l3-final-form-f3",
-                "label": "검증 필요 항목",
-                "kind": "long-text",
-                "required": true
-              },
-              {
-                "id": "d8l3-final-form-f4",
-                "label": "다음 행동",
-                "kind": "long-text",
-                "required": true
+                "required": false,
+                "placeholder": "ChatGPT 결과 전체를 여기에 붙여넣으세요."
               }
             ]
           }
@@ -396,40 +345,1466 @@
       ]
     },
     {
-      "id": "d8l3-p12",
-      "title": "저장 및 다음 단계",
+      "id": "p03",
+      "title": "사람의 결정 — Break-even & Package Map",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d8l3-b03-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 사람의 결정 — Break-even & Package Map v0.1",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l3-b03-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "AI 결과와 Google Sheets 계산값을 다시 옮겨 적지 않습니다. 경제성의 핵심 결정만 남깁니다."
+          }
+        },
+        {
+          "id": "d8l3-b03-form",
+          "type": "input-form",
+          "title": "Human Decision",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "h1",
+                "label": "기준 가격 가설 (Base Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시 Pricing Map에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Pricing Hypothesis Map v0.1",
+                    "sourceLabel": "기준 가격 가설 (Base Price Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "h2",
+                "label": "월 고정비 추정 (Monthly Fixed Cost Estimate)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Context 준비에서 가져오기",
+                    "sourceBlockId": "d8l3-b02-context-form",
+                    "sourceFieldIds": [
+                      "f10"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "h3",
+                "label": "단위당 변동비 (Variable Cost per Unit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Context 준비에서 가져오기",
+                    "sourceBlockId": "d8l3-b02-context-form",
+                    "sourceFieldIds": [
+                      "f11"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "h4",
+                "label": "단위당 공헌이익 (Contribution Margin)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Google Sheets 계산값을 입력하거나 복사하세요."
+              },
+              {
+                "id": "h5",
+                "label": "손익분기 판매량 (Break-even Units)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "Google Sheets 계산값."
+              },
+              {
+                "id": "h6",
+                "label": "Capacity 판정 (Capacity Check)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "POSSIBLE",
+                  "TIGHT",
+                  "UNREALISTIC",
+                  "UNKNOWN"
+                ]
+              },
+              {
+                "id": "h7",
+                "label": "Package 결정 (Package Decision)",
+                "kind": "select",
+                "required": false,
+                "options": [
+                  "SINGLE OFFER",
+                  "2 PACKAGES",
+                  "3 PACKAGES",
+                  "NEEDS VALIDATION"
+                ]
+              },
+              {
+                "id": "h8",
+                "label": "가장 중요한 경제성 리스크",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "한 문장. 예: 현재 서비스는 월 최대 30건 처리 가능한데 손익분기에는 52건이 필요하다."
+              },
+              {
+                "id": "h9",
+                "label": "다음 검증 / 수정 행동",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "예: 자동화로 고객당 작업시간을 줄여 Variable Cost 재측정 / 가격 가설 재검증 / 서비스 범위 축소"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "Google Sheets — Break-even Calculator",
       "layout": "standard",
       "blocks": [
         {
-          "id": "d8l3-p12-preview",
+          "id": "d8l3-b04-badge",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사 시연 + 학생 동시 제작** — Guided Build",
+            "emphasis": "lead"
+          },
+          "theme": {
+            "background": "primary-soft"
+          }
+        },
+        {
+          "id": "d8l3-b04-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Sheet ① — Break-even Calculator",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l3-b04-table",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "| 항목 | 값 |\n|---|---|\n| Base Price | 학생 값 |\n| Variable Cost / Unit | 학생 값 |\n| Contribution Margin | 자동 |\n| Monthly Fixed Cost | 학생 값 |\n| Break-even Units | 자동 |\n| Monthly Capacity | 학생 값 |\n| Capacity Gap | 자동 |"
+          }
+        },
+        {
+          "id": "d8l3-b04-formula",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**공식**\n\nContribution Margin = Price - Variable Cost\n\nBreak-even Units = Fixed Cost ÷ Contribution Margin (소수점 판매가 불가능하면 올림)\n\nCapacity Gap = Monthly Capacity - Break-even Units"
+          }
+        },
+        {
+          "id": "d8l3-b04-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**강사용 교육 사례**: Price = 100,000원, Variable Cost = 40,000원, Fixed Cost = 3,000,000원\n\nContribution = 60,000원, Break-even = 3,000,000 ÷ 60,000 = 50건\n\n여기서 끝내지 않습니다 — \"월 50건을 실제로 처리할 수 있습니까?\" Monthly Capacity가 30건이라면, **가격 계산은 맞지만 사업 운영모델은 맞지 않는 것입니다.** 이게 이번 차시에서 가장 중요한 순간입니다."
+          }
+        },
+        {
+          "id": "d8l3-b04-link",
+          "type": "external-link",
+          "visibility": "visible",
+          "data": {
+            "url": "https://sheets.google.com/",
+            "buttonLabel": "Google Sheets 열기",
+            "openInNewTab": true,
+            "showSecurityNotice": true,
+            "requireCompletionCheck": true,
+            "practiceName": "Break-even Calculator",
+            "practiceDescription": "템플릿 Sheet를 사본으로 만들고 Base Price / Variable Cost / Fixed Cost / Monthly Capacity를 입력합니다.",
+            "estimatedMinutes": 10
+          }
+        },
+        {
+          "id": "d8l3-b04-instructor",
+          "type": "rich-text",
+          "visibility": "instructor-only",
+          "data": {
+            "markdown": "수업 전 템플릿 Sheet를 미리 만들어 이 링크를 실제 템플릿 링크로 교체하세요. 학생은 파일 → 사본 만들기만 하면 됩니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "Sheet ② — What-if Scenario",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l3-b05-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Sheet ② — What-if Scenario",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l3-b05-body",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "22차시 Price Hypothesis(Lower/Base/Upper)를 그대로 사용합니다."
+          }
+        },
+        {
+          "id": "d8l3-b05-table",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "| Scenario | Price | Variable Cost | Contribution | Fixed Cost | Break-even |\n|---|---|---|---|---|---|\n| LOWER | | | 자동 | | 자동 |\n| BASE | | | 자동 | | 자동 |\n| UPPER | | | 자동 | | 자동 |"
+          }
+        },
+        {
+          "id": "d8l3-b05-question",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**질문**: 가격이 내려가면 Break-even은 어떻게 변하는가? Variable Cost가 올라가면? 고정비가 늘어나면? — 이것이 Scenario Simulation입니다."
+          }
+        },
+        {
+          "id": "d8l3-b05-cases",
+          "type": "infographic",
+          "title": "What-if 실습 — 강사가 하나씩 바꾸고 학생도 같이 바꾼다",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "CASE A",
+                "description": "Price -10% → Break-even?"
+              },
+              {
+                "label": "CASE B",
+                "description": "Variable Cost +20% → Break-even?"
+              },
+              {
+                "label": "CASE C",
+                "description": "Fixed Cost +30% → Break-even?"
+              },
+              {
+                "label": "CASE D",
+                "description": "Automation으로 Variable Cost 감소 → Break-even?"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l3-b05-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "이때 학생들이 \"자동화가 생산성뿐 아니라 Unit Economics도 바꾸는구나\"까지 이해할 수 있습니다. 16차시 Make 자동화와도 다시 연결됩니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "판매량이 늘면 정말 좋은가?",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l3-b06-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 중요한 질문 하나 더 — 판매량이 늘면 정말 좋은가?",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l3-b06-example",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "예: 손익분기 = 70건, 월 최대 처리 = 40건이라면, **절대 Break-even에 도달할 수 없는 현재 구조**일 수 있습니다."
+          }
+        },
+        {
+          "id": "d8l3-b06-levers",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "이때 선택지는 가격 / 비용 / 서비스 범위 / 자동화 / 인력 / Delivery Model 중 무엇을 바꿔야 하는지입니다."
+          }
+        },
+        {
+          "id": "d8l3-b06-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Spreadsheet는 사업모델의 모순을 보여주는 도구입니다.",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "Package로 넘어가기",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l3-b07-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Package로 넘어가기",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l3-b07-question",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**\"모든 고객에게 똑같은 서비스가 필요한가?\"**를 묻습니다. Package를 무조건 3개 만들지는 않습니다."
+          }
+        },
+        {
+          "id": "d8l3-b07-axes",
+          "type": "infographic",
+          "title": "Package를 나눌 수 있는 축",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "이용량",
+                "description": "적게 / 많이"
+              },
+              {
+                "label": "서비스 범위",
+                "description": "핵심 / 확장"
+              },
+              {
+                "label": "Automation",
+                "description": "자동 / 일부 Human"
+              },
+              {
+                "label": "Support",
+                "description": "셀프서비스 / 지원 / 전담지원"
+              },
+              {
+                "label": "Speed",
+                "description": "일반 / 우선처리"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l3-b07-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**기능 개수는 결과이지 출발점이 아닙니다.**"
+          }
+        },
+        {
+          "id": "d8l3-b07-worksheet",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Package Worksheet** (Sheet 두 번째 영역)\n\n| 항목 | Package A | Package B | Package C |\n|---|---|---|---|\n| 대상 고객 | | | |\n| 핵심 Value | | | |\n| 제공 범위 | | | |\n| Human Support | | | |\n| Price Hypothesis | | | |\n| Variable Cost | | | |\n| Contribution | 자동 | 자동 | 자동 |\n\n학생이 Package C가 필요 없으면 빈칸으로 둡니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "재미있는 비교 — Higher Price ≠ Higher Profit",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d8l3-b08-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 여기서 재미있는 비교",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l3-b08-compare",
+          "type": "infographic",
+          "title": "Starter vs Managed",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Starter",
+                "description": "Price 50,000 / Variable Cost 10,000 / Contribution 40,000"
+              },
+              {
+                "label": "Managed",
+                "description": "Price 150,000 / Variable Cost 120,000 / Contribution 30,000"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l3-b08-twist",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "학생들은 아마 \"Premium이 3배 비싸니까 더 많이 남겠지\"라고 생각할 수 있습니다. 그런데 실제로는 **Starter가 더 많이 남습니다.**"
+          }
+        },
+        {
+          "id": "d8l3-b08-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Higher Price ≠ Higher Profit",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "결과 저장 / 완료",
+      "layout": "practice",
+      "blocks": [
+        {
+          "id": "d8l3-b09-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 결과 저장 / 완료",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d8l3-b09-a-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### A. Break-even & Package Map 저장"
+          }
+        },
+        {
+          "id": "d8l3-b09-map-form",
+          "type": "input-form",
+          "title": "23차시 — Break-even & Package Map v0.1",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "m1",
+                "label": "기준 가격 가설 (Base Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m2",
+                "label": "월 고정비 추정 (Monthly Fixed Cost Estimate)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m3",
+                "label": "단위당 변동비 (Variable Cost per Unit)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m4",
+                "label": "단위당 공헌이익 (Contribution Margin)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m5",
+                "label": "손익분기 판매량 (Break-even Units)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m6",
+                "label": "월 처리 가능량 (Monthly Capacity)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Context 준비에서 가져오기",
+                    "sourceBlockId": "d8l3-b02-context-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m7",
+                "label": "Capacity 상태 (Capacity Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m8",
+                "label": "Package 결정 (Package Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m9",
+                "label": "Package 요약 (Package Summary)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "AI가 제안한 Package 후보(있다면) 핵심만 정리하세요.",
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "23차시 AI Unit Economics 분석 결과에서 가져오기",
+                    "sourceBlockId": "d8l3-b02-result-form"
+                  }
+                ]
+              },
+              {
+                "id": "m10",
+                "label": "가장 중요한 경제성 리스크 (Highest Economic Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m11",
+                "label": "다음 검증 (Next Validation)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "m12",
+                "label": "Break-even Sheet 링크 (Optional)",
+                "kind": "long-text",
+                "required": false,
+                "placeholder": "완성한 Google Sheets 공유 링크를 붙여넣으세요. 선택 항목입니다."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l3-b09-map-save",
+          "type": "save-artifact",
+          "visibility": "visible",
+          "data": {
+            "artifactType": "business-idea",
+            "artifactTitle": "23차시 — Break-even & Package Map v0.1",
+            "sourceBlockId": "d8l3-b09-map-form",
+            "buttonLabel": "Break-even & Package Map v0.1 저장"
+          }
+        },
+        {
+          "id": "d8l3-b09-map-preview",
           "type": "result-preview",
           "visibility": "visible",
           "data": {
-            "artifactType": "business-model",
-            "emptyMessage": "아직 저장된 결과물이 없습니다."
+            "artifactType": "business-idea",
+            "emptyMessage": "아직 저장된 결과가 없습니다."
           }
         },
         {
-          "id": "d8l3-p12-save",
+          "id": "d8l3-b09-b-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### B. Business Context 누적 저장"
+          }
+        },
+        {
+          "id": "d8l3-b09-context-form",
+          "type": "input-form",
+          "title": "23차시 — Business Context v0.23",
+          "visibility": "visible",
+          "data": {
+            "fields": [
+              {
+                "id": "c1",
+                "label": "1순위 고객 (Primary Target)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "1순위 고객 (Primary Target)"
+                  }
+                ]
+              },
+              {
+                "id": "c2",
+                "label": "핵심 고객 문제 (Core Customer Problem)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "핵심 고객 문제 (Core Customer Problem)"
+                  }
+                ]
+              },
+              {
+                "id": "c3",
+                "label": "1순위 가치제안 (Primary Value Proposition)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "1순위 가치제안 (Primary Value Proposition)"
+                  }
+                ]
+              },
+              {
+                "id": "c4",
+                "label": "첫 검증 고객 (ECP)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "첫 검증 고객 (ECP)"
+                  }
+                ]
+              },
+              {
+                "id": "c5",
+                "label": "핵심 메시지 대상 Actor (Primary Message Actor)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "핵심 메시지 대상 Actor (Primary Message Actor)"
+                  }
+                ]
+              },
+              {
+                "id": "c6",
+                "label": "지지 근거 (Supporting Evidence)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "지지 근거 (Supporting Evidence)"
+                  }
+                ]
+              },
+              {
+                "id": "c7",
+                "label": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "반대 근거 / 주요 리스크 (Counter Evidence / Main Risk)"
+                  }
+                ]
+              },
+              {
+                "id": "c8",
+                "label": "고객여정 촉발요인 (Journey Trigger)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "고객여정 촉발요인 (Journey Trigger)"
+                  }
+                ]
+              },
+              {
+                "id": "c9",
+                "label": "우선 검증 접점 (Priority Touchpoint)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "우선 검증 접점 (Priority Touchpoint)"
+                  }
+                ]
+              },
+              {
+                "id": "c10",
+                "label": "최종 핵심 메시지 (Final Core Message)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "최종 핵심 메시지 (Final Core Message)"
+                  }
+                ]
+              },
+              {
+                "id": "c11",
+                "label": "메시지 불변요소 / 경계 (Message Invariants / Boundary)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "메시지 불변요소 / 경계 (Message Invariants / Boundary)"
+                  }
+                ]
+              },
+              {
+                "id": "c12",
+                "label": "1순위 Offer (Primary Offer)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "1순위 Offer (Primary Offer)"
+                  }
+                ]
+              },
+              {
+                "id": "c13",
+                "label": "Offer 안전장치 (Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "Offer 안전장치 (Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c14",
+                "label": "연락 대상 Context (Recipient Context)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "연락 대상 Context (Recipient Context)"
+                  }
+                ]
+              },
+              {
+                "id": "c15",
+                "label": "전환 목표 (Conversion Goal)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "전환 목표 (Conversion Goal)"
+                  }
+                ]
+              },
+              {
+                "id": "c16",
+                "label": "Landing 1차 행동 유도 (Primary CTA)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "Landing 1차 행동 유도 (Primary CTA)"
+                  }
+                ]
+              },
+              {
+                "id": "c17",
+                "label": "우선순위 FAQ (Priority FAQ)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "우선순위 FAQ (Priority FAQ)"
+                  }
+                ]
+              },
+              {
+                "id": "c18",
+                "label": "사람 이관 규칙 (Human Handoff Rule)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "사람 이관 규칙 (Human Handoff Rule)"
+                  }
+                ]
+              },
+              {
+                "id": "c19",
+                "label": "고객응대 안전장치 (Customer Response Guardrail)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "고객응대 안전장치 (Customer Response Guardrail)"
+                  }
+                ]
+              },
+              {
+                "id": "c20",
+                "label": "1순위 Channel (Primary Channel)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "1순위 Channel (Primary Channel)"
+                  }
+                ]
+              },
+              {
+                "id": "c21",
+                "label": "고객 관계 (Customer Relationship)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "고객 관계 (Customer Relationship)"
+                  }
+                ]
+              },
+              {
+                "id": "c22",
+                "label": "Revenue 가설 (Revenue Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "Revenue 가설 (Revenue Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c23",
+                "label": "핵심 활동 (Key Activities)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "핵심 활동 (Key Activities)"
+                  }
+                ]
+              },
+              {
+                "id": "c24",
+                "label": "핵심 자원 (Key Resources)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "핵심 자원 (Key Resources)"
+                  }
+                ]
+              },
+              {
+                "id": "c25",
+                "label": "핵심 파트너 (Key Partners)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "핵심 파트너 (Key Partners)"
+                  }
+                ]
+              },
+              {
+                "id": "c26",
+                "label": "주요 비용 요인 (Main Cost Driver)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "주요 비용 요인 (Main Cost Driver)"
+                  }
+                ]
+              },
+              {
+                "id": "c27",
+                "label": "가장 약한 사업모델 연결 (Weakest Business Model Link)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "가장 약한 사업모델 연결 (Weakest Business Model Link)"
+                  }
+                ]
+              },
+              {
+                "id": "c28",
+                "label": "가장 위험한 모델 가설 (Highest-risk Model Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "가장 위험한 모델 가설 (Highest-risk Model Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c29",
+                "label": "바람직성 (Desirability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "바람직성 (Desirability)"
+                  }
+                ]
+              },
+              {
+                "id": "c30",
+                "label": "실행 가능성 (Feasibility)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "실행 가능성 (Feasibility)"
+                  }
+                ]
+              },
+              {
+                "id": "c31",
+                "label": "지속 가능성 (Viability)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "지속 가능성 (Viability)"
+                  }
+                ]
+              },
+              {
+                "id": "c32",
+                "label": "고객이 돈을 내는 가치 (Value for Payment)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "고객이 돈을 내는 가치 (Value for Payment)"
+                  }
+                ]
+              },
+              {
+                "id": "c33",
+                "label": "1순위 Pricing Metric (Primary Pricing Metric)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "1순위 Pricing Metric (Primary Pricing Metric)"
+                  }
+                ]
+              },
+              {
+                "id": "c34",
+                "label": "주요 대안 (Primary Alternative)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "주요 대안 (Primary Alternative)"
+                  }
+                ]
+              },
+              {
+                "id": "c35",
+                "label": "가격 가설 (Price Hypothesis)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "가격 가설 (Price Hypothesis)"
+                  }
+                ]
+              },
+              {
+                "id": "c36",
+                "label": "가격 근거 상태 (Pricing Evidence Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "가격 근거 상태 (Pricing Evidence Status)"
+                  }
+                ]
+              },
+              {
+                "id": "c37",
+                "label": "가장 위험한 가격 가설 (Highest-risk Pricing Assumption)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "가장 위험한 가격 가설 (Highest-risk Pricing Assumption)"
+                  }
+                ]
+              },
+              {
+                "id": "c38",
+                "label": "가격 검증 대상 (Pricing Validation Audience)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "가격 검증 대상 (Pricing Validation Audience)"
+                  }
+                ]
+              },
+              {
+                "id": "c39",
+                "label": "가격 검증 질문 (Pricing Validation Questions)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "prior-artifact",
+                    "label": "22차시에서 가져오기",
+                    "artifactType": "business-idea",
+                    "artifactTitle": "22차시 — Business Context v0.22",
+                    "sourceLabel": "가격 검증 질문 (Pricing Validation Questions)"
+                  }
+                ]
+              },
+              {
+                "id": "n1",
+                "label": "고정비 추정 (Fixed Cost Estimate)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n2",
+                "label": "변동비 추정 (Variable Cost Estimate)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h3"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n3",
+                "label": "단위당 공헌이익 (Contribution Margin)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h4"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n4",
+                "label": "손익분기 판매량 (Break-even Units)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h5"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n5",
+                "label": "월 처리 가능량 (Monthly Capacity)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Context 준비에서 가져오기",
+                    "sourceBlockId": "d8l3-b02-context-form",
+                    "sourceFieldIds": [
+                      "f12"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n6",
+                "label": "Capacity 상태 (Capacity Status)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h6"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n7",
+                "label": "Package 전략 (Package Strategy)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h7"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n8",
+                "label": "Package 경제성 (Package Economics)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Break-even & Package Map에서 가져오기",
+                    "sourceBlockId": "d8l3-b09-map-form",
+                    "sourceFieldIds": [
+                      "m9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n9",
+                "label": "가장 중요한 경제성 리스크 (Highest Economic Risk)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n10",
+                "label": "다음 결정 (Next Decision)",
+                "kind": "long-text",
+                "required": false,
+                "importFrom": [
+                  {
+                    "kind": "same-lesson",
+                    "label": "Human Decision에서 가져오기",
+                    "sourceBlockId": "d8l3-b03-form",
+                    "sourceFieldIds": [
+                      "h9"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d8l3-b09-context-save",
           "type": "save-artifact",
           "visibility": "visible",
-          "title": "Day8 Lesson3 — 1쪽 사업 요약과 2쪽 서비스 소개서",
           "data": {
-            "artifactType": "business-model",
-            "artifactTitle": "Day8 Lesson3 — 1쪽 사업 요약과 2쪽 서비스 소개서",
-            "sourceBlockId": "d8l3-final-form",
-            "buttonLabel": "내 프로젝트에 저장"
+            "artifactType": "business-idea",
+            "artifactTitle": "23차시 — Business Context v0.23",
+            "sourceBlockId": "d8l3-b09-context-form",
+            "buttonLabel": "Business Context v0.23 저장"
           }
         },
         {
-          "id": "d8l3-p12-reflection",
-          "type": "reflection",
+          "id": "d8l3-b09-next",
+          "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "questions": [
-              "오늘 결과물에서 가장 중요한 검증 항목은 무엇인가요?"
-            ],
-            "placeholder": "한두 문장이면 충분합니다."
+            "markdown": "## 다음 단계\n\n오늘은 정확한 재무계획이 아니라 사업모델의 경제적 모순을 발견했습니다. 24차시(Service One-Pager)는 이미 22차시 Context를 기준으로 만들어졌습니다 — 필요하면 이번 차시의 Package 결정을 반영해 One-Pager를 다시 검토하세요.",
+            "emphasis": "lead"
           }
         }
       ]
