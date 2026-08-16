@@ -81,7 +81,7 @@ export const week3: WeekMeta = {
     openDay(3, 6, "DAY 6 — Blog Search Intent부터 Repurposing 자동화까지", "SNS에서 검색해서 찾아오는 Blog로 전환하고, Reader Question에 근거 있게 답하는 Draft를 쓴 뒤, Make로 Newsletter·SNS 자동 생성까지 연결합니다."),
     openDay(3, 7, "DAY 7 — Offer부터 Knowledge Base까지: 관심을 행동으로", "Business Context로 Offer를 설계하고, Email·DM Outreach와 Landing Page Blueprint로 관심을 행동으로 연결한 뒤, FAQ·Objection을 Customer Knowledge Base로 정리합니다."),
     openDay(3, 8, "DAY 8 — Business Model부터 One-Pager까지: 사업을 숫자와 한 장으로", "Business Model Canvas로 사업 전체 구조를 설계하고, Pricing Hypothesis와 Break-even·Package로 가격과 생존 가능성을 검증한 뒤, Service One-Pager로 고객이 1분 안에 이해하는 한 장을 완성합니다."),
-    openDay(3, 9, "DAY 9 — 제품 데모 영상과 발표 준비", "60~120초 데모 영상 스토리보드를 만들어 촬영·편집하고, Mini Brand Kit과 3분 발표 스크립트로 예상 질문까지 준비합니다."),
+    openDay(3, 9, "DAY 9 — Business Plan Blueprint부터 AI Critic까지: 사업을 문서로 완성하기", "지금까지의 결정을 Business Plan Blueprint로 재배열하고 AI로 Draft를 작성한 뒤, Service Introduction으로 고객용 문서를 만들고 AI Critic으로 두 문서의 논리적 정합성을 검증합니다."),
   ],
 };
 
