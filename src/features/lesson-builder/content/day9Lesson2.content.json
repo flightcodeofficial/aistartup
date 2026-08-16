@@ -14,7 +14,7 @@
   "pages": [
     {
       "id": "p01",
-      "title": "AI Business Plan Draft 핵심 이론",
+      "title": "AI는 사업의 저자가 아니라 Drafting Engine입니다",
       "layout": "wide",
       "blocks": [
         {
@@ -22,7 +22,7 @@
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "# AI Business Plan Draft\n\n## 사업을 새로 상상하지 않고, 지금까지의 결정을 문서로 바꾸기",
+            "markdown": "# AI Business Plan Draft\n\n## AI는 사업을 만드는 사람이 아니라 Drafting Engine입니다",
             "emphasis": "hero"
           },
           "layout": {
@@ -32,28 +32,56 @@
           }
         },
         {
-          "id": "d9l2-b01-goal",
+          "id": "d9l2-b01-notfirst",
           "type": "rich-text",
           "visibility": "visible",
           "data": {
-            "markdown": "**핵심: AI는 작성한다. 새로운 사업사실을 만들지는 않는다.** 25차시에서 만든 Problem/Customer/Solution/Market/Business Model/Execution/Evidence를 하나의 읽을 수 있는 Business Plan Draft v0.1로 변환합니다."
+            "markdown": "**우리는 26차시에서 사업계획서를 처음 만드는 것이 아닙니다.** 이미 앞 차시에서 Customer, Problem, Evidence, Value, Offer, Channel, Business Model, Pricing, Break-even, Package, Risk, Milestone을 결정했고, 25차시에서는 이것을 Business Plan Blueprint로 재구성했습니다."
           }
         },
         {
-          "id": "d9l2-b01-allowed",
+          "id": "d9l2-b01-decided",
           "type": "infographic",
-          "title": "AI가 해도 되는 것 vs 하면 안 되는 것",
+          "title": "이미 결정한 것",
           "visibility": "visible",
           "data": {
-            "variant": "comparison",
+            "variant": "checklist",
             "items": [
               {
-                "label": "AI가 해도 되는 것",
-                "description": "문장 작성\n구조 정리\nSection 연결\n표/목록 정리\n기존 정보를 설명문으로 확장"
+                "label": "Customer"
               },
               {
-                "label": "AI가 하면 안 되는 것",
-                "description": "시장규모 만들기\n고객 수 만들기\n경쟁사 정보 만들기\n매출목표 만들기\n실제 없는 성과 만들기\n가설을 사실로 바꾸기"
+                "label": "Problem"
+              },
+              {
+                "label": "Evidence"
+              },
+              {
+                "label": "Value"
+              },
+              {
+                "label": "Offer"
+              },
+              {
+                "label": "Channel"
+              },
+              {
+                "label": "Business Model"
+              },
+              {
+                "label": "Pricing"
+              },
+              {
+                "label": "Break-even"
+              },
+              {
+                "label": "Package"
+              },
+              {
+                "label": "Risk"
+              },
+              {
+                "label": "Milestone"
               }
             ]
           },
@@ -62,26 +90,53 @@
           }
         },
         {
-          "id": "d9l2-b01-rules",
+          "id": "d9l2-b01-flow",
           "type": "infographic",
-          "title": "세 문장",
+          "title": "26차시 AI의 역할",
           "visibility": "visible",
           "data": {
             "variant": "steps",
             "items": [
               {
-                "label": "DO NOT INVENT",
-                "description": "없는 사실을 만들지 않는다"
+                "label": "Business Decisions",
+                "description": "이미 사람이 결정한 사업의 사실들"
               },
               {
-                "label": "DO NOT UPGRADE",
-                "description": "가설을 사실로 승격하지 않는다"
-              },
-              {
-                "label": "DO NOT HIDE",
-                "description": "부족한 근거를 그럴듯한 문장으로 숨기지 않는다"
+                "label": "Document Draft",
+                "description": "AI는 이것을 읽을 수 있는 문서로 바꾼다"
               }
             ]
+          }
+        },
+        {
+          "id": "d9l2-b01-allowed",
+          "type": "infographic",
+          "title": "AI에게 맡기기 좋은 것 vs 맡기면 안 되는 것",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "AI에게 맡기기 좋은 것",
+                "description": "문장 작성\nSection 구조화\n설명 확장\n요약\n표/목록 정리\n표현 일관성"
+              },
+              {
+                "label": "AI에게 맡기면 안 되는 것",
+                "description": "새로운 고객 문제 생성\n시장규모 창작\n경쟁사 정보 창작\n매출 목표 창작\n실제 Cost 추측\n고객 반응 창작\n사업 성공 가능성 확정"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l2-b01-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## \"AI에게 Writing은 맡겨도 Business Facts를 맡기지 않습니다.\"",
+            "emphasis": "lead"
           }
         },
         {
@@ -89,13 +144,242 @@
           "type": "rich-text",
           "visibility": "instructor-only",
           "data": {
-            "markdown": "전체 20분 — Blueprint 가져오기 2분, GPT 1회 9분, Draft 검토 4분, Human Check 3분, 저장 2분. GPT 정확히 1회 — 이번 차시엔 두 번째 수정 Prompt가 없다. 28차시가 AI Critic 차시이므로 26차시에서 Draft→Critic→Rewrite까지 해버리면 중복된다 — 지금은 Writer → Human Quick Check까지만."
+            "markdown": "전체 20분 — Blueprint 가져오기 2분, GPT 1회 9분, Draft 검토 4분, Human Check 3분, 저장 2분. 이론은 P01-P03(약 10분), 실습은 P04-P07. GPT 정확히 1회 — 이번 차시엔 두 번째 수정 Prompt가 없다. 28차시가 AI Critic 차시이므로 26차시에서 Draft→Critic→Rewrite까지 해버리면 중복된다 — 지금은 Writer → Human Quick Check까지만."
           }
         }
       ]
     },
     {
       "id": "p02",
+      "title": "Source of Truth + Current Context",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d9l2-b02t-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## AI가 무엇을 근거로 써야 하는지 먼저 정합니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d9l2-b02t-def",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Source of Truth** — AI가 사업계획서를 작성할 때 사실과 사업결정의 기준으로 사용해야 하는, 현재의 유효한 정보 집합. 이번 수업의 Source of Truth는 **Business Context + 25차시 Business Plan Blueprint**입니다."
+          }
+        },
+        {
+          "id": "d9l2-b02t-flow",
+          "type": "infographic",
+          "title": "Source of Truth 흐름",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Business Context",
+                "description": "누적된 사업 결정"
+              },
+              {
+                "label": "Business Plan Blueprint",
+                "description": "25차시에서 재구성한 논리"
+              },
+              {
+                "label": "SOURCE OF TRUTH",
+                "description": "AI가 근거로 삼을 정보"
+              },
+              {
+                "label": "AI Draft",
+                "description": "여기서만 문장이 나온다"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d9l2-b02t-note",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**Context가 많다고 좋은 것은 아닙니다.** 예전 Target, 수정 전 Value, 폐기한 Offer, 이전 가격 가설, 과거 AI Raw Output을 몽땅 넣는 것은 좋지 않습니다."
+          }
+        },
+        {
+          "id": "d9l2-b02t-compare",
+          "type": "infographic",
+          "title": "Raw History ❌ vs Current Context ✅",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "Raw History ❌",
+                "description": "예전 Target\n수정 전 Value\n폐기한 Offer\n이전 가격 가설\n과거 AI Raw Output"
+              },
+              {
+                "label": "Current Context ✅",
+                "description": "지금 유효한 결정\n현재 Evidence\n현재 Hypothesis\n현재 Guardrail\n현재 Evidence Gap"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l2-b02t-core",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## \"AI에게 과거 대화를 모두 주는 것이 아니라, 현재 유효한 사업결정을 줍니다.\"",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "정보 상태 + Missing Evidence + 3가지 금지",
+      "layout": "standard",
+      "blocks": [
+        {
+          "id": "d9l2-b03t-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## 모르는 것을 그럴듯한 문장으로 채우지 않습니다",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d9l2-b03t-states",
+          "type": "infographic",
+          "title": "4가지 정보 상태",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "CONFIRMED",
+                "description": "현재 Evidence가 있는 정보"
+              },
+              {
+                "label": "HYPOTHESIS",
+                "description": "아직 검증되지 않은 사업 가설"
+              },
+              {
+                "label": "NEEDS RESEARCH",
+                "description": "외부 Source 또는 추가 조사가 필요한 정보"
+              },
+              {
+                "label": "DO NOT CLAIM",
+                "description": "현재 근거로는 주장하면 안 되는 내용"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d9l2-b03t-example1",
+          "type": "infographic",
+          "title": "표현 예시 — 가격",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "❌ 잘못된 표현",
+                "description": "\"고객은 월 49,000원을 지불할 것이다.\" — 실제 판매 검증 전이라면 Fact가 아니다."
+              },
+              {
+                "label": "✅ 더 안전한 표현 (HYPOTHESIS)",
+                "description": "\"월 49,000원을 기준 가격가설로 설정하고 고객 반응을 검증할 예정이다.\""
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l2-b03t-missing-title",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "### Missing Evidence — 실제 Context: 시장규모 공식자료 없음"
+          }
+        },
+        {
+          "id": "d9l2-b03t-example2",
+          "type": "infographic",
+          "title": "표현 예시 — 시장규모",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "❌ 나쁜 AI Draft",
+                "description": "\"해당 시장은 빠르게 성장하고 있으며 향후 높은 성장세가 예상된다.\""
+              },
+              {
+                "label": "✅ 좋은 Draft",
+                "description": "\"[NEEDS RESEARCH: 시장규모 공식자료]\" 또는 \"현재 정량적 시장규모는 추가 조사가 필요하다.\""
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l2-b03t-core1",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "**\"Evidence Gap을 자연스러운 문장으로 숨기지 않습니다.\"**",
+            "emphasis": "lead"
+          }
+        },
+        {
+          "id": "d9l2-b03t-rules",
+          "type": "infographic",
+          "title": "3가지 금지 원칙",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "DO NOT INVENT",
+                "description": "없는 사실을 만들지 않는다. 예: 가짜 시장규모, 가짜 경쟁사, 가짜 고객수, 가짜 매출"
+              },
+              {
+                "label": "DO NOT UPGRADE",
+                "description": "가설을 사실로 승격하지 않는다. HYPOTHESIS → FACT로 임의 변경 금지."
+              },
+              {
+                "label": "DO NOT HIDE",
+                "description": "근거 부족을 그럴듯한 문장으로 숨기지 않는다. NEEDS RESEARCH는 NEEDS RESEARCH로 남긴다."
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l2-b03t-core2",
+          "type": "rich-text",
+          "visibility": "visible",
+          "data": {
+            "markdown": "## Claim Strength ≤ Evidence Strength\n\n\"주장의 강도는 근거의 강도를 넘지 않습니다.\"",
+            "emphasis": "lead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
       "title": "실습 — Business Plan Draft 작성",
       "layout": "practice",
       "blocks": [
@@ -114,6 +398,55 @@
           "visibility": "visible",
           "data": {
             "markdown": "학생이 사업계획서 7개 Section을 직접 타이핑하지 않습니다. 25차시까지 누적된 Business Plan Blueprint와 Context에서 전부 버튼으로 가져옵니다."
+          }
+        },
+        {
+          "id": "d9l2-b02-remind",
+          "type": "infographic",
+          "title": "실습 전 체크",
+          "visibility": "visible",
+          "data": {
+            "variant": "comparison",
+            "items": [
+              {
+                "label": "오늘 AI에게 시킬 것",
+                "description": "구조화\n문장 작성\n설명 확장\nBusiness Plan Draft 작성"
+              },
+              {
+                "label": "오늘 AI에게 맡기지 않을 것",
+                "description": "새로운 Business Fact\n시장 숫자\n경쟁사 정보\n매출예측\n검증되지 않은 고객반응"
+              }
+            ]
+          },
+          "theme": {
+            "background": "muted"
+          }
+        },
+        {
+          "id": "d9l2-b02-remindflow",
+          "type": "infographic",
+          "title": "오늘의 흐름",
+          "visibility": "visible",
+          "data": {
+            "variant": "steps",
+            "items": [
+              {
+                "label": "Source of Truth",
+                "description": "Business Context + Blueprint"
+              },
+              {
+                "label": "AI Draft",
+                "description": "GPT 1회"
+              },
+              {
+                "label": "정보 상태 확인",
+                "description": "CONFIRMED / HYPOTHESIS / NEEDS RESEARCH"
+              },
+              {
+                "label": "Human Check",
+                "description": "빠른 확인"
+              }
+            ]
           }
         },
         {
@@ -420,7 +753,7 @@
       ]
     },
     {
-      "id": "p03",
+      "id": "p05",
       "title": "Human Check — Draft Approval Map",
       "layout": "practice",
       "blocks": [
@@ -540,7 +873,7 @@
       ]
     },
     {
-      "id": "p04",
+      "id": "p06",
       "title": "시연 — 나쁜 AI Draft vs Source-of-Truth Draft",
       "layout": "standard",
       "blocks": [
@@ -621,7 +954,7 @@
       ]
     },
     {
-      "id": "p05",
+      "id": "p07",
       "title": "결과 저장 / 완료",
       "layout": "practice",
       "blocks": [
