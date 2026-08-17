@@ -92,7 +92,8 @@ export const week4: WeekMeta = {
   days: [
     openDay(4, 10, "DAY 10 — Brand Direction부터 IR Deck Production까지: 브랜드와 투자자 커뮤니케이션 완성", "Business Context로 Brand Direction과 Generative AI Brand Kit을 설계하고, IR Story Blueprint로 투자자 스토리를 구성한 뒤, IR Deck Production으로 실제 슬라이드 제작까지 연결합니다."),
     openDay(4, 11, "DAY 11 — Demo Blueprint부터 Multi-format Pack까지: 하나의 Demo를 다목적 자산으로", "Demo Blueprint로 보여줄 Value Moment를 정하고 Loom으로 녹화한 뒤, CapCut으로 편집해 Critical Value Moment를 강조하고, Multi-format Demo Pack으로 IR·SNS·Landing 등 목적별 파생 콘텐츠까지 확장합니다."),
-    ...Array.from({ length: 4 }, (_, i) => placeholderDay(4, i + 12)),
+    openDay(4, 12, "DAY 12 — Sales Funnel Blueprint부터 Follow-up & Closing까지: 관심을 실제 판매로", "Sales Funnel Blueprint로 자산을 하나의 경로로 연결하고, Sales Conversation Map과 Objection Resolution Map으로 실제 상담을 준비한 뒤, Follow-up & Closing Plan으로 다음 행동을 명확하게 만듭니다."),
+    ...Array.from({ length: 3 }, (_, i) => placeholderDay(4, i + 13)),
   ],
 };
 
