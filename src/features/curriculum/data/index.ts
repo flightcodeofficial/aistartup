@@ -90,8 +90,9 @@ export const week4: WeekMeta = {
   title: "AI 기반 사업운영·성장 & 실행전략",
   description: "",
   days: [
-    openDay(4, 10, "DAY 10 — 고객 문의 자동화 운영 설계", "문의 접수부터 기록까지 운영 흐름을 설계하고 Make·Zapier로 최소 자동화를 구현한 뒤, AI 분류·초안과 사람 승인 절차를 연결합니다."),
-    ...Array.from({ length: 5 }, (_, i) => placeholderDay(4, i + 11)),
+    openDay(4, 10, "DAY 10 — Brand Direction부터 IR Deck Production까지: 브랜드와 투자자 커뮤니케이션 완성", "Business Context로 Brand Direction과 Generative AI Brand Kit을 설계하고, IR Story Blueprint로 투자자 스토리를 구성한 뒤, IR Deck Production으로 실제 슬라이드 제작까지 연결합니다."),
+    openDay(4, 11, "DAY 11 — Demo Blueprint부터 Multi-format Pack까지: 하나의 Demo를 다목적 자산으로", "Demo Blueprint로 보여줄 Value Moment를 정하고 Loom으로 녹화한 뒤, CapCut으로 편집해 Critical Value Moment를 강조하고, Multi-format Demo Pack으로 IR·SNS·Landing 등 목적별 파생 콘텐츠까지 확장합니다."),
+    ...Array.from({ length: 4 }, (_, i) => placeholderDay(4, i + 12)),
   ],
 };
 
